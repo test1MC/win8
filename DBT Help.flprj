@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultProject Version="1" xml:lang="en-us" MasterToc="/Project/TOCs/Primary.fltoc" IncludePattern="*.htm;*.html" AutoExcludeNonTaggedFiles="false" IncludeLinkedFiles="false" DeleteStale="false" AutoSync="true" LastImport="2016-12-09T23:43:35.3951535+00:00" MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css" SourceControlBound="false" DeleteUnreferenced="false">
+<CatapultProject Version="1" xml:lang="en-us" MasterToc="/Project/TOCs/Primary.fltoc" IncludePattern="*.htm;*.html" AutoExcludeNonTaggedFiles="false" IncludeLinkedFiles="false" DeleteStale="false" AutoSync="true" LastImport="2016-12-09T23:43:35.3951535+00:00" MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css" SourceControlBound="true" DeleteUnreferenced="false" SourceControlProviderType="Git" ProjectGuid="7858ecf5-88d3-4feb-86b9-0230f2d5593b">
     <Files>
         <Url Source="file:///C:/Users/george2/Documents/dbt-PerkyDuck/dbt-PerkyDuck.flprj" AbsoluteSource="file:///C:/Users/george2/Documents/dbt-PerkyDuck/dbt-PerkyDuck.flprj" />
     </Files>
