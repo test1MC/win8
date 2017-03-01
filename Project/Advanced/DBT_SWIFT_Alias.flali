@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="SWIFT_EMBOSS_DIRECT" Link="/Content/working_with_word/SWIFT/swift_emboss_direct.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_CHOOSE_TEMPLATE" Link="/Content/working_with_word/SWIFT/swift_choose_BANA_template.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_WORD_STYLES_LISTER" Link="/Content/working_with_word/SWIFT/swift_word_styles_lister.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_HELP" Link="/Content/working_with_word/SWIFT/swift_help.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_APPEND_ACRONYM" Link="/Content/working_with_word/SWIFT/swift_acronym_append.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT" Link="/Content/working_with_word/SWIFT/swift.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_INSTALLATION" Link="/Content/working_with_word/SWIFT/swift_installation.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_OPEN_IN_DBT" Link="/Content/working_with_word/SWIFT/swift_open_in_DBT.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_OPTIONS" Link="/Content/working_with_word/SWIFT/swift_options.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_OUTPUT" Link="/Content/working_with_word/SWIFT/swift_output.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_PRINT_BRAILLE" Link="/Content/working_with_word/SWIFT/swift_print_braille.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_SETTINGS" Link="/Content/working_with_word/SWIFT/swift_document.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_STYLE_MAP" Link="/Content/working_with_word/SWIFT/swift_style_map.htm" Skin="/Project/Skins/SWIFT.flskn" />
+    <Map Name="SWIFT_TOOLS" Link="/Content/working_with_word/SWIFT/swift_tools.htm" Skin="/Project/Skins/SWIFT.flskn" />
+</CatapultAliasFile>

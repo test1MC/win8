@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/Languages-advice.fltoc"
+  ConditionTagExpression=""
+  AutoSizeCaptureCaptions="false"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  MasterPageLayout="/Content/Resources/PageLayouts/menu_Document.flpgl"
+  PreCompileScaledImages="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    GenerateXPS="true" />
+  <PDF
+    Tagged="true"
+    ShowUsedBookmarks="false"
+    InitialMagnification="Actual" />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+  <RelationshipTables />
+</CatapultTarget>

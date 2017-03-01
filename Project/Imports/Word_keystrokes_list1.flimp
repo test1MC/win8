@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="true"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2016-12-02T21:31:42.4298835+00:00"
+  ProjectName="DBT Help"
+  ProjectFolder="C:\Users\george2\Documents\dbthelp\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2016-12-02T21:31:56.2536381+00:00"
+  Stylesheet="../../Content/Resources/Stylesheets/DuxHelp.css">
+  <Files>
+    <Url
+      Source="../../../Word_keystrokes_list.docx"
+      AbsoluteSource="file:///C:/Users/george2/Documents/Word_keystrokes_list.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Word_keystrokes_list1/Keyboard shortcuts for Microsoft.htm"
+      TimeStamp="02/12/2016 21:31:42" />
+    <Url
+      Source="../TOCs/Word_keystrokes_list1.fltoc"
+      TimeStamp="02/12/2016 21:31:42" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Word_keystrokes_list1.flmsp"
+      TimeStamp="02/12/2016 21:31:42" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DuxHelp_1.css"
+      TimeStamp="02/12/2016 21:31:42" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

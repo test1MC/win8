@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0086)http://www.duxburysystems.com/documentation/dbt11.2/miscellaneous/Command_Line_DBT.htm -->
+<html MadCap:PreloadImages="false" MadCap:SearchType="Stem" MadCap:HelpSystemFileName="helpfile.xml" MadCap:PathToHelpSystem="../" MadCap:TargetType="HtmlHelp" MadCap:RuntimeFileType="Topic" MadCap:InPreviewMode="false" MadCap:tocPath="Miscellaneous" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="916" MadCap:lastWidth="626">
+    <head>
+        <meta content="IE=7.0000" http_equiv="X-UA-Compatible" /><title>Command Line DBT</title>
+    </head>
+    <body>
+        <h4 MadCap:conditions="Primary.Windows_Version">
+            <MadCap:keyword term="DOS:Command Line;Command Line" />Running DBT from the DOS Command Prompt</h4>
+        <h4 MadCap:conditions="Primary.Mac_Version">
+            <MadCap:keyword term="Command Line" />Running DBT from the Mac Terminal Window</h4>
+        <p>A command line interface is one way of invoking a program in order to automate its operation, instead of working with it interactively. A second way to automate is with an Application Program Interface (API). DBT has both a command line interface and, on the Windows platform, it has an API as well.</p>
+        <p MadCap:conditions="Primary.Windows_Version">For example, SWIFT uses API calls to automate DBT operation from inside an editing session in Microsoft Word.</p>
+        <p>DBT can be run from a command line on either Windows or Mac, i.e., from a DOS "Command Prompt" window or Mac "Terminal" window. Tasks such as importing a Word document or output to a brailler can be accomplished from the command line.</p>
+        <p>What follows is a relatively short discussion of a relatively advanced topic. Only those familiar with "shell" programming or some other form of computer automation will likely benefit from reading on.</p>
+        <p>The prompt in a command window normally displays the directory that it is pointing to. This directory is called the "current working directory." Here is the basic structure of a command that invokes DBT using an embosser named Romeo and an input file named constitution.htm: </p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>dbtw /braille:Romeo constitution.htm&lt;Enter&gt;</b>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><b>dbt --braille:Romeo constitution.htm&lt;Enter&gt;</b>
+        </p>
+        <p>This example only works if the current working directory is the DBT directory and the data file is in the same directory, and this is admittedly not at all a common case. Most often users set the current working directory to where their data files are located, which means the path to DBT must be specified on the command line, like this:</p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>"C:\Program Files (x86)\Duxbury\DBT 11.3\dbtw" /braille:Romeo constitution.htm&lt;Enter&gt;</b>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><b>/Applications/DBT.app/Contents/MacOS/dbt --braille:Romeo constitution.htm&lt;Enter&gt;</b>
+        </p>
+        <p>Users familiar with Environment Variables know that there are other options as well, but this discussion does not cover them. There are more examples at the end of this page, but first, here are the options for DBT operation from the command line.</p>
+        <h5>Available Commands</h5>
+        <p>The schema (general format) for calling DBT from the command line is:</p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>PROGRAM /OPTIONS FILES</b>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><b>PROGRAM --OPTIONS FILES</b>
+        </p>
+        <p class="ListUnspaced">where the PROGRAM is DBT as illustrated above, including the path to DBT if the current working directory is elsewhere;</p>
+        <p class="ListUnspaced">where one or more OPTIONS are given per the list below; and</p>
+        <p class="ListUnspaced">where FILES represents one or more input files to be processed by this command.</p>
+        <p>Each OPTION on the command line must be preceded by a slash (on Windows computers) or a double hyphen (on the Macintosh). In many cases more than one option can be applied to the same DBT call. In the list of options below, each line [in square brackets] represents a group from which at most one alternative can be selected, with vertical bars separating the choices. Text that appears inside angle brackets, &lt;like this&gt; indicates names or values that the user must supply.</p>
+        <p><b>OPTIONS</b>:</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /print | /braille:&lt;embosser-name&gt; | /simulate | /brf:&lt;file-name&gt; | /prf:&lt;file-name&gt; ]</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /Pagesize:&lt;n-rows&gt;x&lt;n-columns&gt; ]</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /Copies:&lt;n&gt; ]</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /Template:&lt;name&gt; ]</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /wordstylemap:&lt;name&gt; ]</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /RemoveEmbosserInfo | /RemovePrinterInfo | /RemovePageInfo ]</p>
+        <p MadCap:conditions="Primary.Windows_Version">[ /dumpstyles:&lt;name&gt; | /dumpstyles_xml:&lt;name&gt; ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --print | --braille:&lt;embosser-name&gt; | --simulate | --brf:&lt;file-name&gt; | --prf:&lt;file-name&gt; ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --Pagesize:&lt;n-rows&gt;x&lt;n-columns&gt; ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --Copies:&lt;n&gt; ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --Template:&lt;name&gt; ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --wordstylemap:&lt;name&gt; ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --RemoveEmbosserInfo | --RemovePrinterInfo | --RemovePageInfo ]</p>
+        <p MadCap:conditions="Primary.Mac_Version">[ --dumpstyles:&lt;name&gt; | --dumpstyles_xml:&lt;name&gt; ]</p>
+        <p><b>Print</b> --The first group provides the main output options: print output, braille output, simulated braille output, formatted braille file (brf), or print-proof file.</p>
+        <p><b>Pagesize</b> -- sets or resets the dimensions of the output page. The user specifies the rows and columns, such as "24x40".</p>
+        <p><b>Copies</b> -- the number of copies produced.</p>
+        <p><b>Template</b> -- selects which document template to use (see example).</p>
+        <p><b>wordstylemap</b> -- specifies a Word .mws file.</p>
+        <p><b>RemoveEmbosserInfo</b> -- Removes embosser information embedded in the document(s), including all settings done in Document, Embosser Setup. This option saves the results back in-place and exits if no further processing is required.</p>
+        <p><b>RemovePrinterInfo</b> -- Removes the ink printer information embedded in the document(s), including all settings done in Document, Printer Setup. This option saves the result(s) back in-place and exits if no further processing is required.</p>
+        <p><b>RemovePageInfo</b> -- Combines the effects of RemoveEmbosserInfo and RemovePrinterInfo. Note that it is not actually possible to use those two separate switches together, hence RemovePageInfo is provided to strip both printer and embosser information from a document.</p>
+        <p><b>dumpstyles:&lt;name&gt;</b> -- Writes ("dumps") the styles definitions for a document into the named file. If this option is used, only one input file can be specified. (The behavior of this option is undefined if more than one document file is specified.) After this option is processed, DBT will exit if there is no further processing to be done.</p>
+        <p><b>dumpstyles_xml:&lt;name&gt;</b> -- Works just like dumpstyles, except that the "dump" file is written in XML format.</p>
+        <h5>Examples</h5>
+        <p>Once again, the path to the DBT folder is ignored for these examples, to concentrate on the use of different options.</p>
+        <p>To open and <b>emboss two files</b> (Florida.dxp, Georgia.dxp) to a named embosser (Romeo): <br /></p>
+        <p MadCap:conditions="Primary.Windows_Version"><code>dbtw /braille:Romeo Florida.dxp Georgia.dxp</code>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><code>dbtw --braille:Romeo Florida.dxp Georgia.dxp</code>
+        </p>
+        <p>To open a Word document (Mass.doc), <b>import</b> it to DBT, and emboss <b>three copies</b> to a named embosser: <br /></p>
+        <p MadCap:conditions="Primary.Windows_Version"><code>dbtw /braille:Romeo /Copies:3 Mass.doc</code>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><code>dbtw --braille:Romeo --Copies:3 Mass.doc</code>
+        </p>
+        <p>To open and create a <b>brf</b> file for one input file (notice the brf output file is first in this command line): <br /></p>
+        <p MadCap:conditions="Primary.Windows_Version"><code>dbtw /brf:Michigan.brf Michigan.dxp</code>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><code>dbtw --brf:Michigan.brf Michigan.dxp</code>
+        </p>
+        <p>To open and create a <b>brf</b> file for one file (modifying the <b>page</b> dimensions): <br /></p>
+        <p MadCap:conditions="Primary.Windows_Version"><code>dbtw /brf:california.brf /Pagesize:25x38 california.dxp</code>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><code>dbtw --brf:california.brf --Pagesize:25x38 california.dxp</code>
+        </p>
+        <p>To open, import, and emboss <b>all the *.doc files</b> in the directory to a named embosser (Romeo): <br /></p>
+        <p MadCap:conditions="Primary.Windows_Version"><code>dbtw /braille:Romeo *.doc </code>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><code>dbtw --braille:Romeo *.doc</code>
+        </p>
+        <p>To open and emboss one file (span.doc) to a named embosser (Romeo) using a particular <b>Template</b>: <br /></p>
+        <p MadCap:conditions="Primary.Windows_Version"><code>dbtw /Template:"Espanol con Contracciones" /braille:Romeo span.doc</code>
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version"><code>dbtw --Template:"Espanol con Contracciones" --braille:Romeo span.doc</code>
+        </p>
+    </body>
+</html>

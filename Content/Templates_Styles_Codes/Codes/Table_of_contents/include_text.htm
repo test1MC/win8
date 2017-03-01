@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="767" MadCap:lastWidth="731">
+    <head><title>Include Text (in TOC)</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Text:Include;Include:Text" />Include Text (in TOC)</h4>
+        <p class="Normal"><span class="hcp1">What you need to know first:</span> You do not normally require to use this code where a Heading style has already been applied to text on your document.</p>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[rpsN]</span> and <span class="Code-DuxCode">[rpe]</span></p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal"><span class="hcp3">It marks text to be included in the Table of Contents. See also </span><a href="invisible_text.htm">Invisible Text</a>.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Wherever you wish text to be listed in the Table of Contents.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxCode">[rps2]</span><span class="Code-DuxScreen">1.</span><span class="Code-DuxScreen">Migraine - can cause dizziness</span><span class="Code-DuxCode">[rpe]</span></p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">#a4 ,migra9e -- c cause dizzi;s</p>
+        <p>And, when a Table of Contents is generated, this will contain:</p>
+        <p class="Simbraille">&#160;&#160;#a4 ,migra9e -- c cause dizzi;s</p>
+        <p class="bold">Let us Explain!</p>
+        <p class="Normal">The <span class="Code-DuxCode">[rps2]</span> and <span class="Code-DuxCode">[rpe]</span> codes have no effect on the braille where they are used. But, when a Table of Contents is generated, DBT copies the text between these codes into the generated Table of Contents. In our example, it is copied as a level-2 entry, so it is indented automatically where it appears in the Table of Contents</p>
+        <p class="bold">For the more technical:</p>
+        <p><span class="Code-DuxCode">[rpsN]</span> -- Marks the beginning of text to be included in the table of contents. <span class="Code-DuxCode">N</span> is the "level" of the text within the TOC hierarchy, defaulting to <span class="Code-DuxCode">0</span> (highest). Use <span class="Code-DuxCode">[vss]...[vse]</span> if the text is not also to appear at the current position within the document, i.e. it is to appear ONLY in the TOC, for example: <span class="Code-DuxCode">[rps2][vss]</span><span class="Code-DuxScreen">This heading appears only in the TOC</span><span class="Code-DuxCode">[vse][rpe]</span></p>
+        <p><span class="Code-DuxCode">[rpe]</span>Marks he end of the text to be included in the table of contents. (This is ignored when no <span class="Code-DuxCode">[rpsN]</span> comes before it.)</p>
+    </body>
+</html>

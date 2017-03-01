@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2912" MadCap:lastWidth="325" MadCap:ignoredWords="multi" MadCap:conditions="ActWizConditions.ActwizHelp">
+    <head>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" /><title>Diagnosing Activation Problems</title>
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Troubleshooting:Diagnosing Activation Problems" />Diagnosing Activation Problems<br /></h4>
+        <p>If your activation request failed or you are uncertain about the current state of your program, you can run these diagnostic tests to help figure out the source of a problem. It is not generally informative to run diagnostics unless you have at least tried to activate your software or you were previously activated, but it never hurts.</p>
+        <p>Activation is tied to your computer. Issues can occur that interfere with your activation. An example is a hardware change such as installing a new mother board or swapping out a failed disk. Other issues may be less obvious, but sharing the diagnostic results with Duxbury Customer Support can help you resolve them. You can use the <b>Send Email</b> button on the Diagnostics page as a convenient means of making contact.</p>
+        <h5>Top Section of the Diagnostics Screen - Installation Data</h5>
+        <p>The Top Section identifies what we are trying to test. </p>
+        <p><b>Product and Version:</b> identify the specific Duxbury program you are running.</p>
+        <p><b>Duxbury License Text:</b> displays the license that you entered at installation time or afterwards. It also shows what the wizard presumes about whether your license is registered.</p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>Activation Computer</b>: Normally this field shows the name you gave the computer when you activated your Duxbury program. This applies whether your computer is a single-user system activated independently or whether it is the network host for a multi-user license. If your computer is activated as a client of a network server, however, it shows you the name of that computer and possibly other information about that connection.</p>
+        <p MadCap:conditions="Primary.Mac_Version"><b>Activation Computer</b>: Normally this field shows the name you gave the computer when you activated your Duxbury program.</p>
+        <h5>Bottom Section of the Diagnostics Screen - Test Results</h5>
+        <p>This section shows the results of all the diagnostic tests, or as many as were run. If a test was not run, it is usually because it does not apply, and its result field displays <b>N/A</b>.</p>
+        <p><b>License Check:</b> shows whether the license supplied is a valid license for this Duxbury product.</p>
+        <p><b>Files Check:</b> looks for all your activation related files. When all the key files are present, you see the result OK.</p>
+        <p><b>Installation Check:</b> indicates whether the installer completed a critical step for activating your program. If you see Not installed you can try uninstalling and reinstalling your software. If it fails again, your installation process is not working.</p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>Shared Activation Connection:</b> This test only applies if your computer is activated from a network license server on your local area network (LAN). For that case, it shows the status of your activation connection. Problems with the Shared Activation Connection are best handled by your local IT staff. On the main page of the activation wizard, there is a function to Connect with the Shared Activation Computer. If yours is client computer and your connection has failed, you can run that function again.</p>
+        <p MadCap:conditions="Primary.Mac_Version"><b>Shared Activation Connection:</b> This feature does not apply to the Macintosh platform.</p>
+        <p><b>Computer Hardware Match:</b> checks that your product is running on the same computer hardware where you installed it. The most common results are: OK or Mismatch, but other technical messages may also appear. If you have replaced your hard disk or updated your BIOS without de-activating first, then this test will almost certainly fail. You can probably fix a Hardware Mismatch by unistalling your program, then reinstalling and re-activating. If the Hardware Mismatch persists, contact Duxbury to resolve the problem. </p>
+        <p MadCap:conditions="Primary.Windows_Version">When the Shared Activation Connection test above indicates a remote activation, the Hardware Match test is not run.</p>
+        <p><b>Activation Type:</b> What you want to see from this test is the word "Normal." There is also a code displayed that can in some cases be helpful to Duxbury technical support.</p>
+        <p><b>Activation State:</b> shows whether or not your program is activated, according to the following chart.</p>
+        <table style="width: 100%; margin-left: 0; margin-right: auto;">
+            <caption>Activation Status</caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>Displayed Value</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ACTIVATED</td>
+                    <td>OK. Your program should run normally.</td>
+                </tr>
+                <tr>
+                    <td>EXPIRED</td>
+                    <td>Your evaluation license has expired (DBT only).</td>
+                </tr>
+                <tr>
+                    <td>BAD</td>
+                    <td>Your activation has become internally corrupted.</td>
+                </tr>
+                <tr>
+                    <td>NOT ACTIVATED</td>
+                    <td>Your program is not yet (or no longer) activated.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="Primary.Windows_Version"><b>Users Allowed:</b> shows the number of users/computers that can simultaneously run on your Duxbury license.</p>
+        <p MadCap:conditions="Primary.Mac_Version"><b>Users Allowed:</b> On the Macintosh platform, all activations are for a single user.</p>
+        <p><b>Max Valid Version:</b> Normally this field displays your current program version, but it also indicates if your license qualifies for a newer version of the program than you are currently running. (In this case, use Check for Updates... from your Duxbury program top menu.) This field may also contain other data useful to Duxbury Support.</p>
+        <p><b>Features Match:</b> shows whether the Feature Set from your installation has remained intact. The results are either OK or Invalid Feature Set accordingly. This test applies to DBT but not to NimPro.</p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="938" MadCap:lastWidth="731">
+    <head><title>Tab - align to</title>
+        <meta name="Originator" content="ImportDoc" />
+        <meta name="OriginalFile" content="C:\Duxbury\A in progress\Align-right_single-word.doc" />
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Align:Tab;Tabs:Align to;Alignment:Tab - align to" />Tab - Align to</h4>
+        <p class="Normal">What you need to know first: <a href="Clearing_Tabs.htm">Clearing Tabs</a> and <a href="Setting_Tabs.htm">Setting Tabs</a></p>
+        <p class="Normal"><b>Code Used:</b> <span class="Code-DuxCode">[ctb]</span> and <span class="Code-DuxCode">[stb...]</span> and <span class="Code-DuxCode">[#S]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It positions the next group of characters to a specified Tab Stop in the braille document.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">To place characters in specific columns.</p>
+        <p class="CourierPara">Day &#160;&#160;&#160;&#160;&#160;&#160;Morning &#160;&#160;Afternoon<br />Monday &#160;&#160;&#160;Lessons<br />Tuesday &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lessons<br />Wednesday &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Free</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxCode">[ctb][stb1:l:10][stb2:l:20]</span><span class="Code-DuxScreen"><br />Day</span><span class="Code-DuxCode">[#1]</span><span class="Code-DuxScreen">Morning</span><span class="Code-DuxCode">[#2]</span><span class="Code-DuxScreen">Afternoon</span><span class="Code-DuxCode">[&lt;]</span><span class="Code-DuxScreen"><br />Monday</span><span class="Code-DuxCode">[#1]</span><span class="Code-DuxScreen">Lessons</span><span class="Code-DuxCode">[&lt;]</span><span class="Code-DuxScreen"><br />Tuesday</span><span class="Code-DuxCode">[#2]</span><span class="Code-DuxScreen">Lessons</span><span class="Code-DuxCode">[&lt;]</span><span class="Code-DuxScreen"><br />Wednesday</span><span class="Code-DuxCode">[#2]</span><span class="Code-DuxScreen">Free</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,"d &#160;&#160;&#160;&#160;&#160;,morn+ &#160;&#160;&#160;,afn<br />,mon"d &#160;&#160;,lessons<br />,tues"d &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,lessons<br />,w$nes"d &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,free</p>
+        <p class="bold">Let us explain!</p>
+        <p class="Normal">The <span class="Code-DuxCode">[ctb]</span> code clears any existing Tabs which you have set.</p>
+        <p><span class="Code-DuxCode">[stbS:A:P]</span> This sets Tabs where:</p>
+        <p><span class="Code-DuxCode">S</span> = The Tab Stop sequence number. e,g <span class="Code-DuxCode">1</span>, <span class="Code-DuxCode">2</span>, <span class="Code-DuxCode">3</span>, <span class="Code-DuxCode">4</span>.</p>
+        <p><span class="Code-DuxCode">A</span> = Tab Alignment where <span class="Code-DuxCode">l</span> = Left, <span class="Code-DuxCode">r</span> = Right and <span class="Code-DuxCode">d</span> = Decimal</p>
+        <p><span class="Code-DuxCode">P</span> = Position or Column number.</p>
+        <p>Therefore <span class="Code-DuxCode">[stb1:l:10]</span> means the <span class="Code-DuxCode">1</span>st Tab is left justified and at column <span class="Code-DuxCode">10</span>.</p>
+        <p>The <span class="Code-DuxCode">[#S]</span> code tells DBT which Tab position to align the text to, and so <span class="Code-DuxCode">[#1]</span> means tab to Stop position 1.</p>
+    </body>
+</html>

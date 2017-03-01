@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/SWIFT_Book_International.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  EmbedImages="true"
+  Medium="print"
+  MasterPage="/Content/Resources/MasterPages/Book_SWIFT_(Letter).flmsp"
+  PatchHeadingLevels="false"
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="include[Primary.SWIFT]"
+  MasterPageLayout="/Content/Resources/PageLayouts/SWIFT/SWIFT.flpgl"
+  UseEmptyAltText="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    DisableMasterPageUsage="true"
+    GeneratePDF="false" />
+  <Glossaries></Glossaries>
+  <PDF
+    Tagged="true" />
+  <DocumentProperties
+    Author="" />
+</CatapultTarget>

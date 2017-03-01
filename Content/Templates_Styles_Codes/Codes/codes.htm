@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="First Draft,Added To TOC,Links,Index keywords,Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="1496" MadCap:lastWidth="694">
+    <head><title>codes</title>
+        <link rel="StyleSheet" href="../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h1>Codes</h1>
+        <p>The first golden rule is that for most of your general literary work, you can define the layout of your braille document through DBT's menus. </p>
+        <p>The second golden rule with Codes is to try and avoid them wherever possible.</p>
+        <p>The third golden rule is to accept that this section is far from complete, but hopefully will point you in the right direction.</p>
+        <p>However, there are occasions when you need to do something really special.</p>
+        <p>Codes can be broadly categorized as translation codes and formatting codes. Formatting codes are supported in all DBT documents. Support for translation codes varies by translation table. See <a href="../../language_translation_tables/translation_tables.htm">Language Translation Tables</a> for documentation about translation tables and the formatting codes each supports.</p>
+        <p>This can be a rather technical section, so enter it with caution.</p>
+        <p><b>SPECIAL NOTE:</b> Codes used in these topics will be displayed in Courier New font, and appear red. ALL DBT codes are contained within square brackets. However, it should also be noted that Codes are inserted into your text in a special way, described in the <a href="Codes_Manually_Inserting.htm">Manually Inserting</a> and <a href="amending_codes.htm">Amending Codes</a> Topics.</p>
+        <h5>Layout</h5>
+        <p>The Codes in DBT basically affect the final layout of the braille document, the key word being "layout". Just as corporations and companies have their own corporate designs for their documents, so braille follows layout conventions recommended by the braille authority for individual countries. Similarly major braille producers may even have a "Corporate Style" which determines the way they lay out braille documents.</p>
+        <p>In the main, DBT will do an excellent job of formatting braille documents, but you should always try an follow any local recommendations.</p>
+        <h5>Codes - What do they do?</h5>
+        <p>All Word Processors use some form of Code, which may or may not be hidden to the user, to determine how something is displayed. An obvious example is where we want to make a word appear <b>bold</b>.</p>
+        <p>The following line shows what is actually "hidden" behind the word "bold" in the previous paragraph.</p>
+        <p class="CourierPara"><span class="Blue">&lt;span style="font-weight: bold&gt;</span>bold<span class="Blue">&lt;/span&gt;</span></p>
+        <p>DBT is no exception, except that its codes relate to how the Braille is formatted.</p>
+        <p>For example, if we were to write, <span class="Code-DuxScreen">"In English Braille the letter k is a Word-sign for knowledge."</span>, we would not want the word "knowledge" to be translated to "k".</p>
+        <p>We would therefore use the code <span class="Code-DuxCode">[g1]</span> to tell DBT NOT to translate the word, and <span class="Code-DuxCode">[g2]</span> to continue in Grade 2 Braille.</p>
+        <p class="CourierPara">In English Braille the letter k is a Word-sign for <span class="Code-DuxCode">[g1]</span>knowledge<span class="Code-DuxCode">[g2]</span><span class="Code-DuxScreen">.</span>"</p>
+        <h5>Code Basics.</h5>
+        <p>A code is a special character (or group of characters) in a document that will not appear in the final output. The EFFECTS of the codes WILL appear. Codes are added to your document whenever you use the Layout Menu to produce a translation or formatting effect.</p>
+        <p>In DBT, you can opt to see the codes by going to the View Menu and selecting Codes. (Or alternatively <span class="Keyboard">Alt + F3</span>)</p>
+        <p>Codes are surrounded by square brackets. For example, in a coded view, you might have:</p>
+        <p><span class="Code-DuxScreen">A</span><span class="Code-DuxCode">[SK1]</span><span class="Code-DuxScreen">B</span><span class="Code-DuxCode">[SK1]</span><span class="Code-DuxScreen">C</span></p>
+        <p>which would cause the output to appear as follows:</p>
+        <p class="CourierPara">A</p>
+        <p class="CourierPara">B</p>
+        <p class="CourierPara">C</p>
+        <p>Viewing codes can help track down formatting or translation errors. Without codes showing, your view is WYSIWYG and the effects of the codes are usually apparent. For further help with the syntax of the codes, see <a href="dollar_codes_quick_reference.htm">Help: Codes Quick Reference</a>.</p>
+        <h5>Viewing Codes in DBT</h5>
+        <p>To view Codes in DBT, hold down the <span class="Keyboard">Alt</span> key and press <span class="Keyboard">F3. </span>This is what is called a "Toggle" command, and therefore pressing <span class="Keyboard">Alt</span> + <span class="Keyboard">F3</span> again will turn Coded View off.</p>
+    </body>
+</html>

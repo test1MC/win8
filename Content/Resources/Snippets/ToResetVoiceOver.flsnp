@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="299" MadCap:lastWidth="624">
+    <body>
+        <h4 MadCap:conditions="Primary.Mac_Version">
+            <MadCap:keyword term="VoiceOver:Reset to Default" />To Reset VoiceOver to its Default Settings</h4>
+        <p MadCap:conditions="Primary.Mac_Version"><b>Note</b>: It is recommended you export your VO preferences before you reset them, to be able to use the export file as a backup of your preferences. If you are using a portable preferences drive on your computer, eject the drive before you reset preferences. Otherwise, the reset preferences will be sync'ed to the portable preferences drive. (For more information on exporting preferences and using portable preferences, refer to the VoiceOver help system by pressing VO+QuestionMark.)</p>
+        <p MadCap:conditions="Primary.Mac_Version">To Reset VO Preferences:</p>
+        <p MadCap:conditions="Primary.Mac_Version">1.	When VoiceOver is running, open the VoiceOver Utility by pressing VO+F8.</p>
+        <p MadCap:conditions="Primary.Mac_Version">2.	Go to the menu bar by pressing VO+M.</p>
+        <p MadCap:conditions="Primary.Mac_Version">3.	Choose File and then choose the reset command for the preferences you want to reset. You can choose to reset basic, custom (such as hot spots or Keyboard Commander key assignments), or all preferences.</p>
+    </body>
+</html>

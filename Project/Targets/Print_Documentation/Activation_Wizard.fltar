@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  PatchHeadingLevels="true"
+  EmbedImages="true"
+  conditions="Primary.Activation Wizard"
+  MasterToc="/Project/TOCs/Activation_Wizard_Help_TOC.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  ConditionTagExpression="include[&quot;Primary.Activation Wizard&quot; or &quot;Primary.Mac_Version&quot; or Primary.Windows_Version]"
+  MasterPage="/Content/Resources/MasterPages/Book_The_Menues.flmsp"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

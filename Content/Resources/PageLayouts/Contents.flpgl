@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="800" Height="800" Padding="20px" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="normal">
+        <Frame Flow="header" Height="0.3958333in" Anchors="" X="0px" Y="-0.8020833in" ColumnCount="1" Bottom="903px" Right="0px" Width="6.5in">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="Title" xhtml:style="font-size: 16pt;">Duxbury Braille Translator -  CONTENTS</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Height="0.25in" Anchors="Left,Right,Bottom" Bottom="-72px" Y="9.5in" BorderTopStyle="solid" BorderTopWidth="1pt" TextAlign="center" VerticalAlign="middle" X="1px" Width="6.489583in" Right="0px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>- <MadCap:variable xhtml:name="System.PageNumber" /> -</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" Anchors="" Right="0px" Bottom="-42px" X="0px" Y="-30px" Width="6.5in" Height="9.75in">
+        </Frame>
+    </Page>
+</PageStyles>

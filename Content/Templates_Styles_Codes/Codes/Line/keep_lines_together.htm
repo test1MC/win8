@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="1074" MadCap:lastWidth="763">
+    <head><title>Keep Lines Together</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Line:Keep together;Keep:Lines together;Paragraph:Keep Lines Together" />Keep Lines Together</h4>
+        <p class="Normal"><span class="hcp1">Also known as:</span> Keep lines together</p>
+        <p class="Normal">See Also: <a href="..\Text\keep_text_together_(1).htm">Keep Text Together</a></p>
+        <p><span class="hcp1">Code Used:</span> <span class="Code-DuxCode">[kps] [kpe]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">As far as possible, it prevents text running over two pages. </p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">If you were preparing a script for a radio presenter for example, the reader would not wish to find a new page in the middle of a sentence or even paragraph.</p>
+        <p class="Normal">Note that there is a practical limit here. Nothing can be done about paragraphs which are longer than one braille page. In such circumstances you should review the paragraph and decide where it can be split, ideally without being split in the middle of a sentence.</p>
+        <p class="Normal"><span class="hcp2"><b class="hcp3" style="font-weight: bold;"><span class="hcp2">U</span>sage in DBT:</b></span>
+        </p>
+        <p class="DBTCodePara"><b class="hcp3" style="font-weight: bold;"><span class="Code-DuxCode">[kps]</span><span class="Code-DuxScreen">These</span><span class="Code-DuxCode">[l]</span><span class="Code-DuxScreen">three small</span><span class="Code-DuxCode">[l]</span><span class="Code-DuxScreen">lines</span><span class="Code-DuxCode">[kpe]</span></b>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,^!</p>
+        <p class="Simbraille">?ree small </p>
+        <p class="Simbraille">l9es</p>
+        <p class="Normal"><b>Note:</b> These lines would specifically <b>NOT</b> be split over two pages.</p>
+        <p class="bold">Let us explain!</p>
+        <p>The <span class="Code-DuxCode">[kps]</span> begins the point at which DBT tries to keep the following text <span class="Normal" style="font-weight: normal;text-decoration: underline;">on the same page</span>. The <span class="Code-DuxCode">[kpe]</span> code basically ends the process.</p>
+        <p><b>Note:</b> These codes can be placed anywhere in the text. A line break is forced by each of these two codes.</p>
+    </body>
+</html>

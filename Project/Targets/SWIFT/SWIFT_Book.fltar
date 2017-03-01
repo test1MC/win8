@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/SWIFT_Book.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/SWIFT/SWIFT.flpgl"
+  EmbedImages="true"
+  Medium="print"
+  MasterPage="/Content/Resources/MasterPages/Book_SWIFT_(Letter).flmsp"
+  OutputFolder="C:\Users\George2.TVS.000\OneDrive\Duxbury_Help\DBT Help\Output\George2\SWIFT_Book"
+  PatchHeadingLevels="false"
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="include[Primary.SWIFT]">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    DisableMasterPageUsage="true"
+    GeneratePDF="false" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

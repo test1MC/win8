@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Installation and Setup (Simple)"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Title_Page_Installation+Setup_(Simple).htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Cover_Print.flpgl"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl"
+    MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+    PageNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/contents.htm"
+    BreakType="pageLayout"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageNumber="0"
+    PageLayout="/Content/Resources/PageLayouts/Contents.flpgl" />
+  <TocEntry
+    Title="Getting Help."
+    Link="/Content/getting_setup_in_DBT/new_users_start_here/GETTING_HELP.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Getting_Help.flpgl"
+    ComputeToc="false"
+    ReplaceMergeNode="false"></TocEntry>
+  <TocEntry
+    Title="Installation"
+    Link="/Content/getting_setup_in_DBT/Installation/Installation.htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl">
+    <TocEntry
+      Title="Installation Check List"
+      Link="/Content/getting_setup_in_DBT/Installation/Installation_check_list.htm"
+      BreakType="chapter"
+      StartSection="true"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation_Check_List.flpgl"
+      MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+      PageNumberReset="continue"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Simple Installation"
+      Link="/Content/getting_setup_in_DBT/Installation/Simple_Installation.htm"
+      BreakType="chapter"
+      StartSection="true"
+      PageNumberReset="continue"
+      ReplaceMergeNode="false"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl" />
+    <TocEntry
+      Title="Remove DBT"
+      Link="/Content/getting_setup_in_DBT/Remove_DBT.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Deactivate_and_Remove.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Registration and Activation"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    ReplaceMergeNode="false"
+    Link="/Content/Registration_and_Activation/registration_and_activation.htm"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Registration_and_Activation.flpgl">
+    <TocEntry
+      Title="Activate this Computer"
+      Link="/Content/Registration_and_Activation/activation_activate.htm"
+      StartSection="true"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Activation.flpgl"
+      ReplaceMergeNode="false"
+      PageNumberReset="continue"></TocEntry>
+    <TocEntry
+      Title="Registration..."
+      Link="/Content/Registration_and_Activation/activation_submit_registration.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Registration.flpgl" />
+    <TocEntry
+      Title="Diagnose activation problems"
+      Link="/Content/Registration_and_Activation/activation_diagnose.htm"
+      StartSection="false"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Diagnose.flpgl">
+      <TocEntry
+        Title="Common Activation Problems"
+        Link="/Content/Registration_and_Activation/activation_problems.htm"
+        StartSection="false"
+        BreakType="pageLayout"
+        PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Diagnose.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="De-activate this computer"
+      Link="/Content/Registration_and_Activation/activation_de-activation.htm"
+      StartSection="false"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Deactivation.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Global Menu"
+    Link="/Content/the_menus/MENU_GLOBAL/GLOBAL_MENU.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Global_Menu.flpgl" />
+  <TocEntry
+    Title="About DBT."
+    Link="/Content/the_menus/MENU_HELP/help_about_dbt.htm"
+    BreakType="none"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl" />
+  <TocEntry
+    Title="EULA"
+    Link="/Content/getting_setup_in_DBT/EULA.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/EULA.flpgl" />
+  <TocEntry
+    Title="Index"
+    Link="/Content/getting_setup_in_DBT/Installation/Index_TermsUsed.htm"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl"></TocEntry>
+  <TocEntry
+    Title="Back_Page_Installation+Setup"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Back_Page_Installation+Setup.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Back_Cover_Print.flpgl"
+    MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp" />
+</CatapultToc>

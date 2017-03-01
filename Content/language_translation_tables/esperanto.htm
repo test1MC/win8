@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="6837" MadCap:lastWidth="397" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Language Translation Tables" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="HtmlHelp" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="helpfile.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+        <link rel="stylesheet" type="text/css" /><title>Esperanto</title>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Esperanto" />ESPERANTO <img src="../Resources/Images/flags/united_nations.gif" alt="United Nations Flag" height="30" border="0" title="United Nations Flag" class="flag" /> <img src="../Resources/Images/flags/Esperanto.gif" style="width: 47px; height: 31px;" title="Esperanto Flag" alt="Esperanto Flag" class="flag" /></h4>
+        <h5>TABLE DESIGNATOR</h5>
+        <p class="DBTCodePara">epo</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TableDesignator.flsnp" />
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The Esperanto tables support print-to-braille translation of Esperanto-language literary text.</p>
+        <p>The special modified letters characteristic of Esperanto (c, g, h, j, and s with circumflex, and u with breve) may be entered directly as such, that being generally preferred and also usually straightforward when importing from Unicode-supporting sources such as Microsoft Word. The other systems commonly used for representing these characters are also supported, namely:</p>
+        <ul>
+            <li class="kadov-p">The h-system: h is entered after those modified letters that take a circumflex, and w is entered after u for u-breve. For example, ch represents c with circumflex, hh represents h with circumflex, and uw represent u with breve.</li>
+            <li class="kadov-p">The x-system: x is entered after any modified letter. For example, cx represents c with circumflex, and ux represents u with breve.</li>
+            <li class="kadov-p">The apostrophe-system: ' is entered after any modified letter. For example, c' represents c with circumflex, and u' represents u with breve.</li>
+            <li class="kadov-p">The caret-system: ^ is entered after any modified letter. For example, c^ represents c with circumflex, and u^ represents u with breve.</li>
+        </ul>
+        <p>"Variation" (<span class="Code-DuxCode">[vrn...]</span>) codes may be entered to restrict the acceptance of substitutes to one of the above systems, or to disallow substitutes altogether; see the section on supported translation codes below. This might be necessary, for example, if "ch" were to occur within Esperanto or technical text and for some reason mean just those letters, not c-circumflex.</p>
+        <p>Several languages other than Esperanto may also be processed as sub-languages, and transcribed in uncontracted braille (except for Maori, which has only one contraction).</p>
+        <p>Mathematics and computer notation are generally transcribed as for Unified English Braille (UEB).</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Braille_to_Print.flsnp" />
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>Normal braille-to-print translation is supported only within Esperanto literary text. In technical text, such as mathematics, the braille is translated to a "coded" form that is eventually designed to allow export to LaTeX or other means of displaying normal print mathematics -- but in the short run is readable only as codes.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>Several other languages may be entered and treated as "in Esperanto context," using the <span class="Code-DuxCode">[lng...]</span> code to switch. For instance, <span class="Code-DuxCode">[lng~fr]</span> (or <span class="Code-DuxCode">[lng~fra]</span>) would introduce a French passage, which would be terminated, i.e. reverting to Esperanto, at <span class="Code-DuxCode">[lng]</span> (or <span class="Code-DuxCode">[lng~eo]</span>). The available languages, together with their associated "<span class="Code-DuxCode">lng</span>" codes, are:</p>
+        <p class="CodeList">de (or deu) -- German</p>
+        <p class="CodeList">en (or eng) -- English</p>
+        <p class="CodeList">eo -- Esperanto</p>
+        <p class="CodeList">es (or esp) -- Spanish</p>
+        <p class="CodeList">fi -- Finnish</p>
+        <p class="CodeList">fr (or fra) -- French</p>
+        <p class="CodeList">it (or ita) -- Italian</p>
+        <p class="CodeList">la (or lat) -- Latin</p>
+        <p class="CodeList">mi (or mao) -- Maori</p>
+        <p class="CodeList">nl -- Dutch</p>
+        <p class="CodeList">pt -- Portuguese</p>
+        <p class="CodeList">sv -- Swedish</p>
+        <p class="CodeList">sw -- Swahili</p>
+        <p>In Maori text, one contraction ("wh") is normally used, and it will be used as long as grade two is in effect. The other languages are all transcribed in grade 1 regardless of the grade setting. That is, the <span class="Code-DuxCode">[g1]</span> and <span class="Code-DuxCode">[g2]</span> codes affect any Maori text, but not the other languages.</p>
+        <p>Note that in addition to the above-listed "secondary languages" supported within the Esperanto table itself, it is also possible to switch to any of the available translation tables listed in DBT. (See the <span class="Code-DuxCode">[lnb~...]</span> code below.)</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>Technical notation such as for mathematics, science and computer material are supported as for Unified English Braille (UEB). The method for entering mathematics and other technical notation is the same as for English/UEB and the technical codes supported in the English/American and English/British tables.</p>
+        <p>It is also possible to switch to any of the available translation tables listed in DBT (see the <span class="Code-DuxCode">[lnb~...]</span>code below), many of which do support various technical codes, such as for mathematics or computer notation, or which support “unified” treatment of technical notation as well as literary text in the base language associated with the table.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p>The following DBT translation codes are available when using the Esperanto table. Any other translation codes used will be ignored, or indeed may cause unexpected results. If using an alternative translation table, i.e when switching to another base language table by means of the<span class="Code-DuxCode">[lnb~...]</span> code, please refer to the relevant topic and available codes for that table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to <span class="Code-DuxCode">[g2]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[be]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bline]</span> -- ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cz]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[enclis]</span> -- ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~s]</span> (end of script typeform)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~s]</span> (start of script typeform)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span> -- switches to grade 1 as the "prevailing grade", but does not insert any grade 1 indicator.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span> -- resumes grade 2 as the "prevailing grade," but does not insert any indicator. (Grade 2 is the normal prevailing grade, but in this table it affects only Maori text.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ii]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to <span class="Code-DuxCode">[g1]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb~...]</span> (for switching to another base [primary] language table)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~...]</span> (see "Secondary Languages Supported," above)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[oe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[one]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ons]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[os]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[pe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ps]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[rmn]</span> -- ignored</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[tce]</span> -- allowed but not needed (ignored).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tcs]</span> -- allowed but not needed (ignored).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[te]</span> -- terminates the grade 1 passage initiated by <span class="Code-DuxCode">[ts]</span>, inserting the UEB grade 1 passage termination indicator (dots 56, 3), if the prevailing mode is grade 2, and resumes the prevailing grade as established by <span class="Code-DuxCode">[g1]</span> or <span class="Code-DuxCode">[g2]</span>.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tne]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[tns]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ts]</span> initiates "technical notation," i.e. a "grade 1 passage," inserting the UEB grade 1 passage indicator (dots 56, 56, 56) if the prevailing mode as established by <span class="Code-DuxCode">[g1]</span> or <span class="Code-DuxCode">[g2]</span> is grade 2, and establishes grade 1 translation.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tx]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[u]</span>
+        </p>
+        <p><span class="Code-DuxCode">[ucl0~"]</span> establishes that the ordinary keyboard double quote (U+0022) is to be interpreted flexibly, i.e. as an opening quote or a closing quote according to the immediate context. This is the default (initial) condition.</p>
+        <p><span class="Code-DuxCode">[ucl1~"]</span> establishes that the ordinary keyboard double quote (U+0022) is to be interpreted literally, i.e. as a nondirectional double quote, and translated as such as per UEB.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ui]</span>
+        </p>
+        <p><span class="Code-DuxCode">[uoq]</span> causes the prevailing quote marks to be "unset," which is the default (initial) condition. When the prevailing quote marks are unset, the first actual quote mark (of those listed above) next encountered in the file determines the prevailing quote mark for the rest of the file unless until a subsequent <span class="Code-DuxCode">[uoq...]</span> command is encountered.</p>
+        <p><span class="Code-DuxCode">[uoq~"]</span> or <span class="Code-DuxCode">[uoq~0022]</span> sets the prevailing (or "outer") opening and closing quote to the ordinary keyboard double-quote (<span class="Code-DuxScreen">"</span>), i.e. U+0022. (This command is incompatible with <span class="Code-DuxCode">[ucl1~"]</span>, which causes that kind of quote to be treated as nondirectional.)</p>
+        <p><span class="Code-DuxCode">[uoq~`]</span> or <span class="Code-DuxCode">[uoq~0060]</span> sets the prevailing opening and closing quote to the grave accent character (<span class="Code-DuxScreen">`</span>), i.e. U+0060.</p>
+        <p><span class="Code-DuxCode">[uoq~«]</span> or <span class="Code-DuxCode">[uoq~00ab]</span> sets the prevailing opening quote to the left-pointing double angle quotation mark (<span class="Code-DuxScreen">«</span>), i.e. U+00ab, and the prevailing closing quote to the corresponding right-pointing mark.</p>
+        <p><span class="Code-DuxCode">[uoq~»]</span> or <span class="Code-DuxCode">[uoq~00bb]</span> sets the prevailing opening quote to the right-pointing double angle quotation mark (<span class="Code-DuxScreen">»</span>), i.e. U+00bb, and the prevailing closing quote to the corresponding left-pointing mark.</p>
+        <p class="bold">Generally speaking, any need to use a<span class="Code-DuxCode"> [uoq...]</span> command would be very rare, as the default behavior should establish the actual quote pattern (e.g. single outer, double inner, or vice versa) automatically.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[us]</span>
+        </p>
+        <p><span class="Code-DuxCode">[vrn]</span> cancels the effect of <span class="Code-DuxCode">[vrn~h]</span>, <span class="Code-DuxCode">[vrn~x]</span>, or any of the other <span class="Code-DuxCode">[vrn~...]</span> codes, restoring the default acceptance of the h-, x-, apostrophe- or caret-systems as substitutes for the six modified letters of Esperanto.</p>
+        <p><span class="Code-DuxCode">[vrn~h]</span> establishes a mode wherein ONLY the h-system is accepted as a substitute for the six modified letters of Esperanto; i.e. the other substitute systems are not recognized.</p>
+        <p><span class="Code-DuxCode">[vrn~strict]</span> establishes a mode wherein none of the substitute-systems for the six modified letters of Esperanto are recognized; i.e. it is necessary to enter all such characters in their true modified forms.</p>
+        <p><span class="Code-DuxCode">[vrn~x]</span> establishes a mode wherein ONLY the x-system is accepted as a substitute for the six modified letters of Esperanto; i.e. the other substitute systems are not recognized.</p>
+        <p><span class="Code-DuxCode">[vrn~']</span> establishes a mode wherein ONLY the apostrophe-system is accepted as a substitute for the six modified letters of Esperanto; i.e. the other substitute systems are not recognized.</p>
+        <p><span class="Code-DuxCode">[vrn~^]</span> establishes a mode wherein ONLY the caret-system is accepted as a substitute for the six modified letters of Esperanto; i.e. the other substitute systems are not recognized.</p>
+        <p><span class="Code-DuxCode">[xcs]</span>
+        </p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p>All ASCII printable characters</p>
+        <p>Accented characters and punctuation marks typical of Esperanto, French, German, Italian, Spanish, and Portuguese</p>
+        <p>British pound, Japanese yen, Euro, and other miscellaneous signs (DUSCI pages D+ec..., D+ed..., D+ee..., D+f5...)</p>
+        <p>Mathematical signs, shapes, etc. (DUSCI pages D+df..., D+e2..., D+e5..., D+ef..., D+f0..., D+f1...)</p>
+        <p>The above is a general guide only (see "General Notes" section at the beginning of this document).</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>This table was adapted by Duxbury Systems in February 2008 from the then-current English/UEB table. We are grateful to Pedro Zurita and other Esperanto speakers for providing the required background information.</p>
+        <p>(Documentation reviewed: July 2010.)</p>
+    </body>
+</html>

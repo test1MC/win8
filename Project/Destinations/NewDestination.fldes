@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is George's default publishing destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="C:\Duxbury - Files for Uploading"
+  Port=""
+  ViewUrl=""
+  Type="file"></CatapultDestination>

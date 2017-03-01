@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="New" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="1567" MadCap:lastWidth="788">
+    <head><title>New Page</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="New:Page;Page:New" />New Page</h4>
+        <p class="Normal">(See also: all other Topics in this section plus <a href="..\Page_numbering\Numbering.htm">Page Numbering</a>)</p>
+        <h5>Code Used: <span class="Code-DuxCode">[pg]</span> or less commonly<span class="Code-DuxCode"> [top]</span></h5>
+        <p class="Keystroke">Keystroke: Shift + Enter</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It begins a new page unconditionally immediately at that point.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Anywhere you want to force a new page.</p>
+        <p class="bold">Usage in DBT: <span class="Code-DuxCode">[pg]</span> or <span class="Code-DuxCode">[pg][pg]</span> or <span class="Code-DuxCode">[top]</span> or <span class="Code-DuxCode">[top][pg]</span></p>
+        <p><span class="Code-DuxScreen">See next page for details.</span> <span class="Code-DuxCode" style="margin-top: 0pt;margin-bottom: 0pt;"><br />[pg]</span><span class="Code-DuxScreen" style="margin-top: 0pt;margin-bottom: 0pt;"><br />Details are as follows:</span></p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,see next page = details4</p>
+        <p class="PageBreak">------------ page break ------------</p>
+        <p class="Simbraille">,details &gt;e z foll[s3- &#160;&#160;&#160;&#160;&#160;#a &#160;&#160;</p>
+        <p class="bold">For the more technical:</p>
+        <p><span class="Code-DuxCode">[pg]</span>, which is inserted into a document when you push <b><span class="Code-DuxCode">[pg]</span></b>, is the more potent of the two codes. It always causes a page break. Thus, it can be used to produce blank pages (containing only running headers, running footers, and page numbers, if appropriate) by inserting the code twice or more in a row.</p>
+        <p>But the <b><span class="Code-DuxCode">[pg]</span></b>code is sometimes a bit too potent in context. In particular, when <b><span class="Code-DuxCode">[pg]</span></b>appears at a spot in the document that would be the top of a new page anyhow, it will cause a blank page that you might not intend. This is particularly likely if you insert the code within a print document, with the intent of ensuring a fresh page (but not a blank page) in the braille. It may be that the braille would be breaking to a new page at that spot regardless, in which case, adding <b><span class="Code-DuxCode">[pg]</span></b> will cause an unexpected blank page when the document is translated from print to braille.</p>
+        <p>This is why the <b><span class="Code-DuxCode">[top]</span></b> code is often preferred. <b><span class="Code-DuxCode">[top]</span></b> tells DBT to insert a page break <b>only</b> if there is text (other than running headers, running footers, and page numbers) already on the page. So using <b><span class="Code-DuxCode">[top]</span></b> is the safe way to ensure that there will be a page break, without an unintended blank page.</p>
+        <p>By extension, <b><span class="Code-DuxCode">[top]</span></b><b><span class="Code-DuxCode">[pg]</span></b> is the best way to create a blank page, and <b><span class="Code-DuxCode">[top]</span></b><b><span class="Code-DuxCode">[pg]</span></b><b><span class="Code-DuxCode">[pg]</span></b> is the best way to create two blank pages in a row. Using <b><span class="Code-DuxCode">[pg]</span></b><b><span class="Code-DuxCode">[pg]</span></b> (without <b><span class="Code-DuxCode">[top]</span></b> first) to produce a blank page would usually leave one blank page, but sometimes leave two blank pages. Starting a sequence of <b><span class="Code-DuxCode">[pg]</span></b> codes with <b><span class="Code-DuxCode">[top]</span></b> makes the behavior more predictable.</p>
+    </body>
+</html>

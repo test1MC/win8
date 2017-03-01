@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="EPUB"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  ConditionTagExpression="include[Primary.Print_Only or Primary.The_Menus or Primary.Windows_Version]exclude[Primary.Braille_Only or Primary.Installation or &quot;Primary.Mac_Version&quot; or Primary.Not_in_Print_Docs or Primary.Perky_Only or Primary.Printed_Introduction]">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Glossaries></Glossaries>
+  <DocumentProperties
+    Author="George Bell"
+    Publisher="Duxbury Systems"
+    Subject="E-Book test of the menus"
+    Relation="dbt 11.3" />
+  <Validation
+    EnableEpubCheck="false" />
+</CatapultTarget>

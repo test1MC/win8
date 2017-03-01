@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Set_Page_Number" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="805" MadCap:lastWidth="731">
+    <head><title>Set Page Number</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Page:Set Number;Numbering:Set Page Number;Set:Page Number" />Set Page Number</h4>
+        <p class="Normal">(See also: <a href="Codes_Set_Page_Number.htm">Set Page Number on New Page</a>)</p>
+        <p class="Normal"><b>Code Used:</b> <span class="Code-DuxCode">[pvN]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">If used at the very beginning of a document, it will begin with the selected number.</p>
+        <p class="Normal">Otherwise it will sets the number for the next page.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">This Code does NOT force a page break, but will set the page number for the next page which follows.</p>
+        <p class="bold">Usage in Duxbury:</p>
+        <p><span class="Code-DuxCode">[pv1][pntr][es~para.]</span> <span class="Code-DuxScreen">The appendices which follow may be useful.</span><span class="Code-DuxCode">[ee~para.]</span></p>
+        <p><span class="Code-DuxCode">[pg][es~h1.]</span> <span class="Code-DuxScreen">Appendix 1.</span><span class="Code-DuxCode">[ee~h1.]</span></p>
+        <p><span class="Code-DuxCode">[p]</span><span class="Code-DuxScreen">List of Items</span><span class="Code-DuxCode">[&gt;]</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">&#160;&#160;,! app5dices : foll[ may 2</p>
+        <p class="Simbraille">use;l4</p>
+        <p class="PageBreak">------------ Page break ------------</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,app5dix #a4 &#160;&#160;&#160;&#160;&#160;&#160;;i</p>
+        <p class="Simbraille">&#160;&#160;,li/ ( ,items4</p>
+        <p class="bold">Let us explain!</p>
+        <p><span class="Code-DuxCode">[pv1]</span> says "number the next page 1". <span class="Code-DuxCode">[pntr]</span> says "make this page number a Roman number". <span class="Code-DuxCode">[es~para.]</span> and <span class="Code-DuxCode">[ee~para.]</span> start and end the paragraph. <span class="Code-DuxCode">[pg]</span> for a new page. <span class="Code-DuxCode">[es~h1.]</span> and <span class="Code-DuxCode">[ee~h1]</span> begin and end a level 1 Heading. <span class="Code-DuxCode">[p]</span> starts a new paragraph.</p>
+    </body>
+</html>

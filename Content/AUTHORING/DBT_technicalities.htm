@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1091" MadCap:lastWidth="298">
+    <head>
+    </head>
+    <body>
+        <h1>Duxbury Technicalities</h1>
+        <p>First of all, the use of spaces in the middle of file names is <b>very strongly deprecated</b>. There are build-related scripts that collect lists of files and submit them for processing. A space in the middle of a file name can break the processing.</p>
+        <p>A few folders and files in the Flare project are constrained to retain an exact, specific name, or exact place in the folder hierarchy, unless companion changes are made in application code or in the autobuild process. Those constraints are listed here.</p>
+        <h2 class="NoNewPage">Folder: activation_wizard_help</h2>
+        <p>First, to keep the context-sensitive Help working in the activation wizard (i.e., direct page access from each wizard page to its Help topic), all the wizard help files must remain in the “activation_wizard_help” folder, and this folder must remain directly under the “Contents” folder. </p>
+        <p>Second, we cannot change this folder name or the names of the help file topics without changing the activation wizard code.</p>
+        <h2 class="NoNewPage">Skin File for DBTHelp: “DuxburyMainChm”</h2>
+        <p> The program code in DBT/Winthat opens DBTHelp (helpfile.chm) also checks that the name of the window it opens matches a name that it has internally hard-coded: "DuxburyMainChm".</p>
+        <p>The Flare file that supplies that window name is a skin file named "DuxburyMainChm.flskn." This file name must not be changed, nor a different skin file chosen for the DBTHelp target(s), or DBTwill throw a spurious "not found" error when it opens the Help file.</p>
+        <p>If we change the skin name, we have to change the name in the code, and vice versa.</p>
+    </body>
+</html>

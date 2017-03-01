@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2047" MadCap:lastWidth="646" xml:lang="en-gb">
+    <head><title>Language Switching</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Language:Switching;Switching:Language" />Language Switching</h1>
+        <p class="center"><b>Those who are experienced DBT users with foreign languages should read this Topic very carefully.</b>
+        </p>
+        <p class="bold"><b>Those who are not experienced language users should at least study the Introduction.</b>
+        </p>
+        <h2>Introduction:</h2>
+        <p>It is extremely important to appreciate that there are two distinctly different ways of transcribing foreign language text into braille within the same document.</p>
+        <h6>Method 1:</h6>
+        <p>Many existing users will be familiar with applying DBT "Styles" to foreign language text. This applies braille translation rules as laid down by the braille authority for the main document language.</p>
+        <h6>Method 2:</h6>
+        <p>Apply braille translation rules as laid down by the braille authority of the language you wish produced.</p>
+        <h6>Example:</h6>
+        <p>In the following simple example, the word "Caf<b>é</b>" is translated three different ways. First by simply using the word in English/American text. Second by applying DBT's "french" Style to the word, and third by switching to French/Unified as it would appear in a French document.</p>
+        <p class="center">
+            <img src="../Resources/Images/the_menus/menu_document/menu_document_french_example.jpg" alt="Image shows exampole of the word &quot;Cafe&quot; using English, French Style and Frech Language braille tables." />
+        </p>
+        <p>Note that in the first instance, dot 6 indicates an upper case letter c, while the e acute is shown by the dot 4 accent sign followed by the letter e.</p>
+        <p>In the second, the e acute is now shown purely as all six dots.</p>
+        <p>And in the third, instead of dot 6, the French capital sign, dots 46, is used, while the e acute remains as all six dots.</p>
+        <h5>Which should I use?</h5>
+        <p>This very much depends on what your local rules are and/or who the document is for. Clearly if you were writing in French to someone say in France or Canada who reads fluent French Unified braille, they would appreciate proper French.</p>
+        <h2>Now for the Technical Part.</h2>
+        <p><span class="Code-DuxCode">[lnb~X]</span> -- switches the base translation table from the current table to the one corresponding to the designator <span class="Code-DuxCode">X</span> as given in the list below. The initial base translation table is determined by the selection under Document / Translation Table, which normally is implicit in the template chosen when the file was originally created. </p>
+        <p>When an <span class="Code-DuxCode">[lnb~X]</span> code is encountered within a file, the effect is to change the table that controls translation until another <span class="Code-DuxCode">[lnb~X]</span> or plain <span class="Code-DuxCode">[lnb]</span> code is encountered, or if there is no such code, until the end of the file. </p>
+        <p>A plain <span class="Code-DuxCode">[lnb]</span> code causes a switch back to the translation table that was in effect just prior to the most recent <span class="Code-DuxCode">[lnb~X]</span> that has not already been terminated by a balancing <span class="Code-DuxCode">[lnb]</span>. In other words, the pair <span class="Code-DuxCode">[lnb~X]</span> ... <span class="Code-DuxCode">[lnb]</span> can be used to enclose text that is to be processed using table <span class="Code-DuxCode">X</span> within a larger body of text that is otherwise processed by some other table, and such pairs can be "nested".</p>
+        <p>As an example, suppose we have a file that was created using the Spanish template and the Document / Translation table menu selection remains "Spanish," and that the file contains the following sequence of text and codes:</p>
+        <p><span class="Code-DuxScreen">... text a ... </span><span class="Code-DuxCode">[lnb~eng-xueb]</span><span class="Code-DuxScreen"> ... text b ... </span><span class="Code-DuxCode">[lnb~qip]</span><span class="Code-DuxScreen"> ... text c ...</span> <span class="Code-DuxCode">lnb]</span><span class="Code-DuxScreen"> ... text d ... </span><span class="Code-DuxCode">[lnb]</span><span class="Code-DuxScreen"> ... text e</span></p>
+        <p>then we would expect text segments a and e to be processed using the Spanish table, segments b and d to be processed using the English (Unified) (UEB) table, and segment c to be processed using the International Phonetic Alphabet (IPA) table.</p>
+        <p>When any table switch occurs, whether by <span class="Code-DuxCode">[lnb~X]</span> or <span class="Code-DuxCode">[lnb]</span>, the effects of any persistent translation codes, such as grade switches or "technical notation" declarations, are terminated. The default states for the table that takes control after the <span class="Code-DuxCode">[lnb~X]</span> or <span class="Code-DuxCode">[lnb]</span> are put into effect, even if those states were altered when that same table was in control for some earlier segment in the same file.</p>
+        <p>Note that some of the default states for the initial translation table may have been altered by the "initial" style, and that the "initial" style is implicitly invoked only at the very beginning of the entire file. For this and other reasons, it is usually advisable to use <span class="Code-DuxCode">[lnb~X]</span><span class="Code-DuxScreen"> ... </span><span class="Code-DuxCode">[lnb]</span> within suitably constructed styles rather than as direct codes.</p>
+        <p>Finally, it is important not to confuse <span class="Code-DuxCode">[lnb~...]</span> with <span class="Code-DuxCode">[lng~...]</span>. The latter is for switching to "secondary languages" that are supported within the same base translation table. A base translation table typically reflects translation rules as defined by a particular national or regional authority. For example, the English (American) tables reflect the rules defined by the Braille Authority of North America (BANA). BANA has defined rules for putting French text into braille that make sense for English-speaking American students of French, but those rules are very different from the braille rules that are customary in France itself. If you have French text that you want processed according to BANA, then you want one of the English (American) tables to be in control and would use <span class="Code-DuxCode">[lng~fra]</span> to select French as a "secondary" language. If on the other hand you have French text that you want put into braille according to French customs, then of course you want the French table to be in control.</p>
+        <p>The table designator codes, alphabetically by code, are listed below. Note that the first three letters correspond to the ISO 639-3 language code, where appropriate. In some cases, a hyphen and additional letter(s) serve to distinguish tables for different codes serving the same language, or historical codes that remain temporarily available for compatibility purposes:</p>
+        <p>For a full list of languages in alphabetical order, complete with Table Designators, <a href="translation_tables.htm#Languages" title="List of languages" alt="List of languages">please click here.</a></p>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/The_Win_Menus.fltoc"
+  ExcludeUnreferencedContent="true"
+  MoveOutputContentToRoot="true"
+  InsertMOTW="false"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="jpg">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

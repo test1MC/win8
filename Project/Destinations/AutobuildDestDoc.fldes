@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="Publishing destination for all chm files"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\SuperServer\Inbox\doc"
+  Port=""
+  ViewUrl=""
+  Type="file"></CatapultDestination>

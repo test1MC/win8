@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Link="/Content/welcome_to_DBT/welcome_to_perky.htm"
+    Title="1: Welcome to Perky Duck">
+    <TocEntry
+      Link="/Content/getting_setup_in_DBT/new_users_start_here/SCREEN_READER_NAVIGATION.htm"
+      Title="Navigating Help" />
+    <TocEntry
+      Title="HELP Conventions."
+      Link="/Content/getting_setup_in_DBT/new_users_start_here/HELP_Conventions.htm" />
+    <TocEntry
+      Link="/Content/PERKY/JAWS_Scripts.htm"
+      Title="JAWS Scripts"
+      ReplaceMergeNode="false"
+      conditions="Primary.Windows_Version" />
+    <TocEntry
+      Link="/Content/PERKY/welcome_to_DBT/About_Braille_(Brief).htm"
+      Title="About Braille (Brief)" />
+    <TocEntry
+      Link="/Content/welcome_to_DBT/The_Purpose_of_Perky.htm"
+      Title="The Purpose of Perky Duck" />
+    <TocEntry
+      Link="/Content/getting_setup_in_DBT/new_users_start_here/getting_help_perky.htm"
+      Title="Getting Help" />
+    <TocEntry
+      Link="/Content/PERKY/welcome_to_DBT/keyboard_shortcuts.htm"
+      Title="Keyboard Shortcuts" />
+  </TocEntry>
+  <TocEntry
+    Link="/Content/welcome_to_DBT/welcome_to_perky.htm"
+    Title="2: Getting Started in Perky Duck">
+    <TocEntry
+      Link="/Content/PERKY/EULA.htm"
+      Title="EULA" />
+    <TocEntry
+      Title="Installation"
+      Link="/Content/getting_setup_in_DBT/Installation/installation_perky.htm" />
+    <TocEntry
+      Link="/Content/PERKY/the_menus/MENU_GLOBAL/global_embosser_setup.htm"
+      Title="Embosser Setup">
+      <TocEntry
+        Link="/Content/PERKY/getting_setup_in_DBT/new_users_start_here/Setting_Up_Your_Embosser.htm"
+        Title="Embosser Setup" />
+      <TocEntry
+        Link="/Content/PERKY/the_menus/MENU_GLOBAL/Global_Embosser_setup_general.htm"
+        Title="General" />
+      <TocEntry
+        Link="/Content/PERKY/the_menus/MENU_GLOBAL/Global_Embosser_setup_settings.htm"
+        Title="Device Settings" />
+      <TocEntry
+        Link="/Content/PERKY/the_menus/MENU_GLOBAL/Global_Embosser_setup_advanced.htm"
+        Title="Advanced" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/PERKY/the_menus/MENU_GLOBAL/global_autosave_options.htm"
+      Title="Autosave Setup" />
+    <TocEntry
+      Link="/Content/PERKY/getting_setup_in_DBT/new_users_start_here/Setting_Up_Your_Printer.htm"
+      Title="Printer Setup">
+      <TocEntry
+<<<<<<< HEAD
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Printer_Setup.htm"
+        Title="Printer Setup" />
+      <TocEntry
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Default_Views.htm"
+        Title="Default Views" />
+      <TocEntry
+=======
+>>>>>>> 14f4041bb15eac820ff6ccc1bd98ae2fedb49766
+        Title="Fonts..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Fonts.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="3: The Menus"
+    Link="/Content/the_menus/the_menus.htm"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="FILE: (Menu)."
+      Link="/Content/the_menus/MENU_FILE/file_(Menu).htm">
+      <TocEntry
+        Title="File: New..."
+        Link="/Content/the_menus/MENU_FILE/file_new_perky.htm" />
+      <TocEntry
+        Title="File: Open..."
+        Link="/Content/the_menus/MENU_FILE/file_open.htm" />
+      <TocEntry
+        Title="File: Close."
+        Link="/Content/the_menus/MENU_FILE/file_close.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="EDIT: (Menu)"
+      Link="/Content/the_menus/menu_edit/EDIT_(Menu)_perky.htm">
+      <TocEntry
+        Title="Edit: Undo"
+        Link="/Content/the_menus/menu_edit/Edit_Undo.htm" />
+      <TocEntry
+        Title="Edit: Redo"
+        Link="/Content/the_menus/menu_edit/Edit_Redo.htm" />
+      <TocEntry
+        Title="Edit: Cut."
+        Link="/Content/the_menus/menu_edit/Edit_Cut.htm" />
+      <TocEntry
+        Title="Edit: Copy."
+        Link="/Content/the_menus/menu_edit/Edit_Copy.htm" />
+      <TocEntry
+        Title="Edit: Paste."
+        Link="/Content/the_menus/menu_edit/Edit_Paste.htm" />
+      <TocEntry
+        Title="Edit: Clear."
+        Link="/Content/the_menus/menu_edit/Edit_Clear.htm" />
+      <TocEntry
+        Title="Edit: Select All."
+        Link="/Content/the_menus/menu_edit/Edit_Select_All.htm" />
+      <TocEntry
+        Title="Edit: Highlight"
+        Link="/Content/the_menus/menu_edit/Edit_Highlight.htm" />
+      <TocEntry
+        Title="Edit: Goto..."
+        Link="/Content/the_menus/menu_edit/Edit_Goto.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="VIEW: (Menu)"
+      Link="/Content/the_menus/MENU_VIEW/VIEW_(Menu).htm">
+      <TocEntry
+        Title="View: Full-Page."
+        Link="/Content/the_menus/MENU_VIEW/view_full_page.htm" />
+      <TocEntry
+        Title="View: Print Font."
+        Link="/Content/the_menus/MENU_VIEW/View_Print_Font.htm" />
+      <TocEntry
+        Title="View: Braille Font."
+        Link="/Content/the_menus/MENU_VIEW/view_braille_font.htm" />
+      <TocEntry
+        Title="View: SimBraille Font."
+        Link="/Content/the_menus/MENU_VIEW/View_SimBraille_Font.htm"></TocEntry>
+      <TocEntry
+        Title="View: Active Document."
+        Link="/Content/the_menus/MENU_VIEW/View_Active_Document.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="DOCUMENT: (Menu)"
+      Link="/Content/the_menus/menu_document/document_menu.htm">
+      <TocEntry
+        Title="Document: Embosser Setup..."
+        Link="/Content/the_menus/menu_document/document_embosser_setup.htm" />
+      <TocEntry
+        Title="Document and Global: Printer Setup..."
+        Link="/Content/the_menus/menu_document/document_printer_setup.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="GLOBAL: (Menu)"
+      Link="/Content/the_menus/MENU_GLOBAL/GLOBAL_MENU.htm">
+      <TocEntry
+        Title="Document and Global: Printer Setup..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Printer_Setup.htm" />
+      <TocEntry
+        Title="Global: Autosave Options"
+        Link="/Content/the_menus/MENU_GLOBAL/global_autosave_options.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="HELP: (Menu)"
+      Link="/Content/the_menus/MENU_HELP/Help_Menu.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="4: Embossers and Embossing"
+    Link="/Content/embossers_and_embossing/embossers.htm">
+    <TocEntry
+      Title="USB and Embossers"
+      Link="/Content/embossers_and_embossing/usb_and_embossers.htm" />
+    <TocEntry
+      Title="Embosser Character Table"
+      Link="/Content/embossers_and_embossing/codes_embosser_character_table.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="5: Troubleshooting"
+    Link="/Content/troubleshooting/Troubleshooting.htm">
+    <TocEntry
+      Title="menu_global_cursor_locator"
+      Link="/Content/PERKY/the_menus/menu_global/menu_global_cursor_locator.jpg" />
+    <TocEntry
+      Title="Why can I not see the shortcut letters?"
+      Link="/Content/troubleshooting/seeing_the_shortcut_letters.htm" />
+  </TocEntry>
+</CatapultToc>

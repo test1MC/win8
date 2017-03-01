@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="16312" MadCap:lastWidth="508" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Calendar - Example of use of some Codes</h1>
+        <p>The initial idea was to produce a fairly simple braille pocket or purse sized calendar – not an easy task when you consider that braille is equivalent in size to 26 point type.</p>
+        <p>Since its introduction, we’ve had many complements, some of the most heart-warming being from teachers who have used it to show students how they can keep track of dates like everyone else.</p>
+        <p>Others have used it as a braille promotional give-away, but adding their name to the running footer, and even adding extra pages giving contact details and such like.</p>
+        <h2>Physical Structure</h2>
+        <p>What you see here was designed for 12 inch deep by 9.5 inch wide braille paper. The reason for this was simply that the structure of a normal calendar could in certain years include five or even six weeks in a given month. Hence each month would fit neatly into a four inch deep form, and of course a 12 inch deep page.</p>
+        <p>As we will show here, you can work around this if you are unable to obtain this size.</p>
+        <h2>A lesson in Duxbury Codes</h2>
+        <p>We did not start out for this to be a lesson in using the more advanced features of DBT, but it rather evolved that way as people wanted to make changes.</p>
+        <h2>Save your work regularly!</h2>
+        <p>We cannot stress enough the need to save your work at regular stages. The exercise here is not necessarily a short job, and while the “Global: Autosave Options…” feature may help, it is best to do a “Save As” (F3) and save at various stages. When you “Save as”, we suggest you provide a new name each time you save. For example “2017 calendar (stage 1)”, “2017 calendar (stage 2)”, “2017 calendar (stage 3)”, etc. If you need to, you can then go back to a working version.</p>
+        <h2>The Initial Layout</h2>
+        <p>This will be produced in uncontracted (Grade 1) braille, and without capitals, largely because a) we want it to be readable by any braille user, and b) we need to save space.</p>
+        <p>We will also be working mostly in Duxbury’s Coded View which can be toggled on and off by holding down the left Alt key and tapping the F3 key.</p>
+        <h2>Start a new Print document</h2>
+        <p>Initially we suggest that you ensure the document is set up for 9 lines and 31 cells. Narrow Width, 12 inch long paper is ideal, but we will try and discuss other sizes when we’ve completed the main work. Set this up in Document: Embosser Setup.</p>
+        <h3>Begin</h3>
+        <p>We start with what will essentially become 8 columns. These are for the seven days of the week, plus a week number.</p>
+        <p class="p_1">mon tue wed thu fri sat sun wk</p>
+        <p>You may type the above in to your Duxbury file and continue.</p>
+        <p>Save As (F3) and give the file a name, eg. “Calendar 2017.dxp”, but please bear in mind our earlier suggestion to save with a slightly different name as you proceed to develop this.</p>
+        <h3>Setting Tabs</h3>
+        <p>This is an exercise we only need to do once at the beginning of the document.</p>
+        <p>Put your cursor at the start of the line you have just typed above, and press the Enter key, which will create a blank line above. Move your cursor up into the blank line and ensure that it is at the beginning of the line by pressing the Home key. </p>
+        <p>Press the Ctrl key and left square bracket [ or press F9. A dialog should appear as follows which will allow you to enter a code to set the first tab – in this case “<span style="font-family: 'Courier New';">stb1:r:3</span>” (without the quotes of course)</p>
+        <p class="p_2" style="text-align: center;">
+            <img src="../../../Resources/Images/Duxbury_Braille_Calendar/cal_set_tabs.png" style="height: 159px;width: 496px;" class="img_1" title="image of DBT's Code entry dialog." alt="image of DBT's Code entry dialog." />
+        </p>
+        <p>What this effectively says is, “Set tab number 1, right justified, at column 3”.</p>
+        <p>If the column number seems a little odd, bear in mind that with “right justified” tabs, the text is forced to the extreme right consequently keeping units of numbers aligned immediately above each other in braille. For example:</p>
+        <p class="CourierPara"><span class="span_1">Mon</span><span class="span_1"><br />1</span><span class="span_1"><br />8</span><span class="span_1"><br />15</span>
+        </p>
+        <p>Now press Enter or click the OK button.</p>
+        <p>Provided you have Codes turned on (Alt + F3) you should see the following appear – note that it is in square brackets.:</p>
+        <p class="CourierPara">[stb1:r:3]</p>
+        <p>You now have to repeat the above, but entering slightly different parameters.</p>
+        <p>Make sure your cursor is at the end of the line, Ctrl + [, or F9, and enter “<span style="font-family: 'Courier New';">stb2:r:7</span>”.</p>
+        <p>Repeat this until you have 8 numbered tabs, increasing by four each time. Your line should end up appearing pretty much as shown here. Do not add any hard returns to break this line up.</p>
+        <p><span class="Code-DuxScreen">[stb1:r:3][stb2:r:7][stb3:r:11][stb4:r:15][stb5:r:19][stb6:r:23]</span><span class="Code-DuxScreen">[stb7:r:27][stb8:r:31]</span>
+        </p>
+        <h4>Mistakes</h4>
+        <p>If you spot an error in a code you have just created, place the cursor before the first (left) square bracket, hold down the shift key, and press right arrow. This will highlight the Code. Press Ctrl + [ or F9 and you will be able to make the corrections required.</p>
+        <h4>Additional notes</h4>
+        <p>We have used “right justified” tabs to line up numbers as they would appear in print. Braille readers tell us this makes it easier to scan down columns where there are units and tens.</p>
+        <h3>Applying Tabs</h3>
+        <p>Now we get to what can be the tedious bit, but we’ll also try to include some of our own tips and short cuts.</p>
+        <p>In Coded view, go to the beginning of the line containing the days of the week.</p>
+        <p>Insert the Code (Ctrl + [) or F9, #1 immediately in front of “mon”, #2 in front of “tue”, #3 in front of “wed”, etc., ending with #8 in front of “wk”. Your line will now appear as follows:</p>
+        <p><span class="span_1">[#1]</span><span class="span_1">mon</span><span class="span_1">[#2]</span><span class="span_1">tue</span><span class="span_1">[#3]</span><span class="span_1">wed</span><span class="span_1">[#4]</span><span class="span_1">thu</span><span class="span_1">[#5]</span><span class="span_1">fri</span><span class="span_1">[#6]</span><span class="span_1">sat</span><span class="span_1">[#7]</span><span class="span_1">sun</span><span class="span_1">[#8]</span><span class="span_1">wk</span>
+        </p>
+        <p>What these codes do, is act as tabs which say which cell to move the following text to. For example [#7] says to move to the seventh tab we set up, cell 27 <span class="span_1">[stb7:r:27]</span>. And as we mentioned, the “r” in this code indicates that we wish the contents of the cell to be aligned to the right.</p>
+        <h4>Progress View</h4>
+        <p>All being well, if you come out of Coded View (Alt + F3) you won’t really see much other than the days of the week, but may spot that there are two spaces before “wk”, because it has been right justified.</p>
+        <h3>Add the first row of numbers</h3>
+        <p>To avoid having the go in and out of the Insert Code dialog, we are now simply going to copy and paste, then amend our day row.</p>
+        <p>In coded view, place your cursor at the beginning of that line before [#1]mon. Hold down the Shift key, and press the End key. The line should now be highlighted. Press Ctrl + c to copy the highlighted line.</p>
+        <p>With your cursor at the end of the day line, immediately after “wk” press Enter to create a new line. You will also see that a new code has appeared at the end of the line [&lt;] which is the code to indicate that we do want a new line at this point.</p>
+        <p>Move to the new (blank) line, hold down Ctrl and press the letter v. This should effectively paste the copied line above.</p>
+        <p>We can now change the days to numbers, and as we are starting here in January 2014, week 1, the line should now look like this. Note that we have used two keyboard dashes where there is no number to be shown.</p>
+        <p class="p_1">[#1]--[#2]--[#3]--[#4]--[#5]--[#6]--[#7]1[#8]53</p>
+        <h4>Progress view</h4>
+        <p>It’s worth taking a look at what you’ve done so far. Toggle Code off (Alt + F3) and all being well, you will see this:</p>
+        <p class="p_1">Mon tue wed thu fri sat sun wk</p>
+        <p><span class="span_1">--</span><span class="span_1"> --</span><span class="span_1"> --</span><span class="span_1"> --</span>&#160;<span class="span_1">--</span><span class="span_1"> -- </span><span class="span_1">1</span><span class="span_1"> 53</span></p>
+        <p>If you are happy with what you see, repeat the line copying and amending process until you have completed January 2017.</p>
+        <h2>Save</h2>
+        <p>Does it look right? If so, Save As (F3)</p>
+        <h2>Add the month (As a running Header)</h2>
+        <p>As we will soon be copying complete months, we need to add the month name. We put this immediately before the days of the week.</p>
+        <p>Position your cursor at the beginning of the line which begins “[#1]mon[#2]tue…”</p>
+        <p>You can now add what will become a running page Header showing the Month on one of two ways.</p>
+        <ol start="1">
+            <li class="Normal">From the Layout menu, select Header and the following dialog will appear. Simply type “January 2017” (without the quotes) into the “Header Text…” field and press Enter or click the OK button.<br /><img src="../../../Resources/Images/Duxbury_Braille_Calendar/cal_header.png" style="height: 259px;width: 416px;mc-float: center;clear: both;" class="img_1" title="image of DBT's Header dialogue." alt="image of DBT's Header dialogue." /></li>
+            <li class="Normal">Of you prefer, you can enter the code hds (<span class="Keyboard">Ctrl ]</span>) type “january 2017” and enter the Code hde.</li>
+        </ol>
+        <p>Whichever way you do it, you line should now see</p>
+        <p class="CourierPara"><span class="Code-DuxScreen">[hds]</span>january 2017<span class="Code-DuxScreen">[hde]</span> or <span class="Code-DuxScreen">[tls]</span>january 2017<span class="Code-DuxScreen">[tle]</span></p>
+        <h2>Add a Page Break</h2>
+        <p>Since we wish to have each month on a new page, we need to ensure there is a page break between months. If you are not using 12 inch deep paper, you may wish to alter where page breaks are placed.</p>
+        <p>You go to the very end - immediately after the last week of January, and press Ctrl + Enter. Or, you can manually add the Code pg and will then see [pg] appear.</p>
+        <h4>Progress view</h4>
+        <p>Does it still look right? (Alt + F3)</p>
+        <p>If so Save As… (F3) DO NOT MISS OUT THIS STEP</p>
+        <p>Return to coded view. Alt + F3</p>
+        <h2>Copy Months.</h2>
+        <p>It is now time to copy our January data, and paste it 11 times. </p>
+        <p>After that, you will have the mind numbing task of making the necessary changes.</p>
+        <p>Place your cursor at the beginning of the line [tls]January[tle] hold down the shift key and cursor down to the [pg] code at the end of the month. With the shift key still held down, you will then have to right cursor to ensure that the [pg] code is also highlighted.</p>
+        <p>Press Ctrl + c to copy your highlighted text.</p>
+        <p>Place your cursor after that last [pg] and press Ctrl + v to paste a copy of January below.</p>
+        <p>You may as well press Ctrl v 10 more times while this is in your clipboard, so that you have a total of 12 months. Don’t worry if you have miscounted, you can always copy or remove months.</p>
+        <p>Don’t forget to change the name of the months!</p>
+        <p>There is one final Code to deal with, and in fact to remove, and that is the very last [pg] at the end of the document.</p>
+        <h4>Progress View.</h4>
+        <p>Make sure all looks well (Alt + F3) and Save as… (F3)</p>
+        <h2>Final Codes</h2>
+        <p>We are now going to add some Codes at the beginning of the document, and the following explains Codes and what they do. Place your cursor at the very beginning of the document.</p>
+        <h3>Grade 1</h3>
+        <p>Since our calendar may be used by less experienced braille users, we have included this code which is [tx][g1]. You can type this in using the Insert Codes method, or from the Layout Menu, select Translation Codes, and then grade 1. Or holding down the Alt key, simply press 1.</p>
+        <h3>Page Number Prefix</h3>
+        <p>The Code [pv1~m] sets the first page number to 1, and add the letter m as a prefix. Use the Insert Code method to do this. This is not an essential step, but the intention is to use what is essentially a Page Number as a Month Number.</p>
+        <p>In our example here, we have this positioned at the top right of our page. This is position can however be change via Document: Page Numbering.</p>
+        <h3>Set Running Page Footer use</h3>
+        <p>The Code [svrfp3] indicates that we wish to have a Footer on all pages.</p>
+        <h3>Set Running Page Footer Side-room</h3>
+        <p>“Side-room” denotes the minimum number of blank cells on either side of a Running Footer. Unless we specify otherwise, the default side-room will be 8 cells. As our document will be 31 cells wide, this would only leave us with 15 cells for our Footer.</p>
+        <p>By adding the code [svrfs1:1] we will have up to 29 cells for our Footer. But remember, this total is the number of characters AFTER translation. (You can even use [svrfs0:0] if you wish the use the full 31 cells)</p>
+        <h3>Add the Running Footer</h3>
+        <p>You can add the Running Footer the easy way by selecting “Footer” from the Layout menu. Otherwise you can add the codes manually. [rfs] before the text, and [rfe] at the end.</p>
+        <h4>Progress view</h4>
+        <p>All being well, the start of your document should now look similar to this. </p>
+        <p>Now Save As… again in what should be the final version.</p>
+        <p>
+            <img src="../../../Resources/Images/Duxbury_Braille_Calendar/cal_jan_codes.png" style="height: 179px;width: 453px;" class="img_1" title="image showing DBT's Codes view." alt="image showing DBT's Codes view." />
+        </p>
+        <h2>Emboss and Proof</h2>
+        <p>You may at this stage wish to translate into braille, Save As (F3) – perhaps this time as (Calendar 2014 (Final), and perhaps run off a copy. But read on.</p>
+        <p>Do not be surprised if you end up with one month per page. There are a couple of options here. The first is below, and we’ll cover a slight more complex option in the next section.</p>
+        <p>Depending on the depth of paper you are embossing on to, you may wish to replace every second [pg] (Page Break) Code with a Skip Lines Code – [sk#] We would suggest perhaps [sk2] as you will then be hand cutting at this point to form single pages.</p>
+        <p>If you do this however, you won’t be able to make use of the trick we have used with Page Numbers to indicate the month. Here’s how to get round the problem.</p>
+        <p>Go to DBT’s Document menu, and select “Page Numbering”. Select the “None” radio button in all options to stop page numbering.</p>
+        <p>Now modify each month. Hence “January 2014” would perhaps be “January 2014 (Month 1)”. “February 2014” to “February 2014 (Month 2), etc..</p>
+        <h1>Create a Custom Form Size.</h1>
+        <p>We can create a “special” form size to maximise the use of paper, but be aware that you may need special permission depending on how your system is set up. This does not usually apply to users who have Duxbury installed on a stand-alone system of their own. You also need to know how to copy files and use Notepad to edit them.</p>
+        <p>As we said at the beginning, the ideal size of paper to use is 12 inches deep. This lets you have what essentially are three 4 inch deep forms of 9 lines each.</p>
+        <p>Before we go into details, make sure you know the make and model of embosser you are using.</p>
+        <p>We need to look for a file called “emb.elt”, which you will usually find in one of two places.</p>
+        <ol start="1">
+            <li class="Normal">C:\Program Files\Duxbury\DBT [version number]</li>
+            <li class="Normal">C:\Program Files (x86)\Duxbury\DBT [version number]</li>
+        </ol>
+        <p>Copy “emb.elt” and name it “myemb.elt” keeping it in the same folder.</p>
+        <p>Open “myemb.elt” in Notepad. Depending on your operating system and other factors, you may need to right click on the “NotePad” icon, and select “Run as Administrator”, providing credentials if asked.</p>
+        <p>(Take care to open myemb.elt and NOT the original)</p>
+        <p>When you see this file for the first time, it may appear quite frightening, but in actual fact it is simply a very detailed list of supported embossers and their capabilities.</p>
+        <h3>A brief explanation</h3>
+        <p>You will see many lines at the start which have a # sign (like a musical sharp) at the beginning. These are simply comment lines. After the initial explanation, you will see lines beginning with a double quote followed by the Embosser Name, such as:</p>
+        <p>"Enabling Romeo Pro 50"</p>
+        <p>This example is a long way down the file, and so you can use Notepad’s “Find” (Ctrl+f) and “Find Next” (F3) to more quickly locate your own embosser.</p>
+        <p>We are going to add a line to this section as shown below. It is the first line where you see the word “Form” details. Let us explain exactly what the structure here means</p>
+        <p class="CourierPara">Form "5.5 Forms" = 85 x 55 ; SinglePage ; 31 x 9 ; 31 x 9</p>
+        <p class="PlainText"> Between the double quotes, you can provide any name you like, but currently only up to 9 characters.</p>
+        <p>In this example the next parameter after the equals sign <span class="Code-DuxScreen">(85 x 55)</span> expresses the embossible area in tenths of an inch. So what we are saying effectively is that we have an 8.5 inch wide form, which is 5.5 inches high. In other words, half of the 11 inch paper. Bear in mind that the depth we divide our form depth to MUST be divisible in units of one tenth. You cannot for example get three forms out of 11 inches, as the result would be 36.66666. That said, if you are lucky enough to have 12 inch deep paper, you can get 3 forms of 4 inch deep.</p>
+        <p>The SinglePage parameter is for normal embossing.</p>
+        <p>The next two sets of dimensions express the Maximum cells width and lines per form, followed by the Desired cells wide and lines per form. In this case we are using the same in each case – 31 cells wide by 9 lines deep. (This is a useful feature as it can stop the use of more cells than your embosser is physically capable of embossing on a line.)</p>
+        <p>You can now add this line to the setting for your embosser as shown next.</p>
+        <p>Now save your myemb.elt file.</p>
+        <p class="CourierPara">"Enabling Romeo Pro 50"</p>
+        <p class="CourierPara"># *** Embosser definition unchanged since 09/24/2009</p>
+        <p class="CourierPara"># using escape sequence, using Enabling Driver if you say embosser allows escape sequences</p>
+        <p class="CourierPara"># esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &amp;, esc i</p>
+        <p class="CourierPara">{</p>
+        <p class="CourierPara"> ETSpeaks</p>
+        <p class="CourierPara"> ETMediumResGraphics</p>
+        <p class="CourierPara"> ETHighResGraphics</p>
+        <p class="CourierPara"> ETmulti</p>
+        <p class="CourierPara"> PageWrap</p>
+        <p class="CourierPara"> TranSend</p>
+        <p class="CourierPara"> ETCAllowEscapeCodes</p>
+        <p class="CourierPara"> Driver = "Emb_EnablingEmbosserDriver"</p>
+        <p class="CourierPara"> MaximumCells = 40</p>
+        <p class="CourierPara"> MaximumLines = 27</p>
+        <p class="CourierPara"> Encoding = "display.cpt", "North American English"</p>
+        <p class="CourierPara"> Encoding = "display.cpt", "French"</p>
+        <p class="CourierPara"> Encoding = "display.cpt", "German"</p>
+        <p class="CourierPara"> Encoding = "display.cpt", "Spanish"</p>
+        <p class="CourierPara"> HelpPage = "Enabling_Romeo_Pro_50.htm"</p>
+        <p class="CourierPara"> Form "5.5 Forms" = 85 x 55 ; SinglePage ; 31 x 9 ; 31 x 9</p>
+        <p class="CourierPara"> Form "10_n" = 85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23</p>
+        <p class="CourierPara"> Form "11_n" = 85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25</p>
+        <p class="CourierPara"> Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25</p>
+        <p class="CourierPara"> Form "12_n" = 85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28</p>
+        <p class="CourierPara"> Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28</p>
+        <p class="CourierPara"> Form "13_n" = 85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30</p>
+        <p class="CourierPara"> Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30</p>
+        <h4>It’s time to test</h4>
+        <p>Run DBT, and from the Global menu, select Embosser Setup. All being well, you should see your new form at the top of the drop down list.</p>
+        <p>We suggest you now try out a simple, short test document to ensure that it is producing exactly what you want.</p>
+        <h2>Additional Pages</h2>
+        <p>You may wish to add a special cover page, or additional pages with more details about your organisation. Bear in mind that this is intended to be a pocket calendar, so try not to add too many pages.</p>
+        <h2>Binding</h2>
+        <p>We used plastic comb binding, but you can decide whatever binding method is best for you.</p>
+        <h1>Final Document in Coded View</h1>
+        <p>When you have completed your document, it should appear similar to what is shown here. Much depends on your software settings.</p>
+        <p><b>NOTE:</b> The following can not simply be copied and pasted into DBT since the codes shown here are not technically Duxbury “Codes”.</p>
+        <p class="PlainText"><span class="span_1">[tx][g1][pv1~m][svrfp3][svrfs1:1</span><span class="span_1">]</span>
+        </p>
+        <p class="CourierPara">[rfs]xxxxxx Name or company xxxxxx[rfe]</p>
+        <p class="CourierPara">[tls]January 2014[tle]</p>
+        <p class="CourierPara">[stb1:r:3][stb2:r:7][stb3:r:11][stb4:r:15][stb5:r:19]</p>
+        <p class="CourierPara">[stb6:r:23][stb7:r:27][stb8:r:31]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]1[#4]2[#5]3[#6]4[#7]5[#8]1[&lt;]</p>
+        <p class="CourierPara">[#1]6[#2]7[#3]8[#4]9[#5]10[#6]11[#7]12[#8]2[&lt;]</p>
+        <p class="CourierPara">[#1]13[#2]14[#3]15[#4]16[#5]17[#6]18[#7]19[#8]3[&lt;]</p>
+        <p class="CourierPara">[#1]20[#2]21[#3]22[#4]23[#5]24[#6]25[#7]26[#8]4[&lt;]</p>
+        <p class="CourierPara">[#1]27[#2]28[#3]29[#4]30[#5]31[#6]--[#7]--[#8]5</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]February 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]--[#4]--[#5]--[#6]1[#7]2[#8]5[&lt;]</p>
+        <p class="CourierPara">[#1]3[#2]4[#3]5[#4]6[#5]7[#6]8[#7]9[#8]6[&lt;]</p>
+        <p class="CourierPara">[#1]10[#2]11[#3]12[#4]13[#5]14[#6]15[#7]16[#8]7[&lt;]</p>
+        <p class="CourierPara">[#1]17[#2]18[#3]19[#4]20[#5]21[#6]22[#7]23[#8]8[&lt;]</p>
+        <p class="CourierPara">[#1]24[#2]25[#3]26[#4]27[#5]28[#6]--[#7]--[#8]9</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]March 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]--[#4]--[#5]--[#6]1[#7]2[#8]9[&lt;]</p>
+        <p class="CourierPara">[#1]3[#2]4[#3]5[#4]6[#5]7[#6]8[#7]9[#8]10[&lt;]</p>
+        <p class="CourierPara">[#1]10[#2]11[#3]12[#4]13[#5]14[#6]15[#7]16[#8]11[&lt;]</p>
+        <p class="CourierPara">[#1]17[#2]18[#3]19[#4]20[#5]21[#6]22[#7]23[#8]12[&lt;]</p>
+        <p class="CourierPara">[#1]24[#2]25[#3]26[#4]27[#5]28[#6]29[#7]30[#8]13</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]April 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]31[#2]1[#3]2[#4]3[#5]4[#6]5[#7]6[#8]14[&lt;]</p>
+        <p class="CourierPara">[#1]7[#2]8[#3]9[#4]10[#5]11[#6]12[#7]13[#8]15[&lt;]</p>
+        <p class="CourierPara">[#1]14[#2]15[#3]16[#4]17[#5]18[#6]19[#7]20[#8]16[&lt;]</p>
+        <p class="CourierPara">[#1]21[#2]22[#3]23[#4]24[#5]25[#6]26[#7]27[#8]17[&lt;]</p>
+        <p class="CourierPara">[#1]28[#2]29[#3]30[#4]--[#5]--[#6]--[#7]--[#8]18</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]May 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]--[#4]1[#5]2[#6]3[#7]4[#8]18[&lt;]</p>
+        <p class="CourierPara">[#1]5[#2]6[#3]7[#4]8[#5]9[#6]10[#7]11[#8]19[&lt;]</p>
+        <p class="CourierPara">[#1]12[#2]13[#3]14[#4]15[#5]16[#6]17[#7]18[#8]20[&lt;]</p>
+        <p class="CourierPara">[#1]19[#2]20[#3]21[#4]22[#5]23[#6]24[#7]25[#8]21[&lt;]</p>
+        <p class="CourierPara">[#1]26[#2]27[#3]28[#4]29[#5]30[#6]31[#7]--[#8]22[&lt;]</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]June 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]--[#4]--[#5]--[#6]--[#7]1[#8]22[&lt;]</p>
+        <p class="CourierPara">[#1]2[#2]3[#3]4[#4]5[#5]6[#6]7[#7]8[#8]23[&lt;]</p>
+        <p class="CourierPara">[#1]9[#2]10[#3]11[#4]12[#5]13[#6]14[#7]15[#8]24[&lt;]</p>
+        <p class="CourierPara">[#1]16[#2]17[#3]18[#4]19[#5]20[#6]21[#7]22[#8]25[&lt;]</p>
+        <p class="CourierPara">[#1]23[#2]24[#3]25[#4]26[#5]27[#6]28[#7]29[#8]26</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]July 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]30[#2]1[#3]2[#4]3[#5]4[#6]5[#7]6[#8]27[&lt;]</p>
+        <p class="CourierPara">[#1]7[#2]8[#3]9[#4]10[#5]11[#6]12[#7]13[#8]28[&lt;]</p>
+        <p class="CourierPara">[#1]14[#2]15[#3]16[#4]17[#5]18[#6]19[#7]20[#8]29[&lt;]</p>
+        <p class="CourierPara">[#1]21[#2]22[#3]23[#4]24[#5]25[#6]26[#7]27[#8]30[&lt;]</p>
+        <p class="CourierPara">[#1]28[#2]29[#3]30[#4]31[#5]--[#6]--[#7]--[#8]31</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]August 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]--[#4]--[#5]1[#6]2[#7]3[#8]31[&lt;]</p>
+        <p class="CourierPara">[#1]4[#2]5[#3]6[#4]7[#5]8[#6]9[#7]10[#8]32[&lt;]</p>
+        <p class="CourierPara">[#1]11[#2]12[#3]13[#4]14[#5]15[#6]16[#7]17[#8]33[&lt;]</p>
+        <p class="CourierPara">[#1]18[#2]19[#3]20[#4]21[#5]22[#6]23[#7]24[#8]34[&lt;]</p>
+        <p class="CourierPara">[#1]25[#2]26[#3]27[#4]28[#5]29[#6]30[#7]31[#8]35</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]September 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1][#1]1[#2]2[#3]3[#4]4[#5]5[#6]6[#7]7[#8]36[&lt;]</p>
+        <p class="CourierPara">[#1]8[#2]9[#3]10[#4]11[#5]12[#6]13[#7]14[#8]37[&lt;]</p>
+        <p class="CourierPara">[#1]15[#2]16[#3]17[#4]18[#5]19[#6]20[#7]21[#8]38[&lt;]</p>
+        <p class="CourierPara">[#1]22[#2]23[#3]24[#4]25[#5]26[#6]27[#7]28[#8]39[&lt;]</p>
+        <p class="CourierPara">[#1]29[#2]30[#3]--[#4]--[#5]--[#6]--[#7]--[#8]40</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]October 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]1[#4]2[#5]3[#6]4[#7]5[#8]40[&lt;]</p>
+        <p class="CourierPara">[#1]6[#2]7[#3]8[#4]9[#5]10[#6]11[#7]12[#8]41[&lt;]</p>
+        <p class="CourierPara">[#1]13[#2]14[#3]15[#4]16[#5]17[#6]18[#7]19[#8]42[&lt;]</p>
+        <p class="CourierPara">[#1]20[#2]21[#3]22[#4]23[#5]24[#6]25[#7]26[#8]43[&lt;]</p>
+        <p class="CourierPara">[#1]27[#2]28[#3]29[#4]30[#5]31[#6]--[#7]--[#8]44</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]November 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]--[#2]--[#3]--[#4]--[#5]--[#6]1[#7]2[#8]44[&lt;]</p>
+        <p class="CourierPara">[#1]3[#2]4[#3]5[#4]6[#5]7[#6]8[#7]9[#8]45[&lt;]</p>
+        <p class="CourierPara">[#1]10[#2]11[#3]12[#4]13[#5]14[#6]15[#7]16[#8]46[&lt;]</p>
+        <p class="CourierPara">[#1]17[#2]18[#3]19[#4]20[#5]21[#6]22[#7]23[#8]47[&lt;]</p>
+        <p class="CourierPara">[#1]24[#2]25[#3]26[#4]27[#5]28[#6]29[#7]30[#8]48</p>
+        <p class="CourierPara">[pg]</p>
+        <p class="CourierPara">[tls]December 2014[tle]</p>
+        <p class="CourierPara">[#1]mon[#2]tue[#3]wed[#4]thu[#5]fri[#6]sat[#7]sun[#8]wk[&lt;]</p>
+        <p class="CourierPara">[#1]1[#2]2[#3]3[#4]4[#5]5[#6]6[#7]7[#8]49[&lt;]</p>
+        <p class="CourierPara">[#1]8[#2]9[#3]10[#4]11[#5]12[#6]13[#7]14[#8]50[&lt;]</p>
+        <p class="CourierPara">[#1]15[#2]16[#3]17[#4]18[#5]19[#6]20[#7]21[#8]51[&lt;]</p>
+        <p class="CourierPara">[#1]22[#2]23[#3]24[#4]25[#5]26[#6]27[#7]28[#8]52[&lt;]</p>
+        <p class="CourierPara">[#1]29[#2]30[#3]31[#4]--[#5]--[#6]--[#7]--[#8]53</p>
+    </body>
+</html>

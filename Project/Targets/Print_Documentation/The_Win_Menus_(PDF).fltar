@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  DefaultUrl="/Content/welcome_to_DBT/welcome_to_dbt.htm"
+  ConditionTagExpression="include[Primary.Windows_Version] exclude[Primary.HTML_Only or Primary.Mac_Version or Primary.Not_in_Print_Docs] "
+  Type="PDF"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  PatchHeadingLevels="false"
+  InjectBookHeadings="false"
+  TargetLanguage="en-us"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+  EmbedImages="true"
+  GetLatestBeforeCompile="false"
+  MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+  PreCompileScaledImages="true"
+  MasterToc="/Project/TOCs/Print Documentation/The_Win_Menus.fltoc"
+  DisableAutoSync="true"
+  conditions="Primary.Windows_Version"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings="20040,20035,20034,20033,20032">
+  <Variables />
+  <ConditionTags />
+  <Glossaries></Glossaries>
+  <PrintedOutput
+    MirrorMargins="true"
+    ExpandingTextConversion="footnote"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true" />
+  <PDF
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false"
+    Tagged="true" />
+</CatapultTarget>

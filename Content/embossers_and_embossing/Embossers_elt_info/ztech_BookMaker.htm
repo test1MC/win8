@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="828" MadCap:lastWidth="762">
+    <head>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <heading><title>Technical Tips for this Embosser</title>
+    </heading>
+    <body>
+        <h2 class="NoNewPage">Technical Tips for this Embosser</h2>
+        <p><a href="../Embossers/ports.htm">General Advice about Computer Ports: Serial. Parallel. USB. and Network</a>
+        </p>
+        <p>To totally reset the Bookmaker (losing all your stored menus). enter the following: &lt;off line&gt; 0.0E 95E 96E 98E 99E 1E</p>
+        <p><b>USB Conection Guidelines:</b> Click on the link above.</p>
+        <p>Parallel Setup Guidelines: The factory default menu 1 will normally work just fine with this software. assuming that the margins are to your liking. and that you are using 11 by 11 inch braille paper. To ensure that menu 1 is the power up default. do the following:</p>
+        <ul>
+            <li>1) Turn the printer on. "Zippidy Do Dah" should play on the speaker.</li>
+            <li>2) Press the OL key. A high to low tone will indicate that the embosser is off-line.</li>
+            <li>3) Press 0.1E ("0" then "." then "1" then "E") and listen for two short beeps.</li>
+            <li>4) Press 1.1E</li>
+            <li>5) You are ready to go.</li>
+        </ul>
+        <p><b>Follow the directions below only if you run into problems when using default menu 1.</b>
+        </p>
+        <p>If you should run into problems. we recommend altering and selecting one of the custom menus. Below are the suggested settings for the various parameters:</p>
+        <ul>
+            <li>1 -- 1 -- Make this the default menu.</li>
+            <li>2 -- 1 -- Use parallel data port.</li>
+            <li>3 -- 9600 -- Set baud rate to 9600.</li>
+            <li>4 -- 8 -- Set data bits to 8.</li>
+            <li>5 -- 1 -- Set stop bits to 1.</li>
+            <li>6 -- 0 -- Set parity to none.</li>
+            <li>7 -- 0 -- Use ASCII code.</li>
+            <li>8 -- 0 -- Use Xon/Xoff handshaking.</li>
+            <li>9 -- 0 -- Use 6-dot braille.</li>
+            <li>10 -- 0 -- Turn word wrap off.</li>
+            <li>11 -- 1 -- Allow perforation skip mode.</li>
+            <li>12 -- 1 -- Keep paper out detector on.</li>
+            <li>13 -- 0 -- Do not automatically go to new line. 14 44* Set right margin to 44.</li>
+            <li>15 -- 1* -- Set left margin to 1.</li>
+            <li>16 -- 0 -- Emboss control characters off.</li>
+            <li>17 -- 27 -- Set lines per page to 27.</li>
+            <li>18 -- 11* -- Set page length to 11 inches.</li>
+            <li>19 -- 0 -- Respond to internal sensors.</li>
+            <li>20 -- 13 -- Carriage Return in control table.</li>
+            <li>22 -- 0 -- Turn hot zone off.</li>
+            <li>23 -- 1 -- Recognize escape sequences.</li>
+            <li>24 -- 0 -- Turn off console bell.</li>
+            <li>25 -- 0 -- Turn off external keyboard.</li>
+            <li>26 -- 0 -- Local echo off.</li>
+            <li>27 -- 0 -- Don't translate to grade 1.</li>
+            <li>28 -- 0 -- Incoming data is not a screen dump.</li>
+            <li>29 -- 0 -- Use USA character set.</li>
+            <li>30 -- 0* -- Set top-of-form offset to 0 inches</li>
+            <li>31 -- 1 -- Ignore eighth bit.</li>
+            <li>32 -- 0 -- Set autoprint constant to 0 seconds</li>
+            <li>33 -- 0* -- Use Interpoint embossing mode.</li>
+            <li>34 -- 6* -- Set paper grade to mid-range.</li>
+        </ul>
+        <p>*The right margin. left margin. paper length. top-of-form offset. embossing mode and paper grade may not be suitable for your situation. These settings may need to be changed.</p>
+        <p>Below are directions for creating and using a custom setup. Let's assume that custom menu 9 is available and that you wish to use it for printing files created by this software. (If menu 9 is already taken for another purpose. use the next available menu. possibly as high as 16. and substitute that number wherever 9 is mentioned in the following steps.)</p>
+        <ul>
+            <li>1) Press OL to take the embosser off line.</li>
+            <li>2) Press 0.9E and listen for two short beeps to indicate that you're ready to edit menu 9.</li>
+            <li>3) Press 1.1E to turn this menu into the power up default.</li>
+            <li>4) Press OL to take the embosser off line again.</li>
+            <li>5) Press 0.VE to print out all parameters of configuration 9.</li>
+            <li>6) Press OL to take the embosser off line.</li>
+            <li>7) Press 0.9E to edit menu 9 again.</li>
+            <li>8) For every parameter that does not match our recommendations. type the parameter number. a period. the correct value. then E. For example. "23.1E" would allow for escape sequence recognition. You should hear two short beeps after each entry. This confirms that your input was accepted.</li>
+            <li>9) When all of the mismatched parameters are fixed. press 1.1E to make menu 9 the default and to reset the embosser.</li>
+        </ul>
+        <p>Serial setup guidelines: </p>
+        <p>The factory default menu 2 should work just fine. assuming that the margins and paper size (11 by 11 inches) are to your liking. To make this the default menu. do the following:</p>
+        <li>1) Turn the printer on. "Zippidy Do Dah" should play on the speaker.</li>
+        <li>2) Press the OL key. A high to low tone will indicate that the embosser is off-line.</li>
+        <li>3) Press 0.2E ("0" then "." then "2" then "E") and listen for two short beeps.</li>
+        <li>4) Press 1.1E</li>
+        <li>5) You are ready to go.</li>
+        <p><b>Follow the directions below only if you run into problems when using default menu 2.</b>
+        </p>
+        <p>If you should run into problems. we recommend altering and selecting one of the custom menus. The suggested settings for the various parameters are included above in the parallel setup guidelines section. All settings are the same for serial. EXCEPT parameter 2 which should be set to 0.</p>
+        <p>Below are directions for creating and using a custom setup. Let's assume that custom menu 9 is available and that you wish to use it for printing files created by this software. (If menu 9 is already taken for another purpose. use the next available menu. possibly as high as 16. and substitute that number wherever 9 is mentioned in the following steps.)</p>
+        <li>1) Press OL to take the embosser off line.</li>
+        <li>2) Press 0.9E and listen for two short beeps to indicate that you're ready to edit menu 9.</li>
+        <li>3) Press 1.1E to turn this menu into the power up default.</li>
+        <li>4) Press OL to take the embosser off line again.</li>
+        <li>5) Press 0.VE to print out all parameters of configuration 9.</li>
+        <li>6) Press OL to take the embosser off line.</li>
+        <li>7) Press 0.9E to edit menu 9 again.</li>
+        <li>8) For every parameter that does not match our recommendations. type the parameter number. a period. the correct value. then E. For example. "23.1E" would allow for escape sequence recognition. You should hear two short beeps after each entry. This confirms that your input was accepted.</li>
+        <li>9) Be sure to press 2.0E to make the serial port active.</li>
+        <li>10) When all of the mismatched parameters are fixed. press 1.1E to make menu 9 the default and to reset the embosser.</li>
+        <p>Take advantage of the fact that you can store up to 16 configurations via the 16 menus. We suggest leaving setups 1 through 8 at their factory defaults. and using 9 through 16 for custom purposes. If you frequently change the paper size and/or if you ever drive the embosser with programs other than this software you will undoubtedly make good use of the multiple menus. Changing the menu is certainly easier than changing various parameters within a single menu.</p>
+        <p>For technical support on the Braille Bookmaker. contact <a href="http://www.brailler.com/">Enabling Technology</a> at 772-225-3687. </p>
+    </body>
+</html>

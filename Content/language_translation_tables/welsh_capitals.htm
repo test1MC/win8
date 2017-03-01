@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Ready for Review" MadCap:lastBlockDepth="2" MadCap:lastHeight="882" MadCap:lastWidth="624">
+    <head><title>Cymraeg (Welsh)</title>
+        <link rel="StyleSheet" href="../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Welsh;Cymraeg (Welsh)" />CYMRAEG (WELSH) <img src="../Resources/Images/flags/wales.gif" alt="Welsh Flag" style="width: 50px; height: 30px;" width="50" height="30" border="0" class="flag" /></h4>
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The Cymraeg (Welsh) tables support print-to-braille translation of Welsh-language literary text in contracted or uncontracted Welsh braille. English text may also be processed as a sub-language, and converted to contracted or uncontracted English braille (following British conventions as revised 2004-2005). Several other languages may also be processed as sub-languages, and transcribed in accordance with BAUK practice. Technical codes for math and science (BAUK Math Code) and computer notation (BAUK's Braille Computer Notation [BCN]) are also supported.</p>
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>Although DBT Win 10.5 and later are able to display the accented w and y combinations, it is nevertheless often more convenient to use Microsoft Word for entering and editing print text, which can then be imported into DBT for subsequent translation. When preparing the text in Word, be sure to use a Unicode font (such as Lucida Sans or the default Times Roman), so that the underlying characters are encoded in Unicode. (Note that the appearance on screen is not the issue. Fonts that merely cause standard ASCII characters to be displayed as the desired accented letters will not work, because they will be imported according to their standard interpretation, not their appearance.)</p>
+        <p>True braille-to-print translation is supported only within any embedded English literary text, not in the Welsh text nor technical notation nor any secondary languages other than English. This means that it is not generally useful to translate a Welsh braille file to print. It also means that the "translated line" will typically contain gibberish when viewing the braille file. You may prefer to turn off the "translated line" under the View menu, or even under Global/Default if you wish it to be off by default.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>English text may be entered as a secondary language, commencing with the code <span class="Code-DuxCode">[lng~en]</span> and terminated by <span class="Code-DuxCode">[lng]</span> or <span class="Code-DuxCode">[lng~cy]</span> to revert to Welsh. Such English text is converted to contracted or uncontracted English braille. That is, the grade switches affect the translation of the English text as well as the Cymraeg (Welsh) text. In English literary text, British conventions are generally followed, to the extent that they sometimes differ slightly from American or Unified English Braille.</p>
+        <p>Several other languages may be entered and treated as "in English context," using the <span class="Code-DuxCode">[lng...]</span> code to switch. For instance, <span class="Code-DuxCode">[lng~fr]</span> (or <span class="Code-DuxCode">[lng~fra]</span>) would introduce a French passage, which would be terminated, i.e. reverting to Welsh, at <span class="Code-DuxCode">[lng]</span> (or <span class="Code-DuxCode">[lng~cy]</span>). The available languages, together with their associated "lng" codes, are:</p>
+        <p class="CodeList">de (or deu) -- German</p>
+        <p class="CodeList">en (or eng) -- English</p>
+        <p class="CodeList">es (or esp) -- Spanish</p>
+        <p class="CodeList">fr (or fra) -- French</p>
+        <p class="CodeList">it (or ita) -- Italian</p>
+        <p class="CodeList">la (or lat) -- Latin</p>
+        <p class="CodeList">pt -- Portuguese</p>
+        <p>In German and French secondary language text, contractions as specified by BAUK will normally be used, as long as grade two is in effect. (Those contractions include some but not all of the contractions that would be used in the regular contracted braille for those languages.) The other languages are all transcribed in grade 1 regardless of the grade setting. That is, the <span class="Code-DuxCode">[g1]</span> and <span class="Code-DuxCode">[g2]</span> codes affect the English text and any German or French text, but not the other languages.</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>The BAUK math and science code and the BAUK computer notation code, i.e. BCN, are supported.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to <span class="Code-DuxCode">[g2]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[bar]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[be]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bline]</span> -- ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bsfe]</span> can be used to end the name of a special math function (see <span class="Code-DuxCode">[bsfs]</span> below).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bsfs]</span> can be used to begin the name of a special math function, in the case of uncommon functions that are not directly recognized (most are recognized). For example, <span class="Code-DuxCode">[bsfs]</span><span class="Code-DuxScreen">tr</span><span class="Code-DuxCode">[bsfe]</span><span class="Code-DuxScreen">(x)</span> would cause the "<span class="Code-DuxScreen">tr</span>" in "<span class="Code-DuxScreen">tr(x)</span>" to be treated as a function name rather than the product of <span class="Code-DuxScreen">t</span> and <span class="Code-DuxScreen">r</span>.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cap-invert]</span> inverts the normal default case of letters in computer notation (BCN), i.e. changes the default to uppercase since the normal default is lowercase. Note that this is the opposite effect that this control had in the earlier British table, reflecting a change in BCN itself.</p>
+        <p><span class="Code-DuxCode">[cap-normal]</span> restore the normal default case of letters in computer notation (BCN) to lowercase. (Note that this is the opposite effect that this control had in the earlier British table, reflecting a change in BCN itself.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[caplv1]</span> starts suppressing the indication of capital letters, except in "technical notation" (mathematics between <span class="Code-DuxCode">[ts]</span> and <span class="Code-DuxCode">[te]</span> commands) and in computer notation (between <span class="Code-DuxCode">[cb...]</span> and <span class="Code-DuxCode">[tx...]</span> commands).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[caplv3]</span> restores the indication of capital letters everywhere, including literary text. This is the normal mode for this table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-&amp;]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-de]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ds]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ee]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-es]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ne]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ns]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-se]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ss]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-t1]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-t2]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbi]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cs-off]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[e]</span> -- presently ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ecane]</span> -- presently ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ecans]</span> -- presently ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span> switches to "grade 1" (uncontracted) braille. This affects the Cymraeg (Welsh) text, and also any embedded English, French or German text.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span> switches to "grade 2" (contracted) braille. This is the normal mode, and to any embedded English, French or German text as well as the Cymraeg (Welsh) text.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ii]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to <span class="Code-DuxCode">[g1]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd0]</span> -- is a special variant form of <span class="Code-DuxCode">[ixrtd]</span>, to force "simple" treatment of the indexed root delimiter (no brackets).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte0]</span> -- is a special variant form of <span class="Code-DuxCode">[ixrte]</span>, to force "simple" treatment of the indexed root end (no brackets).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~...]</span> (see "Secondary Languages Supported," above)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[oe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[os]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[pe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ps]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[rmn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte0]</span> is a special variant form of <span class="Code-DuxCode">[sqrte]</span>, to force "simple" treatment (no brackets) at a square root end.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts0]</span> is a special variant form of <span class="Code-DuxCode">[sqrts]</span>, to force "simple" treatment (no brackets) at a square root start.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[tce]</span> -- is allowed but not necessary (ignored).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tcs]</span> -- is allowed but not necessary (ignored).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[te]</span> cancels the effect of <span class="Code-DuxCode">[ts]</span>, restoring normal text mode.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ts]</span> initiates "technical notation," i.e. "math mode".</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tx]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[txi]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[txn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[xcs]</span>
+        </p>
+        <p>Other translation codes will generally be ignored, or may cause unpredictable translation results.</p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p class="TrCodes">All ASCII printable characters</p>
+        <p class="TrCodes">Accented letters and punctuation marks typical of French, German, Italian, and Spanish</p>
+        <p class="TrCodes">Accented letters typical of Welsh, including the preceding group plus w and y with accents (in DUSCI code pages D+b2... and D+b9...)</p>
+        <p>British pound, Japanese yen, and other miscellaneous signs (DUSCI pages D+ec..., D+f5...)</p>
+        <p>Mathematical signs, shapes, etc. (DUSCI pages D+df..., D+e2..., D+f0..., D+f1...)</p>
+        <p>The above is a general guide only (see "<a href="translation_tables.htm#GENERAL_NOTES">General Notes</a>" section at the beginning of this document).</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>These tables were implemented by Duxbury Systems, Inc. in August 1998, based upon the document entitled "Welsh Braille Code / Braille Cymraeg", Braille Authority of the United Kingdom, December 1995. The Royal National Institute for the Blind (RNIB) and Techno-Vision Systems, Ltd. have provided technical advice and assistance.</p>
+        <p>In November 2005, these tables were extensively revised to accommodate changes in 2004-2005 in both the English and Welsh braille codes. The major effects of this change were to add support for mathematics and secondary languages other than English, all according to BAUK conventions, and also to switch from the American CBC to British BCN in the treatment of computer notation.</p>
+        <p>(Documentation reviewed: December 2006).</p>
+    </body>
+</html>

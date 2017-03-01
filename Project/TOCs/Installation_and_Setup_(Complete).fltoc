@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Installation and Setup (Complete)"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Title_Page_Installation+Setup_(Complete).htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Cover_Print.flpgl"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl"
+    MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/contents.htm"
+    BreakType="pageLayout"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageNumber="0"
+    PageLayout="/Content/Resources/PageLayouts/Contents.flpgl" />
+  <TocEntry
+    Title="Getting Help."
+    Link="/Content/getting_setup_in_DBT/new_users_start_here/GETTING_HELP.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/Getting_Help.flpgl"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Installation"
+    Link="/Content/getting_setup_in_DBT/Installation/Installation.htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl">
+    <TocEntry
+      Title="Installation Check List"
+      Link="/Content/getting_setup_in_DBT/Installation/Installation_check_list.htm"
+      BreakType="chapter"
+      StartSection="true"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation_Check_List.flpgl"
+      MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+      PageNumberReset="continue"
+      ReplaceMergeNode="false" />
+    <TocEntry
+      Title="Simple Installation"
+      Link="/Content/getting_setup_in_DBT/Installation/Simple_Installation.htm"
+      BreakType="chapter"
+      StartSection="true"
+      PageNumberReset="continue"
+      ReplaceMergeNode="false"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation_Simple.flpgl" />
+    <TocEntry
+      Title="Custom Installation"
+      Link="/Content/getting_setup_in_DBT/Installation/Custom_Installation.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation_Custom.flpgl" />
+    <TocEntry
+      Title="Network Installation Overview"
+      Link="/Content/getting_setup_in_DBT/Installation/network_installation_files/network_install_overview.htm"
+      BreakType="pageLayout"
+      StartSection="true"
+      PageNumberReset="continue"
+      MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation_Network.flpgl">
+      <TocEntry
+        Title="Network Installation Using Activation Wizard (Manual)"
+        Link="/Content/getting_setup_in_DBT/Installation/network_installation_files/network_install_using_wizard.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Network_Install_Manual.flpgl" />
+      <TocEntry
+        Title="Network Installation Using a Server Image (Automatic)"
+        Link="/Content/getting_setup_in_DBT/Installation/network_installation_files/network_install_using_server_image.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Network_Install_with_Image.flpgl"></TocEntry>
+      <TocEntry
+        Title="Upgrading a Network Installation"
+        Link="/Content/getting_setup_in_DBT/Installation/network_installation_files/network_upgrade.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Remove DBT"
+      Link="/Content/getting_setup_in_DBT/Remove_DBT.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Deactivate_and_Remove.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Registration and Activation"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    ReplaceMergeNode="false"
+    Link="/Content/Registration_and_Activation/registration_and_activation.htm"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Registration_and_Activation.flpgl">
+    <TocEntry
+      Title="Activate this Computer"
+      Link="/Content/Registration_and_Activation/activation_activate.htm"
+      StartSection="false"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Activation.flpgl"></TocEntry>
+    <TocEntry
+      Title="Registration..."
+      Link="/Content/Registration_and_Activation/activation_submit_registration.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Registration_and_Activation.flpgl" />
+    <TocEntry
+      Title="Diagnose activation problems"
+      Link="/Content/Registration_and_Activation/activation_diagnose.htm"
+      StartSection="false"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Diagnose.flpgl">
+      <TocEntry
+        Title="Common Activation Problems"
+        Link="/Content/Registration_and_Activation/activation_problems.htm"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="De-activate this computer"
+      Link="/Content/Registration_and_Activation/activation_de-activation.htm"
+      StartSection="false"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Deactivate_and_Remove.flpgl" />
+    <TocEntry
+      Title="Set up this computer to host the network license"
+      Link="/Content/Registration_and_Activation/activation_server_setup.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Network_Installation.flpgl" />
+    <TocEntry
+      Title="Connect to the network license server on your LAN"
+      Link="/Content/Registration_and_Activation/activation_server_connect_to.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation_Network.flpgl" />
+    <TocEntry
+      Title="License for 45-day trial"
+      Link="/Content/Registration_and_Activation/activation_45-days.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/45_Day_Trial.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="MENU_GLOBAL"
+    Link="/Content/the_menus/MENU_GLOBAL/GLOBAL_MENU.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/menu_Global.flpgl">
+    <TocEntry
+      Title="Global: Embosser Setup..."
+      Link="/Content/the_menus/MENU_GLOBAL/global_embosser_setup.htm"
+      StartSection="false">
+      <TocEntry
+        Title="Global: Embosser Setup: General."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Embosser_setup_general.htm"
+        StartSection="false" />
+      <TocEntry
+        Title="Global: Embosser Setup: Device Settings"
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Embosser_setup_device_settings.htm"
+        StartSection="false" />
+      <TocEntry
+        Title="Global: Embosser Setup: TranSendSE"
+        Link="/Content/the_menus/MENU_GLOBAL/global_Embosser_setup_transend_se.htm"
+        StartSection="false" />
+      <TocEntry
+        Title="Global: Embosser Setup: Advanced."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Embosser_setup_advanced.htm"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="Document and Global: Printer Setup..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_Printer_Setup.htm"
+      StartSection="false" />
+    <TocEntry
+      Title="Global: Autosave Options"
+      Link="/Content/the_menus/MENU_GLOBAL/global_autosave_options.htm"
+      StartSection="false">
+      <TocEntry
+        Title="Autosave Recovery Wizard"
+        Link="/Content/the_menus/MENU_GLOBAL/global_autosave_wizard.htm"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="Global: Default Views..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_Default_Views.htm"
+      StartSection="false" />
+    <TocEntry
+      Title="Global: Internationalization"
+      Link="/Content/the_menus/MENU_GLOBAL/global_internationalization.htm"
+      StartSection="false" />
+    <TocEntry
+      Title="Global: Fonts..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_Fonts.htm"
+      StartSection="false"></TocEntry>
+    <TocEntry
+      Title="Global: View Preferences..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_View_Preferences....htm"
+      StartSection="false" />
+    <TocEntry
+      Title="Global: Shortcut Preferences..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_Shortcut_Preferences....htm" />
+    <TocEntry
+      Title="Global: Import Options"
+      Link="/Content/the_menus/MENU_GLOBAL/global_import_options.htm" />
+    <TocEntry
+      Title="Global: WordPerfect Importer..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_WordPerfect_Importer.htm" />
+    <TocEntry
+      Title="Global: Word Importer..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_Word_Importer.htm"></TocEntry>
+    <TocEntry
+      Title="Global: Formatted Braille Importer..."
+      Link="/Content/the_menus/MENU_GLOBAL/Global_Formatted_Braille_Importer.htm" />
+    <TocEntry
+      Title="Hyperlink Settings" />
+  </TocEntry>
+  <TocEntry
+    Title="Help: About DBT."
+    Link="/Content/the_menus/MENU_HELP/help_about_dbt.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/About_DBT_Win.flpgl" />
+  <TocEntry
+    Title="EULA"
+    Link="/Content/getting_setup_in_DBT/EULA.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/EULA.flpgl" />
+  <TocEntry
+    Title="Index"
+    Link="/Content/getting_setup_in_DBT/Installation/Index_TermsUsed.htm"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="false"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Books_A4/Book_Installation_(A4).flpgl"
+    MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+    PageNumberReset="continue"></TocEntry>
+  <TocEntry
+    Title="Back_Page_Installation+Setup"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Back_Page_Installation+Setup.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Back_Cover_Print.flpgl"
+    MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp" />
+</CatapultToc>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Language Translation Tables" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="HtmlHelp" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="helpfile.xml" MadCap:SearchType="Stem" MadCap:lastBlockDepth="4" MadCap:lastHeight="6565" MadCap:lastWidth="419">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+        <link rel="stylesheet" type="text/css" /><title>FRENCH (pre-Unified)</title>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3>
+            <MadCap:keyword term="French:Pre-Unified" /><a name="kanchor609"></a>FRENCH (pre-Unified) <img src="../Resources/Images/flags/france.gif" alt="French Flag" height="30" border="0" class="flag" /></h3>
+        <h5>TABLE DESIGNATOR</h5>
+        <p class="DBTCodePara">fra-fra00</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TableDesignator.flsnp" />
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The French tables support print-to-braille translation of French-language literary text and mathematical and computer notation, following the codes and customs established by the Association Valentin Hauy (AVH), Paris, and widely used for French by AVH and others until an international agreement on unification of French codes was reached in 2005.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Braille_to_Print.flsnp" />
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>True braille-to-print translation is supported within French text, but not in technical notation. This means that any mathematics or computer-notation portions of a braille file will not translate correctly to print. It also means that the "translated line" will typically contain gibberish when the cursor is in mathematics or computer notation.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>No secondary languages are supported.</p>
+        <p>Note however that it is possible to switch to any of the available translation tables listed in DBT. (See the <span class="Code-DuxCode">[lnb~...]</span> code below.)</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>The mathematics-oriented technical notation code is defined in "Notation Mathematique," published by AVH. The computer-notation code, "Informatique," is also defined by AVH.</p>
+        <p>It is also possible to switch to any of the available translation tables listed in DBT (see the <span class="Code-DuxCode">[lnb~...]</span>code below), many of which do support various technical codes, such as for mathematics or computer notation, or which support “unified” treatment of technical notation as well as literary text in the base language associated with the table.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p>The following DBT translation codes are available when using the French (pre-Unified) table. Any other translation codes used will be ignored, or indeed may cause unexpected results. If using an alternative translation table, i.e when switching to another base language table by means of the<span class="Code-DuxCode">[lnb~...]</span> code, please refer to the relevant topic and available codes for that table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to <span class="Code-DuxCode">[g2]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[bar]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[beN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant of <span class="Code-DuxCode">[be]</span> to end a subscript with "forced" treatment; see <span class="Code-DuxCode">[bsN]</span> below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[be]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bline]</span> -- ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bsN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant form of the <span class="Code-DuxCode">[bs]</span> code that forces treatment of a subscript as (0) simple, (1) medium, (2) high, (3) framed by parentheses, or (4) framed by brackets. (If treatment is not forced, the simple treatment is used if it can be determined that such treatment is OK and otherwise parenthesis framing is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb]</span> is a synonym for <span class="Code-DuxCode">[iq]</span>, which see below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbi]</span> is a synonym for <span class="Code-DuxCode">[iq]</span>, which see below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbn]</span> is a synonym for <span class="Code-DuxCode">[iq]</span>, except that no indicator is generated.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cz]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cz;f]</span> is like <span class="Code-DuxCode">[cz]</span>except that the ASCII characters correspond to braille according to French conventions (CBFR-1252).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[e]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[feN]</span> where <span class="Code-DuxCode">N</span> is 0 or 1 is a special variant form of the <span class="Code-DuxCode">[fe]</span> code used when forcing the denominator to have (0) "simple" or (2) "framed" treatment of a fraction; see <span class="Code-DuxCode">[fsN]</span> and <span class="Code-DuxCode">[flMN]</span> below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[flMN]</span> where <span class="Code-DuxCode">M</span> and <span class="Code-DuxCode">N</span> are each 0 or 1 is a special variant form of the <span class="Code-DuxCode">[fl]</span> code used when forcing both the numerator and denominator to have simple or framed treatment. For example,</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs0]</span><span class="Code-DuxScreen">numerator</span><span class="Code-DuxCode">[fl01]</span><span class="Code-DuxScreen">denominator</span><span class="Code-DuxCode">[fe1]</span>
+        </p>
+        <p class="CodeList">would force the numerator to have simple treatment and the denominator to have framed treatment. (If forcing is not used, simple treatment is used if it can be determined that such treatment is clearly OK, otherwise the framed treatment is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fsN]</span> where <span class="Code-DuxCode">N</span> is 0 or 1 is a special variant form of the <span class="Code-DuxCode">[fs]</span> code used when forcing the numerator to have (0) "simple" or (2) "framed" treatment of a fraction; see <span class="Code-DuxCode">[feN]</span> and <span class="Code-DuxCode">[flMN]</span> above.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ii]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to <span class="Code-DuxCode">[g1]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[iq]</span> begins "informatique" (computer braille); see also <span class="Code-DuxCode">[tx]</span> below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtdN]</span> where N is 0, 1 or 2 is a special variant of [ixrtd] used for forcing (1) simple, (2) medium or (3) framed treatment of the radicand. (If forcing is not used, simple treatment is used if it can be determined that such treatment is clearly OK, otherwise the framed treatment is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrteN]</span> where N is 0, 1 or 2 is a special variant of <span class="Code-DuxCode">[ixrte]</span> used for forcing (1) simple, (2) medium or (3) framed treatment of the radicand. See <span class="Code-DuxCode">[ixrtdN]</span>, above.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtsN]</span> where N is 0, 1 or 2 is an allowed special variant form of <span class="Code-DuxCode">[ixrts]</span> that is always equivalent to <span class="Code-DuxCode">[ixrts]</span>; see <span class="Code-DuxCode">[ixrtdN]</span>, above.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb~...]</span> (for switching to another base [primary] language table)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng]</span> -- ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[oeN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant of <span class="Code-DuxCode">[oe]</span> to end an "over" index with "forced" treatment; see <span class="Code-DuxCode">[osN]</span> below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[oe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[osN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant form of the [os] code that forces treatment of an "over" index as (0) simple, (1) medium, (2) high, (3) framed by parentheses, or (4) framed by brackets. (If treatment is not forced, the simple treatment is used if it can be determined that such treatment is OK and otherwise parenthesis framing is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[os]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[peN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant of <span class="Code-DuxCode">[pe]</span> to end a superscript with "forced" treatment; see <span class="Code-DuxCode">[psN]</span> below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[pe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[psN</span>] where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant form of the <span class="Code-DuxCode">[ps]</span> code that forces treatment of a superscript as (0) simple, (1) medium, (2) high, (3) framed by parentheses, or (4) framed by brackets. (If treatment is not forced, the simple treatment is used if it can be determined that such treatment is OK and otherwise parenthesis framing is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ps]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrteN]</span> where <span class="Code-DuxCode">N</span> is 0, 1 or 2 is a special variant of [sqrte] used for forcing (1) simple, (2) medium or (3) framed treatment of the radicand. See <span class="Code-DuxCode">[sqrtsN]</span>, below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrtsN]</span> where <span class="Code-DuxCode">N</span> is 0, 1 or 2 is a special variant of <span class="Code-DuxCode">[sqrts]</span> used for forcing (1) simple, (2) medium or (3) framed treatment of the radicand. (If forcing is not used, simple treatment is used if it can be determined that such treatment is clearly OK, otherwise the framed treatment is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[tce]</span> cancels the effect of <span class="Code-DuxCode">[tcs]</span>, restoring literary treatment (which is the default).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tcs]</span> is required in this table to enable math (technical) context, i.e. for general treatment of technical material including the surrounding text. See the Topical How-To Guide, under Help, for general instructions.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[te]</span> cancels the effect of <span class="Code-DuxCode">[ts]</span>, restoring normal text mode (even though "technical context" may remain in effect).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ts]</span> initiates "technical notation," i.e. "math mode" within technical context.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tx]</span> cancels "informatique" (computer braille -- see <span class="Code-DuxCode">[iq]</span>) or "no translate" (see <span class="Code-DuxCode">[cz]</span>), reverting to ordinary text.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[txn]</span> is like <span class="Code-DuxCode">[tx]</span>) except that no indicator is generated.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ueN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant of <span class="Code-DuxCode">[ue]</span> to end an "under" index with "forced" treatment; see <span class="Code-DuxCode">[usN]</span> below.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[usN]</span> where <span class="Code-DuxCode">N</span> is a number in the range 0 through 4 is a special variant form of the <span class="Code-DuxCode">[us]</span> code that forces treatment of an "under" index as (0) simple, (1) medium, (2) high, (3) framed by parentheses, or (4) framed by brackets. (If treatment is not forced, the simple treatment is used if it can be determined that such treatment is OK and otherwise parenthesis framing is used.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn]</span> cancels any "variation" in effect, reverting to standard treatment of all punctuation. Note that only at most one of the variations listed below can be in effect at any one time. Also, all variation codes are subject to removal or change in subsequent versions.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~003]</span> forces dot 3 to be used for all instances of period/fullstop (.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~256]</span> forces dots 256 to be used for all instances of period/fullstop (.) and also other marks, such as the percent sign (%), to be treated in accordance with current proposals of the International Forum on French Braille Standardization.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~gpt]</span> forces "old" treatment of parentheses, quotes and dashes.</p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p>All ASCII printable characters</p>
+        <p>Accented characters and punctuation marks typical of French, German, Italian, and Spanish</p>
+        <p>British pound and other miscellaneous signs (DUSCI page D+ee...)</p>
+        <p>Mathematical signs, shapes, etc. (in "technical context" only) (DUSCI pages D+e2..., D+e5..., D+ef..., D+f0..., D+f1...)</p>
+        <p>Note that, for historical reasons, certain printable characters are reserved for "forcing" symbols and indicators, namely:</p>
+        <p>D+9b (cent sign): indicator for start of continuous (multi-word) capitals</p>
+        <p>D+9d (yen sign): indicator for one word in full capitals D+9f (small script f with hook): indicator for last word in continuous (multi-word) capitals D+f9 (middle dot): forces "abbreviation point" instead of full stop</p>
+        <p>The above is a general guide only (see "<a href="translation_tables.htm#GENERAL_NOTES">General Notes</a>" section at the beginning of this document).</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>The development of the literary portions of these tables commenced in March 1987, under the sponsorship of the Association Valentin Hauy (AVH), Paris, and as a joint technical effort of Duxbury Systems, Inc. and AVH. The primary specification for French literary braille usage with contractions is "Abrege; Orthographique Etendu," a publication of AVH. "Table de Transcription pour la Production du Braille Abrege par Ordinateur," by Michel Jacquin and published by AVH (1986) was also instrumental in this early development.</p>
+        <p>An "informatique" (computer notation) code was also included in the early work, and revised considerably in 1999-2000 in response to a change in specifications.</p>
+        <p>The braille-to-print translation tables were added starting in November 1990, with the same sponsors and developers.</p>
+        <p>Mathematics translation facilities, following "Notation Mathematique" as prepared by AVH, were added in 1999-2000, with AVH again providing sponsorship and collaborating in the technical work with Duxbury Systems, Inc.</p>
+        <p>(Documentation reviewed: July 2010.)</p>
+    </body>
+</html>

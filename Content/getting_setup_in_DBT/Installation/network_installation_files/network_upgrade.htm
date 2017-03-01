@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:conditions="Primary.Windows_Version" MadCap:lastBlockDepth="4" MadCap:lastHeight="930" MadCap:lastWidth="625">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>Upgrading a Network Installation of DBT</h2>
+        <h3>Introduction</h3>
+        <p>The standard multi-user configuration of DBT uses a single computer on your local area network that acts as the DBT server for all the other computers on the network. In this configuration, only the server DBT must be activated. All the other instances of DBT on the network are clients of that server. To run, they receive their activation by connecting to the server.</p>
+        <p>Duxbury provides instructions for two methods of installing client DBT’s on the network. One method relies on the standard, simple installation instructions and using the Activation Wizard to reconnect the clients to the server. The other method relies on creating a <b>server image</b> (custom installer) on the server computer and then using that to install the client DBT’s. For upgrades, just as for original installations, both methods are available.</p>
+        <p>Only the server image method preserves the existing connections of the DBT clients to their server.</p>
+        <h3>Preparation and Warning</h3>
+        <p>First, quite apart from any upgrade to DBT, there is the matter of system upgrades and hardware changes. </p>
+        <p>Many customers know this by heart, but it is highly advantageous to deactivate DBT prior to a system or hardware change that may alter the “signature” of your computer system. If you do not do so, you will get an Invalid Machine Code error when you run DBT again after the system change.</p>
+        <p>Prior deactivation avoids this error. Once you get the Invalid Machine Code error, you have to uninstall and reinstall your DBT, then contact Duxbury customer service to get your activation record reset, and then you can reactivate.</p>
+        <p>What system changes will alter your computer system signature? Here is a list of the common events that will make your computer become “invalid” to the activation protection software:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li style="list-style-type: square;">Upgrading the computer Operating System</li>
+            <li style="list-style-type: square;">Updating the computer BIOS</li>
+            <li style="list-style-type: square;">Changing or updating the virtual machine</li>
+            <li style="list-style-type: square;">Changing or updating the virtual machine host software or tools</li>
+            <li style="list-style-type: square;">Repartitioning or reformatting the hard disk</li>
+            <li style="list-style-type: square;">Adding a disk</li>
+            <li style="list-style-type: square;">Imaging DBT onto another computer, whether virtual or real</li>
+            <li style="list-style-type: square;">Moving the hard disk</li>
+            <li style="list-style-type: square;">Moving DBT to another disk</li>
+        </ul>
+        <p>This list in not exhaustive, but these are the most common issues. If you are making any of these changes, deactivate DBT beforehand. </p>
+        <p>However, if you are only upgrading DBT to a newer version sans any other system changes, you can keep DBT activated.</p>
+        <p>Second, <b>do not uninstall</b> the old DBT on your server. When doing a DBT upgrade you have the choice of uninstalling the old version or simply installing the new version and leaving the two versions side by side. Some customers like to uninstall the old version to avoid clutter or to make configuration management easier, but it is not necessary.</p>
+        <p>Even for those who consider removing the old version a requirement, you should retain it until the new one is installed and the upgrade is complete. If you leave your old DBT in place while upgrading to the new one, your activation remains intact during the upgrade process and saves you the bother of reactivating the DBT server. Furthermore, waiting to remove the old DBT can also preserve your global embosser definitions, your license record, and your other DBT configuration data.</p>
+        <p>If you choose to uninstall the old DBT after the new version is installed, that will have no adverse effect on DBT activation. </p>
+        <p>The only limitation on this approach is that you must install the new version of DBT to the same location (disk and system volume) as the old version. (See <a href="#Limitati">Limitations</a>, below.)</p>
+        <p>Third, when you upgrade DBT, the <b>Shared License Service</b> running on the DBT server does not need to be removed or reinstalled. The service does not even need to be stopped. Nor is there any need to remove and reinstall the “Shared License Server” folder or files.</p>
+        <p>Keeping this service unchanged dictates only that when clients connect to the server they must continue to use the same port number as before. Usually, this is exactly what you want.</p>
+        <p>Note: The Shared License Service is independent of the DBT installer package and is not removed during uninstallation of DBT. It will only need to be stopped, removed, and reinstalled if a new version of the service should be released.</p>
+        <h4><a name="Limitati"></a>Limitations</h4>
+        <p>The limitations on the recommendations above are not frequent occurrences, but you should be aware of them.</p>
+        <h5>Installing the Upgrade to a Different Volume or Disk</h5>
+        <p>As noted in the Preparation discussion above, moving DBT to a different disk or different system volume makes the computer signature appear to change and causes an activation error. If you need to do this you need to deactivate first and reactivate after the upgrade.</p>
+        <p>Duxbury recommends in this case that you follow one of two options: </p>
+        <p>(1) Deactivate the old DBT, and then move it to the desired new disk location. Reactivate it there, and then start the upgrade. This retains most of the advantages of the normal upgrade procedure, like retaining the server activation and configuration data, and it allows you to retain the old version on the system if you so desire. </p>
+        <p>(2) Uninstall the old DBT from the old location before installing the new version in the new location, effectively starting your installation from scratch. </p>
+        <h5>Product Families </h5>
+        <p>All versions of DBT from DBT 11.2 through the most recent release are a single product family. However, Duxbury has, from time to time, started a new product family when circumstances required. If a new version of DBT starts a new product family, the old DBT activation will not carry over to the new version.</p>
+        <p>As a practical matter you can ignore this possibility and follow your normal preferred installation procedure (one of the two methods described in the following sections). If the new DBT turns out not to be activated you will have to reactivate your server DBT and then continue the upgrade as described. You will also have to run the DuxSlsEditor.exe editor for the Shared License Service to allow it to configure the new DBT product initialization file.</p>
+        <h3>Upgrading a Network Installation using a Server Image</h3>
+        <p>The upgrade software must be installed on both the server DBT and the client DBT’s. You should install DBT on the server first. </p>
+        <p>Note: The “server image” approach is usually the most efficient because it potentially retains your current configuration data, global embosser definitions, the license record, your current activation on the server, and all the client connections to the server.</p>
+        <p>Be sure you have read and understood whether your situation requires deactivating or even uninstalling your old DBT prior to the upgrade. If your circumstances require that you must uninstall DBT, most of the advantages noted above are lost. If you uninstalled, you must follow the complete instructions per <a href="network_install_using_server_image.htm">Network Installation Using a Server Image</a>. Even so, this installation method still automatically connects all of the client DBT’s to the server.</p>
+        <p>Assuming your old DBT is still installed, refer to <a href="network_install_using_server_image.htm">Network Installation Using a Server Image</a>, and do these steps:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Review Section 1 to again familiarize yourself with the required information.</li>
+            <li>Install DBT on the server per Section 2 and the Simple Installation steps. The principal guideline here is that wherever possible you want to install exactly as before: on the same server, to the same location (disk and system volume), using the same standard user name, the same organization name, the same Duxbury license, and the same folder location for activation data, etc.</li>
+            <li>Unless you had to deactivate, you can skip Section 3.</li>
+            <li>In the typical upgrade situation you do not need to reconfigure embossers; skip Section 4.</li>
+            <li>Unless your prior DBT installation predates the use of the separate installer for the Shared License Service (DuxSls-0100.msi), the Shared License Service can be carried forward from the older DBT to the new one; skip Section 5. (Otherwise, see the <a href="#Note">Note for Long-time Customers</a> below.)</li>
+            <li>Create the server image installer as described in Section 6.</li>
+            <li>Then install on your DBT client machines using the server image installer as described in Section 7.</li>
+        </ol>
+        <h3>Upgrading a Network Installation using the Activation Wizard</h3>
+        <p>The upgrade software must be installed on both the server DBT and the client DBT’s. You should install DBT on the server first. </p>
+        <p>Note: This approach potentially retains your current configuration data, global embosser definitions, the license record, and your current activation on the server. It eliminates the step to create a server image (custom installer), but it does not retain the former client connections. Those connections can be restored using the Activation Wizard.</p>
+        <p>Assuming your old DBT is still installed, refer to <a href="network_install_using_wizard.htm">Network Installation Using the Activation Wizard</a>, and do these steps:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Review Section 1 to again familiarize yourself with the required information.</li>
+            <li>Install DBT on the server per Section 2 and the Simple Installation steps. The principal guideline here is that wherever possible you want to install exactly as before: on the same server, to the same location (disk and system volume), using the same standard user name, the same organization name, the same Duxbury license, and the same folder locations for activation data, etc.</li>
+            <li>Unless you had to deactivate, you can skip Section 3.</li>
+            <li>Unless your prior DBT installation predates the use of the separate installer for the Shared License Service (DuxSls-0100.msi), the Shared License Service can be carried forward from the older DBT to the new one; skip Section 4. (Otherwise, see the <a href="#Note">Note for Long-time Customers</a> below.)</li>
+            <li>Read the next section: <a href="#When">When Upgrading DBT Clients</a>. Then install your DBT client machines using the instructions in Section 5.</li>
+        </ol>
+        <h4><a name="When"></a>When Upgrading DBT Clients</h4>
+        <p>In the case of an upgrade installation, when the client DBT is first started, usually it reports that it is deactivated. This is an undesirable side effect of simple client installation, but it is normal. To reconnect the client, on the DBT splash screen click the Activate button to enter the Activation Wizard, select “Connect to the network license server,” and follow the prompts.</p>
+        <p>Occasionally under these circumstances you might see, "DBT license and activation initialization failed: Error 0x8004105C" – which is a network connectivity error. Unfortunately, when this error occurs DBT immediately closes, so you have to open the Activation Wizard (actwiz.exe, in the DBT folder) directly to fix it.</p>
+        <p>This error does not indicate the server installation is compromised or that the server is not activated, although it could indicate a problem with the Shared License Service such as a port conflict or multiple copies of the service running using the same port number (See <a href="#Note">Note for Long-time Customers</a>). You can open the Activation Wizard directly to resolve the problem. Look for the Activation Wizard (actwiz.exe) in the DBT folder.</p>
+        <p>In the instructions for <a href="network_install_using_wizard.htm">Network Installation Using Activation Wizard</a>, go to Section 5, client installation, and follow the steps to reconnect the client DBT to the server. The instructions also list the most likely reasons for a connection failure to help you trace down any issues.</p>
+        <h3><a name="Note"></a>Note for Long-time Customers</h3>
+        <p>If you currently have a DBT older than version 11.2 you probably have an old copy of slsService.exe running on your DBT server. You can check that in your Services control panel. We recommend you delete that copy of the shared license service and reinstall using the DuxSLS-0100.msi installer. Doing so eliminates future confusion identifying the service, especially if work must be done to open up a pathway in your firewall.</p>
+        <p>You cannot delete the old service using the Services control panel, only stop it. Instead, use the Programs and Features control panel to uninstall it, or open a Command Prompt with administrative privileges and remove it that way. The procedure is: right-click on the Command Prompt icon and select <code>Run as administrator</code>. Then enter this command:</p>
+        <p> <code>sc delete slsService</code></p>
+        <p>That command removes the old service and prevents any port-access conflicts with the new service.</p>
+        <p>Then follow the Network Installation instructions for “Install the Shared License Service” to install this service and configure your firewall.</p>
+        <h3>The Fall-back Option: Uninstall and Reinstall from Scratch</h3>
+        <p>We would like to stress that for most upgrades, you do not need to uninstall your current DBT and start over. </p>
+        <p>You only need to uninstall it if you want to change where DBT is located compared to the old version, e.g., to put it on a different disk, or on a different system volume, or on another host computer.</p>
+        <p>Before you uninstall you should (1) deactivate DBT and (2) take notes regarding your global embosser definitions so that you can recreate them easily.</p>
+        <p>You can uninstall DBT through the system control panel: select your DBT and use the Uninstall command.</p>
+        <p>Then, to install your new DBT, follow the normal Network Installation instructions using either the Server Image (automatic deployment) method or the Activation Wizard (manual) method as you choose. </p>
+    </body>
+</html>

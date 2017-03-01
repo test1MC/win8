@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  DefaultUrl="/Content/welcome_to_DBT/welcome_to_dbt.htm"
+  OutputFile="Duxbury_Braille_Translator.doc"
+  ConditionTagExpression="exclude[Primary.Braille_Only OR Primary.Not_in_Print_Docs]"
+  Type="MsWord"
+  MasterToc="/Project/TOCs/Primary.fltoc"
+  GlossaryTermConversion="marked"
+  DisableAutoSync="true">
+  <Variables />
+  <ConditionTags />
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/Main.flglo" />
+  </Glossaries>
+</CatapultTarget>

@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject Version="1" xml:lang="en-us" MasterToc="/Project/TOCs/Primary.fltoc" IncludePattern="*.fltoc" AutoExcludeNonTaggedFiles="false" IncludeLinkedFiles="false" DeleteStale="false" AutoSync="false" LastImport="2016-12-09T23:32:45.4343208+00:00" MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css" SourceControlBound="true" SourceControlDatabase="C:\Users\george2.TVS.000\Documents\DBT Help\.git" SourceControlProviderType="Git" ProjectGuid="94a22109-bb1b-468a-a2a0-b372eb91b26b" SourceControlDatabaseRoot="C:\Users\george2.TVS.000\Documents\DBT Help" DeleteUnreferenced="false">
+    <Files>
+        <Url Source="file:///C:/Users/george2/Documents/dbt-PerkyDuck/dbt-PerkyDuck.flprj" AbsoluteSource="file:///C:/Users/george2/Documents/dbt-PerkyDuck/dbt-PerkyDuck.flprj" />
+    </Files>
+    <ExcludedFiles>
+        <Url Source="../TOCs/helperky.fltoc" AbsoluteSource="file:///C:/p/dbthelp/Project/TOCs/helperky.fltoc" />
+    </ExcludedFiles>
+    <CollectedSourceFiles>
+        <Url Source="../../../Activation Wizard 11.3/Content/index.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/index.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_45DayTrial.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_45DayTrial.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ActivateManualOptsPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ActivateManualOptsPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ActivateSelectPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ActivateSelectPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ActivationCodePg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ActivationCodePg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ActivationDataPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ActivationDataPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ConnectPage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ConnectPage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_DataSummaryPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_DataSummaryPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_DeactivSelectPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_DeactivSelectPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_DeactivTelePage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_DeactivTelePage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_DiagnosticsPage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_DiagnosticsPage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_MainPage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_MainPage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_OpDonePage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_OpDonePage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_OPErrorPage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_OPErrorPage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_RegEmailInfoPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_RegEmailInfoPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_RegisterIntroPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_RegisterIntroPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_RegPermissionPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_RegPermissionPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_RegUserInfoPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_RegUserInfoPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ScreenRdr.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ScreenRdr.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_SendEmailPage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_SendEmailPage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_SendFaxPage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_SendFaxPage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ShareExtrasPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ShareExtrasPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_ShareIntroPg.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_ShareIntroPg.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_WelcomePage.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_WelcomePage.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_WelcomePage_1.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_WelcomePage_1.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_WelcomePage_2.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_WelcomePage_2.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_WelcomePage_3.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_WelcomePage_3.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_WelcomePage_4.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_WelcomePage_4.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/m_WelcomePage_5.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/m_WelcomePage_5.htm" />
+        <Url Source="../../../Activation Wizard 11.3/Content/pics.htm" AbsoluteSource="file:///C:/p/Activation Wizard 11.3/Content/pics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/ATC_Braille_a_Print.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/ATC_Braille_a_Print.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/ATC_Dot_a_Print.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/ATC_Dot_a_Print.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/ATC_Ohtsuki.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/ATC_Ohtsuki.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Brailletec_BTec_100.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Brailletec_BTec_100.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Brailletec_Elotype_4A.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Brailletec_Elotype_4A.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Brailletec_PUMA_6.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Brailletec_PUMA_6.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Brailletec_PUMA_7.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Brailletec_PUMA_7.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_200.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_200.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_200_400_with_270_style_ROMs.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_200_400_with_270_style_ROMs.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_270.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_270.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_30.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_30.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_300.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_300.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_400S.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_400S.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_400SR.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_400SR.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_40_50.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_40_50.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_440_SaF.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_440_SaF.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_440_SW.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_440_SW.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_600SR.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_600SR.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_650_SaF.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_650_SaF.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_650_SW.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_650_SW.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Braillo_Comet.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Braillo_Comet.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Cranmer_Brailler.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Cranmer_Brailler.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/EBrailler_Cosmo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/EBrailler_Cosmo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/embosser_list.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/embosser_list.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_BraillePlace.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_BraillePlace.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Braille_Bookmaker.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Braille_Bookmaker.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Braille_Express-100.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Braille_Express-100.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Braille_Express-150.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Braille_Express-150.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Braille_Express.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Braille_Express.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Cyclone.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Cyclone.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_E.T..htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_E.T..htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Juliet_120.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Juliet_120.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Juliet_Classic.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Juliet_Classic.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Juliet_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Juliet_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Juliet_Pro_60.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Juliet_Pro_60.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Marathon.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Marathon.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_PED-30.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_PED-30.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Phoenix_gold.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Phoenix_gold.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Phoenix_silver.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Phoenix_silver.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_20_40.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_20_40.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_25.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_25.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_60.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_60.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Attache.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Attache.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Attache_(2nd_Edition).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Attache_(2nd_Edition).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Attache_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Attache_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Pro_50.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Pro_50.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Pro_LE_Narrow.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Pro_LE_Narrow.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Romeo_Pro_LE_Wide.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Romeo_Pro_LE_Wide.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Thomas.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Thomas.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Thomas_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Thomas_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_TranSend_LT.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_TranSend_LT.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_TranSend_LT_(Large_Print).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_TranSend_LT_(Large_Print).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Enabling_Trident.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Enabling_Trident.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Freedom_Scientific_Braille_Blazer.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Freedom_Scientific_Braille_Blazer.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Freedom_Scientific_Braille_Inferno.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Freedom_Scientific_Braille_Inferno.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Freedom_Scientific_VersaPoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Freedom_Scientific_VersaPoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Freedom_Scientific_VersaPoint_Duo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Freedom_Scientific_VersaPoint_Duo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_4Waves_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_4Waves_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_4x4_PRO.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_4x4_PRO.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_Advanced.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_Advanced.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_Basic-D.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_Basic-D.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_Basic-S.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_Basic-S.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_Basic_(blue_bar).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_Basic_(blue_bar).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_Braille_Box.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_Braille_Box.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Index_Everest-D.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Index_Everest-D.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Interpoint_NV_Elekul_03.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Interpoint_NV_Elekul_03.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Interpoint_NV_Elekul_55.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Interpoint_NV_Elekul_55.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/JTR_Corporation_ESA-2000.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/JTR_Corporation_ESA-2000.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/JTR_Corporation_ESA-300_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/JTR_Corporation_ESA-300_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/JTR_Corporation_ESA-600_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/JTR_Corporation_ESA-600_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/JTR_Corporation_ESA-721.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/JTR_Corporation_ESA-721.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/JTR_Corporation_ESA-919.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/JTR_Corporation_ESA-919.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Gemini_(small_spacing).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Gemini_(small_spacing).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Super_Gemini_(small_spacing).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Super_Gemini_(small_spacing).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Telesoft_BMP-320.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Telesoft_BMP-320.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Telesoft_BPW-32.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Telesoft_BPW-32.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Telesoft_DOG-Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Telesoft_DOG-Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Telesoft_Gemini.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Telesoft_Gemini.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Telesoft_Super_Gemini.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Telesoft_Super_Gemini.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Nippon_Telesoft_TP-32.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Nippon_Telesoft_TP-32.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/ports.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/ports.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Pulse_Data_Paragon.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Pulse_Data_Paragon.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Quantum_Mountbatten.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Quantum_Mountbatten.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/RESUS.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/RESUS.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_Bax_10.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_Bax_10.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_Beta_X3.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_Beta_X3.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_Impacto_600.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_Impacto_600.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_Impacto_Advanced.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_Impacto_Advanced.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_PortaThiel.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_PortaThiel.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_PortaThiel_Interpoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_PortaThiel_Interpoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Thiel_Texto.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Thiel_Texto.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Triformations_LED-120.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Triformations_LED-120.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Triformations_Personal_Brailler.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Triformations_Personal_Brailler.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Triformations_TED-600.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Triformations_TED-600.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Triformations_TRI-170.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Triformations_TRI-170.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/ViewPlus_Columbia.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/ViewPlus_Columbia.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Elite.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Elite.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Elite_with_Ink_Connect.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Elite_with_Ink_Connect.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_EmBraille.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_EmBraille.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Emprint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Emprint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Premier.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Premier.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Premier_with_Ink_Connect.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Premier_with_Ink_Connect.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Tiger_Advantage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Tiger_Advantage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Tiger_Cub.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Tiger_Cub.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Tiger_Cub_Junior.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Tiger_Cub_Junior.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Tiger_Max.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Tiger_Max.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Tiger_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Tiger_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/Viewplus_Tiger_Pro_Ink.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/Viewplus_Tiger_Pro_Ink.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/VTEK_MBOSS-1.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/VTEK_MBOSS-1.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/VTEK_MBOSS-35.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/VTEK_MBOSS-35.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/0.50 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/0.50 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/0.75 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/0.75 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/1.00 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/1.00 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/1.25 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/1.25 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/1.50 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/1.50 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/1.75 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/1.75 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/10_d.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/10_d.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/10_n.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/10_n.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/10_w.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/10_w.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/11_d.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/11_d.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/11_gem.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/11_gem.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/11_n.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/11_n.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/11_vw.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/11_vw.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/11_w.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/11_w.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/12_d.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/12_d.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/12_n.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/12_n.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/12_vw.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/12_vw.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/12_w.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/12_w.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/13.5_d.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/13.5_d.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/13_d.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/13_d.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/13_n.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/13_n.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/13_w.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/13_w.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/2.00 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/2.00 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/2.25 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/2.25 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/2.50 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/2.50 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/2.75 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/2.75 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/3.00 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/3.00 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/3.25 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/3.25 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/3.50 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/3.50 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/3.75 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/3.75 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/4.00 inch label.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/4.00 inch label.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/A3_foilo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/A3_foilo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/A4.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/A4.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/AdditionalDelay.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/AdditionalDelay.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ATC_Braille_a_Print.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ATC_Braille_a_Print.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ATC_Dot_a_Print.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ATC_Dot_a_Print.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ATC_Ohtsuki.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ATC_Ohtsuki.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Baud.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Baud.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/BrailleOnly.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/BrailleOnly.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Brailletec_BTec_100.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Brailletec_BTec_100.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Brailletec_Elotype_4A.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Brailletec_Elotype_4A.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Brailletec_PUMA_6.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Brailletec_PUMA_6.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Brailletec_PUMA_7.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Brailletec_PUMA_7.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/BrailloHGapGraphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/BrailloHGapGraphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/BrailloVGapGraphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/BrailloVGapGraphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_200.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_200.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_200_400_with_270_style_ROMs.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_200_400_with_270_style_ROMs.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_270.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_270.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_30.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_30.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_300.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_300.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_400S.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_400S.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_400SR.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_400SR.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_40_50.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_40_50.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_440_SaF.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_440_SaF.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_440_SW.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_440_SW.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_600SR.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_600SR.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_650_SaF.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_650_SaF.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_650_SW.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_650_SW.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Braillo_Comet.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Braillo_Comet.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/BreakLimits.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/BreakLimits.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/CanDoInterpoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/CanDoInterpoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ControlD.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ControlD.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ControlDelay.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ControlDelay.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ControlZ.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ControlZ.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Cranmer_Brailler.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Cranmer_Brailler.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/CrMac.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/CrMac.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Customize.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Customize.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/DataBits.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/DataBits.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/DoublePage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/DoublePage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Driver.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Driver.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/EBrailler_Cosmo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/EBrailler_Cosmo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_BraillePlace.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_BraillePlace.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Braille_Bookmaker.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Braille_Bookmaker.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Braille_Express-100.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Braille_Express-100.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Braille_Express-150.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Braille_Express-150.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Braille_Express.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Braille_Express.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Cyclone.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Cyclone.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_E.T..htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_E.T..htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Juliet_120.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Juliet_120.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Juliet_Classic.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Juliet_Classic.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Juliet_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Juliet_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Juliet_Pro_60.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Juliet_Pro_60.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Marathon.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Marathon.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_PED-30.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_PED-30.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Phoenix_Gold.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Phoenix_Gold.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Phoenix_Silver.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Phoenix_Silver.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_20_40.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_20_40.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_25.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_25.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_60.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_60.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache_(2nd_Edition).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache_(2nd_Edition).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Pro_50.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Pro_50.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Pro_LE_Narrow.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Pro_LE_Narrow.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Romeo_Pro_LE_Wide.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Romeo_Pro_LE_Wide.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Thomas.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Thomas.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Thomas_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Thomas_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_TranSend_LT.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_TranSend_LT.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_TranSend_LT_(Large_Print).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_TranSend_LT_(Large_Print).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Enabling_Trident.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Enabling_Trident.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Encoding.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Encoding.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/EndofPage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/EndofPage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ETCAllowEscapeCodes.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ETCAllowEscapeCodes.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ETHighResGraphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ETHighResGraphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ETMediumResGraphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ETMediumResGraphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ETmulti.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ETmulti.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ETSpeaks.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ETSpeaks.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fDsrSensitivity.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fDsrSensitivity.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fDtrControl.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fDtrControl.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fInx.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fInx.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Form.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Form.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fOutX.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fOutX.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fOutxCtsFlow.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fOutxCtsFlow.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fOutxDsrFlow.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fOutxDsrFlow.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Freedom_Scientific_Braille_Blazer.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Freedom_Scientific_Braille_Blazer.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Freedom_Scientific_Braille_Inferno.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Freedom_Scientific_Braille_Inferno.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Freedom_Scientific_VersaPoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Freedom_Scientific_VersaPoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Freedom_Scientific_VersaPoint_Duo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Freedom_Scientific_VersaPoint_Duo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fRtsControl.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fRtsControl.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/fTXContinueOnOff.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/fTXContinueOnOff.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/generic.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/generic.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Generic_Interpoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Generic_Interpoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Handshaking.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Handshaking.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/HardwareDCB.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/HardwareDCB.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/HelpPage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/HelpPage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index16Graphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index16Graphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index20Graphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index20Graphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/IndexMulti.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/IndexMulti.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/IndexPageInch.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/IndexPageInch.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/IndexPagemm.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/IndexPagemm.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/IndexVersions.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/IndexVersions.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/IndexZfold.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/IndexZfold.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_4Waves_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_4Waves_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_4x4_PRO.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_4x4_PRO.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_Advanced.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_Advanced.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_Basic-D.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_Basic-D.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_Basic-S.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_Basic-S.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_Basic_(blue_bar).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_Basic_(blue_bar).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_Braille_Box.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_Braille_Box.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Index_Everest-D.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Index_Everest-D.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/IniFile.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/IniFile.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Interline.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Interline.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Interpoint_NV_Elekul_03.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Interpoint_NV_Elekul_03.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Interpoint_NV_Elekul_55.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Interpoint_NV_Elekul_55.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-2000.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-2000.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-300_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-300_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-600_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-600_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-721.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-721.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-919.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/JTR_Corporation_ESA-919.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/LessLinesInterpoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/LessLinesInterpoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/LettersUpperCase.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/LettersUpperCase.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/LfUnix.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/LfUnix.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/LinesPadded.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/LinesPadded.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/LineWrap.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/LineWrap.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ManualInterpoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ManualInterpoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/MaximumCells.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/MaximumCells.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/MaximumLines.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/MaximumLines.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NarrowWarning.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NarrowWarning.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/nbp.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/nbp.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Gemini_(small_spacing).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Gemini_(small_spacing).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Super_Gemini_(small_spacing).htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Super_Gemini_(small_spacing).htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Telesoft_BMP-320.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Telesoft_BMP-320.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Telesoft_BPW-32.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Telesoft_BPW-32.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Telesoft_dog-pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Telesoft_dog-pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Telesoft_Gemini.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Telesoft_Gemini.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Telesoft_Super_Gemini.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Telesoft_Super_Gemini.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Nippon_Telesoft_TP-32.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Nippon_Telesoft_TP-32.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NoLeftMargin.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NoLeftMargin.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NoMakeupSides.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NoMakeupSides.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NoParallel.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NoParallel.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NoRightMargin.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NoRightMargin.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NoSerial.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NoSerial.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/NoTopMargin.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/NoTopMargin.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/OneByOne.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/OneByOne.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/PageWrap.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/PageWrap.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Parity.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Parity.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/PlateLoadByte.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/PlateLoadByte.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/PortCloseSyncByte.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/PortCloseSyncByte.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/PortCloseSyncCount.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/PortCloseSyncCount.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/PortCloseSyncPrompt.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/PortCloseSyncPrompt.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/PromptNewPage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/PromptNewPage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Pulse_Data_Paragon.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Pulse_Data_Paragon.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Quantum_Mountbatten.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Quantum_Mountbatten.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/RESUS.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/RESUS.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/SinglePage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/SinglePage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/SoftwareDCB.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/SoftwareDCB.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/SortToTop.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/SortToTop.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/StartLeftMargin.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/StartLeftMargin.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/StopBits.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/StopBits.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Submodel.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Submodel.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_Bax_10.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_Bax_10.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_Beta_X3.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_Beta_X3.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_Impacto_600.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_Impacto_600.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_Impacto_Advanced.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_Impacto_Advanced.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_PortaThiel.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_PortaThiel.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_PortaThiel_Interpoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_PortaThiel_Interpoint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Thiel_Texto.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Thiel_Texto.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/TranSend.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/TranSend.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Triformations_LED-120.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Triformations_LED-120.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Triformations_Personal_Brailler.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Triformations_Personal_Brailler.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Triformations_TED-600.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Triformations_TED-600.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Triformations_TRI-170.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Triformations_TRI-170.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/UsingEscapeCodes.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/UsingEscapeCodes.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Columbia.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Columbia.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Elite.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Elite.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Elite_with_Ink_Connect.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Elite_with_Ink_Connect.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_EmBraille.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_EmBraille.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Emprint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Emprint.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Premier.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Premier.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Premier_with_Ink_Connect.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Premier_with_Ink_Connect.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Tiger_Advantage.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Tiger_Advantage.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Tiger_Cub.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Tiger_Cub.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Tiger_Cub_Junior.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Tiger_Cub_Junior.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Tiger_Max.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Tiger_Max.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Tiger_Pro.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Tiger_Pro.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/Viewplus_Tiger_Pro_Ink.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/Viewplus_Tiger_Pro_Ink.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/VPGraphics.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/VPGraphics.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/VPmulti.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/VPmulti.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/VTEK_MBOSS-1.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/VTEK_MBOSS-1.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/VTEK_MBOSS-35.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/VTEK_MBOSS-35.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/WindowsDriverName.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/WindowsDriverName.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/YesFTDI.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/YesFTDI.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/YesUSB.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/YesUSB.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Blazer.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Blazer.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Blue_Bar.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Blue_Bar.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_BookMaker.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_BookMaker.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Braillo_200.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Braillo_200.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Braillo_Comet.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Braillo_Comet.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Cranmer.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Cranmer.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Duo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Duo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Elekul_03.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Elekul_03.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Elekul_55.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Elekul_55.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Index_Basic.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Index_Basic.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_2000.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_2000.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_300.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_300.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_600.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_600.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_721.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_721.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_919.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_JTR_Corporation_919.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_MBOSS1.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_MBOSS1.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_MBOSS35.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_MBOSS35.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Mountbatten.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Mountbatten.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Nippon_Gemini.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Nippon_Gemini.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Nippon_preGemini.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Nippon_preGemini.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Ohtsuki.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Ohtsuki.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Personal.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Personal.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_PortaThiel.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_PortaThiel.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Romeo.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Romeo.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Thiel_BetaX3.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Thiel_BetaX3.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Tiger1.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Tiger1.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_Tiger_eb.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_Tiger_eb.htm" />
+        <Url Source="../../../DBT_Embossers/Content/web/elt/ztech_VersaPoint.htm" AbsoluteSource="file:///C:/p/DBT_Embossers/Content/web/elt/ztech_VersaPoint.htm" />
+        <Url Source="../../../dbt-PerkyDuck/Project/TOCs/helperky.fltoc" AbsoluteSource="file:///C:/p/dbt-PerkyDuck/Project/TOCs/helperky.fltoc" />
+    </CollectedSourceFiles>
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/index.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_45DayTrial.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ActivateManualOptsPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ActivateSelectPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ActivationCodePg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ActivationDataPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ConnectPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_DataSummaryPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_DeactivSelectPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_DeactivTelePage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_DiagnosticsPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_MainPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_OpDonePage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_OPErrorPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_RegEmailInfoPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_RegisterIntroPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_RegPermissionPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_RegUserInfoPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ScreenRdr.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_SendEmailPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_SendFaxPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ShareExtrasPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_ShareIntroPg.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_WelcomePage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_WelcomePage_1.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_WelcomePage_2.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_WelcomePage_3.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_WelcomePage_4.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/m_WelcomePage_5.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/pics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/ATC_Braille_a_Print.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/ATC_Dot_a_Print.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/ATC_Ohtsuki.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Brailletec_BTec_100.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Brailletec_Elotype_4A.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Brailletec_PUMA_6.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Brailletec_PUMA_7.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_200.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_200_400_with_270_style_ROMs.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_270.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_30.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_300.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_400S.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_400SR.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_40_50.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_440_SaF.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_440_SW.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_600SR.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_650_SaF.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_650_SW.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Braillo_Comet.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Cranmer_Brailler.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/EBrailler_Cosmo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/embosser_list.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_BraillePlace.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Braille_Bookmaker.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Braille_Express-100.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Braille_Express-150.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Braille_Express.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Cyclone.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_E.T..htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Juliet_120.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Juliet_Classic.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Juliet_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Juliet_Pro_60.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Marathon.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_PED-30.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Phoenix_gold.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Phoenix_silver.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_20_40.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_25.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_60.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Attache.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Attache_(2nd_Edition).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Attache_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Pro_50.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Pro_LE_Narrow.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Romeo_Pro_LE_Wide.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Thomas.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Thomas_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_TranSend_LT.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_TranSend_LT_(Large_Print).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Enabling_Trident.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Freedom_Scientific_Braille_Blazer.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Freedom_Scientific_Braille_Inferno.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Freedom_Scientific_VersaPoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Freedom_Scientific_VersaPoint_Duo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_4Waves_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_4x4_PRO.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_Advanced.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_Basic-D.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_Basic-S.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_Basic_(blue_bar).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_Braille_Box.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Index_Everest-D.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Interpoint_NV_Elekul_03.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Interpoint_NV_Elekul_55.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/JTR_Corporation_ESA-2000.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/JTR_Corporation_ESA-300_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/JTR_Corporation_ESA-600_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/JTR_Corporation_ESA-721.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/JTR_Corporation_ESA-919.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Gemini_(small_spacing).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Super_Gemini_(small_spacing).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Telesoft_BMP-320.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Telesoft_BPW-32.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Telesoft_DOG-Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Telesoft_Gemini.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Telesoft_Super_Gemini.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Nippon_Telesoft_TP-32.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/ports.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Pulse_Data_Paragon.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Quantum_Mountbatten.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/RESUS.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_Bax_10.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_Beta_X3.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_Impacto_600.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_Impacto_Advanced.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_PortaThiel.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_PortaThiel_Interpoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Thiel_Texto.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Triformations_LED-120.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Triformations_Personal_Brailler.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Triformations_TED-600.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Triformations_TRI-170.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/ViewPlus_Columbia.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Elite.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Elite_with_Ink_Connect.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_EmBraille.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Emprint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Premier.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Premier_with_Ink_Connect.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Tiger_Advantage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Tiger_Cub.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Tiger_Cub_Junior.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Tiger_Max.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Tiger_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/Viewplus_Tiger_Pro_Ink.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/VTEK_MBOSS-1.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/VTEK_MBOSS-35.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/0.50 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/0.75 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/1.00 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/1.25 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/1.50 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/1.75 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/10_d.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/10_n.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/10_w.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/11_d.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/11_gem.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/11_n.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/11_vw.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/11_w.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/12_d.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/12_n.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/12_vw.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/12_w.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/13.5_d.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/13_d.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/13_n.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/13_w.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/2.00 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/2.25 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/2.50 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/2.75 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/3.00 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/3.25 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/3.50 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/3.75 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/4.00 inch label.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/A3_foilo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/A4.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/AdditionalDelay.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ATC_Braille_a_Print.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ATC_Dot_a_Print.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ATC_Ohtsuki.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Baud.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/BrailleOnly.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Brailletec_BTec_100.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Brailletec_Elotype_4A.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Brailletec_PUMA_6.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Brailletec_PUMA_7.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/BrailloHGapGraphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/BrailloVGapGraphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_200.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_200_400_with_270_style_ROMs.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_270.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_30.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_300.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_400S.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_400SR.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_40_50.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_440_SaF.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_440_SW.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_600SR.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_650_SaF.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_650_SW.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Braillo_Comet.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/BreakLimits.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/CanDoInterpoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ControlD.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ControlDelay.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ControlZ.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Cranmer_Brailler.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/CrMac.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Customize.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/DataBits.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/DoublePage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Driver.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/EBrailler_Cosmo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_BraillePlace.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Braille_Bookmaker.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Braille_Express-100.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Braille_Express-150.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Braille_Express.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Cyclone.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_E.T..htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Juliet_120.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Juliet_Classic.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Juliet_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Juliet_Pro_60.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Marathon.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_PED-30.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Phoenix_Gold.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Phoenix_Silver.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_20_40.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_25.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_60.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Attache.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Attache_(2nd_Edition).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Attache_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Pro_50.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Pro_LE_Narrow.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Romeo_Pro_LE_Wide.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Thomas.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Thomas_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_TranSend_LT.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_TranSend_LT_(Large_Print).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Enabling_Trident.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Encoding.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/EndofPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ETCAllowEscapeCodes.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ETHighResGraphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ETMediumResGraphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ETmulti.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ETSpeaks.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fDsrSensitivity.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fDtrControl.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fInx.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Form.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fOutX.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fOutxCtsFlow.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fOutxDsrFlow.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Freedom_Scientific_Braille_Blazer.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Freedom_Scientific_Braille_Inferno.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Freedom_Scientific_VersaPoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Freedom_Scientific_VersaPoint_Duo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fRtsControl.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/fTXContinueOnOff.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/generic.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Generic_Interpoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Handshaking.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/HardwareDCB.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/HelpPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index16Graphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index20Graphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/IndexMulti.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/IndexPageInch.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/IndexPagemm.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/IndexVersions.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/IndexZfold.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_4Waves_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_4x4_PRO.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_Advanced.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_Basic-D.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_Basic-S.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_Basic_(blue_bar).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_Braille_Box.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Index_Everest-D.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/IniFile.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Interline.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Interpoint_NV_Elekul_03.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Interpoint_NV_Elekul_55.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/JTR_Corporation_ESA-2000.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/JTR_Corporation_ESA-300_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/JTR_Corporation_ESA-600_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/JTR_Corporation_ESA-721.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/JTR_Corporation_ESA-919.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/LessLinesInterpoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/LettersUpperCase.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/LfUnix.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/LinesPadded.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/LineWrap.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ManualInterpoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/MaximumCells.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/MaximumLines.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NarrowWarning.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/nbp.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Gemini_(small_spacing).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Super_Gemini_(small_spacing).htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Telesoft_BMP-320.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Telesoft_BPW-32.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Telesoft_dog-pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Telesoft_Gemini.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Telesoft_Super_Gemini.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Nippon_Telesoft_TP-32.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NoLeftMargin.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NoMakeupSides.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NoParallel.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NoRightMargin.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NoSerial.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/NoTopMargin.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/OneByOne.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/PageWrap.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Parity.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/PlateLoadByte.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/PortCloseSyncByte.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/PortCloseSyncCount.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/PortCloseSyncPrompt.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/PromptNewPage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Pulse_Data_Paragon.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Quantum_Mountbatten.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/RESUS.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/SinglePage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/SoftwareDCB.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/SortToTop.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/StartLeftMargin.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/StopBits.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Submodel.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_Bax_10.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_Beta_X3.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_Impacto_600.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_Impacto_Advanced.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_PortaThiel.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_PortaThiel_Interpoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Thiel_Texto.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/TranSend.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Triformations_LED-120.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Triformations_Personal_Brailler.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Triformations_TED-600.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Triformations_TRI-170.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/UsingEscapeCodes.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Columbia.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Elite.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Elite_with_Ink_Connect.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_EmBraille.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Emprint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Premier.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Premier_with_Ink_Connect.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Tiger_Advantage.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Tiger_Cub.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Tiger_Cub_Junior.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Tiger_Max.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Tiger_Pro.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/Viewplus_Tiger_Pro_Ink.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/VPGraphics.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/VPmulti.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/VTEK_MBOSS-1.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/VTEK_MBOSS-35.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/WindowsDriverName.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/YesFTDI.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/YesUSB.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Blazer.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Blue_Bar.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_BookMaker.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Braillo_200.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Braillo_Comet.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Cranmer.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Duo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Elekul_03.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Elekul_55.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Index_Basic.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_JTR_Corporation_2000.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_JTR_Corporation_300.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_JTR_Corporation_600.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_JTR_Corporation_721.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_JTR_Corporation_919.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_MBOSS1.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_MBOSS35.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Mountbatten.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Nippon_Gemini.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Nippon_preGemini.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Ohtsuki.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Personal.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_PortaThiel.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Romeo.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Thiel_BetaX3.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Tiger1.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_Tiger_eb.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../../Content/web/elt/ztech_VersaPoint.htm" TimeStamp="1/1/0001 12:00:00 AM" />
+        <Url Source="../TOCs/helperky.fltoc" TimeStamp="12/9/2016 8:57:19 PM" />
+    </GeneratedFiles>
+</CatapultProject>

@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="927" MadCap:lastWidth="624">
+    <head>
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Tables:Translation;Language:Translation Tables;Translation: Language Tables" />Language Translation Tables</h4>
+        <p>The Duxbury Braille Translator produces braille in over 145 languages world-wide. To go directly to the table of supported languages, <a href="../Templates_Styles_Codes/Templates/Templates_Docs/all_templates.htm#Languages">please click here</a>.</p>
+        <p class="bold">IMPORTANT NOTE</p>
+        <p class="bold">We are in the process of gathering all language information into one place where you will find both the files in this section, plus additional information which we hope will be useful.</p>
+        <p class="bold">You will find this new section here: <b href="../Templates_Styles_Codes/Templates/Templates_Docs/all_templates.htm"><a href="../Templates_Styles_Codes/Templates/Templates_Docs/all_templates.htm"><b href="../Templates_Styles_Codes/Templates/Templates_Docs/all_templates.htm">All Templates</b></a></b></p>
+        <h5><a name="GENERAL_NOTES"></a>General Notes about Language Tables</h5>
+        <p class="bold">[Note: The DBT Codes in these topics are shown in red purely for clarity.]</p>
+        <p>The "Document: Translation Tables" menu allows you to select the base language and the "jurisdiction" that is to be applied when translating your document to braille. For example, you may select English as a base language, with "American PreUEB" as the jurisdiction. That means not only that English is presumed to be the basic language of the document, but also that the braille codes established by the Braille Authority of North America (BANA), along with any specifically American usage conventions, are to be applied throughout -- even for any "secondary" languages that may appear as included passages within the document. Likewise "English/Unified (UEB)" indicates that the rules and conventions of Unified English Braille are to be followed.</p>
+        <p>All of these tables remain subject to change, because the various national authorities often refine or extend the corresponding braille code rules, and also because improvements are undertaken to conform to the latest rules more closely. Consequently, in any given version of DBT, the braille tables typically vary in certain respects, such as which secondary (embedded) languages are allowed, which characters may appear in the file, and whether math or other technical notation may be entered.</p>
+        <p>The table of supported languages below provides links to the individual descriptions for each supported language. Each language description is divided into several sections, and we provide some explanation of those sections here. The emphasis in the individual language descriptions is on print-to-braille translation, because that is the most commonly used direction and usually the first made available.</p>
+        <p>The section "Special Requirements and Limitations" generally notes when true braille-to-print translation is not available or when it is more limited in scope than the print-to-braille direction. This section also notes issues with special characters and language-specific considerations.</p>
+        <p>The section on "Secondary Languages" lists which languages are supported within the base language. To switch into a secondary language requires using the DBT <span class="Code-DuxCode">[lng~...]</span> code. The initial language of a file is assumed to be the base language of the table, so no <span class="Code-DuxCode">[lng~...]</span> codes are needed at all for files that are entirely in the base language. The general rule is that a plain <span class="Code-DuxCode">[lng]</span> code, i.e. one without a parameter designating a specific language, or an <span class="Code-DuxCode">[lng~...]</span> code for an unsupported language, implies reversion to the base language. In many cases (as long as the character set is supported), it is also possible to enter passages in secondary languages without explicit switching, although it is usually a good idea to switch to grade 1 if not in that contraction level already. The necessity to switch, or not, is partly governed by the rules defined by the applicable braille authorities. For example, in an English document being transcribed according to American (Pre-UEB) usage, it is normally not necessary (and in fact inappropriate) to switch to another language just for the duration of a word or short phrase presented as an Anglicized expression, such as, "I had a tête-a-tête with my brother."</p>
+        <p>Just as the assumed initial language is the base language for the table, the assumed initial "grade" (level of contraction) is the highest grade supported in that table, e.g., grade 2 in the English/American table. Whether that grade applies not only to the base language but also to any secondary languages depends on the extent that contractions in secondary languages are allowed by the braille authorities for the base language and jurisdiction represented by the table. As an example, at this writing (mid 2016), the English/American (Pre-UEB) custom is to transcribe French in grade 1. So, when using those tables, text marked as French is always done in grade 1 even though grade 2 mode remains in effect.</p>
+        <p>Another section of the language descriptions lists the DBT translation codes supported. Those codes that have no further explanation function as documented in the standard "Codes Quick Reference" under the Help menu.</p>
+        <p>The "Characters Supported" section lists the characters only in broad groups, as detailed lists would be impractically long and subject to frequent change. If detailed information is needed, a good way to obtain the information would be to copy-and-paste any relevant portions of the "Character List" document (under Help) into a short trial document, and then, having selected the table of interest, translate the document to braille. (In some instances, it might be necessary to select a math or computer-notation context, or a particular secondary language, to set up the translation situation of interest.) Essentially the same advice applies when importing from word-processor files and the like: If you are concerned about unusual characters that may appear in a document, try a short document containing those characters. The braille output for a character that is not supported is typically the same as an asterisk (*), e.g. dots 35, 35 in English, sometimes followed by another arbitrary braille character or short sequence.</p>
+        <p>The term "ASCII printable" means all the non control characters in the American Standard Code for Information Interchange (ASCII), or in other words all those in the range D+20 through D+7e in the Character List. These include all Roman-alphabet letters in both cases, ordinary punctuation marks typically used in English, the dollar sign, and a few other symbols with primarily technical uses. Most translation tables support the basic ASCII characters. However, as with the other named character groups, some ASCII symbols may not be supported in a given table or a particular context thereof -- in fact, there may not be any defined braille equivalent given in the associated braille code.</p>
+        <p>A "Select Contractions" section is included only for those tables that provide that option.</p>
+        <p>Finally, the "References, History and Credits" section discusses the origins of the language table and its major relevant documents. However, it must also be said that there are influences too numerous to list that play some role in ongoing development. Duxbury Systems is indebted to all of these in its efforts to keep the translation tables up to current braille standards.</p>
+        <h5>Is Your Language Missing or Does It Need Fixes?</h5>
+        <p>In its latest versions (<MadCap:variable name="Primary.Mac_Version" /> and <MadCap:variable name="Primary.Version_Short_DBT" />), DBT supports over 145 languages. The generally high accuracy of these language tables is largely due to the help and co-operation of native braille users, and their help is gratefully acknowledged. However, errors can occur, and we are most anxious to correct any which are found.</p>
+        <p>We are also keen to add new languages for the benefit of braille users world-wide. Adding a new language requires the fullest possible description of the code required, together with reference to any organizations who have formally approved the code.</p>
+        <p>Please contact us at <a href="mailto:languages@duxsys.com" title="e-mail address to make contact regarding foreign language matters." alt="e-mail address to make contact regarding foreign language matters.">languages@duxsys.com</a> if you would like to provide information on current errors or potential new braille language tables.</p>
+        <h5><a name="Languages"></a>Table of Languages in <MadCap:variable name="Primary.Version_Short_DBT" /> and <MadCap:variable name="Primary.Mac_Version" /></h5>
+        <p>The table of supported languages below is alphabetically ordered by the name of the language in English (see the third column).</p>
+    </body>
+    <body>
+        <table style="margin-left: auto;margin-right: auto;caption-side: top;" summary="Table of Languages included in DBT">
+            <col style="width: 140px;" />
+            <col style="width: 255px;" />
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Table Designator</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">afr</td>
+                    <td><a href="afrikaans.htm"><MadCap:keyword term="Afrikaans" />Afrikaans</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">afr-x00</td>
+                    <td><a href="afrikaans_preunified.htm"><MadCap:keyword term="Afrikaans (Pre-Unified)" />Afrikaans (pre-Unified)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">sqi</td>
+                    <td><a href="albanian.htm"><MadCap:keyword term="Albanian" />Albanian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">amh</td>
+                    <td><a href="amharic.htm"><MadCap:keyword term="Amharic (Ethiopic)" />Amharic</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia, Africa</td>
+                    <td class="ctr_red">ara</td>
+                    <td><a href="arabic.htm"><MadCap:keyword term="Arabic" />Arabic</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia, Africa</td>
+                    <td class="ctr_red">ara-x02</td>
+                    <td><a href="arabic_pre2002.htm"><MadCap:keyword term="Arabic (Pre-2002 Rules)" />Arabic (pre-2002 rules)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">hye</td>
+                    <td><a href="armenian_eastern.htm"><MadCap:keyword term="Armenian" />Armenian, Eastern</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">qhy</td>
+                    <td>
+                        <MadCap:keyword term="Armenian" /><a href="armenian_western.htm">Armenian, Western</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">asm</td>
+                    <td>
+                        <MadCap:keyword term="Assamese" /><a href="assamese.htm">Assamese</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">awa</td>
+                    <td><a href="awadhi.htm"><MadCap:keyword term="Awadhi" />Awadhi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">aze</td>
+                    <td>
+                        <MadCap:keyword term="Azerbaijani" /><a href="azerbaijani.htm">Azerbaijani</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">bel</td>
+                    <td>
+                        <MadCap:keyword term="Belarusian" /><a href="belarusian.htm">Belarusian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">ben</td>
+                    <td><a href="bengali_india.htm"><MadCap:keyword term="Bengali" />Bengali (Bangla)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">bho</td>
+                    <td><a href="bhojpuri.htm"><MadCap:keyword term="Bhojpuri" />Bhojpuri</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">bos</td>
+                    <td><a href="bosnian.htm"><MadCap:keyword term="Bosnian" />Bosnian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">bul</td>
+                    <td><a href="bulgarian.htm"><MadCap:keyword term="Bulgarian" />Bulgarian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mya</td>
+                    <td><a href="burmese.htm"><MadCap:keyword term="Burmese (Myanmar)" />Burmese</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">cat</td>
+                    <td><a href="catalan.htm"><MadCap:keyword term="Catalan" />Catalan</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">ceb</td>
+                    <td><a href="cebuano.htm"><MadCap:keyword term="Cebuano" />Cebuano</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">cmn</td>
+                    <td><a href="chinese_mandarin.htm"><MadCap:keyword term="Chinese:Mandarin" />Chinese/Mandarin</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">yue</td>
+                    <td><a href="chinese_yue.htm"><MadCap:keyword term="Chinese:Cantonese;Yue:Cantonese" />Chinese/Yue (Cantonese)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">ctg</td>
+                    <td><a href="chittagonian.htm"><MadCap:keyword term="Chittagonian" />Chittagonian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">hrv</td>
+                    <td><a href="croatian.htm"><MadCap:keyword term="Croatian" />Croatian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">cym</td>
+                    <td><a href="welsh.htm"><MadCap:keyword term="Cymraeg (Welsh);Welsh (Cymraeg)" />Cymraeg (Welsh)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ces</td>
+                    <td><a href="czech.htm"><MadCap:keyword term="Czech" />Czech</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">dan</td>
+                    <td>
+                        <MadCap:keyword term="Danish" /><a href="danish.htm">Danish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">prs</td>
+                    <td>
+                        <MadCap:keyword term="Dari" /><a href="dari.htm">Dari</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">nld</td>
+                    <td><a href="dutch.htm"><MadCap:keyword term="Dutch" />Dutch</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">dzo</td>
+                    <td><a href="dzongkha.htm"><MadCap:keyword term="Dzongkha" />Dzongkha</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">qqp-ebu</td>
+                    <td><a href="ebu_pharmaceutical.htm"><MadCap:keyword term="EBU (Pharamceutical);Pharmaceutical (EBU)" />EBU Pharmaceutical</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">eng-xna</td>
+                    <td><a href="english_american.htm"><MadCap:keyword term="English:American" />English/American</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">eng-xnat</td>
+                    <td>
+                        <MadCap:keyword term="English:American Textbook" /><a href="english_american_textbook.htm">English/American Textbook</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">eng-xnate</td>
+                    <td><a href="english_american_textbook_emphases.htm"><MadCap:keyword term="English:American Textbook (Distinct Emphasis)" />English/American Textbook (Distinct Emphases)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pacific</td>
+                    <td class="ctr_red">eng-aus00</td>
+                    <td><a href="english_australian.htm"><MadCap:keyword term="English:Australian (Pre Unified)" />English/Australian (pre-Unified)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">eng-xuk00</td>
+                    <td><a href="english_british_pre2005.htm"><MadCap:keyword term="English:British (pre 2005 rules)" />English/British (pre-2005 rules)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">eng-xuk</td>
+                    <td><a href="english_british.htm"><MadCap:keyword term="English:British" />English/British</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">eng-zaf00</td>
+                    <td><a href="english_south_african.htm"><MadCap:keyword term="English:South African (pre-Unified)" />English/South African (pre-Unified)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe, Asia, Africa, Pacific</td>
+                    <td class="ctr_red">eng-xueb</td>
+                    <td><a href="english_unified.htm"><MadCap:keyword term="English:Unified;UEB (Unified Eglish Braille)" />English/Unified</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">eng-xukmoon</td>
+                    <td><a href="english_moon.htm"><MadCap:keyword term="English:Moon" />English/Moon</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe, Asia, Africa, Pacific</td>
+                    <td class="ctr_red">epo</td>
+                    <td><a href="esperanto.htm"><MadCap:keyword term="Esperanto" />Esperanto</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">est</td>
+                    <td>
+                        <MadCap:keyword term="Estonian" /><a href="estonian.htm">Estonian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">ewe</td>
+                    <td><a href="ewe.htm"><MadCap:keyword term="Ewe" />Ewe</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">fas</td>
+                    <td><a href="farsi.htm"><MadCap:keyword term="Farsi" />Farsi (Persian)/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">fil</td>
+                    <td><a href="filipino.htm"><MadCap:keyword term="Filipino" />Filipino</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">fin</td>
+                    <td><a href="finnish.htm"><MadCap:keyword term="Finnish" />Finnish/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">fra-fra00</td>
+                    <td><a href="french.htm"><MadCap:keyword term="French:pre-Unified" />French (pre-Unified)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">fra-xqu</td>
+                    <td><a href="french_quebec.htm"><MadCap:keyword term="French:Quebec (pre-Unified)" />French/Quebec (pre-Unified)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe</td>
+                    <td class="ctr_red">fra-xuf</td>
+                    <td>
+                        <MadCap:keyword term="French:Unified" /><a href="french_unified.htm">French/Unified</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">kat</td>
+                    <td><a href="georgian.htm"><MadCap:keyword term="Georgian" />Georgian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">deu</td>
+                    <td>
+                        <MadCap:keyword term="German" /><a href="german.htm">German</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">grc-a</td>
+                    <td><a href="greek_classical_american.htm"><MadCap:keyword term="Greek:Classical American" />Greek (Classical/American</a>)</td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ell</td>
+                    <td><a href="greek_modern.htm"><MadCap:keyword term="Greek:Modern Uncontracted" />Greek (Modern)/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">guj</td>
+                    <td><a href="gujurati.htm"><MadCap:keyword term="Gujurati" />Gujarati</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">bgc</td>
+                    <td><a href="haryanvi.htm"><MadCap:keyword term="Haryanvi" />Haryanvi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">hau</td>
+                    <td><a href="hausa.htm"><MadCap:keyword term="Hausa" />Hausa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">heb-isr</td>
+                    <td><a href="hebrew_israeli.htm"><MadCap:keyword term="Hebrew:Israeli Uncontracted" />Hebrew/Israeli Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">heb-usa</td>
+                    <td><a href="hebrew_american.htm"><MadCap:keyword term="Hebrew:American Uncontracted" />Hebrew/American Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">hil</td>
+                    <td><a href="hiligaynon.htm"><MadCap:keyword term="Hiligaynon" />Hiligaynon</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">hin</td>
+                    <td><a href="hindi.htm"><MadCap:keyword term="Hindi" />Hindi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">hun</td>
+                    <td>
+                        <MadCap:keyword term="Hungarian" /><a href="hungarian.htm">Hungarian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ise</td>
+                    <td><a href="icelandic.htm"><MadCap:keyword term="Icelandic" />Icelandic/Faroese</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">ibo</td>
+                    <td><a href="igbo.htm"><MadCap:keyword term="igbo" />Igbo</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">ilo</td>
+                    <td>
+                        <MadCap:keyword term="Iloko" /><a href="iloko.htm">Iloko</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">ind</td>
+                    <td>
+                        <MadCap:keyword term="Indonesian" /><a href="indonesian.htm">Indonesian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe, Asia, Africa, Pacific</td>
+                    <td class="ctr_red">qip</td>
+                    <td><a href="ipa_braille.htm"><MadCap:keyword term="IPA Braille (Pheonetic)" />IPA Braille</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">gle</td>
+                    <td>
+                        <MadCap:keyword term="Gaelic:Irish;Irish Gaelic" /><a href="irish.htm">Irish Gaelic</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ita</td>
+                    <td><a href="italian.htm"><MadCap:keyword term="Italian (Uncontracted)" />Italian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">jpn</td>
+                    <td><a href="japanese_kana.htm"><MadCap:keyword term="Japaese (Kana);Kana (Japanese)" />Japanese (Kana</a>)</td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">kan</td>
+                    <td><a href="kannada.htm"><MadCap:keyword term="Kannada" />Kannada</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">kaz</td>
+                    <td><a href="kazakh.htm"><MadCap:keyword term="Kazakh (Uncontracted)" />Kazakh/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">khm</td>
+                    <td><a href="khmer.htm"><MadCap:keyword term="Khmer (Cambodian)" />Khmer (Cambodian)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">kir</td>
+                    <td><a href="kirghiz.htm"><MadCap:keyword term="Kirghiz" />Kirghiz</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">kor</td>
+                    <td><a href="korean.htm"><MadCap:keyword term="Korean" />Korean</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">kur</td>
+                    <td><a href="kurdish.htm"><MadCap:keyword term="Kurdish" />Kurdish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">kru</td>
+                    <td><a href="kurukh.htm"><MadCap:keyword term="Kurukh" />Kurukh</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">lao</td>
+                    <td><a href="lao.htm"><MadCap:keyword term="Lao" />Lao</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">lat</td>
+                    <td><a href="latin.htm"><MadCap:keyword term="Latin (Uncontracted)" />Latin/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">lav</td>
+                    <td><a href="latvian.htm"><MadCap:keyword term="Latvian (Uncontracted)" />Latvian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">lit</td>
+                    <td><a href="lithuanian.htm"><MadCap:keyword term="Lithuanian (Uncontracted)" />Lithuanian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ltz</td>
+                    <td><a href="luxembourgish.htm"><MadCap:keyword term="Luxembourgish" />Luxembourgish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">mkd</td>
+                    <td><a href="macedonian.htm"><MadCap:keyword term="Macedionian" />Macedonian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mag</td>
+                    <td><a href="magahi.htm"><MadCap:keyword term="Magahi" />Magahi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mai</td>
+                    <td><a href="maithili.htm"><MadCap:keyword term="Maithili" />Maithili</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">msa</td>
+                    <td><a href="malay.htm"><MadCap:keyword term="Malay" />Malay</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mal</td>
+                    <td><a href="malayalam.htm"><MadCap:keyword term="Malayalam" />Malayalam</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">mlt</td>
+                    <td><a href="maltese.htm"><MadCap:keyword term="Maltese" />Maltese</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America</td>
+                    <td class="ctr_red">qmt-xnem72m</td>
+                    <td>Math Notation/Nemeth (1972 math mode)</td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mar</td>
+                    <td><a href="marathi.htm"><MadCap:keyword term="Marathi" />Marathi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mni</td>
+                    <td><a href="meitei.htm"><MadCap:keyword term="Meitei (Manpuri);Manpuri (Meitei)" />Meitei (Manipuri)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">mon</td>
+                    <td><a href="mongolian.htm"><MadCap:keyword term="Mongolian" />Mongolian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">srp-mne</td>
+                    <td><a href="montenegrin.htm"><MadCap:keyword term="Montenegrin" />Montenegrin</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">nde</td>
+                    <td><a href="ndebele.htm"><MadCap:keyword term="Ndebele" />Ndebele</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">nep</td>
+                    <td><a href="nepali.htm"><MadCap:keyword term="Nepali" />Nepali</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">qng</td>
+                    <td><a href="nguni.htm"><MadCap:keyword term="Nguni (Xhosa/Zulu);Xhosa (Nguni/Zulu);Zulu (Nguni/Xhosa)" />Nguni (Xhosa or Zulu)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">nor</td>
+                    <td><a href="norwegian.htm"><MadCap:keyword term="Norwegian" />Norwegian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">ori</td>
+                    <td><a href="oriya.htm"><MadCap:keyword term="Oriya" />Oriya</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">pan</td>
+                    <td><a href="panjabi.htm"><MadCap:keyword term="Panjabi" />Panjabi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">pol</td>
+                    <td><a href="polish.htm"><MadCap:keyword term="Polish" />Polish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe</td>
+                    <td class="ctr_red">por</td>
+                    <td><a href="portuguese_brazilian.htm"><MadCap:keyword term="Portuguese (Uncontracted)" />Portuguese/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">pus</td>
+                    <td><a href="pushto.htm"><MadCap:keyword term="Pushto" />Pushto</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ron</td>
+                    <td><a href="romanian.htm"><MadCap:keyword term="Romanian (Uncontracted)" />Romanian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe, Asia</td>
+                    <td class="ctr_red">rus</td>
+                    <td><a href="russian.htm"><MadCap:keyword term="Russian" />Russian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">sck</td>
+                    <td><a href="sadri.htm"><MadCap:keyword term="Sadri" />Sadri</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">san</td>
+                    <td><a href="sanskrit.htm"><MadCap:keyword term="Sanskrit" />Sanskrit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">sat</td>
+                    <td><a href="santali.htm"><MadCap:keyword term="Santali" />Santali</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">srp</td>
+                    <td><a href="serbian.htm"><MadCap:keyword term="Serbian" />Serbian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">snd</td>
+                    <td><a href="sindhi.htm"><MadCap:keyword term="Sindhi" />Sindhi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">sin</td>
+                    <td><a href="sinhala.htm"><MadCap:keyword term="Sinhala" />Sinhala</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">slk</td>
+                    <td><a href="slovak.htm"><MadCap:keyword term="Slovak" />Slovak</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">slv</td>
+                    <td><a href="slovenian.htm"><MadCap:keyword term="Slovenian" />Slovenian</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">som</td>
+                    <td><a href="somali.htm"><MadCap:keyword term="Somali" />Somali</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">sot</td>
+                    <td><a href="sotho.htm"><MadCap:keyword term="Sotho" />Sotho (Southern and Northern (Pedi))</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe</td>
+                    <td class="ctr_red">spa</td>
+                    <td><a href="spanish.htm"><MadCap:keyword term="Spanish:Original" />Spanish/Original</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>America, Europe</td>
+                    <td class="ctr_red">spa-xre</td>
+                    <td><a href="spanish_reducida.htm"><MadCap:keyword term="Spanish:Reducida" />Spanish/Reducida</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">swa</td>
+                    <td><a href="swahili.htm"><MadCap:keyword term="Swahili" />Swahili</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">ssw</td>
+                    <td><a href="swati.htm"><MadCap:keyword term="Swati (Siswati)" />Swati</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">swe</td>
+                    <td><a href="swedish.htm"><MadCap:keyword term="Swedish" />Swedish/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">syl</td>
+                    <td>
+                        <MadCap:keyword term="Sylheti" /><a href="sylheti.htm">Sylheti</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">tgl</td>
+                    <td><a href="tagalog.htm"><MadCap:keyword term="Tagalog" />Tagalog</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">tgk</td>
+                    <td><a href="tajik.htm"><MadCap:keyword term="Tajik" />Tajik</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">tat</td>
+                    <td><a href="tatar.htm"><MadCap:keyword term="Tatar" />Tatar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">tam</td>
+                    <td><a href="tamil.htm"><MadCap:keyword term="Tamil" />Tamil</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">tel</td>
+                    <td>
+                        <MadCap:keyword term="Telugu" /><a href="telugu.htm">Telugu</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">tha</td>
+                    <td><a href="thai.htm"><MadCap:keyword term="Thai" />Thai</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">tig</td>
+                    <td><a href="tigrinya.htm"><MadCap:keyword term="Tigrinya" />Tigrinya</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">bod</td>
+                    <td><a href="tibetan.htm"><MadCap:keyword term="Tibetan" />Tibetan</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">tso</td>
+                    <td><a href="tsonga.htm"><MadCap:keyword term="Tsonga" />Tsonga</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">tsn</td>
+                    <td><a href="tswana.htm"><MadCap:keyword term="Tswana" />Tswana</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe, Asia</td>
+                    <td class="ctr_red">tur</td>
+                    <td><a href="turkish.htm"><MadCap:keyword term="Turkish (Uncontracted)" />Turkish</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">tuk</td>
+                    <td><a href="turkmen.htm"><MadCap:keyword term="Turkmen" />Turkmen</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">udm</td>
+                    <td><a href="udmart.htm"><MadCap:keyword term="Udmurt" />Udmurt</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td class="ctr_red">ukr</td>
+                    <td><a href="ukrainian.htm"><MadCap:keyword term="Ukrainian (Uncontracted)" />Ukrainian/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">urd-ind</td>
+                    <td>
+                        <p><a href="urdu_india.htm"><MadCap:keyword term="Urdu:Indian" />Urdu/Indian</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">urd-pak</td>
+                    <td><a href="urdu_pakistan.htm"><MadCap:keyword term="Urdu:Pakistan" />Urdu/Pakistani</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">uzb</td>
+                    <td><a href="uzbek.htm"><MadCap:keyword term="Uzbek" />Uzbek</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">ven</td>
+                    <td><a href="venda.htm"><MadCap:keyword term="Venda" />Venda</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Asia</td>
+                    <td class="ctr_red">vie</td>
+                    <td><a href="vietnamese.htm"><MadCap:keyword term="Vietnamese" />Vietnamese/Uncontracted</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">xho</td>
+                    <td>
+                        <MadCap:keyword term="Xhosa" /><a href="xhosa.htm">Xhosa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">yor</td>
+                    <td><a href="yoruba.htm"><MadCap:keyword term="Yoruba" />Yoruba</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td class="ctr_red">zul</td>
+                    <td>
+                        <MadCap:keyword term="Zulu (Nguni/Xhosa)" /><a href="zulu.htm">Zulu</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

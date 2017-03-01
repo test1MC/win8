@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Installation_and_Setup_(Complete).fltoc"
+  TargetLanguage="en-us"
+  ConditionTagExpression="include[&quot;Primary.Activation Wizard&quot; or Primary.Installation or Primary.Print_Only or Primary.Windows_Version]exclude[Primary.Braille_Only or &quot;Primary.Mac_Version&quot; or Primary.NOT_USED]">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

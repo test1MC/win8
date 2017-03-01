@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="4" MadCap:lastHeight="544" MadCap:lastWidth="624">
+    <head><title>Global: Embosser Setup: General.</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h5>
+            <MadCap:keyword term="Parallel Ports;Braille:Embosser;Global:Embosser Setup:General;Embosser Setup:General" />Global: Embosser Setup: General</h5>
+        <p>When you select "New" from <MadCap:conditionalText MadCap:conditions="Primary.Print_Only"><MadCap:xref href="global_embosser_setup.htm">"Global: Embosser Setup..." on page&#160;1</MadCap:xref></MadCap:conditionalText><a href="global_embosser_setup.htm" MadCap:conditions="Primary.HTML_Only">Global: Embosser Setup</a>, you will be presented with the following dialog.</p>
+        <p>This dialog contains four tabs: General (This topic),<MadCap:xref href="Global_Embosser_setup_device_settings.htm" MadCap:conditions="Primary.Print_Only">"Global: Embosser Setup: Device Settings" on page&#160;1</MadCap:xref> <a href="Global_Embosser_setup_device_settings.htm" MadCap:conditions="Primary.HTML_Only"><MadCap:keyword term="Serial:Device" />Device Settings</a><MadCap:conditionalText MadCap:conditions="Primary.Print_Only">, <a href="global_Embosser_setup_transend_se.htm">TranSend SE</a></MadCap:conditionalText> and<MadCap:xref href="Global_Embosser_setup_advanced.htm"> </MadCap:xref><MadCap:conditionalText MadCap:conditions="Primary.Print_Only"><MadCap:xref href="Global_Embosser_setup_advanced.htm">"Global: Embosser Setup: Advanced" on page&#160;1</MadCap:xref></MadCap:conditionalText><a href="Global_Embosser_setup_advanced.htm" MadCap:conditions="Primary.HTML_Only">Advanced</a>.</p>
+        <p align="center" MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_embosser_setup_general.jpg" alt="Image shows Glbal: Embosser Setup: General dialog." style="width: 520px; height: 369px;" border="0" title="Image shows Glbal: Embosser Setup: General dialog." />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_embosser_setup_general_mac.jpg" style="width: 574px; height: 467px;" title="Image shows Glbal: Embosser Setup: General dialog." alt="Image shows Glbal: Embosser Setup: General dialog." />
+        </p>
+        <p><b><MadCap:keyword term="Embosser:Model" />Embosser Model:</b>
+            <MadCap:keyword term="Serial:Port" /> This is a drop-down list containing an alphabetic listing of all supported makes and models of braille embosser. Note however that Generic embossers are at the top of the list.</p>
+        <p class="Italic">
+            <MadCap:keyword term="Generic:Interpoint" />If your embosser is not listed, then select "Generic" if your embosser embosses on just one side of the page. Select "Generic Interpoint" if it embosses on both sides of the page.</p>
+        <p><b><MadCap:keyword term="Setup Name" />Setup Name:</b>
+            <MadCap:keyword term="Default:Form" /> You may leave this field blank, in which case, DBT will simply use the name of the embosser you selected above. However, you may type in a free-format name of your own choice. (See <a href="global_embosser_setup.htm#Additional_Notes">Additional Notes</a> for more information)</p>
+        <p><b>Configuration Location:</b> A drop down list with two choices a) The current user, or b) All users of this computer.</p>
+        <p class="Italic">
+            <MadCap:keyword term="ports" />Note: Network administrators should be aware that "Current User" essentially stores this configuration on the User's Profile. Hence care should be taken if Roving Profiles are in use. If you are setting up a model installation for replication throughout a network using a network installation image, then you should set the Configuration Location for all embossers to "All users of this computer". DBT's installer supports automatic migration of embosser configurations set this way, using a network installation image.</p>
+        <p>
+            <MadCap:keyword term="Output Options" /><b>Output Options</b> - Here you select one of 3 Radio Buttons.</p>
+        <p>(Users of earlier versions should note that the default is now "Send to Printer")</p>
+        <ol>
+            <li><b>Send to Printer:</b>
+                <MadCap:keyword term="Control Panel" />
+                <MadCap:keyword term="Printers" /> If you have installed your braille embosser as a Windows Device, or to use Windows drivers, you should normally find it listed here. (You can use this option only if your braille embosser shows up among the printers in the Windows' Printers Control Panel.)</li>
+            <li><b>Write to Port:</b>
+                <MadCap:keyword term="Parallel" /> If your embosser is not listed above, you may select a Parallel Port (<MadCap:conditionalText MadCap:conditions="Primary.Print_Only">lpt#</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Primary.HTML_Only"><a href="../../POPUPS/LPT.htm" target="_popup">lpt#</a></MadCap:conditionalText>), or <MadCap:keyword term="Serial" />Serial Port (<MadCap:conditionalText MadCap:conditions="Primary.Print_Only">com#</MadCap:conditionalText><a href="../../POPUPS/COM.htm" target="_popup" MadCap:conditions="Primary.HTML_Only">com#</a>) from the list box.</li>
+            <li><a name="Write_to_File"></a><b>Write to File:</b>
+                <MadCap:keyword term="Brailler Device" /> There are occasions when you may wish to redirect braille output to a file. Normally you should leave this field blank, in which case you will be prompted for a file name each time you emboss using this Brailler Device. Otherwise you may enter a path and file name as appropriate. <br />	You should also be aware that if you specify a file name, the file will be overwritten without prompting, therefore you should only specify a file name in exceptional circumstances.</li>
+        </ol>
+        <p><b>Serial:</b> This section will be disabled unless you have selected a Serial (com#) device. Enter the parameters for <MadCap:conditionalText MadCap:conditions="Primary.Print_Only">Baud Rate</MadCap:conditionalText><a href="../../POPUPS/baud_rate.htm" target="_popup" MadCap:conditions="Primary.Not_in_Print_Docs">Baud Rate</a><MadCap:keyword term="Handshaking" /><MadCap:keyword term="Data Bits" /><MadCap:keyword term="Stop Bits" /><MadCap:keyword term="Parity" />, Parity, Data Bits and Stop Bits and Handshaking as required.</p>
+        <p>If you are using a Serial Device, please consult your manual or supplier for appropriate details.</p>
+    </body>
+</html>

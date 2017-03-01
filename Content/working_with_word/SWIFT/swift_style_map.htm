@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2704" MadCap:lastWidth="659" MadCap:conditions="Primary.SWIFT" class="topic">
+    <head><title>SWIFT - HELP</title>
+    </head>
+    <body>
+        <h2 class="chapter">Style Map</h2>
+        <p>It should be noted that SWIFT is installed "locally" under your own user name. That is to say, anyone else logging on as a different user, will not see any changes you make here.</p>
+        <p>One of the main purpose of SWIFT's Style Map is to show Word users what Word Styles are "mapped" to DBT Styles. Or equally more important, what is NOT mapped.</p>
+        <p>Any Word Style which is not mapped, will simply be brought into DBT as left aligned text unless you select a DBT Style to "map" it to.</p>
+        <p>(The screen shot below is from an actual document where customized Word Styles have been used)</p>
+        <p class="center">
+            <img src="../../Resources/Images/working_with_word/swift/swift_style_map.jpg" title="SWIFT - Style Map" alt="SWIFT - Style Map" MadCap:mediastyle="@media print { width: 3.97in;height: 4.53in; }" />
+        </p>
+        <h6><b><a name="Target_DBT_Template"></a>Target DBT Template - (Drop down list):</b>
+        </h6>
+        <p>This is a drop down list which displays all available DBT Templates. Your first task should be to select an appropriate Template for the document you wish produced in braille.</p>
+        <p>If you have opened a new document in Word, the default Target DBT Template initially displayed here will be whatever you have set as the default within DBT itself.</p>
+        <p>If you are open a document which has previously been opened in SWIFT version 5 (this version) and had changed the Target Template, it will be the changed Template which will be shown here. This allows you to work with multiple Word documents which use different DBT Templates.</p>
+        <p>Please note the comment in the dialog above which reads: "You have not made any changes to the default style mappings for this template. These same mappings will be used if you open this document directly in to DBT (without using SWIFT)."</p>
+        <h6><b><a name="Save_Map"></a>Save Map - (Button): </b>
+        </h6>
+        <p>Saves any changes of mappings you have made away from the default mapping contained in your chosen DBT Template. Note that this will be saved in your user folder %appdata%\duxbury\swift\Templates. These settings will be used for all future work on your system when you select the corresponding Template. To restore all settings to their defaults:</p>
+        <ol>
+            <li>Hold down the Windows key and press R to bring up the Run dialog.</li>
+            <li>Type in the following command: %appdata%\duxbury\swift\Templates</li>
+            <li>Press Enter or click on the OK button</li>
+            <li>When the folder view opens, delete the .mws files.</li>
+        </ol>
+        <h6><b><a name="Revert"></a>Revert - (Button)</b>: </h6>
+        <p>Reverts any changes made back to the default settings.</p>
+        <h6><b><a name="Import"></a>Import - (Button):</b>
+        </h6>
+        <p>Allows you to import a Style Map (*.mws) file from another user or system.</p>
+        <h6><b><a name="Export"></a>Export - (Button):</b>
+        </h6>
+        <p>Allows you to export a Style Map (*.mws) file to another user or system.</p>
+        <h6><a name="Close"></a>Close - (Button):</h6>
+        <p>Simply closes the Style Map dialog.</p>
+        <h6><b><a name="Show_In-Use"></a>Show In-Use Styles Only </b>- (Checkbox): </h6>
+        <p>When checked, normally only the Styles used in the Word document itself will be listed here.</p>
+        <h6><b><a name="Show_Unmapped"></a>Show Unmapped Styles First </b>- (Checkbox):</h6>
+        <p>When checked, and Word Style which is not mapped to a DBT Style will be shown at the beginning of the list of Word Styles.</p>
+        <h6><a name="Show_Only_Recommended"></a>Show Only Recommended Styles:</h6>
+        <p>In some DBT templates, certain styles are no longer recommended for use. We've created better styles to replace them. In these cases, DBT itself generally won't show the older styles when you elect to apply a style. (The styles normally hidden are kept so that Word documents created to target these now "historical" styles will continue to be imported properly.)</p>
+        <p>SWIFT can emulate this part of DBT behavior and show only styles that are recommended for use with new DBT documents. Such styles are generally the best targets for your Word styles.</p>
+        <h6><b><a name="Paragraph_Styles"></a>Paragraph Styles:</b>
+        </h6>
+        <p>This is a table comprising of 5 columns. Name, DBT Style, (Selection List), IsAggregate (checkbox), Level (Number) and Center (Checkbox)</p>
+        <h6><b><a name="Character_Styles"></a>Character Styles:</b>
+        </h6>
+        <p>This is a table comprising two columns. Word Style and DBT ;Style.</p>
+        <h6><a name="Map_Status"></a>Map Status: (Text Box)</h6>
+        <p>This is purely a read only text box, and will advise whether or not you have made any changes.</p>
+        <h6><b><a name="Advanced"></a>Advanced - (Button):</b>
+        </h6>
+        <p>This dialog reads, "Some Style Map entries read from the DBT Style Map file cannot be represented in the tabular format of the main Style Map task panel. These are shown here instead, and will be included in any Style Map exported or used by DBT to open your Word documents from SWIFT."</p>
+        <p>The example in the dialog below shows that "Hyperlink", "Footnote Reference" and "Alt Text" are automatically taken care of in the selected Template.</p>
+        <p class="center">
+            <img src="../../Resources/Images/working_with_word/swift_styles_advanced.jpg" alt="Image of the SWIFT Advanced Style dialog" />
+        </p>
+    </body>
+</html>

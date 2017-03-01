@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="HtmlHelp"
+  Destinations=""
+  ExcludeUnreferencedContent="true"
+  MasterToc="/Project/TOCs/math_test.fltoc"
+  Skin="/Project/Skins/DuxburyMainChm.flskn"
+  OutputFolder="C:\Users\george2.TVS.000\Desktop">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

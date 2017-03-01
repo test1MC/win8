@@ -1,0 +1,49 @@
+{major heading} Choosing Your Technical Braille Code
+
+
+{heading} Discussion
+
+In Duxbury DBT 11.1, there are 4 translators that handle the full range of technical (mathematics and science) symbols. These are:
+
+
+-- The English UEB translators that do UEB braille
+-- The English translators that do British or BAUK mathematics braille
+-- The French translators that do standard French mathematics braille
+-- The North American English translators that do Nemeth mathematics braille. These instructions tell you how to do a single step, so that for all future file importations into DBT 11.1, your choice of math translators is used. Regardless of what braille translator you choose for literary (Afrikaans through Zulu), your choice of technical translator will be used for 
+technical material. Thus you can have Finnish literary braille with French braille math, or Hindi literary braille with Nemeth Code math, etc. Duxbury Systems is aware that there are many other math braille systems. There are systems for German, Spanish, Italian, Hebrew, Russian, and 
+Chinese (and more), but these are not available for mathematical equations (at least not yet). Please note that these instructions do not tell you how to use MathType, or how to prepare math files. Other documentation tells you how to prepare 
+math files. Also note that this method changes the braille mathematics system in use at the moment of file importation. If you import 12 files into DBT, and then perform this procedure, your 12 files will remain unchanged until you re-import them from the source file into DBT again. By the way, to accomplish this task, we are using a scrub table (global replace) and are using a feature of DBT 11.1 called "table switching", which allows for switching between braille translation tables in the middle of a document. This is a new and powerful feature of DBT 11.1
+
+
+{heading} Objective
+
+What is the objective of this proceedure? To pick one file in the DBT 11.1 directory and to rename it to (use bold) altmath.sbt. This is easy to do on Windows XP, but harder on Windows Vista or Windows 7 since they are armoured to try to avoid unauthorized changes to software. The four files we supply are:
+
+altmath_Nem.sbt -- for Nemeth Code math braille
+altmath_UEB.sbt -- for UEB math braille
+altmath_UK.sbt -- for British or BAUK math braille
+altmath_FR.sbt -- for French math braille
+
+Your job is to pick one of these, and just change its name to altmath.sbt. {heading} Step by Step Instructions
+
+1) DBT 11.1 needs to be installed on your machine
+
+2) Go to the Start Menu or your Desktop to pick {bold} Computer or {bold} Your Computer
+
+3) Select (open) the {bold} C Drive or the drive where you have installed Duxbury DBT 11.1. 4) If both Program Files and Program Files x86 exist, select (open) the Directory Program Files x86
+
+5) If only Program Files exists, Select (open) the Directory {bold} Program Files
+
+6) Open the Directory {bold} Duxbury
+
+7) Open the Directory {bold} DBT 11.1
+
+8) You should see the four altmath files
+
+9) Highlight the one you want to be your permenent selection for technical (mathematical) braille
+
+10) Right click (or shift-F10) to select options for your highlighted file name. 11) Select rename. This opens a thin black box around the name and highlights the text up to the period. 12) For Vista (and possibly Windows 7), you may need to suppy credentials to prove you have the right to alter the software. This is appropriate, we 
+are doing something similar to installing software. Depending on your status (administrator or unprivileged user), you may have to prove to the computer that you have the right to be making a change. 13) Either type the 7 letters {bold} altmath; or click to get the cursor just left of the period and back space over 3 or 4 characters. 14) Whatever method you choose, the file name should now be {bold} altmath.sbt
+
+15) Up arrow, or click elsewhere to leave the "rename" box. 16) Close the {bold} My Computer Window. You are done. 17) To test, lauch DBT 11.1, import a technical file, and translate into braille. Your non-technical material should be unchanged. Your technical 
+material should be using the new system. Good show. 18) These instructions are designed to be easy to follow. If you are more sophisticated, you may prefer to make use of "copy" instead of "rename". This may make it easier to keep track if you anticipate switching between different technical translators. 

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0038)http://www.duxburysystems.com/v113.asp -->
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="818" MadCap:lastWidth="624" xml:lang="en-us" class="topic">
+    <head><title>What's new in DBT</title>
+        <meta content="IE=5.0000" http-equiv="X-UA-Compatible" />
+    </head>
+    <body>
+        <h1><a name="Top"></a>What is New in DBT <MadCap:variable name="Primary.Version_Short_DBT" /></h1>
+        <p>Duxbury Systems continually revises DBT to make fixes, respond to braille rules changes, and to add new features. The list below covers only changes since the last release. For the most recent information, possibly newer than that included here, please take advantage of "Check for Updates" from the Help menu. Or, visit the Duxbury Website for both new information and for historical information about features and updates.</p>
+        <ul>
+            <li>In all UEB templates as well as those derived from UEB, the computer braille styles are updated to render accurate word breaking. Only those templates specifically for older (pre-UEB) documents still enforce the Pre-UEB word breaking rules.</li>
+            <li>The four DBT BANA templates (both UEB and Pre-UEB) are once again updated to the most recent versions. This corrects some formatting errors in the 12.1 BANA templates and includes BB-BoxBegin and H1-HeadingCentered.</li>
+            <li>In the English/American (pre-UEB) print-to-braille tables, the output of underline symbols is restored.</li>
+            <li>In the English/Unified (UEB) print-to-braille table certain contractions that follow an apostrophe have been improved.</li>
+            <li>The Afrikaans print-to-braille table and Sotho print-to-braille table have been updated with contraction changes received recently from South Africa.</li>
+            <li>Refinements in the Welsh print-to-braille table restrict shortform usage within large words to the officially approved list and ensure that strings of letters that could be read as extended shortforms are appropriately marked with grade 1 indicators. Other improvements include automated generation of hyphenation points within long technical expressions such as URLs.,</li>
+            <li>For Myanmar text, DBT now handles some additional, critical Burmese characters for translating Burmese text to braille.</li>
+        </ul>
+        <p> This service release also features the following JAWS script improvements.</p>
+        <ol>
+            <li>The script files for DBT 12.1 changed the technique for SayWord to insure the whole word was gathered and spoken. This change compromised making a selection. The latest script insures that if a selection is in progress, all the words in the selection are retained.</li>
+            <li>When using a braille display with JAWS 17, the script files manage the JAWS braille translation settings better (turning off input translation) to ensure that output translation is off when you are viewing a braille document.</li>
+            <li>The save and restore of a Speech Profile is now limited to JAWS version	17 and higher to prevent "unknown function" errors in earlier versions of JAWS.</li>
+            <li>Repetitious announcements of "computer braille" when the window focus is shifted are now suppressed.</li>
+        </ol>
+        <h1>What was New in DBT 12.1</h1>
+        <h2>Primary Areas of Improvement</h2>
+        <ul>
+            <li>Many updates to DBT code and translation tables, including UEB.</li>
+            <li>DXP (print) and DXB (braille) files are now interchangeable between DBT for Windows and DBT for Mac version <MadCap:variable name="Primary.Version_Short_DBT" /></li>
+            <li>The <b>Basic</b> DBT Templates have been streamlined (<a href="#Basic">see below</a>)</li>
+            <li>New embossers and embosser fixes (<a href="#Emboss">see below</a>)</li>
+            <li>Math improvements (<a href="#Math1">see below</a>)</li>
+            <li>62 step UEB Mangold Method learning series now included in the Learning tables (<a href="../the_menus/menu_document/document_learning_tables.htm#MANGOLD">Click here</a>)</li>
+            <li>Infrastructure changes to fix numerous issues with language switching and the translated line display in DBT</li>
+            <li>Language improvements (<a href="#Language1">see below</a>)</li>
+        </ul>
+        <h3><a name="Basic"></a>DBT Templates Streamlined</h3>
+        <ul>
+            <li>Historical DBT styles that no longer have effect have been removed</li>
+            <li>Each Basic Template now has ten DBT styles that use language switching: <ul><li>Biblical_lang (Biblical original language studies)</li><li>English_UEB1 (UEB grade 1)</li><li>English_UEB2 (UEB grade 2)</li><li>English_UK_old (British pre-UEB)</li><li>French</li><li>German</li><li>IPA</li><li>Italian</li><li>Russian</li><li>Spanish</li></ul></li>
+            <li>Italic, bold, and underline styles are now included in every basic language template</li>
+            <li>Improved Russian formatting using a new Word style mapping file, <b>rus.mws</b></li>
+            <li>Better Australian formatting using a new Word style mapping file, <b>aussie.mws</b>, for UEB braille</li>
+        </ul>
+        <h3><a name="Emboss"></a>Embossers</h3>
+        <ul>
+            <li>New Embossers supported:<ul><li><b>ViewPlus Columbia</b></li><li><b>Enabling Juliet 120</b></li><li><b>Enabling Romeo 60</b></li><li><b>Index V5</b> embossers </li></ul></li>
+            <li>Embosser fixes:<ul><li><b>TactileView</b> improved graphics support</li><li><b>Nippon Telesoft Gemini Super2</b> has been renamed as the <b>Nippon Telesoft DOG-Pro</b></li><li><b>Nippon Telesoft DOG-Pro</b> carriage width calculations are more accurate</li></ul></li>
+        </ul>
+        <h3><a name="Math1"></a>Mathematics</h3>
+        <p>Numerous additions to math functionality; here are the highlights:</p>
+        <ul>
+            <li>Many more unusual mathematics characters are now handled.</li>
+            <li>Spacing and control of spacing around function names in UEB math and French math have been improved.</li>
+            <li>Better importing of aligned structures.</li>
+            <li>Better handling of the Unicode minus sign.</li>
+            <li>Nemeth translation has been updated to use dot 6 for the comma when outside of "technical notation" but still in "Nemeth mode." This means that in the English (UEB) - BANA with Nemeth template, a comma in the style math-TextInMath is brailled as dot 6, rather than dots 456,2 following Nemeth rules.</li>
+        </ul>
+        <h3><a name="JAWS"></a>JAWS Developments</h3>
+        <p>Helpful additions in the JAWS script files for DBT, including:</p>
+        <ul>
+            <li>A better way for JAWS to announce style markup; it now says "begin style" and "end style".</li>
+            <li>Editing in print and braille documents with JAWS is now snappier.</li>
+            <li>When moving by word in a braille document, JAWS no longer speaks the word as braille dots if you are also using a braille device.</li>
+            <li>When you press Control+H for highlighting in DBT, JAWS keeps better track of when the highlighting is turned off.</li>
+            <li>The script supports the use of a DBT-specific voice profile, with return to the default voice profile on leaving DBT.</li>
+            <li>When arrowing left or right in a braille document in coded view with high contrast on, JAWS no longer says "space" for every character.</li>
+            <li>In coded view, you can now navigate onto a left brace character ( { ).</li>
+        </ul>
+        <h3><a name="UEB1"></a>UEB Updates</h3>
+        <ul>
+            <li>When translating material into UEB, the translator is more selective about switching to a grade one passage for technical notation.</li>
+            <li>Improved auto-hyphenation, including grouping of braille numbers 16 cells or less in length.</li>
+            <li>Symbols that are not hyphens nor dashes, but contain dots 36, are no longer allowed as potential line break points.</li>
+            <li>The translation of certain unusual names has been fixed.</li>
+            <li>The translation of mixed alpha-numerics, such as <b>AA.12</b>, has been adjusted to be easier to read in braille.</li>
+            <li>Mid-line ellipsis (U+22EF), double or triple dots over a variable name, and other uncommon math symbols, are now treated correctly.</li>
+            <li>The Latin letter schwa (U+0259) and primary and secondary stress symbols, when entered as U+02C8 and U+02CC respectively, are now supported.</li>
+            <li>Braille-to-print support for Old/Middle English letters: yogh, thorn, eth and wynn.</li>
+            <li>Plus many other changes to improve the production of UEB braille.</li>
+        </ul>
+        <h3 MadCap:conditions="Primary.Windows_Version"><a name="Restored"></a>Restored Functionality</h3>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li>Restoration of the <b>francais.mws</b> Word style map file</li>
+            <li>Repair of the Hindi file importer</li>
+        </ul>
+        <h3><a name="FixesMisc"></a>Misc Features</h3>
+        <ul>
+            <li>Improved read only text controls and their acceptance of keyboard focus</li>
+            <li>Improved identification and differentiation of single and double quotes</li>
+        </ul>
+        <h3><a name="Language1"></a>Language Improvements</h3>
+        <table border="1">
+            <caption>(Listed in Alphabetical Order)</caption>
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <th>Flag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="Andorra Flag" src="../Resources/Images/flags/andorra.gif" border="1" title="Andorra Flag" />
+                    </td>
+                    <td>Catalan: Fixed percent sign and capitalization issues.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="Czech Flag" src="../Resources/Images/flags/czech.gif" border="1" title="Czech Flag" />
+                    </td>
+                    <td>Czech: Fixed ten punctuation characters.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="United Kingdom Flag" src="../Resources/Images/flags/united_kingdom.gif" border="1" title="United Kingdom Flag" />
+                    </td>
+                    <td>Many fixes for UEB English.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="Hungarian Flag" src="../Resources/Images/flags/hungary.gif" border="1" title="Hungarian Flag" />
+                    </td>
+                    <td>Hungarian: Supports the new fully contracted 2014 Hungarian rules, both print-to-braille and braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="Japanese Flag" src="../Resources/Images/flags/japan.gif" border="1" title="Japanese Flag" />
+                    </td>
+                    <td>Japanese: Fixed the ryu, and a few other translation items.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="South Korean Flag" src="../Resources/Images/flags/southkorea.gif" border="1" title="South Korean Flag" />
+                    </td>
+                    <td>Korean: Fixes to improve both print-to-braille and braille-to-print translators.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="45" height="30" alt="Spainish Flag" src="../Resources/Images/flags/spain.gif" border="1" title="Spainish Flag" />
+                    </td>
+                    <td>Spanish: added a Puerto Rico variation for certain punctuation marks.</td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        <img width="47px" height="31px" alt="Spanish Flag" src="../Resources/Images/flags/spain.gif" border="1" title="Spanish Flag" />
+                    </td>
+                    <td>Spanish: back translation can now produce a number sign (#) with the "forcer" of dots 3456, 13. Additional "forcer" sequences are: dots 45, 56, 26, which produces inverted question mark; dots 45, 45, 26 produces upright question mark; dots 45, 56, 235 produces inverted exclamation mark; and dots 45, 45, 235 produces upright exclamation mark, regardless of context.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

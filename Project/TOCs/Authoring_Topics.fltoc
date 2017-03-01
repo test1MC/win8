@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Authoring Basics"
+    Link="/Content/AUTHORING/authoring_basics.htm" />
+  <TocEntry
+    Title="Authoring Basics" />
+  <TocEntry
+    Title="Duxbury Document Style Guide"
+    Link="/Content/AUTHORING/DBT_document_style_guide.htm" />
+  <TocEntry
+    Title="Duxbury Technicalities"
+    Link="/Content/AUTHORING/DBT_technicalities.htm" />
+  <TocEntry
+    Title="emb"
+    Link="/Content/AUTHORING/emb.txt" />
+  <TocEntry
+    Title="Braille Embossers Supported by Duxbury"
+    Link="/Content/AUTHORING/embosser_list.htm" />
+  <TocEntry
+    Title="External Browser Links"
+    Link="/Content/AUTHORING/External_browser_links.htm" />
+  <TocEntry
+    Title="Flare Technicalities"
+    Link="/Content/AUTHORING/Flare_technicalities.htm" />
+  <TocEntry
+    Title="Graphics"
+    Link="/Content/AUTHORING/graphics.htm" />
+  <TocEntry
+    Title="Language Considerations"
+    Link="/Content/AUTHORING/language_considerations.htm" />
+  <TocEntry
+    Title="MAC ShortcutCharacters"
+    Link="/Content/AUTHORING/mac_shortcut_characters.htm" />
+  <TocEntry
+    Title="Moving Files"
+    Link="/Content/AUTHORING/moving_files.htm" />
+  <TocEntry
+    Title="Print Page Layouts"
+    Link="/Content/AUTHORING/print_page_size.htm" />
+</CatapultToc>

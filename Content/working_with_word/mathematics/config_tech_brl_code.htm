@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1963" MadCap:lastWidth="614">
+    <head>
+    </head>
+    <body>
+        <h4>Choosing Your Technical Braille Code</h4>
+        <h5>Discussion</h5>
+        <p>In Duxbury DBT 11.1, there are 4 translators which handle the full range of technical (mathematics and science) symbols.</p>
+        <p>These are:</p>
+        <blockquote>
+            <p>-- The English UEB translators that do UEB braille</p>
+            <p>-- The English translators that do British or BAUK mathematics braille</p>
+            <p>-- The French translators that do standard French mathematics braille</p>
+            <p>-- The North American English translators that do Nemeth mathematics braille.</p>
+        </blockquote>
+        <p>These instructions tell you how to do a single step, such that for all future file importations into DBT 11.1, your choice of math translators is used. Regardless of what braille translator you choose for literary (Afrikaans through Zulu), your choice of technical translator will be used for technical material.</p>
+        <p>Thus you can have Finnish literary braille with French braille math, or Hindi literary braille with Nemeth Code math, etc.</p>
+        <p>Duxbury Systems is aware that there are many other math braille systems. There are systems for German, Spanish, Italian, Hebrew, Russian, and Chinese (and more), but these are not available for mathematical equations (at least not yet).</p>
+        <p>Please note that these instructions do not tell you how to use MathType, or how to prepare math files. Other documentation tells you how to prepare math files.</p>
+        <p>Also note that this method changes the braille mathematics system in use at the moment of file importation. If you import 12 files into DBT, and then perform this procedure, your 12 files will remain unchanged until you re-import them from the source file into DBT again.</p>
+        <p>By the way, to accomplish this task, we are using a scrub table (global replace) and are using a feature of DBT 11.1 called "<a href="../../language_translation_tables/language_switching.htm">table switching</a>", which allows for switching between braille translation tables in the middle of a document. This is a new and powerful feature of DBT 11.1</p>
+        <h5>Objective</h5>
+        <p>What is the objective of this procedure? To pick one file in the DBT 11.1 directory and to rename it to <span class="Code-DuxScreen">altmath.sbt</span>. This is easy to do on Windows XP, but harder on Windows Vista or Windows 7 since they are armored to try to avoid unauthorized changes to software.</p>
+        <p>The four files we supply are:</p>
+        <blockquote>
+            <p><span class="Code-DuxScreen">altmath_fr.sbt</span> -- for French math braille</p>
+            <p><span class="Code-DuxScreen">altmath_nem.sbt</span> -- for Nemeth math braille</p>
+            <p><span class="Code-DuxScreen">altmath_ueb.sbt</span> -- for UEB math braille</p>
+            <p><span class="Code-DuxScreen">altmath_uk.sbt</span> -- for UK BAUK/UKAAF math braille</p>
+        </blockquote>
+        <p>Your task is to pick one of these, and just change its name to altmath.sbt.</p>
+        <h5>Step by Step Instructions</h5>
+        <p>1) DBT 11.1 needs to be installed on your machine</p>
+        <p>2) Go to the Start Menu or your Desktop to pick <b>Computer</b> or <b>My Computer</b></p>
+        <p>3) Select (open) the <b>C:</b> Drive or the drive where you have installed Duxbury DBT 11.1.</p>
+        <p>4) If both "Program Files" and "Program Files x86" exist, select (open) the Folder "Program Files x86"</p>
+        <p>5) If only "Program Files" exists, Select (open) the Folder <b>Program Files</b></p>
+        <p>6) Open the Directory <b>Duxbury</b></p>
+        <p>7) Open the Directory <b>DBT 11.1</b></p>
+        <p>8) You should see the four <span class="Code-DuxScreen">altmath_</span> files</p>
+        <p>9) Highlight the one you want to be your default selection for technical (mathematical) braille</p>
+        <p>10) Right click (or <span class="Keyboard">shift-F10</span>) to select options for your highlighted file name.</p>
+        <p>11) Select rename. This opens a thin black box around the name and highlights the text up to the period.</p>
+        <p>12) For Vista (and possibly Windows 7), you may need to supply credentials to prove you have the right to alter the software. This is appropriate, we are doing something similar to installing software. Depending on your status (administrator or unprivileged user), you may have to prove to the computer that you have the right to be making a change.</p>
+        <p>13) Either type the 7 letters <span class="Code-DuxScreen">altmath</span>; or click to get the cursor just left of the period and back space over 3 or 4 characters.</p>
+        <p>14) Whatever method you choose, the file name should now be <span class="Code-DuxScreen">altmath.sbt</span></p>
+        <p>15) Up arrow, or click elsewhere to leave the "rename" box.</p>
+        <p>16) Close the <b>My Computer</b> Window. You are done.</p>
+        <p>17) To test, launch DBT 11.1, import a technical file, and translate into braille. Your non-technical material should be unchanged. Your technical material should be using the new system.</p>
+        <p>Good show.</p>
+        <p>18) These instructions are designed to be easy to follow. If you wish, you may prefer to make use of "copy" instead of "rename". This may make it easier to keep track if you anticipate switching between different technical translators.</p>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Build independent compiled help for activation wizard."
+  Type="HtmlHelp"
+  Destinations=""
+  OutputFile="actwiz.chm"
+  MasterToc="/Project/TOCs/Activation_Wizard_Help_TOC.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  conditions=""
+  ExcludeUnreferencedContent="true"
+  Skin="/Project/Skins/Duxbury_ActWiz.flskn"
+  GetLatestBeforeCompile="false"
+  ConditionTagExpression="include[ActWizConditions.ActwizHelp or Primary.Windows_Version]exclude[&quot;Primary.Activation Wizard&quot; or Primary.Braille_Only or Primary.Codes_Styles_Templates or Primary.Emboss or Primary.Flags or Primary.Glossaries or Primary.Installation or &quot;Primary.Mac_Version&quot; or Primary.Miscellaneous or Primary.Not_in_HTML or Primary.Not_in_Print_Docs or Primary.NOT_USED or Primary.Perky or Primary.Perky_Only or Primary.Popups or Primary.Printed_Introduction or Primary.Reg_Activate or Primary.Setup_DBT or Primary.Special_Characters or Primary.SWIFT or Primary.The_Menus or Primary.Troubleshooting or Primary.Vista or Primary.Welcome]"
+  GlossaryTermConversion="first"
+  MoveOutputContentToRoot="false"
+  DefaultUrl="/Content/activation_wizard_help/Top.htm"
+  DisableAutoSync="true"
+  AliasFile="/Project/Advanced/awiz_alias.flali">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+  <RelationshipTables />
+</CatapultTarget>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Language Translation Tables" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="HtmlHelp" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="helpfile.xml" MadCap:SearchType="Stem" MadCap:lastBlockDepth="4" MadCap:lastHeight="4746" MadCap:lastWidth="735">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" /><title>KHMER (Cambodian)</title>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Khmer (Cambodian)" /><a name="kanchor633"></a>KHMER (Cambodian) <img src="../Resources/Images/flags/cambodia.gif" height="30" border="0" alt="Cambodian flag." title="Cambodian flag." /></h4>
+        <h5>TABLE DESIGNATOR</h5>
+        <p class="DBTCodePara">khm</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TableDesignator.flsnp" />
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The Khmer (Cambodian) tables support print-to-braille translation of Khmer-language literary text entered in Khmer script, following codes and customs as practiced at the Cambodian foundation Krousar Thmey. Latin script may also be present in the input file, and if so it is transcribed in uncontracted braille according to English/American conventions as defined by the Braille Authority of North America (BANA). Technical codes for math and science (Nemeth Code) and computer notation (Computer Braille Code) are also supported, again following BANA conventions.</p>
+        <p>Normally, the text is first prepared on Microsoft Word using a Unicode font such as KhmerOS, and imported to DBT prior to translation. For word breaking at ends of lines to be carried out properly in braille (and also for best use of the word-processing capabilities of Word), it is important that word boundaries within unspaced Khmer letter sequences be entered as "zero width spaces". The KhmerOS typing facilities make this character easy to enter, and Word display options also provide a way for it to be "visible" when that is desirable.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Braille_to_Print.flsnp" />
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>True braille-to-print translation is supported within English text and Computer Braille Code, but not in languages other than English nor in mathematics. This means that any mathematics, Khmer or other non-English portions of a braille file will not translate correctly to print. It also means that the "translated line" will typically contain gibberish when the cursor is in mathematics or Khmer, or in any language other than English. For this reason you may prefer to turn the translated line off when working with Khmer literary braille -- under the View menu, or even under Global/Default if you wish it to be off by default.</p>
+        <p>Khmer characters may not be shown normally on the "print file" view of DBT. This is the main reason that Microsoft Word should normally be used for entering, editing and viewing the print text and the DBT print view is used only as an intermediary step enroute to the braille.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>English grade 1 (uncontracted) is supported, as noted above. Language switching codes, i.e. <span class="Code-DuxCode">[lng~en]</span> to introduce an English passage and <span class="Code-DuxCode">[lng]</span> or <span class="Code-DuxCode">[lng~km]</span> to revert to Khmer, may be used but are actually not necessary, as the distinction between languages is made on the basis of the script.</p>
+        <p>Note that in addition to the abovementioned "secondary language" support within the Khmer table itself, it is also possible to switch to any of the available translation tables listed in DBT. (See the <span class="Code-DuxCode">[lnb~...]</span> code below.)</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>The BANA math and science code, i.e. Nemeth Code, and the BANA computer notation code, i.e. CBC, are supported. See the relevant documentation under "Help".</p>
+        <p>In addition, it is possible to switch to any of the available translation tables listed in DBT (see the <span class="Code-DuxCode">[lnb~...]</span>code below), many of which do support various technical codes, such as for mathematics or computer notation, or which support “unified” treatment of technical notation as well as literary text in the base language associated with the table.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p>The following DBT translation codes are available when using the Khmer table. Any other translation codes used will be ignored, or indeed may cause unexpected results. If using an alternative translation table, i.e when switching to another base language table by means of the<span class="Code-DuxCode">[lnb~...]</span> code, please refer to the relevant topic and available codes for that table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to <span class="Code-DuxCode">[g2]</span> and has no effect in this table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[atx0]</span> turns off the "all ASCII is literal" mode (see next code description), so that certain traditional "codes" typed in as direct text will continue to have effect. (For a list of these, see "Special Print Text Codes" within the "Codes Quick Reference" on DBT's Help menu.) This is presently the default (initial) condition, but as that is likely to change in future versions, it is advisable to put an [atx0] code at the beginning of any file in which the traditional in-text codes are used.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[atx1]</span> turns on an "all ASCII is literal" mode, which will cause all ordinary printable ASCII characters to be considered as literal text, even those sequences that have traditionally been used as special "codes".</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bar]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[be]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bline]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs0]</span> is a special variant form of the <span class="Code-DuxCode">[bs]</span> code that forces omission of the subscript indicator (dots 5-6).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs1]</span> is a special variant form of the <span class="Code-DuxCode">[bs]</span> code that forces use of the subscript indicator (dots 5-6).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cap-invert]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cap-normal]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-&amp;]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-de]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ds]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ee]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-es]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ne]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ns]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-se]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ss]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-t1]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-t2]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbi]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cs-off]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cz]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[e]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ecane]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ecans]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[enclis]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[eqvn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[evb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe0]</span> is a special variant form of the <span class="Code-DuxCode">[fe]</span> code for ending the fractional portion of a mixed number.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe1]</span> is a special variant form of the <span class="Code-DuxCode">[fe]</span> code for ending a fraction that includes another fraction (one level only) (i.e. a complex fraction).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe2]</span> is a special variant form of the <span class="Code-DuxCode">[fe]</span> code for ending a fraction that includes two levels of other fractions (i.e. a hypercomplex fraction).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl-lifg]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl-none]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl-span]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl1]</span> is a special variant form of the <span class="Code-DuxCode">[fl]</span> code for entering the fraction line for a fraction that includes another fraction (one level only) (i.e. a complex fraction).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl2]</span> is a special variant form of the <span class="Code-DuxCode">[fl]</span> code for entering the fraction line for a fraction that includes two levels of other fractions (i.e. a hypercomplex fraction).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs0]</span> is a special variant form of the <span class="Code-DuxCode">[fs]</span> code for starting the fractional portion of a mixed number.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs1]</span> is a special variant form of the <span class="Code-DuxCode">[fs]</span> code for starting a fraction that includes another fraction (one level only) (i.e. a complex fraction).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs2]</span> is a special variant form of the <span class="Code-DuxCode">[fs]</span> code for starting a fraction that includes two levels of other fractions (i.e. a hypercomplex fraction).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ii]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to <span class="Code-DuxCode">[g1]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte1]</span> is a special variant form of <span class="Code-DuxCode">[ixrte]</span>, for ending an indexed radical that is enclosed within a single outer radical.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte2]</span> is a special variant form of <span class="Code-DuxCode">[ixrte]</span>, for ending an indexed radical that is enclosed within two outer radicals.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts1]</span> is a special variant form of <span class="Code-DuxCode">[ixrts]</span>, for starting an indexed radical that is enclosed within a single outer radical.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts2]</span> is a special variant form of <span class="Code-DuxCode">[ixrts]</span>, for starting an indexed radical that is enclosed within two outer radicals.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb~...]</span> (for switching to another base [primary] language table)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~...]</span> (see "Secondary Languages Supported," above)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[oe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[one]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ons]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[os]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[pe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ps]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[rmn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte1]</span> is a special variant form of <span class="Code-DuxCode">[sqrte]</span>, for ending a square root that is enclosed within an outer radical.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte2]</span> is a special variant form of <span class="Code-DuxCode">[sqrte]</span>, for ending a square root that is enclosed within two outer radicals.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts1]</span> is a special variant form of <span class="Code-DuxCode">[sqrts]</span>, for starting a square root that is enclosed within an outer radical.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts2]</span> is a special variant form of <span class="Code-DuxCode">[sqrts]</span>, for starting a square root that is enclosed within two outer radicals.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[tce]</span> cancels the effect of <span class="Code-DuxCode">[tcs]</span>, restoring literary treatment (which is the default).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tcs]</span> is required in this table to enable math (technical) context, i.e. for general treatment as Nemeth Code. See the Topical How-To Guide, under Help, for general instructions.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[te]</span> cancels the effect of <span class="Code-DuxCode">[ts]</span>, restoring normal text mode (even though "technical context," i.e. Nemeth Code, may remain in effect).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ts]</span> initiates "technical notation," i.e. "math mode" within Nemeth Code.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tx]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[txi]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[txn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn]</span> cancels the effect of <span class="Code-DuxCode">[vrn~inf]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~inf]</span> establishes "informal mode," wherein certain ASCII characters that are not defined in Khmer nor English literary braille, and which according to the strict interpretation of the BANA literary code must therefore be represented as one or more words in braille (e.g. "greater-than" for "&gt;"), are instead given informal but generally familiar representations (e.g. dots 3-4-5 in that case). Note that the definition of this code may be changed or discontinued in future versions.</p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p>Khmer script characters (from the Unicode U+17xx / DUSCI D+bbxx range)</p>
+        <p>The "zero width space" (Unicode U+200b, DUSCI D+ec3b), which is important for signalling Khmer word breaks within unspaced letter sequences as noted above</p>
+        <p>All ASCII printable characters</p>
+        <p>Accented characters and punctuation marks typical of French, German, Italian, Spanish, and Portuguese</p>
+        <p>British pound, Japanese yen, Euro, and other miscellaneous signs (DUSCI pages D+ec..., D+ed..., D+ee..., D+f5...)</p>
+        <p>Mathematical signs, shapes, etc. (in "technical context," i.e. Nemeth Code, only) (DUSCI pages D+df..., D+e2..., D+e5..., D+ef..., D+f0..., D+f1...)</p>
+        <p>The above is a general guide only (see the "<a href="translation_tables.htm#GENERAL_NOTES">General Notes</a>" section at the beginning of this document).</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>The Khmer literary code aspects of these tables are based upon information first provided to Duxbury Systems by Wiraman Niyomphol of ON-NET in Thailand, as supplemented by a Khmer braille translator program that he had already developed, and further information provided by Kong Bunthy of Krousar Thmey in Cambodia.</p>
+        <p>The English literary code aspects are based primarily upon "English Braille American Edition," a publication of the Braille Authority of North America (BANA). "The Nemeth Braille Code for Mathematics and Science Notation, 1972 Revision" and "Code for Computer Braille Notation" (1987) define the mathematics and computer notation codes followed; both are also BANA publications.</p>
+        <p>The Khmer tables were adapted from the then-current American literary tables starting in August 2006 by Duxbury Systems, Inc., working with the earlier Khmer translator and information noted above and in active partnership with the individuals who provided it, and who also provided help with interpretation and feedback as the work progressed. Duxbury Systems is grateful for their assistance and guidance, and also for that of Larry Campbell of Overbrook School, Philadelphia, who greatly facilitated the coordination with these organizations.</p>
+        <p>(Documentation reviewed: July 2010.)</p>
+    </body>
+</html>

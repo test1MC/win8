@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="847" MadCap:lastWidth="646">
+    <head><title>Align to Bottom of Page</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Text:Align to Botton of Page;Align:to Bottom of Page;Alignment:Align to Bottom of Page" />Align to Bottom of Page</h4>
+        <p class="Normal">Also known as: Bottom Alignment, Bottom Justification</p>
+        <p class="Normal">What you need to know first: <a href="vertical_centering.htm">Vertical Centering</a></p>
+        <p>(See also: <a href="..\Text\Centering.htm">Centering</a>)</p>
+        <p class="bold"><b>Code Used:</b> <span class="Code-DuxCode">[vcsM:N] </span>and<span class="Code-DuxCode"> [vce]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It forces text to the bottom of a page.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">So children's text books are adapted for braille by adding a clear plastic sheet in front of the print page. Often there is a picture at the top of the print page, with a caption below.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxCode">[vcs2:1]</span><span class="Code-DuxScreen">The cat sat on the mat</span><span class="Code-DuxCode"><br />[pg][vce]</span><span class="Code-DuxScreen"><br />Did you like picture on the last page?</span></p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,! cat sat on ! mat4,</p>
+        <p class="PageBreak">---------- page break ----------</p>
+        <p class="Simbraille">did y l ! picture on &#160;&#160;&#160;&#160;#b</p>
+        <p class="Simbraille">! la/ page8</p>
+        <p class="bold">For the more technical:</p>
+        <p class="Normal">
+            <MadCap:keyword term="Vertical:Page Alignment" />Start vertical page alignment by applying the fraction N/M to the number of lines that would otherwise be left empty at the bottom, and adding that many blank lines to the top. M and N default to 2 and 1 respectively. Thus <span class="Code-DuxCode">[vcs2:1]</span> effects approximate bottom alignment. (Bottom alignment may not always be "perfect" because, when a body of text is started later on a page and re-flowed, under some circumstances [such as when the first line as been shortened to accommodate a page number] the line breaks may not always occur at the same positions and hence the text itself may occupy a different number of lines than it did originally.)</p>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="New_Line_1" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="691" MadCap:lastWidth="690">
+    <head><title>New Line and Set Left Margin</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Line:New and set left margin;New:Line and set left margin;Margin:New Line and Set Left" />New Line and Set Left Margin</h4>
+        <p class="Normal"><b>Code Used:</b> <span class="Code-DuxCode">[indP]</span></p>
+        <p class="Keystroke">Keystroke: Accessed from Layout: Left Margin (<span class="Keyboard">F4</span> may be used to set a margin to cell 3)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It positions what follows on a new line (if not already on a new line) and sets the left margin for the text.</p>
+        <p class="bold">Where would it be used?</p>
+        <p>This is my shopping list.<br />&#160;&#160;&#160;Apples<br />&#160;&#160;&#160;Pears</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="CourierPara"><span class="Code-DuxScreen">This is my shopping list.</span><span class="Code-DuxCode"><br />[ind5]</span><span class="Code-DuxScreen">Apples</span><span class="Code-DuxCode">[&lt;]</span> <span class="Code-DuxScreen"><br />Pears</span></p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,? is my %opp+ li/4</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;,apples</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;,pe&gt;s</p>
+        <p class="bold">Let us explain!</p>
+        <p class="Normal" style="font-weight: normal;">Basically the <span class="Code-DuxCode">ind</span> indicates that at that point you want the text on a new line. The <span class="Code-DuxCode">5</span> means that you now want the left margin to begin at cell 5.</p>
+        <p class="Normal" style="font-weight: normal;">This code should not generally be used to set the margin for the whole document; this is better done by using <a href="../../../the_menus/menu_document/document_embosser_setup.htm">Document: Embosser Setup</a> and <a href="../../../the_menus/MENU_GLOBAL/Global_Printer_Setup.htm">Document: Printer Setup</a>.</p>
+    </body>
+</html>

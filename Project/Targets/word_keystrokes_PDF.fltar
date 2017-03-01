@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/word_keystrokes.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/word_book.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  DisableAutoSync="true"
+  PatchHeadingLevels="false"
+  MasterStylesheetOverride="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    Tagged="true"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false" />
+  <DocumentProperties
+    Title="Word for Windows - Keyboard Shortcuts"
+    Author="George Bell"
+    Subject="Word Keystrokes" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

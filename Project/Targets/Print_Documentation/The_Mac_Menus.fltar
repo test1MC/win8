@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/The_Mac_Menus.fltoc"
+  ConditionTagExpression="include[&quot;Primary.Mac_Version&quot;]exclude[Primary.Popups or Primary.Windows_Version]"
+  EmbedImages="true"
+  conditions="Primary.Mac_Version"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

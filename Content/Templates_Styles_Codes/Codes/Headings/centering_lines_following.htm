@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="3" MadCap:lastHeight="828" MadCap:lastWidth="681">
+    <head><title>Centering + Lines Following</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Centering:Lines Following" />Centering + Lines Following</h4>
+        <p class="Normal">Also known as: Widows and Orphans.</p>
+        <p>(See also: <a href="..\Alignment\centering.htm">Centering</a> and <a href="centering_lines_before.htm">Centering + Lines Before</a>)</p>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[hdsN] + [hde]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p>It centers text horizontally on the current page, <b>provided</b> N + 1 lines are available on the rest of the page. It breaks to the next page and centers the text otherwise.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Where you wish control over how many lines must follow the heading before a new page.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="CourierPara"><span class="Code-DuxCode">[hds4]</span> My Heading <span class="Code-DuxCode">[hde]</span><br />These<br />five short<br />lines<br />must be available<br />on the same page,<br />but this is on a new page.</p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille" style="font-family: SimBraille;">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,my ,h1d+<br />,^!<br />five %ort<br />l9es<br />m/ 2 availa#<br />on ! same page1</p>
+        <p class="PageBreak">------------ page break ------------</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#b<br />b ? is on a new page4</p>
+    </body>
+</html>

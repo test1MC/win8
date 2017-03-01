@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="4181" MadCap:lastWidth="958">
+    <head><title>A practical Example</title>
+        <link rel="StyleSheet" href="../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Codes:in Word;Word:using DBT Codes" />A Practical Example of Using DBT Codes in Word</h4>
+        <h5>Introduction </h5>
+        <p class="Normal">For those familiar with DBT, you will probably already be acquainted with many of DBT’s Codes and how they are inserted into a document. If not, this subject is covered in DBT’s Help files. (<a href="../Templates_Styles_Codes/Codes/codes.htm">See Codes)</a></p>
+        <p class="Normal">It is now possible to add DBT Codes into a Word document., and therefore this document is intended to provide you with a very basic introduction as to how and why this is done.</p>
+        <h6>Why might Codes be desired?</h6>
+        <p class="Normal">One of the most common reasons might be where you have a Word Template which is designed as a letter heading. Your letter heading might look like this:</p>
+        <p class="Normal" style="text-align: center;" align="center">Duxbury Systems, Inc.,<br />270 Littleton Rd., Unit 6, <br />Westford, MA<br />01886-3523 USA</p>
+        <p class="Normal" style="text-align: center;" align="center">Telephone: +1 978 692 3000<br />Fax: +1 978 692 7912<br />Web: http://www.duxburysystems.com<br />Email: General inquiries: info@duxsys.com</p>
+        <p class="Normal">From a general perspective, this might at first appear quite a simple piece of text to translate into braille. However, depending on which country’s braille rules you are using, you may notice some things which would normally require special treatment if imported into DBT.</p>
+        <p class="Normal">Braillists will immediately realise that it contains a web and e-mail address. These are normally translated using "Computer Braille".</p>
+        <p class="Normal">In many countries, acronyms such as MA and USA should be preceded with a letter sign.</p>
+        <h6>How do I know what Codes to use?</h6>
+        <p class="Normal">There is a full list of Codes in alphabetical order in <a href="../Templates_Styles_Codes/Codes/dollar_codes_quick_reference.htm">DBT's Help</a>. Also, the most popular Codes are explained on more detail, broken down by category, such as Text, Line, Paragraph, etc.. See the <a href="../Templates_Styles_Codes/Codes/codes.htm">Codes</a> Topic for more details.</p>
+        <h6>So, how do we insert DBT Codes?</h6>
+        <p class="Normal">It is quite simple. In DBT Codes are entered in various ways, but essentially end up appearing between a left and right square bracket - "<span class="Code-DuxCode">[pg]</span>". (New Page)</p>
+        <p class="Normal">In Word, a slightly different format is used, and using the above example, we would type [[*pg*]]. That is, double left square bracket, asterisk, the DBT Code, asterisk, double right square bracket.</p>
+        <h6>How would the letter head above be Coded?</h6>
+        <p class="Normal" style="text-align: center;" align="center">Duxbury Systems, Inc., </p>
+        <p class="Normal" style="text-align: center;" align="center">270 Littleton Rd., Unit 6, </p>
+        <p class="Normal" style="text-align: center;" align="center">Westford, [[*ii*]]MA </p>
+        <p class="Normal" style="text-align: center;" align="center">01886-3523 [[*ii*]]USA</p>
+        <p class="Normal" style="text-align: center;" align="center">Telephone: +1//978//692//3000</p>
+        <p class="Normal" style="text-align: center;" align="center">Fax: +1//978//692//7912</p>
+        <p class="Normal" style="text-align: center;" align="center">Web: [[*cbi*]][[*wb-cb*]]http://www.duxburysystems.com[[*wb*]][[*txi*]]</p>
+        <p class="Normal" style="text-align: center;" align="center">Email: General inquiries: [[*cbi*]][[*wb-cb*]]info@duxsys.com[[*wb*]][[*txi*]]</p>
+        <h6>Let’s explain:</h6>
+        <p class="Normal">[[*ii*]] – this inserts a letter sign (In British English, dots 5.6)</p>
+        <p class="Normal">[[*cbi*]] – change to Computer Braille Code. (CBI)</p>
+        <p class="Normal">[[*wb-cb*]] – use computer braille word-breaking rules.</p>
+        <p class="Normal">[[*wb*]] – cancel word- breaking rules.</p>
+        <p class="Normal">[[*txi*]] – revert to whatever grade of braille is used for main document.</p>
+        <h6>I can not see the wood from the trees!</h6>
+        <p class="Normal">This is fine, but it can be difficult to see where all the codes are placed.</p>
+        <p class="Normal">Now comes the very slightly technical bit. We are going to create a new Character Style in Word. Moreover, we are going to change the colour of the font used, and then we are finally going to make it into "Hidden Text".</p>
+        <p class="Normal">In Word, click on the Format menu (or <span class="Keyboard">Alt + o</span>) and select "Styles and Formatting (or <span class="Keyboard">s</span>) A Styles and Formatting dialog will come up on the right of your screen. Click on the New Style button. Alternatively, press <span class="Keyboard">F6</span> which will place you on an item called "Clear Formatting", then press <span class="Keyboard">Shift + Tab</span> to reach the "New Style" Button, and press Enter.</p>
+        <p class="Normal">You will now see the New Style dialog appear as shown below. Let us call or new Style "DuxCode" (Without the quotes)</p>
+        <p class="Normal">For Style Type make absolutely sure you select "Character".</p>
+        <p class="Normal">For the purpose of this exercise, we have selected a Courier New Font, 12 point in size, Bold, and coloured it red.</p>
+        <p class="Normal">When you click OK, you will find that your new font has appeared in the list of available fonts on the right of the screen. (Also shown below)</p>
+        <p class="Normal">In case you are wondering, we have not at this stage made our font "hidden", we will do that soon.</p>
+        <p class="center" style="text-align: center;">
+            <img src="../Resources/Images/working_with_word/style_new.gif" alt="Image of Reset Style Dialog" />
+        </p>
+        <p class="center" align="center"> <img src="../Resources/Images/working_with_word/style_list.gif" style="width: 182px; height: 509px;" width="182" height="509" border="1" alt="Image shows Words Style listing which allows editing of Styles." /> </p>
+        <p class="Normal">Now we can apply the DuxCode Style to our letter heading Template, so it looks like this. The Codes stand out, and now to hide them is explained in the next section.</p>
+        <p class="Normal" style="text-align: center;" align="center">Duxbury Systems, Inc., </p>
+        <p class="Normal" style="text-align: center;" align="center">270 Littleton Rd., Unit 6, </p>
+        <p class="Normal" style="text-align: center;" align="center">Westford,<span class="Code-DuxCode"> [[*ii*]]</span>MA </p>
+        <p class="Normal" style="text-align: center;" align="center">01886-3523<span class="Code-DuxCode"> [[*ii*]]</span>USA</p>
+        <p class="Normal" style="text-align: center;" align="center">Telephone: +1 978 692 3000</p>
+        <p class="Normal" style="text-align: center;" align="center">Fax: +1 978 692 7912</p>
+        <p class="Normal" style="text-align: center;" align="center">Web: <span class="Code-DuxCode">[[*cbi*]][[*wb-cb*]]</span>http://www.duxburysystems.com<span class="Code-DuxCode">[[*wb*]][[*txi*]]</span></p>
+        <p class="Normal" style="text-align: center;" align="center">Email: General inquiries: <span class="Code-DuxCode">[[*cbi*]][[*wb-cb*]]</span>info@duxsys.com<span class="Code-DuxCode">[[*wb*]][[*txi*]]</span></p>
+        <h6>But I don’t want these Codes ink printed.</h6>
+        <p class="Normal">All we need to do is a slight "tweak" to our DuxCode Style.</p>
+        <p class="Normal">Go to Format, Styles and Formatting as you did above, but this time arrow down to the DuxCode Style. Open the drop down list, and select "Modify".</p>
+        <p class="Normal">Click on the "Format" button at the bottom left (See above screen shot) A list will come up from which you should select "Font". This brings up the following dialog. Simply check the "Hidden" box so that a tick appears. Click on OK.</p>
+        <p class="center" align="center">
+            <img src="../Resources/Images/working_with_word/style_font.gif" style="width: 417px; height: 461px;" width="417" height="461" border="0" alt="Image shows Words Font dialog." />
+        </p>
+        <p class="Normal">All things being equal, your DuxCode red text should disappear.</p>
+        <p>But what if it does not? Read on.</p>
+        <h6>How do I make the Codes appear and disappear?</h6>
+        <p class="Normal">This is done though Word's Tools menu. Select Options. Then make sure you select the View Tab. In the formatting marks, check "Hidden Text" if you want to see the Codes, and uncheck it if you do not.</p>
+        <p class="center" align="center">
+            <img src="../Resources/Images/working_with_word/style_options.gif" style="width: 420px; height: 494px;" width="420" height="494" border="0" alt="Image shows Words OPtions dialog with &quot;Hidden Text&quot; arrowed." />
+        </p>
+        <p class="Normal">And so now we have a letter heading Template in Word which to all intents and purposes looks quite normal in Word, but when translated into braille will follow the correct braille rules.</p>
+        <p class="Normal" style="text-align: center;" align="center">Duxbury Systems, Inc.,<br />270 Littleton Rd., Unit 6, <br />Westford, MA<br />01886-3523 USA</p>
+        <p class="Normal" style="text-align: center;" align="center">Telephone: +1 978 692 3000<br />Fax: +1 978 692 7912<br />Web: http://www.duxburysystems.com<br />Email: General inquiries: info@duxsys.com</p>
+    </body>
+</html>

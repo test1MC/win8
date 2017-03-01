@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:conditions="Primary.Windows_Version" MadCap:lastBlockDepth="4" MadCap:lastHeight="1289" MadCap:lastWidth="724">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>Network Installation Overview</h2>
+        <p>The Duxbury Braille Translator (DBT) has been carefully designed to support installation of multiple copies of the program on a corporate or educational network. If DBT will be used by a relatively smaller number of users who share a large number of computers with other users, then you will want to install DBT on your network using a server that shares activation. With shared activation, DBT can be installed and accessible on many machines, but may only be run by a limited number of users at one time, with that number determined by your license agreement.</p>
+        <p>In corporate and educational networks, individual users frequently lack administrative access privileges, meaning a network support professional must generally perform these installations.</p>
+        <p>Users of prior versions of DBT are advised that as of DBT 11.2 some details of network installation have changed, so please review these instructions even if you are experienced with DBT installation.</p>
+        <h3>Getting Started</h3>
+        <p>If you want to launch right into your installation, you can follow these links to the two options for installing DBT on your network, or you may want first to review the two brief background topics that follow, especially the explanation of the automatic option.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;"><a href="network_install_using_wizard.htm">Manually installing DBT on server and client machines</a>
+            </li>
+            <li style="list-style-type: disc;"><a href="network_install_using_server_image.htm">Automatically deploying DBT software from the server onto client machines</a>
+            </li>
+        </ul>
+        <h4>About the Automatic Deployment Option</h4>
+        <p>For this option, server installation includes one extra step: creating a <b>server image</b>. A server image is a customized form of the DBT installer, which you use instead of the original DBT installer to place DBT on each client computer. The server image automatically fills in the data you would enter during a normal installation. Thus, each client install proceeds quickly, requiring you only to review and click the Next button for each dialog. Better still, you also have the option to run the installation showing only a progress bar or running entirely in the background.</p>
+        <p>The server image is customized so that it automatically includes in every installation:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">Your Duxbury license number</li>
+            <li style="list-style-type: disc;">A (standard) user name</li>
+            <li style="list-style-type: disc;">Global embosser definitions (optional)</li>
+        </ul>
+        <p>Including embosser definitions can be a big time saver. Be sure to try this feature if you have many users who share the same embossers.</p>
+        <h3>About Windows Installers</h3>
+        <p>The DBT installer is a Windows installer package. Using Windows installer technology confers all the standard features: installation, software maintenance and repair, clean software removal, and even installation onto other workstations from a central location.</p>
+        <p>The following external links to Microsoft support resources can help to familiarize you with the Windows installer.</p>
+        <p><a href="http://support.microsoft.com/?kbid=310598">Overview of Windows Installer Technology</a>
+        </p>
+        <p><a href="http://support.microsoft.com/?kbid=555175">How to Resolve Common Windows Installer Problems</a>
+        </p>
+        <p><a href="http://support.microsoft.com/?kbid=227091">Command-Line Switches for the Microsoft Windows Installer Tool</a>
+        </p>
+        <p>Installation onto workstations from a central location is an advanced topic and not recommended to the inexperienced. Moreover, the details about how to perform this task vary depending on your edition of the Windows Server operating system. To learn more, we recommend that you look for information on "Software Installation and Maintenance" within the Distributed Systems Guide that should come with the resource kit for your server OS.</p>
+    </body>
+</html>

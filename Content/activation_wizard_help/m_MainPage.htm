@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="898" MadCap:lastWidth="624" MadCap:conditions="ActWizConditions.ActwizHelp">
+    <head>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" /><title>Main Functions</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Activation:Main Functions" />Main Functions of the Activation Wizard</h1>
+        <p MadCap:conditions="Primary.Mac_Version">
+            <img src="../Resources/Images/getting_setup_in_dbt/activation_wizard/mac_activation_choices.jpg" style="width: 595px; height: 338px;" alt="Activation Wizard Choices" MadCap:conditions="Primary.Mac_Version" />
+        </p>
+        <p>The main page lists the tasks you can do with the activation wizard. It warns you which operations are critical and require Administrative level access. You can Register your software and Diagnose activation problems without administrative access, but for critical operations like Activate and Deactivate, administrative access is required.</p>
+        <p MadCap:conditions="Primary.Windows_Version">(If you use the Windows VISTA operating system, see the note at the bottom of this topic.)</p>
+        <p>
+            <MadCap:keyword term="Activation:This computer" /><b>Activate this computer</b>: Activation enables the full normal functioning of your program. If you need to license as well as activate, you will do them both in this function.</p>
+        <p><a href="m_WelcomeWhatIsActivation.htm">What is Activation?</a>
+        </p>
+        <p>
+            <MadCap:keyword term="Registration:Main Page" /><b>Submit a new or updated registration</b>: When you register you share your basic contact information with Duxbury Systems. Once your license is registered you become eligible for customer support. In a multi-user situation, usually the license needs to be registered only once, though that registration may need to be updated from time to time as the principal contact person changes. If you know your license is registered, you do not need to do it again unless your information has changed.</p>
+        <p>
+            <MadCap:keyword term="Activation:Diagnose problems" /><b>Diagnose activation problems</b>: This task runs tests on your computer to provide information about your activation. It is intended to help you and Duxbury Customer Support resolve activation problems. Diagnostics are always safe. They provide information but do not make any changes on your computer.</p>
+        <p>
+            <MadCap:keyword term="Deactivate:This computer" /><b>Deactivate this computer</b>: Deactivation disables the normal functioning of your Duxbury product, but it also adjusts the count of allowed activations so that you can activate on another computer instead. Deactivation over the Internet will normally ensure that you can activate later on another computer. If you are not connected to the Internet, a record of deactivation is placed in a file on your desktop or in your home folder. You are encouraged to view or print this file to make sure you have a record of the deactivation, and to email this information to Duxbury Systems.</p>
+        <p>NOTE: <b>You should always deactivate your Duxbury program before performing significant computer maintenance like replacing a bad disk drive or upgrading the OS or BIOS</b>.</p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>Activation for multi-user installations</b>: Installation for multiple users typically relies on a single server machine (license host) on your local network to activate all your Duxbury program users. That is, your license needs to be activated only on the license host machine, and it is typically activated for all of your users, who operate by communicating with the license host. To do this, select<br /><b>Set up this server to host the network license</b>.<br /> Each client machine on the network can then<br /><b>Connect to the network license server on your LAN</b>.<br /> Once those operations are complete, the server machine shares out activation "tokens" to the other machines on the network which themselves do not need to be activated.</p>
+        <p MadCap:conditions="Primary.Windows_Version"><b>NOTE on 2-Step Activation</b>: If you activate manually (for example, by email), activation requires 2 steps, sending Duxbury your information, and receiving a reply with an activation code. When you receive your reply you must open the activation wizard again. On the Main page, the task "Activate this computer" will likely be selected for you. If you are activating your program as a single user, you should use that option. However, if you are activating your program as a license server for multiple users, you must select, "<b>Set up this server to host the network license</b>" instead.</p>
+        <h2 MadCap:conditions="Primary.Windows_Version">Activation on the Windows Vista OS</h2>
+        <p MadCap:conditions="Primary.Windows_Version">Windows operating systems, beginning with <b>Vista</b> and including <b>Windows 7</b> and all those that have followed, have a feature called User Account Control or UAC. Normally most users have UAC turned on. For the Vista operating system only, when you use the Activation Wizard to activate your Duxbury program, you need to turn UAC <i>off</i>, and you need to be sure you are running from an account with full write-access privileges on your computer.</p>
+        <p MadCap:conditions="Primary.Windows_Version">Your indicator that you need to turn off UAC is the error, <b>COM server initialization has failed</b> when you try to activate. Counter-intuitive as it may be, running <b>as administrator</b> with UAC still on does not solve this problem. You must turn UAC off to run the Wizard. You can turn it on again afterwards.</p>
+    </body>
+</html>

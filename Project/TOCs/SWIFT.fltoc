@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="Primary.SWIFT">
+  <TocEntry
+    Title="SWIFT"
+    Link="/Content/working_with_word/SWIFT/swift.htm">
+    <TocEntry
+      Title="EULA"
+      Link="/Content/getting_setup_in_DBT/EULA.htm" />
+    <TocEntry
+      Title="Installing SWIFT"
+      Link="/Content/working_with_word/SWIFT/swift_installation.htm"
+      StartSection="false" />
+    <TocEntry
+      Title="Document"
+      Link="/Content/working_with_word/SWIFT/swift_document.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/SWIFT/SWIFT.flpgl">
+      <TocEntry
+        Title="Choose Template"
+        Link="/Content/working_with_word/SWIFT/swift_choose_BANA_template.htm"
+        StartSection="false">
+        <TocEntry
+          Title="BANA Styles (Quick Summary)"
+          Link="/Content/working_with_word/SWIFT/swift_BANA_ribbon.htm"
+          ComputeToc="false" />
+        <TocEntry
+          Title="Word Template (BANA Braille 2015)"
+          Link="/Content/working_with_word/BANA_Template_2015/Word_Template_BANA_Braille_2015.htm"
+          ComputeToc="false"
+          BreakType="pageLayout"
+          StartSection="false"
+          PageLayout="/Content/Resources/PageLayouts/word_bana.flpgl" />
+        <TocEntry
+          Title="Producing Nemeth Code within UEB"
+          Link="/Content/working_with_word/mathematics/nemeth.htm"
+          BreakType="pageLayout"
+          StartSection="false" />
+      </TocEntry>
+      <TocEntry
+        Title="Style Map"
+        Link="/Content/working_with_word/SWIFT/swift_style_map.htm"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Output"
+      Link="/Content/working_with_word/SWIFT/swift_output.htm">
+      <TocEntry
+        Title="Emboss Direct"
+        Link="/Content/working_with_word/SWIFT/swift_emboss_direct.htm"
+        StartSection="false" />
+      <TocEntry
+        Title="Open in DBT"
+        Link="/Content/working_with_word/SWIFT/swift_open_in_DBT.htm" />
+      <TocEntry
+        Title="Print Braille"
+        Link="/Content/working_with_word/SWIFT/swift_print_braille.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Tools"
+      Link="/Content/working_with_word/SWIFT/swift_tools.htm">
+      <TocEntry
+        Title="Acronyms"
+        Link="/Content/working_with_word/SWIFT/swift_acronyms.htm" />
+      <TocEntry
+        Title="Acronym Manager"
+        Link="/Content/working_with_word/SWIFT/swift_acronym_manager.htm" />
+      <TocEntry
+        Title="Word Styles Lister"
+        Link="/Content/working_with_word/SWIFT/swift_word_styles_lister.htm" />
+      <TocEntry
+        Title="Options"
+        Link="/Content/working_with_word/SWIFT/swift_options.htm" />
+      <TocEntry
+        Title="Help"
+        Link="/Content/working_with_word/SWIFT/swift_help.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

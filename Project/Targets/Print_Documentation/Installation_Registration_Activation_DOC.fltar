@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Install Guide for DBT Mac"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Print Documentation/Installation_Registration_Activation_TOC.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl"
+  GetLatestBeforeCompile="false"
+  ConditionTagExpression="exclude[Primary.Windows_Version] "
+  OutputFile="Install_Reg_Activ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/PrintGlossary.flglo" />
+  </Glossaries>
+  <DocumentProperties
+    Author="George Bell &amp; Dana Winikates" />
+</CatapultTarget>

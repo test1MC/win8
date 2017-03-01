@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="4" MadCap:lastHeight="926" MadCap:lastWidth="625" xml:lang="en-us">
+    <head><title>Global: Embosser Setup: Advanced.</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h5>
+            <MadCap:keyword term="Embosser:Character Table;Embosser:Manufacturers;Carriage Return;Form Feed;ports;Job:setup;Embosser Setup: Advanced" />Global: Embosser Setup: Advanced</h5>
+        <p>When you select the "Advanced" tab, the following dialog will appear.</p>
+        <p class="bold">WARNING: Do not make any changes to this dialog unless you know precisely what you are doing!</p>
+        <p>
+            <MadCap:keyword term="Brailler Device" />With the vast majority of Brailler Devices, you will not need to make any changes to this dialog unless specifically advised by either Duxbury Systems or your embosser manufacturer.</p>
+        <p>However if you are faced with a device which is unlisted or unknown to DBT, you may find this dialog useful in some areas.</p>
+        <p style="text-align: center;font-weight: bold;"><a href="global_embosser_setup.htm" MadCap:conditions="Primary.HTML_Only">Return to Embosser Setup Topic</a>
+            <MadCap:conditionalText MadCap:conditions="Primary.Print_Only">
+                <MadCap:xref href="global_embosser_setup.htm">Return to "Global: Embosser Setup..." on page&#160;1</MadCap:xref>
+            </MadCap:conditionalText> (or continue at your peril!)</p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_embosser_setup_advanced_(MS-Snip).jpg" alt="Image showing the General tab with settings for a Juliet Pro 50" />
+        </p>
+        <p><b><MadCap:keyword term="Job Setup" />Job Setup</b>
+            <MadCap:keyword term="Page:Codes" />
+            <MadCap:keyword term="cr" />
+            <MadCap:keyword term="Line:Codes" /> - checking the "Use custom job setup" check box allows you to enable "Job start codes" and "Job end codes", described below.</p>
+        <p>
+            <MadCap:keyword term="Interline Print" />
+            <MadCap:keyword term="Gemini embosser" />A user of the Gemini embosser might enter &lt;esc&gt;&lt;esc&gt;Q to enable double-sized interline print and/or &lt;esc&gt;&lt;esc&gt;D to enable double-striking of the braille. Note that neither of these changes affects the form size or the layout of the braille on the form.</p>
+        <p><b>Job Start Codes:</b> Text that you type here will be sent to the embosser <i>after</i> any setup sequence (e.g. escape codes) that DBT normally sends when starting to emboss. The additional text that you add to the setup sequence may be used for any purpose. However, it is best to avoid using this feature to redefine the form length, the braille cell size, or the interline spacing of the braille. Any change to these characteristics in the Start Job Codes will not be shared by DBT while it is preparing your pages for output, and so DBT will not create a document properly formatted for the page. Text that you type here may be any printable ASCII character (including space, but excluding less-than and greater-than), or any of the following special sequences:</p>
+        <ul xml:lang="en-us">
+            <li xml:lang="en-us">&lt;esc&gt; Escape (ASCII 27)</li>
+            <li xml:lang="en-us">&lt;lf&gt; Line Feed (ASCII 10)</li>
+            <li xml:lang="en-us">&lt;ff&gt; Form Feed (ASCII 12)</li>
+            <li xml:lang="en-us">&lt;cr&gt; Carriage Return (ASCII 13)</li>
+            <li xml:lang="en-us">&lt;ctrl-@&gt; NUL (ASCII 0)</li>
+            <li xml:lang="en-us">&lt;ctrl-A&gt; Control-A (ASCII 1)</li>
+            <li xml:lang="en-us">&lt;ctrl-Z&gt; Control-Z (ASCII 26)</li>
+            <li xml:lang="en-us">&lt;lt&gt; Less-than (ASCII 60)</li>
+            <li xml:lang="en-us">&lt;gt&gt; Greater-than (ASCII 62)</li>
+        </ul>
+        <p><b>Job End Codes:</b> Text that you type here will be sent to the embosser <i>before</i><MadCap:keyword term="Job:defined" /> any job-ending sequence (e.g. escape codes) that DBT sends on its own. Text may contain the same ASCII printable characters and special sequences as are defined for Job Start Codes. Job End Codes are often left blank even when start codes are used.</p>
+        <p><b>End of line and page</b> - These options control which device Control Codes are produced at the ends of lines and pages.</p>
+        <p><b>End of line indicator:</b>
+            <MadCap:keyword term="CR/LF" /> Normally DBT will send a CR/LF Control Code at the end of each line. However, if you have opted to <a href="Global_Embosser_setup_general.htm#Write_to_File">Write to file</a>, with a view to processing that file on a non-Windows or non-DBT system, you may make an appropriate selection here.</p>
+        <p><b>End of page indicator:</b> As with End of line indicators, you may wish to select a more suitable option here.</p>
+        <p><b>EOL on a full line:</b> Check this box if you wish to add an End of Line Code even when the line contains as many braille cells as the embosser will support. Many embossers automatically skip to the beginning of the next line in this circumstance, so it can be important to leave this option un-checked.</p>
+        <p><b>EOP on a full page:</b> Check this box if you wish to add an End of Page Code even when all possible lines contain braille. Many embossers automatically skip to the top of the next page in this circumstance, so it can be important to leave this option un-checked.</p>
+        <p><b>Pad lines:</b> Some devices need to see at least a few characters on each line. Checking this box will therefore cause spaces to be added at the end of any lines that are blank or very short. </p>
+        <p><b>Prompt for new sheet:</b> Checking this box causes DBT to pause after each page has been sent to the Braille Device. This can be useful if for any reason you have to feed each page of material manually into the device.</p>
+        <p><b><MadCap:keyword term="Timing" />Timing:</b> This is a highly technical area, but basically it controls how long DBT waits after sending a text character or control character. It is enabled only when "Write to Port" is selected in the <a href="Global_Embosser_setup_general.htm">General tab</a>. DBT normally maintains Timing values appropriate for the device and port you select; you should only change these values if you are having extreme difficulty interfacing a device.</p>
+    </body>
+</html>

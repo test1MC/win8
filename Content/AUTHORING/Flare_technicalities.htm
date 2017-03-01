@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1220" MadCap:lastWidth="298">
+    <head>
+    </head>
+    <body>
+        <h1>Flare Technicalities</h1>
+        <p>Flare is an authoring program with a rich feature set, but it has certain limitations and idiosyncrasies. Those found so far are listed here to help Duxbury authors avoid them.</p>
+        <h2>Using Entity References </h2>
+        <p>Flare does not recognize the character form of entity references like “&amp;nbsp;” for non-breakable space. Instead it accepts the numeric form, “&amp;#160;” only.</p>
+        <h2>Skins for Target Outputs</h2>
+        <p>When Needed - Most types of Target need a “Skin” (which defines a page layout). The HTML5 type, used for Macintosh Help, does not need one, but that may be only because our current post-processing itself defines a page layout for the top page.</p>
+        <p>Editing - The Default skin is not editable. However, Skins are XML files. They can be copied and edited directly. We copied the skin used for dbthelp to a new file in order to change the font size for the TOC elements in this and other Help files. The two skins derived from this file, “Duxbury_NimPro_Windows” for the nimflare project, and “Duxbury_Actwiz_Windows” for actwiz.chm (in the dbthelp project), have the same reduced font size for TOC items as DBTHelp (helpfile.chm). These skins currently differ only in their caption, but this appears in the window frame, therefore each output target normally needs its own skin.</p>
+        <h2>Conditional Text</h2>
+        <p>Applying a condition flag to a topic or element inside a topic (paragraph, list, image, etc.) is fairly straightforward, but the necessary logic in a target to include or exclude that topic, paragraph, image, etc., can be mysterious once there are multiple levels of "include" and "exclude".</p>
+        <p>MORE TO COME.</p>
+    </body>
+</html>

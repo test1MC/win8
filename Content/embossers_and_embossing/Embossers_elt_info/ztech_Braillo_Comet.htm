@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1971" MadCap:lastWidth="667">
+    <head>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <heading><title>Technical Tips for this Embosser</title>
+    </heading>
+    <body>
+        <h2 class="NoNewPage">Technical Tips for this Embosser</h2>
+        <p><a href="../Embossers/ports.htm">General Advice about Computer Ports: Serial. Parallel. USB. and Network</a>
+        </p>
+        <p>The Comet's factory defaults are for a serial connection. To drive the Comet from the parallel port you will need to change the DIP switches. The DIP switches can be found on the back of the Comet -- they are arranged in two groups. "I/O Serial" and "Paper Format." They should be set as follows:</p>
+        <ul>
+            <li><b>Group &amp; Switch # Position Purpose</b>
+            </li>
+            <li>I/O Serial -- 1 UP parallel interface</li>
+            <li>I/O Serial -- 2 either (used for serial only)</li>
+            <li>I/O Serial -- 3 either (used for serial only)</li>
+            <li>I/O Serial -- 4 either (used for serial only)</li>
+            <li>I/O Serial -- 5 either (used for serial only)</li>
+            <li>I/O Serial -- 6 either (used for serial only)</li>
+            <li>I/O Serial -- 7 either (used for serial only)</li>
+            <li>I/O Serial -- 8 either (used for serial only)</li>
+            <li>Paper Format -- 1 DOWN (not in use)</li>
+            <li>Paper Format -- 2 DOWN* 11 inch paper</li>
+            <li>Paper Format -- 3 UP* 11 inch paper</li>
+            <li>Paper Format -- 4 UP no automatic form feed</li>
+            <li>Paper Format -- 5 UP 42 characters per line</li>
+            <li>Paper Format -- 6 DOWN normal line spacing</li>
+            <li>Paper Format -- 7 DOWN 6 dot braille</li>
+            <li>Paper Format -- 8 UP expecting both CR &amp; LF</li>
+        </ul>
+        <p>*Note: We have assumed that you are using 11 inch braille paper in configuring switches 2 and 3 on the Paper Format switch bank. Adjust these switches to match your braille paper if you are using a different size. Failure to make your paper match these settings will cause misaligned pages. to make your paper match these settings will cause misaligned pages.</p>
+        <p>After changing the DIP switches. be sure to press Reset (RE) and form feed (SF) simultaneously for the changes to take effect -- this is not necessary if you powered off the Comet before adjusting the switches. Finally. attach a printer cable from your computer to the upper port on the Comet. Note: The Comet uses a 25-pin parallel port rather than the more common 36-pin centronics port. You will need a straight. fully wired 25-pin male-to-male cable to connect your computer to the Comet. 25-pin male-to-male cable to connect your computer to the Comet.</p>
+        <p>Serial setup guidelines: </p>
+        <p>Serial setup guidelines: </p>
+        <p>The Braillo Comet's default setup is for serial connections using 9600.n.8.1 (baud rate. parity. data bits and stop bits. respectively). Assuming that you want to keep these parameters. the DIP switches should appear as follows:</p>
+        <ul>
+            <li><b>Group &amp; Switch # Position Purpose</b>
+            </li>
+            <li>I/O Serial -- 1 DOWN serial interface</li>
+            <li>I/O Serial -- 2 UP 9600 baud rate</li>
+            <li>I/O Serial -- 3 UP 9600 baud rate</li>
+            <li>I/O Serial -- 4 DOWN 9600 baud rate</li>
+            <li>I/O Serial -- 5 DOWN no parity</li>
+            <li>I/O Serial -- 6 DOWN no parity</li>
+            <li>I/O Serial -- 7 DOWN 8 data bits</li>
+            <li>I/O Serial -- 8 DOWN 1 stop bit</li>
+            <li>Paper Format -- 1 DOWN (not in use) Paper Format -- 2 DOWN* 11 inch paper</li>
+            <li>Paper Format -- 3 UP* 11 inch paper</li>
+            <li>Paper Format -- 4 UP no automatic form feed</li>
+            <li>Paper Format -- 5 UP 42 characters per line</li>
+            <li>Paper Format -- 6 DOWN normal line spacing</li>
+            <li>Paper Format -- 7 DOWN 6 dot braille</li>
+            <li>Paper Format -- 8 UP expecting CR &amp; LF</li>
+        </ul>
+        <p>*Note: We have assumed that you are using 11 inch braille paper in configuring switches 2 and 3 on the Paper Format switch bank. Adjust these switches to match your braille paper if you are using a different size. Failure to make your paper match these settings will cause misaligned pages.</p>
+        <p>After changing the DIP switches. be sure to press Reset (RE) and form feed (SF) simultaneously for the changes to take effect -- this is not necessary if you powered off the Comet before adjusting the switches. Finally. attach a printer cable from your computer to the Comet. The lower of the Comet's two ports is the serial port. The exact type of serial cable you will need depends upon your computer's serial (COM1 or COM2) port -- some have 9-pin while others have 25-pin connections.</p>
+        <p>The Comet's operation panel consists of a red light to indicate whether the power is on or off. and seven switches. The Comet's manual covers these switches in detail. but we would like to add a few notes about the SW and PV switches.</p>
+        <p>The SW switch is used to enable sideways printing. This is especially useful in cases where information is preferred in in a wide table format. Selecting sideways printing with the SW switch on the control panel is the last step in this process. Before sideways printing can be properly executed. you should use this software to create files with the correct dimensions. up to the Comet's maximum of 120 characters per line. The lines per page should be no more than 26 and may be much lower if you are using 8-1/2 by 11 inch braille paper.</p>
+        <p>The PV button is used to display a one-page summary of the Comet's current settings. This may come in handy if you experience any difficulties in brailling a document. You can use this button to verify that the Comet is set correctly before looking elsewhere for the cause of the problem.</p>
+        <p>Switch 1 in the "I/O Serial" group sets serial or parallel mode. If you are using serial. set for 9600 baud. no parity. 8 data bits. and 1 stop bit. For serial or parallel output. set the "paper format" switches to 11 inch paper. no automatic form feed. 42 characters per line. normal line spacing. 6 dot braille. and expecting carriage return and line feed.</p>
+        <p>Whether you are using serial or parallel. make sure you obtain the appropriate cable from the vendor. If you are using parallel. be aware that the unit uses an unusual parallel cable. If you are using serial. use a straight through male-to-female cable with a null modem adapter. For technical support for the Comet. contact <a href="http://www.americanthermoform.com/">American Thermoform</a> at 213-723-9021.</p>
+    </body>
+</html>

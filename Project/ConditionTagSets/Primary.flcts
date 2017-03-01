@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Name="Not_in_Print_Docs"
+    BackgroundColor="#1cc53c" />
+  <ConditionTag
+    Name="Installation"
+    BackgroundColor="#ff0000" />
+  <ConditionTag
+    Name="Braille_Only"
+    BackgroundColor="#008000" />
+  <ConditionTag
+    Name="The_Menus"
+    BackgroundColor="#999900" />
+  <ConditionTag
+    Name="Printed_Introduction"
+    BackgroundColor="#00ff00" />
+  <ConditionTag
+    Name="Print_Only"
+    BackgroundColor="#8b008b" />
+  <ConditionTag
+    BackgroundColor="LightBlue"
+    Name="Perky_Only"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff80ff"
+    Name="Mac_Version"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Windows_Version"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#7fffd4"
+    Name="Activation Wizard"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#deb887"
+    Name="Not_in_HTML"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="SWIFT"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="Glossaries"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Codes_Styles_Templates"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="Special_Characters"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="Working_with_Word"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#fa8072"
+    Name="Popups"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="Miscellaneous"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Emboss"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Setup_DBT"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="NOT_USED"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#d2691e"
+    Name="Perky"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Welcome"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="Vista"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Troubleshooting"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="Reg_Activate"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="Flags"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff7f"
+    Name="HTML_Only"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Authoring"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff4e00"
+    Name="Not_in_Act_Wizard"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Perky_Not_in"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#daa520"
+    Name="Perky_and_DBTW"
+    Comment="" />
+</CatapultConditionTagSet>

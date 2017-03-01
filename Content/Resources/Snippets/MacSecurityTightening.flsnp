@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="451" MadCap:lastWidth="624">
+    <body>
+        <h4 MadCap:conditions="Primary.Mac_Version">Warning: Macintosh Security is Tightening</h4>
+        <p MadCap:conditions="Primary.Mac_Version">Your Duxbury Braille Translator program has a "code signature" issued to Duxbury by Apple which verifies that DBT is unaltered since its creation at Duxbury Systems. As a general rule, signed code is safe.</p>
+        <p MadCap:conditions="Primary.Mac_Version">Despite that signature, Macintosh operating systems are becoming increasingly restrictive with respect to newly installed programs. Prior to "Yosemite" (MacOSX 10.10), the Macintosh would post a notice that DBT was downloaded from the Internet and request your approval before actually running it the first time.</p>
+        <p MadCap:conditions="Primary.Mac_Version">As of Yosemite, the default security preferences are tighter. Even a signed program, if it is not bought at the Apple Store or already added to an identified list of vendors, fails to open from a simple double-click. You must right-click on the program icon, select Open, and then select the Open button on the security dialogue that displays. After you do this once, DBT opens normally from then on.</p>
+        <p MadCap:conditions="Primary.Mac_Version">As of "El Capitan" (MacOSX 10.11), the default is even more restrictive, only applications purchased from the Apple Store will open without the security check. However, the solution is the same. Right-click on the application, select Open, then click the Open button on the security dialogue.</p>
+        <p MadCap:conditions="Primary.Mac_Version">You can also visit the Security &amp; Privacy section of your System Preferences, select the General tab, and relax the security level that controls which applications are allowed to open without first running through the security gauntlet. However, please exercise caution if you relax your security; you might want to do so only temporarily.</p>
+    </body>
+</html>

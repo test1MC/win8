@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultReportFile Tables="topics-not-in-index,topics-with-keyword-links,topics-with-keyword-links-without-keyword,index-keyword-links,files-with-keywords,index-keyword-suggestions,used-index-keywords" Comment="This template includes all reports in the Index group. Once the new report file is created, you can enable or disable any report from any group.">
+</CatapultReportFile>

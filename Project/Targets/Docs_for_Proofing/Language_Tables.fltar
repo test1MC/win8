@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  DefaultUrl="/Content/welcome_to_DBT/welcome_to_dbt.htm"
+  OutputFile="Language_Translation_Tables.doc"
+  ConditionTagExpression=""
+  Type="MsWord"
+  MasterToc="/Project/TOCs/Print Documentation/Language_Tables.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  PatchHeadingLevels="false"
+  InjectBookHeadings="true"
+  TargetLanguage="en-us"
+  EmbedImages="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book_(Letter_Size).flpgl"
+  MasterStylesheetOverride="true"
+  DisableAutoSync="true"
+  RemoveImagesFromHeadings="true"
+  PreCompileScaledImages="false">
+  <Variables />
+  <ConditionTags />
+  <Glossaries></Glossaries>
+  <PrintedOutput
+    MirrorMargins="true"
+    PopupConversion="expand"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GeneratePDF="true" />
+</CatapultTarget>

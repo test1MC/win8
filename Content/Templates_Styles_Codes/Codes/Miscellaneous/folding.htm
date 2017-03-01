@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="2" MadCap:lastHeight="871" MadCap:lastWidth="647">
+    <head><title>folding</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Folding" />Folding</h4>
+        <p class="Normal">Also known as: Mailing Folds, Envelope Folds</p>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[foldsN~X]</span></p>
+        <p><span class="hcp1">Keystroke: (None at present)</span>
+        </p>
+        <p>See also: <a href="../../Templates/Templates_Docs/initial_style.htm">Initial Style</a> (See <a href="../../Templates/Templates_Docs/initial_style.htm#NOTE">Template Tip</a>)</p>
+        <p class="bold">What does it do?</p>
+        <p>It produces one (or optionally two) blank lines where the user wishes to fold a document. A "fold mark" in the form of a row of dots, such as dots 2 &amp; 5, can also be embossed to aid folding.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="Normal">The <span class="Code-DuxCode">[folds]</span> code accepts several optional numeric parameters and an optional string parameter. If no numeric parameters are given, <span class="Code-DuxCode">[folds]</span> will generate two fold lines. If the page cannot be divided evenly into three sections, then the larger sections will be toward the bottom of the page (ie, on a 25-line page, the folds will be placed on lines 8 and 17).</p>
+        <p class="Normal">The first optional numeric parameter <span class="Code-DuxCode">N</span> gives the number of fold lines. I.E. <span class="Code-DuxCode">[folds1]</span> would give only one fold line. It should also bias larger sections to the bottom of the page (ie, <span class="Code-DuxCode">[folds1]</span> on a 26-line page should place the fold on line 13). If three fold lines are to be included and there are to be two large sections and two small sections, then the large sections will be placed in the center of the page.</p>
+        <p class="Normal">The second parameter <span class="Code-DuxCode">X</span> lists the size of each group of fold lines. Normally, this would be 1. Placing a 2 here would generate two lines for each fold. I.E., <span class="Code-DuxCode">[folds2:2]</span> on a 25-line page would leave blank (or dotted) lines on lines 7, 8, 16, and 17.</p>
+        <p class="Normal">Any other numeric parameters, if given, specify the lines on which folds will start. This allows users to override the default algorithm. The user should either specify the position of all fold lines or specify none.</p>
+        <p class="Normal">A string parameter, if given, causes a dotted line. If one character is given, then all folds will be dotted with the Braille character specified, the dots corresponding to Computer Braille. E.g. <span class="Code-DuxCode">[folds~3]</span> causes two fold lines of dots 2-5. If more than one character is given, then they are assumed to specify the characters for each fold line. <span class="Code-DuxCode">[folds~-c]</span> would make a row of dots 3-6 on the first fold and a row of dots 1-4 on the second fold.</p>
+        <p class="bold"><a name="Template_Tip"></a>Template Tip:</p>
+        <p class="Normal">If you are creating a Template for Letters and such like which you would normally fold, this code may be included in the "initial" Style of your Template.</p>
+    </body>
+</html>

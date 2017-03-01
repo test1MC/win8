@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="914" MadCap:lastWidth="626">
+    <head>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <heading><title>Technical Tips for this Embosser</title>
+    </heading>
+    <body>
+        <h2 class="NoNewPage">Technical Tips for this Embosser</h2>
+        <p><a href="../Embossers/ports.htm">General Advice about Computer Ports: Serial. Parallel. USB. and Network</a>
+        </p>
+        <p>The emb.elt table asks for "PageWrap". This means when the embosser is finished with the last possible line on the page. the software send just a carriage return (end of line). without a form feed command (end of page). If there was no PageWrap statement in the emb.elt. then the user would have to use one less possible line per page. But that "extra" line does come at a price: the emb.elt table must give the precise number of lines per page that the embosser is capable of (for that form size) or else the format gets messed up. If you have problems with the ouput. make sure you know how many lines the embosser can produce. Make sure that number is in the emb.elt table (the second number after the singlepage/doublepage command for the form you are using.</p>
+        <p><b>Parallel Setup Guidelines:</b>
+        </p>
+        <p>The Ohtsuki's factory defaults should work just fine with this software. You need a special parallel cable. On a standard parallel cable. wire 17 from the PC connects to wire 36 on the printer. and wire 11 on the PC connects to wire 11 on the printer. On the modified cable. disconnect both of these connections. and then connect wire 11 on the PC to wire 36 on the printer (wires 17 on the PC and 11 on the printer should not be connected to anything).</p>
+        <p>If you run into any problems and you've narrowed the cause down to the hardware. you may wish to double check the DIP switches. Turn off the printer and remove the DIP switch cover plate as instructed in the Ohtsuki manual. Switch banks two and three have no purpose unless you are using serial communications. Switch bank one should be configured as follows (ON=up. OFF=down):</p>
+        <ul>
+            <li><b>Switch # Position Purpose</b>
+            </li>
+            <li>SW-1-1 -- ON -- 7 data bits</li>
+            <li>SW-1-2 -- ON -- 1 Line BUSY</li>
+            <li>SW-1-3 -- ON -- USA and "X" data input</li>
+            <li>SW-1-4 -- ON -- USA and "X" data input</li>
+            <li>SW-1-5 -- OFF -- No automatic linefeed</li>
+            <li>SW-1-6 -- OFF -- Parallel interface</li>
+        </ul>
+        <p>After putting the cover back on the switch banks. you can plug in the Ohtsuki. attach a parallel printer cable from your computer. and power on the unit. If you encounter any problems driving the embosser. please see the operating tips.</p>
+        <p>Serial setup guidelines: </p>
+        <p>The Ohtsuki's internal serial communication protocols are different from most embossers and seem to change from time to time. but by telling this software that you are using an Ohtsuki. and by giving special attention to the serial setup guidelines. it can be used successfully.</p>
+        <p>First you will need to arrange your DIP switches for serial communications. These settings are only a recommendation. We based this recommendation on the fact that most computer systems configure the serial ports for 9600.n.8.1 (baud rate. parity. data bits and stop bits. respectively). If. for any reason. you require a setting other than 9600.n.8.1. you'll need to adjust the Ohtsuki's DIP switches accordingly. Making sure that your printer is powered off. remove the plate covering the DIP switch banks as instructed in the Ohtsuki manual. Next. adjust the switches as follows (ON=up. OFF=down):</p>
+        <ul>
+            <li><b>Switch # Position Purpose</b>
+            </li>
+            <li>SW-1-1 -- either For parallel only</li>
+            <li>SW-1-2 -- either For parallel only</li>
+            <li>SW-1-3 -- ON -- USA and "X" data input</li>
+            <li>SW-1-4 -- ON -- USA and "X" data input</li>
+            <li>SW-1-5 -- OFF -- No automatic linefeed</li>
+            <li>SW-1-6 -- ON -- Serial interface</li>
+            <li>SW-2-1 -- OFF -- 1 stop bit</li>
+            <li>SW-2-2 -- either Irrelevent w/parity disabled</li>
+            <li>SW-2-3 -- OFF -- Parity check disabled</li>
+            <li>SW-2-4 -- ON -- 8 data bits</li>
+            <li>SW-2-5 -- ON -- 2400 Baud active</li>
+            <li>SW-2-6 -- OFF -- 1200 Baud disabled</li>
+            <li>SW-2-7 -- OFF -- 600 Baud disabled</li>
+            <li>SW-2-8 -- OFF -- 300 Baud disabled</li>
+            <li>SW-2-8 -- OFF -- 300 Baud disabled</li>
+            <li>SW-3-1 -- OFF -- Multiply active baud rate by four</li>
+            <li>SW-3-2 -- ON -- American protocol</li>
+            <li>SW-3-3 -- OFF -- American protocol</li>
+            <li>SW-3-4 -- ON -- CTS enabled</li>
+            <li>SW-3-5 -- ON -- DSR enabled</li>
+            <li>SW-3-6 -- ON -- XON/XOFF handshaking</li>
+        </ul>
+        <p>After putting the cover back on the switch banks. you can attach the power cord and plug in the unit. You will need a serial cable to attach the Ohtsuki to your serial (COM1 or COM2) port. The exact type of cable required will depend on your computer's serial connection.</p>
+        <p>The front panel of the Ohtsuki consists of three lights and three buttons. The three lights indicate power on. on-line status and paper empty. respectively. The three buttons are used to toggle between on-line and off-line status. to perform a single linefeed. and to perform a form feed. respectively. Because the Ohtsuki is on-line when it is first powered up. and because the index holes keep track of page endings. you should normally not have to push any buttons to get the Ohtsuki to print from this software.</p>
+        <p>When the Ohtsuki is set for print and braille. it spaces out the lines so that only 19 lines can fit on a page. To fit the standard 25 lines on a page. add the sequence Escape lT (Escape. lower case letter l. uppercase T) as a set up sequence. If you only want braille from the Ohtsuki. send the control sequence Escape B (Escape uppercase B).</p>
+        <p>For technical support for the Ohtsuki. contact <a href="http://www.americanthermoform.com/">American Thermoform</a> at 213-723-9021.</p>
+    </body>
+</html>

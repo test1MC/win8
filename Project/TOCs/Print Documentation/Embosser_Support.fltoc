@@ -1,0 +1,1627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="DBT The Menus (Windows)"
+    Link="/Content/PRINT_VERSIONS/Title_Page_Embossers.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/PRINT_VERSIONS/Embosser_Intro.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/contents.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Computer Ports, USB and Embossers"
+    Link="/Content/embossers_and_embossing/Embossers/ports.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Codes"
+    Link="/Content/embossers_and_embossing/Codes/control_codes.htm"
+    StartSection="false">
+    <TocEntry
+      Title="Codes_Forms">
+      <TocEntry
+        Title="10_d"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/10_d.htm" />
+      <TocEntry
+        Title="10_n"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/10_n.htm" />
+      <TocEntry
+        Title="10_w"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/10_w.htm" />
+      <TocEntry
+        Title="11_d"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_d.htm" />
+      <TocEntry
+        Title="11_gem"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_gem.htm" />
+      <TocEntry
+        Title="11_n"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_n.htm" />
+      <TocEntry
+        Title="11_vw"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_vw.htm" />
+      <TocEntry
+        Title="11_w"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_w.htm" />
+      <TocEntry
+        Title="12_d"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_d.htm" />
+      <TocEntry
+        Title="12_n"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_n.htm" />
+      <TocEntry
+        Title="12_vw"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_vw.htm" />
+      <TocEntry
+        Title="12_w"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_w.htm" />
+      <TocEntry
+        Title="13.5_d"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13.5_d.htm" />
+      <TocEntry
+        Title="13_d"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13_d.htm" />
+      <TocEntry
+        Title="13_n"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13_n.htm" />
+      <TocEntry
+        Title="13_w"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13_w.htm" />
+      <TocEntry
+        Title="A3_foilo"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/A3_foilo.htm" />
+      <TocEntry
+        Title="Term definition for: A4"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/A4.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Codes_General">
+      <TocEntry
+        Title="Term definition for: AdditionalDelay"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/AdditionalDelay.htm" />
+      <TocEntry
+        Title="Term definition for: Baud"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Baud.htm" />
+      <TocEntry
+        Title="Term definition for: BrailleOnly"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/BrailleOnly.htm" />
+      <TocEntry
+        Title="Term definition for: BrailloHGapGraphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/BrailloHGapGraphics.htm" />
+      <TocEntry
+        Title="Term definition for: BrailloVGapGraphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/BrailloVGapGraphics.htm" />
+      <TocEntry
+        Title="BreakLimits"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/BreakLimits.htm" />
+      <TocEntry
+        Title="CanDoInterpoint"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/CanDoInterpoint.htm" />
+      <TocEntry
+        Title="ControlD"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ControlD.htm" />
+      <TocEntry
+        Title="ControlDelay"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ControlDelay.htm" />
+      <TocEntry
+        Title="ControlZ"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ControlZ.htm" />
+      <TocEntry
+        Title="Term definition for: CrMac"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/CrMac.htm" />
+      <TocEntry
+        Title="Term definition for: Customize"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Customize.htm" />
+      <TocEntry
+        Title="Term definition for: DataBits"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/DataBits.htm" />
+      <TocEntry
+        Title="Term definition for: DoublePage"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/DoublePage.htm" />
+      <TocEntry
+        Title="Term definition for: Driver"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Driver.htm" />
+      <TocEntry
+        Title="Term definition for: Encoding"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Encoding.htm" />
+      <TocEntry
+        Title="Term definition for: EndofPage"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/EndofPage.htm" />
+      <TocEntry
+        Title="Term definition for: ETCAllowEscapeCodes"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ETCAllowEscapeCodes.htm" />
+      <TocEntry
+        Title="Term definition for: ETHighResGraphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ETHighResGraphics.htm" />
+      <TocEntry
+        Title="Term definition for: ETMediumResGraphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ETMediumResGraphics.htm" />
+      <TocEntry
+        Title="ETmulti"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ETmulti.htm" />
+      <TocEntry
+        Title="Term definition for: ETSpeaks"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ETSpeaks.htm" />
+      <TocEntry
+        Title="Term definition for: fDsrSensitivity"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fDsrSensitivity.htm" />
+      <TocEntry
+        Title="Term definition for: fDtrControl"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fDtrControl.htm" />
+      <TocEntry
+        Title="Term definition for: fInx"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fInx.htm" />
+      <TocEntry
+        Title="Term definition for: Form"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Forms/Form.htm" />
+      <TocEntry
+        Title="Term definition for: fOutX"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fOutX.htm" />
+      <TocEntry
+        Title="Term definition for: fOutxCtsFlow"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fOutxCtsFlow.htm" />
+      <TocEntry
+        Title="Term definition for: fOutxDsrFlow"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fOutxDsrFlow.htm" />
+      <TocEntry
+        Title="Control File listing for: Freedom Scientific VersaPoint Duo"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Freedom_Scientific_VersaPoint_Duo.htm" />
+      <TocEntry
+        Title="Term definition for: fRtsControl"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fRtsControl.htm" />
+      <TocEntry
+        Title="Term definition for: fTXContinueOnOff"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/fTXContinueOnOff.htm" />
+      <TocEntry
+        Title="Term definition for: Handshaking"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Handshaking.htm" />
+      <TocEntry
+        Title="Term definition for: HardwareDCB"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/HardwareDCB.htm" />
+      <TocEntry
+        Title="Term definition for: HelpPage"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/HelpPage.htm" />
+      <TocEntry
+        Title="Term definition for: Index16Graphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Index16Graphics.htm" />
+      <TocEntry
+        Title="Term definition for: Index20Graphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Index20Graphics.htm" />
+      <TocEntry
+        Title="Term definition for: IndexMulti"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexMulti.htm" />
+      <TocEntry
+        Title="Term definition for: IndexPageInch"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexPageInch.htm" />
+      <TocEntry
+        Title="Term definition for: IndexPagemm"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexPagemm.htm" />
+      <TocEntry
+        Title="Term definition for: IndexVersions"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexVersions.htm" />
+      <TocEntry
+        Title="Term definition for: IndexZfold"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexZfold.htm" />
+      <TocEntry
+        Title="Term definition for: IniFile"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/IniFile.htm" />
+      <TocEntry
+        Title="Term definition for: Interline"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Interline.htm" />
+      <TocEntry
+        Title="Term definition for: LessLinesInterpoint"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/LessLinesInterpoint.htm" />
+      <TocEntry
+        Title="Term definition for: LettersUpperCase"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/LettersUpperCase.htm" />
+      <TocEntry
+        Title="Term definition for: LfUnix"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/LfUnix.htm" />
+      <TocEntry
+        Title="Term definition for: LinesPadded"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/LinesPadded.htm" />
+      <TocEntry
+        Title="Term definition for: LineWrap"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/LineWrap.htm" />
+      <TocEntry
+        Title="Term definition for: ManualInterpoint"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/ManualInterpoint.htm" />
+      <TocEntry
+        Title="Term definition for: MaximumCells"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/MaximumCells.htm" />
+      <TocEntry
+        Title="Term definition for: MaximumLines"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/MaximumLines.htm" />
+      <TocEntry
+        Title="Term definition for: NarrowWarning"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NarrowWarning.htm" />
+      <TocEntry
+        Title="Term definition for: nbp"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/nbp.htm" />
+      <TocEntry
+        Title="Term definition for: NoLeftMargin"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NoLeftMargin.htm" />
+      <TocEntry
+        Title="Term definition for: NoMakeupSides"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NoMakeupSides.htm" />
+      <TocEntry
+        Title="Term definition for: NoParallel"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NoParallel.htm" />
+      <TocEntry
+        Title="Term definition for: NoRightMargin"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NoRightMargin.htm" />
+      <TocEntry
+        Title="Term definition for: NoSerial"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NoSerial.htm" />
+      <TocEntry
+        Title="Term definition for: NoTopMargin"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/NoTopMargin.htm" />
+      <TocEntry
+        Title="OneByOne"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/OneByOne.htm" />
+      <TocEntry
+        Title="Term definition for: PageWrap"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/PageWrap.htm" />
+      <TocEntry
+        Title="Term definition for: Parity"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Parity.htm" />
+      <TocEntry
+        Title="Term definition for: PlateLoadByte"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/PlateLoadByte.htm" />
+      <TocEntry
+        Title="Term definition for: PortCloseSyncByte"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/PortCloseSyncByte.htm" />
+      <TocEntry
+        Title="Term definition for: PortCloseSyncCount"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/PortCloseSyncCount.htm" />
+      <TocEntry
+        Title="Term definition for: PortCloseSyncPrompt"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/PortCloseSyncPrompt.htm" />
+      <TocEntry
+        Title="Term definition for: PromptNewPage"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/PromptNewPage.htm" />
+      <TocEntry
+        Title="Term definition for: SinglePage"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/SinglePage.htm" />
+      <TocEntry
+        Title="SoftwareDCB"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/SoftwareDCB.htm" />
+      <TocEntry
+        Title="Term definition for: SortToTop"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/SortToTop.htm" />
+      <TocEntry
+        Title="Term definition for: StartLeftMargin"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/StartLeftMargin.htm" />
+      <TocEntry
+        Title="Term definition for: StopBits"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/StopBits.htm" />
+      <TocEntry
+        Title="Term definition for: Submodel"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/Submodel.htm" />
+      <TocEntry
+        Title="Term definition for: TranSend"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/TranSend.htm" />
+      <TocEntry
+        Title="Term definition for: UsingEscapeCodes"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/UsingEscapeCodes.htm" />
+      <TocEntry
+        Title="Term definition for: VPGraphics"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/VPGraphics.htm" />
+      <TocEntry
+        Title="Term definition for: VPmulti"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/VPmulti.htm" />
+      <TocEntry
+        Title="Term definition for: WindowsDriverName"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/WindowsDriverName.htm" />
+      <TocEntry
+        Title="Term definition for: YesFTDI"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/YesFTDI.htm" />
+      <TocEntry
+        Title="Term definition for: YesUSB"
+        Link="/Content/embossers_and_embossing/Codes/Codes_General/YesUSB.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Codes_Labels">
+      <TocEntry
+        Title="Term definition for: 0.50 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/0.50 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 0.75 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/0.75 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 1.00 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.00 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 1.25 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.25 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 1.50 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.50 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 1.75 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.75 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 2.00 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.00 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 2.25 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.25 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 2.50 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.50 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 2.75 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.75 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 3.00 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.00 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 3.25 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.25 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 3.50 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.50 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 3.75 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.75 inch label.htm" />
+      <TocEntry
+        Title="Term definition for: 4.00 inch label"
+        Link="/Content/embossers_and_embossing/Codes/Codes_Labels/4.00 inch label.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Supported Embossers"
+    Link="/Content/embossers_and_embossing/Embossers/embosser_list.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    MarkAsNew="true">
+    <TocEntry
+      Title="Generic (Single-Sided)"
+      Link="/Content/embossers_and_embossing/Embossers/generic.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Generic"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/generic.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Generic Interpoint (Double-Sided)"
+      Link="/Content/embossers_and_embossing/Embossers/Generic_Interpoint.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Generic Interpoint"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Generic_Interpoint.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="ATC Braille &amp; Print"
+      Link="/Content/embossers_and_embossing/Embossers/ATC_Braille_a_Print.htm"
+      StartSection="false"
+      BreakType="pageLayout"
+      PageLayout="/Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl">
+      <TocEntry
+        Title="Control File listing for: ATC Braille &amp; Print"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ATC_Braille_a_Print.htm"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="ATC Dot &amp; Print"
+      Link="/Content/embossers_and_embossing/Embossers/ATC_Dot_a_Print.htm"
+      BreakType="pageLayout"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl">
+      <TocEntry
+        Title="Control File listing for: ATC Dot &amp; Print"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ATC_Dot_a_Print.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="ATC Ohtsuki"
+      Link="/Content/embossers_and_embossing/Embossers/ATC_Ohtsuki.htm"
+      BreakType="pageLayout"
+      StartSection="false">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Ohtsuki.htm" />
+      <TocEntry
+        Title="Control File listing for: ATC Ohtsuki"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ATC_Ohtsuki.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Brailletec BTec 100"
+      Link="/Content/embossers_and_embossing/Embossers/Brailletec_BTec_100.htm">
+      <TocEntry
+        Title="Control File listing for: Brailletec BTec 100"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Brailletec_BTec_100.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Brailletec Elotype 4A"
+      Link="/Content/embossers_and_embossing/Embossers/Brailletec_Elotype_4A.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl">
+      <TocEntry
+        Title="Control File listing for: Brailletec Elotype 4A"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Brailletec_Elotype_4A.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Brailletec PUMA 6"
+      Link="/Content/embossers_and_embossing/Embossers/Brailletec_PUMA_6.htm">
+      <TocEntry
+        Title="Control File listing for: Brailletec PUMA 6"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Brailletec_PUMA_6.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Brailletec PUMA 7"
+      Link="/Content/embossers_and_embossing/Embossers/Brailletec_PUMA_7.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Brailletec PUMA 7"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Brailletec_PUMA_7.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 30"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_30.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 30"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_30.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 40/50"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_40_50.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 40/50"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_40_50.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 200"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_200.htm">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Braillo_200.htm" />
+      <TocEntry
+        Title="Control File listing for: Braillo 200"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_200.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 200/400 with 270 style ROMs"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_200_400_with_270_style_ROMs.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 200/400 with 270 style ROMs"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_200_400_with_270_style_ROMs.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 270"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_270.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 270"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_270.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 300"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_300.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 300"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_300.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 400S"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_400_S.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 400S"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_400S.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 400SR"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_400_SR.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 400SR"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_400SR.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 440 S&amp;F"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_440_SaF.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 440 S&amp;F"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_440_SaF.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 440 SW"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_440_SW.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 440 SW"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_440_SW.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 600SR"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_600_SR.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 600SR"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_600SR.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 650 S&amp;F"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_650_SF.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 650 S&amp;F"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_650_SaF.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 650 SW"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_650_SW.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 650 SW"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_650_SW.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo Comet"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_Comet.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Braillo_Comet.htm" />
+      <TocEntry
+        Title="Control File listing for: Braillo Comet"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_Comet.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Cranmer Brailler"
+      Link="/Content/embossers_and_embossing/Embossers/Cranmer_Brailler.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Cranmer.htm" />
+      <TocEntry
+        Title="Control File listing for: Braillo Comet"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_Comet.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="EBrailler Cosmo"
+      Link="/Content/embossers_and_embossing/Embossers/EBrailler_Cosmo.htm">
+      <TocEntry
+        Title="Control File listing for: EBrailler Cosmo"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/EBrailler_Cosmo.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Braille Bookmaker"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Braille_Bookmaker.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_BookMaker.htm" />
+      <TocEntry
+        Title="Control File listing for: Enabling Braille Bookmaker"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Braille_Bookmaker.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Braille Express"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Braille_Express.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Braille Express"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Braille_Express.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Braille Express-100"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Braille_Express-100.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Braille Express-100"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Braille_Express-100.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Braille Express-150"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Braille_Express-150.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Braille Express-150"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Braille_Express-150.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling BraillePlace"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_BraillePlace.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling BraillePlace"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_BraillePlace.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Cyclone"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Cyclone.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Cyclone"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Cyclone.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling E.T."
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_E.T..htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling E.T."
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_E.T..htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Juliet 120"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Juliet_120.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Juliet 120"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Juliet_120.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Juliet Classic"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Juliet_Classic.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Juliet Classic"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Juliet_Classic.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Juliet Pro"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Juliet_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Juliet Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Juliet_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Juliet Pro 60"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Juliet_Pro_60.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Juliet Pro 60"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Juliet_Pro_60.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Marathon"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Marathon.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Marathon"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Marathon.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling PED-30"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_PED-30.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling PED-30"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_PED-30.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Phoenix Gold"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Phoenix_gold.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Phoenix Gold"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Phoenix_Gold.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Phoenix Silver"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Phoenix_silver.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Phoenix Silver"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Phoenix_Silver.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo 20/40"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_20_40.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Romeo.htm" />
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo 20/40"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_20_40.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo 25"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_25.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo 25"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_25.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo 60"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_60.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo 60"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_60.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Attache"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Attache.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Attache"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Attache.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Attache (2nd Edition)"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Attache_(2nd_Edition).htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Attache (2nd Edition)"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Attache_(2nd_Edition).htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Attache Pro"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Attache_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Attache Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Attache_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Attache Pro (2nd Edition)"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Attache Pro (2nd Edition)"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Attache_Pro_(2nd_Edition).htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Pro 50"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Pro_50.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Pro 50"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Pro_50.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Pro LE Narrow"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Pro_LE_Narrow.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Pro LE Narrow"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Pro_LE_Narrow.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Romeo Pro LE Wide"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Romeo_Pro_LE_Wide.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Romeo Pro LE Wide"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Romeo_Pro_LE_Wide.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Thomas"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Thomas.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Thomas"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Thomas.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Thomas Pro"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Thomas_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Thomas Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Thomas_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling TranSend LT"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_TranSend_LT.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Transend LT"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_TranSend_LT.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling TranSend LT (Large Print)"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_TranSend_LT_(Large_Print).htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Transend LT (Large Print)"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_TranSend_LT_(Large_Print).htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Enabling Trident"
+      Link="/Content/embossers_and_embossing/Embossers/Enabling_Trident.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Enabling Trident"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Enabling_Trident.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Freedom Scientific Braille Blazer"
+      Link="/Content/embossers_and_embossing/Embossers/Freedom_Scientific_Braille_Blazer.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Blazer.htm" />
+      <TocEntry
+        Title="Control File listing for: Freedom Scientific Braille Blazer"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Freedom_Scientific_Braille_Blazer.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Freedom Scientific Braille Inferno"
+      Link="/Content/embossers_and_embossing/Embossers/Freedom_Scientific_Braille_Inferno.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Freedom Scientific Braille Inferno"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Freedom_Scientific_Braille_Inferno.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Freedom Scientific VersaPoint"
+      Link="/Content/embossers_and_embossing/Embossers/Freedom_Scientific_VersaPoint.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_VersaPoint.htm" />
+      <TocEntry
+        Title="Control File listing for: Freedom Scientific VersaPoint"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Freedom_Scientific_VersaPoint.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Freedom Scientific VersaPoint Duo"
+      Link="/Content/embossers_and_embossing/Embossers/Freedom_Scientific_VersaPoint_Duo.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Duo.htm" />
+      <TocEntry
+        Title="Control File listing for: Freedom Scientific VersaPoint Duo"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Freedom_Scientific_VersaPoint_Duo.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index 4Waves Pro"
+      Link="/Content/embossers_and_embossing/Embossers/Index_4Waves_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Index 4Waves Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_4Waves_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index 4x4 PRO"
+      Link="/Content/embossers_and_embossing/Embossers/Index_4x4_PRO.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Index 4x4 PRO"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_4x4_PRO.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index Advanced"
+      Link="/Content/embossers_and_embossing/Embossers/Index_Advanced.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Index Advanced"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_Advanced.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index Basic (blue bar)"
+      Link="/Content/embossers_and_embossing/Embossers/Index_Basic_(blue_bar).htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Blue_Bar.htm" />
+      <TocEntry
+        Title="Control File listing for: Index Basic (blue bar)"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_Basic_(blue_bar).htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index Basic-D"
+      Link="/Content/embossers_and_embossing/Embossers/Index_Basic-D.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Index_Basic.htm" />
+      <TocEntry
+        Title="Control File listing for: Index Basic-D"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_Basic-D.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index Basic-S"
+      Link="/Content/embossers_and_embossing/Embossers/Index_Basic-S.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Index Basic-S"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_Basic-S.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index Braille Box"
+      Link="/Content/embossers_and_embossing/Embossers/Index_Braille_Box.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Index Braille Box"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_Braille_Box.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Index Everest-D"
+      Link="/Content/embossers_and_embossing/Embossers/Index_Everest-D.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Index Everest-D"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Index_Everest-D.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Interpoint NV Elekul 03"
+      Link="/Content/embossers_and_embossing/Embossers/Interpoint_NV_Elekul_03.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Elekul_03.htm"></TocEntry>
+      <TocEntry
+        Title="Control File listing for: Interpoint NV Elekul 03"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Interpoint_NV_Elekul_03.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Interpoint NV Elekul 55"
+      Link="/Content/embossers_and_embossing/Embossers/Interpoint_NV_Elekul_55.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Elekul_55.htm" />
+      <TocEntry
+        Title="Control File listing for: Interpoint NV Elekul 55"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Interpoint_NV_Elekul_55.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="JTR Corporation ESA-300 Pro"
+      Link="/Content/embossers_and_embossing/Embossers/JTR_Corporation_ESA-300_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_JTR_Corporation_300.htm" />
+      <TocEntry
+        Title="Control File listing for: JTR Corporation ESA-300 Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/JTR_Corporation_ESA-300_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="JTR Corporation ESA-600 Pro"
+      Link="/Content/embossers_and_embossing/Embossers/JTR_Corporation_ESA-600_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_JTR_Corporation_600.htm" />
+      <TocEntry
+        Title="Control File listing for: JTR Corporation ESA-600 Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/JTR_Corporation_ESA-600_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="JTR Corporation ESA-721"
+      Link="/Content/embossers_and_embossing/Embossers/JTR_Corporation_ESA-721.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_JTR_Corporation_721.htm" />
+      <TocEntry
+        Title="Control File listing for: JTR Corporation ESA-721"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/JTR_Corporation_ESA-721.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="JTR Corporation ESA-919"
+      Link="/Content/embossers_and_embossing/Embossers/JTR_Corporation_ESA-919.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_JTR_Corporation_919.htm" />
+      <TocEntry
+        Title="Control File listing for: JTR Corporation ESA-919"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/JTR_Corporation_ESA-919.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="JTR Corporation ESA-2000"
+      Link="/Content/embossers_and_embossing/Embossers/JTR_Corporation_ESA-2000.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_JTR_Corporation_2000.htm" />
+      <TocEntry
+        Title="Control File listing for: JTR Corporation ESA-2000"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/JTR_Corporation_ESA-2000.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Gemini (small spacing)"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Gemini_(small_spacing).htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Gemini (small spacing)"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Gemini_(small_spacing).htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Super Gemini (small spacing)"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Super_Gemini_(small_spacing).htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageLayout="/Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Super Gemini (small spacing)"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Super_Gemini_(small_spacing).htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Telesoft BMP-320"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Telesoft_BMP-320.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Telesoft BMP-320"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Telesoft_BMP-320.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Telesoft BPW-32"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Telesoft_BPW-32.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Telesoft BPW-32"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Telesoft_BPW-32.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Telesoft DOG-Pro"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Telesoft_DOG-Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Telesoft DOG-Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Telesoft_dog-pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Telesoft Gemini"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Telesoft_Gemini.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Nippon_Gemini.htm" />
+      <TocEntry
+        Title="Control File listing for: Nippon Telesoft Gemini"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Telesoft_Gemini.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Telesoft Super Gemini"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Telesoft_Super_Gemini.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Telesoft Super Gemini"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Telesoft_Super_Gemini.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Nippon Telesoft TP-32"
+      Link="/Content/embossers_and_embossing/Embossers/Nippon_Telesoft_TP-32.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Nippon Telesoft TP-32"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Nippon_Telesoft_TP-32.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Pulse Data Paragon"
+      Link="/Content/embossers_and_embossing/Embossers/Pulse_Data_Paragon.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Pulse Data Paragon"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Pulse_Data_Paragon.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Quantum Mountbatten"
+      Link="/Content/embossers_and_embossing/Embossers/Quantum_Mountbatten.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Mountbatten.htm" />
+      <TocEntry
+        Title="Control File listing for: Quantum Mountbatten"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Quantum_Mountbatten.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="RESUS"
+      Link="/Content/embossers_and_embossing/Embossers/RESUS.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: RESUS"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/RESUS.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel Bax 10"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_Bax_10.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Thiel Bax 10"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_Bax_10.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel Beta X3"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_Beta_X3.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Thiel_BetaX3.htm" />
+      <TocEntry
+        Title="Control File listing for: Thiel Beta X3"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_Beta_X3.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel Impacto 600"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_Impacto_600.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Thiel Impacto 600"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_Impacto_600.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel Impacto Advanced"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_Impacto_Advanced.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Thiel Impacto Advanced"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_Impacto_Advanced.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel PortaThiel"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_PortaThiel.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Thiel PortaThiel"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_PortaThiel.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel Texto"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_Texto.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Thiel Texto"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_Texto.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel PortaThiel Interpoint"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_PortaThiel_Interpoint.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_PortaThiel.htm" />
+      <TocEntry
+        Title="Control File listing for: Thiel PortaThiel Interpoint"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_PortaThiel_Interpoint.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Thiel Texto"
+      Link="/Content/embossers_and_embossing/Embossers/Thiel_Texto.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Thiel Texto"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Thiel_Texto.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Triformations LED-120"
+      Link="/Content/embossers_and_embossing/Embossers/Triformations_LED-120.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Triformations LED-120"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Triformations_LED-120.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Triformations Personal Brailler"
+      Link="/Content/embossers_and_embossing/Embossers/Triformations_Personal_Brailler.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Personal.htm" />
+      <TocEntry
+        Title="Control File listing for: Triformations Personal Brailler"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Triformations_Personal_Brailler.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Triformations TED-600"
+      Link="/Content/embossers_and_embossing/Embossers/Triformations_TED-600.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Triformations TED-600"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Triformations_TED-600.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Triformations TRI-170"
+      Link="/Content/embossers_and_embossing/Embossers/Triformations_TRI-170.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Triformations TRI-170"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Triformations_TRI-170.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Columbia"
+      Link="/Content/embossers_and_embossing/Embossers/ViewPlus_Columbia.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Columbia"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Columbia.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Elite"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Elite.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Elite"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Elite.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Elite with Ink Connect"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Elite_with_Ink_Connect.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Elite with Ink Connect"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Elite_with_Ink_Connect.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus EmBraille"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_EmBraille.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus EmBraille"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_EmBraille.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Emprint"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Emprint.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Emprint"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Emprint.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Premier"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Premier.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Premier"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Premier.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Premier with Ink Connect"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Premier_with_Ink_Connect.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Premier with Ink Connect"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Premier_with_Ink_Connect.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Tiger Advantage"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Tiger_Advantage.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Tiger Advantage"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Tiger_Advantage.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Tiger Cub"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Tiger_Cub.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger_eb.htm" />
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger1.htm" />
+      <TocEntry
+        Title="Control File listing for: Viewplus Tiger Cub"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Tiger_Cub.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Tiger Cub Junior"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Tiger_Cub_Junior.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger1.htm" />
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger_eb.htm" />
+      <TocEntry
+        Title="Control File listing for: Viewplus Tiger Cub Junior"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Tiger_Cub_Junior.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Tiger Max"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Tiger_Max.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger1.htm" />
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger_eb.htm" />
+      <TocEntry
+        Title="Control File listing for: Viewplus Tiger Max"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Tiger_Max.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Tiger Pro"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Tiger_Pro.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger1.htm" />
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Tiger1.htm" />
+      <TocEntry
+        Title="Control File listing for: Viewplus Tiger Pro"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Tiger_Pro.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Viewplus Tiger Pro Ink"
+      Link="/Content/embossers_and_embossing/Embossers/Viewplus_Tiger_Pro_Ink.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Viewplus Tiger Pro Ink"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Viewplus_Tiger_Pro_Ink.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="VTEK MBOSS-1"
+      Link="/Content/embossers_and_embossing/Embossers/VTEK_MBOSS-1.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_MBOSS1.htm" />
+      <TocEntry
+        Title="Control File listing for: VTEK MBOSS-1"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/VTEK_MBOSS-1.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="VTEK MBOSS-35"
+      Link="/Content/embossers_and_embossing/Embossers/VTEK_MBOSS-35.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_MBOSS35.htm" />
+      <TocEntry
+        Title="Control File listing for: VTEK MBOSS-35"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/VTEK_MBOSS-35.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Index"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Print_Index.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl" />
+  <TocEntry
+    Title="Back_Page"
+    Link="/Content/PRINT_VERSIONS/Back_Page.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Cover_Print.flpgl" />
+</CatapultToc>

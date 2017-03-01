@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="697" MadCap:lastWidth="731">
+    <head><title>Reserved Line</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Corrections Line;Line:Reserved;Reserved Line" />Reserved Line (For corrections)</h4>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[svrlb1]</span></p>
+        <p>You would not use this code to *reduce* the number of lines per page, but as part of a solution to increase the number of lines per page, when you need to do that only on one page, a few pages, or, in any case, not all pages.</p>
+        <p>Consider the case that you have transcribed a book, pressed the result onto zinc plates, and run off 1,000 copies. Now along comes a very minor revision. Perhaps you had made a transcription error that was not caught before the first press run. Or perhaps the original material changed just a bit.</p>
+        <p>What you would like to do is to change as few plates as possible.</p>
+        <p>But, at first glance, it would seem that any change on any one plate has the potential to cause changes on any number of plates that follow it, because of "runover effects". In other words, if a line is added on plate n, then the last line of plate n might spill over onto plate n+1.</p>
+        <p>This means a line is now added to plate n+1, so the last line might spill over onto plate n+2, and so forth. So a very minor change can mean you have a lot of plates to re-press.</p>
+        <p>And, even if you have not pressed plates, you may have to make a lot of adjustments to tables of contents and indexes to account for the same formatting effect.</p>
+        <p>The solution which some producers prefer is to reserve one line per page in the initial run. In other words, if the equipment will emboss 26 lines per page, the job is nonetheless set with 25 lines per page. Now the spillover effect of any modification can be mitigated -- perhaps even kept to one plate.</p>
+        <p>DBT's formatter cannot be told to temporarily change the page size. But it can be told to temporarily use less than the full available page size.</p>
+        <p>So, here is what the producer would do:</p>
+        <p>1. In the initial run, DBT would be set for 25 (or n) lines per page.</p>
+        <p>2. If a revision causes any spillover effects that cause text formerly on one page to move to the previous page, a <span class="Code-DuxCode">[pg]</span> code might be used to prevent this, keeping the pagination as it was before. (This solution has always been available.) </p>
+        <p>3. If a revision causes any spillover effects that cause text formerly on one page to move to the next page, then DBT would be reset for 26 (or n+1) lines per page for the whole document.</p>
+        <p>At the same time, a <span class="Code-DuxCode">[svrlb1]</span> code would be introduced at the beginning of the document. And, additionally, an <span class="Code-DuxCode">[svrlb0]</span> code would be placed before the revision and another <span class="Code-DuxCode">[svrlb1]</span> code after it. This "frames" the revision in a way such that it will be written onto a true 26 (or n+1) line page.</p>
+    </body>
+</html>

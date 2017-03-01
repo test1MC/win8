@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+  <TocEntry
+    Title="DBT Language Translation Table"
+    Link="/Content/PRINT_VERSIONS/Language_Translation_Table/Title_Page_Language_Translation_Table.htm" />
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Print_TOC.htm"
+    StartChapter="true"
+    PageNumber="1"
+    PageNumberReset="continue"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="All Language Templates"
+    Link="/Content/Templates_Styles_Codes/Templates/Templates_Docs/all_templates.htm">
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/AFRIKAANS.htm"
+      Title="Afrikaans">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Afrikaans_-_basic.htm"
+        Title="Afrikaans - basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/afrikaans.htm"
+        Title="AFRIKAANS - Technical Details" />
+      <TocEntry
+        Link="/Content/language_translation_tables/afrikaans_preunified.htm"
+        Title="Afrikaans (pre-unified)" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/ALBANIAN.htm"
+      Title="Albanian">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Albanian_-_basic.htm"
+        Title="Albanian - basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/albanian.htm"
+        Title="ALBANIAN - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/AMHARIC.htm"
+      Title="Amharic">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Amharic_-_basic.htm"
+        Title="Amharic - basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/amharic.htm"
+        Title="AMHARIC - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/ARABIC.htm"
+      Title="Arabic">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Arabic_-_basic.htm"
+        Title="Arabic - basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/arabic.htm"
+        Title="ARABIC - Technical Details" />
+      <TocEntry
+        Link="/Content/language_translation_tables/arabic_pre2002.htm"
+        Title="ARABIC (Pre-2002 Rules) - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/ARMENIAN.htm"
+      Title="Armenian">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Armenian_(Eastern)_-_basic.htm"
+        StartSection="false"
+        Title="Armenian (Eastern) Basic"></TocEntry>
+      <TocEntry
+        Link="/Content/language_translation_tables/armenian_eastern.htm"
+        Title="Armenian - Eastern - Technical Details" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Armenian_(Western)_-_basic.htm"
+        Title="Armenian (Western) - Basic"></TocEntry>
+      <TocEntry
+        Link="/Content/language_translation_tables/armenian_western.htm"
+        Title="Armenian Western - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/ASSAMESE.htm"
+      Title="Assamese">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Assamese_-_basic.htm"
+        Title="Assamese - Basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Assamese_-_basic_with_Nemeth.htm"
+        Title="Assamese - Basic with Nemeth" />
+      <TocEntry
+        Link="/Content/language_translation_tables/assamese.htm"
+        Title="ASSAMESE - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/AWADI.htm"
+      Title="Awadi">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Awadhi_-_basic.htm"
+        Title="Awadi - Basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Awadhi_-_basic_with_Nemeth.htm"
+        Title="Awadi - Basic with Nemeth" />
+      <TocEntry
+        Link="/Content/language_translation_tables/awadhi.htm"
+        Title="AWADI - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/AZERBAIJANI.htm"
+      Title="Azerbaijani">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Azerbaijani_-_basic.htm"
+        Title="Azerbaijani - Basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/azerbaijani.htm"
+        Title="AZERBAIJANI - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Belarusian_-_basic.htm"
+      Title="Belarussion - Basic">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Belarusian_-_basic.htm"
+        Title="Belarussian - Basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/belarusian.htm"
+        Title="BELARUSIAN - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/BENGALI.htm"
+      Title="Bengali">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bengali_(Bangladeshi)_-_basic.htm"
+        Title="Bengali (Bangladeshi) - Basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/bengali_bangladesh.htm"
+        Title="BENGALI (Bangladesh) - Technical Details" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bengali_(Indian)_-_basic.htm"
+        Title="Bengali (Indian) - Basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bengali_(Indian)_-_basic_with_Nemeth.htm"
+        Title="Bengali (Indian) - Basic with Nemeth" />
+      <TocEntry
+        Link="/Content/language_translation_tables/bengali_india.htm"
+        Title="BENGALI (Bangla) for India - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/BHOJPURI.htm"
+      Title="Bhojpuri">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bhojpuri_-_basic.htm"
+        Title="Bhojpuri - Basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bhojpuri_-_basic_with_Nemeth.htm"
+        Title="Bhojpuri - Basic with Nemeth" />
+      <TocEntry
+        Link="/Content/language_translation_tables/bhojpuri.htm"
+        Title="BHOJPURI - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Templates_Special/Biblical_original_language_studies_-_basic.htm"
+      Title="Biblical Original Language Studies">
+      <TocEntry
+        Link="/Content/language_translation_tables/biblical_original_language_studies.htm"
+        Title="Biblical Original Language Studies" />
+    </TocEntry>
+    <TocEntry
+      Title="Bosnian"
+      Link="/Content/Templates_Styles_Codes/Templates/BOSNIAN.htm">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bosnian_-_basic.htm"
+        Title="Bosnian - Basic"></TocEntry>
+      <TocEntry
+        Link="/Content/language_translation_tables/bosnian.htm"
+        Title="BOSNIAN - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Bulgarian_-_basic.htm"
+      Title="Bulgarian">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Bulgarian_-_basic.htm"
+        Title="Bulgarian - Basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/bulgarian.htm"
+        Title="BULGARIAN (Uncontracted) - Technical Details" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Burmese_-_basic.htm"
+      Title="Burmese">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Burmese_-_basic.htm"
+        Title="Burmese - Basic" />
+      <TocEntry
+        Title="BURMESE (MYANMAR)"
+        Link="/Content/language_translation_tables/burmese.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Catalan_-_basic.htm"
+      Title="Catalan - Basic">
+      <TocEntry
+        Title="CATALAN"
+        Link="/Content/language_translation_tables/catalan.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Cebuano_-_basic.htm"
+      Title="Cebuano - Basic">
+      <TocEntry
+        Title="Cebuano"
+        Link="/Content/language_translation_tables/cebuano.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/CHINESE.htm"
+      Title="Chinese">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Chinese_for_Taiwan_-_basic.htm"
+        Title="Chinese for Taiwan" />
+      <TocEntry
+        Link="/Content/language_translation_tables/chinese_taiwan.htm"
+        ReplaceMergeNode="false"
+        Title="CHINESE - Taiwan" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Chinese_Mandarin_-_basic.htm"
+        Title="Chinese Mandarin - Basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Chinese_Mandarin_with_tones_-_basic.htm"
+        Title="Chinese Mandarin with Tones - Basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/chinese_taiwan.htm"
+        Title="CHINESE - Mandarin" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Chinese_Yue_(Cantonese)_-_basic.htm"
+        Title="Chinese Yue (Cantonese) - Basic" />
+      <TocEntry
+        Title="Cantonese (Yue)"
+        Link="/Content/language_translation_tables/chinese_yue.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Chittagonian_-_basic.htm"
+      Title="Chittagonian - Basic">
+      <TocEntry
+        Title="Chittagonian"
+        Link="/Content/language_translation_tables/chittagonian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Chuvash_-_basic.htm"
+      Title="Chuvash - Basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/chuvash.htm"
+        Title="CHUVASH" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Croatian_-_basic.htm"
+      Title="Croation - Basic">
+      <TocEntry
+        Title="croatian"
+        Link="/Content/language_translation_tables/croatian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Cymraeg_(Welsh)_-_basic.htm"
+      Title="Cymraeg (Welsh) - Basic">
+      <TocEntry
+        Title="welsh (cymraeg)"
+        Link="/Content/language_translation_tables/welsh.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Cymraeg_(Welsh)_-_UK_Formatting.htm"
+      Title="Cymraeg (Welsh) - UK Formatting">
+      <TocEntry
+        Link="/Content/language_translation_tables/welsh_capitals.htm"
+        Title="Cymraeg (Welsh)" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Czech_-_basic.htm"
+      Title="Czech - Basic">
+      <TocEntry
+        Title="CZECH"
+        Link="/Content/language_translation_tables/czech.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Danish_-_basic.htm"
+      Title="Danish - Basic">
+      <TocEntry
+        Title="danish"
+        Link="/Content/language_translation_tables/danish.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Dari_-_basic.htm"
+      Title="Dari - Basic">
+      <TocEntry
+        Title="DARI"
+        Link="/Content/language_translation_tables/dari.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Dutch_-_basic.htm"
+      Title="Dutch - Basic">
+      <TocEntry
+        Title="dutch"
+        Link="/Content/language_translation_tables/dutch.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Dzongkha_-_basic.htm"
+      Title="Dzongkha - Basic">
+      <TocEntry
+        Title="DZONGKHA"
+        Link="/Content/language_translation_tables/dzongkha.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Templates_Special/EBU_Pharmaceutical.htm"
+      Title="EBU Pharmaceutical">
+      <TocEntry
+        Title="EBU PHARMACEUTICAL BRAILLE"
+        Link="/Content/language_translation_tables/ebu_pharmaceutical.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/ENGLISH.htm"
+      Title="English">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(UEB)_-_Australian_formatting.htm"
+        Title="English (UEB) - Australian formatting" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(UEB)_-_BANA.htm"
+        Title="English (UEB) - BANA" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(UEB)_-_BANA_with_Nemeth.htm"
+        Title="English (UEB) - BANA_with_Nemeth" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(UEB)_-_basic.htm"
+        Title="English (UEB) - basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(UEB)_-_New_Zealand_(including_Maori).htm"
+        Title="English (UEB) - New Zealand (including_Maori)" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(UEB)_-_UK_formatting.htm"
+        Title="English (UEB) - UK formatting" />
+      <TocEntry
+        Title="ENGLISH/UNIFIED"
+        Link="/Content/language_translation_tables/english_unified.htm" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(BANA_Pre-UEB_Textbook_DE)_-_BANA.htm"
+        Title="English (BANA Pre-UEB) Textbook (DE) - BANA" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(BANA_Pre-UEB_Textbook_DE)_-_BANA_Nemeth.htm"
+        ReplaceMergeNode="false"
+        Title="English (BANA Pre-UEB) Textbook (DE) - BANA Nemeth" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(BANA_Pre-UEB_Textbook_DE)_-_Textbook_Fmt.htm"
+        Title="English (BANA Pre-UEB) Textbook (DE) - Textbook Fmt" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(BANA_Pre-UEB)_-_Literary_Format.htm"
+        Title="English (BANA Pre-UEB) - Literary Format" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(BANA_Pre-UEB)_-_XML_(Daisy-NISO-NIMAS).htm"
+        Title="English (BANA Pre-UEB) - XML (Daisy-NISO-NIMAS)" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(British_Pre-UEB)_-_no_caps_in_literary.htm"
+        Title="English (British Pre-UEB) - no caps in literary" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_(British_Pre-UEB)_-_with_capitals.htm"
+        Title="English (British Pre-UEB) - with capitals" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_Moon_-_basic.htm"
+        Title="English Moon - basic">
+        <TocEntry
+          Title="ENGLISH/MOON"
+          Link="/Content/language_translation_tables/english_moon.htm" />
+      </TocEntry>
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/English_Moon_-_basic_no_capitals.htm"
+        Title="English Moon - basic no capitals">
+        <TocEntry
+          Title="ENGLISH/MOON"
+          Link="/Content/language_translation_tables/english_moon_no_capitals.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Espanol_con_Contracciones.htm"
+      Title="Espanol con Contracciones" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Espanol_Reducida.htm"
+      Title="Espanol Reducida">
+      <TocEntry
+        Title="spanish (reducida)"
+        Link="/Content/language_translation_tables/spanish_reducida.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Espanol_sin_Contracciones.htm"
+      Title="Espanol sin Contracciones">
+      <TocEntry
+        Link="/Content/language_translation_tables/spanish.htm"
+        Title="spanish (original)" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Esperanto_-_basic.htm"
+      Title="Esperanto - basic">
+      <TocEntry
+        Title="Esperanto"
+        Link="/Content/language_translation_tables/esperanto.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Estonian_-_basic.htm"
+      Title="Estonian - basic">
+      <TocEntry
+        Title="ESTONIAN"
+        Link="/Content/language_translation_tables/estonian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Ewe_-_basic.htm"
+      Title="Ewe - basic">
+      <TocEntry
+        Title="Ewe"
+        Link="/Content/language_translation_tables/ewe.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Farsi_(Persian)_-_basic.htm"
+      Title="Farsi (Persian) - Basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/farsi.htm"
+        Title="Farsi" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Filipino_-_basic.htm"
+      Title="Filipino - basic">
+      <TocEntry
+        Title="Filipino"
+        Link="/Content/language_translation_tables/filipino.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Finnish_-_basic.htm"
+      Title="Finnish - basic">
+      <TocEntry
+        Title="FINNISH (Uncontracted)"
+        Link="/Content/language_translation_tables/finnish.htm" />
+      <TocEntry
+        Link="/Content/language_translation_tables/finnish.htm"
+        Title="FINNISH (Uncontracted)" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/FRENCH.htm"
+      Title="French">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Francais_2006_-_abrege.htm"
+        Title="Francais 2006 - Abrege" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Francais_2006_-_abrege_braille_de_base.htm"
+        Title="Francais 2006 - abrege braille de base" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Francais_2006_-_integral.htm"
+        Title="Francais 2006 - integral" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Francais_2006_-_integral_braille_de_base.htm"
+        Title="Francais 2006 - integral braille de base" />
+      <TocEntry
+        Title="FRENCH/UNIFIED"
+        Link="/Content/language_translation_tables/french_unified.htm" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/French_historical.htm"
+        Title="French - Additional Information">
+        <TocEntry
+          Link="/Content/language_translation_tables/french.htm"
+          Title="French (pre-Unified)" />
+        <TocEntry
+          Link="/Content/language_translation_tables/french_quebec.htm"
+          Title="French/Quebec (Canada)" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Georgian_-_basic.htm"
+      Title="Georgian - Basic">
+      <TocEntry
+        Title="GEORGIAN"
+        Link="/Content/language_translation_tables/georgian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/GERMAN.htm"
+      Title="GERMAN">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/German_-_basic.htm"
+        Title="German - Basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/German_Vollschrift_-_basic.htm"
+        Title="German_Vollschrift_-_basic" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/German_Uncontracted_-_basic.htm"
+        Title="German_Uncontracted_-_basic" />
+      <TocEntry
+        Title="german"
+        Link="/Content/language_translation_tables/german.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Greek_(Classical-American)_-_basic.htm"
+      Title="Greek_(Classical-American)_-_basic">
+      <TocEntry
+        Title="GREEK-CLASSICAL"
+        Link="/Content/language_translation_tables/greek_classical_american.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Greek_(Modern)_-_basic.htm"
+      Title="Greek_(Modern)_-_basic">
+      <TocEntry
+        Title="GREEK (Modern)"
+        Link="/Content/language_translation_tables/greek_modern.htm" />
+      <TocEntry
+        Title="GREEK (Modern)/(Uncontracted)"
+        Link="/Content/language_translation_tables/greek_modern_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Gujarati_-_basic.htm"
+      Title="Gujarati_-_basic">
+      <TocEntry
+        Title="GUJARATI"
+        Link="/Content/language_translation_tables/gujurati.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Gujarati_-_basic_with_Nemeth.htm"
+      Title="Gujarati_-_basic_with_Nemeth">
+      <TocEntry
+        Link="/Content/language_translation_tables/gujurati.htm"
+        Title="GUJARATI" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Haryanvi_-_basic.htm"
+      Title="Haryanvi_-_basic">
+      <TocEntry
+        Title="Haryanvi"
+        Link="/Content/language_translation_tables/haryanvi.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Haryanvi_-_basic_with_Nemeth.htm"
+      Title="Haryanvi_-_basic_with_Nemeth">
+      <TocEntry
+        Link="/Content/language_translation_tables/haryanvi.htm"
+        Title="Haryanvi" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hausa_-_basic.htm"
+      Title="Hausa_-_basic">
+      <TocEntry
+        Title="hausa"
+        Link="/Content/language_translation_tables/hausa.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hebrew_(American)_-_basic.htm"
+      Title="Hebrew_(American)_-_basic">
+      <TocEntry
+        Title="HEBREW (AMERICAN) Uncontracted"
+        Link="/Content/language_translation_tables/hebrew_american.htm" />
+      <TocEntry
+        Title="HEBREW (AMERICAN) Uncontracted"
+        Link="/Content/language_translation_tables/hebrew_american_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hebrew_(Israeli)_-_basic.htm"
+      Title="Hebrew_(Israeli)_-_basic">
+      <TocEntry
+        Title="HEBREW (ISRAEL) Uncontracted"
+        Link="/Content/language_translation_tables/hebrew_israeli.htm" />
+      <TocEntry
+        Title="HEBREW (ISRAEL) Uncontracted"
+        Link="/Content/language_translation_tables/hebrew_israeli_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hiligaynon_-_basic.htm"
+      Title="Hiligaynon_-_basic">
+      <TocEntry
+        Title="Hiligaynon"
+        Link="/Content/language_translation_tables/hiligaynon.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hindi_-_basic.htm"
+      Title="Hindi_-_basic">
+      <TocEntry
+        Title="HINDI"
+        Link="/Content/language_translation_tables/hindi.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hindi_-_basic_with_Nemeth.htm"
+      Title="Hindi_-_basic_with_Nemeth">
+      <TocEntry
+        Link="/Content/language_translation_tables/hindi.htm"
+        Title="HINDI" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Hungarian_-_basic.htm"
+      Title="Hungarian_-_basic">
+      <TocEntry
+        Title="HUNGARIAN"
+        Link="/Content/language_translation_tables/hungarian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Icelandic_-_basic.htm"
+      Title="Icelandic_-_basic">
+      <TocEntry
+        Title="ICELANDIC"
+        Link="/Content/language_translation_tables/icelandic.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Igbo_-_basic.htm"
+      Title="Igbo_-_basic">
+      <TocEntry
+        Title="igbo"
+        Link="/Content/language_translation_tables/igbo.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Iloko_(Ilokano)_-_basic.htm"
+      Title="Iloko_(Ilokano)_-_basic">
+      <TocEntry
+        Title="Iloko"
+        Link="/Content/language_translation_tables/iloko.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/INDONESIAN.htm"
+      Title="Indonesian">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Indonesian_-_basic.htm"
+        Title="Indonesian" />
+      <TocEntry
+        Link="/Content/language_translation_tables/indonesian.htm"
+        Title="indonesian">
+        <TocEntry
+          Link="/Content/Templates_Styles_Codes/Templates/Indonesian_-_basic.htm"
+          Title="INDONESIAN - Technical" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Ingush_-_basic.htm"
+      Title="Ingush_-_basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/Ingushetia.htm"
+        Title="INGUSHETIA" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Templates_Special/IPA_-_basic.htm"
+      Title="IPA_-_basic">
+      <TocEntry
+        Title="IPA"
+        Link="/Content/language_translation_tables/ipa_braille.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Irish_Gaelic.htm"
+      Title="Irish">
+      <TocEntry
+        Title="IRISH GAELIC"
+        Link="/Content/language_translation_tables/irish.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Italiano.htm"
+      Title="Italiano">
+      <TocEntry
+        Title="ITALIAN (Uncontracted)"
+        Link="/Content/language_translation_tables/italian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Japanese_(Kana)_-_basic.htm"
+      Title="Japanese_(Kana)_-_basic">
+      <TocEntry
+        Title="JAPANESE"
+        Link="/Content/language_translation_tables/japanese_kana.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Javanese_-_basic.htm"
+      Title="Javanese_-_basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/javanese.htm"
+        Title="JAVANESE" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Kannada_-_basic.htm"
+      Title="Kannada_-_basic">
+      <TocEntry
+        Title="KANNADA"
+        Link="/Content/language_translation_tables/kannada.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Kannada_-_basic_with_Nemeth.htm"
+      Title="Kannada_-_basic_with_Nemeth">
+      <TocEntry
+        Link="/Content/language_translation_tables/kannada.htm"
+        Title="KANNADA" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Kazakh_-_basic.htm"
+      Title="Kazakh_-_basic">
+      <TocEntry
+        Title="KAZAKH (Uncontracted)"
+        Link="/Content/language_translation_tables/kazakh.htm" />
+      <TocEntry
+        Title="KAZAKH (Uncontracted)"
+        Link="/Content/language_translation_tables/kazakh_uncontracted).htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Khmer_-_basic.htm"
+      Title="Khmer_-_basic">
+      <TocEntry
+        Title="KHMER (Cambodian)"
+        Link="/Content/language_translation_tables/khmer.htm" />
+      <TocEntry
+        Title="KHMER (Cambodian)"
+        Link="/Content/language_translation_tables/KHMER_(Cambodian).htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Kirghiz_-_basic.htm"
+      Title="Kirghiz_-_basic">
+      <TocEntry
+        Title="KIRGHIZ"
+        Link="/Content/language_translation_tables/kirghiz.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Korean_-_basic.htm"
+      Title="Korean_-_basic">
+      <TocEntry
+        Title="KOREAN"
+        Link="/Content/language_translation_tables/korean.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/KURDISH.htm"
+      Title="Kurdish" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Kurukh_-_basic.htm"
+      Title="Kurukh_-_basic">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Kurukh_-_basic.htm"
+        Title="Kurukh - Basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/kurukh.htm"
+        Title="KURUKH - Technical" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Lao_-_basic.htm"
+      Title="Lao_-_basic">
+      <TocEntry
+        Title="LAO"
+        Link="/Content/language_translation_tables/lao.htm" />
+      <TocEntry
+        Link="/Content/language_translation_tables/lao_braille.htm"
+        Title="Improving Lao Braille: Word Endings" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Lao_-_basic_with_Nemeth.htm"
+      Title="Lao_-_basic_with_Nemeth">
+      <TocEntry
+        Link="/Content/language_translation_tables/lao.htm"
+        Title="LAO" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Latin_-_basic.htm"
+      Title="Latin_-_basic">
+      <TocEntry
+        Title="LATIN (Uncontracted)"
+        Link="/Content/language_translation_tables/latin.htm" />
+      <TocEntry
+        Title="LATIN (Uncontracted)"
+        Link="/Content/language_translation_tables/latin_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Latvian_-_basic.htm"
+      Title="Latvian_-_basic">
+      <TocEntry
+        Title="LATVIAN (Uncontracted)"
+        Link="/Content/language_translation_tables/latvian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Lisu.htm"
+      Title="Lisu - Basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/lisu.htm"
+        Title="Lisu" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Lithuanian_-_basic.htm"
+      Title="Lithuanian_-_basic">
+      <TocEntry
+        Title="LITHUANIAN (Uncontracted)"
+        Link="/Content/language_translation_tables/lithuanian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Luxembourgish_-_basic.htm"
+      Title="Luxembourgish_-_basic">
+      <TocEntry
+        Title="LUXEMBOURGISH"
+        Link="/Content/language_translation_tables/luxembourgish.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Macedonian_-_basic.htm"
+      Title="Macedonian_-_basic">
+      <TocEntry
+        Title="MACEDONIAN"
+        Link="/Content/language_translation_tables/macedonian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Magahi_-_basic.htm"
+      Title="Magahi_-_basic">
+      <TocEntry
+        Title="Magahi"
+        Link="/Content/language_translation_tables/magahi.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Magahi_-_basic_with_Nemeth.htm"
+      Title="Magahi_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Maithili_-_basic.htm"
+      Title="Maithili_-_basic">
+      <TocEntry
+        Title="Maithili"
+        Link="/Content/language_translation_tables/maithili.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Maithili_-_basic_with_Nemeth.htm"
+      Title="Maithili_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Malay_-_basic.htm"
+      Title="Malay_-_basic">
+      <TocEntry
+        Title="malay"
+        Link="/Content/language_translation_tables/malay.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Malayalam_-_basic.htm"
+      Title="Malayalam_-_basic">
+      <TocEntry
+        Title="MALAYALAM"
+        Link="/Content/language_translation_tables/malayalam.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Malayalam_-_basic_with_Nemeth.htm"
+      Title="Malayalam_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Maltese_-_basic.htm"
+      Title="Maltese_-_basic">
+      <TocEntry
+        Title="MALTESE"
+        Link="/Content/language_translation_tables/maltese.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Marathi_-_basic.htm"
+      Title="Marathi_-_basic">
+      <TocEntry
+        Title="Marathi"
+        Link="/Content/language_translation_tables/marathi.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Marathi_-_basic_with_Nemeth.htm"
+      Title="Marathi_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Meitei_(Manipuri)_-_basic.htm"
+      Title="Meitei_(Manipuri)_-_basic">
+      <TocEntry
+        Title="Meitei (Manipuri)"
+        Link="/Content/language_translation_tables/meitei.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Meitei_(Manipuri)_-_basic_with_Nemeth.htm"
+      Title="Meitei_(Manipuri)_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Mongolian_-_basic.htm"
+      Title="Mongolian_-_basic">
+      <TocEntry
+        Title="MONGOLIAN"
+        Link="/Content/language_translation_tables/mongolian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Montenegrin_-_basic.htm"
+      Title="Montenegrin_-_basic">
+      <TocEntry
+        Title="Montenegrin"
+        Link="/Content/language_translation_tables/montenegrin.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Ndebele_-_basic.htm"
+      Title="Ndebele_-_basic">
+      <TocEntry
+        Title="ndebele"
+        Link="/Content/language_translation_tables/ndebele.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Nepali_-_basic.htm"
+      Title="Nepali_-_basic">
+      <TocEntry
+        Title="NEPALI"
+        Link="/Content/language_translation_tables/nepali.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Nguni_(Xhosa_or_Zulu)_-_basic.htm"
+      Title="Nguni_(Xhosa_or_Zulu)_-_basic">
+      <TocEntry
+        Title="nguni (xhosa/zulu)"
+        Link="/Content/language_translation_tables/nguni.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Norse.htm"
+      Title="Norse">
+      <TocEntry
+        Title="norwegian"
+        Link="/Content/language_translation_tables/norwegian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Oriya_-_basic.htm"
+      Title="Oriya_-_basic">
+      <TocEntry
+        Title="ORIYA"
+        Link="/Content/language_translation_tables/oriya.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Oriya_-_basic_with_Nemeth.htm"
+      Title="Oriya_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Panjabi_-_basic.htm"
+      Title="Panjabi_-_basic">
+      <TocEntry
+        Title="PANJABI"
+        Link="/Content/language_translation_tables/panjabi.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Panjabi_-_basic_with_Nemeth.htm"
+      Title="Panjabi_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Polish_-_basic.htm"
+      Title="Polish_-_basic">
+      <TocEntry
+        Title="polish"
+        Link="/Content/language_translation_tables/polish.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Portuguese_Uncontracted_-_basic.htm"
+      Title="Portuguese_Uncontracted_-_basic">
+      <TocEntry
+        Title="PORTUGUESE (Uncontracted)"
+        Link="/Content/language_translation_tables/portuguese_brazilian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Pushto_-_basic.htm"
+      Title="Pushto_-_basic">
+      <TocEntry
+        Title="PUSHTO"
+        Link="/Content/language_translation_tables/pushto.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Romanian_-_basic.htm"
+      Title="Romanian_-_basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/select_contractions.htm"
+        Title="Select Contractions" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Russian_-_no_capitals.htm"
+      Title="Russian_-_no_capitals">
+      <TocEntry
+        Title="russian"
+        Link="/Content/language_translation_tables/russian.htm" />
+      <TocEntry
+        Title="RUSSIAN (Uncontracted)"
+        Link="/Content/language_translation_tables/russian_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sadri_-_basic.htm"
+      Title="Sadri_-_basic">
+      <TocEntry
+        Title="Sadri"
+        Link="/Content/language_translation_tables/sadri.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sadri_-_basic_with_Nemeth.htm"
+      Title="Sadri_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sanskrit_-_basic.htm"
+      Title="Sanskrit_-_basic">
+      <TocEntry
+        Title="Sanskrit"
+        Link="/Content/language_translation_tables/sanskrit.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sanskrit_-_basic_with_Nemeth.htm"
+      Title="Sanskrit_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Santali_-_basic.htm"
+      Title="Santali_-_basic">
+      <TocEntry
+        Title="Santali"
+        Link="/Content/language_translation_tables/santali.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Santali_-_basic_with_Nemeth.htm"
+      Title="Santali_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Serbian_-_basic.htm"
+      Title="Serbian_-_basic">
+      <TocEntry
+        Title="SERBIAN"
+        Link="/Content/language_translation_tables/serbian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Shona_-_basic.htm"
+      Title="Shona_-_basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/shona.htm"
+        Title="SHONA" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sindhi_-_basic.htm"
+      Title="Sindhi_-_basic">
+      <TocEntry
+        Title="Sindhi"
+        Link="/Content/language_translation_tables/sindhi.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sindhi_-_basic_with_Nemeth.htm"
+      Title="Sindhi_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sinhala_-_basic.htm"
+      Title="Sinhala_-_basic">
+      <TocEntry
+        Title="SINHALA"
+        Link="/Content/language_translation_tables/sinhala.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sinhala_-_basic_with_Nemeth.htm"
+      Title="Sinhala_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Slovak_-_basic.htm"
+      Title="Slovak_-_basic">
+      <TocEntry
+        Title="SLOVAK"
+        Link="/Content/language_translation_tables/slovak.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Slovenian_-_basic.htm"
+      Title="Slovenian_-_basic">
+      <TocEntry
+        Title="SLOVENIAN"
+        Link="/Content/language_translation_tables/slovenian.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Somali_-_basic.htm"
+      Title="Somali_-_basic">
+      <TocEntry
+        Title="somali"
+        Link="/Content/language_translation_tables/somali.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sotho_(Southern_and_Northern_(Pedi))_-_basic.htm"
+      Title="Sotho_(Southern_and_Northern_(Pedi))_-_basic">
+      <TocEntry
+        Title="sotho (northern [pedi] and southern) and tswana"
+        Link="/Content/language_translation_tables/sotho.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="spanish (original)"
+      Link="/Content/language_translation_tables/spanish.htm" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Swahili_-_basic.htm"
+      Title="Swahili_-_basic">
+      <TocEntry
+        Title="KISWAHILI (SWAHILI)"
+        Link="/Content/language_translation_tables/swahili.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="SWATI (SISWATI)"
+      Link="/Content/language_translation_tables/swati.htm" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Swedish_Uncontracted_-_basic.htm"
+      Title="Swedish_Uncontracted_-_basic">
+      <TocEntry
+        Title="swedish (uncontracted)"
+        Link="/Content/language_translation_tables/swedish.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Swedish_Uncontracted_-_basic_no_capitals.htm"
+      Title="Swedish_Uncontracted_-_basic_no_capitals" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sylheti_-_basic.htm"
+      Title="Sylheti_-_basic">
+      <TocEntry
+        Title="Sylheti"
+        Link="/Content/language_translation_tables/sylheti.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Sylheti_-_basic_with_Nemeth.htm"
+      Title="Sylheti_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tagalog_-_basic.htm"
+      Title="Tagalog_-_basic">
+      <TocEntry
+        Title="Tagalog"
+        Link="/Content/language_translation_tables/tagalog.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tajik_-_basic.htm"
+      Title="Tajik_-_basic">
+      <TocEntry
+        Title="TAJIK"
+        Link="/Content/language_translation_tables/tajik.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tamil_-_basic.htm"
+      Title="Tamil_-_basic">
+      <TocEntry
+        Title="TAMIL"
+        Link="/Content/language_translation_tables/tamil.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tamil_-_basic_with_Nemeth.htm"
+      Title="Tamil_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tatar_-_basic.htm"
+      Title="Tatar_-_basic">
+      <TocEntry
+        Title="Tatar"
+        Link="/Content/language_translation_tables/tatar.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Telugu_-_basic.htm"
+      Title="Telugu_-_basic">
+      <TocEntry
+        Title="TELUGU"
+        Link="/Content/language_translation_tables/telugu.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Telugu_-_basic_with_Nemeth.htm"
+      Title="Telugu_-_basic_with_Nemeth" />
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Thai_-_basic.htm"
+      Title="Thai_-_basic">
+      <TocEntry
+        Title="THAI"
+        Link="/Content/language_translation_tables/thai.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Thai_-_basic_with_Nemeth.htm"
+      Title="Thai_-_basic_with_Nemeth">
+      <TocEntry
+        Link="/Content/language_translation_tables/thai_braille.htm"
+        Title="Improving Thai Braille: Word Endlings" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tibetan_-_basic.htm"
+      Title="Tibetan_-_basic">
+      <TocEntry
+        Title="TIBETAN"
+        Link="/Content/language_translation_tables/tibetan.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tigrinya_-_basic.htm"
+      Title="Tigrinya_-_basic">
+      <TocEntry
+        Link="/Content/language_translation_tables/tigrinya.htm"
+        Title="afrikaans" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tsonga_-_basic.htm"
+      Title="Tsonga_-_basic">
+      <TocEntry
+        Title="Tsonga"
+        Link="/Content/language_translation_tables/tsonga.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Tswana_-_basic.htm"
+      Title="Tswana_-_basic">
+      <TocEntry
+        Title="tswana"
+        Link="/Content/language_translation_tables/tswana.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Turkish_-_basic.htm"
+      Title="Turkish_-_basic">
+      <TocEntry
+        Title="TURKISH (Uncontracted)"
+        Link="/Content/language_translation_tables/turkish.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Turkmen_-_basic.htm"
+      Title="Turkmen_-_basic">
+      <TocEntry
+        Title="Turkmen"
+        Link="/Content/language_translation_tables/turkmen.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Udmurt_-_basic.htm"
+      Title="Udmurt_-_basic">
+      <TocEntry
+        Title="Udmart"
+        Link="/Content/language_translation_tables/udmart.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Ukrainian_-_basic.htm"
+      Title="Ukrainian_-_basic">
+      <TocEntry
+        Title="ukrainian"
+        Link="/Content/language_translation_tables/ukrainian.htm" />
+      <TocEntry
+        Title="Ukranian (Uncontracted)"
+        Link="/Content/language_translation_tables/ukranian_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/URDU.htm"
+      Title="Urdu">
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Urdu_(Indian)_-_basic_with_Nemeth.htm"
+        Title="Urdu_(Indian)_-_basic_with_Nemeth" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Urdu_(Indian)_-_basic.htm"
+        Title="Urdu_(Indian)_-_basic" />
+      <TocEntry
+        Title="URDU (India)"
+        Link="/Content/language_translation_tables/urdu_india.htm" />
+      <TocEntry
+        Link="/Content/Templates_Styles_Codes/Templates/Urdu_(Pakistani)_-_basic.htm"
+        Title="Urdu_(Pakistani)_-_basic" />
+      <TocEntry
+        Link="/Content/language_translation_tables/urdu_pakistan.htm"
+        Title="URDU (Pakistan)" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Uzbek_-_basic.htm"
+      Title="Uzbek_-_basic">
+      <TocEntry
+        Title="Uzbek"
+        Link="/Content/language_translation_tables/uzbek.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Venda_-_basic.htm"
+      Title="Venda_-_basic">
+      <TocEntry
+        Title="venda"
+        Link="/Content/language_translation_tables/venda.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Vietnamese_-_basic.htm"
+      Title="Vietnamese_-_basic">
+      <TocEntry
+        Title="vietnamese"
+        Link="/Content/language_translation_tables/vietnamese.htm" />
+      <TocEntry
+        Title="VIETNAMESE (Uncontracted)"
+        Link="/Content/language_translation_tables/Vietnamese_uncontracted.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Xhosa_-_basic.htm"
+      Title="Xhosa_-_basic">
+      <TocEntry
+        Title="xhosa"
+        Link="/Content/language_translation_tables/xhosa.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Yoruba_-_basic.htm"
+      Title="Yoruba_-_basic">
+      <TocEntry
+        Title="yoruba"
+        Link="/Content/language_translation_tables/yoruba.htm" />
+    </TocEntry>
+    <TocEntry
+      Link="/Content/Templates_Styles_Codes/Templates/Zulu_-_basic.htm"
+      Title="Zulu_-_basic">
+      <TocEntry
+        Title="zulu"
+        Link="/Content/language_translation_tables/zulu.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Index"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Print_Index.htm" />
+</CatapultToc>

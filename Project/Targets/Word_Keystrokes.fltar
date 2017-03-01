@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  MasterToc="/Project/TOCs/word_keystrokes.fltoc"
+  DisableAutoSync="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  MasterPage="/Content/Resources/MasterPages/Word_keystrokes_list.flmsp"
+  Medium="print"
+  MasterPageLayout="/Content/Resources/PageLayouts/word_book.flpgl"
+  MasterStylesheetOverride="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

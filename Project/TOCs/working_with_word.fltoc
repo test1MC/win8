@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="Primary.The_Menus,Primary.Print_Only">
+  <TocEntry
+    Title="Title Page - Working With Word"
+    Link="/Content/PRINT_VERSIONS/Print_Working_with_Word/Title_Page_Working_With_Word.htm"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/word_book.flpgl"
+    PageNumber="1"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="false"
+    BreakType="pageLayout"
+    PageLayout="/Content/Resources/PageLayouts/word_book.flpgl"></TocEntry>
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/contents.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Contents.flpgl" />
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/PRINT_VERSIONS/Print_Working_with_Word/introduction.htm"
+    StartSection="true"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Introduction.flpgl" />
+  <TocEntry
+    Title="Getting Help"
+    Link="/Content/getting_setup_in_DBT/new_users_start_here/GETTING_HELP.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Getting_Help.flpgl"></TocEntry>
+  <TocEntry
+    Title="Working With Word"
+    Link="/Content/working_with_word/working_with_word.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/word_book.flpgl">
+    <TocEntry
+      Title="Word - Top 10 Tips"
+      Link="/Content/working_with_word/Word_Top_10_guidelines.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/word_book.flpgl" />
+    <TocEntry
+      Title="Things to do first"
+      Link="/Content/working_with_word/word_setup.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/word_book.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ComputeToc="false"
+      ReplaceMergeNode="false">
+      <TocEntry
+        Title="Revealing Styles used in Word"
+        Link="/Content/working_with_word/BANA_Braille/revealing_styles_used_in_word.htm">
+        <TocEntry
+          Title="Style Area Width (Setting)"
+          Link="/Content/working_with_word/word_style_area_width.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Seeing the shortcut letters?"
+        Link="/Content/troubleshooting/seeing_the_shortcut_letters.htm" />
+      <TocEntry
+        Title="Word Navigation"
+        Link="/Content/working_with_word/word_Navigation.htm" />
+      <TocEntry
+        Title="Word - Auto Formatting and correcting"
+        Link="/Content/working_with_word/Word_Auto_Formatting.htm" />
+      <TocEntry
+        Title="Word - Backward Compatibility"
+        Link="/Content/working_with_word/Word_Backward_Compatibility.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Things to know first"
+      Link="/Content/working_with_word/word_know_first.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Word  Keystrokes"
+        Link="/Content/working_with_word/word_keystrokes.htm"
+        BreakType="pageLayout"
+        StartSection="false"
+        PageLayout="/Content/Resources/PageLayouts/word_keystrokes.flpgl" />
+      <TocEntry
+        Title="What is a Style?"
+        Link="/Content/working_with_word/word_style_what_is.htm"
+        BreakType="pageLayout"
+        StartSection="false"></TocEntry>
+      <TocEntry
+        Title="Unicode - What is it?"
+        Link="/Content/miscellaneous/unicode.htm"
+        BreakType="pageLayout"
+        StartSection="false"></TocEntry>
+      <TocEntry
+        Title="Word - Missing or wrong characters"
+        Link="/Content/working_with_word/word_Missing_or_wrong_characters.htm"
+        BreakType="pageLayout"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="Specific Features"
+      Link="/Content/working_with_word/word_specifics.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Create a Word Style"
+        Link="/Content/working_with_word/word_style_create.htm"
+        BreakType="pageLayout"
+        StartSection="false" />
+      <TocEntry
+        Title="Modifying Styles"
+        Link="/Content/working_with_word/word_modifying_styles.htm" />
+      <TocEntry
+        Title="Tables of Contents"
+        Link="/Content/working_with_word/word_tables_of_contents.htm"
+        StartSection="false"
+        BreakType="pageLayout" />
+      <TocEntry
+        Title="Use AutoText"
+        Link="/Content/working_with_word/word_use_autotext.htm"
+        BreakType="pageLayout"
+        StartSection="false" />
+      <TocEntry
+        Title="Hyperlinks"
+        Link="/Content/working_with_word/hyperlinks.htm"
+        BreakType="pageLayout"
+        StartSection="false" />
+    </TocEntry>
+    <TocEntry
+      Title="Examples"
+      Link="/Content/working_with_word/word_examples.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Table and Style Example"
+        Link="/Content/working_with_word/word_table_and_style_example.htm"></TocEntry>
+      <TocEntry
+        Title="DBT Codes in Word"
+        Link="/Content/working_with_word/word_codes_practical_example.htm" />
+      <TocEntry
+        Title="Using DBT Codes"
+        Link="/Content/working_with_word/Word_Using_DBT_Codes.htm">
+        <TocEntry
+          Title="A Practical Example"
+          Link="/Content/working_with_word/word_codes_practical_example.htm" />
+        <TocEntry
+          Title="Hide Your Codes"
+          Link="/Content/Templates_Styles_Codes/Codes/word_hide_your_Codes.htm" />
+        <TocEntry
+          Title="Use AutoText"
+          Link="/Content/working_with_word/word_use_autotext.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="SWIFT"
+      Link="/Content/working_with_word/SWIFT/swift.htm"
+      conditions="Primary.SWIFT,Primary.Windows_Version"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Installing SWIFT"
+        Link="/Content/working_with_word/SWIFT/swift_installation.htm"
+        conditions="Primary.SWIFT" />
+      <TocEntry
+        Title="Document"
+        Link="/Content/working_with_word/SWIFT/swift_document.htm"
+        conditions="Primary.SWIFT">
+        <TocEntry
+          Title="Choose Template"
+          Link="/Content/working_with_word/SWIFT/swift_choose_template.htm"
+          conditions="Primary.SWIFT"></TocEntry>
+        <TocEntry
+          Title="Style Map"
+          Link="/Content/working_with_word/SWIFT/swift_style_map.htm"
+          conditions="Primary.SWIFT" />
+      </TocEntry>
+      <TocEntry
+        Title="Output"
+        Link="/Content/working_with_word/SWIFT/swift_output.htm"
+        conditions="Primary.SWIFT">
+        <TocEntry
+          Title="Open in DBT"
+          Link="/Content/working_with_word/SWIFT/swift_open_in_DBT.htm"
+          conditions="Primary.SWIFT" />
+        <TocEntry
+          Title="Emboss Direct"
+          Link="/Content/working_with_word/SWIFT/swift_emboss_direct.htm"
+          conditions="Primary.SWIFT" />
+        <TocEntry
+          Title="Print Braille"
+          Link="/Content/working_with_word/SWIFT/swift_print_braille.htm"
+          conditions="Primary.SWIFT" />
+      </TocEntry>
+      <TocEntry
+        Title="Tools"
+        Link="/Content/working_with_word/SWIFT/swift_tools.htm"
+        conditions="Primary.SWIFT">
+        <TocEntry
+          Title="Append Acronyms"
+          Link="/Content/working_with_word/SWIFT/swift_acronyms.htm"
+          conditions="Primary.SWIFT" />
+        <TocEntry
+          Title="Acronym Manager"
+          Link="/Content/working_with_word/SWIFT/swift_acronym_manager.htm"
+          conditions="Primary.SWIFT" />
+        <TocEntry
+          Title="Word Styles Lister"
+          Link="/Content/working_with_word/SWIFT/swift_word_styles_lister.htm"
+          conditions="Primary.SWIFT" />
+        <TocEntry
+          Title="Options"
+          Link="/Content/working_with_word/SWIFT/swift_options.htm"
+          conditions="Primary.SWIFT" />
+        <TocEntry
+          Title="SWIFT - HELP"
+          Link="/Content/working_with_word/SWIFT/swift_help.htm"
+          conditions="Primary.SWIFT" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Mathematics"
+      Link="/Content/working_with_word/mathematics/mathematics.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="MathType™"
+        Link="/Content/working_with_word/mathematics/mathtype.htm" />
+      <TocEntry
+        Title="Scientific Notebook (Brief Details)"
+        Link="/Content/miscellaneous/Scientific_NoteBook_Details.htm" />
+      <TocEntry
+        Title="Scientific Notebook"
+        Link="/Content/working_with_word/mathematics/scientific_notebook.htm"
+        MarkAsNew="true" />
+      <TocEntry
+        Title="Chosing your Math Braille Tables"
+        Link="/Content/working_with_word/mathematics/math_braille_tables.htm"
+        MarkAsNew="true"
+        StartSection="false"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue"
+        ComputeToc="false"
+        ReplaceMergeNode="false" />
+      <TocEntry
+        Title="Flow Charts"
+        Link="/Content/working_with_word/mathematics/flow_charts.htm"
+        MarkAsNew="true"
+        HtmlHelpIconIndex="12"
+        ReplaceMergeNode="false" />
+      <TocEntry
+        Title="Mathematical Braille to Print"
+        Link="/Content/working_with_word/mathematics/math_brl_to_print.htm"
+        MarkAsNew="true">
+        <TocEntry
+          Title="Braille Formatted file containing UEB text/UEB math to Inkprint Math"
+          Link="/Content/working_with_word/mathematics/math_brl_UEB_UEB_print.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Word Style Map (MWS File)"
+      Link="/Content/working_with_word/Word_Style_Map_(MWS_File).htm" />
+    <TocEntry
+      Title="Editing the &quot;.mws&quot; file"
+      Link="/Content/working_with_word/editing_mws.htm" />
+    <TocEntry
+      Title="Simple Braille Graphics"
+      Link="/Content/working_with_word/simple_braille_graphics.htm" />
+    <TocEntry
+      Title="DBT to Word"
+      Link="/Content/working_with_word/dbt_to_word.htm"
+      HtmlHelpIconIndex="11"
+      ReplaceMergeNode="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Index"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Print_Index.htm"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Blank_Page"
+    Link="/Content/Resources/PageLayouts/Blank_Page.flpgl"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Blank_Page.flpgl"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Back Page (The Menus)"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Back_Page_(The_Menus).htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+    PageNumberReset="continue" />
+</CatapultToc>

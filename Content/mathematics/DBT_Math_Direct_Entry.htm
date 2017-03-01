@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from url=(0048)http://www.duxburysystems.com/dbt_math_entry.htm -->
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="120" MadCap:lastWidth="624">
+    <head>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <meta content="IE=11.0000" http-equiv="X-UA-Compatible" /><title>DBT Math Direct Entry</title>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Math:Direct Entry" />DBT Math Direct Entry</h1>
+        <p>Many people produce math equations in <a href="../working_with_word/mathematics/mathtype.htm">MathType</a> or <a href="../working_with_word/mathematics/scientific_notebook.htm">Scientific Notebook</a>. This help page is for people who wish to Enter their math directly into the DBT Editor.</p>
+        <p>We presume that you know DBT, have configured your braille, but wish to learn how to type math material into DBT.</p>
+        <h2>Preparation</h2>
+        <ol>
+            <li>Go to the help page <a href="../miscellaneous/Special_Characters/Unicode_22xx.htm"> List of Math Operators</a>, Print out this list. You will need the special codes on this page.</li>
+            <li>Go to the help page <a href="../miscellaneous/Special_Characters/Unicode_03xx.htm"> List of Greek characters</a>. Print out this list. You will need the first portion of this list (U+0391-U+03C9 or Upper case alpha through lower case omega) You will need the special codes on this page.</li>
+            <li>Identify what DBT Template you will be using for math production. This will depend on your geographic location and your choice of braille math codes.</li>
+            <li>There are two DBT commands you will use a lot:</li>
+            <ul>
+                <li><span class="Keyboard">control-[</span> -- to enter a DBT code.</li>
+                <li><span class="Keyboard">control-]</span> -- to enter a DUSCI character.</li>
+            </ul>
+        </ol>
+        <h4>Entering Math</h4>
+        <h5>Math Operators and Greek Letters</h5>
+        <p>Take the list of characters, and find the character you want. For example, one row shows: <br /><b>∃ - U+2203 - D+F033 - THERE EXISTS</b><br />To enter this symbol, type control-]. You will see a box in DBT with the heading <b>Enter DUSCI code number</b>. Well, the DUSCI code number for <b>There Exists</b> is <b>F033</b>. Now type F033 &lt;Enter&gt; (that is a zero not a letter 'o'). Now try the enter a Greek letter (pick your favorite).</p>
+        <h5>math and math-TextInMath DBT Styles</h5>
+        <p>As shown in the Preparation list, you can add your own style that is close to <b>math</b> alphabetically. Substitute your new style name in these instructions if you have done so.</p>
+        <p>Mathematical material in DBT should be enclose within the <b>math</b> style.</p>
+        <ul>
+            <li>Enclose your math material in highlight.</li>
+            <li>Press <span class="Keyboard">F8</span></li>
+            <li>Use the down arrow until you see <b>math</b></li>
+            <li>Press Enter to select</li>
+            <li>Press <span class="Keyboard">Alt-F3</span> to toggle codes to show you have indeed enclosed the equation in the <b>math</b> style.</li>
+        </ul>
+        <p>Text which is entirely within <b>math</b> style material can be marked as <b>math-TextInMath</b>. The start and end of <b>math-TextInMath</b> should always be within material marked as the <b>math</b> style. Use the same method shown above to use this style in the list of DBT styles.</p>
+        <h5>Fractions</h5>
+        <p>Fractions are easy. You just need to know these codes:</p>
+        <table class="TableStyle-Basic" border="2" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: auto;margin-right: auto;" cellspacing="0" summary="Explanation of Fractions Codes">
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">Code</th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fs</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">fraction start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fl</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">fraction line</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">fe</td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">fraction end</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>to write the fraction x+y divided by 17, <br /><b>Enter:</b> Control-[ fs &lt;Enter&gt; x+y Control-[ fl &lt;Enter&gt; 17 Control-[ fe &lt;Enter&gt; </p>
+        <p>Press <span class="Keyboard">Alt-F3</span> to toggle codes to show you have indeed inserted the three DBT codes that make up a fraction.</p>
+        <h5>Fractions and Nemeth Code</h5>
+        <p>For Nemeth Code only, there are additional codes (or variations) for mixed numbers and complex fractions.</p>
+        <table class="TableStyle-Basic" border="2" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: auto;margin-right: auto;" cellspacing="0" summary="Table of Fractions and Nemeth Code">
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">Code</th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fs0</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">mixed number, fraction start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fl</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">fraction line (same code either way)</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">fe0</td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">mixed number, fraction end</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>to write the mixed number 7 and a half, <br /><b>Enter:</b> 7 Control-[ fs0 &lt;Enter&gt; 1 Control-[ fl &lt;Enter&gt; 2 Control-[ fe0 &lt;Enter&gt;</p>
+        <p>Nemeth Code uses a dot 6 to show a complex fraction (the outer fraction), and a double dot 6 to show a hyper-complex fraction (the outer-outer fraction).</p>
+        <table class="TableStyle-Basic" border="2" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: auto;margin-right: auto;" cellspacing="0" summary="Nemeth dots 6 advanced code table">
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">Code</th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fs1</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">complex fraction start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fl1</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">complex fraction line</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fe1</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">complex fraction end</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fs2</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">hyper-complex fraction start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">fl2</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">hyper-complex fraction line</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">fe2</td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">hyper-complex fraction end</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>to write the complex fraction of x+y divided by a third, <br /><b>Enter:</b> Control-[ fs1 &lt;Enter&gt; x+y Control-[ fl1 Control-[ fs &lt;Enter&gt; 1 Control-[ fl &lt;Enter&gt; 3 Control-[ fe &lt;Enter&gt; Control-[ fe1 &lt;Enter&gt;</p>
+        <h5>Superscripts and Subscripts</h5>
+        <p>Superscripts and Subscripts are easy. You just need to know these codes:</p>
+        <table class="TableStyle-Basic" border="2" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: auto;margin-right: auto;" cellspacing="0" summary="Table of Superscript and Subscript Codes">
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">Code</th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">ps</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">superscript start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">pe</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">superscript end</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">bs</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">subscript start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">be</td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">subscript end</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To write x squared, <br /><b>Enter:</b> x Control-[ ps &lt;Enter&gt; 2 Control-[ pe &lt;Enter&gt;</p>
+        <p>To write x sub n, <br /><b>Enter:</b> x Control-[ bs &lt;Enter&gt; n Control-[ pe &lt;Enter&gt;</p>
+        <h5>Square Roots and Radicals</h5>
+        <p>Square Roots and Radicals are easy. You just need to know these codes:</p>
+        <table border="2" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: auto;margin-right: auto;" class="TableStyle-Basic" cellspacing="0" summary="Table of Square Root and Radical Codes">
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">Code</th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">sqrts</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">square root start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">sqrte</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">square root end</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">ixrts</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">index of radical start</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">ixrtd</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">index of radical end, start of radical</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">ixrte</td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">end of radical</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To write the square root of x+12, <br /><b>Enter:</b> Control-[ sqrts &lt;Enter&gt; x+12 Control-[ sqrte &lt;Enter&gt;</p>
+        <p>To write the cube root of x+12, <br /><b>Enter:</b> Control-[ ixrts &lt;Enter&gt; 3 Control-[ ixrtd &lt;Enter&gt; x+12 Control-[ ixrte &lt;Enter&gt;</p>
+    </body>
+</html>

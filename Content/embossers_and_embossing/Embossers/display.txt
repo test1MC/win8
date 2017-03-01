@@ -1,0 +1,1182 @@
+| Display.cpt - Code Page Table for DBT braille display and output
+| Copyright 1996-2015 Duxbury Systems, Inc.
+| All rights reserved
+| 2004-1-15/jes: Add North American English Variant
+| 2004-7-22/dfh: Add Italian (based on Braillo Norway embosser spec.)
+| 2007-8-14/osh: Add Russian Unicode (based on Russian Computer Braille spec.)
+| 2008-10-7/Tomas MÂrdsjˆ: Add Swedish encoding
+| 2008-11-10/pjs: Re-order entries to match historical order; fix order of
+|                 heading/comment at start of Italian
+| 2009-2-4/pjs: Updated French codepage and added two more for France
+| 2012-8-27/pjs: Added experimental Icebraille
+| 2013-6-10/pjs: Added Slovak
+| 2014-4-9/dfh: Added Japanese proofing mode
+| 2015-9-28/dfh: re-arranged Russian to match Russian NVDA; added two Mongolian characters
+
+| DO NOT CHANGE THE ORDER OF SECTIONS IN THIS FILE.
+| DO NOT REMOVE OBSOLETE ENTRIES IN THIS FILE.
+| The order of sections is important to maintain a user's DBT preferences
+| across version updates in the software.
+
+| Purpose of this file:
+| This defines the encoding of braille output from DBT for the purpose of
+| output to the screen, output to embossers, and output to inkprint simulated braille.
+| Embosser output can use a CPT file other than DISPLAY.CPT. Screen and inkprint output
+| must use a section of DISPLAY.CPT. The file EMB.ELT controls which sections/files
+| are associated with each embosser.
+
+| File format:
+| Blank lines and lines beginning with a vertical bar and space are ignored
+| The file can be divided into sections of 65 lines.  The first line
+|   of each section must contain the name of the code page.  The next
+|   sixty-four lines contain the ASCII or Unicode codes used to represent each
+|   of the possible sixty-four cells when that code page is selected.
+| Unicode values are written as U+XXXX, where XXXX is the appropriate
+|   hexadecimal value.
+| Lines may contain comments, from a vertical bar and space to the end
+|   of line.
+| Sections should be placed in alphabetical or preferred order.  DBT does
+|   not sort sections when reading this file.
+
+| Standard code page for US and Canada
+North American English
+32  160 | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+49      | Dot  .2.... = '1'
+98   66 | Dots 12.... = 'b' / 'B'
+39      | Dot  ..3... = '''
+107  75 | Dots 1.3... = 'k' / 'K'
+50      | Dots .23... = '2'
+108  76 | Dots 123... = 'l' / 'L'
+64   96 | Dot  ...4.. = '@' / '`'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+34      | Dot  ....5. = '"'
+101  69 | Dots 1...5. = 'e' / 'E'
+51      | Dots .2..5. = '3'
+104  72 | Dots 12..5. = 'h' / 'H'
+57      | Dots ..3.5. = '9'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+54      | Dots .23.5. = '6'
+114  82 | Dots 123.5. = 'r' / 'R'
+94  126 | Dots ...45. = '^'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+62      | Dots ..345. = '>'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+44      | Dot  .....6 = ','
+42      | Dots 1....6 = '*'
+53      | Dots .2...6 = '5'
+60      | Dots 12...6 = '<'
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+56      | Dots .23..6 = '8'
+118  86 | Dots 123..6 = 'v' / 'V'
+46      | Dots ...4.6 = '.'
+37      | Dots 1..4.6 = '%'
+91  123 | Dots .2.4.6 = '[' / '{'
+36      | Dots 12.4.6 = '$'
+43      | Dots ..34.6 = '+'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+33      | Dots .234.6 = '!'
+38      | Dots 1234.6 = '&'
+59      | Dots ....56 = ';'
+58      | Dots 1...56 = ':'
+52      | Dots .2..56 = '4'
+92  124 | Dots 12..56 = '\\'
+48      | Dots ..3.56 = '0'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+55      | Dots .23.56 = '7'
+40      | Dots 123.56 = '('
+95      | Dots ...456 = '_'
+63      | Dots 1..456 = '?'
+119  87 | Dots .2.456 = 'w' / 'W'
+93  125 | Dots 12.456 = ']' / '}
+35      | Dots ..3456 = '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+41      | Dots .23456 = ')'
+61      | Dots 123456 = '='
+
+| Standard for U.S. and Canada but with high "@[\]^" (i.e. "`{|}~") output
+North American English Variant
+32  160 | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+49      | Dot  .2.... = '1'
+98   66 | Dots 12.... = 'b' / 'B'
+39      | Dot  ..3... = '''
+107  75 | Dots 1.3... = 'k' / 'K'
+50      | Dots .23... = '2'
+108  76 | Dots 123... = 'l' / 'L'
+96   64 | Dot  ...4.. = '`' / '@'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+34      | Dot  ....5. = '"'
+101  69 | Dots 1...5. = 'e' / 'E'
+51      | Dots .2..5. = '3'
+104  72 | Dots 12..5. = 'h' / 'H'
+57      | Dots ..3.5. = '9'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+54      | Dots .23.5. = '6'
+114  82 | Dots 123.5. = 'r' / 'R'
+126  94 | Dots ...45. = '~' / '^'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+62      | Dots ..345. = '>'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+44      | Dot  .....6 = ','
+42      | Dots 1....6 = '*'
+53      | Dots .2...6 = '5'
+60      | Dots 12...6 = '<'
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+56      | Dots .23..6 = '8'
+118  86 | Dots 123..6 = 'v' / 'V'
+46      | Dots ...4.6 = '.'
+37      | Dots 1..4.6 = '%'
+123  91 | Dots .2.4.6 = '{' / '['
+36      | Dots 12.4.6 = '$'
+43      | Dots ..34.6 = '+'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+33      | Dots .234.6 = '!'
+38      | Dots 1234.6 = '&'
+59      | Dots ....56 = ';'
+58      | Dots 1...56 = ':'
+52      | Dots .2..56 = '4'
+124  92 | Dots 12..56 = '|' / '\\'
+48      | Dots ..3.56 = '0'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+55      | Dots .23.56 = '7'
+40      | Dots 123.56 = '('
+95      | Dots ...456 = '_'
+63      | Dots 1..456 = '?'
+119  87 | Dots .2.456 = 'w' / 'W'
+125  93 | Dots 12.456 = '}' / ']'
+35      | Dots ..3456 = '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+41      | Dots .23456 = ')'
+61      | Dots 123456 = '='
+
+| British 6-dot code
+British
+32      | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+44      | Dot  .2.... = ','
+98   66 | Dots 12.... = 'b' / 'B'
+39      | Dot  ..3... = '\''
+107  75 | Dots 1.3... = 'k' / 'K'
+59      | Dots .23... = ';'
+108  76 | Dots 123... = 'l' / 'L'
+34      | Dot  ...4.. = '"'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+92  124 | Dots ....5. = '\\'/ '|'
+101  69 | Dots 1...5. = 'e' / 'E'
+58      | Dots .2..5. = ':'
+104  72 | Dots 12..5. = 'h' / 'H'
+42      | Dots ..3.5. = '*'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+43      | Dots .23.5. = '+'
+114  82 | Dots 123.5. = 'r' / 'R'
+40      | Dots ...45. = '('
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+41      | Dots ..345. = ')'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+94  126 | Dot  .....6 = '^' / '~'
+49      | Dots 1....6 = '1'
+63      | Dots .2...6 = '?'
+50      | Dots 12...6 = '2'
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+60      | Dots .23..6 = '<'
+118  86 | Dots 123..6 = 'v' / 'V'
+37      | Dots ...4.6 = '%'
+51      | Dots 1..4.6 = '3'
+57      | Dots .2.4.6 = '9'
+54      | Dots 12.4.6 = '6'
+95      | Dot  ..34.6 = '_'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+64   96 | Dots .234.6 = '@' / '`'
+38      | Dots 1234.6 = '&'
+35      | Dots ....56 = '#'
+53      | Dots 1...56 = '5'
+46      | Dots .2..56 = '.'
+56      | Dots 12..56 = '8'
+62      | Dots ..3.56 = '>'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+61      | Dots .23.56 = '='
+91  123 | Dots 123.56 = '[' / '{'
+36      | Dots ...456 = '$'
+52      | Dots 1..456 = '4'
+119  87 | Dots .2.456 = 'w' / 'W'
+55      | Dots 12.456 = '7'
+33      | Dots ..3456 = '!'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+93  125 | Dots .23456 = ']' / '}'
+48      | Dots 123456 = '0'
+
+| Standard code page for France
+French
+32  160 | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+44      | Dot  .2.... = ','
+98   66 | Dots 12.... = 'b' / 'B'
+39      | Dot  ..3... = '''
+107  75 | Dots 1.3... = 'k' / 'K'
+59      | Dots .23... = ';'
+108  76 | Dots 123... = 'l' / 'L'
+94      | Dot  ...4.. = '^'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+95   180  | Dot  ....5. = '_' / '¥'
+101  69 | Dots 1...5. = 'e' / 'E'
+58      | Dots .2..5. = ':'
+104  72 | Dots 12..5. = 'h' / 'H'
+42      | Dots ..3.5. = '*'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+33  43  | Dots .23.5. = '!' / '+'
+114  82 | Dots 123.5. = 'r' / 'R'
+164 178 | Dots ...45. = '§' / '≤'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+64 U+E6  U+C6    | Dots ..345. = '@' / 'Ê' / '∆'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+96      | Dot  .....6 = '`'
+226 49  194 | Dots 1....6 = '‚' / '1' / '¬'
+63      | Dots .2...6 = '?'
+234 50  202 | Dots 12...6 = 'Í' / '2' / ' '
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+40      | Dots .23..6 = '('
+118  86 | Dots 123..6 = 'v' / 'V'
+168     | Dots ...4.6 = '®'
+238  51  206 | Dots 1..4.6 = 'Ó' / '3' / 'Œ'
+57  246 U+153 U+152 | Dots .2.4.6 = '9' / 'ˆ' / 'ú' / 'å'
+235 54  203 | Dots 12.4.6 = 'Î' / '6' / 'À'
+37 243   | Dots ..34.6 = '%' / 'Û'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+232 200 | Dots .234.6 = 'Ë' / '»'
+231 199 | Dots 1234.6 = 'Á' / '«'
+62 132  U+201E | Dots ....56 = '>' / 'Ñ'
+251 53  219 | Dots 1...56 = '˚' / '5' / '€'
+46      | Dots .2..56 = '.'
+252 56  220 | Dots 12..56 = '¸' / '8' / '‹'
+41      | Dots ..3.56 = ')'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+34  61  | Dots .23.56 = '"' / '='
+224 192 | Dots 123.56 = '‡' / '¿'
+124 184 | Dots ...456 = '|', / '∏'
+244 52  212 | Dots 1..456 = 'Ù' / '4' / '‘'
+119  87 | Dots .2.456 = 'w' / 'W'
+239 55  207 | Dots 12.456 = 'Ô' / '7' / 'œ'
+48  35  | Dots ..3456 = '0' / '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+249 217 | Dots .23456 = '˘' / 'Ÿ'
+233 201    | Dots 123456 = 'È' / '…'
+
+| Standard codes for Norway
+Norwegian
+ 32 127          | Space       = Space
+ 97  65  49      | Dot  1..... = 'a' / 'A' / '1'
+ 44              | Dot  .2.... = ','
+ 98  66  50      | Dots 12.... = 'b' / 'B' / '2'
+ 46 215          | Dot  ..3... = '.' / '◊'
+107  75          | Dots 1.3... = 'k' / 'K'
+ 59              | Dots .23... = ';'
+108  76 163      | Dots 123... = 'l' / 'L' / '£'
+ 64 180          | Dot  ...4.. = '@' / '¥'
+ 99  67  51      | Dots 1..4.. = 'c' / 'C' / '3'
+105  73  57      | Dots .2.4.. = 'i' / 'I' / '9'
+102  70  54      | Dots 12.4.. = 'f' / 'F' / '6'
+ 47              | Dots ..34.. = '/'
+109  77          | Dots 1.34.. = 'm' / 'M'
+115  83          | Dots .234.. = 's' / 'S'
+112  80          | Dots 1234.. = 'p' / 'P'
+ 39              | Dot  ....5. = '''
+101  69  53      | Dots 1...5. = 'e' / 'E' / '5'
+ 58 159 168      | Dots .2..5. = ':' / 'ü' / '®'
+104  72  56      | Dots 12..5. = 'h' / 'H' / '8'
+ 42              | Dots ..3.5. = '*'
+111  79          | Dots 1.3.5. = 'o' / 'O'
+ 33  43          | Dots .23.5. = '!' / '+'
+114  82          | Dots 123.5. = 'r' / 'R'
+ 96              | Dots ...45. = '`'
+100  68  52      | Dots 1..45. = 'd' / 'D' / '4'
+106  74  48      | Dots .2.45. = 'j' / 'J' / '0'
+103  71  55      | Dots 12.45. = 'g' / 'G' / '7'
+230 198 228 196  | Dots ..345. = 'Ê' / '∆' / '‰' / 'ƒ'
+110  78          | Dots 1.345. = 'n' / 'N'
+116  84          | Dots .2345. = 't' / 'T'
+113  81          | Dots 12345. = 'q' / 'Q'
+184              | Dot  .....6 = '∏'
+229 197          | Dots 1....6 = 'Â' / '≈'
+ 63 128          | Dots .2...6 = '?' / 'Ä'
+202 234          | Dots 12...6 = 'Í' / ' '
+ 45              | Dots ..3..6 = '-'
+117  85          | Dots 1.3..6 = 'u' / 'U'
+ 40              | Dots .23..6 = '('
+118  86          | Dots 123..6 = 'v' / 'V'
+ 94 136          | Dots ...4.6 = '^' / 'à'
+208 240          | Dots 1..4.6 = '' / '–'
+248 216 246 214  | Dots .2.4.6 = '¯' / 'ÿ' / 'ˆ' / '÷'
+254 222          | Dots 12.4.6 = 'ﬁ' / '˛'
+ 38 167          | Dots ..34.6 = '&' / 'ß'
+120  88          | Dots 1.34.6 = 'x' / 'X'
+232 200          | Dots .234.6 = 'Ë' / '»'
+199 231          | Dots 1234.6 = 'Á' / '«'
+166              | Dots ....56 = '¶'
+ 92              | Dots 1...56 = '\'
+ 34  36 130 132 139 145 146 147 148 155 171 187 | Dots .2..56 = '"' / '$'  mm
+252 220          | Dots 12..56 = '¸' / '‹'
+ 41              | Dots ..3.56 = ')'
+122  90          | Dots 1.3.56 = 'z' / 'Z'
+ 61 149          | Dots .23.56 = '=' / 'ï'
+ 91 225 193      | Dots 123.56 = '[' / '·' / '¡'
+ 95              | Dots ...456 = '_'
+126              | Dots 1..456 = '~'
+119  87          | Dots .2.456 = 'w' / 'W'
+241 209          | Dots 12.456 = 'Ò' / '—'
+ 35              | Dots ..3456 = '#'
+121  89          | Dots 1.3456 = 'y' / 'Y'
+ 93              | Dots .23456 = ']'
+124 233 201      | Dots 123456 = '|' / 'È' / '…'
+
+| German
+German
+32      | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+44      | Dot  .2.... = ','
+98   66 | Dots 12.... = 'b' / 'B'
+46      | Dot  ..3... = '.'
+107  75 | Dots 1.3... = 'k' / 'K'
+59      | Dots .23... = ';'
+108  76 | Dots 123... = 'l' / 'L'
+34      | Dot  ...4.. = '"'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+92  124 | Dots ..34.. = '\\'/ '|'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+33      | Dot  ....5. = '!'
+101  69 | Dots 1...5. = 'e' / 'E'
+58      | Dots .2..5. = ':'
+104  72 | Dots 12..5. = 'h' / 'H'
+42      | Dots ..3.5. = '*'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+43      | Dots .23.5. = '+'
+114  82 | Dots 123.5. = 'r' / 'R'
+62      | Dots ...45. = '>'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+64   96 | Dots ..345. = '@' / '`'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+39      | Dot  .....6 = '\''
+49      | Dots 1....6 = '1'
+63      | Dots .2...6 = '?'
+50      | Dots 12...6 = '2'
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+40      | Dots .23..6 = '('
+118  86 | Dots 123..6 = 'v' / 'V'
+36      | Dots ...4.6 = '$'
+51      | Dots 1..4.6 = '3'
+57      | Dots .2.4.6 = '9'
+54      | Dots 12.4.6 = '6'
+48      | Dots ..34.6 = '0'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+94  126 | Dots .234.6 = '^' / '~'
+38      | Dots 1234.6 = '&'
+60      | Dots ....56 = '<'
+53      | Dots 1...56 = '5'
+47      | Dots .2..56 = '/'
+56      | Dots 12..56 = '8'
+41      | Dots ..3.56 = ')'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+61      | Dots .23.56 = '='
+91  123 | Dots 123.56 = '[' / '{'
+95      | Dots ...456 = '_'
+52      | Dots 1..456 = '4'
+119  87 | Dots .2.456 = 'w' / 'W'
+55      | Dots 12.456 = '7'
+35      | Dots ..3456 = '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+93  125 | Dots .23456 = ']' / '}'
+37      | Dots 123456 = '%'
+
+| Spanish
+Spanish
+32      | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+44      | Dot  .2.... = ','
+98   66 | Dots 12.... = 'b' / 'B'
+46      | Dot  ..3... = '.'
+107  75 | Dots 1.3... = 'k' / 'K'
+59      | Dots .23... = ';'
+108  76 | Dots 123... = 'l' / 'L'
+39      | Dot  ...4.. = '\''
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+64  126 | Dot  ....5. = '@' / '~'
+101  69 | Dots 1...5. = 'e' / 'E'
+58      | Dots .2..5. = ':'
+104  72 | Dots 12..5. = 'h' / 'H'
+125     | Dots ..3.5. = '}'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+33   43 | Dots .23.5. = '!' / '+'
+114  82 | Dots 123.5. = 'r' / 'R'
+94      | Dots ...45. = '^'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+124     | Dots ..345. = '|'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+95      | Dot  .....6 = '_'
+49      | Dots 1....6 = '1'
+63      | Dots .2...6 = '?'
+50      | Dots 12...6 = '2'
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+60      | Dots .23..6 = '<'
+118  86 | Dots 123..6 = 'v' / 'V'
+123     | Dots ...4.6 = '{'
+51      | Dots 1..4.6 = '3'
+57      | Dots .2.4.6 = '9'
+54      | Dots 12.4.6 = '6'
+48      | Dots ..34.6 = '0'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+36      | Dots .234.6 = '$'
+38      | Dots 1234.6 = '&'
+34      | Dots ....56 = '"'
+53      | Dots 1...56 = '5'
+42      | Dots .2..56 = '*'
+56      | Dots 12..56 = '8'
+62      | Dots ..3.56 = '>'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+61      | Dots .23.56 = '='
+40   91 | Dots 123.56 = '(' / '['
+37      | Dots ...456 = '%'
+52      | Dots 1..456 = '4'
+119  87 | Dots .2.456 = 'w' / 'W'
+55      | Dots 12.456 = '7'
+35      | Dots ..3456 = '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+41   93 | Dots .23456 = ')' / ']'
+92      | Dots 123456 = '\\'
+
+| 6 Braillo Italian Table Dot Ascii.Table from : Braillo 03903
+Italian
+032     | Dots ......  =    space
+97 65   | Dot  1..... 'a' / 'A'
+044     | Dots .2....  =    ,
+98 66   | Dots 12.... 'b' / 'B'
+046     | Dots ..3...  =    .
+107 75  | Dots 1.3... 'k' / 'K'
+059     | Dots .23...  =    ;
+108 76  | Dots 123... 'l' / 'L'
+034     | Dots ...4..  =    "
+99 67   | Dots 1..4.. 'c' / 'C'
+105 73  | Dots .2.4.. 'i' / 'I'
+102 70  | Dots 12.4.. 'f' / 'F'
+124 148 | Dots ..34..  =    |
+109 77  | Dots 1.34.. 'm' / 'M'
+115 83  | Dots .234.. 's' / 'S'
+112 80  | Dots 1234.. 'p' / 'P'
+ 33     | Dots ....5.  =     !
+101 69  | Dots 1...5. 'e' / 'E'
+058     | Dots .2..5.  =    :
+104 72  | Dots 12..5. 'h' / 'H'
+042     | Dots ..3.5.  =    *
+111 79  | Dots 1.3.5. 'o' / 'O'
+043     | Dots .23.5.  =    +
+114 82  | Dots 123.5. 'r' / 'R'
+062     | Dots ...45.  =    >
+100 68  | Dots 1..45. 'd' / 'D'
+106 74  | Dots .2.45. 'j' / 'J'
+103 71  | Dots 12.45. 'g' / 'G'
+064 96  | Dots ..345.  =    @
+110 78  | Dots 1.345. 'n' / 'N'
+116 84  | Dots .2345. 't' / 'T'
+113 81  | Dots 12345. 'q' / 'Q'
+039     | Dots .....6  =    '
+049     | Dots 1....6  =    1
+063     | Dots .2...6  =    ?
+050     | Dots 12...6  =    2
+045     | Dots ..3..6  =    -
+117 85  | Dots 1.3..6 'u' / 'U'
+040     | Dots .23..6  =    (
+118 86  | Dots 123..6 'v' / 'V'
+036     | Dots ...4.6  =    $
+051     | Dots 1..4.6  =    3
+057     | Dots .2.4.6  =    9
+054     | Dots 12.4.6  =    6
+048     | Dots ..34.6  =    0
+120 88  | Dots 1.34.6 'x' / 'X'
+094 126 | Dots .234.6  =    ^
+038     | Dots 1234.6  =    &
+060     | Dots ....56  =    <
+053     | Dots 1...56  =    5
+047     | Dots .2..56  =    /
+056     | Dots 12..56  =    8
+041     | Dots ..3.56  =    )
+122 90  | Dots 1.3.56 'z' / 'Z'
+061     | Dots .23.56  =    =
+091 132 | Dots 123.56  =    [
+095     | Dots ...456  =    _
+052     | Dots 1..456  =    4
+119 87  | Dots .2.456 'w' / 'W'
+055     | Dots 12.456  =    7
+035     | Dots ..3456  =    #
+121 89  | Dots 1.3456 'y' / 'Y'
+093 125 | Dots .23456  =    ]
+037     | Dots 123456  =    %
+
+| Standard Euro-zone encoding
+Euro
+032      | Dots ...... =  Space
+065 097  | Dot  1..... = 'A' or 'a'
+044      | Dot  .2.... = ','
+066 098  | Dots 12.... = 'B' or 'b'
+046      | Dots ..3... = '.'
+075 107  | Dots 1.3... = 'K' or 'k'
+059      | Dots .23... = ';'
+076 108  | Dots 123... = 'L' or 'l'
+034      | Dot  ...4.. = '"'
+067 099  | Dots 1..4.. = 'C' or 'c'
+073 105  | Dots .2.4.. = 'I' or 'i'
+070 102  | Dots 12.4.. = 'F' or 'f'
+092 124  | Dots ..34.. = '\' or '|'
+077 109  | Dots 1.34.. = 'M' or 'm'
+083 115  | Dots .234.. = 'S' or 'm'
+080 112  | Dots 1234.. = 'P' or 'p'
+033      | Dots ....5. = '!'
+069 101  | Dots 1...5. = 'E' or 'e'
+058      | Dots .2..5. = ':'
+072 104  | Dots 12..5. = 'H' or 'h'
+042      | Dots ..3.5. = '*'
+079 111  | Dots 1.3.5. = 'O' or 'o'
+043      | Dots .23.5. = '+'
+082 114  | Dots 123.5. = 'R' or 'r'
+062      | Dots ...45. = '>'
+068 100  | Dots 1..45. = 'D' or 'd'
+074 106  | Dots .2.45. = 'J' or 'j'
+071 103  | Dots 12.45. = 'G' or 'g'
+064 096  | Dot  ..345. = '@' or '`'
+078 110  | Dots 1.345. = 'N' or 'n'
+084 116  | Dots .2345. = 'T' or 't'
+081 113  | Dots 12345. = 'Q' or 'q'
+039      | Dot  .....6 = '\''
+049      | Dot  .1...6 = '1'
+063      | Dots .2...6 = '?'
+050      | Dots 12...6 = '2'
+045      | Dots ..3..6 = '-'
+085 117  | Dots 1.3..6 = 'U' or 'u'
+040      | Dots .23..6 = '('
+086 118  | Dots 123..6 = 'V' or 'v'
+036      | Dots ...4.6 = '$'
+051      | Dots 1..4.6 = '3'
+057      | Dots .2.4.6 = '9'
+054      | Dots 12.4.6 = '6'
+048      | Dots ..34.6 = '0'
+088 120  | Dots 1.34.6 = 'X' or 'x'
+094 126  | Dots .234.6 = '^' or '~'
+038      | Dots 1234.6 = '&'
+060      | Dots ....56 = '<'
+053      | Dots 1...56 = '5'
+047      | Dots .2..56 = '/'
+056      | Dots 12..56 = '8'
+041      | Dots ..3.56 = ')'
+090 122  | Dots 1.3.56 = 'Z' or 'z'
+061      | Dots .23.56 = '='
+091 123  | Dots 123.56 = '[' or '{'
+095      | Dots ...456 = '_'
+052      | Dots 1..456 = '4'
+087 119  | Dots .2.456 = 'W' or 'w'
+055      | Dots 12.456 = '7'
+035      | Dots ..3456 = '#'
+089 121  | Dots 1.3456 = 'Y'  /y
+093 125  | Dots .23456 = ']' '}'
+037      | Dots 123456 = '%'
+
+| Cyrillic
+Russian
+32 U+00A0            | Dots ...... = Space
+U+0430 U+0410 97  65 | Dot  1..... = 'a' / 'A' / '†' / 'Ä'
+49                   | Dot  .2.... = '1' [44]
+U+0431 U+0411 98 66  | Dots 12.... = 'b' / 'B' / '°' / 'Å'
+39                   | Dot  ..3... = '''
+U+043A U+041A 107 75 | Dots 1.3... = 'k' / 'K' / '™' / 'ä'
+50 U+2219 58 U+2590  | Dots .23... = '2'   [59]
+U+043B U+041B 108 76 | Dots 123... = 'l' / 'L' / '´' / 'ã'
+96 64 40             | Dot  ...4.. = '`'  [94]
+U+0446 U+0426 99  67 | Dots 1..4.. = 'c' / 'C' / 'Ê' / 'ñ'
+U+0438 U+0418 105 73 | Dots .2.4.. = 'i' / 'I' / '®' / 'à'
+U+0444 U+0424 102 70 | Dots 12.4.. = 'f' / 'F' / '‰' / 'î'
+47 U+2580            | Dots ..34.. = '/'
+U+043C U+041C 109 77 | Dots 1.34.. = 'm' / 'M' / '¨' / 'å'
+U+0441 U+0421 115 83 | Dots .234.. = 's' / 'S' / '·' / 'ë'
+U+043F U+041F 112 80 | Dots 1234.. = 'p' / 'P' / 'Ø' / 'è'
+34 36 41             | Dot  ....5. = '"' [95]
+U+0435 U+0415 101 69 | Dots 1...5. = 'e' / 'E' / '5' / '•' / 'Ö'
+51 U+2321 38         | Dots .2..5. = '3' [58]
+U+0445 U+0425 104 72 | Dots 12..5. = 'h' / 'H' / 'Â' / 'ï'
+57 U+2248 U+2591     | Dots ..3.5. = '9' [42]
+U+043E U+041E 111 79 | Dots 1.3.5. = 'o' / 'O' / '>' / 'Æ' / 'é'
+54 33                | Dots .23.5. = '6' '!' [33] [43]
+U+0440 U+0420 114 82 | Dots 123.5. = 'r' / 'R'
+126 94               | Dots ...45. = '~' '^' [91]
+U+0434 U+0414 100 68 | Dots 1..45. = 'd' / 'D' / '§' / 'Ñ'
+U+0436 U+0416 106 74 | Dots .2.45. = 'j' / 'J' / '¶' / 'Ü'
+U+0433 U+0413 103 71 | Dots 12.45. = 'g' / 'G' / '£' / 'É'
+62 U+0463 U+0462 183 | Dots ..345. = '>' [41]
+U+043D U+041D 110 78 | Dots 1.345. = 'n' / 'N' / '#' / '≠' / 'ç'
+U+0442 U+0422 116 84 | Dots .2345. = 't' / 'T' / '‚' / 'í'
+U+0447 U+0427 113 81 | Dots 12345. = 'q' / 'Q'. / 'Á' / 'ó'
+44  U+2588           | Dot  .....6 = ',' [125]
+U+0451 U+0401        | Dots 1....6 = 'Ò' / ''
+53 U+00b2 U+2592     | Dots .2...6 = '5' [63]
+60 42                | Dots 12...6 = '<' '*' [40]
+45                   | Dots ..3..6 = '-'
+U+0443 U+0423 117 85 | Dots 1.3..6 = 'u' / 'U' / '„' / 'ì'
+56 123               | Dots .23..6 = '8' [34]
+118 86 U+04E8 U+04E9 | Dots 123..6 = 'v' / 'V'
+46 U+2584            | Dots ...4.6 = '.' [123]
+37                   | Dots 1..4.6 = '%' [64]
+U+44D U+42D U+46b U+46a | Dots .2.4.6 = '<' / 'Ì' / [60]
+U+044F U+042F        | Dots 12.4.6 = 'Ô' / 'ü'
+43 U+00a9            | Dots ..34.6 = '+' [92]
+U+0449 U+0429 120 88 | Dots 1.34.6 = 'x' / 'X' / 'È' / 'ô'
+U+044B U+042B        | Dots .234.6 = 'Î' / 'õ'
+U+0439 U+0419        | Dots 1234.6 = '©' / 'â'
+59 U+221a            | Dots ....56 = ';' [36]
+U+0448 U+0428        | Dots 1...56 = 'Ë' / 'ò'
+52 U+2320            | Dots .2..56 = '4' [46]
+U+044E U+042E        | Dots 12..56 = 'Ó' / 'û'
+48 92 U+2593 U+2265  | Dots ..3.56 = '0' '\\' [37]
+U+0437 U+0417 122 90 | Dots 1.3.56 = 'z' / 'Z' / 'ß' / 'á'
+55 U+25a0 U+00b0     | Dots .23.56 = '7' [61]
+U+044A U+042A        | Dots 123.56 = 'Í' / 'ö'
+95 U+2264            | Dots ...456 = '_' [124]
+63 247 U+04AE U+04AF | Dots 1..456 = '?' [38]
+U+0432 U+0412 119 87 | Dots .2.456 = 'w' / 'W' / '¢' / 'Ç'
+125 93               | Dots 12.456 = '}' ']' [126]
+35 124               | Dots ..3456 = '#' '|' [93]
+121 89               | Dots 1.3456 = 'y' / 'Y'
+U+044C U+042C        | Dots .23456 = 'Ï' / 'ú'
+61                   | Dots 123456 = '=' [96]
+
+| Standard codes for Sweden
+Swedish
+ 32 127          | Space       = Space
+ 97  65  49      | Dot  1..... = 'a' / 'A' / '1'
+ 44              | Dot  .2.... = ','
+ 98  66  50      | Dots 12.... = 'b' / 'B' / '2'
+ 46 215          | Dot  ..3... = '.' / '◊'
+107  75          | Dots 1.3... = 'k' / 'K'
+ 59              | Dots .23... = ';'
+108  76 163      | Dots 123... = 'l' / 'L' / '£'
+ 64 180          | Dot  ...4.. = '@' / '¥'
+ 99  67  51      | Dots 1..4.. = 'c' / 'C' / '3'
+105  73  57      | Dots .2.4.. = 'i' / 'I' / '9'
+102  70  54      | Dots 12.4.. = 'f' / 'F' / '6'
+ 47              | Dots ..34.. = '/'
+109  77          | Dots 1.34.. = 'm' / 'M'
+115  83          | Dots .234.. = 's' / 'S'
+112  80          | Dots 1234.. = 'p' / 'P'
+ 39              | Dot  ....5. = '''
+101  69  53      | Dots 1...5. = 'e' / 'E' / '5'
+ 58 159 168      | Dots .2..5. = ':' / 'ü' / '®'
+104  72  56      | Dots 12..5. = 'h' / 'H' / '8'
+ 42              | Dots ..3.5. = '*'
+111  79          | Dots 1.3.5. = 'o' / 'O'
+ 33  43          | Dots .23.5. = '!' / '+'
+114  82          | Dots 123.5. = 'r' / 'R'
+ 96              | Dots ...45. = '`'
+100  68  52      | Dots 1..45. = 'd' / 'D' / '4'
+106  74  48      | Dots .2.45. = 'j' / 'J' / '0'
+103  71  55      | Dots 12.45. = 'g' / 'G' / '7'
+228 196          | Dots ..345. = '‰' / 'ƒ'
+110  78          | Dots 1.345. = 'n' / 'N'
+116  84          | Dots .2345. = 't' / 'T'
+113  81          | Dots 12345. = 'q' / 'Q'
+184              | Dot  .....6 = '∏'
+229 197          | Dots 1....6 = 'Â' / '≈'
+ 63 128          | Dots .2...6 = '?' / 'Ä'
+202 234          | Dots 12...6 = 'Í' / ' '
+ 45              | Dots ..3..6 = '-'
+117  85          | Dots 1.3..6 = 'u' / 'U'
+ 40              | Dots .23..6 = '('
+118  86          | Dots 123..6 = 'v' / 'V'
+ 94 136          | Dots ...4.6 = '^' / 'à'
+208 240          | Dots 1..4.6 = '' / '–'
+246 214          | Dots .2.4.6 = 'ˆ' / '÷'
+254 222          | Dots 12.4.6 = 'ﬁ' / '˛'
+ 38 167          | Dots ..34.6 = '&' / 'ß'
+120  88          | Dots 1.34.6 = 'x' / 'X'
+232 200          | Dots .234.6 = 'Ë' / '»'
+199 231          | Dots 1234.6 = 'Á' / '«'
+166              | Dots ....56 = '¶'
+ 92              | Dots 1...56 = '\'
+ 34  36 130 132 139 145 146 147 148 155 171 187 | Dots .2..56 = '"' / '$'  mm
+252 220          | Dots 12..56 = '¸' / '‹'
+ 41              | Dots ..3.56 = ')'
+122  90          | Dots 1.3.56 = 'z' / 'Z'
+ 61 149          | Dots .23.56 = '=' / 'ï'
+ 91 225 193      | Dots 123.56 = '[' / '·' / '¡'
+ 95              | Dots ...456 = '_'
+126              | Dots 1..456 = '~'
+119  87          | Dots .2.456 = 'w' / 'W'
+241 209          | Dots 12.456 = 'Ò' / '—'
+ 35              | Dots ..3456 = '#'
+121  89          | Dots 1.3456 = 'y' / 'Y'
+ 93              | Dots .23456 = ']'
+124 233 201      | Dots 123456 = '|' / 'È' / '…'
+
+| Standard code page for France
+| Affichage sÈrie 4 en chiffres
+French Chiffres
+32  160 | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+44      | Dot  .2.... = ','
+98   66 | Dots 12.... = 'b' / 'B'
+39      | Dot  ..3... = '''
+107  75 | Dots 1.3... = 'k' / 'K'
+59      | Dots .23... = ';'
+108  76 | Dots 123... = 'l' / 'L'
+94      | Dot  ...4.. = '^'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+95   180  | Dot  ....5. = '_' / '¥'
+101  69 | Dots 1...5. = 'e' / 'E'
+58      | Dots .2..5. = ':'
+104  72 | Dots 12..5. = 'h' / 'H'
+42      | Dots ..3.5. = '*'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+33  43  | Dots .23.5. = '!' / '+'
+114  82 | Dots 123.5. = 'r' / 'R'
+164 178 | Dots ...45. = '§' / '≤'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+64 U+E6  U+C6    | Dots ..345. = '@' / 'Ê' / '∆'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+96      | Dot  .....6 = '`'
+49  226 194 | Dots 1....6 = '1' / '‚' / '¬'
+63      | Dots .2...6 = '?'
+50  234 202 | Dots 12...6 = '2' / 'Í' / ' '
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+40      | Dots .23..6 = '('
+118  86 | Dots 123..6 = 'v' / 'V'
+168     | Dots ...4.6 = '®'
+51  238 206 | Dots 1..4.6 = '3' / 'Ó' / 'Œ'
+57  246 U+153 U+152 | Dots .2.4.6 = '9' / 'ˆ' / 'ú' / 'å'
+54  235 203 | Dots 12.4.6 = '6' / 'Î' / 'À'
+37 243   | Dots ..34.6 = '%' / 'Û'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+232 200 | Dots .234.6 = 'Ë' / '»'
+231 199 | Dots 1234.6 = 'Á' / '«'
+62 132  U+201E | Dots ....56 = '>' / 'Ñ'
+53  251 219 | Dots 1...56 = '5' / '˚' / '€'
+46      | Dots .2..56 = '.'
+56  252 220 | Dots 12..56 = '8' / '¸' / '‹'
+41      | Dots ..3.56 = ')'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+34  61  | Dots .23.56 = '"' / '='
+224 192 | Dots 123.56 = '‡' / '¿'
+124 184 | Dots ...456 = '|', / '∏'
+52  244 212 | Dots 1..456 = '4' / 'Ù' / '‘'
+119  87 | Dots .2.456 = 'w' / 'W'
+55  239 207 | Dots 12.456 = '7' / 'Ô' / 'œ'
+48  35  | Dots ..3456 = '0' / '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+249 217 | Dots .23456 = '˘' / 'Ÿ'
+233 201    | Dots 123456 = 'È' / '…'
+
+| Standard code page for France
+| Affichage en braille 6 points
+French 6 points
+32  160 | Space       = Space
+97   65 | Dot  1..... = 'a' / 'A'
+44      | Dot  .2.... = ','
+98   66 | Dots 12.... = 'b' / 'B'
+39      | Dot  ..3... = '''
+107  75 | Dots 1.3... = 'k' / 'K'
+59      | Dots .23... = ';'
+108  76 | Dots 123... = 'l' / 'L'
+94      | Dot  ...4.. = '^'
+99   67 | Dots 1..4.. = 'c' / 'C'
+105  73 | Dots .2.4.. = 'i' / 'I'
+102  70 | Dots 12.4.. = 'f' / 'F'
+47      | Dots ..34.. = '/'
+109  77 | Dots 1.34.. = 'm' / 'M'
+115  83 | Dots .234.. = 's' / 'S'
+112  80 | Dots 1234.. = 'p' / 'P'
+180   95 | Dot  ....5. = '¥' / '_'
+101  69 | Dots 1...5. = 'e' / 'E'
+58      | Dots .2..5. = ':'
+104  72 | Dots 12..5. = 'h' / 'H'
+42      | Dots ..3.5. = '*'
+111  79 | Dots 1.3.5. = 'o' / 'O'
+33  43  | Dots .23.5. = '!' / '+'
+114  82 | Dots 123.5. = 'r' / 'R'
+164 178 | Dots ...45. = '§' / '≤'
+100  68 | Dots 1..45. = 'd' / 'D'
+106  74 | Dots .2.45. = 'j' / 'J'
+103  71 | Dots 12.45. = 'g' / 'G'
+64 U+E6  U+C6    | Dots ..345. = '@' / 'Ê' / '∆'
+110  78 | Dots 1.345. = 'n' / 'N'
+116  84 | Dots .2345. = 't' / 'T'
+113  81 | Dots 12345. = 'q' / 'Q'
+96      | Dot  .....6 = '`'
+49  226 194 | Dots 1....6 = '1' / '‚' / '¬'
+63      | Dots .2...6 = '?'
+50  234 202 | Dots 12...6 = '2' / 'Í' / ' '
+45      | Dots ..3..6 = '-'
+117  85 | Dots 1.3..6 = 'u' / 'U'
+40      | Dots .23..6 = '('
+118  86 | Dots 123..6 = 'v' / 'V'
+168     | Dots ...4.6 = '®'
+51  238 206 | Dots 1..4.6 = '3' / 'Ó' / 'Œ'
+57  246 U+153 U+152 | Dots .2.4.6 = '9' / 'ˆ' / 'ú' / 'å'
+54  235 203 | Dots 12.4.6 = '6' / 'Î' / 'À'
+243 37   | Dots ..34.6 = 'Û' / '%'
+120  88 | Dots 1.34.6 = 'x' / 'X'
+232 200 | Dots .234.6 = 'Ë' / '»'
+231 199 | Dots 1234.6 = 'Á' / '«'
+132  62 U+201E | Dots ....56 = 'Ñ' / '>'
+53  251 219 | Dots 1...56 = '5' / '˚' / '€'
+46      | Dots .2..56 = '.'
+56  252 220 | Dots 12..56 = '8' / '¸' / '‹'
+41      | Dots ..3.56 = ')'
+122  90 | Dots 1.3.56 = 'z' / 'Z'
+34  61  | Dots .23.56 = '"' / '='
+224 192 | Dots 123.56 = '‡' / '¿'
+184 124  | Dots ...456 = '∏', / '|'
+52  244 212 | Dots 1..456 = '4' / 'Ù' / '‘'
+119  87 | Dots .2.456 = 'w' / 'W'
+55  239 207 | Dots 12.456 = '7' / 'Ô' / 'œ'
+48  35  | Dots ..3456 = '0' / '#'
+121  89 | Dots 1.3456 = 'y' / 'Y'
+249 217 | Dots .23456 = '˘' / 'Ÿ'
+233 201    | Dots 123456 = 'È' / '…'
+
+| Code page for Czech Republic
+| A work in progress
+Czech-Unicode
+       32  160 | Space       = Space
+       97   65 | Dot  1..... = 'a' / 'A'
+       44      | Dot  .2.... = comma
+       98   66 | Dots 12.... = 'b' / 'B'
+       46      | Dot  ..3... = period
+       107  75 | Dots 1.3... = 'k' / 'K'
+       59      | Dots .23... = semi-colon
+       108  76 | Dots 123... = 'l' / 'L'
+       96      | Dot  ...4.. = accent mark
+       99   67 | Dots 1..4.. = 'c' / 'C'
+       105  73 | Dots .2.4.. = 'i' / 'I'
+       102  70 | Dots 12.4.. = 'f' / 'F'
+U+00ED U+00CD  | Dots ..34.. = i acute
+       109  77 | Dots 1.34.. = 'm' / 'M'
+       115  83 | Dots .234.. = 's' / 'S'
+       112  80 | Dots 1234.. = 'p' / 'P'
+       126     | Dot  ....5. = tilde
+       101  69 | Dots 1...5. = 'e' / 'E'
+       58      | Dots .2..5. = colon
+       104  72 | Dots 12..5. = 'h' / 'H'
+U+00D7         | Dots ..3.5. = multiplication sign
+       111  79 | Dots 1.3.5. = 'o' / 'O'
+       33      | Dots .23.5. = exclamation mark
+       114  82 | Dots 123.5. = 'r' / 'R'
+U+2020         | Dots ...45. = dagger sign
+       100  68 | Dots 1..45. = 'd' / 'D'
+       106  74 | Dots .2.45. = 'j' / 'J'
+       103  71 | Dots 12.45. = 'g' / 'G'
+U+00E9 U+00C9  | Dots ..345. = e acute
+       110  78 | Dots 1.345. = 'n' / 'N'
+       116  84 | Dots .2345. = 't' / 'T'
+       113  81 | Dots 12345. = 'q' / 'Q'
+       36      | Dot  .....6 = $
+U+00E1 U+00C1  | Dots 1....6 = a acute
+       63      | Dots .2...6 = question mark
+U+011B U+011A  | Dots 12...6 = e caron
+       45      | Dots ..3..6 = '-'
+       117  85 | Dots 1.3..6 = 'u' / 'U'
+       40      | Dots .23..6 = (
+       118  86 | Dots 123..6 = 'v' / 'V'
+U+2021         | Dots ...4.6 = double dagger
+U+010D U+010C  | Dots 1..4.6 = c caron
+U+00F3 U+00D3  | Dots .2.4.6 = o acute
+U+0148 U+0147  | Dots 12.4.6 = n caron
+U+00FA U+00D8  | Dots ..34.6 = u acute
+       120  88 | Dots 1.34.6 = 'x' / 'X'
+U+017E U+017D  | Dots .234.6 = z caron
+U+00FD U+00DD  | Dots 1234.6 = y acute
+U+00A4         | Dots ....56 = currency symbol
+U+0161 U+0160  | Dots 1...56 = s caron
+       43      | Dots .2..56 = +
+U+0165 U+0164  | Dots 12..56 = t'
+       41      | Dots ..3.56 = )
+       122  90 | Dots 1.3.56 = 'z' / 'Z'
+       34      | Dots .23.56 = double quote
+       119  87 | Dots 123.56 = 'w' / 'W' (different position)
+       124     | Dots ...456 = vertical bar
+U+010F U+010E  | Dots 1..456 = d'
+U+0159 U+0158  | Dots .2.456 = r caron
+       47      | Dots 12.456 = /
+       35      | Dots ..3456 = '#'
+       121  89 | Dots 1.3456 = 'y' / 'Y'
+U+016F U+016E  | Dots .23456 = u circle
+U+013E U+013D  | Dots 123456 = l caron
+
+| Based on Icebraille 01 2012.pdf
+Icelandic
+U+0020        | Space       = Space
+U+0061 U+0041 | Dot  1..... = 'a' / 'A'
+U+002C        | Dot  .2.... = ','
+U+0062 U+0042 | Dots 12.... = 'b' / 'B'
+U+002E        | Dot  ..3... = '.'
+U+006B U+004B | Dots 1.3... = 'k' / 'K'
+U+003B U+201E | Dots .23... = ';' / Low double comma quotation mark
+U+006C U+004C | Dots 123... = 'l' / 'L'
+U+0060        | Dot  ...4.. = '`' (From Icebraille 8-punkt)
+U+0063 U+0043 | Dots 1..4.. = 'c' / 'C'
+U+0069 U+0049 | Dots .2.4.. = 'i' / 'I'
+U+0066 U+0046 | Dots 12.4.. = 'f' / 'F'
+U+002F        | Dots ..34.. = '/'
+U+006D U+004D | Dots 1.34.. = 'm' / 'M'
+U+0073 U+0053 | Dots .234.. = 's' / 'S'
+U+0070 U+0050 | Dots 1234.. = 'p' / 'P'
+U+0027        | Dot  ....5. = '''
+U+0065 U+0045 | Dots 1...5. = 'e' / 'E'
+U+003A        | Dots .2..5. = ':'
+U+0068 U+0048 | Dots 12..5. = 'h' / 'H'
+U+002A        | Dots ..3.5. = '*'
+U+006F U+004F | Dots 1.3.5. = 'o' / 'O'
+U+0021 U+002B | Dots .23.5. = '!' / '+'
+U+0072 U+0052 | Dots 123.5. = 'r' / 'R'
+U+00FE        | Dots ...45. = '~' (From Description of 152/20DC in Icebraille 8-punkt)
+U+0064 U+0044 | Dots 1..45. = 'd' / 'D'
+U+006A U+004A | Dots .2.45. = 'j' / 'J'
+U+0067 U+0047 | Dots 12.45. = 'g' / 'G'
+U+00E6 U+00C6 | Dots ..345. = AE ligature (lowercase / capital)
+U+006E U+004E | Dots 1.345. = 'n' / 'N'
+U+0074 U+0054 | Dots .2345. = 't' / 'T'
+U+0071 U+0051 | Dots 12345. = 'q' / 'Q'
+U+2026        | Dot  .....6 = ellipsis (From Icebraille 8-punkt)
+U+00E1 U+00C1 | Dots 1....6 = a with acute accent (lowercase / capital)
+U+003F        | Dots .2...6 = '?'
+U+00ED U+00CD | Dots 12...6 = i with acute accent (lowercase / capital)
+U+002D U+2022 | Dots ..3..6 = '-' / bullet
+U+0075 U+0055 | Dots 1.3..6 = 'u' / 'U'
+U+0028        | Dots .23..6 = '('
+U+0076 U+0056 | Dots 123..6 = 'v' / 'V'
+U+0025        | Dots ...4.6 = '%'
+U+0024        | Dots 1..4.6 = '$' (From Next Unused)
+U+00F6 U+00D6 | Dots .2.4.6 = o with diaresis (lowercase / capital)
+U+00FE U+00DE | Dots 12.4.6 = thorn (lowercase / capital)
+U+0026 U+005E | Dots ..34.6 = '&' / '^'
+U+0078 U+0058 | Dots 1.34.6 = 'x' / 'X'
+U+00E9 U+00C9 | Dots .234.6 = e with acute accent (lowercase / capital)
+U+00FD U+00DD | Dots 1234.6 = y with acute accent (lowercase / capital)
+U+0022        | Dots ....56 = '"'
+U+00F0 U+00D0 | Dots 1...56 = eth (lowercase / capital)
+U+00B0        | Dots .2..56 = degree sign
+U+00F7        | Dots 12..56 = division sign
+U+0029        | Dots ..3.56 = ')'
+U+007A U+005A | Dots 1.3.56 = 'z' / 'Z'
+U+003D        | Dots .23.56 = '='
+U+005B U+007B | Dots 123.56 = '[' / '{'
+U+007C        | Dots ...456 = '|'
+U+00F3 U+00D3 | Dots 1..456 = o with acute accent (lowercase / capital)
+U+0077 U+0057 | Dots .2.456 = 'w' / 'W'
+U+00FA U+00DA | Dots 12.456 = u with acute accent (lowercase / capital)
+U+0023        | Dots ..3456 = '#'
+U+0079 U+0059 | Dots 1.3456 = 'y' / 'Y'
+U+005D U+007D | Dots .23456 = ']' / '}'
+U+0040        | Dots 123456 = '@'
+
+| Standard code page for Slovak republic
+Slovak - unicode
+U+0020        | Space       = Space
+U+0061 U+0041 | Dot  1..... = 'a' / 'A'
+U+002C        | Dot  .2.... = ','
+U+0062 U+0042 | Dots 12.... = 'b' / 'B'
+U+0027        | Dot  ..3... = '''
+U+006B U+004B | Dots 1.3... = 'k' / 'K'
+U+003B        | Dots .23... = ';'
+U+006C U+004C | Dots 123... = 'l' / 'L'
+U+00E4 U+00C4 | Dot  ...4.. = '‰' / 'ƒ'
+U+0063 U+0043 | Dots 1..4.. = 'c' / 'C'
+U+0069 U+0049 | Dots .2.4.. = 'i' / 'I'
+U+0066 U+0046 | Dots 12.4.. = 'f' / 'F'
+U+00ED U+00CD | Dots ..34.. = 'Ì' / 'Õ'
+U+006D U+004D | Dots 1.34.. = 'm' / 'M'
+U+0073 U+0053 | Dots .234.. = 's' / 'S'
+U+0070 U+0050 | Dots 1234.. = 'p' / 'P'
+U+0022        | Dot  ....5. = '"'
+U+0065 U+0045 | Dots 1...5. = 'e' / 'E'
+U+003A        | Dots .2..5. = ':'
+U+0068 U+0048 | Dots 12..5. = 'h' / 'H'
+U+004A        | Dots ..3.5. = '*'
+U+006F U+004F | Dots 1.3.5. = 'o' / 'O'
+U+0021        | Dots .23.5. = '!'
+U+0072 U+0052 | Dots 123.5. = 'r' / 'R'
+U+007E U+005E | Dots ...45. = '^' / '~'
+U+0064 U+0044 | Dots 1..45. = 'd' / 'D'
+U+006A U+004a | Dots .2.45. = 'j' / 'J'
+U+0067 U+0047 | Dots 12.45. = 'g' / 'G'
+U+00E9 U+00C9 | Dots ..345. ='È' / '…'
+U+006E U+004E | Dots 1.345. = 'n' / 'N'
+U+0074 U+0054 | Dots .2345. = 't' / 'T'
+U+0071 U+0051 | Dots 12345. = 'q' / 'Q'
+U+0060        | Dot  .....6 = '`'
+U+00E1 U+00C1 | Dots 1....6 = '·' / '¡'
+U+003F        | Dots .2...6 = '?'
+U+011B U+011A | Dots 12...6 = 'Ï' / 'Ã'
+U+002D        | Dots ..3..6 = '-'
+U+0075 U+0055 | Dots 1.3..6 = 'u' / 'U'
+U+0028        | Dots .23..6 = '('
+U+0076 U+0056 | Dots 123..6 = 'v' / 'V'
+U+013A U+0139 | Dots ...4.6 = 'Â'/ '≈'
+U+010D U+010C | Dots 1..4.6 = 'Ë' / '»'
+U+00F3 U+00D3 | Dots .2.4.6 = 'Û' / '”'
+U+0148 U+0147 | Dots 12.4.6 = 'Ú' / '“'
+U+00FA U+00DA | Dots ..34.6 = '˙' / '⁄'
+U+0078 U+0058 | Dots 1.34.6 = 'x' / 'X'
+U+017E U+017D | Dots .234.6 = 'û' / 'é'
+U+00FD U+00DD | Dots 1234.6 = '˝' / '›'
+U+007C        | Dots ....56 = '|'
+U+0161 U+0160 | Dots 1...56 = 'ö' / 'ä'
+U+002E        | Dots .2..56 = '.'
+U+0165 U+0164 | Dots 12..56 = 'ù' / 'ç'
+U+0029        | Dots ..3.56 = ')'
+U+007A U+005a | Dots 1.3.56 = 'z' / 'Z'
+U+0022        | Dots .23.56 = '"'
+U+0155 U+0154 | Dots 123.56 = '‡' / '¿'
+U+013E U+013D | Dots ...456 = 'æ' / 'º'
+U+010F U+10E0 | Dots 1..456 = 'Ô' / 'œ'
+U+0077 U+0057 | Dots .2.456 = 'w' / 'W'
+U+002F        | Dots 12.456 = '/'
+U+0023        | Dots ..3456 = '#'
+U+0079 U+0059 | Dots 1.3456 = 'y' / 'Y'
+U+00F4 U+00D4 | Dots .23456 = 'Ù' / '‘'
+U+003D        | Dots 123456 = '='
+
+| Japanese code for visual proofing
+| See http://www.duxburysystems.com/documentation/jpn_proofing.htm
+Japanese visual proofing
+U+3000 32   160 | Space       = Space
+U+30A2 97 97 65 | Dot  1..... = 'a' 
+U+2802  49      | Dot  .2.... = '1' BP
+U+30A4 98 98 66 | Dots 12.... = 'b' 
+U+30EF  39      | Dot  ..3... = '''
+U+30CA 107   75 | Dots 1.3... = 'k' 
+U+30F0  50      | Dots .23... = '2'
+U+30CB 108   76 | Dots 123... = 'l' 
+U+2808  64   96 | Dot  ...4.. = '@' BP
+U+30A6 99 99 67 | Dots 1..4.. = 'c' 
+U+30AA 105   73 | Dots .2.4.. = 'i' 
+U+30A8 102   70 | Dots 12.4.. = 'f' 
+U+30E4  47      | Dots ..34.. = '/'
+U+30CC 109   77 | Dots 1.34.. = 'm' 
+U+30CE 115   83 | Dots .234.. = 's' 
+U+30CD 112   80 | Dots 1234.. = 'p' 
+U+2810  34      | Dot  ....5. = '"' BP
+U+30E9 101   69 | Dots 1...5. = 'e' 
+U+2812  51      | Dots .2..5. = '3' BP
+U+30EA 104   72 | Dots 12..5. = 'h' 
+U+30F2  57      | Dots ..3.5. = '9'
+U+30BF 111   79 | Dots 1.3.5. = 'o' 
+U+30F1  54      | Dots .23.5. = '6'
+U+30C1 114   82 | Dots 123.5. = 'r' 
+U+2818  94  126 | Dots ...45. = '^' BP
+U+30EB 100   68 | Dots 1..45. = 'd' 
+U+30ED 106   74 | Dots .2.45. = 'j' 
+U+30EC 103   71 | Dots 12.45. = 'g' 
+U+30E8  62      | Dots ..345. = '>'
+U+30c3 110   78 | Dots 1.345. = 'n' 
+U+30C8 116   84 | Dots .2345. = 't' 
+U+30C6 113   81 | Dots 12345. = 'q' 
+U+2820 44       |  Dot .....6 = ',' BP
+U+30AB 42       | Dots 1....6 = '*'
+U+2822 53       | Dots .2...6 = '5' BP
+U+30AD 60       | Dots 12...6 = '<'
+U+2824 45       | Dots ..3..6 = '-' BP
+U+30CF 117  85  | Dots 1.3..6 = 'u' 
+U+2826  56      | Dots .23..6 = '8' BP
+U+30D2 118   86 | Dots 123..6 = 'v' 
+U+2828  46      | Dots ...4.6 = '.' BP
+U+30AF  37      | Dots 1..4.6 = '%'
+U+30B3  91  123 | Dots .2.4.6 = '[' 
+U+30B1  36      | Dots 12.4.6 = '$'
+U+30E6  43      | Dots ..34.6 = '+'
+U+30D5 120   88 | Dots 1.34.6 = 'x' 
+U+30DB  33      | Dots .234.6 = '!'
+U+30D8  38      | Dots 1234.6 = '&'
+U+2830  59      | Dots ....56 = ';' BP
+U+30B5  58      | Dots 1...56 = ':'
+U+2832  52      | Dots .2..56 = '4' BP
+U+30B7  92  124 | Dots 12..56 = '\\'
+U+30F3  48      | Dots ..3.56 = '0'
+U+30DE 122   90 | Dots 1.3.56 = 'z' 
+U+2836  55      | Dots .23.56 = '7' BP
+U+30DF  40      | Dots 123.56 = '('
+U+2838  95      | Dots ...456 = '_' BP
+U+30B9  63      | Dots 1..456 = '?'
+U+30BD 119   87 | Dots .2.456 = 'w' 
+U+30BB  93  125 | Dots 12.456 = ']' 
+U+283C  35      | Dots ..3456 = '#' BP
+U+30E0 121   89 | Dots 1.3456 = 'y' 
+U+30E2  41      | Dots .23456 = ')'
+U+30E1  61      | Dots 123456 = '='

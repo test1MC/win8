@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="1648" MadCap:lastWidth="789">
+    <head><title>ENGLISH/MOON</title>
+        <link rel="StyleSheet" href="../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Moon:English;English:Moon" />ENGLISH/MOON <img src="../Resources/Images/flags/united_kingdom.gif" alt="United Kingdom Flag" title="United Kingdom Flag" /></h4>
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>Moon is a system of tactile writing wherein the raised characters mostly resemble the print characters for which they stand, thereby making the system especially easy to learn for people who become blind late in life. It was invented by Dr. William Moon in 1845. Although it is not a form of braille, Moon can be used as a stepping-stone to the learning of braille. A new "Moon Literacy" web site was launch early in 2006 - <a href="http://moonliteracy.org.uk/">http://moonliteracy.org.uk/</a>. The RNIB web site at <a href="http://www.rnib.org.uk">http://www.rnib.org.uk</a> is also a source of information about the Moon system.</p>
+        <p>The English Moon tables support print-to-Moon translation for three English literary grades (grade two, which is the default, grade one, and grade "one-half" [fully spelled]).</p>
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>An Enabling Technologies embosser with "Moon mode" setting, or equivalent, must be used to emboss the output. Make sure that the page dimensions (under Global/Embosser) have been set appropriately -- e.g. 22 characters per line, 21 lines per page would be typical for a Juliet embosser with paper 13 inches in depth and 10-3/4 inches in width (excluding the tractor-feed border).</p>
+        <p>The print file can be prepared in any of the standard ways, e.g. by direct keying or by importing from a word processor file, and also may be viewed and edited normally in DBT. However, the translated output cannot, at this writing (August 2000), be viewed naturally (i.e. in a Moon font) within DBT. Generally, when viewing that Moon output (which is labelled as "braille"), the most sensible viewing option is to select the "print font" under the "View" menu. The print characters stand one-for-one with Moon characters, and mostly have a mnemonic relationship to them even if they are not always shaped similarly. You may edit this Moon file, save it to a .DXB or .BRF file, emboss to a suitably set embosser, etc., just as you would a regular braille file.</p>
+        <p>Capital letters are usually not indicated as such in Moon, and so the <span class="Code-DuxCode">[caplv1]</span> code should be used except in exceptional circumstances, as explained in the Moon Transcribers Instruction Manual, section 3.4. When those exceptional circumstances pertain and capitals are to be indicated in Moon, the user should prepare the input file so that only those initial capitals that are to be indicated are actually uppercase, and either no <span class="Code-DuxCode">[caplv...]</span> command should be given or equivalently <span class="Code-DuxCode">[caplv3]</span> should be used. (Usually any <span class="Code-DuxCode">[caplv...]</span> code is automatically supplied in the "initial" style of a suitable template, so it is just a matter of picking the right template.)</p>
+        <p>True Moon-to-print translation is not supported. This means that it is not generally useful to translate the Moon output to print. It also means that the "translated line" will typically contain gibberish when viewing the Moon file -- you may prefer to turn off the "translated line" under the View menu, or even under Global/Default if you wish it to be off by default.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>No secondary languages are supported.</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>No technical codes are supported.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span> may be embedded within letter-groups that would normally be contracted, to prevent the contraction.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to<span class="Code-DuxCode"> [g2]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[atxN]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[caplv1]</span> starts suppressing the indication of capital letters.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[caplv3]</span> restores the indication of capital letters. This is the default mode for this table, in order to be consistent with the other English tables, i.e. those for braille. However, see the paragraph on capitals under "Special Requirements and Limitations" above.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span> switches to "grade 1" Moon, as defined in the Transcribers Instruction Manual. (Note that some contractions, such as "and," are used even in grade 1.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span> switches to "grade 2" Moon (the normal mode), where all contractions are used.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[g0.5]</span> switches to "grade one-half," where all words are fully spelled out. (Note that the character after the letter "g" is the digit zero.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to<span class="Code-DuxCode"> [g1]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~rq]</span> causes outer and inner quotes to be understood according to the reverse of the normal convention. The normal convention, since April 2004, is that the double print quote (") stands for an outer quote and an accent-grave (`) stands for an inner quote, as has always been customary in the English braille tables. Prior to April 2004 the convention for the English Moon table was the reverse of that, and so this "variation" code is provided as an easy way to tag older files so that they will be treated the same as they were formerly.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn]</span> restores the normal convention for outer and inner quotes.</p>
+        <p>Other translation codes will generally be ignored, or may cause unpredictable translation results.</p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p>All ASCII printable characters</p>
+        <p>Note that some ASCII characters do not have a defined Moon equivalent; the output for those is arbitrary.</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>These tables are based upon the "Moon Transcribers Instruction Manual" (April 1996), written and used by the Royal National Institute for the Blind (RNIB). They were originally developed in May 1999 by Duxbury Systems, Inc., with the guidance and assistance of RNIB and Enabling Technologies.</p>
+        <p>(Documentation reviewed: May 2006.)</p>
+    </body>
+</html>

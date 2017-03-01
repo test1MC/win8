@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary
+  conditions="">
+  <GlossaryEntry
+    TermClass="Hyperlink"
+    glossTerm="PrintGlossary.Term0">
+    <Terms>
+      <Term>BANA</Term>
+    </Terms>
+    <Definition
+      Link="">Braille Authority of North America</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="glossterm"
+    glossTerm="PrintGlossary.Term1">
+    <Terms>
+      <Term>UKAAF</Term>
+    </Terms>
+    <Definition
+      Link="">United Kingdom Association for Accessible Formats</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term2">
+    <Terms>
+      <Term>Interpoint</Term>
+    </Terms>
+    <Definition
+      Link="">Interpoint is a type of braille embossing in which both sides of a sheet are utilized. It is akin to double-sided printing in ink. Not all embossers can produce interpoint braille, so be sure to check with the manufacturer if interpoint is of interest to you.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term3">
+    <Terms>
+      <Term>Termination Sign</Term>
+    </Terms>
+    <Definition
+      Link="">A special symbol (in English braille: dot 6 followed by dot 3) used to terminate the affect of capitalization or italics in the middle of a word. It is also used to indicate a transcriber's note.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term4">
+    <Terms>
+      <Term>Dialog Box</Term>
+    </Terms>
+    <Definition
+      Link="">A screen that displays information and/or has questions to be answered. Each question is asked through a control. Dialogs can be manipulated by mouse or the keyboard. Mouse users can click to toggle the controls then use Cancel and OK. Keyboard users can use Tab, Shift-Tab, arrows, spacebar, Escape and Enter 
+ keys within dialogs.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term5">
+    <Terms>
+      <Term>Zoom</Term>
+    </Terms>
+    <Definition
+      Link="">To zoom is to reduce or enlarge the size of the font used to display your work. Although it will look different on the screen, your document is in no way modified by zooming.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term6">
+    <Terms>
+      <Term>WYSIWYG</Term>
+    </Terms>
+    <Definition
+      Link="">An acronym meaning "What You See Is What You Get"</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term7">
+    <Terms>
+      <Term>Translate</Term>
+    </Terms>
+    <Definition
+      Link="">In the DBT context, this refers to the process 
+ of converting print text into braille or braille into print text. It does NOT refer to translating from one spoken or written tanguage to another written or spoken tanguage.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term8">
+    <Terms>
+      <Term>Toggle</Term>
+    </Terms>
+    <Definition
+      Link="">Toggle is where you press a key or keys and it performs an alternating function. For example, when viewing the Duxbury 
+Edit screen, if you press Alt + F3 the Codes will appear. Press the same keys a second time, and the Codes will be hidden again.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term9">
+    <Terms>
+      <Term>Status Bar</Term>
+    </Terms>
+    <Definition
+      Link="">In many applications, DBT included, the status bar is at the bottom line of each document window. The status line displays updated information as you work with the program.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term10">
+    <Terms>
+      <Term>Hard Space</Term>
+    </Terms>
+    <Definition
+      Link="">The braille translator normally automatically removes more than one space between words. A hard space "forces" space where you intentionally want additional spaces to appear in Braille. DBT won't break lines at hard spaces the way it might at ordinary spaces. An example of this is where, for ease of reading, you do not want a 
+ telephone number to be split over 2 lines. To insert a Hard Space, place your cursor 
+ where you want to have a Hard Space, and press Alt+F2</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term11">
+    <Terms>
+      <Term>Transcriber's Note</Term>
+    </Terms>
+    <Definition
+      Link="">Any text not appearing in the source print file. Textual descriptions of photographs are often included by a transcriber's note. A termination sign is normally placed on each end of a transcriber's note.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term12">
+    <Terms>
+      <Term>Sticky Document Information</Term>
+    </Terms>
+    <Definition
+      Link="">This  is configuration information which is stored with an individual document. DBT documents contain Sticky Document Information such as Embosser Setup, Printer Setup, and other settings that can be changed through the Document menu. Templates also contain Sticky Document 
+ Information.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term13">
+    <Terms>
+      <Term>Binding Margin</Term>
+    </Terms>
+    <Definition
+      Link="">A binding margin is the vertical space without any text, on each page, used for stitching, 
+drilling or whatever method is used to hold the pages together. The binding margin is measured in characters or braille cells on an embosser, or in inches or millimeters on a printer. For single-sided work, the binding margin is the same thing as the left margin. For interpoint braille output, the binding margin is also the right margin on the back side of each sheet.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term14">
+    <Terms>
+      <Term>Reference Page Number(s)</Term>
+    </Terms>
+    <Definition
+      Link="">These are page numbers that refer to the numbers of  an original document. Most commonly, reference page numbers are page numbers in a braille document that refer back to the print page numbers.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term15">
+    <Terms>
+      <Term>Style(s)</Term>
+    </Terms>
+    <Definition
+      Link="">A group of formatting and/or translation codes with a descriptive label, such as 'Poem' or 'List'</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term16">
+    <Terms>
+      <Term>Serial Port</Term>
+    </Terms>
+    <Definition
+      Link="">A type of port that is often used to communicate between a computer and modem, a computer and a printer or embosser, or between two computers. Serial ports are very occasionally used to connect a mouse to the computer. Your computer may have as many as four serial ports: COM1, COM2, COM3, 
+ and COM4.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="PrintGlossary.Term17">
+    <Terms>
+      <Term>Parallel Port</Term>
+    </Terms>
+    <Definition
+      Link="">A parallel, or Centronics port is the most common type of port used to connect IBM PC computers to printers and embossers. Your computer may have as many as three parallel ports: LPT1, LPT2, and LPT3.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="First Draft,Added To TOC,Links,Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="733" MadCap:lastWidth="627">
+    <head><title>Invert Capitals (For Computer Braille only)</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Capitals:Invert;Invert:Capitals" />Invert Capitals (For Computer Braille only)</h4>
+        <p class="Normal"><b>What you need to know first:</b> The rules and Code of Computer Braille vary from country to country.</p>
+        <p class="bold">Code Used: <span class="Code-DuxCode">[cap-invert]</span> and<span class="Code-DuxCode">[cap-normal]</span></p>
+        <p>>Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">In some flavors of Computer Braille, Capital Letters are the normal, hence the default is to indicate Lower Case letters, and only use the Capital indicator when going from Lower to Upper Case. This code causes inverted treatment of Capitals in Computer Braille.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Very rarely, and only on specific request.</p>
+        <p class="bold">Usage in DBT: (NOTE: The following example shows British Computer Braille)</p>
+        <p><span class="Code-DuxCode">[es~compinline][cap-invert]</span><span class="Code-DuxScreen">Support@Duxsys.com</span><span class="Code-DuxCode">[cap-normal][ee~compinline]</span>
+        </p>
+        <p><span class="Code-DuxCode">[es~compinline]</span><span class="Code-DuxScreen">Support@Duxsys.com</span><span class="Code-DuxCode">[ee~compinline]</span>
+        </p>
+        <p class="bold">Produces in braille:</p>
+        <p class="Simbraille">,+,s;upport!,d;uxsys4com,+</p>
+        <p class="Simbraille">,+s;upport!,d;uxsys4com,+</p>
+        <p class="bold">Let us explain:</p>
+        <p>In British Computer Braille upper case is assumed to be the default. Therefore when we invert the process a <a href="../../../POPUPS/capital_sign.htm" target="_popup">Capital Sign</a> (Dot 6) will appear as at the start of the first example. Dots 5,6 indicates reversion to lower case.</p>
+        <p>There is no initial dot 6 in the second (normal) line because it begins with a Capital Letter.</p>
+    </body>
+</html>

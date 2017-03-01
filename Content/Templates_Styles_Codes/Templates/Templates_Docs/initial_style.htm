@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="First Draft,Added To TOC,Ran Smart Index" MadCap:lastBlockDepth="4" MadCap:lastHeight="2681" MadCap:lastWidth="668">
+    <head><title>The "initial" Style</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Initial (Style);Styles:Initial" />The "initial" Style</h4>
+        <p class="Normal">(This important Topic appears in both the Styles and Templates sections)</p>
+        <p class="Normal">When you create a DBT Template, you may wish that Template to perform in a certain way. You can therefore use a special Style called "<span class="Keyboard">initial</span>" which will apply to the Template.</p>
+        <p class="Normal">This feature is probably easiest to explain by example.</p>
+        <p class="Normal">Let us suppose we wish to create a Template whereby any file we import, will be translated into Grade 1 braille. However, in all other respects, we wish our Template to work in exactly the same way as the "English (American) - Standard Literary Format".</p>
+        <ul>
+            <li class="Normal">From the File menu, Open a new file using that Template.</li>
+            <li class="Normal">Open the Document menu and select Add Style.</li>
+            <li class="Normal">
+                <MadCap:keyword term="Templates:Initial Style" />If you are not using the Template mentioned above, look at the "Choose Style for basis:" list box to see if an initial Style already exists. If it does, follow the next step anyway. (See <a href="#NOTE">Note</a> below)</li>
+            <li class="Normal">In the "New Style Name:" dialog that comes up, type <span class="Keyboard">initial</span> and click on OK.</li>
+        </ul>
+        <p class="Normal" style="text-align: center;" align="center">
+            <img src="../../../Resources/Images/codes_styles_templates/templates/document_add_style.gif" alt="Image shows a section of the Document: Add Style dialog" style="width: 275px; height: 193px;" width="275" height="193" border="1" />
+        </p>
+        <ul>
+            <li class="Normal">A dialog will come up called "Edit Style Codes"</li>
+            <li class="Normal">In the "Beginning Codes:" text box of this dialog enter the codes to produce Grade 1 braille. <span class="Code-DuxCode"> [tx][g1]</span></li>
+        </ul>
+        <p class="Normal" style="text-align: center;" align="center">
+            <img src="../../../Resources/Images/codes_styles_templates/templates/edit_style_codes.gif" alt="image shows the Edit Style Codes dialog" style="width: 582px; height: 278px;" width="582" height="278" border="0" />
+        </p>
+        <ul>
+            <li class="Normal">Click on the OK button, which will return you to your blank document.</li>
+            <li class="Normal">Open the Document Menu again, and select "Create Template"</li>
+            <li class="Normal">In the "Create New Template:" text box, type an appropriate name. For example "Grade 1 - Standard Literary", and click the OK button.</li>
+        </ul>
+        <p class="Normal" style="text-align: center;" align="center">
+            <img src="../../../Resources/Images/codes_styles_templates/templates/document_create_template.jpg" alt="Image shows a section of the Document: Create Template doalog" style="width: 315px; height: 222px;" width="315" height="222" border="1" />
+        </p>
+        <ul>
+            <li class="Normal">You may now go to the File menu and close the document.</li>
+        </ul>
+        <p class="Normal">When you now <b>Import</b> or create a <b>New</b> file, you will find that the Template you have created is listed. (In alphabetical order)</p>
+        <p class="Normal" style="text-align: center;" align="center">
+            <img src="../../../Resources/Images/codes_styles_templates/templates/import_file.gif" alt="Image shows the Import File dialog with the &quot;Grade 1 - Standard Literary&quot; Template name in the Template list." style="width: 317px; height: 233px;" width="317" height="233" border="0" />
+        </p>
+        <p class="Normal" style="text-align: center;" align="center">
+            <img src="../../../Resources/Images/codes_styles_templates/templates/file_new.gif" alt="Image shows the File: New dialog with the &quot;Grade 1 - Standard Literary&quot; Template name in the Template list." style="width: 346px; height: 283px;" width="346" height="283" border="0" />
+        </p>
+        <p class="Normal">However, when you now Translate, you will find that the Braille document is in Grade 1 braille.</p>
+        <br />
+        <p class="Normal" style="font-weight: bold;font-size: 14pt;"><a name="NOTE"></a>NOTE: (Hopefully this will give you some idea of this feature's potential)</p>
+        <p class="Normal">In some Templates, an <b>initial</b> style already exists. A good example of this is "English (British - no capitals in literary", where you will see that the initial Style already exists as shown below. (Except for the <span class="Code-DuxCode">[tx]</span> and <span class="Code-DuxCode">[g1]</span> codes)</p>
+        <p class="Normal" style="text-align: center;" align="center">
+            <img src="../../../Resources/Images/codes_styles_templates/templates/edit_style_codes_uk.gif" alt="Image shows the Edit Style Codes dialog as described in this section." style="width: 582px; height: 278px;" width="582" height="278" border="0" />
+        </p>
+        <p class="Normal">So just what do these codes mean?</p>
+        <p class="Normal"><span class="Code-DuxCode">[svant3]</span> sets running header on both pages if used.</p>
+        <p class="Normal"><span class="Code-DuxCode">[svdac~1]</span> determines the decimal separator where numbers are used.</p>
+        <p class="Normal"><span class="Code-DuxCode">[svles1:1:0]</span> sets default reference page number treatment.</p>
+        <p class="Normal"><span class="Code-DuxCode">[caplv1]</span> suppresses capitals in the literary braille only.</p>
+        <p class="Normal">By adding the <span class="Code-DuxCode">[tx]</span> and <span class="Code-DuxCode">[g1]</span> codes, as explained above, any imported or new document will be translated using Grade 1.</p>
+    </body>
+</html>

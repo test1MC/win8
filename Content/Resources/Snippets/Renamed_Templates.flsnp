@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="497" MadCap:lastWidth="617">
+    <head>
+    </head>
+    <body>
+        <table style="width: 100%;border-top-left-radius: 1px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;margin-left: auto;margin-right: auto;">
+            <caption>Renamed Templates</caption>
+            <col style="width: 219pt;" />
+            <col style="width: 238pt;" />
+            <thead>
+                <tr>
+                    <th>Old Template Name</th>
+                    <th>New Template Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="p_2">English (American Textbook DE) - BANA Nemeth</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (BANA Pre-UEB Textbook DE) - BANA Nemeth</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (American Textbook DE) - BANA</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (BANA Pre-UEB Textbook DE) - BANA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (American Textbook DE) - Textbook Format</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (BANA Pre-UEB Textbook DE) - Textbook Fmt</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (American) - Standard Literary Format</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (BANA Pre-UEB) - Literary Format</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (American) - XML (Daisy-NISO-NIMAS)</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (BANA Pre-UEB) - XML (Daisy-NISO-NIMAS)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (British) - no capitals in literary</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (British Pre-UEB) - no caps in literary</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (British) - with capitals</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (British Pre-UEB) - with capitals</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (Unified) - Australian formatting</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (UEB) - Australian formatting</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (Unified) - BANA</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (UEB) - BANA</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (Unified) - basic</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (UEB) - basic</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">English (Unified) - UK formatting</p>
+                    </td>
+                    <td>
+                        <p class="p_2">English (UEB) - UK formatting</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_2">Cymraeg (Welsh) - basic no capitals</p>
+                    </td>
+                    <td>
+                        <p class="p_2">Cymraeg (Welsh) - UK Formatting</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

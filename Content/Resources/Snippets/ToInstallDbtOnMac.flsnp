@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p MadCap:conditions="Primary.Mac_Version">To install DBT on the Macintosh computer, one begins by downloading its "disk image" file from Duxbury Systems or your dealer. After completing the download, you will see a new DBT volume in the Downloads folder in your Macintosh dock. (Look for a DBT file with the ".dmg" suffix.) Click to open it.</p>
+        <p MadCap:conditions="Primary.Mac_Version">The click displays a simple Finder window showing a folder named "Applications" and an icon of your new DBT. The folder is a direct link to the Applications folder on your computer. Simply drag the DBT icon into that folder, and your DBT will be installed in the Applications folder on your Mac. That is all there is to installation.</p>
+        <p MadCap:conditions="Primary.Mac_Version">Once you have installed DBT, you can close the DBT window and drag the DBT volume on your desktop to the "Trash." That will eject the volume, but you will still find it, if needed, by re-opening "Downloads" in your dock.</p>
+        <p MadCap:conditions="Primary.Mac_Version">When run, DBT itself will install configuration data and a few supporting tools in standard locations on your Macintosh computer. </p>
+    </body>
+</html>

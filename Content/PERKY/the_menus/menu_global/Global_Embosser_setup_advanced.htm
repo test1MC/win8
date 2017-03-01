@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1951" MadCap:lastWidth="755" MadCap:onlyLocalStylesheets="True">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3>Global: Embosser Setup: Advanced.</h3>
+        <p>When you select "Advanced" from the Tri-pane window, the following
+dialog will appear.</p>
+        <p><b>WARNING: Do not make any changes to this dialog unless you know precisely
+what you are doing!</b>
+        </p>
+        <p>With the vast majority of Brailler Devices, you will not require to make any
+changes to this dialog unless specifically advised by either Duxbury Systems
+Inc. or your embosser manufacturer.</p>
+        <p>However if you are faced with a device which is unlisted or unknown to Perky
+Duck, you may find this useful in some areas.</p>
+        <p><a href="..\..\the_menus\MENU_GLOBAL\global_embosser_setup.htm">Return
+to Embosser Setup Topic</a> (or continue at your peril!)</p>
+        <p>This dialog contains three tabs. "<a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_advanced.htm">General</a>",
+"<a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_settings.htm">Device
+Settings</a>" and "<a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_advanced.htm">Advanced</a>".</p>
+        <p align="center" style="text-align: center;">
+            <img border="0" src="menu_global_embosser_setup_advanced.jpg" alt="Image shows Global Embosser Setup, Advanced Dialog." />
+        </p>
+        <p align="center" style="text-align: center;">&#160;</p>
+        <p><b>Job Setup</b> - checking the "Use custom job setup" check box
+allows you to enable "Job start codes" and "Job end codes",
+described below.</p>
+        <p><b>Job start codes:</b> Text that you type here will be sent to the embosser
+<i>after</i> any setup sequence (e.g. escape codes) that Perky Duck normally
+sends when starting to emboss. The additional text that you add to the setup
+sequence may be used for any purpose. However, it is best to avoid using this
+feature to redefine the form length, the braille cell size, or the interline
+spacing of the braille. Any change to these characteristics will not be
+recognized by Perky Duck, and so Perky Duck will not create a document properly
+formatted for the page. Text that you type here may be any printable ASCII
+character (including space, but excluding less-than and greater-than), or any
+of the following special sequences: </p>
+        <ul type="disc">
+            <li>&lt;esc&gt; Escape (ASCII 27) </li>
+        </ul>
+        <ul type="disc">
+            <li>&lt;lf&gt; Line Feed (ASCII 10)
+     </li>
+        </ul>
+        <ul type="disc">
+            <li>&lt;ff&gt; Form Feed (ASCII 12)
+     </li>
+        </ul>
+        <ul type="disc">
+            <li>&lt;cr&gt; Carriage Return
+ (ASCII 13) </li>
+        </ul>
+        <ul type="disc">
+            <li>&lt;ctrl-@&gt; NUL (ASCII 0) </li>
+        </ul>
+        <ul type="disc">
+            <li><span lang="ES-CO">&lt;ctrl-A&gt;
+ Control-A (ASCII 1)<br />     ... </span>
+            </li>
+        </ul>
+        <ul type="disc">
+            <li><span lang="ES-CO">&lt;ctrl-Z&gt;
+ Control-Z (ASCII 26) </span>
+            </li>
+        </ul>
+        <ul type="disc">
+            <li>&lt;lt&gt; Less-than (ASCII 60)
+     </li>
+        </ul>
+        <ul type="disc">
+            <li>&lt;gt&gt; Greater-than (ASCII
+ 62) </li>
+        </ul>
+        <p><b>Job end codes:</b> Text that you type here will be sent to the embosser <i>before</i>
+any job-ending sequence (e.g. escape codes) that Perky Duck sends on its own.
+Text may contain the same ASCII printable characters and special sequences as
+are defined for Job start codes. Job end codes are often left blank even when
+Job start codes are used.</p>
+        <p>A user of the Gemini embosser might enter &lt;esc&gt;&lt;esc&gt;Q to enable
+double-sized interline print and/or &lt;esc&gt;&lt;esc&gt;D to enable
+double-striking of the braille. Note that neither of these changes affects the
+form size or the layout of the braille on the form.</p>
+        <div class="MsoNormal" align="center" style="text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+        <p><b>End of line and page</b> - These options control what device Control
+Codes are produced at the ends of lines and pages.</p>
+        <p><b>End of line indicator:</b> Normally Perky Duck will send a CR/LF Control
+Code at the end of each line. However, if you have opted to <a href="Global_Embosser_setup_general.htm#write_to_file">Write
+to file</a>, with a view to processing that file on a non-Windows or non-Perky
+Duck system, you may make an appropriate selection here.</p>
+        <p><b>End of page indicator:</b> As with End of line indicators, you may wish
+to select a more suitable option here.</p>
+        <p><b>EOL on a full line:</b> Check this box if you wish to add an End of Line
+Code even when the line contains as many braille cells as the embosser will
+support. Many embossers automatically skip to the beginning of the next line in
+this circumstance, so it can be important to leave this option un-checked.</p>
+        <p><b>EOP on a full page:</b> Check this box if you wish to add an End of Page
+Code even when all possible lines contain braille. Many embossers automatically
+skip to the top of the next page in this circumstance, so it can be important
+to leave this option un-checked.</p>
+        <p><b>Pad lines:</b> Some devices need to see at least a few characters on each
+line. Checking this box will therefore cause spaces to be added at the end of
+any lines that are blank or very short. </p>
+        <p><b>Prompt for new sheet:</b> Checking this box causes Perky Duck to pause
+after each page has been sent to the Braille Device. This can be useful if for
+any reason you have to feed each page of material manually into the device.</p>
+        <div class="MsoNormal" align="center" style="text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+        <p><b>Timing:</b> This is a highly technical area, but basically it controls
+how long Perky Duck waits after sending a text character or control character.
+It is enabled only when "Write to Port" is selected in the <a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_general.htm">General
+tab</a>. Perky Duck normally maintains Timing values as is appropriate for the
+device and port you select; you should only change these values if you are
+having extreme difficulty interfacing a device.</p>
+    </body>
+</html>

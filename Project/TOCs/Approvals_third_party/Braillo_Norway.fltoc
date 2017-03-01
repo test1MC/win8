@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="DBT The Menus (Windows)"
+    Link="/Content/PRINT_VERSIONS/Title_Page_Embossers.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/PRINT_VERSIONS/Embosser_Intro.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/contents.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Computer Ports, USB and Embossers"
+    Link="/Content/embossers_and_embossing/Embossers/ports.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Control Codes (Summary)"
+    Link="/Content/embossers_and_embossing/Codes/control_codes.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="../../../Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl">
+    <TocEntry
+      Title="Term definition for: 13_n"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13_n.htm" />
+    <TocEntry
+      Title="Term definition for: 13.5_d"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13.5_d.htm" />
+    <TocEntry
+      Title="Term definition for: 12_w"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_w.htm" />
+    <TocEntry
+      Title="Term definition for: 0.50 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/0.50 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 0.75 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/0.75 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 1.00 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.00 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 1.25 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.25 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 1.50 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.50 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 1.75 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/1.75 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 2.00 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.00 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 2.25 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.25 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 2.50 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.50 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 2.75 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/2.75 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 3.00 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.00 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 3.25 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.25 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 3.50 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.50 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 3.75 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/3.75 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 4.00 inch label"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Labels/4.00 inch label.htm" />
+    <TocEntry
+      Title="Term definition for: 10_d"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/10_d.htm" />
+    <TocEntry
+      Title="Term definition for: 10_n"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/10_n.htm" />
+    <TocEntry
+      Title="Term definition for: 10_w"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/10_w.htm" />
+    <TocEntry
+      Title="Term definition for: 11_d"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_d.htm" />
+    <TocEntry
+      Title="Term definition for: 11_gem"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_gem.htm" />
+    <TocEntry
+      Title="Term definition for: 11_n"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_n.htm" />
+    <TocEntry
+      Title="Term definition for: 11_vw"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_vw.htm" />
+    <TocEntry
+      Title="Term definition for: 11_w"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/11_w.htm" />
+    <TocEntry
+      Title="Term definition for: 12_d"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_d.htm" />
+    <TocEntry
+      Title="Term definition for: 12_n"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_n.htm" />
+    <TocEntry
+      Title="Term definition for: 12_vw"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_vw.htm" />
+    <TocEntry
+      Title="Term definition for: 12_w"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_w.htm" />
+    <TocEntry
+      Title="Term definition for: 12_vw"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_vw.htm" />
+    <TocEntry
+      Title="Term definition for: 12_w"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/12_w.htm" />
+    <TocEntry
+      Title="Term definition for: 13.5_d"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13.5_d.htm" />
+    <TocEntry
+      Title="Term definition for: 13_d"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13_d.htm" />
+    <TocEntry
+      Title="Term definition for: 13_w"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/13_w.htm" />
+    <TocEntry
+      Title="Term definition for: A3_foilo"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/A3_foilo.htm" />
+    <TocEntry
+      Title="Term definition for: A4"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/A4.htm" />
+    <TocEntry
+      Title="Term definition for: AdditionalDelay"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/AdditionalDelay.htm" />
+    <TocEntry
+      Title="Term definition for: Baud"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Baud.htm" />
+    <TocEntry
+      Title="Term definition for: BrailleOnly"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/BrailleOnly.htm" />
+    <TocEntry
+      Title="Term definition for: BrailloHGapGraphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/BrailloHGapGraphics.htm" />
+    <TocEntry
+      Title="Term definition for: BrailloVGapGraphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/BrailloVGapGraphics.htm" />
+    <TocEntry
+      Title="Term definition for: BreakLimits"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/BreakLimits.htm" />
+    <TocEntry
+      Title="Term definition for: CanDoInterpoint"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/CanDoInterpoint.htm" />
+    <TocEntry
+      Title="Term definition for: ControlD"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ControlD.htm" />
+    <TocEntry
+      Title="Term definition for: ControlDelay"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ControlDelay.htm" />
+    <TocEntry
+      Title="Term definition for: ControlZ"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ControlZ.htm" />
+    <TocEntry
+      Title="Term definition for: CrMac"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/CrMac.htm" />
+    <TocEntry
+      Title="Term definition for: Customize"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Customize.htm" />
+    <TocEntry
+      Title="Term definition for: DataBits"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/DataBits.htm" />
+    <TocEntry
+      Title="Term definition for: DoublePage"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/DoublePage.htm" />
+    <TocEntry
+      Title="Term definition for: Driver"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Driver.htm" />
+    <TocEntry
+      Title="Term definition for: Encoding"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Encoding.htm" />
+    <TocEntry
+      Title="Term definition for: EndofPage"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/EndofPage.htm" />
+    <TocEntry
+      Title="Term definition for: ETCAllowEscapeCodes"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ETCAllowEscapeCodes.htm" />
+    <TocEntry
+      Title="Term definition for: ETMediumResGraphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ETMediumResGraphics.htm" />
+    <TocEntry
+      Title="Term definition for: ETHighResGraphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ETHighResGraphics.htm" />
+    <TocEntry
+      Title="Term definition for: ETmulti"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ETmulti.htm" />
+    <TocEntry
+      Title="Term definition for: ETSpeaks"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ETSpeaks.htm" />
+    <TocEntry
+      Title="Term definition for: fDtrControl"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fDtrControl.htm" />
+    <TocEntry
+      Title="Term definition for: fDsrSensitivity"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fDsrSensitivity.htm" />
+    <TocEntry
+      Title="Term definition for: fInx"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fInx.htm" />
+    <TocEntry
+      Title="Term definition for: Form"
+      Link="/Content/embossers_and_embossing/Codes/Codes_Forms/Form.htm" />
+    <TocEntry
+      Title="Term definition for: fOutX"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fOutX.htm" />
+    <TocEntry
+      Title="Term definition for: fOutxCtsFlow"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fOutxCtsFlow.htm" />
+    <TocEntry
+      Title="Term definition for: fOutxDsrFlow"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fOutxDsrFlow.htm" />
+    <TocEntry
+      Title="Term definition for: fRtsControl"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fRtsControl.htm" />
+    <TocEntry
+      Title="Term definition for: fTXContinueOnOff"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/fTXContinueOnOff.htm" />
+    <TocEntry
+      Title="Term definition for: Handshaking"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Handshaking.htm" />
+    <TocEntry
+      Title="Term definition for: HardwareDCB"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/HardwareDCB.htm" />
+    <TocEntry
+      Title="Term definition for: HelpPage"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/HelpPage.htm" />
+    <TocEntry
+      Title="Term definition for: Index16Graphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Index16Graphics.htm" />
+    <TocEntry
+      Title="Term definition for: Index20Graphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Index20Graphics.htm" />
+    <TocEntry
+      Title="Term definition for: IndexMulti"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexMulti.htm" />
+    <TocEntry
+      Title="Term definition for: IndexPageInch"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexPageInch.htm" />
+    <TocEntry
+      Title="Term definition for: IndexPagemm"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexPagemm.htm" />
+    <TocEntry
+      Title="Term definition for: IndexVersions"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexVersions.htm" />
+    <TocEntry
+      Title="Term definition for: IndexZfold"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/IndexZfold.htm" />
+    <TocEntry
+      Title="Term definition for: IniFile"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/IniFile.htm" />
+    <TocEntry
+      Title="Term definition for: Interline"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Interline.htm" />
+    <TocEntry
+      Title="Term definition for: LessLinesInterpoint"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/LessLinesInterpoint.htm" />
+    <TocEntry
+      Title="Term definition for: LettersUpperCase"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/LettersUpperCase.htm" />
+    <TocEntry
+      Title="Term definition for: LfUnix"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/LfUnix.htm" />
+    <TocEntry
+      Title="Term definition for: LinesPadded"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/LinesPadded.htm" />
+    <TocEntry
+      Title="Term definition for: LineWrap"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/LineWrap.htm" />
+    <TocEntry
+      Title="Term definition for: ManualInterpoint"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/ManualInterpoint.htm" />
+    <TocEntry
+      Title="Term definition for: MaximumCells"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/MaximumCells.htm" />
+    <TocEntry
+      Title="Term definition for: MaximumLines"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/MaximumLines.htm" />
+    <TocEntry
+      Title="Term definition for: NarrowWarning"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NarrowWarning.htm" />
+    <TocEntry
+      Title="Term definition for: nbp"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/nbp.htm" />
+    <TocEntry
+      Title="Term definition for: NoLeftMargin"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NoLeftMargin.htm" />
+    <TocEntry
+      Title="Term definition for: NoMakeupSides"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NoMakeupSides.htm" />
+    <TocEntry
+      Title="Term definition for: NoParallel"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NoParallel.htm" />
+    <TocEntry
+      Title="Term definition for: NoRightMargin"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NoRightMargin.htm" />
+    <TocEntry
+      Title="Term definition for: NoSerial"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NoSerial.htm" />
+    <TocEntry
+      Title="Term definition for: NoTopMargin"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/NoTopMargin.htm" />
+    <TocEntry
+      Title="Term definition for: OneByOne"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/OneByOne.htm" />
+    <TocEntry
+      Title="Term definition for: PageWrap"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/PageWrap.htm" />
+    <TocEntry
+      Title="Term definition for: Parity"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Parity.htm" />
+    <TocEntry
+      Title="Term definition for: PortCloseSyncCount"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/PortCloseSyncCount.htm" />
+    <TocEntry
+      Title="Term definition for: PlateLoadByte"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/PlateLoadByte.htm" />
+    <TocEntry
+      Title="Term definition for: PortCloseSyncByte"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/PortCloseSyncByte.htm" />
+    <TocEntry
+      Title="Term definition for: PortCloseSyncPrompt"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/PortCloseSyncPrompt.htm" />
+    <TocEntry
+      Title="Term definition for: PromptNewPage"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/PromptNewPage.htm" />
+    <TocEntry
+      Title="Term definition for: SinglePage"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/SinglePage.htm" />
+    <TocEntry
+      Title="Term definition for: SinglePage"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/SinglePage.htm" />
+    <TocEntry
+      Title="Term definition for: SoftwareDCB"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/SoftwareDCB.htm" />
+    <TocEntry
+      Title="Term definition for: SortToTop"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/SortToTop.htm" />
+    <TocEntry
+      Title="Term definition for: StartLeftMargin"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/StartLeftMargin.htm" />
+    <TocEntry
+      Title="Term definition for: StopBits"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/StopBits.htm" />
+    <TocEntry
+      Title="Term definition for: Submodel"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/Submodel.htm" />
+    <TocEntry
+      Title="Term definition for: UsingEscapeCodes"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/UsingEscapeCodes.htm" />
+    <TocEntry
+      Title="Term definition for: VPGraphics"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/VPGraphics.htm" />
+    <TocEntry
+      Title="Term definition for: VPmulti"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/VPmulti.htm" />
+    <TocEntry
+      Title="Term definition for: WindowsDriverName"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/WindowsDriverName.htm" />
+    <TocEntry
+      Title="Term definition for: YesFTDI"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/YesFTDI.htm" />
+    <TocEntry
+      Title="Term definition for: YesUSB"
+      Link="/Content/embossers_and_embossing/Codes/Codes_General/YesUSB.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Braille Embossers Supported by Duxbury"
+    Link="/Content/embossers_and_embossing/Embossers/embosser_list.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="../../../Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="Braillo 30"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_30.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 30"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_30.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 40/50"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_40_50.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 40/50"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_40_50.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 200"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_200.htm">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Braillo_200.htm" />
+      <TocEntry
+        Title="Control File listing for: Braillo 200"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_200.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 200/400 with 270 style ROMs"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_200_400_with_270_style_ROMs.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 200/400 with 270 style ROMs"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_200_400_with_270_style_ROMs.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 270"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_270.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 270"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_270.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 300"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_300.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 300"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_300.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 400S"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_400_S.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 400S"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_400S.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 400SR"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_400_SR.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 400SR"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_400SR.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 440 S&amp;F"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_440_SaF.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 440 S&amp;F"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_440_SaF.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 440 SW"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_440_SW.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 440 SW"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_440_SW.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 600SR"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_600_SR.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 600SR"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_600SR.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 650 S&amp;F"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_650_SF.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 650 S&amp;F"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_650_SaF.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo 650 SW"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_650_SW.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Control File listing for: Braillo 650 SW"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_650_SW.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Braillo Comet"
+      Link="/Content/embossers_and_embossing/Embossers/Braillo_Comet.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Technical Tips for this Embosser"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/ztech_Braillo_Comet.htm" />
+      <TocEntry
+        Title="Control File listing for: Braillo Comet"
+        Link="/Content/embossers_and_embossing/Embossers_elt_info/Braillo_Comet.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Index"
+    Link="../../../Content/PRINT_VERSIONS/Print_The_Menus/Print_Index.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="../../../Content/Resources/PageLayouts/Index.flpgl" />
+  <TocEntry
+    Title="Back_Page"
+    Link="../../../Content/PRINT_VERSIONS/Back_Page.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="../../../Content/Resources/PageLayouts/Cover_Print.flpgl" />
+</CatapultToc>

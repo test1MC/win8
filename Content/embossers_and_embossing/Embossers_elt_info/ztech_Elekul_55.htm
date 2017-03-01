@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="3091" MadCap:lastWidth="596" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <heading><title>Technical Tips for this Embosser</title>
+    </heading>
+    <body>
+        <h2 class="NoNewPage">Technical Tips for this Embosser</h2>
+        <p><a href="../Embossers/ports.htm">General Advice about Computer Ports: Serial. Parallel. USB. and Network</a>
+        </p>
+        <p>The Elekul 55 has a serial port. Use a straight through cable to connect the PC with the embosser.</p>
+        <p>The recommended baud rate is 19200 baud. Set this with a dip switch on the embosser. The Elekul is always set for 8 data bits. 1 stop bit. software handshaking and no parity. There are special parameters for the serial connection which are set by the emb.elt file.</p>
+        <p class="bold">Additional Notes on the Elekul 55</p>
+        <p>The main way that DBT figures out how to send data to the embosser is a file called EMB.ELT. For the Interpoint 55. you will see a long list of different forms. Each form can be thought of as a different size of paper.</p>
+        <p>Each of the form names in the EMB.ELT file for the Interpoint 55 is associated with different Interpoint 55 .INI file. For example. let's say you had a new .INI file you wanted to support called FRED.INI. You need to add a new line in the EMB.ELT file using the form name of FRED. Make sure the file FRED.INI is in the DBT subdirectory DRIVERS\PRINT55 (such as C:\DUXBURY\DRIVERS\PRINT55).</p>
+        <p class="bold">Issues in Creating INI files</p>
+        <p>The Interpoint NV company recommends using PRINT55 as a means of creating the .INI files. We used a batch file. Here is part of it:</p>
+        <p class="CourierPara">print55 @11_w.ini /DS /CPL:41 /LPP:31 /TM:0 /LM:2 /RM:1 /FOLD:0 /MIR:0 /INI</p>
+        <p class="CourierPara">print55 @11_n.ini /DS /CPL:30 /LPP:31 /TM:0 /LM:2 /RM:1 /FOLD:0 /MIR:0 /INI</p>
+        <p class="CourierPara">print55 @11_d.ini /DS4 /CPL:41 /LPP:31 /TM:0 /LM:2 /RM:1 /FOLD &#160;&#160;/MIR &#160;/INI</p>
+        <p class="CourierPara">print55 @11_nd.ini /DS4 /CPL:30 /LPP:31 /TM:0 /LM:2 /RM:1 /FOLD &#160;&#160;/MIR &#160;/INI</p>
+        <p>Once the print55 program reads in a .INI file. makes corrections from the command line and then saves the results. it always puts in the full path name of the table file. This can interfere with DBT. You probably want to be able to copy all the files in the PRINT55 directory to different places. depending on how you install the software. We carefully remove the full path (leaving the directory name) in the supplied .INI files. We recommend you do the same. After print55 has modified the files. edit them (or use a global replace program) to just leave the file name.</p>
+        <p>You will notice that all of the .INI files use the USA1_6 conversion table. This just means that this is the way that DBT communicates with the Interpoint 55. If you are doing Spanish braille in DBT. DBT will encode the material correctly so that you get Spanish braille on the Interpoint 55. For this to happen. leave all the tables with USA1_6. Using a different encoding table will cause scrambled braille.</p>
+        <p>You will notice that the tables are a bit imprecise about the form length. The form length of Interpoint 55 output is determined by the width of the paper rolls. Once you know how many lines you want. tell DBT what the maximum is. For the sake of convenience. we tell the Interpoint 55 to be able to output to the maximum dimensions.</p>
+        <p>The width is more critical. because that determines how the paper is cut. Changing the margins and the embossing width of the output is a real reason to create your own .INI files. Add the margins to the carriage width to get the total number of characters. For wide paper. we use 44 characters. Each character is 16 steps on the motor. each step is .3927mm when the roller is new. Thus. the carriage width is 704 steps or 276.44 mm (10.8 inches). The number for narrow paper works out to 8.16 inches. These widths may be up to 3% less if the roller is worn down in need of replacement.</p>
+        <p>Documentation supplied by Interpoint NV on command line syntax:</p>
+        <p class="bold">Syntax for Print55 program used by the ELEKUL 55 double sided Braille embosser.</p>
+        <p class="CourierPara">Syntax:</p>
+        <p class="CourierPara">Print55 [filename(s)] /? /H /V /VERSO /RECTO /DS /DS4:n /FOLD:n /RAW<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/INI /LM:n /RM:n /TM:n /CPL:n /LPP:n /TAB:filename /MIR<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/COMn:baud.word.stop.parity /LPTn /FILE:filename /X:n /SL:n<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/DIS:n /SKIP:n.m /VSHIFT:n /BIND:n.o.w /ELE03:n /BATCH:n<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@file.ini -list.ext</p>
+        <p class="CourierPara">[filename(s)] &#160;&#160;: Filename. use complete path names. wild cards allowed</p>
+        <p class="CourierPara">/? /H &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: this help screen</p>
+        <p class="CourierPara">/V &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Verbose: give detailed information</p>
+        <p class="CourierPara">/VERSO &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Single sided. verso</p>
+        <p class="CourierPara">/RECTO &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Single sided. recto</p>
+        <p class="CourierPara">/DS &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Double sided. single pages</p>
+        <p class="CourierPara">/DS4 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Double sided. quires (magazine style)</p>
+        <p class="CourierPara">/DS4:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Double sided. quires with n pages (book style)</p>
+        <p class="CourierPara">/FOLD(:n) &#160;&#160;&#160;&#160;&#160;&#160;: Adds fold (dots) in middle of double sided pages&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(/FOLD = On. /FOLD:0 = Off)</p>
+        <p class="CourierPara">/RAW &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Send directly to output port</p>
+        <p class="CourierPara">/INI &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Save settings in PRINT55.INI</p>
+        <p class="CourierPara">/LM:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Left margin. n characters wide</p>
+        <p class="CourierPara">/RM:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Right margin. n characters wide</p>
+        <p class="CourierPara">/TM:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Top margin. n characters wide</p>
+        <p class="CourierPara">/CPL:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: n characters per line</p>
+        <p class="CourierPara">/LPP:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: n lines per page</p>
+        <p class="CourierPara">/TAB:filename &#160;&#160;: Conversion table. (use full path names)</p>
+        <p class="CourierPara">/MIR(:n) &#160;&#160;&#160;&#160;&#160;&#160;&#160;: Mirror margins (only applies for DS4) (/MIR:0 = Off)</p>
+        <p class="CourierPara">/COMn:b.w.s.p &#160;&#160;: Print to serial port (E.g.: /COM1:19200.8.1.N)</p>
+        <p class="CourierPara">/LPTn &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Print to parallel port (E.g.: LPT3)</p>
+        <p class="CourierPara">/FILE:filename &#160;: Print to file (use full path names)</p>
+        <p class="CourierPara">/X:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Number of copies</p>
+        <p class="CourierPara">/DIS(:n) &#160;&#160;&#160;&#160;&#160;&#160;&#160;: Disable embosser between multiple texts (/DIS:0 = Off)</p>
+        <p class="CourierPara">/SL:n &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Screen lines (E.g.: /SL:25. /SL:43. /SL:50)</p>
+        <p class="CourierPara">/SKIP:n.m &#160;&#160;&#160;&#160;&#160;&#160;: Insert m empty text lines at line n.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Can be used to fold the text.</p>
+        <p class="CourierPara">/VSHIFT:n &#160;&#160;&#160;&#160;&#160;&#160;: Shift page vertically by n dot rows<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(default 0. maximum 3)</p>
+        <p class="CourierPara">/BIND:n.o.w &#160;&#160;&#160;&#160;: Add binding relief: offset from left margin=o dot cols<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;width=w dot cols<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(/BIND:1.0.3 = On. Offset:0. width:3. /BIND:0 = Off)</p>
+        <p class="CourierPara">/ELE03(:n) &#160;&#160;&#160;&#160;&#160;: Interprete input text as ELE03 embosser data<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(/ELE03 = On. /ELE03:0 = Off)</p>
+        <p class="CourierPara">/BATCH(:n) &#160;&#160;&#160;&#160;&#160;: Batch processing (program does not wait for key press)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(/BATCH = On. /BATCH:0 = Off)</p>
+        <p class="CourierPara">@name &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;: Use alternate ini file to load/save initial values<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;By default Print55.ini will be used.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;File must reside in print55 directory.</p>
+        <p class="CourierPara">-list.ext &#160;&#160;&#160;&#160;&#160;&#160;: ASCII file that contains a list of files to be printed<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Each line in the file contains the name of a single file<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;to be printed. Options may also be included: only one<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;option per line. Lines preceeded by a ; are ignored.</p>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Tabs" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="5" MadCap:lastHeight="628" MadCap:lastWidth="625">
+    <head><title>Tabulation</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h2 MadCap:conditions="Primary.Not_in_Print_Docs">Tabulation</h2>
+        <p>Tabulation may appear to be a complex Topic, but taken a stage at a time, follows a logical pattern. It is often quite an important part of laying out a braille document correctly.</p>
+        <p>
+            <MadCap:keyword term="Tabs" />It is important to appreciate how tabs work.</p>
+        <p>First, there are Default Tabs, set at regular intervals. In DBT's case, the default is 2. So, if you are at the beginning of a line with your cursor is column 1, pressing the Tab key will move you to column 3. Press it again, and you will move to column 5. Then to 7, 9, etc..</p>
+        <p>Second, you can clear DBT's default Tabs, and set your own tabs at specific columns. What ever you set, will remain set until the end of the document, or you make a change yourself. Essentially in setting each Tab on the line, you also give it a number. Your code(s) would then say "Go to the Nth Tab".</p>
+        <p>Third, you can issue a one off command that will tab to an absolutely specific column.</p>
+        <p>There are also three main types of tabulation as they apply to printed matter. For the purpose of this explanation, we will assume we have one tab stop set 3 inches in from the left hand side of our page.</p>
+        <ol>
+            <li><b>Left:</b> Our text will begin 3 inches from the left of the page</li>
+            <li><b>Right:</b> Our text will end 3 inches from the left of the page</li>
+            <li><b>Decimal or Designated Character:</b> This normally applies to numbers containing a decimal point. The actual decimal point will be positioned 3 inches from the left of the page.</li>
+        </ol>
+        <table style="margin-left: auto;margin-right: auto;">
+            <caption>Tab Positions</caption>
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Example</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td> </td>
+                    <td>Left tabbed text</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td class="right">Right tabbed text</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td class="right">$1,500.</td>
+                    <td>00</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In braille, tabs stops are measured in Cells on the page. If we Tab to Cell 20, then a left would begin in Cell 20, a right Tab would end in Cell 20, and the decimal point would be in Cell 20.</p>
+    </body>
+</html>

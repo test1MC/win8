@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Line(s;DBT;Uncontracted;CONFIG.SYS;CorelDRAW;CR;LF;Ctrl;curreny;DBTDOCS;UNCONTRACTED;w;Runover;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;n;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rps;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;dizziness[rpe;dizzi;lg~TEXT;lg~john's;z;Code(s;ifbrl;ifprt;sibrl;siimp;availa#;line[;ea;table(s;indP;Apples[;opp+;ind;hl;ki;stL;Smith[l;Lawns[l;TOWN[l;pg;L;ie;skL;lines[;m;svprgN;agraph;amet;det;posi;j;l;h[;brl;reckon$;svprg;n[;Lawns[;p~;Description[fr;Windows[fr;DOS[fr;descrip;duxbury;used.as;ISP;the_newbie;somewhere.com;joe;alo.com;the_man_at_the_top;ontheinternet.co.uk;Road[;gf;bunt+;ampton;nn#b;ee;ctb;stb;Afternoon[;Lessons[;d;morn+;afn;mon;tues;w$nes;stbS;F~X;etb;ftb;Bal;Descr;Debit.Credit.Balance;cr$it;bal.e;sal;dbt;svdac~x;U.K.;svdac~X;svdac~;es~E;ee~E;inkprint;f~-;svles;lec;pv;pgN;ta;ory;svpnpN;pvN~X;tls;Appendix[tls;a#a;svantN;duxbury's;te*nical;foll[+;af;Bla;Heading[hde;words[;x+y[os;b[fe;X=i;L.C.D.;n[ixrtd;These[l;small[l;lines[kpe;worda;wordb;parameter};y[ps;x[ps;this[;rfd;rfs;rfe;V[rfe;letter(s;One[tle;RST[te;RST;abc[-;def;abc[;character(s;EG;Foxtrot;Kila;a-igh-fib-cjjj;simone;fr.e;book[;by[;Sullivan[hde;mr;sullivan;Footer[rfe;foote" MadCap:status="Complete" MadCap:check_list="First Draft,Added To TOC,Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="823" MadCap:lastWidth="722">
+    <head><title>Footers</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Footer;Page:Footer" />Footers</h4>
+        <p class="Normal">(See also: <a href="Codes_Headers.htm">Headers</a>)</p>
+        <p class="Normal"><b>Code Used:</b> <span class="Code-DuxCode">[svrfpN] [rfs] [rfe] [rfd]</span></p>
+        <p class="Keystroke">Keystroke: Can be accessed from the Document Menu.</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It places a Header and/or a running Footer on pages from the next page after which the Code is inserted. However, if placed at the very beginning of a document, the code will apply to the first page also.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Wherever in a document you wish to commence a running Footer.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="CourierPara"><span class="Code-DuxCode">[svrfp3][rfs]</span><span class="Code-DuxScreen">My Footer</span><span class="Code-DuxCode">[rfe]</span><span class="Code-DuxScreen"><br />Lots of text</span> (this line repeated many, many times)<span class="Code-DuxCode"><br />[rfd]</span></p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,lots ( text</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,my ,foote]</p>
+        <p class="PageBreak">------------ page break ------------</p>
+        <p class="Simbraille">,lots ( text &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;#a</p>
+        <p class="bold">Let us explain!</p>
+        <p>The <span class="Code-DuxCode">[svrfp3]</span> code is used to determine whether the Footer is to appear on odd pages only, even pages only, or both odd and even.</p>
+        <p><span class="Code-DuxCode">N</span> can be, <span class="Code-DuxCode">1</span> for odd pages only, <span class="Code-DuxCode">2</span> for even pages only and <span class="Code-DuxCode">3</span> for both odd and even pages. <span class="Code-DuxCode">0</span> is for no Footer.</p>
+        <p><span class="Code-DuxCode">[rfs]</span> begins the Footer and <span class="Code-DuxCode">[rfe]</span> ends it.</p>
+        <p>Note that <span class="Code-DuxCode">[rfd]</span> can be used to stop Footers appearing from that point forward. (Take care where this Code is placed or your Footers might disappear altogether!).</p>
+    </body>
+</html>

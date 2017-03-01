@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Program(s;w;Runover;mws;GR;Language Translation;AUTOEXEC.BAT;CorelDRAW;CR;LF;Level+;rps;f;S-D-F-J-K-L;Ô;n;Device(s;a.k.a.;ü;nondefault;o;number(s;DBT;Uncontracted;CONFIG.SYS;Ctrl;curreny;DBTDOCS;UNCONTRACTED;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;nestable;ab;cb-&amp;;cb-de;cb-ds;cb-ee;cb-es;cb-ne;deu;eng;es;esp;fi;fra;ita;lat;mi;mao;nl;sv;sw;wh;hypercomplex;DUSCI;D+ec;D+ed;D+ee;D+df;D+ef;y;brailled;Consultancy;Viet;Nam;Gr;unprinted;Wiro;Q;CHEQUER;chequer;marques;letter.dxp;letterch.dxp;rename.dxp;letter.dxb;dxb;dxp;runover;W;s*;z;brl;docu;halfline;typeform;K;g;inkprint;·;m;DOTSYS;maths;Maths;ABCD;Comite;Tomas;bla;page(s;doesn;autorun;duxbury;Newline;Codepage;highlighter;unexpanded;style(s;perl;StyleType;MSWordStyleName;ll;SN;z^=;a^b;f(x;dx;dbtdocs\tutorial;sub-topic(s;j;G;Y;abc[-;def;abc[;zxc;bnm;fdsjkl;readme;wesupply;fctsheet;moon.htm;moonc.htm;ie;refreshable;printer(s;xx;name(s;character(s;value(s" MadCap:check_list="Ran Smart Index" MadCap:id="Word_-_Missing_or_wrong_characters" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:status="Complete" MadCap:lastBlockDepth="4" MadCap:lastHeight="4265" MadCap:lastWidth="723">
+    <head><title>Word - Missing or wrong characters</title>
+        <link rel="StyleSheet" href="../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Missing Characters;Characters;Characters:Missing;Characters:Wrong;Word - Missing or wrong characters;Wrong Characters" />Word - Missing or wrong characters</h4>
+        <p class="bold">
+            <MadCap:keyword term="Characters:Strange" />
+            <MadCap:keyword term="Unicode" />WARNING: This is a highly technical topic relating to strange characters which may appear in DBT after importing a Word file. You will require an understanding of Unicode and how Windows characters are coded.</p>
+        <p>If you find that an imported Word document contains strange characters, we would advise re-importing the Word file, having first ensured that DBT's <a href="../the_menus/MENU_GLOBAL/Global_Word_Importer.htm">Global: Word Importer</a><MadCap:keyword term="Unknown characters" /> is set to produce the "Output Unicode value" of "Unknown characters:". (Shown below)</p>
+        <p class="center">
+            <img src="../Resources/Images/the_menus/menu_global/menu_global_word_importer_unicode.jpg" title="Global: Word Importer dialog." alt="Global: Word Importer dialog." />
+        </p>
+        <p>You will now find after importing the file that any character which DBT does not recognize, might appear as follows:</p>
+        <p><span class="Code-DuxScreen">Chapter One (U:25b6) Introduction</span>
+        </p>
+        <p>In this example, the Word file contains a bullet type character called, "Black right-pointing triangle". With over 40,000 possible Unicode characters, and in a table which is constantly being added to, it is impossible to map all these to Braille in DBT.</p>
+        <p>The following explains how such unusual characters may be mapped to braille characters.</p>
+        <h5>
+            <MadCap:keyword term="wrduni.txt file" />WRDUNI.TXT FILE FORMAT</h5>
+        <p>Duxbury Systems, Inc.<br />November 30, 2001</p>
+        <h6>PURPOSE</h6>
+        <p>The wrduni.txt file controls the mapping of Unicode and other specialized font characters into DUSCI characters when the Duxbury Braille Translator (DBT) imports a Microsoft Word file.</p>
+        <p>Unicode is an international character encoding standard; see <a title="Take to the Unicode Web Site" href="http://www.unicode.org">http://www.unicode.org</a> on the World Wide Web for details.</p>
+        <p>Within the Windows system, specially encoded single-byte fonts may also be used instead of double-byte Unicode for characters that cannot be expressed within the Windows standard single-byte (Latin-1) font.</p>
+        <p>DUSCI is the internal multi-byte character encoding standard that is used within DBT. It is based upon Unicode but the encoding method is different. Whereas Unicode characters are always two bytes in length, DUSCI characters may be 1 or 2 bytes in length (and may theoretically be extended to 3 or more bytes if necessary to accommodate more characters in the future). The complete listing of currently assigned DUSCI characters codes, together with the corresponding Unicode code values, is given in the "Character List" document, under "Help" in DBT.</p>
+        <h5>GENERAL CHARACTERISTICS AND ORGANIZATION</h5>
+        <p>The wrduni.txt file itself is a simple "ASCII text file." WordPad, or any other editor which can naturally edit plain-text files, can be used to edit the file. When finished, be sure to save it back as plain text, not as a WordPad file nor in the format of Word nor any other word-processor program.</p>
+        <p>The file consists of a set of "sections," each section corresponding to the first byte of the Unicode value being mapped or a set of special font names.</p>
+        <p>In the first case, that is when mapping Unicode values, the section is headed by a line containing an asterisk and the initial byte value in <a href="../POPUPS/Hexadecimal.htm" target="_popup" class="Popup">hexadecimal</a>, for example:</p>
+        <p><span class="Code-DuxScreen">*1e</span>
+        </p>
+        <p>precedes the line(s) detailing the mappings for all Unicode values whose first byte has hexadecimal value 1e.</p>
+        <p>In the second case, that is when mapping special single-byte font values, the section is headed by a line containing "*00:" and then a list of the font names that follow the same mapping. If there is more than one font name, they are separated by vertical bars (|), for example:</p>
+        <p><span class="Code-DuxScreen">*00: Afallon|Cwrwgl|Heledd|Padarn|Teifryn</span>
+        </p>
+        <p>would head a section detailing mappings for certain Welsh fonts -- namely Afallon, Cwrwgl, Heledd, Padarn, and Teifryn. Note that the font name(s) must be spelled exactly as they appear in the system font list, including capitalization and any punctuation that is part of the name.</p>
+        <p>Following the last section only, there should be a line containing just a single asterisk; this line marks the end of the file.</p>
+        <h5>CHARACTER MAPPING LINES</h5>
+        <p>Each line within a section gives the mapping for a single imported character. The mapping may yield one or several characters in DUSCI.</p>
+        <p>In the case of Unicode characters, the line begins with the value of the second byte of the imported character, in hexadecimal, followed by a colon and a space. Recall that the value of the first byte is given by the header line for the current section.</p>
+        <p>The mapped-to value or values then follow, either by giving the character(s) directly (if such characters are ASCII characters other than a vertical bar [<b>|</b>]) or by giving the code sequence expressed as three-digit decimal values each preceded by a vertical bar.</p>
+        <p>In the case of special single-byte font characters, the line begins with the hexadecimal code value, a colon and a space. The mapped-to value(s) are then expressed in the same manner as for Unicode characters. Note that any unmapped characters are treated the same as if they were in the Windows standard (Latin-1) font, which corresponds to the first page (i.e. section "*00") of Unicode. That means it is necessary only to map those characters that are encoded differently from the standard font.</p>
+        <p>Some examples of detail mapping lines follow:</p>
+        <ol>
+            <li>1. In Unicode, hexadecimal value 00c7 corresponds to the Latin capital C with cedilla. That character in DUSCI is encoded as a single byte, decimal value 128. The appropriate mapping line is<span class="Code-DuxScreen"><br />	c7: |128</span><br />	within the "*00" section.</li>
+            <li>In Unicode, hexadecimal value 00a3 corresponds to the British pound-sterling currency sign. That character in DUSCI is encoded as a two-byte sequence, decimal values 245 and 35 respectively. The appropriate mapping line is<span class="Code-DuxScreen"><br />	a3: |245|035<br /></span>within the "*00" section.</li>
+            <li>In Unicode, Greek capital gamma is encoded with hexadecimal value 0393. That character in DUSCI is a two-byte sequence, decimal values 226 and 67 respectively. The appropriate mapping line is<span class="Code-DuxScreen"><br />	93: |226|067</span><br />	within the "*03" section.</li>
+            <li>In the Welsh "Afallon" font, small w with dieresis is encoded with hexadecimal value be. That character in DUSCI is a two-byte sequence, decimal values 185 and 53 respectively. The appropriate mapping line is<span class="Code-DuxScreen"><br />	be: |185|053</span><br />	within a "*00: ..." section listing the Afallon font (see example of heading line given above).</li>
+            <li>In the Vietnamese "VNI-Times" font, the code value e4 is for a "combining" character including a circumflex accent and a dot below (tone mark). Those are two separate combining characters in DUSCI, each with two bytes -- decimal values 227 and 50 for the first, 227 and 83 for the second. The appropriate mapping line is<span class="Code-DuxScreen"><br />	e4: |227|050|227|083</span><br />	within a "*00: ..." section listing the VNI-Times font.</li>
+        </ol>
+    </body>
+</html>

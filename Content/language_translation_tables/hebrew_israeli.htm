@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Language Translation Tables" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="HtmlHelp" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="helpfile.xml" MadCap:SearchType="Stem" MadCap:lastBlockDepth="4" MadCap:lastHeight="3081" MadCap:lastWidth="654">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" /><title>HEBREW (ISRAEL) Uncontracted</title>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Hebrew:Israel (Uncontracted)" /><a name="kanchor619"></a>HEBREW (ISRAEL) Uncontracted <img src="../Resources/Images/flags/israel.gif" alt="Flag of Israel" height="30" border="0" title="Flag of Israel" /></h4>
+        <h5>TABLE DESIGNATOR</h5>
+        <p class="DBTCodePara">heb-isr</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TableDesignator.flsnp" />
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The Hebrew/Israeli Uncontracted tables support print-to-braille translation of Hebrew-language literary text in uncontracted Hebrew braille according to the code documented for the Central Library for the Blind in Netanya, Israel by Rivka Rosenzweig. These translation tables also follow the code's rules for material in other languages within a Hebrew document. See the section below on secondary languages for more details.</p>
+        <p>Text in Arabic script is translated as uncontracted Arabic.</p>
+        <p>Text is Cyrillic script is translated as Russian braille.</p>
+        <p>The American Computer Braille Code (CBC) is also supported.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Braille_to_Print.flsnp" />
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>The system for bringing Hebrew text into DBT requires the use of DBT's importer for Microsoft Word documents. Therefore, translating a Hebrew document into braille in DBT requires bringing the Hebrew document from Word into DBT. In addition, when creating the Word document containing Hebrew, Word must use the Unicode encoding for Hebrew. Other encodings for Hebrew simply assign a Hebrew font to ordinary ASCII characters. If DBT imports Hebrew characters of that kind, it recognizes them as the ordinary ASCII characters, not as the characters shown in the Hebrew font.</p>
+        <p>You must use Word 2000 or higher to meet the requirement of Unicode encoding for Hebrew characters.</p>
+        <p>If you have a different source (not a Word document) of Hebrew text encoded in Unicode, such as a web page, an e-mail message, a file written in DavkaWriter, etc., save that material in Microsoft Word 2000 or higher in order to create a file that you can bring into DBT for translation into braille.</p>
+        <h5>Hebrew Data Entry in Microsoft Word</h5>
+        <p>If you are new to working with Hebrew on your computer, you may wish to acquire a special Hebrew keyboard to facilitate doing Hebrew data entry. Alternatively, for help with using the Hebrew keyboard layout with your usual keyboard in applications within Microsoft Office 2000 or higher, you can use Microsoft's Visual Keyboard software available for free download at:</p>
+        <p><a href="http://office.microsoft.com/downloads/2002/VkeyInst.aspx">http://office.microsoft.com/downloads/2002/VkeyInst.aspx</a>.</p>
+        <p>Once you have installed Visual Keyboard, it is part of Microsoft Office Tools.</p>
+        <p>When Visual Keyboard is running and you switch your keyboard to Hebrew, the screen shows a diagram of the Hebrew keyboard layout. You can enter Hebrew characters either by clicking on the appropriate "key" in the diagram, or by using the diagram to find the proper key on your keyboard. When you hold down a modifier key, such as the shift key, or turn caps lock on or off, the diagram changes accordingly. Keys highlighted in white are typically "hot keys" for adding accents.</p>
+        <h5>When you view material with Hebrew</h5>
+        <p>DBT shows the Hebrew characters in print. However, the Hebrew characters appear from left to right, as they do in braille.</p>
+        <p>True braille-to-print translation is supported only within any embedded English text, not in the Hebrew text. This means that it is not generally useful</p>
+        <p>to translate the Hebrew braille file to print. It also means that when you view a braille document containing Hebrew, the "translated line" for the Hebrew text contains gibberish. So you may prefer to turn off the "translated line" under the View menu, or under Global/Default if you wish it to be off by default.</p>
+        <h5>Hebrew Variations Supported</h5>
+        <p>The Hebrew/Israeli Uncontracted translation tables support a number of variations to determine which signs are shown in braille.</p>
+        <p>To issue a command for one of these variations, go to the Codes list (hot key <span class="Keyboard">F5</span>), select <span class="Code-DuxCode">vrn</span> from the list, and type the appropriate parameters in the Code Parameters field. In coded view, the command appears as <span class="Code-DuxCode">[vrn~xxx]</span>, where<span class="Code-DuxCode"> xxx</span> shows what you entered in the Code Parameters field. You may switch from one of these variations to another within the same document. These variations determine whether vowels, dagesh marks, and sheva marks in the print are to be shown in Braille. These three settings are independent of each other for the most part, with the exception that if you are suppressing vowels, then the print-to-braille translator will also suppress the sheva, even if you tell the translator to use it.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~shv]</span>- suppress Hebrew vowels; even if the print original includes vowel signs, the braille does not show them. This is the default setting with use of the Hebrew/Israeli translation tables.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~uhv]</span> - use Hebrew vowels.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~phv]</span>- partial Hebrew vowels.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~shd]</span>- suppress Hebrew dagesh; this is the default setting with use of the Hebrew/Israeli translation tables.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~uhd]</span> - use Hebrew dagesh.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~shs]</span>- suppress Hebrew sheva; this is the default setting with use of the Hebrew/Israeli tables.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~uhs]</span> - use Hebrew sheva.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>A document being translated with the Hebrew/Israeli translation tables may include a number of secondary languages. When English is used as a secondary language, the braille follows American rather than British rules. In accordance with the rules developed by the Central Library for the Blind in Israel, all material marked as a language other than Hebrew is automatically translated in uncontracted (grade one) braille. In addition, wherever you mark a segment as a language other than Hebrew, the braille uses dots 46 foreign language indicators for that segment. The placement of these indicators is similar to the placement of italics indicators in English braille. In addition, when a foreign language segment contains three words or fewer, then for any lowercase word, the dots 46 is followed by dots 56. To issue a language-switching command, select lng from the Codes list (hot key <span class="Keyboard">F5</span>), and enter the appropriate parameters in the Code Parameters field. In coded view, the command appears as <span class="Code-DuxCode">[lng~xxx]</span>, where <span class="Code-DuxCode">xxx</span> shows what you entered in the Code Parameters field.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~he]</span> or <span class="Code-DuxCode">[lng~]</span> - Hebrew; this is the default setting with the Hebrew/American) translation tables.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~en]</span> or <span class="Code-DuxCode">[lng~eng]</span> - English. This follows American conventions.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~de]</span> or <span class="Code-DuxCode">[lng~deu]</span> - German.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~es]</span> or <span class="Code-DuxCode">[lng~esp]</span> - Spanish.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~fr]</span> or <span class="Code-DuxCode">[lng~fra]</span> - French.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~it]</span> or <span class="Code-DuxCode">[lng~ita]</span> - Italian.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~la]</span> or <span class="Code-DuxCode">[lng~lat]</span> - Latin.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~mao]</span> or <span class="Code-DuxCode">[lng~mi]</span> - Maori.</p>
+        <p>Text in Arabic script is translated as uncontracted Arabic.</p>
+        <p>Note that in addition to the above provisions of this Hebrew (Israeli) table in itself, it is also possible to switch to any of the available translation tables listed in DBT. (See the <span class="Code-DuxCode">[lnb~...]</span> code below.)</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>The Computer Braille Code, as in the English/American tables, is supported.</p>
+        <p>In addition, it is possible to switch to any of the available translation tables listed in DBT (see the <span class="Code-DuxCode">[lnb~...]</span>code below), many of which do support various technical codes, such as for mathematics or computer notation, or which support “unified” treatment of technical notation as well as literary text in the base language associated with the table.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p>The following DBT translation codes are available when using the Hebrew (Israeli) table. Any other translation codes used will be ignored, or indeed may cause unexpected results. If using an alternative translation table, i.e when switching to another base language table by means of the<span class="Code-DuxCode">[lnb~...]</span> code, please refer to the relevant topic and available codes for that table.</p>
+        <p><span class="Code-DuxCode">[atxN]</span>
+        </p>
+        <p><span class="Code-DuxCode">[cz]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb~...]</span> (for switching to another base [primary] language table)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~...]</span> see "Secondary Languages" above.</p>
+        <p><span class="Code-DuxCode">[tx]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~...]</span> see "Hebrew Variations Supported" above.</p>
+        <p>Codes for computer notation are generally the same as for the English/American tables.</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>These tables were developed in July 2002 by Duxbury Systems, Inc., based on a document written by Rivka Rosenzweig for the Central Library for the Blind in Netanya, Israel. These tables replace the older Hebrew translation tables developed for DBT as used with the Hebrew version of WordPerfect 5.1.</p>
+        <p>(Documentation reviewed: July 2010.)</p>
+    </body>
+</html>

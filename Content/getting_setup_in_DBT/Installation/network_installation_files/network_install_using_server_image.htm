@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="906" MadCap:lastWidth="624" MadCap:conditions="Primary.Windows_Version">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>Network Installation Using a Server Image (Automatic Client Deployment)</h2>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallIntroText.flsnp" />
+        <p>For this method of installation, you create a specialized installer package that we refer to as a <b>server image</b>. To use it, you must place the server image in a network location accessible by the client machines where you intend to install DBT, or you must copy it to the individual client machines.</p>
+        <p>If either creating the server image or mounting the image on your network is inappropriate for any reason, you should use the manual approach instead. See <a href="network_install_using_wizard.htm">Network Installation using the Activation Wizard</a>.</p>
+        <h3>Overview</h3>
+        <p>Network installation with automatic deployment consists of these steps:</p>
+        <ol style="list-style-type: decimal;margin-left: 54pt;" start="1">
+            <li><a href="#(1)">Assemble the information and tools to create the server image</a>.</li>
+            <li><a href="#(2)">Install DBT on the server or master workstation</a>.</li>
+            <li><a href="#(3)">Activate DBT for multiple users on the server</a>.</li>
+            <li><a href="#(4)">Configure embossers in DBT on the server</a>.</li>
+            <li><a href="#(5)">Install the Shared License Service and allow it in the firewall</a>.</li>
+            <li><a href="#(6)">Create the server image of the DBT installer</a>. Save the server image in a shared folder that client computers can access.</li>
+            <li><a href="#(7)">On each client machine, install DBT from the server image</a>.</li>
+        </ol>
+        <p>Now we go through these steps in detail.</p>
+        <h3><a name="(1)"></a>(1) Assemble the Information and Tools</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallInfoToAssemble.flsnp" />
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li style="list-style-type: disc;">If you intend to share one or more <b>braille embossers</b> with all the DBT users on the network, you should have any documentation you need to define a global embosser configuration for each one that is to be shared.<br /></li>
+            <li style="list-style-type: disc;">You must prepare a network location (<b>shared volume</b>) to make available the server image you will create. There should be at least 100 MB free at this location. <b>This location must be writable for you, and it must be readable from all the computers where DBT will be installed.</b> Do not use the “Program Files (x86)”, “Program Files,” or “Windows” directories. Use a new directory with nothing else in it. The location you share from need not be on your DBT server computer. For example, let us say that you have set up a directory on "server10" called "DBTinstall". The network location of the server image would be “\\server10\DBTinstall.”</li>
+        </ul>
+        <h3><a name="(2)"></a>(2) Install DBT on the Server or Master Workstation</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallDbtOnServer.flsnp" />
+        <h3><a name="(3)"></a>(3) Activate DBT on the Server</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallActivateOnServer.flsnp" />
+        <h3><a name="(4)"></a>(4) Configure Global Embossers on the Server</h3>
+        <p>Now that the server is activated for DBT, you may configure the embossers that you wish to support for all DBT installations on your network. </p>
+        <p>To create global embosser configurations, your DBT must be running with administrative privileges. Start DBT by right clicking on the DBT icon and select <code>Run as administrator</code>. Then, at the User Account Control (UAC) prompt, enter the admin password if needed.</p>
+        <p>In the DBT menu bar, open the Global menu and select Embosser Set-up. Use the New button in the dialogue box to define new embossers (or use Modify Embosser to revise existing definitions). Enter all the settings your embosser requires, and on the General tab you must set the value of Configuration Location to “All users on this computer.” You must do this explicitly to share the embosser definition; this is not the default setting.</p>
+        <p>At this time, only configure the embossers that you intend to share with all the DBT client machines.</p>
+        <h3><a name="(5)"></a>(5) Install the Shared License Service</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallSharedLicenseService.flsnp" />
+        <h3><a name="(6)"></a>(6) Create the Server Image of the DBT Installer</h3>
+        <p>All the preceding steps have been done on your DBT server machine. This step must be done there as well, because this is the only way to include global embosser definitions in the server image that you will use to install your clients. At the end of this procedure, you place the server image in an empty destination folder either on the DBT server or another network location. </p>
+        <p>Note: The destination folder must be a writable shared volume and accessible by your client computers.</p>
+        <p>To create your server image:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>
+                <p>From a command prompt window, open the DBT installer by invoking the Windows msiexec.exe program with the “/a” switch and the path to the installer. If you are installing from a Duxbury CD on your D: volume, for example, the command line is:<br /> <code>msiexec /a D:\dbt-1103.msi &lt;Enter&gt; </code></p>
+                <p class="center">
+                    <img src="../../../Resources/Images/getting_setup_in_dbt/installation/network_installation_files/DBT_11.3_Server_Image_Welcome.jpg" style="width: 379px; height: 287px;" title="Welcome to the Windows Installer Wizard for DBT 11.3" alt="Welcome to the Windows Installer Wizard for DBT 11.3" />
+                </p>
+            </li>
+            <li>Click Next, or type &lt;Alt&gt;+N, to dismiss the Welcome Screen. (It is similar to the first screen in the Simple Installation instructions, but the text shows that you are creating a server image.)</li>
+            <li>Please, read the End User License Agreement (EULA) if you haven't read it before. You must agree to the terms of the EULA to proceed. Click Cancel or type &lt;Esc&gt; if you do not agree to the terms. Otherwise, type &lt;Alt&gt;+A to accept the agreement and &lt;Alt&gt;+N to proceed. (The screen described in this step is exactly the same as in the <a href="../Simple_Installation.htm">Simple Installation</a> instructions.)</li>
+            <li>You now see the Customer Information Screen, the same as the third screen in the Simple Installation instructions. You enter information in this screen just as if you were doing a typical install, but bear in mind that the information will be stored in the server image for use in the DBT clients. When you install from the server image, this information will be preset for you. You must enter your Duxbury License Text. We recommend that you enter your Organization name. For the User Name field, enter the name you want to have associated with your activation. This might be a reference to your organization (“Xxx School f/t Blind”), the name of the license owner, or even a generic user description such as "Xxx Sch. Dist. Transcriber" as befits your situation. Click Next, or type &lt;Alt&gt;+N, to continue. </li>
+            <li>
+                <p>The next screen, Choose Activation Model, is unlike anything in the Simple Installation. It looks like this:</p>
+                <p class="center">
+                    <img src="../../../Resources/Images/getting_setup_in_dbt/DBT_SLS/11.3_SLS_Activation_Model.jpg" title="Activation Model dialog" alt="Image shows a dialogue with radio buttons which allow you to choose either Local Activation or Shared Activation. With Shared Activation selected, there is an edit control below the radio buttons labeled Track DBT x.x Activation on Computer. Buttons at the bottom are Back, Next, and Cancel." style="width: 443px;height: 333px;" />
+                </p>
+                <p>When this dialogue opens Local Activation is selected. Change the selection to <b>Shared Activation</b> (push the down-arrow key or click on the second radio button). Shared Activation is the required option for sharing DBT activations over the network. Now use the Tab key to reach the text field labeled <b>Track DBT activation on computer</b> and type the DNS name or IP address of the server that you just activated. Click &lt;Alt&gt;+N to continue.</p>
+                <p>Notes: First, you can only use an IP address if it was assigned to the server as a static IP number. Second, if you are using a port other than 8080, you must add a colon and the port number to the contents of this field. For example, for a computer named “Server6” using port 8010 you might enter "Server6.mydomain.com:8010".</p>
+            </li>
+            <li>
+                <p>If, as described earlier, you have used DBT – on this computer – to configure at least one braille embosser for “All users on this computer,” the installer now displays the Include Embossers screen:</p>
+                <p class="center">
+                    <img src="../../../Resources/Images/getting_setup_in_dbt/DBT_SLS/SLS_IncludeEmb.jpg" title="DBT Installer image for Include Embossers" alt="Image shows a dialogue with explanatory text, a box to check for including embosser definitions, and three buttons labeled Back, Next, and Cancel." style="width: 450px;height: 343px;" />
+                </p>
+                <p>If you do not see this screen, no embosser configurations will be included in your server image! </p>
+                <p>If you intended to include global embosser configurations in your server image but do not see this screen, you must click Cancel (or press &lt;Esc&gt;) and start the process over after you have created them. Remember that they must be created on this machine, and the location must be set to "All Users on this computer." Only the configurations for all users are included in the server image. </p>
+                <p>If, on the other hand, you do see this screen, but do not want to include embosser definitions in the server image, simply uncheck the check box or type &lt;Alt&gt;+I, to remove the check mark. Then click Next, or type &lt;Alt&gt;+N, to continue.</p>
+            </li>
+            <li>
+                <p>Next, the installer displays the Network Location screen:</p>
+                <p class="center">
+                    <img src="../../../Resources/Images/getting_setup_in_dbt/DBT_SLS/11.3_SLS_Network_Location.jpg" title="Network Location (Destination) dialog" alt="Image shows a dialogue with text that prompts for a network location and a text field where that location can be entered. It also holds a Change button and Back, Next, and Cancel buttons." />
+                </p>
+                <p>You must provide the network path (shared volume) where you want the server image created. Remember that the server image destination must be an empty folder where you have write access. For example, given a server named “server10” and a location found at the simple path “DBTinstall\new,” you would enter “\\server10\DBTinstall\new” in this field. You can also use the Change button to browse for the destination path you have prepared. </p>
+                <p>Note: The installer will create the destination path if it does not already exist. In the process it will create or overwrite directories within that path as necessary. </p>
+                <p>Click Install, or type &lt;Alt&gt;+I, to begin creating your server image.</p>
+            </li>
+            <li>The installer next displays a dialogue with a progress bar and a Cancel button, and eventually it displays “Completed”. Click the Finish button, or type &lt;Alt&gt;+F, and your server image is ready for use.</li>
+        </ol>
+        <h3><a name="(7)"></a>(7) Install DBT on each Client Machine from the Server Image</h3>
+        <p>After you have created the server image in a network accessible location, use it to install DBT on each client computer. From the client machine, double click on the server image, and follow the instructions. This proceeds like a <a href="../Simple_Installation.htm">Simple Installation</a>, except that your text information and selections have all been pre-entered for you.</p>
+        <p>If for any reason you need to copy the server image in order to install it on a client, be sure to copy the entire server image directory and its subfolders!</p>
+        <h4>Unattended Installation</h4>
+        <p>Unattended Installation is a feature available with any installer built with Windows installer technology. However, because you are not given the chance to give any data to the installer while it runs, it only makes sense to do this with the DBT installer in those cases where you know the installer already has all of the data it needs, as with a fully set-up server image.</p>
+        <p>While Unattended Installation is running, you see only a small dialogue with a progress bar and a Cancel button. It is possible to cancel Unattended Installation, just like a normal installation.</p>
+        <p>To start Unattended Installation, you must run msiexec.exe with both the <code>/i</code> and <code>/passive</code> <a href="http://support.microsoft.com/?kbid=227091">msiexec command-line options</a>. For example, if your server image is in a file called dbt-1103.msi at a network share location called \\Server2\Images\DBT 11.3, then you would give the following command to install DBT without any user interaction:</p>
+        <p><code>msiexec /i "\\Server2\Images\DBT 11.3\dbt-1103.msi" /passive</code>
+        </p>
+        <p>(Note: In this example, quotation marks are needed because the installer path contains spaces.)</p>
+        <p>You can run this command either from a command prompt window or from the Run prompt in the Start Menu. You may need to specify the full path to the msiexec program. Typically, this is C:\Windows\System32\msiexec.exe.</p>
+        <h4>Quiet Installation</h4>
+        <p>Quiet Installation works like Unattended Installation, except that the process runs completely in the background with no progress display. </p>
+        <p>As with Unattended Installation, you should use Quiet Installation only after you have provided all the needed data by creating a server image.</p>
+        <p>To start Quiet Installation, you must run msiexec.exe with both the <code>/i</code> and <code>/passive</code><a href="http://support.microsoft.com/?kbid=227091">msiexec command-line options</a>. For example, if your server image has been placed in a file called dbt-1103.msi at a network share location called \\Server2\Images\DBT 11.3, then you would give the following command to install DBT without any user interaction or progress dialogue:</p>
+        <p><code>msiexec /i "\\Server2\Images\DBT 11.3\dbt-1103.msi" /quiet</code>
+        </p>
+        <p>(Note: Again, quotation marks are needed around the installer path because it contains spaces.)</p>
+        <p>You can run this command either from a command prompt window or from the Run prompt in the Start Menu. You may need to specify the full path to the msiexec program, typically, C:\Windows\System32\msiexec.exe.</p>
+    </body>
+</html>

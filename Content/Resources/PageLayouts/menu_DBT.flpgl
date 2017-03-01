@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="800" Height="800" Padding="20px" PageSize="Letter" PageType="normal" PaddingLeft="3.5cm" PaddingRight="2.5cm" PaddingTop="2.5cm" PaddingBottom="2.5cm">
+        <Frame Flow="header" Height="0.4791667in" Anchors="Left,Right,Top" X="0px" Y="-0.7291667in" ColumnCount="1" Bottom="9.291667in" Right="0px" Width="590px" BorderBottomStyle="solid" BorderBottomWidth="2px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="Header">Duxbury Braille Translator <MadCap:conditionalText MadCap:conditions="Primary.Windows_Version" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">(Windows)</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Primary.Mac_Version" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">(Mac)</MadCap:conditionalText> - DBT</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Height="0.5in" Anchors="Left,Right,Bottom" Bottom="-0.75in" Y="9.291667in" BorderTopStyle="solid" BorderTopWidth="3pt" BorderTopColor="#000000" TextAlign="center" VerticalAlign="middle" X="0px" Width="590px" Right="0px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>- <MadCap:variable xhtml:name="System.PageNumber" /> -</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" Right="0px" Bottom="-20px" X="0px" Y="-19px" Width="590px" Height="907px">
+        </Frame>
+    </Page>
+</PageStyles>

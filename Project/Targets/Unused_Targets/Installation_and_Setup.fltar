@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Installation and Setup"
+  Type="MsWord"
+  Destinations=""
+  EmbedImages="true"
+  MasterToc="/Project/TOCs/Installation_and_Setup_(Complete).fltoc"
+  TargetLanguage="en-us"
+  ConditionTagExpression="exclude[Primary.Braille_Only or Primary.Codes_Styles_Templates or Primary.Flags or Primary.Glossaries or &quot;Primary.Mac_Version&quot; or Primary.Not_in_Print_Docs or Primary.NOT_USED or Primary.Perky or Primary.Perky_Only or Primary.Special_Characters or Primary.SWIFT or Primary.Vista or Primary.Welcome or Primary.Working_with_Word]"
+  MasterPageLayout="/Content/Resources/PageLayouts/Books_A4/Book_Installation_(A4).flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  OutputFile="Installaton_Setup.doc">
+  <PrintedOutput
+    CollapseMargins="true"
+    MirrorMargins="true" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

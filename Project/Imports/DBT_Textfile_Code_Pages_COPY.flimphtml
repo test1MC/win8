@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="false"
+  ProjectName="DBT Help"
+  ProjectFolder="C:\Users\george2.TVS.000\Documents\DBT Help\"
+  AutoSync="false"
+  SourceFolders=""
+  ImportResources="false"
+  ImportResourcesLocation="NoImport"
+  ImportTopics="specific"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2016-06-09T11:23:18.5006908+01:00"
+  ImportTopicsLocation="Content/miscellaneous/">
+  <Files>
+    <Url
+      Source="../../../DBT_Textfile_Code_Pages_COPY.htm"
+      AbsoluteSource="file:///C:/Users/george2.TVS.000/Documents/DBT_Textfile_Code_Pages_COPY.htm" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/miscellaneous/DBT_Textfile_Code_Pages_COPY.htm"
+      TimeStamp="09/06/2016 11:22:35" />
+    <Url
+      Source="../TOCs/DBT_Textfile_Code_Pages_COPY.fltoc"
+      TimeStamp="09/06/2016 11:23:18" />
+  </GeneratedFiles>
+</HtmlImport>

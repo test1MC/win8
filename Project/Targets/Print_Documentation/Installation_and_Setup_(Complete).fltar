@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Installation_and_Setup_(Complete).fltoc"
+  TargetLanguage="en-us"
+  UseEmptyAltText="true"
+  ConditionTagExpression="include[Primary.Print_Only or Primary.Printed_Introduction or Primary.Windows_Version]exclude[Primary.Braille_Only or Primary.Codes_Styles_Templates or Primary.Emboss or Primary.Flags or Primary.Glossaries or Primary.Mac_Version or Primary.Miscellaneous or Primary.Not_in_HTML or Primary.Not_in_Print_Docs or Primary.NOT_USED or Primary.Perky or Primary.Perky_Only or Primary.Popups or Primary.Special_Characters or Primary.SWIFT or Primary.Troubleshooting or Primary.Vista or Primary.Working_with_Word]"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book_(Letter_Size).flpgl"
+  PatchHeadingLevels="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    ShowUsedBookmarks="false"
+    Tagged="true" />
+  <Glossaries></Glossaries>
+  <DocumentProperties
+    Title="Installation and Setup"
+    Author="George Bell"
+    Subject="Complete installation manual for the Duxbury Braille Translator" />
+</CatapultTarget>

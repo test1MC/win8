@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Program(s;w;Runover;mws;GR;Language Translation;AUTOEXEC.BAT;CorelDRAW;CR;LF;Level+;rps;f;S-D-F-J-K-L;Ô;n;Device(s;a.k.a.;ü;nondefault;o;DBT;Uncontracted;CONFIG.SYS;Ctrl;curreny;DBTDOCS;UNCONTRACTED;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rpsN;N;vss;vse;TOC[vse;rpe;unexpanded;author(s;system(s;translat$;c;www.duxburysystems.com.;duxsys.com.;style(s;perl;duxbury;StyleType;MSWordStyleName;ll" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="6" MadCap:lastHeight="3481" MadCap:lastWidth="642">
+    <head><title>Modifying <b>.mws</b> files</title>
+        <link rel="StyleSheet" href="../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="BuiltIn;StyleType;CategoryName;MWS file;mws Files" />Modifying .mws files</h4>
+        <p>
+            <MadCap:keyword term="Style" />
+            <MadCap:keyword term="Style:Mapping" />The <b>.mws</b> file controls the substitution, or mapping, of Microsoft Word styles into DBT styles for importing documents from Word. The substitution is directed by the instructions contained in the .mws file. Before discussing the syntax of the .mws file, let us address some basic questions:</p>
+        <p><b>What .mws files are supplied with DBT? And when are they used?</b>
+        </p>
+        <p>There are six <b>.mws</b> files. Certain .mws files are paired with certain DBTTemplates.</p>
+        <ul>
+            <li><b>dbt.mws</b> -- used whenever you select a DBT Template that contains the word "Basic". This includes most DBT Templates.</li>
+            <li><b>francais.mws</b> -- used when you select one of the four DBT French Templates.</li>
+            <li><b>aussie.mws</b> -- used when you select the DBT Template: English (UEB) - Australian formatting.</li>
+            <li><b>bana.mws</b> -- used when you select any DBT Template containing the name "BANA".</li>
+            <li><b>bana_uk.mws</b> -- used when you select the DBT Template:English (UEB) - UK Formatting. Transcribers who employ the "BANA"template for MS Word files can use this .mws file to produce braille in good BAUKformat. There is no relationship between this .mws file and the BANA rules for braille formatting.</li>
+            <li><b>rus.mws</b> -- used when you select the Russian DBT Template.</li>
+        </ul>
+        <p><b>Where are the .mws files stored? Can I modify an existing .mws file?</b>
+        </p>
+        <p>On a 64-bit system, the normal DBT home directory is <b>c:\Program files (x86)\Duxbury\[DBT n.n]</b> (where "n.n" stands in for the version number). The .mws files are located in the <b>Templates</b> subdirectory.</p>
+        <p>This is a protected location on your computer! Copy the file(s) to a folder on your computer where you can make changes. Then you need to copy the revised file back to the protected location using an elevated process. It is a good idea to save a backup copy in case your revised version does not work as planned.</p>
+        <p><b>Are there drawbacks to modifying my DBT files?</b>
+        </p>
+        <p>If you need to install DBT on a different computer or you install a new version of DBT, you need to copy over your modifications. If you want to have someone else be able to use your tools, you need to assist them with installing your customized files. It is easy to forget, to produce a document containing the wrong results, and then remember you forgot to install your customizations. However, as long as you can appropriately track your customized files, you should have no trouble.</p>
+        <p><b>How is the .mws file referenced? If I make a new one, how to I get DBT to use it?</b>
+        </p>
+        <p>When you create a new DBT Template, you get the option to reference a specific .mws file. In your new template, you also have the freedom to add new DBTstyles or modify existing DBTstyle names. You need to exercise some caution about this. (For example, modifying existing DBTstyle names is usually a very bad idea!) Remember that the .mws file maps to DBTstyles by name and will not recognize new or modified names unless you update it as well. </p>
+        <p><b>How do I interpret the contents of the .mws file?</b>
+        </p>
+        <p>The .mws file consists of two parts: Comments, which tell the user about the .mws file, and Mapping Elements, which tell DBT how to do the import from MS-Word styles to the corresponding styles in DBT.</p>
+        <p>Comment Lines begin with a number sign "#", which causes the program to skip them. These lines can contain anything you wish. It is a good idea to use the comments to describe the function of the file, items of special interest, and key information others will want to know if they need to modify the file later.</p>
+        <p>The Mapping Elements are used to specify the name of the MS-Word style, its type, and the name of the DBT style to which this MS-Word style should be mapped. It can also contain additional instructions that control how the DBT style is handled and other attributes.</p>
+        <p>The rest of this topic describes the format and parameters of mapping elements and discusses the limitations of the .mws file.</p>
+        <p>The general structure of a mapping element is:</p>
+        <p class="CourierPara">
+            <MadCap:keyword term="MSWord-style-name" />&lt;type&gt; "&lt;MSWord-style-name&gt;"</p>
+        <p class="CourierPara">{</p>
+        <p class="CourierPara">&#160;&#160;&lt;parameter&gt; = &lt;value&gt;</p>
+        <p class="CourierPara">&#160;&#160;…</p>
+        <p class="CourierPara">}</p>
+        <p>We now discuss each item of this structure in detail.</p>
+        <p class="bold">&lt;type&gt;</p>
+        <p>
+            <MadCap:keyword term="Built-In" />
+            <MadCap:keyword term="User" />This item has one of the following values: "Built-In" styles are those defined by Microsoft as part of Word. (Note that the names of Built-In styles change based on your locale for Word. See more on this below.)The other type is "User", which indicates that the MS-Word style is user-defined. All styles that are not defined by default in MS-Word are "User"styles. For an example, look at the <b>dbt.mws</b> file in your DBT Templates folder. It handles all of the built-in styles.</p>
+        <p class="bold">&lt;MSWord-style-name&gt;</p>
+        <p>This is the name of the style defined in Word. This name must match the Word style name in spelling and capitalization. (This item, and all other items in this file, are case sensitive.) Note that you should always use the original English MS-Word style name, because DBT can map from the localized style name (from a localized copy of Word) to the English style name. For example, the <b>rus.mws</b> file uses English style names, not the Russian ones.</p>
+        <p>Following the mapping element name are opening and closing braces "{" and "}". Inside the braces are the parameter/value pairs that make up the body of the mapping definition. Next we discuss each of these name/value pairs.</p>
+        <p class="bold">
+            <MadCap:keyword term="MappedName" />MappedName = “DBTStyleName” | none</p>
+        <p>The value of the MappedName parameter is the target DBT style name. Note: If the DBT name ends with a dot "." (as in the "para." style), you must delete the dot from the DBTstyle name. As an example, "para." becomes "para" (no dot). The value "none" indicates that there is no style mapping for this MS-Word style. Finally, as shown above, the DBT style name must be surrounded with double quotes.</p>
+        <p class="bold">MappedNameInNote = "DBTStyleName"</p>
+        <p>The MappedNameInNote parameter is used only for Footnote Reference and Endnote Reference styles. In these cases, the MappedName keyword specifies the DBT style used where the reference appears in the body of the document, and the MappedNameInNote keyword specifies the DBT style used where the reference appears within the footnote or endnote.</p>
+        <p class="bold">
+            <MadCap:keyword term="IfOrnamental" />Ignore = Always | IfBlank | IfOrnamental</p>
+        <p>This parameter controls when to eliminate a paragraph from the imported document. It can take the following values: Always, which can be used to eliminate print-only items like a header or footer from the document being imported; IfBlank, which is used to eliminate blank paragraphs; and IfOrnamental, which is used to eliminate paragraphs whose contents are just lines of characters like dashes "-----", or asterisks "*****".</p>
+        <p class="bold">
+            <MadCap:keyword term="IfSameName" />
+            <MadCap:keyword term="AggregateForward" />
+            <MadCap:keyword term="IfSameCategory" /><b>AggregateForward = Always | Never | IfSameName | IfSameCategory</b>
+        </p>
+        <p class="bold">
+            <MadCap:keyword term="AggregateBackward" /><b>AggregateBackward = Always | Never | IfSameName | IfSameCategory</b>
+        </p>
+        <p>The AggregateForward and AggregateBackward parameters are used to check the next and previous paragraphs and determine their treatment relative to the current paragraph style mapping. Each parameter can have the following values: IfSameName, which aggregates the paragraphs into a single block of the specified style; Always, which indicates that the paragraph should always be aggregated into the current style; Never, which indicates that the paragraph should never be aggregated into the current style (this means that the paragraph will always be imported into a DBT linear paragraph style independent of the style being used before or after it); and finally, IfSameCategory, which is only applicable if the mapping element body also has a "Category=Index" or "Category=TOC" item in it.</p>
+        <p class="bold">
+            <MadCap:keyword term="LevelNumber" />Level = &lt;a number&gt;</p>
+        <p>The Level keyword is the DBT style level that should be applied to the mapped style, where the mapped style is the style specified in the MappedName parameter.</p>
+        <p>Note that Level is most often useful when a series of paragraphs is aggregated. The combination of these three parameters: Level, AggregateForward, and AggregateBackward, bridges the gap between the way the designers of MS-Word conceived of styles and the way Duxbury did.</p>
+        <p class="bold">Category = None | TOC | Index</p>
+        <p>This parameter specifies the category of the mapping. The Category parameter can have one of three values: TOC, which indicates that this is a table of contents; Index (for an index); or None (no category).</p>
+        <p class="bold">IgnoreEmphases = Never | InDef</p>
+        <p>This parameter tells DBT how to handle emphasis indicators. The two possible values to this parameter are: Never, which means emphasis used in the style will be shown in braille; and InDef, which indicates DBT will ignore emphasis that is part of the style definition, but show emphasis that has been added to characters within the style.</p>
+        <p class="bold">DisableInToc = True | False</p>
+        <p>
+            <MadCap:keyword term="perl" />This parameter can have one of two values: True or False. False is the default. When set to True, the style will be ignored when it occurs in a Word table of contents. (That is, it will not be mapped to a DBT style.) Word makes hyperlinks out of table of contents entries. This parameter can be used to avoid putting these entries into computer braille.</p>
+        <p class="bold">IgnoreCentering = True | False</p>
+        <p>This parameter can be set to True or False. False is the default. Normally, DBT looks upon centering of a paragraph (or line) in a Word file as significant, because users generally want centered lines in the print document to be centered in braille. However, when this flag is set to True, the text that is centered in the Word style will not be centered in DBT unless centering is part of the DBT style being mapped.</p>
+        <p class="bold">IgnoreSuperscript = True | False</p>
+        <p>This parameter can be set to True of False. False is the default. This flag is typically set for character styles. When set to true, DBT omits the [ps] and [pe] codes to indicate that the text is a superscript, if the superscripting is part of the Word style definition.</p>
+        <p class="bold">IgnoreContents = Always | IfBlank | IfOrnamental</p>
+        <p>This parameter is similar to the Ignore parameter above, and it takes the same values. The difference is that while Ignore eliminates the whole paragraph including the start and end tags, this parameter eliminates the contents but leaves the tags.</p>
+        <p>To close, here are some good things to consider when you set out to modify one of these files. First, please remember that there are limitations to what you can do with an .mws file even though it is a very powerful tool. And the prime rule is, "Make sure you make a backup copy of the file you want to modify." If you do not, you may end up sadder but wiser.</p>
+    </body>
+</html>

@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary
+  conditions="Primary.Not_in_Print_Docs">
+  <GlossaryEntry
+    glossTerm="Main.Term0">
+    <Terms>
+      <Term>accelerator key</Term>
+      <Term>shortcut key</Term>
+    </Terms>
+    <Definition>A keyboard key or key combination that invokes a particular command (also referred to as an accelerator key)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term1">
+    <Terms>
+      <Term>Accent mark</Term>
+    </Terms>
+    <Definition>An accent mark appears above or below a printed letter to help determine pronunciation.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term2">
+    <Terms>
+      <Term>access bar</Term>
+      <Term>desktop toolbar</Term>
+    </Terms>
+    <Definition>A toolbar that docks to the desktop, similar to the taskbar (also referred to as an access bar). See also taskbar</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term3">
+    <Terms>
+      <Term>access key</Term>
+      <Term>mnemonic</Term>
+    </Terms>
+    <Definition>The key that corresponds to an underlined letter on a menu or control (also referred to as a mnemonic or mnemonic access key)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term4">
+    <Terms>
+      <Term>accessibility</Term>
+    </Terms>
+    <Definition>The principle of designing software to be usable and accessible to the widest range of users, including users with disabilities</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term5">
+    <Terms>
+      <Term>Acronym</Term>
+    </Terms>
+    <Definition>An abbreviated version of a group of words to make them look like one word. Example: NATO is an acronym for North Atlantic Treaty Organization. Acronyms should normally be translated into grade 1 braille.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term6">
+    <Terms>
+      <Term>activate</Term>
+    </Terms>
+    <Definition>To make an object's state available</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term7">
+    <Terms>
+      <Term>active</Term>
+    </Terms>
+    <Definition>The state of an object that is the focus of user input, with its operations available</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term8">
+    <Terms>
+      <Term>active end</Term>
+    </Terms>
+    <Definition>The ending point for a selected range of objects. It is usually established at the object logically nearest the hot spot of the pointer when a user releases the primary mouse button. Compare anchor point</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term9">
+    <Terms>
+      <Term>active window</Term>
+    </Terms>
+    <Definition>The window in which a user is currently working or directing input. An active window is typically at the top of the Z order and is distinguished by the color of its title bar. Compare inactive window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term10">
+    <Terms>
+      <Term>Acute Accent</Term>
+    </Terms>
+    <Definition>An upward sloping accent mark, as in é.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term11">
+    <Terms>
+      <Term>adornment</Term>
+    </Terms>
+    <Definition>A control or status area that is attached to the edge of a pane or window, such as a toolbar or ruler</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term12">
+    <Terms>
+      <Term>Alt (Key)</Term>
+    </Terms>
+    <Definition>A key normally found just next to the space bar on either side, the ALT key can be  used simultaneously with other keys to perform a function. Example: Alt + f to pull down the "File" menu.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term13">
+    <Terms>
+      <Term>anchor point</Term>
+    </Terms>
+    <Definition>The starting point for a selected range of objects. An anchor point is usually established at the object logically nearest the hot spot of the pointer when a user presses a mouse button. Compare active end</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term14">
+    <Terms>
+      <Term>anti-aliasing</Term>
+    </Terms>
+    <Definition>A graphic design technique that involves adding colored pixels to smooth the jagged edges of a graphic</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term15">
+    <Terms>
+      <Term>apply</Term>
+    </Terms>
+    <Definition>To commit a set of changes or pending transactions made in a secondary window, typically without closing that window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term16">
+    <Terms>
+      <Term>auto-exit</Term>
+    </Terms>
+    <Definition>A text box in which the input focus automatically moves to the next control as soon as a user types the last character</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term17">
+    <Terms>
+      <Term>auto-joining</Term>
+    </Terms>
+    <Definition>The movement of text to fill a gap that remains after a user deletes other text</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term18">
+    <Terms>
+      <Term>auto-repeat</Term>
+    </Terms>
+    <Definition>An event or interaction that is automatically repeated. Auto-repeat events usually occur when a user holds down a keyboard key or clicks and holds a special control (for example, scroll bar buttons)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term19">
+    <Terms>
+      <Term>automatic scrolling</Term>
+    </Terms>
+    <Definition>A technique whereby a display area automatically scrolls without direct interaction with a scroll bar</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term20">
+    <Terms>
+      <Term>balloon tip</Term>
+    </Terms>
+    <Definition>A ToolTip style design to provide message information about a control or object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term21">
+    <Terms>
+      <Term>Baud Rate</Term>
+    </Terms>
+    <Definition>The speed at which data is transferred. It is extremely important for serial embossers or printers that the computer sends data at the same speed the device expects to receive it. 9600 is the most common speed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term22">
+    <Terms>
+      <Term>Button</Term>
+    </Terms>
+    <Definition>An item on a tool bar or dialog box which can be "clicked on" with a mouse cursor or by performing the equivalent action with the keyboard.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term23">
+    <Terms>
+      <Term>cancel</Term>
+    </Terms>
+    <Definition>To halt an operation or process and return to the prior state. Compare stop</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term24">
+    <Terms>
+      <Term>caret</Term>
+      <Term>insertion point</Term>
+    </Terms>
+    <Definition>The location where text or graphics will be inserted (also referred to as the caret). Also used for text box controls to indicate input focus</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term25">
+    <Terms>
+      <Term>cascading menu</Term>
+      <Term>child menu</Term>
+      <Term>hierarchical menu</Term>
+      <Term>submenu</Term>
+    </Terms>
+    <Definition>A menu that is a submenu of a menu item (also referred to as a hierarchical menu, child menu, or submenu)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term26">
+    <Terms>
+      <Term>check box</Term>
+    </Terms>
+    <Definition>A standard Windows control that displays a setting or a set of non-mutually exclusive settings, either selected (set) or cleared (not set). Compare option button</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term27">
+    <Terms>
+      <Term>child window</Term>
+    </Terms>
+    <Definition>A document window used within an MDI window. See also multiple document interface</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term28">
+    <Terms>
+      <Term>chord</Term>
+    </Terms>
+    <Definition>To press more than one mouse or keyboard button at the same time</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term29">
+    <Terms>
+      <Term>Chording</Term>
+    </Terms>
+    <Definition>A technique of entering braille whereby six-keys (S-D-F-J-K-L) are used. Each key represents a dot within a cell. If all six keys are chorded simultaneously, a full-cell (dots 1-2-3-4-5-6) appears.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term30">
+    <Terms>
+      <Term>Circumflex</Term>
+    </Terms>
+    <Definition>A hat-like accent mark above a letter, as in Ô.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term31">
+    <Terms>
+      <Term>Click</Term>
+    </Terms>
+    <Definition>While pointing the mouse cursor to a point on the screen, pressing once on the left mouse button, or performing an equivalent action with the keyboard.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term32">
+    <Terms>
+      <Term>click (v.)</Term>
+    </Terms>
+    <Definition>To position the pointer over an object and then press and release a mouse button. (n.) The act of clicking. See also press</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term33">
+    <Terms>
+      <Term>Clipboard</Term>
+    </Terms>
+    <Definition>The area of storage for objects, data, or their references after a user carries out a Cut or Copy command</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term34">
+    <Terms>
+      <Term>close</Term>
+    </Terms>
+    <Definition>To remove a window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term35">
+    <Terms>
+      <Term>code page</Term>
+    </Terms>
+    <Definition>A collection of characters that make up a character set</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term36">
+    <Terms>
+      <Term>collection</Term>
+    </Terms>
+    <Definition>A set of objects that share some common aspect</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term37">
+    <Terms>
+      <Term>column heading</Term>
+    </Terms>
+    <Definition>A standard Windows control that can be used to provide interactive column titles for a list</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term38">
+    <Terms>
+      <Term>combo box</Term>
+    </Terms>
+    <Definition>A standard Windows control that combines a text box and interdependent list box. Compare drop-down combo box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term39">
+    <Terms>
+      <Term>command button</Term>
+      <Term>push button</Term>
+    </Terms>
+    <Definition>A standard Windows control that initiates a command or sets an option (also referred to as a push button)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term40">
+    <Terms>
+      <Term>composite</Term>
+    </Terms>
+    <Definition>An aggregated set or group of objects that is recognized as an object itself (for example, characters in a paragraph, a named range of cells in a spreadsheet, or a grouped set of drawing objects)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term41">
+    <Terms>
+      <Term>Computerese</Term>
+    </Terms>
+    <Definition>Computerese is any text representing information on a computer screen in which the syntax is important. CBC is the braille code used for computerese. A blind computer programmer will use CBC extensively.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term42">
+    <Terms>
+      <Term>constraint</Term>
+    </Terms>
+    <Definition>A relationship between a set of objects, where making a change to one object affects another object in the set</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term43">
+    <Terms>
+      <Term>container</Term>
+    </Terms>
+    <Definition>An object that holds other objects</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term44">
+    <Terms>
+      <Term>context menu</Term>
+      <Term>pop-up menu</Term>
+      <Term>shortcut menu</Term>
+    </Terms>
+    <Definition>A menu that is displayed for a selected object (also referred to as a context menu or pop-up menu). The menu contains commands that are contextually relevant to the selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term45">
+    <Terms>
+      <Term>context-sensitive Help</Term>
+    </Terms>
+    <Definition>Information about an object and its current condition that is requested by the user. It answers the questions "What is this" and "Why would I want to use it?" Compare procedural Help and reference Help</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term46">
+    <Terms>
+      <Term>contextual</Term>
+    </Terms>
+    <Definition>Specific to the conditions in which something exists or occurs</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term47">
+    <Terms>
+      <Term>contiguous selection</Term>
+      <Term>range selection</Term>
+    </Terms>
+    <Definition>A selection that consists of a set of objects that are logically sequential or adjacent to each other (also referred to as range selection). Compare disjoint selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term48">
+    <Terms>
+      <Term>control</Term>
+    </Terms>
+    <Definition>An object that enables user interaction or input, often to initiate an action, display information, or set values</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term49">
+    <Terms>
+      <Term>Control menu</Term>
+      <Term>System menu</Term>
+    </Terms>
+    <Definition>The menu, also referred to as the System menu, displayed on the left end of a title bar in Microsoft Windows version 3.1. The context menu of a window replaces the Control menu</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term50">
+    <Terms>
+      <Term>Control Panel</Term>
+    </Terms>
+    <Definition>The control panel can be found in the Main Start group. The control panel is used to add/update printers, add/remove fonts, etc.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term51">
+    <Terms>
+      <Term>Cross-reference</Term>
+    </Terms>
+    <Definition>In HTML Help, a cross-reference is a keyword that is linked to another keyword in the index. When users select the cross-reference in the index, it "jumps" to the related keyword. In WinHelp, a See Also cross-reference is a link to a set of topics that use the same A-keyword.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term52">
+    <Terms>
+      <Term>Ctrl (Key)</Term>
+    </Terms>
+    <Definition>The Ctrl key is the lower-leftmost key on most IBM PC keyboards. It can be used in combination with other keys to perform actions. Example, Ctrl-O to Open a file.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term53">
+    <Terms>
+      <Term>cursor</Term>
+    </Terms>
+    <Definition>A generic term for the visible indication of where a user's interaction will occur. See also input focus, insertion point, and pointer</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term54">
+    <Terms>
+      <Term>data link</Term>
+    </Terms>
+    <Definition>A link that propagates a value between two objects or locations</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term55">
+    <Terms>
+      <Term>data-centered design</Term>
+    </Terms>
+    <Definition>A design in which users interact with their data directly without having to first start an appropriate editor or application</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term56">
+    <Terms>
+      <Term>DBT</Term>
+    </Terms>
+    <Definition>A commonly used term for the Duxbury Braille Translator.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term57">
+    <Terms>
+      <Term>default</Term>
+    </Terms>
+    <Definition>An operation or value that the system or application provides, unless a user makes an explicit choice</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term58">
+    <Terms>
+      <Term>default button</Term>
+    </Terms>
+    <Definition>The command button that is invoked when a user presses the ENTER key. A default button typically appears in a secondary window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term59">
+    <Terms>
+      <Term>delete</Term>
+    </Terms>
+    <Definition>To remove an object or value</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term60">
+    <Terms>
+      <Term>desktop</Term>
+    </Terms>
+    <Definition>The visual work area that fills the screen. The desktop is also a container and can be used as a convenient location to place objects stored in the file system</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term61">
+    <Terms>
+      <Term>Device(s)</Term>
+    </Terms>
+    <Definition>A device is essentially anything you attach to your computer in order to enhance your productivity. Some common devices include a speech synthesizer, scanner, printer and embosser. Devices need to communicate correctly with your computer and to do so, many devices use special drivers which load up when you turn on your computer. Device drivers reduce the amount of memory available to DBT and sometimes cause conflicts. If you ever call for support, it may be helpful if you know what device drivers are loaded.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term62">
+    <Terms>
+      <Term>dialog box</Term>
+    </Terms>
+    <Definition>A secondary window that gathers additional information from a user. Compare message box, palette window, and property sheet</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term63">
+    <Terms>
+      <Term>dialog unit</Term>
+    </Terms>
+    <Definition>A device-independent measure to use for layout. One horizontal unit is equal to one-fourth of the average character width for the current system font. One vertical unit is equal to one-eighth of an average character height for the current system font</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term64">
+    <Terms>
+      <Term>Dialogue Box</Term>
+    </Terms>
+    <Definition>A small window which pops up from time to time to display or request information. In Windows, menu options which end with three periods, or full stops, always open a Dialogue Box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term65">
+    <Terms>
+      <Term>Dieresis</Term>
+    </Terms>
+    <Definition>Dieresis, a.k.a. umlaut, is an accent mark consisting of two-dots above a letter, as in ü.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term66">
+    <Terms>
+      <Term>dimmed</Term>
+      <Term>disabled</Term>
+      <Term>grayed</Term>
+      <Term>unavailable</Term>
+    </Terms>
+    <Definition>The state of a control in which normal functionality is not presently available to a user (also referred to as grayed, dimmed, and disabled)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term67">
+    <Terms>
+      <Term>disjoint selection</Term>
+    </Terms>
+    <Definition>A selection that consists of a set of objects that are not logically sequential or physically adjacent to each other. Compare contiguous selection. See also extended selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term68">
+    <Terms>
+      <Term>dock</Term>
+    </Terms>
+    <Definition>To manipulate an interface element, such as a toolbar, in order to align it with the edge of another interface element, typically a window or pane</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term69">
+    <Terms>
+      <Term>document</Term>
+    </Terms>
+    <Definition>A common unit of data (typically a file) used in user tasks and exchanged between users</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term70">
+    <Terms>
+      <Term>document window</Term>
+    </Terms>
+    <Definition>A window that provides a primary view of a document (typically its content)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term71">
+    <Terms>
+      <Term>Double Click</Term>
+    </Terms>
+    <Definition>While pointing the mouse cursor to a point on the screen, pressing the left mouse button twice in quick succession, or performing an equivalent action with the keyboard.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term72">
+    <Terms>
+      <Term>double-click</Term>
+    </Terms>
+    <Definition>(v.) To press and release a mouse button twice in rapid succession. (n.) The act of double-clicking to select an object or to perform an operation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term73">
+    <Terms>
+      <Term>drag</Term>
+    </Terms>
+    <Definition>To press and hold a mouse button while moving the mouse</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term74">
+    <Terms>
+      <Term>drag-and-drop operation</Term>
+    </Terms>
+    <Definition>A technique for moving, copying, or linking an object by dragging. The destination determines the interpretation of the operation. Compare nondefault drag-and-drop operation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term75">
+    <Terms>
+      <Term>drop-down combo box</Term>
+    </Terms>
+    <Definition>A standard Windows control that combines the characteristics of a text box with a drop-down list box. Compare combo box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term76">
+    <Terms>
+      <Term>drop-down list box</Term>
+    </Terms>
+    <Definition>A standard Windows control that displays a current setting, but can be opened to display a list of choices</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term77">
+    <Terms>
+      <Term>drop-down menu</Term>
+    </Terms>
+    <Definition>A menu that is displayed from a menu bar. See also menu and shortcut menu</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term78">
+    <Terms>
+      <Term>Duxbury</Term>
+    </Terms>
+    <Definition>The company officially known as "Duxbury Systems, Inc."</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term79">
+    <Terms>
+      <Term>edit field</Term>
+      <Term>text box</Term>
+    </Terms>
+    <Definition>A standard Windows control in which a user can enter and edit text (also referred to as the edit field)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term80">
+    <Terms>
+      <Term>Edit menu</Term>
+    </Terms>
+    <Definition>A common drop-down menu that includes general purpose commands for editing objects displayed within a window, such as Cut, Copy, and Paste</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term81">
+    <Terms>
+      <Term>ellipsis</Term>
+    </Terms>
+    <Definition>The "..." suffix added to a menu item or button label to indicate that the command requires additional information from the user in order to be performed. When a user chooses the command, a dialog box is usually displayed for user input of this additional information</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term82">
+    <Terms>
+      <Term>embedded object</Term>
+    </Terms>
+    <Definition>A data object that retains the original editing and operating functionality of the application that created it, while physically residing in another document</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term83">
+    <Terms>
+      <Term>Emboss</Term>
+    </Terms>
+    <Definition>The process of creating the raised dots on paper.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term84">
+    <Terms>
+      <Term>event</Term>
+    </Terms>
+    <Definition>An action or occurrence to which an application can respond. Examples of events are clicks, key presses, and mouse movements</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term85">
+    <Terms>
+      <Term>explicit selection</Term>
+    </Terms>
+    <Definition>A selection that a user intentionally makes with an input device. Compare implicit selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term86">
+    <Terms>
+      <Term>extended selection</Term>
+    </Terms>
+    <Definition>A selection technique that is optimized for the selection of a single object or single range using contiguous selection techniques (that is, canceling any existing selection when a new selection is made). However, it also supports modifying an existing selection using disjoint selection techniques. See also disjoint selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term87">
+    <Terms>
+      <Term>extended-selection list box</Term>
+    </Terms>
+    <Definition>A list box that supports multiple selection, but is optimized for a selection of a single object or single range. See also extended selection and list box. Compare multiple-selection list box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term88">
+    <Terms>
+      <Term>File menu</Term>
+    </Terms>
+    <Definition>A common drop-down menu that includes commands for file operations, such as Open, Save, and Print</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term89">
+    <Terms>
+      <Term>flat appearance</Term>
+    </Terms>
+    <Definition>The recommended visual display of a control when it is nested inside another control or scrollable region</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term90">
+    <Terms>
+      <Term>folder</Term>
+    </Terms>
+    <Definition>A type of container for objects; typically for files</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term91">
+    <Terms>
+      <Term>font</Term>
+    </Terms>
+    <Definition>A set of attributes for text characters</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term92">
+    <Terms>
+      <Term>font size</Term>
+    </Terms>
+    <Definition>The size of a font, typically represented in points</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term93">
+    <Terms>
+      <Term>font style</Term>
+    </Terms>
+    <Definition>The stylistic attributes of a font - such as bold, italic, and underline</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term94">
+    <Terms>
+      <Term>glyph</Term>
+    </Terms>
+    <Definition>A generic term used to refer to any graphic or pictorial image that can be used on a button or in a message box. Compare icon</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term95">
+    <Terms>
+      <Term>group box</Term>
+    </Terms>
+    <Definition>A standard Windows control that groups a set of controls</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term96">
+    <Terms>
+      <Term>handle</Term>
+    </Terms>
+    <Definition>An interface element added to an object that provides a control point for moving, sizing, reshaping, or other operations pertaining to that object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term97">
+    <Terms>
+      <Term>Help menu</Term>
+    </Terms>
+    <Definition>A common drop-down menu that includes commands that provide access to online Help or other forms of user assistance. See also context-sensitive Help, procedural Help, reference Help, and task-oriented Help</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term98">
+    <Terms>
+      <Term>heterogeneous selection</Term>
+    </Terms>
+    <Definition>A selection that includes objects of different types or with different properties. Compare homogeneous selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term99">
+    <Terms>
+      <Term>Hex (Hexadecimal)</Term>
+    </Terms>
+    <Definition>A number system, unlike the one we are used to using, that is based on 16. Letters are used to signify the numbers 10-15, so that counting goes thusly: 1 2 3 4 5 6 7 8 9 A B C D E F. Then 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D, 1E, 1F, 20, etc. Conventionally "0x" is placed in front of a hexadecimal number: 0x1F, 0xAD, etc. .</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term100">
+    <Terms>
+      <Term>hold</Term>
+    </Terms>
+    <Definition>To continue to press a keyboard key or mouse button</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term101">
+    <Terms>
+      <Term>homogeneous selection</Term>
+    </Terms>
+    <Definition>A selection that includes objects of the same type or with the same properties. Compare heterogeneous selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term102">
+    <Terms>
+      <Term>hot spot</Term>
+    </Terms>
+    <Definition>The specific portion of the pointer (or pointing device) that defines the exact location, or object, to which a user is pointing</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term103">
+    <Terms>
+      <Term>Hot zone</Term>
+    </Terms>
+    <Definition>The interaction area of a particular object or location with which a pointer or pointing device's hot spot must come in contact</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term104">
+    <Terms>
+      <Term>hover selection</Term>
+    </Terms>
+    <Definition>A selection technique designed to optimize selection and activation of an object. Selection is initiated when the user moves the pointer over the object for a length of time that is longer than a time-out</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term105">
+    <Terms>
+      <Term>hyperlink</Term>
+      <Term>jump</Term>
+    </Terms>
+    <Definition>A special form of link used to navigate to another location</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term106">
+    <Terms>
+      <Term>icon</Term>
+    </Terms>
+    <Definition>A pictorial representation of an object. Compare glyph</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term107">
+    <Terms>
+      <Term>implicit selection</Term>
+    </Terms>
+    <Definition>A selection that is the result of inference or the context of some other operation. See also explicit selection</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term108">
+    <Terms>
+      <Term>inactive</Term>
+    </Terms>
+    <Definition>The state of an object when it is not the focus of a user's input</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term109">
+    <Terms>
+      <Term>Inactive window</Term>
+    </Terms>
+    <Definition>A window in which a user's input is not currently being directed. An inactive window is typically distinguished by the color of its title bar. Compare active window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term110">
+    <Terms>
+      <Term>indeterminate</Term>
+      <Term>mixed-value appearance</Term>
+    </Terms>
+    <Definition>The visual display for a control which reflects a mixed set of values</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term111">
+    <Terms>
+      <Term>InfoTip</Term>
+    </Terms>
+    <Definition>A ToolTip used to provide a description for desktop, window, and Start menu items, in Web views, and in the Windows Explorer Comment column when Details view is used. Do not use the term to refer to ToolTips for toolbar buttons</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term112">
+    <Terms>
+      <Term>input focus</Term>
+    </Terms>
+    <Definition>The location where the user is currently directing input</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term113">
+    <Terms>
+      <Term>input focus appearance</Term>
+    </Terms>
+    <Definition>The visual display of a control or other object that indicates it has the input focus</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term114">
+    <Terms>
+      <Term>inside-out activation</Term>
+    </Terms>
+    <Definition>A technique that allows a user to directly interact with the content of an embedded object without executing an explicit activation command. Compare outside-in activation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term115">
+    <Terms>
+      <Term>Keyboard Shortcut</Term>
+    </Terms>
+    <Definition>Pressing specific keys on the keyboard to activate a menu or feature in a program. For example pressing CTRL and the letter S in Duxbury, will save the file you are working on.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term116">
+    <Terms>
+      <Term>label</Term>
+    </Terms>
+    <Definition>The text (or graphic) that identifies a control (also referred to as a caption)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term117">
+    <Terms>
+      <Term>landscape</Term>
+    </Terms>
+    <Definition>An orientation where the long dimension of a rectangular area (for example, screen or paper) is horizontal</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term118">
+    <Terms>
+      <Term>link</Term>
+    </Terms>
+    <Definition>(v.) To form a connection between two objects. (n.) A reference to an object that is linked to another object. See also linked object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term119">
+    <Terms>
+      <Term>link path</Term>
+      <Term>moniker</Term>
+    </Terms>
+    <Definition>The descriptive form, or explicit connecting points, of referring to the location of a link source (also referred to as a moniker)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term120">
+    <Terms>
+      <Term>linked object</Term>
+    </Terms>
+    <Definition>An object that represents or provides access to another object that resides in another location in the same container or in a different container. See also link</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term121">
+    <Terms>
+      <Term>list box</Term>
+    </Terms>
+    <Definition>A standard Windows control that displays a list of choices. See also extended selection list box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term122">
+    <Terms>
+      <Term>list view</Term>
+    </Terms>
+    <Definition>A standard Windows list box control that displays a set of objects. The control also supports different views and drag-and-drop operations</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term123">
+    <Terms>
+      <Term>locale</Term>
+    </Terms>
+    <Definition>A collection of language-related user preferences for formatting information, such as time, currency, or dates</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term124">
+    <Terms>
+      <Term>localization</Term>
+    </Terms>
+    <Definition>The process of adapting software for different countries, languages, cultures, or markets</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term125">
+    <Terms>
+      <Term>marquee</Term>
+      <Term>region selection</Term>
+    </Terms>
+    <Definition>A selection technique that involves dragging out a bounding outline (also referred to as a marquee) to define the selected objects</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term126">
+    <Terms>
+      <Term>maximize</Term>
+    </Terms>
+    <Definition>To display a window at its largest size. See also minimize</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term127">
+    <Terms>
+      <Term>MDI</Term>
+      <Term>multiple-document interface (MDI)</Term>
+    </Terms>
+    <Definition>A technique for managing a set of windows whereby documents are opened into windows (sometimes called child windows) that are constrained to a single primary (parent) window. See also child window and parent window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term128">
+    <Terms>
+      <Term>menu</Term>
+    </Terms>
+    <Definition>A list of textual or graphical choices from which a user can choose. See also drop-down menu and shortcut menu</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term129">
+    <Terms>
+      <Term>menu bar</Term>
+    </Terms>
+    <Definition>A horizontal bar at the top of a window, below the title bar, that contains menus. See also drop-down menu</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term130">
+    <Terms>
+      <Term>menu button</Term>
+    </Terms>
+    <Definition>A command button that displays a menu</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term131">
+    <Terms>
+      <Term>menu item</Term>
+    </Terms>
+    <Definition>A choice on a menu</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term132">
+    <Terms>
+      <Term>menu title</Term>
+    </Terms>
+    <Definition>A text or graphic label that describes a particular menu. For drop-down menus, the title is the entry in the menu bar; for cascading menus, the menu title is the name of its parent menu item</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term133">
+    <Terms>
+      <Term>message box</Term>
+    </Terms>
+    <Definition>A secondary window that is displayed to inform a user about a particular condition. Compare dialog box, palette window, and property sheet</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term134">
+    <Terms>
+      <Term>minimize</Term>
+    </Terms>
+    <Definition>To minimize the size or appearance of a window; in some cases this means to hide the window. See also maximize</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term135">
+    <Terms>
+      <Term>modal</Term>
+    </Terms>
+    <Definition>Restrictive or limited interaction due to operating in a mode. Modal often describes a secondary window that restricts a user's interaction with other windows. A secondary window can be modal with respect to its primary window or to the entire system. Compare modeless</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term136">
+    <Terms>
+      <Term>mode</Term>
+    </Terms>
+    <Definition>A particular state of interaction, often exclusive in some way to other forms of interaction</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term137">
+    <Terms>
+      <Term>modeless</Term>
+    </Terms>
+    <Definition>Non-restrictive or non-limited interaction. Modeless often describes a secondary window that does not restrict a user's interaction with other windows. Compare modal</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term138">
+    <Terms>
+      <Term>modifier key</Term>
+    </Terms>
+    <Definition>A keyboard key that, when pressed (and held), changes the actions of ordinary input</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term139">
+    <Terms>
+      <Term>mouse</Term>
+    </Terms>
+    <Definition>A commonly used input device that has one or more buttons for the user to interact with a computer. Also used as a generic term to include other pointing devices that operate similarly (for example, trackballs and headpointers)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term140">
+    <Terms>
+      <Term>multiple-selection list box</Term>
+    </Terms>
+    <Definition>A list box that is optimized for making multiple, independent selections. Compare extended selection list box and single selection list box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term141">
+    <Terms>
+      <Term>My Computer</Term>
+    </Terms>
+    <Definition>A standard Windows icon that represents a user's private, usually local, storage</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term142">
+    <Terms>
+      <Term>Network Neighborhood</Term>
+    </Terms>
+    <Definition>A standard Windows icon that represents access to objects that are stored on the network file system</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term143">
+    <Terms>
+      <Term>nondefault drag-and-drop operation</Term>
+    </Terms>
+    <Definition>A drag (transfer) operation whose interpretation is determined by a user's choice of command. These commands are included in a shortcut menu displayed at the destination where the object is dropped. Compare drag-and-drop operation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term144">
+    <Terms>
+      <Term>object</Term>
+    </Terms>
+    <Definition>An entity or component identifiable by a user that can be distinguished by its properties, operations, and relationships</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term145">
+    <Terms>
+      <Term>object-action paradigm</Term>
+    </Terms>
+    <Definition>The basic interaction model for the user interface in which the object to be acted upon is specified first, followed by the command to be executed</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term146">
+    <Terms>
+      <Term>OLE (Microsoft OLE)</Term>
+    </Terms>
+    <Definition>Also known as Object Linking and Embedding, OLE describes the technology and interface for implementing support for object interaction</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term147">
+    <Terms>
+      <Term>open appearance</Term>
+    </Terms>
+    <Definition>The visual display of an object when the user opens the object into its own window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term148">
+    <Terms>
+      <Term>operation</Term>
+    </Terms>
+    <Definition>A generic term that refers to the actions that can be done to or with an object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term149">
+    <Terms>
+      <Term>option button</Term>
+      <Term>radio button</Term>
+    </Terms>
+    <Definition>A standard Windows control that allows a user to select from a fixed set of mutually exclusive choices (also referred to as a radio button). Compare check box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term150">
+    <Terms>
+      <Term>option-set appearance</Term>
+    </Terms>
+    <Definition>The visual display for a control when its value is set</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term151">
+    <Terms>
+      <Term>outside-in activation</Term>
+    </Terms>
+    <Definition>A technique that requires a user to perform an explicit activation command to interact with the content of an embedded object. Compare inside-out activation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term152">
+    <Terms>
+      <Term>package</Term>
+    </Terms>
+    <Definition>An encapsulation of a file so that it can be embedded into a container</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term153">
+    <Terms>
+      <Term>palette window</Term>
+    </Terms>
+    <Definition>A modeless secondary window that displays a toolbar or other choices, such as colors or patterns. Compare dialog box and message box. See also property sheet</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term154">
+    <Terms>
+      <Term>pane</Term>
+    </Terms>
+    <Definition>A separate area in a split window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term155">
+    <Terms>
+      <Term>parent window</Term>
+    </Terms>
+    <Definition>A primary window that provides window management for a set of child windows. See also child window and multiple document interface</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term156">
+    <Terms>
+      <Term>persistence</Term>
+    </Terms>
+    <Definition>The principle that the state or properties of an object is automatically preserved</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term157">
+    <Terms>
+      <Term>point</Term>
+    </Terms>
+    <Definition>(v.) To position the pointer over a particular object and location. (n.) A unit of measurement for type (1 point equals approximately 1/72 inch)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term158">
+    <Terms>
+      <Term>Point Size</Term>
+    </Terms>
+    <Definition>This is the measurement that typographers use to describe the size of printed text. One "Point" is approximately one seventysecond of an inch.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term159">
+    <Terms>
+      <Term>pointer</Term>
+    </Terms>
+    <Definition>A graphical image displayed on the screen that indicates the location of a pointing device (also referred to as a cursor)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term160">
+    <Terms>
+      <Term>pop-up window</Term>
+    </Terms>
+    <Definition>A secondary window with no title bar that is displayed next to an object; it provides contextual information about that object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term161">
+    <Terms>
+      <Term>portrait</Term>
+    </Terms>
+    <Definition>An orientation where the long dimension of a rectangular area (for example, screen or paper) is vertical</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term162">
+    <Terms>
+      <Term>press</Term>
+    </Terms>
+    <Definition>To press and release a keyboard key. See also click</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term163">
+    <Terms>
+      <Term>pressed appearance</Term>
+    </Terms>
+    <Definition>The visual display for an object, such as a control, when it is being "pressed."</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term164">
+    <Terms>
+      <Term>primary window</Term>
+    </Terms>
+    <Definition>The window in which the main interaction with an object takes place. See also secondary window and window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term165">
+    <Terms>
+      <Term>Print</Term>
+    </Terms>
+    <Definition>The ink letters which are "read by" sighted people.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term166">
+    <Terms>
+      <Term>procedural Help</Term>
+    </Terms>
+    <Definition>Information about the steps involved in carrying out a particular task. Compare context-sensitive Help, reference Help, and task-oriented Help</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term167">
+    <Terms>
+      <Term>Program Group</Term>
+    </Terms>
+    <Definition>A group of related applications residing in the Windows "Start Menu."</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term168">
+    <Terms>
+      <Term>progress indicator</Term>
+    </Terms>
+    <Definition>Any form of feedback that provides the user with information about the state of a process</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term169">
+    <Terms>
+      <Term>progress indicator control</Term>
+    </Terms>
+    <Definition>A standard Windows control that displays the percentage of completion of a particular process as a graphical bar</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term170">
+    <Terms>
+      <Term>progressive disclosure</Term>
+    </Terms>
+    <Definition>A technique for hiding the complexity of an interface by presenting the user with the primary or common options or choices at the topmost level, and then revealing more advanced or complex options through another means, such as explicit user action or navigation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term171">
+    <Terms>
+      <Term>project</Term>
+    </Terms>
+    <Definition>A window or task management technique that consists of a container holding a set of objects, such that when the container is opened, the windows of the contained objects are restored to their former positions</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term172">
+    <Terms>
+      <Term>properties</Term>
+    </Terms>
+    <Definition>Attributes or characteristics of an object that define its state, appearance, or value</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term173">
+    <Terms>
+      <Term>property inspector</Term>
+    </Terms>
+    <Definition>A dynamic properties viewer that displays the properties of the current selection, usually of a particular type of object. Compare property sheet</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term174">
+    <Terms>
+      <Term>property page</Term>
+    </Terms>
+    <Definition>A grouping of properties on a tabbed page of a property sheet. See also property sheet</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term175">
+    <Terms>
+      <Term>property sheet</Term>
+    </Terms>
+    <Definition>A secondary window that displays the properties of an object when a user chooses its Properties command. Compare dialog box and property inspector. See also property page</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term176">
+    <Terms>
+      <Term>property sheet control</Term>
+    </Terms>
+    <Definition>A standard Windows control used to create property sheet interfaces</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term177">
+    <Terms>
+      <Term>recognition</Term>
+    </Terms>
+    <Definition>The interpretation of strokes or gestures as characters or operations</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term178">
+    <Terms>
+      <Term>Recycle Bin</Term>
+    </Terms>
+    <Definition>The standard Windows icon that represents the container for DELeted files</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term179">
+    <Terms>
+      <Term>reference Help</Term>
+    </Terms>
+    <Definition>A form of online Help that contains conceptual and explanatory information. Compare context-sensitive Help, procedural Help, and task-oriented Help</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term180">
+    <Terms>
+      <Term>relationship</Term>
+    </Terms>
+    <Definition>The context or way an object relates to its environment</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term181">
+    <Terms>
+      <Term>rich-text box</Term>
+    </Terms>
+    <Definition>A standard Windows control that is similar to a standard text box, except that it also supports individual character and paragraph properties</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term182">
+    <Terms>
+      <Term>Right-Click</Term>
+    </Terms>
+    <Definition
+      Link="">Refers to clicking the right mouse button. May refer to the left mouse button if your particular Windows settings are configured so that you to use your mouse with your left hand.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term183">
+    <Terms>
+      <Term>roam</Term>
+    </Terms>
+    <Definition>The ability for a user to move between different computers and have the same user experience on both computers</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term184">
+    <Terms>
+      <Term>scope</Term>
+    </Terms>
+    <Definition>The definition of the extent to which a selection is logically independent from other selections. For example, selections made in separate windows are typically considered to be independent of each other</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term185">
+    <Terms>
+      <Term>scrap</Term>
+    </Terms>
+    <Definition>An icon created when the user transfers a data selection from within a file to a shell container</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term186">
+    <Terms>
+      <Term>scroll</Term>
+    </Terms>
+    <Definition>To move the viewable area of an object or information in order to make a different portion visible</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term187">
+    <Terms>
+      <Term>scroll arrow button</Term>
+    </Terms>
+    <Definition>A component of a scroll bar that allows the information to be scrolled by defined increments when the user clicks it. The direction of the arrow indicates the direction in which the information scrolls</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term188">
+    <Terms>
+      <Term>scroll bar</Term>
+    </Terms>
+    <Definition>A standard Windows control that supports scrolling</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term189">
+    <Terms>
+      <Term>scroll bar shaft</Term>
+    </Terms>
+    <Definition>The component of a scroll bar that provides the visual context for the scroll box. Clicking in the scroll bar shaft scrolls the information by a screenful. See also scroll box</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term190">
+    <Terms>
+      <Term>scroll box</Term>
+    </Terms>
+    <Definition>A component of a scroll bar that indicates the relative position (and optionally the proportion) of the visible information relative to the entire amount of information. The user can drag the scroll box to view areas of information not currently visible. See also scroll bar shaft</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term191">
+    <Terms>
+      <Term>secondary window</Term>
+    </Terms>
+    <Definition>A window that provides information or supplemental interaction related to objects in a primary window. See also primary window and window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term192">
+    <Terms>
+      <Term>select</Term>
+    </Terms>
+    <Definition>To identify one or more objects upon which an operation can be performed</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term193">
+    <Terms>
+      <Term>selection</Term>
+    </Terms>
+    <Definition>An object or set of objects that have been selected</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term194">
+    <Terms>
+      <Term>selection appearance</Term>
+    </Terms>
+    <Definition>The visual display of an object when it has been selected</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term195">
+    <Terms>
+      <Term>selection handle</Term>
+    </Terms>
+    <Definition>A graphical control point of an object that provides direct manipulation support for operations of that object, such as moving, sizing, or scaling</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term196">
+    <Terms>
+      <Term>separator</Term>
+    </Terms>
+    <Definition>An entry in a menu used to both group and separate menu items</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term197">
+    <Terms>
+      <Term>shell</Term>
+    </Terms>
+    <Definition>A generic term that refers to the interface that gives the user control over the system</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term198">
+    <Terms>
+      <Term>shortcut</Term>
+    </Terms>
+    <Definition>A generic term that refers to an action or technique that invokes a particular command or performs an operation with less interaction than the usual method</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term199">
+    <Terms>
+      <Term>shortcut icon</Term>
+    </Terms>
+    <Definition>A link presented as an icon that provides a user with access to another object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term200">
+    <Terms>
+      <Term>Shortcut Keys</Term>
+    </Terms>
+    <Definition>Combinations of keys which may be used instead of mouse clicks. For instance, instead of selecting the File menu, then clicking on "Open," one may type the shortcut keys: Ctrl + o</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term201">
+    <Terms>
+      <Term>Shortcut Keys: Function Keys</Term>
+    </Terms>
+    <Definition>Function Keys - often it is possible to use the Function Keys as shortcut keys. When you are instructed to type f1 or f2, etc., type the key that corresponds - not the letter f and the number.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term202">
+    <Terms>
+      <Term>single-selection list box</Term>
+    </Terms>
+    <Definition>A list box that supports only selection of a single item in the list</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term203">
+    <Terms>
+      <Term>size grip</Term>
+    </Terms>
+    <Definition>A special control that appears at the junction of a horizontal and vertical scroll bar or the right end of a status bar and provides an area that a user can drag to size the lower right corner of a window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term204">
+    <Terms>
+      <Term>slider</Term>
+    </Terms>
+    <Definition>A standard Windows control that displays and sets a value from a continuous range of possible values, such as brightness or volume</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term205">
+    <Terms>
+      <Term>spin box</Term>
+    </Terms>
+    <Definition>A control composed of a text box and incremental and decremental buttons that allows a user to adjust a value from a limited range of possible values</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term206">
+    <Terms>
+      <Term>split bar</Term>
+    </Terms>
+    <Definition>A division between window panes in a split window; the split bar visually separates window panes</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term207">
+    <Terms>
+      <Term>split box</Term>
+    </Terms>
+    <Definition>A special control added to a window, typically adjacent to the scroll bar, that allows a user to split a window or adjust a window split</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term208">
+    <Terms>
+      <Term>Start Button</Term>
+    </Terms>
+    <Definition
+      Link="">A button, usually in the bottom left-hand corner of the Windows desktop, which allows a computer user to access Windows settings and applications. It has a picture of the Windows logo and the word "Start" on it. When pressed, the "Start Menu" pops up. A keyboard user may access the Start Menu by typing the start button on his or her keyboard (on the left side of the keyboard, it is directly between the "ALT" and "CTRL" keys. You can type CTRL-ESC.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term209">
+    <Terms>
+      <Term>status bar</Term>
+    </Terms>
+    <Definition>An area that displays state information for the content in the window, typically placed at the bottom of a window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term210">
+    <Terms>
+      <Term>status bar control</Term>
+    </Terms>
+    <Definition>A standard Windows control that provides the functionality of a status bar</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term211">
+    <Terms>
+      <Term>stop</Term>
+    </Terms>
+    <Definition>To halt a process or action, typically without restoring the prior state. Compare cancel</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term212">
+    <Terms>
+      <Term>tab control</Term>
+    </Terms>
+    <Definition>A standard Windows control that looks similar to a notebook or file divider and provides navigation between different pages or sections of information in a window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term213">
+    <Terms>
+      <Term>Task Bar</Term>
+    </Terms>
+    <Definition>The gray bar next to the Windows Start Menu button that displays open applications</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term214">
+    <Terms>
+      <Term>task-oriented Help</Term>
+    </Terms>
+    <Definition>Information about the steps involved in carrying out a particular task. Compare context-sensitive Help, procedural Help, and reference Help</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term215">
+    <Terms>
+      <Term>taskbar</Term>
+    </Terms>
+    <Definition>A special toolbar that docks on an edge of the desktop supplied by the system. The taskbar includes the Start button, a button for each open primary window, and a status area</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term216">
+    <Terms>
+      <Term>template</Term>
+    </Terms>
+    <Definition>An object that automates the creation of new objects of a particular type</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term217">
+    <Terms>
+      <Term>Text</Term>
+    </Terms>
+    <Definition>The non-braille letters on a computer screen</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term218">
+    <Terms>
+      <Term>thread</Term>
+    </Terms>
+    <Definition>A process that is part of a larger process or program</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term219">
+    <Terms>
+      <Term>title bar</Term>
+    </Terms>
+    <Definition>The horizontal area at the top of a window that identifies the window. The title bar also acts as a handle for dragging the window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term220">
+    <Terms>
+      <Term>toggle key</Term>
+    </Terms>
+    <Definition>A keyboard key that alternates between turning a particular operation, function, or mode on or off</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term221">
+    <Terms>
+      <Term>toolbar</Term>
+    </Terms>
+    <Definition>A frame or special area that contains a set of other controls</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term222">
+    <Terms>
+      <Term>toolbar button</Term>
+    </Terms>
+    <Definition>A command button used in a toolbar (or status bar)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term223">
+    <Terms>
+      <Term>toolbar control</Term>
+    </Terms>
+    <Definition>A standard Windows control designed with the same characteristics as the toolbar</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term224">
+    <Terms>
+      <Term>ToolTip</Term>
+    </Terms>
+    <Definition>A standard Windows control that provides a small pop-up window with descriptive text, such as a label, for a control or graphic object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term225">
+    <Terms>
+      <Term>transaction</Term>
+    </Terms>
+    <Definition>A unit of change to an object</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term226">
+    <Terms>
+      <Term>transfer appearance</Term>
+    </Terms>
+    <Definition>The visual feedback displayed during a transfer operation</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term227">
+    <Terms>
+      <Term>tree control</Term>
+    </Terms>
+    <Definition>A standard Windows control that allows a set of hierarchically-related objects to be displayed as an expandable outline</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term228">
+    <Terms>
+      <Term>type</Term>
+    </Terms>
+    <Definition>(v.) To enter a character from the keyboard. (n.) A classification of an object based on its characteristics, behavior, and attributes</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term229">
+    <Terms>
+      <Term>unavailable appearance</Term>
+    </Terms>
+    <Definition>The visual display for a control when it is unavailable</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term230">
+    <Terms>
+      <Term>Undo</Term>
+    </Terms>
+    <Definition>To reverse a transaction</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term231">
+    <Terms>
+      <Term>unfold button</Term>
+    </Terms>
+    <Definition>A command button used to expand a secondary window to a larger size to reveal additional controls or information</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term232">
+    <Terms>
+      <Term>Unicode</Term>
+    </Terms>
+    <Definition>The Unicode Standard is a character coding system designed to support the worldwide interchange, processing, and display of the written texts of the diverse languages of the modern world. In addition, it supports classical and historical texts of many written languages.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term233">
+    <Terms>
+      <Term>visual editing</Term>
+    </Terms>
+    <Definition>The ability to edit an embedded object in place, without opening it in its own window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term234">
+    <Terms>
+      <Term>white space</Term>
+    </Terms>
+    <Definition>The background area of a window. (The color need not literally be white.)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term235">
+    <Terms>
+      <Term>window</Term>
+    </Terms>
+    <Definition>A standard Windows object that displays information. A window is a separately controllable area of the screen that typically has a rectangular border. See also primary window and secondary window</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term236">
+    <Terms>
+      <Term>wizard</Term>
+    </Terms>
+    <Definition>A form of user assistance that automates a task through a dialog with the user. A wizard is typically composed of property sheets</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term237">
+    <Terms>
+      <Term>Wordwrap</Term>
+    </Terms>
+    <Definition>The convention where, as a user enters text, existing text is automatically moved from the end of a line to the next line</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term238">
+    <Terms>
+      <Term>workbook</Term>
+    </Terms>
+    <Definition>A window or task management technique that consists of a set of views that are organized like a tabbed notebook</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term239">
+    <Terms>
+      <Term>workspace</Term>
+    </Terms>
+    <Definition>A window or task management technique that consists of a container holding a set of objects, where the windows of the contained objects are constrained to a parent window. Similar to the multiple document interface, except that the windows displayed within the parent window corresponding to objects that are also contained in the workspace</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term240">
+    <Terms>
+      <Term>Z order</Term>
+    </Terms>
+    <Definition>The layered relationship of a set of objects, such as windows, on the display screen</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Main.Term241">
+    <Terms>
+      <Term>UEB</Term>
+    </Terms>
+    <Definition
+      Link="">Unified English Braille</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

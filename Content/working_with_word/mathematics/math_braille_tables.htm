@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="944" MadCap:lastWidth="861" xml:lang="en-us">
+    <head><title>Choosing your Math Braille Tables</title>
+    </head>
+    <body>
+        <h4>Choosing your Math Braille Tables</h4>
+        <p>In many cases, you do not need to adapt or alter anything within DBT to enable you to produce math braille. However, if you are using DBT with one of the many new languages which have been added from version 11.1 onwards, please initially refer to the relevant topic listed within <a href="../../language_translation_tables/translation_tables.htm">Help: Language Translation Tables</a> to determine which Math Code will be used by default.</p>
+        <p>In Duxbury DBT 11.3, there are 4 translators which handle technical (mathematics and science) symbols.</p>
+        <p>These are:</p>
+        <ol>
+            <li> English UEB translators for UEB braille (<span class="Code-DuxScreen">eng-xueb</span>)</li>
+            <li> English translators for British or BAUK mathematics braille (<span class="Code-DuxScreen">eng-xuk</span>)</li>
+            <li> French translators for standard French mathematics braille (<span class="Code-DuxScreen">fra-xuf</span>)</li>
+            <li> North American English translators for Nemeth mathematics braille. (<span class="Code-DuxScreen">qmt-xnem72m</span>)</li>
+        </ol>
+        <h3>Detailed Instruction</h3>
+        <p>These instructions tell you how to do a single step, so that for all future file translations using <MadCap:variable name="Primary.Static Version 11.3" />, your choice of math translators is used.</p>
+        <p>Regardless of what braille translator you choose for literary (Afrikaans through Zulu), your choice of technical translator will be used for technical material.</p>
+        <p>Thus you can have Finnish literary braille with French braille math, or Hindi literary braille with Nemeth Code math, etc.</p>
+        <p>Duxbury Systems is aware that there are many other math braille systems.</p>
+        <p>There are systems for German, Spanish, Italian, Hebrew, Russian, and Chinese (and more), but these are not available for mathematical equations (at least not yet!).</p>
+        <p>Please note that these instructions do not tell you how to use MathType, or how to prepare math files. Other documentation tells you how to prepare math files.</p>
+        <h3>Two Styles: math and TextWithinMath</h3>
+        <p>You need to have two styles in your default Template: <span class="Code-DuxScreen">math</span> and <span class="Code-DuxScreen">Math-TextInMath</span>. Check and see if these are there. We have added these to most of the basic DBT Templates. The styles we created are for English (UEB) math. If you want a different form of math, you need to create a new Template with changes to these styles. The translator code for UEB is <span class="Code-DuxScreen">eng-xueb</span>. If you want Nemeth Code, you need to change this to <span class="Code-DuxScreen">qmt-xnem72m</span>.</p>
+        <h3>Step by Step Instructions</h3>
+        <ol>
+            <li>Launch DBT 11.3. Start with a blank file.</li>
+            <li>Go to the Document Menu and select "Modify Style".</li>
+            <li>Look for a style called math and select it. If you want Nemeth code, you want this to be Start Code: <span class="Code-DuxCode">[lnb~qmt-xnem72m][g1l]</span> End Code: <span class="Code-DuxCode">[lnb]</span></li>
+            <li>Accept your change.</li>
+            <li>Look for a style called <span class="Code-DuxScreen">Math-TextInMath</span>. This should be the exact opposite of the math style (<i>reversing starting and ending codes</i>).</li>
+            <li>Make the same change made before to the Ending Code now.</li>
+            <li>Accept your change</li>
+            <li>Use the Create Template choice in the Document Menu to create a new Template using this new translator for mathematics.</li>
+            <li>Always use the newly created template whenever you start a new document.</li>
+        </ol>
+    </body>
+</html>

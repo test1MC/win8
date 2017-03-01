@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Embosser Support"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/Embosser_Support_Braillo.fltoc"
+  ConditionTagExpression="include[ActWizConditions.ActwizHelp or Primary.Mac_Version] exclude[Primary.Not_in_Print_Docs or Primary.Windows_Version] "
+  AutoSizeCaptureCaptions="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  OutputFile="Embosser_support.pdf"
+  MasterPageLayout="/Content/Resources/PageLayouts/Embosser_Ctrl_List.flpgl"
+  DisableAutoSync="true"
+  MasterStylesheetOverride="false"
+  PatchHeadingLevels="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    Tagged="true"
+    ShowUsedBookmarks="false"
+    InitialMagnification="0"
+    TitleBar="DocumentTitle" />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+  <DocumentProperties
+    Title="DBT Embosser Support" />
+</CatapultTarget>

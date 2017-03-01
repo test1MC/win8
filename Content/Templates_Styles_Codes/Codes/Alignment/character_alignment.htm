@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="DBT;Uncontracted;CONFIG.SYS;CorelDRAW;CR;LF;Ctrl;curreny;DBTDOCS;UNCONTRACTED;w;Runover;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;n;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rps;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;dizziness[rpe;dizzi;lg~TEXT;lg~john's;z;Code(s;ifbrl;ifprt;sibrl;siimp;availa#;line[;ea;table(s;indP;Apples[;opp+;ind;hl;ki;stL;Smith[l;Lawns[l;TOWN[l;pg;L;ie;Line(s;skL;lines[;m;svprgN;agraph;amet;det;posi;j;l;h[;brl;reckon$;svprg;n[;Lawns[;p~;Description[fr;Windows[fr;DOS[fr;descrip;duxbury;used.as;ISP;the_newbie;somewhere.com;joe;alo.com;the_man_at_the_top;ontheinternet.co.uk" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Character Alignment" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="5" MadCap:lastHeight="775" MadCap:lastWidth="686">
+    <head><title>Designated Character Alignment</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Decimal:Alighment;Align:to Designated Character;Currency:Alignment" />Designated Character Alignment</h4>
+        <p><span class="Code-DuxCode">[svdac~X]</span> -- Set decimal alignment character to X. This sets the character that is used by the tab commands to control decimal alignment. The default is the character that is common for American usage, i.e. presently <span class="Code-DuxCode">[svdac~.]</span> for both print and braille files (= dots 4-6 in the latter). </p>
+        <p>The principals here are virtually identical to those covered in Decimal Tabs.</p>
+        <p>Essentially, DBT can be instructed to use almost any character to line up text. For example, let us suppose we wanted to produce a list of e-mail addresses in such a way that it was easy to find the ISP. (That is the bit that usually follows the @ sign)</p>
+        <p>In print, we could display them like this (spacing exaggerated for clarity):</p>
+        <table style="border-spacing: 0px;margin-left: auto;margin-right: auto;caption-side: top;" cellspacing="0" summary="Examples of e-mail addresses">
+            <col />
+            <col style="width: 38px;" />
+            <col />
+            <tr valign="top">
+                <th>Text before sign</th>
+                <th> @ </th>
+                <th>Text after Sign</th>
+            </tr>
+            <tr valign="top">
+                <td class="right">the_newbie </td>
+                <td> @ </td>
+                <td>somewhere.com</td>
+            </tr>
+            <tr valign="top">
+                <td class="right">joe </td>
+                <td> @ </td>
+                <td>alo.com</td>
+            </tr>
+            <tr valign="top">
+                <td class="right">the_man_at_the_top </td>
+                <td> @ </td>
+                <td>ontheinternet.co.uk</td>
+            </tr>
+        </table>
+        <p>With numbers for example, in Europe, and many other countries, a comma is used instead of a full stop or period. For example, "<span class="Code-DuxScreen">1,345.95</span>" would be written "<span class="Code-DuxScreen">1.345,95</span>". Hence we would want to line up columns of figures using the comma instead of the period.</p>
+    </body>
+</html>

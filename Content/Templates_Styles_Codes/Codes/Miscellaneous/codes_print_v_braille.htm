@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="First Draft,Added To TOC,Links,Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="557" MadCap:lastWidth="687">
+    <head><title>Print v Braille</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Print:versus Braille;Braille:versus Print" />Print v Braille</h4>
+        <p><b>Codes used:</b> <span class="Code-DuxCode">[ifbrl]</span> or <span class="Code-DuxCode">[ifprt]</span> &#160;&#160;&#160;&#160;(Old codes<span class="Code-DuxCode"> [sibrl] [siimp]</span>)</p>
+        <p>There are often cases where it is necessary to change the wording between print and braille documents.</p>
+        <p>For example, <u>print</u> text might say:</p>
+        <p><span class="Code-DuxScreen">This book is available in braille.</span>
+        </p>
+        <p>Where the <u>braille</u> text should say:</p>
+        <p><span class="Code-DuxScreen">This book is available in print.</span>
+        </p>
+        <h6>Usage in DBT:</h6>
+        <p class="DBTCodePara"><span class="Code-DuxScreen">This book is available in</span> <span class="Code-DuxCode">[ifprt]</span><span class="Code-DuxScreen">braille.</span> <span class="Code-DuxCode">[ifbrl]</span><span class="Code-DuxScreen">print.</span></p>
+        <p><b>NOTE:</b> If you turn Coded View off in DBT, your screen will show:</p>
+        <p><span class="Code-DuxScreen">This book is available in braille.</span>
+        </p>
+        <h6>But produces in Braille:</h6>
+        <p class="Simbraille">,? book is availa# 9 pr9t4</p>
+        <p class="CourierPara">This book &#160;&#160;is &#160;&#160;available &#160;in &#160;print</p>
+        <h5>For the technical:</h5>
+        <p>This Code can be used for Codes in addition to text. For example <span class="Code-DuxCode">[ifbrl][sk5]</span> would skip 5 lines ONLY in the braille file.</p>
+        <p>It should be noted that the <span class="Code-DuxCode">[if...]</span> codes only affect the next word or Code.</p>
+        <p>If you wish to use multiple <u>c</u><u>odes</u>, you must precede each Code with the <span class="Code-DuxCode">[if...]</span> Code. </p>
+        <p>However you can group <u>text</u> using the <span class="Code-DuxCode">[:]</span> and <span class="Code-DuxCode">[;]</span> Codes as explained in the <a href="../Alignment/Alignment_Group.htm">Group</a> Topic.</p>
+    </body>
+</html>

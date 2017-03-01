@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="Primary.The_Menus,Primary.Print_Only">
+  <TocEntry
+    Title="Duxbury Systems Inc"
+    Link="/Content/PRINT_VERSIONS/Print - The Menus/Tiitle_Page_The Menus.htm"
+    StartSection="true"
+    PageNumber="1"
+    PageNumberReset="continue"
+    ReplaceMergeNode="false"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+    AutoEndOnLeftPage="disabled" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="false"></TocEntry>
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/PRINT_VERSIONS/Print - The Menus/introduction.htm"
+    StartSection="true"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Introduction.flpgl" />
+  <TocEntry
+    Title="Contents"
+    Link="/Content/PRINT_VERSIONS/Print - The Menus/Print TOC.htm"
+    StartChapter="true"
+    PageNumber="1"
+    PageNumberReset="continue"
+    StartSection="true"
+    PageLayout="/Content/Resources/PageLayouts/Contents.flpgl"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    AutoEndOnLeftPage="enabled"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Getting Help"
+    Link="/Content/getting_setup_in_DBT/new_users_start_here/GETTING_HELP.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Getting Help.flpgl" />
+  <TocEntry
+    Title="the_menus"
+    Link="/Content/the_menus/the_menus.htm"
+    StartSection="true"
+    StartChapter="true"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"
+    PageNumber="1"
+    PageNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    PageType="normal"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="FILE - Alt + f"
+      Link="/Content/the_menus/MENU_FILE/file_(Menu).htm"
+      StartSection="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      ReplaceMergeNode="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ComputeToc="false"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/File.flpgl">
+      <TocEntry
+        Title="New..."
+        Link="/Content/the_menus/MENU_FILE/file_new.htm"
+        BreakType="pageLayout"
+        StartSection="false" />
+      <TocEntry
+        Title="Open..."
+        Link="/Content/the_menus/MENU_FILE/file_open.htm" />
+      <TocEntry
+        Title="Close"
+        Link="/Content/the_menus/MENU_FILE/file_close.htm" />
+      <TocEntry
+        Title="Save"
+        Link="/Content/the_menus/MENU_FILE/file_save.htm" />
+      <TocEntry
+        Title="Save as..."
+        Link="/Content/the_menus/MENU_FILE/File_Save_As.htm" />
+      <TocEntry
+        Title="Translate..."
+        Link="/Content/the_menus/MENU_FILE/File_Translate.htm" />
+      <TocEntry
+        Title="Print..."
+        Link="/Content/the_menus/MENU_FILE/file_print.htm" />
+      <TocEntry
+        Title="Emboss..."
+        Link="/Content/the_menus/MENU_FILE/File_Emboss.htm">
+        <TocEntry
+          Title="Emboss - TranSendSE"
+          Link="/Content/the_menus/MENU_FILE/File_EmbossTranSendSE.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Exit"
+        Link="/Content/the_menus/MENU_FILE/file_exit.htm" />
+      <TocEntry
+        Title="Other Program(s)"
+        Link="/Content/the_menus/MENU_FILE/File_Other_Program(s).htm" />
+      <TocEntry
+        Title="Recently Used Files"
+        Link="/Content/the_menus/MENU_FILE/File_Recently_Used_Files.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="EDIT"
+      Link="/Content/the_menus/menu_edit/EDIT_(Menu).htm"
+      StartChapter="true"
+      StartSection="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Edit.flpgl">
+      <TocEntry
+        Title="Undo"
+        Link="/Content/the_menus/menu_edit/Edit_Undo.htm" />
+      <TocEntry
+        Title="Redo"
+        Link="/Content/the_menus/menu_edit/Edit_Redo.htm" />
+      <TocEntry
+        Title="Cut"
+        Link="/Content/the_menus/menu_edit/Edit_Cut.htm" />
+      <TocEntry
+        Title="Copy"
+        Link="/Content/the_menus/menu_edit/Edit_Copy.htm" />
+      <TocEntry
+        Title="Paste"
+        Link="/Content/the_menus/menu_edit/Edit_Paste.htm" />
+      <TocEntry
+        Title="Clear"
+        Link="/Content/the_menus/menu_edit/Edit_Clear.htm" />
+      <TocEntry
+        Title="Select All"
+        Link="/Content/the_menus/menu_edit/Edit_Select_All.htm" />
+      <TocEntry
+        Title="Highlight"
+        Link="/Content/the_menus/menu_edit/Edit_Highlight.htm" />
+      <TocEntry
+        Title="Change Case"
+        Link="/Content/the_menus/menu_edit/edit_change_case.htm" />
+      <TocEntry
+        Title="Insert File"
+        Link="/Content/the_menus/menu_edit/Edit_Insert_File.htm" />
+      <TocEntry
+        Title="Goto..."
+        Link="/Content/the_menus/menu_edit/Edit_Goto.htm" />
+      <TocEntry
+        Title="Find..."
+        Link="/Content/the_menus/menu_edit/edit_find.htm" />
+      <TocEntry
+        Title="Find Again"
+        Link="/Content/the_menus/menu_edit/Edit_Find_Again.htm" />
+      <TocEntry
+        Title="Spell Check..."
+        Link="/Content/the_menus/menu_edit/edit_spell_check.htm" />
+      <TocEntry
+        Title="Replace..."
+        Link="/Content/the_menus/menu_edit/edit_replace.htm" />
+      <TocEntry
+        Title="Find Misspelling"
+        Link="/Content/the_menus/menu_edit/Edit_Find_Misspelling.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="VIEW"
+      Link="/Content/the_menus/MENU_VIEW/VIEW_(Menu).htm"
+      StartSection="true"
+      StartChapter="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/View.flpgl">
+      <TocEntry
+        Title="Full-Page"
+        Link="/Content/the_menus/MENU_VIEW/view_full_page.htm" />
+      <TocEntry
+        Title="Print Font"
+        Link="/Content/the_menus/MENU_VIEW/View_Print_Font.htm" />
+      <TocEntry
+        Title="Braille Font"
+        Link="/Content/the_menus/MENU_VIEW/view_braille_font.htm" />
+      <TocEntry
+        Title="SimBraille Font"
+        Link="/Content/the_menus/MENU_VIEW/View_SimBraille_Font.htm" />
+      <TocEntry
+        Title="Six-Key (Braille) Entry"
+        Link="/Content/the_menus/MENU_VIEW/view_six_key_entry.htm" />
+      <TocEntry
+        Title="Codes"
+        Link="/Content/the_menus/MENU_VIEW/View_Codes.htm" />
+      <TocEntry
+        Title="Translated Line"
+        Link="/Content/the_menus/MENU_VIEW/View_Translated_Line.htm" />
+      <TocEntry
+        Title="Active Document"
+        Link="/Content/the_menus/MENU_VIEW/View_Active_Document.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="LAYOUT"
+      Link="/Content/the_menus/MENU_LAYOUT/layout_(menu).htm"
+      StartSection="true"
+      StartChapter="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Layout.flpgl">
+      <TocEntry
+        Title="Apply Style... (F8)"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Apply_Style.htm" />
+      <TocEntry
+        Title="Apply Last Style  (Shift-F8)"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Apply_Last_Style.htm" />
+      <TocEntry
+        Title="Style Level +  (Alt-Right)"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Style_Level_1.htm" />
+      <TocEntry
+        Title="Style Level - (Alt-Left)"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Style_Level_2.htm" />
+      <TocEntry
+        Title="Join Lines"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Join_Lines.htm" />
+      <TocEntry
+        Title="Join Styles"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Join_Styles.htm" />
+      <TocEntry
+        Title="Translation Codes"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Translation_Codes.htm">
+        <TocEntry
+          Title="Grade 0"
+          Link="/Content/the_menus/MENU_LAYOUT/layout_translation_codes_grade_0.htm" />
+        <TocEntry
+          Title="Grade 1"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Translation_Codes_Grade_1.htm" />
+        <TocEntry
+          Title="Grade 2"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Translation_Codes_Grade_2.htm" />
+        <TocEntry
+          Title="CBC"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Translation_Codes_CBC_Text.htm" />
+        <TocEntry
+          Title="Spanish Text"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Translation_Codes_Spanish_Text.htm" />
+        <TocEntry
+          Title="LIFG Text"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Translation_Codes_LIFG_Text.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Character Codes"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Character_Codes.htm">
+        <TocEntry
+          Title="Letter Sign"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Character_Codes_Letter_Sign.htm"></TocEntry>
+        <TocEntry
+          Title="Termination Sign"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Character_Codes_Termination_Sign.htm" />
+        <TocEntry
+          Title="Hard Space"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Character_Codes_Hard_Space.htm" />
+        <TocEntry
+          Title="Group"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Character_Codes_Group.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Line Codes"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes.htm">
+        <TocEntry
+          Title="New Line"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes_New_Line.htm" />
+        <TocEntry
+          Title="Skip Line"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes_Skip_Line.htm" />
+        <TocEntry
+          Title="Suppress Skipped Line"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Suppress_Skipped_Line.htm" />
+        <TocEntry
+          Title="Centering"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes_Centering.htm" />
+        <TocEntry
+          Title="Flush Right"
+          Link="/Content/the_menus/MENU_LAYOUT/layout_line_codes_flush_right.htm" />
+        <TocEntry
+          Title="Flush Right with Leader"
+          Link="/Content/the_menus/MENU_LAYOUT/layout_line_codes_flush_right_w_leader.htm" />
+        <TocEntry
+          Title="Tab To Runover Point"
+          Link="/Content/the_menus/MENU_LAYOUT/Tab_To_Runover_Point.htm" />
+        <TocEntry
+          Title="Single Spacing"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes_Single_Spacing.htm" />
+        <TocEntry
+          Title="Double Spacing"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes_Double_Spacing.htm" />
+        <TocEntry
+          Title="New Paragraph"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Line_Codes_New_Paragraph.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Left Margin"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Left_Margin.htm" />
+      <TocEntry
+        Title="Right Margin"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Right_Margin.htm" />
+      <TocEntry
+        Title="Runover Offset"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Runover_Offset.htm" />
+      <TocEntry
+        Title="Math Codes"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Math_Codes.htm" />
+      <TocEntry
+        Title="Page Codes"
+        Link="/Content/the_menus/MENU_LAYOUT/layout_Page_Codes.htm">
+        <TocEntry
+          Title="New Page"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Page_Codes_New_Page.htm" />
+        <TocEntry
+          Title="New Reference Page"
+          Link="/Content/the_menus/MENU_LAYOUT/Layout_Page_Codes_New_Reference_Page.htm" />
+        <TocEntry
+          Title="Block Protect"
+          Link="/Content/the_menus/MENU_LAYOUT/layout_page_codes_block_protect.htm" />
+        <TocEntry
+          Title="Vertical Centering"
+          Link="/Content/the_menus/MENU_LAYOUT/Vertical_Centering.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Set Page Number..."
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Set_Page_Number.htm" />
+      <TocEntry
+        Title="Header..."
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Header.htm" />
+      <TocEntry
+        Title="Footer..."
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Footer.htm" />
+      <TocEntry
+        Title="Generate Table of Contents"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Generate_Table_of_Contents.htm" />
+      <TocEntry
+        Title="Picture"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Picture.htm" />
+      <TocEntry
+        Title="Code List... (F5)"
+        Link="/Content/the_menus/MENU_LAYOUT/Layout_Code_List.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="TABLES"
+      Link="/Content/the_menus/menu_table/tables(menu).htm"
+      BreakType="chapter"
+      PageLayout="/Content/Resources/PageLayouts/Tables.flpgl"
+      StartSection="false"
+      PageNumberReset="continue">
+      <TocEntry
+        Title="Create"
+        Link="/Content/the_menus/menu_table/table_create.htm" />
+      <TocEntry
+        Title="Properties"
+        Link="/Content/the_menus/menu_table/table_properties.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="DOCUMENT"
+      Link="/Content/the_menus/menu_document/document_menu.htm"
+      StartSection="true"
+      StartChapter="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Document.flpgl">
+      <TocEntry
+        Title="Embosser Setup... (Ctrl-F11)"
+        Link="/Content/the_menus/menu_document/document_embosser_setup.htm" />
+      <TocEntry
+        Title="Printer Setup... (Document only)"
+        Link="/Content/the_menus/menu_document/document_printer_setup.htm" />
+      <TocEntry
+        Title="Page Numbering..."
+        Link="/Content/the_menus/menu_document/Document_Page_Numbering.htm" />
+      <TocEntry
+        Title="Translation Tables"
+        Link="/Content/the_menus/menu_document/Document_Translation_Tables.htm" />
+      <TocEntry
+        Title="Learning Tables"
+        Link="/Content/the_menus/menu_document/document_learning_tables.htm" />
+      <TocEntry
+        Title="Hyphen Table."
+        Link="/Content/the_menus/menu_document/Document_Hyphen_Table.htm" />
+      <TocEntry
+        Title="Add Style..."
+        Link="/Content/the_menus/menu_document/Document_Add_Style.htm" />
+      <TocEntry
+        Title="Modify Style..."
+        Link="/Content/the_menus/menu_document/document_modify_style.htm" />
+      <TocEntry
+        Title="Delete Style..."
+        Link="/Content/the_menus/menu_document/document_delete_style.htm" />
+      <TocEntry
+        Title="Create Template..."
+        Link="/Content/the_menus/menu_document/Document_Create_Template.htm" />
+      <TocEntry
+        Title="Delete Template..."
+        Link="/Content/the_menus/menu_document/Document_Delete_Template.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="GLOBAL"
+      Link="/Content/the_menus/MENU_GLOBAL/GLOBAL_MENU.htm"
+      StartSection="true"
+      StartChapter="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Global.flpgl">
+      <TocEntry
+        Title="Embosser Setup..."
+        Link="/Content/the_menus/MENU_GLOBAL/global_embosser_setup.htm">
+        <TocEntry
+          Title="General"
+          Link="/Content/the_menus/MENU_GLOBAL/Global_Embosser_setup_general.htm"
+          StartSection="false" />
+        <TocEntry
+          Title="Device Settings"
+          Link="/Content/the_menus/MENU_GLOBAL/Global_Embosser_setup_settings.htm" />
+        <TocEntry
+          Title="TranSendSE"
+          Link="/Content/the_menus/MENU_GLOBAL/global_Embosser_setup_transend_se.htm" />
+        <TocEntry
+          Title="Advanced"
+          Link="/Content/the_menus/MENU_GLOBAL/Global_Embosser_setup_advanced.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Printer Setup..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Printer_Setup.htm" />
+      <TocEntry
+        Title="Autosave Options"
+        Link="/Content/the_menus/MENU_GLOBAL/global_autosave_options.htm">
+        <TocEntry
+          Title="Autosave Recovery Wizard"
+          Link="/Content/the_menus/MENU_GLOBAL/global_autosave_wizard.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Default Views..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Default_Views.htm" />
+      <TocEntry
+        Title="Internationalization"
+        Link="/Content/the_menus/MENU_GLOBAL/global_internationalization.htm" />
+      <TocEntry
+        Title="Fonts..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Fonts.htm" />
+      <TocEntry
+        Title="View Preferences..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_View_Preferences....htm" />
+      <TocEntry
+        Title="Shortcut Preferences..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Shortcut_Preferences....htm" />
+      <TocEntry
+        Title="WordPerfect Importer..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_WordPerfect_Importer.htm" />
+      <TocEntry
+        Title="Word Importer..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Word_Importer.htm" />
+      <TocEntry
+        Title="Formatted Braille Importer..."
+        Link="/Content/the_menus/MENU_GLOBAL/Global_Formatted_Braille_Importer.htm" />
+      <TocEntry
+        Title="Hyperlink Settings"
+        Link="/Content/the_menus/MENU_GLOBAL/global_hyperlink_settings.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="HELP"
+      Link="/Content/the_menus/MENU_HELP/Help_Menu.htm"
+      StartChapter="true"
+      StartSection="true"
+      PageNumber="1"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Help.flpgl">
+      <TocEntry
+        Title="Help Topics..."
+        Link="/Content/the_menus/MENU_HELP/Help_Help_Topics_(New).htm" />
+      <TocEntry
+        Title="Translate"
+        Link="/Content/the_menus/MENU_HELP/help_translate.htm" />
+      <TocEntry
+        Title="Favorite Topics..."
+        Link="/Content/the_menus/MENU_HELP/Favorite_Topics.htm" />
+      <TocEntry
+        Title="New in 11.1"
+        Link="/Content/the_menus/MENU_HELP/Help_New_in_11.1.htm" />
+      <TocEntry
+        Title="Registration..."
+        Link="/Content/the_menus/MENU_HELP/Help_Registration.htm" />
+      <TocEntry
+        Title="Check for Updates..."
+        Link="/Content/the_menus/MENU_HELP/help_check_for_updates.htm" />
+      <TocEntry
+        Title="About DBT"
+        Link="/Content/the_menus/MENU_HELP/help_about_dbt.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Appendices"
+    Link="/Content/PRINT_VERSIONS/appendices.htm"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Appendices.flpgl"
+    StartSection="false"
+    PageNumberReset="continue">
+    <TocEntry
+      Title="Word Navigation"
+      Link="/Content/Word Navigation.htm" />
+    <TocEntry
+      Title="Remove DBT"
+      Link="/Content/getting_setup_in_DBT/Remove_DBT.htm" />
+    <TocEntry
+      Title="Why can't I see the shortcut letters?"
+      Link="/Content/troubleshooting/Why_can_t_I_see_the_shortcut_letters.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="glossary"
+    Link="/Content/glossaries/print/glossary.htm"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Glossary.flpgl"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Index"
+    Link="/Content/PRINT_VERSIONS/Print - The Menus/Print - Index.htm"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl"
+    StartSection="false"
+    PageNumberReset="continue" />
+  <TocEntry
+    Title="Back Page (The Menus)"
+    Link="/Content/Back Page (The Menus).htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+    PageNumberReset="continue" />
+</CatapultToc>

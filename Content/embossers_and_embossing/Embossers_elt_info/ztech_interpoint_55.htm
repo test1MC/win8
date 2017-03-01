@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2256" MadCap:lastWidth="677">
+    <head><title>Interpoint 55</title>
+        <link rel="StyleSheet" href="../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>Interpoint 55: Updating Our Approach</h4>
+        <p>For years, Duxbury Systems has sent output to the Interpoint 55 Embosser using an approach which is now obsolete.</p>
+        <p>The old approach would not work on 64-bit Windows, and restricted the formats DBT could produce on the Interpoint 55.</p>
+        <p>Our approach is in transition, and we look forward to further improvements which would make embossing even more convenient.</p>
+        <p>At this time, we ask users to create *.x55 files directly from DBT. The next step is to use the WPrint55 program supplied by Interpoint NV to take the Duxbury DBT created *.w55 file and emboss your material.</p>
+        <p>The software manual for the Interpoint 55 can be obtained from the vendor.</p>
+        <p>The updated software is available to Interpoint 55 users from the vendor.</p>
+        <p class="bold">IMPORTANT NOTE: When setting up this embosser in Global: Embosser Setup, please ensure you select the "Write to File" radio button under Output Options as shown below. (For full details about adding an embosser, please see "The Menus: Global: <a href="../../the_menus/MENU_GLOBAL/global_embosser_setup.htm">Embosser Setup</a>")</p>
+        <p class="center">
+            <img src="../../Resources/Images/embossers_and_embossing/Interpoint_55_output_file.jpg" alt="image shows DBT's Embosser Setup General Tab with Write to file Radio Button activated" />
+        </p>
+        <p class="center">
+            <img src="../../Resources/Images/embossers_and_embossing/interpoint_55.jpg" title="Interpoint 55 embosser" alt="Interpoint 55 embosser" />
+        </p>
+        <h4>
+            <MadCap:keyword term="Interpoint" />News for Interpoint 55 Users</h4>
+        <p>DBT's handling of the Interpoint 55 high-volume production embosser has been upgraded significantly since the initial release of DBT 10.6.</p>
+        <p>We have fixed a bug that caused DBT to fail sending any output whatsoever to the Interpoint 55. So all DBT users who have an Interpoint 55 will be well-served to install <MadCap:variable name="Primary.Version_Short_DBT" />.</p>
+        <p>We have also added support for specifying the VSHIFT value to the Interpoint 55. VSHIFT is a value in the range 0-3 that specifies how much to shift the top of the page down. VSHIFT is not intended for use to create a top margin. But instead, due to the unique design of the Interpoint 55, a change in VSHIFT will cause a different set of embossing pins to be used. So rotation of VSHIFT values on a monthly basis is recommended in normal use, to ensure even wear on the embosser parts, and a particular VSHIFT value may be used to avoid use of a broken pin when this is necessary.</p>
+        <p>DBT normally manages VSHIFT values automatically, setting the VSHIFT value to a value that depends on the calendar month, as shown in the following table:</p>
+        <table style="margin-left: 0;margin-right: auto;">
+            <caption>[VSHIFT VALUES]</caption>
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>VSHIFT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>June</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>If you want to change this behavior, for example to set a particular VSHIFT value that will avoid use of a broken pin, or to resume the regular rotation after the pin is repaired, select Modify Embosser from the Global Embosser Setup dialog, then change the VSHIFT value in the Device Settings tab, as shown below:</p>
+        <p align="center" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_interpoint_55_settings.gif" alt="Interpoint 55 Dialog" border="0" />
+        </p>
+    </body>
+</html>

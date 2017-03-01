@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="DBT;Uncontracted;CONFIG.SYS;CorelDRAW;CR;LF;Ctrl;curreny;DBTDOCS;UNCONTRACTED;w;Runover;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;n;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rps;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;dizziness[rpe;dizzi;lg~TEXT;lg~john's;z;Code(s;ifbrl;ifprt;sibrl;siimp;availa#;line[;ea;table(s;indP;Apples[;opp+;ind;hl;ki;stL;Smith[l;Lawns[l;TOWN[l;pg;L;ie;Line(s;skL;lines[;m;svprgN;agraph;amet;det;posi;j;l;h[;brl;reckon$;svprg;n[;Lawns[;p~;Description[fr;Windows[fr;DOS[fr;descrip;duxbury;used.as;ISP;the_newbie;somewhere.com;joe;alo.com;the_man_at_the_top;ontheinternet.co.uk;Road[;gf;bunt+;ampton;nn#b;ee;ctb;stb;Afternoon[;Lessons[;d;morn+;afn;mon;tues;w$nes;stbS;F~X;etb;ftb;Bal;Descr;Debit.Credit.Balance;cr$it;bal.e;sal;dbt;svdac~x;U.K.;svdac~X;svdac~;es~E;ee~E;inkprint;f~-;svles;lec" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Reference Numbers (Parameters)" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="952" MadCap:lastWidth="728">
+    <head><title>Print Page Numbers (Parameters)</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Numbering:Print Page Parameters;Page:Number Parameters;Reference Page:Number Parameters;Print:Page Number Parameters" />Print Page Numbers (Parameters)</h4>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[svlesN:M:L:P]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It sets the parameters for the treatment of Reference (or Print) Page Numbers when using the <span class="Code-DuxCode">[lea]</span> Code described in Print Page Numbers.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">This code is often used in the initial style of templates to adapt formatting of reference page numbers to meet local requirements.</p>
+        <p class="Normal">The following example is one of the Codes described in <a href="../../Templates/Templates_Docs/initial_style.htm">Styles: The "initial" Style</a> to accommodate UKAAF (formerly BAUK) recommendations</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxScreen">End of the meeting.<span class="Code-DuxCode"><br />[svles1:1:2:0][lea]</span><span class="Code-DuxScreen">36</span><span class="Code-DuxScreen">&#160;<br />Next meeting date:<br />23rd April 2006.</span></span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,5d (! meet+4</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"3#cf</p>
+        <p class="Simbraille">,next meet+ date3</p>
+        <p class="Simbraille">#bj? ,april #bjjf4</p>
+        <p class="bold">Let us explain!</p>
+        <p><span class="Code-DuxCode">N</span> determines the treatment at the point of the page break: <span class="Code-DuxCode">0</span> for American style (a full line of dots 3-6 to the number flush right), <span class="Code-DuxCode">1</span> for British (RNIB) style (the number centered, preceded by dot 5, 25).</p>
+        <p><span class="Code-DuxCode">M</span> determines the treatment on continuing pages: <span class="Code-DuxCode">0</span> for American (a, b ... prefixes on continuation pages, <span class="Code-DuxCode">1</span> for British (unprefixed).</p>
+        <p><span class="Code-DuxCode">L</span> determines the "bottom tolerance", i.e. the number of lines that must be available at the bottom of the page AFTER the print page break indicator line.</p>
+        <p><span class="Code-DuxCode">P</span> determines the initial text position after the page break: <span class="Code-DuxCode">0</span> for the left margin, <span class="Code-DuxCode">1</span> for the runover margin. (If no value is entered, the default will be <span class="Code-DuxCode">0</span>.</p>
+        <p>If all four values are defaulted, the settings are restored to values as at the file beginning, which are <span class="Code-DuxCode">N</span>=<span class="Code-DuxCode">0</span>, <span class="Code-DuxCode">M</span>=<span class="Code-DuxCode">0</span>, <span class="Code-DuxCode">L</span>=<span class="Code-DuxCode">2</span> and <span class="Code-DuxCode">P</span>=<span class="Code-DuxCode">0</span> respectively. If one or more values are specified, any unspecified values remain unchanged.</p>
+    </body>
+</html>

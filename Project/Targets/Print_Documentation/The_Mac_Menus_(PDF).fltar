@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/The_Mac_Menus.fltoc"
+  ConditionTagExpression="include[Primary.Mac_Version or Primary.Print_Only] exclude[Primary.HTML_Only or Primary.Not_in_Print_Docs or Primary.Windows_Version] "
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  MasterStylesheetOverride="true"
+  conditions="Primary.Mac_Version"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <Glossaries></Glossaries>
+  <PDF
+    Tagged="true"
+    ShowUsedBookmarks="false" />
+</CatapultTarget>

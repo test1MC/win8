@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="4" MadCap:lastHeight="4030" MadCap:lastWidth="694">
+    <head><title>BULGARIAN (Uncontracted)</title>
+        <link rel="StyleSheet" href="../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Uncontracted:Bulgarian;Bulgarian:Uncontracted" />BULGARIAN (Uncontracted)<img src="../Resources/Images/flags/bulgaria.gif" alt="Flag of Bulgaria" style="width: 45px; height: 30px;" width="45" height="30" border="1" title="Flag of Bulgaria" class="flag" /></h4>
+        <h5>TABLE DESIGNATOR</h5>
+        <p class="DBTCodePara">bul</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TableDesignator.flsnp" />
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The Bulgarian Uncontracted tables support print-to-braille translation of Bulgarian-language literary text written in the Cyrillic alphabet. They are usually used in conjunction with Microsoft Word, or equivalent external facilities for composing and editing the print text that can then be imported into the Duxbury Braille Translator (DBT) for conversion into braille. English text may also be processed as a sub-language, and converted to contracted or uncontracted English braille (generally following British conventions in those minor instances where they differ from American ones).</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Braille_to_Print.flsnp" />
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>Although DBT can display Cyrillic characters in its print file view, it is often more convenient to use an external word processor to compose and edit the print text that is to be translated. When doing so, it is necessary to use a facility that encodes the text in Unicode so that it can be imported correctly to DBT. (Some methods of entering Cyrillic rely upon a variant "font" to display standard ASCII characters as Cyrillic. Those methods cannot be used, because those ASCII characters would be imported according to their standard interpretation, not as Cyrillic characters.)</p>
+        <p>Microsoft Word, properly used, fulfills the above requirements. Use the Lucida Sans Unicode font, or equivalent Unicode font, and a Bulgarian (or Cyrillic) keyboard, when entering the Bulgarian text.</p>
+        <p>True braille-to-print translation is supported only within any embedded English text, not in the Bulgarian/Cyrillic text. This means that it is not generally useful to translate the Bulgarian braille file to print. It also means that the "translated line" will typically contain gibberish when viewing the braille file -you may prefer to turn off the "translated line" under the View menu, or even under Global/Default if you wish it to be off by default.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>English text may be entered as a secondary language, and converted to contracted or uncontracted English braille. That is, the grade switches affect the translation of the English text even though the Bulgarian text is always translated in grade 1 regardless of the grade setting in effect. In literary text, British conventions are generally followed, to the extent that they sometimes differ slightly from American ones.</p>
+        <p>French language text may be entered; it is brailled as uncontracted French braille, including the dots 46 capital indicator.</p>
+        <p>Russian or Ukrainian language may also be entered; they are brailled in the same way as Bulgarian.</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>No technical codes are supported.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span> may be embedded within letter-groups that would normally be contracted, to prevent the contraction.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to<span class="Code-DuxCode">[g2]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[cz]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span> switches to "grade 1" (uncontracted) braille. This does not affect the Bulgarian text, which is uncontracted anyway, but does affect any embedded English text.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span> switches to "grade 2" (contracted) braille. This is the normal mode, but actually applies only to any embedded English text as the Bulgarian text is always uncontracted.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to <span class="Code-DuxCode">[g1]</span></p>
+        <p><span class="Code-DuxCode">[lnb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb~...]</span> (for switching to another base [primary] language table)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~bg]</span> or <span class="Code-DuxCode">[lng]</span> switches to Bulgarian language.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~en]</span> switches to English language.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~fr]</span> switches to French language.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~ru]</span> switches to Russian language.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~uk]</span> switches to Ukrainian language.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tx]</span> resumes normal translation, ending "direct braille."</p>
+        <p>Other translation codes will generally be ignored, or may cause unpredictable translation results.</p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p>All ASCII printable characters</p>
+        <p>Accented characters and punctuation marks typical of French, German, Italian, and Spanish</p>
+        <p>British pound sign (£)</p>
+        <p>Cyrillic unaccented characters (internal DUSCI codes D+b631 through D+b681 (see also Unicode codes U+0400 through U+047f).</p>
+        <p>The above is a general guide only (see "<a href="translation_tables.htm#GENERAL_NOTES">General Notes</a>" section at the beginning of this document).</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>These tables are based upon the information given for Bulgarian in "World Braille Usage," a joint publication of <a href="../POPUPS/UNESCO.htm" target="_popup">UNESCO</a> and the National Library Service for the Blind and Physically Handicapped, Washington, D.C. (1990). According to that publication, contractions are not used in Bulgarian braille and so these tables should produce braille that is normal for that country.</p>
+        <p>The tables were originally developed in June 2000 by Duxbury Systems, Inc.</p>
+        <p>(Documentation reviewed: July 2010.)</p>
+    </body>
+</html>

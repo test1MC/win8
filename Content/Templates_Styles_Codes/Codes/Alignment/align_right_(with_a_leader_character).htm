@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="2" MadCap:lastHeight="1071" MadCap:lastWidth="694">
+    <head><title>Align - Right (with a Leader Character)</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body lang="EN-GB">
+        <h4>
+            <MadCap:keyword term="Alignment:Align - Right (with a Leader Character);Align:Right with leader" />Align - Right (with a Leader Character)</h4>
+        <h6>Code Used: <b><span class="Code-DuxCode">[fr;p~".]</span></b></h6>
+        <p class="Keystroke"><b>Keyboard Shortcut: </b><span class="Keyboard">Alt + F7</span>
+        </p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It forces the word, or group of characters, immediately following the command to the right hand margin, and adds a "Leader Character". This command is cancelled by a space or carriage return. It is not necessary to have any characters before the command. </p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">To create a Table of Contents, or to lay out a menu or price list such as shown below.</p>
+        <p class="CourierPara">Product Description ............. Price<br />Duxbury for Windows ........... $595.00<br />Duxbury for DOS ............... $495.00</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxScreen">Product Description</span><b><span class="Code-DuxCode">[fr;p~".]</span></b><span class="Code-DuxScreen">Price</span><span class="Code-DuxScreen"><br />Duxbury for Windows</span><b><span class="Code-DuxCode">[fr;p~".]</span></b><span class="Code-DuxScreen">$595.00</span><span class="Code-DuxScreen"><br />Duxbury for DOS</span><b><span class="Code-DuxCode">[fr;p~".]</span></b><span class="Code-DuxScreen">$495.00</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">Product descrip;n """""" price<br />duxbury = w9d[s """"" 4#eie1jj<br />duxbury = dos """"""" 4#die1jj</p>
+        <p class="bold">For the more technical:</p>
+        <p class="hcp2">Note that where dot 5 appears as the "Leader Character", a space appears at each end. If you require dot 5 instead of the space, then replace the <b>p</b> (partial fill) in the command with an <b>f</b> (full fill)</p>
+        <p class="hcp2">The <b>"</b> and <b>.</b> are used to denote which character is to be used.as the "Leader Character" first in Braille, and second optionally in print. In the above example, the <b>"</b> will produce dot 5 in Braille, while the <b>.</b> will produce a period or full stop when viewing the text in Duxbury and when printing. (When not in Code View)</p>
+        <p class="hcp2">DBT's <a href="..\..\..\the_menus\MENU_GLOBAL\Global_Shortcut_Preferences....htm">Global: Shortcut Preferences</a> dialog provides a way to customize what leader dot characters are used in both print and braille when <span class="Keyboard">Alt + F7</span> is pressed.</p>
+        <p class="bold">NOTES:</p>
+        <p>You need not have the print character as shown above. You can simply use <b><span class="Code-DuxCode">[fr;p~"]</span></b>. In this case, the appearance of the leader dots in the print document will be odd, but the braille will not be affected.</p>
+        <p class="bold">Leader Dots:</p>
+        <p>Use " (Double Quote) for Dot 5</p>
+        <p>Use 3 (Number 3) for Dots 2 &amp; 5</p>
+        <p>Use - (Hyphen) for dots 3 &amp; 6</p>
+        <p>Please see the <a href="..\Miscellaneous\codes_embosser_character_table.htm">Embosser Character Table</a> for full list of possible characters.</p>
+    </body>
+</html>

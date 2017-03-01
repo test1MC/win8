@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="UEB_FAQ"
+    Link="/Content/UEB_FAQ/UEB.htm"
+    StartSection="false">
+    <TocEntry
+      Title="Unified English Braille - FAQ"
+      Link="/Content/UEB_FAQ/UEB.htm" />
+    <TocEntry
+      Title="Are Upper Case/Capital indicators optional?"
+      Link="/Content/UEB_FAQ/UEB_capitals.htm" />
+    <TocEntry
+      Title="Why have some contractions been dropped?"
+      Link="/Content/UEB_FAQ/UEB_contractions_dropped.htm" />
+    <TocEntry
+      Title="Can I re-translate my braille files to UEB?"
+      Link="/Content/UEB_FAQ/UEB_convert_braille_files.htm" />
+    <TocEntry
+      Title="Can I convert my existing docs to UEB?"
+      Link="/Content/UEB_FAQ/UEB_convert_existing_to_UEB.htm" />
+    <TocEntry
+      Title="What is it going to cost to change to UEB?"
+      Link="/Content/UEB_FAQ/UEB_costs.htm" />
+    <TocEntry
+      Title="What is different in UEB?"
+      Link="/Content/UEB_FAQ/UEB_differences.htm" />
+    <TocEntry
+      Title="Do I need to show bold, underline, italics, etc.?"
+      Link="/Content/UEB_FAQ/UEB_eye_candy.htm" />
+    <TocEntry
+      Title="Will I need to upgrade my braille embosser?"
+      Link="/Content/UEB_FAQ/UEB_hardware.htm" />
+    <TocEntry
+      Title="Does the layout change in braille?"
+      Link="/Content/UEB_FAQ/UEB_layout_braille.htm" />
+    <TocEntry
+      Title="Are spaced operators allowed in math?"
+      Link="/Content/UEB_FAQ/UEB_math_spaces.htm" />
+    <TocEntry
+      Title="How do I get dot 5 for a space between numbers?"
+      Link="/Content/UEB_FAQ/UEB_numbers.htm" />
+    <TocEntry
+      Title="Where can I get a UEB Primer from?"
+      Link="/Content/UEB_FAQ/UEB_primer.htm" />
+    <TocEntry
+      Title="Where can I get Rule Books for math and technical subjects?"
+      Link="/Content/UEB_FAQ/UEB_rules_technical.htm" />
+    <TocEntry
+      Title="Where can I get a UEB Rule Book from?"
+      Link="/Content/UEB_FAQ/UEB_rule_books.htm" />
+    <TocEntry
+      Title="Will I need to upgrade my software?"
+      Link="/Content/UEB_FAQ/UEB_software.htm" />
+    <TocEntry
+      Title="How do I deal with Special Characters?"
+      Link="/Content/UEB_FAQ/UEB_special_characters.htm" />
+    <TocEntry
+      Title="Are there any UEB support lists I can subscribe to?"
+      Link="/Content/UEB_FAQ/UEB_support_lists.htm" />
+    <TocEntry
+      Title="Is there any training material avalable?"
+      Link="/Content/UEB_FAQ/UEB_training_material.htm" />
+    <TocEntry
+      Title="When do we have to start using UEB?"
+      Link="/Content/UEB_FAQ/UEB_when.htm" />
+    <TocEntry
+      Title="Why are we changing to UEB?"
+      Link="/Content/UEB_FAQ/UEB_why.htm" />
+  </TocEntry>
+</CatapultToc>

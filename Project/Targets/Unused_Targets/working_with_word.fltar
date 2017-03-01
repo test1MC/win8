@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  EquationsOutputType="SVG"
+  MasterToc="/Project/TOCs/working_with_word.fltoc"
+  ConditionTagExpression="include[Primary.Working_with_Word] "
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

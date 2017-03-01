@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="">
+  <TocEntry
+    Title="Activation Wizard Help"
+    Link="/Content/activation_wizard_help/Top.htm">
+    <TocEntry
+      Title="Activation Explained"
+      Link="/Content/activation_wizard_help/m_WelcomeWhatIsActivation.htm" />
+    <TocEntry
+      Title="Welcome"
+      Link="/Content/activation_wizard_help/m_Welcome.htm">
+      <TocEntry
+        Title="Welcome New Unlicensed User"
+        Link="/Content/activation_wizard_help/m_WelcomePage_1.htm"></TocEntry>
+      <TocEntry
+        Title="Welcome Licensed User. Not yet Activated"
+        Link="/Content/activation_wizard_help/m_WelcomePage_2.htm" />
+      <TocEntry
+        Title="Welcome User with Activation Pending"
+        Link="/Content/activation_wizard_help/m_WelcomePage_3.htm" />
+      <TocEntry
+        Title="Welcome Activated User"
+        Link="/Content/activation_wizard_help/m_WelcomePage_4.htm" />
+      <TocEntry
+        Title="Welcome User Activated as a Client"
+        Link="/Content/activation_wizard_help/m_WelcomePage_5.htm"
+        conditions="Primary.Windows_Version" />
+    </TocEntry>
+    <TocEntry
+      Title="Main Function Screen"
+      Link="/Content/activation_wizard_help/m_MainPage.htm" />
+    <TocEntry
+      Title="Working with a Screen Reader"
+      Link="/Content/activation_wizard_help/m_ScreenRdr.htm"
+      StartSection="false"
+      conditions="Primary.Windows_Version" />
+    <TocEntry
+      Title="Working with a Screen Reader"
+      Link="/Content/activation_wizard_help/m_ScreenRdr_Mac.htm"
+      conditions="Primary.Mac_Version" />
+    <TocEntry
+      Title="Registration"
+      Link="/Content/activation_wizard_help/m_registration.htm">
+      <TocEntry
+        Title="Registration Permission"
+        Link="/Content/activation_wizard_help/m_RegPermissionPg.htm" />
+      <TocEntry
+        Title="Registration, How to connect to Duxbury Systems Support"
+        Link="/Content/activation_wizard_help/m_RegisterIntroPg.htm" />
+      <TocEntry
+        Title="Registration, User Contact Information"
+        Link="/Content/activation_wizard_help/m_RegUserInfoPg.htm" />
+      <TocEntry
+        Title="Registration, User Email Information"
+        Link="/Content/activation_wizard_help/m_RegEmailInfoPg.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Activation"
+      Link="/Content/activation_wizard_help/m_activation.htm">
+      <TocEntry
+        Title="Activation with or without the Internet"
+        Link="/Content/activation_wizard_help/m_ActivateSelectPg.htm" />
+      <TocEntry
+        Title="Activation Options without the Internet"
+        Link="/Content/activation_wizard_help/m_ActivateManualOptsPg.htm" />
+      <TocEntry
+        Title="Entering Activation Data"
+        Link="/Content/activation_wizard_help/m_ActivationDataPg.htm" />
+      <TocEntry
+        Title="Data Summary Page"
+        Link="/Content/activation_wizard_help/m_DataSummaryPg.htm" />
+      <TocEntry
+        Title="Sending Duxbury an Email"
+        Link="/Content/activation_wizard_help/m_SendEmailPage.htm" />
+      <TocEntry
+        Title="Sending a Fax"
+        Link="/Content/activation_wizard_help/m_SendFaxPage.htm" />
+      <TocEntry
+        Title="Activation Code Page (Manual Activation)"
+        Link="/Content/activation_wizard_help/m_ActivationCodePg.htm" />
+      <TocEntry
+        Title="45-Day Trial (DBT only)"
+        Link="/Content/activation_wizard_help/m_45DayTrial.htm"
+        conditions="Primary.Windows_Version" />
+    </TocEntry>
+    <TocEntry
+      Title="Sharing a Multi-user License"
+      conditions="Primary.Windows_Version"
+      Link="/Content/activation_wizard_help/m_sharing.htm">
+      <TocEntry
+        Title="To Host a Network-Shared License"
+        Link="/Content/activation_wizard_help/m_ShareIntroPg.htm"
+        conditions="Primary.Windows_Version" />
+      <TocEntry
+        Title="Installing the Shared License Service"
+        Link="/Content/activation_wizard_help/m_ShareExtrasPg.htm"
+        conditions="Primary.Windows_Version" />
+      <TocEntry
+        Title="Connecting to the Network License Server"
+        Link="/Content/activation_wizard_help/m_ConnectPage.htm"
+        conditions="Primary.Windows_Version" />
+    </TocEntry>
+    <TocEntry
+      Title="De-activation"
+      Link="/Content/activation_wizard_help/m_deactivation.htm">
+      <TocEntry
+        Title="Deactivation Options"
+        Link="/Content/activation_wizard_help/m_DeactivSelectPg.htm" />
+      <TocEntry
+        Title="Deactivation by Telephone"
+        Link="/Content/activation_wizard_help/m_DeactivTelePage.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Troubleshooting"
+      Link="/Content/activation_wizard_help/m_troubleshooting.htm">
+      <TocEntry
+        Title="In Case of a Problem"
+        Link="/Content/activation_wizard_help/m_OPErrorPage.htm" />
+      <TocEntry
+        Title="Diagnosing Activation Problems"
+        Link="/Content/activation_wizard_help/m_DiagnosticsPage.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Final Page"
+      Link="/Content/activation_wizard_help/m_OpDonePage.htm"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ReplaceMergeNode="false"></TocEntry>
+  </TocEntry>
+</CatapultToc>

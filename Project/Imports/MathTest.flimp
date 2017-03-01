@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="true"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-02-08T18:12:40.3770242+00:00"
+  ProjectName="DBT Help"
+  ProjectFolder="C:\Users\george2.TVS.000\Documents\DBT Help\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-02-08T18:13:45.7679592+00:00">
+  <Files>
+    <Url
+      Source="../../../MathTest.docx"
+      AbsoluteSource="file:///C:/Users/george2.TVS.000/Documents/MathTest.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/MathTest/Calculate the following.png"
+      TimeStamp="08/02/2017 18:12:54" />
+    <Url
+      Source="../../Content/MathTest/Calculate the following.htm"
+      TimeStamp="08/02/2017 18:12:54" />
+    <Url
+      Source="../TOCs/MathTest.fltoc"
+      TimeStamp="08/02/2017 18:12:54" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/MathTest.css"
+      TimeStamp="08/02/2017 18:12:54" />
+  </GeneratedFiles>
+  <ParagraphStyles />
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles />
+  <UsedCharacterStyles />
+</MsWordImport>

@@ -1,0 +1,81 @@
+| PUMA.cpt - Code Page Table for PUMA plate embosser
+| Copyright 1996-2000 Duxbury Systems, Inc.
+| All rights reserved
+
+| File format:
+| Blank lines and lines beginning with a vertical bar and space are ignored
+| The file can be divided into sections of 65 lines.  The first line
+|   of each section must contain the name of the code page.  The next
+|   sixty-four lines contain the ASCII codes used to represent each of the
+|   possible sixty-four cells when that code page is selected.
+| Lines may contain comments, from a vertical bar and space to the end
+|   of line.
+| Sections should be placed in alphabetical or preferred order.  DBT does
+|   not sort sections when reading this file.
+
+| Standard code page for PUMA
+PUMA binary (transparent) code
+128 | Space
+1   | Dot  1.....
+2   | Dot  .2....
+3   | Dots 12....
+4   | Dot  ..3...
+5   | Dots 1.3...
+6   | Dots .23...
+7   | Dots 123...
+8   | Dot  ...4..
+9   | Dots 1..4..
+10  | Dots .2.4..
+11  | Dots 12.4..
+12  | Dots ..34..
+13  | Dots 1.34..
+14  | Dots .234..
+15  | Dots 1234..
+16  | Dot  ....5.
+81  | Dots 1...5.
+18  | Dots .2..5.
+83  | Dots 12..5.
+20  | Dots ..3.5.
+21  | Dots 1.3.5.
+22  | Dots .23.5.
+23  | Dots 123.5.
+24  | Dots ...45.
+25  | Dots 1..45.
+26  | Dots .2.45.
+27  | Dots 12.45.
+28  | Dots ..345.
+29  | Dots 1.345.
+30  | Dots .2345.
+31  | Dots 12345.
+32  | Dot  .....6
+33  | Dots 1....6
+34  | Dots .2...6
+35  | Dots 12...6
+36  | Dots ..3..6
+37  | Dots 1.3..6
+38  | Dots .23..6
+39  | Dots 123..6
+40  | Dots ...4.6
+41  | Dots 1..4.6
+42  | Dots .2.4.6
+43  | Dots 12.4.6
+44  | Dots ..34.6
+45  | Dots 1.34.6
+46  | Dots .234.6
+47  | Dots 1234.6
+48  | Dots ....56
+49  | Dots 1...56
+50  | Dots .2..56
+51  | Dots 12..56
+52  | Dots ..3.56
+53  | Dots 1.3.56
+54  | Dots .23.56
+55  | Dots 123.56
+56  | Dots ...456
+57  | Dots 1..456
+58  | Dots .2.456
+59  | Dots 12.456
+60  | Dots ..3456
+61  | Dots 1.3456
+62  | Dots .23456
+63  | Dots 123456

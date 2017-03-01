@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="AWHELP_WELCOMEPAGE_1" Link="/Content/activation_wizard_help/m_WelcomePage_1.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_WELCOMEPAGE_2" Link="/Content/activation_wizard_help/m_WelcomePage_2.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_WELCOMEPAGE_3" Link="/Content/activation_wizard_help/m_WelcomePage_3.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_WELCOMEPAGE_4" Link="/Content/activation_wizard_help/m_WelcomePage_4.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_WELCOMEPAGE_5" Link="/Content/activation_wizard_help/m_WelcomePage_5.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_MAINPAGE" Link="/Content/activation_wizard_help/m_MainPage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_45DAYTRIAL" Link="/Content/activation_wizard_help/m_45DayTrial.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_ACTIVATEMANUALOPTSPG" Link="/Content/activation_wizard_help/m_ActivateManualOptsPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_ACTIVATESELECTPG" Link="/Content/activation_wizard_help/m_ActivateSelectPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_ACTIVATIONCODEPG" Link="/Content/activation_wizard_help/m_ActivationCodePg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_ACTIVATIONDATAPG" Link="/Content/activation_wizard_help/m_ActivationDataPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_CONNECTPAGE" Link="/Content/activation_wizard_help/m_ConnectPage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_DATASUMMARYPG" Link="/Content/activation_wizard_help/m_DataSummaryPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_DEACTIVSELECTPG" Link="/Content/activation_wizard_help/m_DeactivSelectPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_DEACTIVTELEPAGE" Link="/Content/activation_wizard_help/m_DeactivTelePage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_DIAGNOSTICSPAGE" Link="/Content/activation_wizard_help/m_DiagnosticsPage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_OPDONEPAGE" Link="/Content/activation_wizard_help/m_OpDonePage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_OPERRORPAGE" Link="/Content/activation_wizard_help/m_OPErrorPage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_REGEMAILINFOPG" Link="/Content/activation_wizard_help/m_RegEmailInfoPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_REGISTERINTROPG" Link="/Content/activation_wizard_help/m_RegisterIntroPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_REGPERMISSIONPG" Link="/Content/activation_wizard_help/m_RegPermissionPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_REGUSERINFOPG" Link="/Content/activation_wizard_help/m_RegUserInfoPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_SENDEMAILPAGE" Link="/Content/activation_wizard_help/m_SendEmailPage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_SENDFAXPAGE" Link="/Content/activation_wizard_help/m_SendFaxPage.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_SHAREEXTRASPG" Link="/Content/activation_wizard_help/m_ShareExtrasPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWHELP_SHAREINTROPG" Link="/Content/activation_wizard_help/m_ShareIntroPg.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+    <Map Name="AWIZ_HELP" Link="/Content/activation_wizard_help/Top.htm" Skin="/Project/Skins/Duxbury_ActWiz.flskn" />
+</CatapultAliasFile>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/working_with_word.fltoc"
+  DisableAutoSync="true"
+  ConditionTagExpression="include[Primary.Print_Only] exclude[Primary.HTML_Only] "
+  MasterPageLayout="/Content/Resources/PageLayouts/word_book.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <Glossaries></Glossaries>
+  <PDF
+    Tagged="true" />
+</CatapultTarget>

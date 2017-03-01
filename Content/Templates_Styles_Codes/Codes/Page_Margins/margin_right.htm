@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Line(s" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Page Numbering" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="882" MadCap:lastWidth="758">
+    <head><title>Set Right Margin</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Right Margin:Set;Margin:Set Right" />Set Right Margin</h4>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[rmN]</span> or <span class="Code-DuxCode">[rm0]</span></p>
+        <p class="Keystroke"><b>Keystroke:</b> Accessed from <a href="../../../the_menus/MENU_LAYOUT/Layout_Right_Margin.htm">Layout: Right Margin</a> (<span class="Keyboard">Shift + F4</span> may be used to set a margin of 6)</p>
+        <p class="bold">What does it do?</p>
+        <p>It positions what follows on a new line (if not already on a new line) and sets the right margin for the text. It should be noted that while normal text will "word wrap" at this margin, it is still possible to use Tabulation Codes to place text in the right hand margin. (For example, poetry line numbers)</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal" style="font-weight: normal;">There are occasions when, just as in print, right margin space is required, into which one may add additional information. On the other hand, one may simple wish the place emphasis on a section of text by reducing both the left and right margin.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxScreen">Our text should now finish in cell 30</span><span class="Code-DuxCode">[&lt;]<br />[rm5]</span><span class="Code-DuxScreen">But now we have set our right margin to five</span><span class="Code-DuxCode">[&lt;]<br />[ind5]</span><span class="Code-DuxScreen">And now our left margin is also set to five</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,\r text %d n[ f9i% 9 cell #cj</p>
+        <p class="Simbraille">,b n[ we h set \r "r m&gt;g9</p>
+        <p class="Simbraille">6five</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;,&amp; n[ \r left m&gt;g9 is</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;al set 6five</p>
+        <p class="bold">Let us explain:</p>
+        <p>The <span class="Code-DuxCode">[&lt;]</span> code put text on a new line. <span class="Code-DuxCode">[rm5]</span> creates a right margin of five cells, while <span class="Code-DuxCode">[ind5]</span> begins the left margin in cell 5.</p>
+        <p class="bold">For the Technical:</p>
+        <p>There are times when you might need to add a second parameter to <span class="Code-DuxCode">[rmN]</span>.</p>
+        <p>Most often, this second parameter value will be <span class="Code-DuxCode">0</span>, e.g. <span class="Code-DuxCode">[rm4:0]</span> or <span class="Code-DuxCode">[rm0:0]</span>.</p>
+        <p>This is necessary to reset the "override margin" back to 0 after it has been increased by the <span class="Code-DuxCode">[linenum]</span> command. The "override margin" cannot be reset by <span class="Code-DuxCode">[rmN]</span> alone.</p>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="2276" MadCap:lastWidth="616" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link rel="StyleSheet" href="../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h3>
+            <MadCap:keyword term="Global:Hyperlink Settings;Hyperlink Settings;Han (Chinese Script);Mandarin;Cantonese;Yue;Japanese;Korean" />Global: Import Options</h3>
+        <p MadCap:conditions="Primary.Windows_Version">Keystroke: <span class="Keyboard">o</span> from Global menu.</p>
+        <p MadCap:conditions="Primary.Mac_Version">Keystroke: None</p>
+        <p MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_import_options.jpg" title="Global: Import Options dialog" alt="Global: Import Options dialog" style="width: 579px; height: 436px;" MadCap:conditions="Primary.Windows_Version" />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_import_options_mac.jpg" MadCap:conditions="Primary.Mac_Version" title="Image shows Hyperlink Settings dialog." alt="Image shows Hyperlink Settings dialog." style="width: 604px;height: 474px;" />
+        </p>
+        <p>The <b>Import from Hyperlinks:</b> list box, shown here, gives you three options: URLs Only, Text Only and Both Text and URLs.</p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_hyperlink_selection_mac.jpg" title="image of Action selection list" alt="image of Action selection list" />
+        </p>
+        <p>This is best explained with an actual example of text such as the following:</p>
+        <p class="center"><code>To go to our web site <a href="http://www.duxburysystems.com/">click here</a>.</code>
+        </p>
+        <p>The reader can see underlined text representing a Hyperlink. Here is how DBT would import using the options above.</p>
+        <p class="CourierPara">To go to our web site http://www.duxburysystems.com.</p>
+        <p class="CourierPara">To go to our web site click here.</p>
+        <p class="CourierPara">To go to our web site click here (http://www.duxburysystems.com).</p>
+        <p>In the event that both thetext and URL are identical, checking the "Remove duplicates" check box eliminates the duplicate text.</p>
+        <p><b>Auto-Tag URLS as Computer Notation:</b> Per the braille code currently in use, Computer Braille may or may not be used for URLs.</p>
+        <p MadCap:conditions="Primary.Not_in_Print_Docs"><a href="../../working_with_word/hyperlinks.htm">(Click here to see an important tip when copying and pasting in to Word from a web page which contains hyperlinks.)</a>
+        </p>
+        <p>Add spaces around math signs of comparison: a UEB rule allows spaces to be added around signs of comparison (such as = equals) for new braille learners.</p>
+        <p>Remove spaces surrounding dashes: There are cases where the local rules require there to be no spaces around dashes.</p>
+        <p><b>Unknown characters:</b> With many thousands of Unicode characters now available it is sometimes the case that these have no braille definition as yet. This list-box allows you to a) mark them with an asterisk, b) ignore them, or c) output the Unicode Value.</p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_unknown_characters.jpg" title="Unknown Character Options" alt="Unknown Character Options" />
+        </p>
+        <p>If you wish to investigate what the unknown character is, we suggest you select the Unicode option and make a note of the value given after import. This will enable you to look up the character in the Unicode tables.</p>
+        <p><b>Choose Han (Chinese) script based on template selected for import:</b> Checkbox)</p>
+        <p>From <MadCap:variable name="Primary.Static Version 12.1 (SR2)" /> there is a new checkbox in the Import Options dialog. Most users will want to leave the new option checked. Doing this allows the user to avoid revisiting the dialog to set a Han script treatment for importing most documents containing Chinese ideographs.</p>
+        <p>Default language for Han (Chinese)script: (This option has no effect unless you are using Chinese scripts.) When using Chinese scripts, select one of the four radio buttons, Mandarin, Cantonese (Yue), Japanese or Korean.</p>
+    </body>
+</html>

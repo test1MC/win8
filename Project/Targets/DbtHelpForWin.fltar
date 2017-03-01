@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  DefaultUrl="/Content/welcome_to_DBT/welcome_to_dbt.htm"
+  OutputFile="helpfile.chm"
+  Skin="/Project/Skins/DuxburyMainChm.flskn"
+  Type="HtmlHelp"
+  MasterToc="/Project/TOCs/Primary.fltoc"
+  AliasFile="/Project/Advanced/dbthelp.flali"
+  TargetLanguage="en-us"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  Medium="non-print"
+  GenerateAllSkins="true"
+  PreCompileScaledImages="false"
+  DisableAutoSync="true"
+  UseLocalBuildSettings="false"
+  GetLatestBeforeCompile="false"
+  ExcludeUnreferencedContent="true"
+  Comment="Build DBT helpfile.chm target for nightly autobuilds"
+  ConditionTagExpression="exclude[Primary.Braille_Only or Primary.Mac_Version or Primary.Not_in_HTML or Primary.NOT_USED or Primary.Perky or Primary.Perky_Only or Primary.Print_Only or Primary.Printed_Introduction] "
+  Jump1Url="http://www.duxburysystems.com">
+  <Variables>
+    <Variable
+      Name="Primary/Version_Short_DBT">12.1 (SR1)</Variable>
+  </Variables>
+  <ConditionTags />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+  <RelationshipTables>
+    <RelationshipTable
+      Link="/Project/Advanced/NewRelTable.flrtb" />
+  </RelationshipTables>
+</CatapultTarget>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="2" MadCap:lastHeight="1285" MadCap:lastWidth="638">
+    <head><title>Special Tabs</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Tabs:Special" />Special Tabs</h4>
+        <p class="Normal">Also known as:</p>
+        <p class="Normal">What you need to know first:</p>
+        <p class="Normal">(See also: <a href="Absolute_Tab.htm">Absolute Tab</a>)</p>
+        <p class="Normal"><b>Code Used:</b> <span class="Code-DuxCode">[lps] [taaN] [lpr]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It unconditionally tabs text to a specific tab position.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Suppose that we want to have a means of highlighting where every occurrence of a specific word appears in text in a very large document. In print, you might make that word bold, italic, underlined, a larger font size, or even all four. Easy for a sighted person to pick out at a glance.</p>
+        <p class="Normal">We can emphasise the word in braille, but the braille reader would usually have to plough through the text of the whole document.</p>
+        <p class="Normal">Alternatively, you might put a character, like an asterisk perhaps, in the right margin, and this is precisely what DBT's approach is. The braille reader can then quickly skim down the right hand side of the page, and locate the line a word appears on.</p>
+        <p class="Normal">The example shows two methods of achieving much the same thing.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="CourierPara" style="font-weight: normal;"><span class="Code-DuxCode">[rm6]</span><span class="Code-DuxScreen">When you start to look more closely at how all the many Duxbury</span> <span class="Code-DuxCode">[lps][taa27]</span><span class="Code-DuxScreen">dxb</span><span class="Code-DuxCode">[lpr] </span><span class="Code-DuxScreen">Codes work, they can sometimes be tricky to understand unless you have a good example.</span></p>
+        <p class="CourierPara" style="font-weight: normal;"><span class="Code-DuxScreen">When you start to look more closely at how all the many Duxbury</span><span class="Code-DuxCode"><br />[lps][fr]</span><span class="Code-DuxScreen">fr</span><span class="Code-DuxCode">[lpr]</span><span class="Code-DuxScreen">Codes work, they can sometimes be tricky to understand unless you have a good example.</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,:5 y /&gt;t 6look m</p>
+        <p class="Simbraille">closely at h[ all ! _m</p>
+        <p class="Simbraille">,duxbury ,codes "w1 !y c &#160;&#160;taa</p>
+        <p class="Simbraille">"s"ts 2 tricky 6"u/&amp;</p>
+        <p class="Simbraille">un.s y h a gd example4</p>
+        <p class="Simbraille">,:5 y /&gt;t 6look m &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+        <p class="Simbraille">closely at h[ all ! _m</p>
+        <p class="Simbraille">,duxbury ,codes "w1 !y c &#160;&#160;&#160;fr</p>
+        <p class="Simbraille">"s"ts 2 tricky 6"u/&amp;</p>
+        <p class="Simbraille">un.s y h a gd example4</p>
+        <p class="bold">Let us explain!</p>
+        <p class="Normal" style="font-weight: normal;">The <span class="Code-DuxCode">[lps]</span> code effectively says "Store this line position while I do something". The <span class="Code-DuxCode">[taa27]</span> says, "Put the text that follows over to begin in cell 27". Finally the <span class="Code-DuxCode">[lpr]</span> code says go back to the line position you remembered and continue.</p>
+        <p class="bold">For the more technical:</p>
+    </body>
+</html>

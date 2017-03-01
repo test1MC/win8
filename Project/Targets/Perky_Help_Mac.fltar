@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Skin="(none)"
+  Type="WebHelp2"
+  MasterToc="/Project/TOCs/perky_toc.fltoc"
+  AliasFile="/Project/Advanced/dbthelp.flali"
+  TargetLanguage="en-us"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  ConditionTagExpression="include[Primary.Mac_Version or Primary.Perky] exclude[Primary.Braille_Only or Primary.Print_Only or Primary.Printed_Introduction or Primary.SWIFT or Primary.Windows_Version] "
+  GenerateAllSkins="false"
+  PreCompileScaledImages="true"
+  DisableAutoSync="true"
+  UseLocalBuildSettings="true"
+  Jump1Url="http://www.duxburysystems.com"
+  GetLatestBeforeCompile="false"
+  ExcludeUnreferencedContent="true"
+  Comment="Publish PERKY-Mac help files for nightly autobuilds">
+  <Variables>
+    <Variable
+      Name="Primary/Version_Short_DBT">12.1 (SR1)</Variable>
+  </Variables>
+  <ConditionTags />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestPerkyhelp.fldes" />
+  </Destinations>
+  <MetaTags
+    Enabled="false" />
+</CatapultTarget>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HtmlImport
+  KeepSourceLinks="true"
+  ProjectName="DBT Help"
+  ProjectFolder="C:\Users\george2.TVS.000\Documents\DBT Help\"
+  AutoSync="false"
+  SourceFolders=""
+  ImportResources="false"
+  ImportResourcesLocation="NoImport"
+  ImportTopics="specific"
+  ImportLinkedHtmlFiles="false"
+  LastImport="2016-12-02T14:24:47.7643088+00:00"
+  ImportTopicsLocation="Content/working_with_word/">
+  <Files>
+    <Url
+      Source="../../../Keyboard shortcuts for Microsoft Word 2016 for Windows - Word.htm"
+      AbsoluteSource="file:///C:/Users/george2.TVS.000/Documents/Keyboard shortcuts for Microsoft Word 2016 for Windows - Word.htm" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/working_with_word/Keyboard shortcuts for Microsoft Word 2016 for Windows - Word.htm"
+      TimeStamp="02/12/2016 14:23:40" />
+    <Url
+      Source="../TOCs/Keyboard shortcuts for Microsoft Word 2016 for Windows - Word.fltoc"
+      TimeStamp="02/12/2016 14:24:45" />
+  </GeneratedFiles>
+</HtmlImport>

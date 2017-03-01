@@ -1,0 +1,2136 @@
+/*<meta />*/
+
+body
+{
+	background-color: #fff2dd;
+	font-family: 'Arial Unicode MS', Arial;
+	mc-hyphenate: never;
+	text-align: left;
+}
+
+h1
+{
+	font-variant: normal;
+	text-transform: none;
+	text-align: left;
+	vertical-align: top;
+	word-spacing: normal;
+	line-height: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.0pt;
+	margin-bottom: auto;
+	letter-spacing: normal;
+	border-top-width: 2px;
+	border-bottom-style: Solid;
+	border-bottom-width: 2px;
+	font-weight: bold;
+	font-style: normal;
+	font-size: x-large;
+	text-decoration: none;
+	page-break-before: always;
+	mc-heading-level: 1;
+	font-family: 'Arial Unicode MS', Arial;
+	border-top-style: Solid;
+}
+
+li.mc-H1
+{
+	font-variant: normal;
+	text-transform: none;
+	text-align: left;
+	word-spacing: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	font-weight: bold;
+	font-style: normal;
+	color: #402000;
+	font-size: x-large;
+	text-decoration: none;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+h2
+{
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	font-weight: bold;
+	font-style: normal;
+	mc-page-number-start-value: 1;
+	mc-pagenum-display: all;
+	mc-page-number-format: decimal;
+	font-family: 'Arial Unicode MS', Arial;
+	mc-toc-depth: 2;
+	mc-heading-level: 2;
+	page-break-before: always;
+	font-size: x-large;
+	font-variant: normal;
+	line-height: normal;
+}
+
+li.mc-H2
+{
+	font-weight: normal;
+	font-style: normal;
+	color: #402000;
+	font-size: large;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+h3
+{
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	font-weight: bold;
+	font-style: normal;
+	mc-heading-level: 3;
+	page-break-before: always;
+	font-family: 'Arial Unicode MS', Arial;
+	font-size: x-large;
+}
+
+li.mc-H3
+{
+	font-weight: bold;
+	font-style: normal;
+	color: #402000;
+	font-size: medium;
+}
+
+h4
+{
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	font-size: 16pt;
+	font-weight: bolder;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+li.mc-H4
+{
+	font-weight: bold;
+	color: #402000;
+	font-size: medium;
+}
+
+h5
+{
+	font-size: 12pt;
+	mc-toc-depth: 0;
+	text-align: left;
+	mc-heading-level: 0;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin-top: 1.12em;
+	margin: 1.12em;
+	margin-bottom: 1.12em;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+li.mc-H5
+{
+	color: #402000;
+	font-size: small;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+h6
+{
+	font-style: italic;
+	mc-heading-level: 0;
+	border-top-width: 6px;
+	margin-bottom: 2.5pt;
+	margin: 1.12;
+	margin-left: 0px;
+	margin-right: 0px;
+	line-height: normal;
+	font-family: 'Arial Unicode MS', Arial;
+	color: #000000;
+	font-size: 12pt;
+}
+
+li.mc-H6
+{
+	color: #402000;
+	font-size: small;
+}
+
+p
+{
+	font-style: normal;
+	font-weight: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	padding-bottom: 3pt;
+}
+
+li
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	mc-hyphenate: never;
+	padding-bottom: 6px;
+	page-break-inside: avoid;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+a.expandspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: normal;
+	font-size: small;
+}
+
+span.expandtext
+{
+	color: #000000;
+	font-size: medium;
+	font-style: normal;
+	font-weight: bold;
+}
+
+a.dropspot
+{
+	font-style: italic;
+	cursor: hand;
+	color: #008000;
+	font-size: small;
+}
+
+a.glossterm
+{
+	cursor: hand;
+	color: #800000;
+	font-style: normal;
+	font-size: small;
+}
+
+span.glosstext
+{
+	color: #0000ff;
+	font-weight: normal;
+	font-style: italic;
+	font-size: small;
+}
+
+span.Code-DuxCode
+{
+	color: #ff0000;
+	text-transform: none;
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+	font-style: normal;
+	font-size: medium;
+	letter-spacing: normal;
+}
+
+span.Code-DuxScreen
+{
+	letter-spacing: normal;
+	word-spacing: normal;
+	font-family: monospace;
+	background: inherit;
+	font-size: 12pt;
+	font-weight: bolder;
+	background-color: #e2dbdb;
+}
+
+span.Keyboard
+{
+	font-weight: bold;
+	font-family: 'Arial Unicode MS';
+	font-size: 12pt;
+}
+
+p.DBTCodePara
+{
+	margin-left: 0in;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Courier New", monospace;
+	color: #ff0000;
+}
+
+li.DBTCodePara
+{
+	margin-left: 0in;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Courier New", monospace;
+}
+
+p.CourierPara
+{
+	font-family: "Courier New", monospace;
+	font-weight: lighter;
+	font-size: 12pt;
+}
+
+li.CourierPara
+{
+	font-family: "Courier New", monospace;
+	color: #000000;
+}
+
+p.Simbraille
+{
+	text-align: left;
+	background-color: #fff2dd;
+	margin-top: 0pt;
+	font-size: large;
+	font-family: SimBraille;
+	color: #000000;
+}
+
+li.Simbraille
+{
+	text-align: left;
+	background-color: #fff2dd;
+	margin-top: 0pt;
+	font-size: large;
+	font-family: Simbraille, monospace;
+}
+
+p.Address
+{
+	margin-top: 0pt;
+}
+
+li.Address
+{
+	margin-top: 0pt;
+}
+
+p.PageBreak
+{
+	font-family: "Courier New", monospace;
+	margin-top: 0pt;
+	font-size: large;
+}
+
+li.PageBreak
+{
+	font-family: "Courier New", monospace;
+	margin-top: 0pt;
+	font-size: large;
+}
+
+a.popupspot
+{
+	color: #402000;
+	font-size: small;
+}
+
+p.Keystroke
+{
+	mc-next-tag: p;
+}
+
+li.Keystroke
+{
+	mc-next-tag: p;
+}
+
+p.Line-Simbraille
+{
+	font-size: 24pt;
+	font-family: 'Simbraillle 100';
+}
+
+li.Line-Simbraille
+{
+	font-size: 24pt;
+	font-family: Simbraille100, monospace;
+}
+
+p.Line-TimesNR
+{
+	font-family: "Times New Roman", serif;
+	font-size: 9pt;
+}
+
+li.Line-TimesNR
+{
+	font-family: "Times New Roman", serif;
+	font-size: x-small;
+}
+
+p.ListUnspaced
+{
+	
+}
+
+li.ListUnspaced
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+ol,
+ul
+{
+	font-size: small;
+}
+
+p.NormalNJ
+{
+	mc-next-tag: p;
+}
+
+li.NormalNJ
+{
+	mc-next-tag: p;
+}
+
+MadCap|popupBody.popupBody_1
+{
+	font-family: Arial Unicode MS;
+	font-size: 8pt;
+	padding: 10px 10px;
+	color: #000000;
+	background-color: #ffffc0;
+	margin: 0px;
+}
+
+MadCap|relatedTopics.relatedTopics_1
+{
+	mc-label: 'Tell me more';
+	font-size: 8pt;
+	font-family: Arial Unicode MS;
+}
+
+MadCap|relatedTopics.relatedTopics_2
+{
+	mc-label: 'Tell me more';
+	font-size: 8pt;
+	font-family: 'MS Sans Serif';
+}
+
+MadCap|conceptLink.conceptLink_1
+{
+	mc-label: 'Tell me more';
+	font-size: 8pt;
+	font-family: 'MS Sans Serif';
+}
+
+MadCap|expandingHead.expandspot
+{
+	cursor: hand;
+	color: #008000;
+	font-style: normal;
+	font-size: small;
+}
+
+MadCap|dropDownHotspot.dropspot
+{
+	font-style: italic;
+	cursor: hand;
+	color: #008000;
+	font-size: small;
+}
+
+MadCap|expandingBody.expandtext
+{
+	color: #ff0000;
+	font-weight: normal;
+	font-style: italic;
+	font-size: small;
+}
+
+MadCap|glossaryTerm.glossterm
+{
+	cursor: hand;
+	color: #800000;
+	font-style: normal;
+	font-size: small;
+}
+
+MadCap|expandingBody.glossterm
+{
+	color: #0000ff;
+	font-weight: normal;
+	font-style: italic;
+	font-size: small;
+}
+
+textPopup.popupspot
+{
+	color: #402000;
+	font-size: small;
+}
+
+p.CodeList
+{
+	
+}
+
+a
+{
+	font-size: 12pt;
+}
+
+p.TOC1
+{
+	font-weight: bolder;
+	font-size: 14pt;
+}
+
+MadCap|tocProxy
+{
+	mc-page-number-format: decimal;
+	mc-page-number-start-value: 1;
+}
+
+p.TOC2
+{
+	font-weight: bold;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+td
+{
+	text-align: left;
+	font-size: 12pt;
+}
+
+MadCap|indexProxy
+{
+	border-top-style: none;
+	mc-column-count: 2;
+	white-space: nowrap;
+	text-align: left;
+}
+
+td.ctr
+{
+	font-family: 'Arial Unicode MS', Arial;
+	text-align: center;
+	border: solid 1px #000000;
+}
+
+b
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+@media print
+{
+	p.Keystroke
+	{
+		page-break-after: avoid;
+		font-family: 'Arial Unicode MS';
+	}
+
+	h4
+	{
+		font-weight: bold;
+		margin: 0;
+		margin-top: 0.83em;
+		font-size: 12pt;
+		border-top-style: Solid;
+		border-top-width: 1px;
+		border-bottom-style: Solid;
+		border-bottom-width: 1px;
+		vertical-align: middle;
+		letter-spacing: normal;
+		line-height: normal;
+		font-family: Arial, 'Arial Unicode MS';
+		mc-toc-depth: 4;
+	}
+
+	h3
+	{
+		font-weight: bolder;
+		border-bottom-width: 1px;
+		margin: 0pt;
+		font-size: 14pt;
+		page-break-before: avoid;
+		margin-top: 0.83pt;
+		letter-spacing: normal;
+		line-height: normal;
+		mc-toc-depth: 3;
+		mc-heading-level: 3;
+		font-family: Arial, 'Arial Unicode MS';
+		margin-bottom: 3pt;
+	}
+
+	h5
+	{
+		margin: 0;
+		margin-top: 0.83em;
+		font-style: italic;
+		text-decoration: none;
+		mc-hyphenate: never;
+		font-family: 'Arial Unicode MS';
+		line-height: normal;
+		mc-toc-depth: 5;
+		mc-heading-level: 5;
+		border-top-style: none;
+		border-top-width: 0px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+	}
+
+	MadCap|tocProxy
+	{
+		mc-heading-level: 5;
+	}
+
+	p.CourierPara
+	{
+		column-break-inside: avoid;
+		text-align: left;
+		text-indent: 0px;
+		font: inherit;
+		font-family: "Courier New", monospace;
+	}
+
+	MadCap|glossaryTerm.glossterm
+	{
+		
+	}
+
+	h1
+	{
+		font-size: 18pt;
+		mc-hyphenate: never;
+		margin-bottom: 0;
+		margin-top: 0;
+		mc-toc-depth: 1;
+		font-family: Arial, 'Arial Unicode MS';
+		page-break-before: avoid;
+	}
+
+	h1.HEAD_NON_TOC
+	{
+		mc-heading-level: 0;
+		margin-bottom: 0;
+		page-break-before: always;
+		font-size: 18pt;
+		margin-top: 10pt;
+		mc-toc-depth: 0;
+		font-family: Arial, 'Arial Unicode MS';
+	}
+
+	h6
+	{
+		font-size: 13pt;
+		font-family: 'Arial Unicode MS';
+		letter-spacing: normal;
+		line-height: normal;
+		margin-bottom: 2.5pt;
+		margin-top: 1.83pt;
+		mc-toc-depth: 6;
+	}
+
+	p
+	{
+		font-size: 11pt;
+		text-align: left;
+		margin-top: 0;
+		mc-printer-page-size: letter;
+		margin-bottom: 3pt;
+		font-family: Arial;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	h2
+	{
+		margin: 0;
+		margin-top: 0.83em;
+		letter-spacing: normal;
+		line-height: normal;
+		font-weight: bold;
+		font-family: Arial, 'Arial Unicode MS';
+		font-size: 12pt;
+		mc-toc-depth: 2;
+	}
+
+	p.TOC2
+	{
+		mc-heading-level: 2;
+		mc-toc-depth: 2;
+		margin-bottom: 1px;
+		font-family: Arial, 'Arial Unicode MS';
+		font-weight: bold;
+		letter-spacing: 0px;
+		line-height: 12pt;
+	}
+
+	h5.NewClass
+	{
+		border-top-style: none;
+		border-top-width: 1px;
+		border-bottom-style: none;
+		border-bottom-width: 1px;
+		font-family: Arial, 'Arial Unicode MS';
+		mc-toc-depth: 5;
+	}
+
+	li
+	{
+		font-size: 11pt;
+		page-break-inside: avoid;
+		font-family: 'Arial Unicode MS', Arial;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	p.Title
+	{
+		font-family: Arial;
+		font-size: 16pt;
+	}
+
+	span.Code-DuxScreen
+	{
+		font-family: monospace;
+		font-size: 12pt;
+	}
+
+	address
+	{
+		font-size: 10pt;
+	}
+
+	p.TOC1
+	{
+		border-right-align: right;
+		mc-printer-page-margin-right: 0cm;
+		mc-heading-level: 1;
+		mc-hidden: unhidden;
+		mc-toc-depth: 1;
+		font-family: Arial, 'Arial Unicode MS';
+		line-height: 16pt;
+	}
+
+	p.Address
+	{
+		text-align: left;
+	}
+
+	h3.normal
+	{
+		page-break-before: avoid;
+		font-family: Arial, 'Arial Unicode MS';
+		mc-toc-depth: 3;
+	}
+
+	a
+	{
+		font-size: 10pt;
+		background-color: #ffffff;
+	}
+
+	abbr
+	{
+		font-size: 10pt;
+	}
+
+	img
+	{
+		mc-float: center;
+	}
+
+	object
+	{
+		clear: left;
+		vertical-align: text-top;
+	}
+
+	h5.normal
+	{
+		border-color: #000000;
+		border-left-style: solid;
+		border-left-width: 0px;
+		border-left-color: #000000;
+		border-right-style: solid;
+		border-right-width: 0px;
+		border-right-color: #000000;
+		border-top-style: solid;
+		border-top-width: 0px;
+		border-top-color: #000000;
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-bottom-color: #000000;
+		font-family: Arial, 'Arial Unicode MS';
+		padding-bottom: 0px;
+		padding-top: 0px;
+		mc-toc-depth: 5;
+		mc-heading-level: 5;
+	}
+
+	td
+	{
+		mc-hyphenate: never;
+		margin-right: 0px;
+		margin-left: 6pt;
+	}
+
+	p.TOC3
+	{
+		mc-heading-level: 3;
+		mc-toc-depth: 3;
+		font-family: Arial, 'Arial Unicode MS';
+		line-height: 1pt;
+		bottom: 0px;
+		margin-bottom: 1pt;
+	}
+
+	p.TOC4
+	{
+		mc-heading-level: 4;
+		mc-toc-depth: 4;
+		font-family: Arial, 'Arial Unicode MS';
+		bottom: 0px;
+		margin-bottom: 1pt;
+		line-height: 1pt;
+	}
+
+	th
+	{
+		border-bottom: solid 1px;
+		border-bottom-color: #000000;
+		font-family: Arial, 'Arial Unicode MS';
+		text-align: center;
+	}
+
+	p.TOC5
+	{
+		mc-toc-depth: 0;
+		font-family: Arial, 'Arial Unicode MS';
+	}
+
+	body
+	{
+		background-color: #ffffff;
+		font-family: Arial, 'Arial Unicode MS';
+	}
+
+	span.Keyboard
+	{
+		font: Arial Unicode MS;
+		line-height: normal;
+		font-family: 'Arial Unicode MS';
+	}
+
+	span
+	{
+		font-family: Arial, 'Arial Unicode MS';
+	}
+
+	h1.chapter
+	{
+		padding-bottom: 0px;
+		margin-bottom: 6pt;
+		page-break-before: always;
+		font-family: Arial;
+		widows: 2;
+		mc-toc-depth: 1;
+	}
+
+	table
+	{
+		font-family: 'Arial Unicode MS';
+	}
+
+	b
+	{
+		font-family: 'Arial Unicode MS';
+	}
+
+	h2.chapter
+	{
+		mc-heading-level: 2;
+		page-break-before: always;
+		mc-toc-depth: 2;
+	}
+
+	h4.normal
+	{
+		font-family: Arial, 'Arial Unicode MS';
+		mc-toc-depth: 4;
+	}
+
+	head
+	{
+		border-top: solid 1px;
+	}
+
+	MadCap|xref
+	{
+		mc-format: '{quote}{paratext}{quote} {pageref}';
+	}
+
+	tr.TableStyle-Basic-Body-Bodt1
+	{
+		
+	}
+
+	tr.TableStyle-Basic-BodyE-Column1-Body1
+	{
+		
+	}
+
+	tr.TableStyle-Basic-Body-Body1
+	{
+		
+	}
+
+	tr.TableStyle-Basic-BodyD-Column1-Body1
+	{
+		
+	}
+
+	td.TableStyle-Basic-BodyD-Column1-Body1
+	{
+		padding-left: 10px;
+	}
+
+	table.TableStyle-Basic
+	{
+		
+	}
+
+	td.TableStyle-Basic-BodyE-Column1-Body1
+	{
+		margin-left: 20;
+		padding-left: 10px;
+	}
+
+	th.TableStyle-Basic-BodyE-Column1-Body1
+	{
+		
+	}
+
+	col.TableStyle-Basic-BodyE-Column1-Body1
+	{
+		
+	}
+
+	col.TableStyle-Basic-Column-Column1
+	{
+		
+	}
+
+	h4.ctlcode
+	{
+		font-family: Arial, 'Arial Unicode MS';
+		mc-toc-depth: 4;
+	}
+
+	h5.swift
+	{
+		font-family: Arial, 'Arial Unicode MS';
+		mc-toc-depth: 0;
+	}
+
+	MadCap|slideshowCaption
+	{
+		font-family: Arial, 'Arial Unicode MS';
+	}
+
+	html
+	{
+		font-family: Arial, 'Arial Unicode MS';
+	}
+
+	span.apple
+	{
+		font: Arial Unicode MS;
+	}
+
+	p.Header
+	{
+		font-size: 14pt;
+		font-weight: bolder;
+	}
+
+	a:link
+	{
+		background-color: #ffffff;
+	}
+
+	MadCap|indexProxy
+	{
+		padding-top: 3px;
+		mc-printer-page-size: letter;
+		mc-printer-page-orientation: portrait;
+		mc-index-headings: false;
+		margin-top: 6px;
+	}
+
+	p.center
+	{
+		text-align: center;
+	}
+
+	td.ctr
+	{
+		text-align: center;
+	}
+
+	ol
+	{
+		font: inherit;
+		font-family: Arial;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		margin-top: 0.12em;
+	}
+
+	h2.NoNewPage
+	{
+		font-size: 12pt;
+		page-break-before: avoid;
+		font-weight: bold;
+		mc-toc-depth: 2;
+	}
+
+	ul.NoBullets
+	{
+		margin-bottom: 1.12em;
+		margin-top: 0.12em;
+	}
+}
+
+img.ImageLeft
+{
+	float: left;
+	margin-right: 6px;
+	margin-bottom: 3px;
+	margin-top: 6px;
+}
+
+img.ImageRight
+{
+	float: right;
+	margin-left: 6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+MadCap|glossaryProxy.Print_Glossary
+{
+	mc-glossary-headings: true;
+}
+
+h1.HEAD_NON_TOC
+{
+	font-variant: normal;
+	text-transform: none;
+	text-align: left;
+	vertical-align: top;
+	word-spacing: normal;
+	line-height: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.0pt;
+	margin-bottom: auto;
+	letter-spacing: normal;
+	border-top-style: Solid;
+	border-top-width: 2px;
+	border-bottom-style: Solid;
+	border-bottom-width: 2px;
+	font-weight: bold;
+	font-style: normal;
+	color: #402000;
+	font-size: x-large;
+	text-decoration: none;
+	page-break-before: always;
+	font-family: 'Arial Unicode MS', Arial;
+	mc-heading-level: 0;
+}
+
+p.Title
+{
+	margin-top: 5pt;
+	mc-hyphenate: never;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	font-family: 'Arial Unicode MS', Arial;
+	font-size: 24pt;
+}
+
+ol
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+MadCap|conditionalText
+{
+	
+}
+
+h2.chapter
+{
+	page-break-before: always;
+	font-size: 14pt;
+	margin-right: 0;
+	margin-top: 0.75pt;
+	margin-bottom: 0pt;
+}
+
+h1.chapter
+{
+	
+}
+
+h4.normal
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+h3.normal
+{
+	page-break-before: always;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+h5.normal
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-family: 'Arial Unicode MS', Arial;
+	line-height: normal;
+}
+
+a:link
+{
+	font-weight: normal;
+	font-style: normal;
+	color: #306030;
+	font-size: 12pt;
+	background-color: transparent;
+}
+
+a:visited
+{
+	color: #306030;
+	font-size: 12pt;
+}
+
+a:focus
+{
+	font-size: 12pt;
+}
+
+a:hover
+{
+	color: #306030;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 14pt;
+}
+
+a:active
+{
+	color: #004000;
+	font-size: 12pt;
+}
+
+@media non-print
+{
+	p
+	{
+		font-size: 12pt;
+		mc-printer-page-size: letter;
+		text-align: left;
+		font-family: Arial;
+		position: inherit;
+		text-indent: 0px;
+	}
+
+	span.Code-DuxCode
+	{
+		
+	}
+
+	span.Code-DuxScreen
+	{
+		font-size: medium;
+	}
+
+	li
+	{
+		text-align: left;
+		font-family: 'Arial Unicode MS', Arial;
+		list-style-position: inherit;
+	}
+
+	h1
+	{
+		page-break-before: avoid;
+		margin-bottom: 0;
+		margin-top: 0;
+		font-family: 'Arial Unicode MS', Arial;
+		page-break-after: avoid;
+		padding-top: 3pt;
+		border-top-style: Solid;
+		border-top-width: 2px;
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+	}
+
+	h2
+	{
+		page-break-before: avoid;
+		font-family: 'Arial Unicode MS', Arial;
+		margin-top: 0;
+		margin-bottom: 0;
+		border-top-style: Solid;
+		border-top-width: 1px;
+		border-bottom-style: Solid;
+		border-bottom-width: 1px;
+	}
+
+	h3
+	{
+		page-break-before: avoid;
+		font-family: 'Arial Unicode MS', Arial;
+		font-size: 14pt;
+	}
+
+	h4
+	{
+		page-break-before: avoid;
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	h5
+	{
+		page-break-before: avoid;
+		margin: 0;
+		border-top-style: solid;
+		border-bottom-width: 1px;
+		border-top-width: 1px;
+		mc-heading-level: 5;
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	h6
+	{
+		page-break-before: avoid;
+		line-height: normal;
+		margin-bottom: 0.5pt;
+		margin-top: 10px;
+		font-style: normal;
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	h1.HEAD_NON_TOC
+	{
+		page-break-before: always;
+		font-family: 'Arial Unicode MS', Arial;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	span
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	table
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	MadCap|tocProxy
+	{
+		font-family: Arial;
+	}
+
+	MadCap|popupBody
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	MadCap|expandingBody
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	li.Address
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	li.Keystroke
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	li.ListUnspaced
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	html
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	head
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	body
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	h5.normal
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	p.Title
+	{
+		font-family: Arial;
+	}
+
+	span.Keyboard
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	MadCap|popupBody.popupBody_1
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	MadCap|relatedTopics.relatedTopics_1
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	MadCap|slideshowCaption
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	li.mc-H1
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	ul
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	th
+	{
+		font-family: 'Arial Unicode MS', Arial;
+	}
+
+	p.TOC1
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.TOC2
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.TOC3
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.TOC4
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.TOC5
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.PlainText
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.Plain_Text
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.PageBreak
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.p_1
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.p_2
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.Address
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.CodeList
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	p.codes
+	{
+		font-family: 'Trebuchet MS';
+	}
+
+	h1.chapter
+	{
+		border-bottom-width: 2px;
+	}
+
+	img.flag
+	{
+		padding-top: 6pt;
+		border-top-style: solid;
+		border-top-width: 0pt;
+	}
+
+	h2.NoNewPage
+	{
+		font-size: 12pt;
+	}
+
+	h2.chapter
+	{
+		font-family: Arial;
+	}
+}
+
+caption
+{
+	font-weight: bold;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+table
+{
+	mc-printer-page-size: a4;
+	font-family: 'Arial Unicode MS';
+}
+
+MadCap|expandingHead.expandspot:hover
+{
+	font-size: medium;
+}
+
+img
+{
+	mc-thumbnail: none;
+	margin: 6px;
+	text-align: center;
+	mc-float: center;
+}
+
+head
+{
+	font-family: 'Arial Unicode MS';
+}
+
+html
+{
+	font-family: 'Arial Unicode MS';
+}
+
+span
+{
+	font-family: 'Arial Unicode MS';
+}
+
+ul
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+h5.NewClass
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+p.TOC5
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+p.TOC4
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+p.TOC3
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+th
+{
+	font-family: 'Arial Unicode MS', Arial;
+	font-weight: bold;
+}
+
+h5.swift
+{
+	mc-toc-depth: 0;
+	text-align: left;
+	mc-heading-level: 0;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin-top: 1.12em;
+	margin: 1.12em;
+	margin-bottom: 1.12em;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-family: 'Arial Unicode MS', Arial;
+	font-size: 18pt;
+	padding-left: 0px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	border: solid 0px;
+	border-top: solid 2px;
+	border-bottom: solid 1px;
+}
+
+MadCap|xref
+{
+	mc-format: '{quote}{h2}{quote} {pageref}';
+}
+
+li.ctlcode
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12pt;
+	mc-hyphenate: never;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+p.TrCodes
+{
+	
+}
+
+h4.ctlcode
+{
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+span.ctlcode
+{
+	
+}
+
+span.hcp1
+{
+	
+}
+
+span.hcp2
+{
+	
+}
+
+span.hcp3
+{
+	
+}
+
+span.Code
+{
+	
+}
+
+span.Emphasize
+{
+	
+}
+
+span.MCPopup
+{
+	
+}
+
+span.MsoCommentReference
+{
+	
+}
+
+span.Normal
+{
+	
+}
+
+span.span_1
+{
+	
+}
+
+td.hcpl
+{
+	
+}
+
+p.codes
+{
+	
+}
+
+td.hcp1
+{
+	
+}
+
+p.MsoBodyText
+{
+	
+}
+
+p.MsoList
+{
+	
+}
+
+a.a_1
+{
+	
+}
+
+a.MCPopupSpot
+{
+	
+}
+
+a.msocomanchor
+{
+	
+}
+
+b.hcp1
+{
+	
+}
+
+b.hcp2
+{
+	
+}
+
+b.hcp3
+{
+	
+}
+
+b.hcp4
+{
+	
+}
+
+div.msocomtxt
+{
+	
+}
+
+div.Section1
+{
+	
+}
+
+div.Section2
+{
+	
+}
+
+div.shape
+{
+	
+}
+
+hr.msocomoff
+{
+	
+}
+
+img.hcp1
+{
+	
+}
+
+img.hcp2
+{
+	
+}
+
+li.hcp1
+{
+	
+}
+
+li.kadov-p
+{
+	
+}
+
+li.Normal
+{
+	
+}
+
+p.hcp1
+{
+	
+}
+
+p.hcp2
+{
+	
+}
+
+p.hcp3
+{
+	
+}
+
+p.hcp4
+{
+	
+}
+
+p.Listing
+{
+	
+}
+
+p.lm2em
+{
+	
+}
+
+p.MsoCommentText
+{
+	
+}
+
+p.MsoList2
+{
+	
+}
+
+p.MsoList3
+{
+	
+}
+
+p.MsoListContinue
+{
+	
+}
+
+p.MsoListNumber
+{
+	
+}
+
+p.MsoNormal
+{
+	
+}
+
+p.p_2
+{
+	
+}
+
+p.p_3
+{
+	
+}
+
+p.p_4
+{
+	
+}
+
+p.Plain_Text
+{
+	
+}
+
+p.MsoListBullet
+{
+	
+}
+
+p.MsoListBullet2
+{
+	
+}
+
+p.MsoListBullet3
+{
+	
+}
+
+table.TableStyle_Basic
+{
+	
+}
+
+ol.lm5em
+{
+	
+}
+
+p.Normal
+{
+	
+}
+
+a.msocomoff
+{
+	
+}
+
+img.img_1
+{
+	
+}
+
+p.PlainText
+{
+	
+}
+
+td.TableStyle_Basic_Body_0_0_RowSep_ColEnd
+{
+	
+}
+
+td.TableStyle_Basic_Body_0_0_RowSep_ColSep
+{
+	
+}
+
+th.hcp1
+{
+	
+}
+
+ul.hcp1
+{
+	
+}
+
+p.p_1
+{
+	
+}
+
+th.TableStyle_Basic_Body_0_0_RowSep_ColEnd
+{
+	
+}
+
+th.TableStyle_Basic_Body_0_0_RowSep_ColSep
+{
+	
+}
+
+MadCap|popupHead.popupspot
+{
+	
+}
+
+span.apple
+{
+	
+}
+
+p.Header
+{
+	font-style: normal;
+	font-weight: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	text-align: center;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+p.NormalBlockIndent
+{
+	margin-left: 53px;
+	text-align: left;
+}
+
+span.SimBraille
+{
+	font-family: SimBraille;
+	font-size: 22pt;
+}
+
+p.bold
+{
+	font-style: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+img.flag
+{
+	mc-thumbnail: none;
+	text-align: center;
+	mc-float: center;
+	margin: 1px;
+	border-bottom: solid 0px #000000;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+p.Italic
+{
+	font-weight: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	padding-bottom: 6pt;
+	font-style: italic;
+}
+
+p.center
+{
+	font-style: normal;
+	font-weight: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	padding-bottom: 6pt;
+	text-align: center;
+}
+
+td.ctr_red
+{
+	text-align: center;
+	font-family: 'Courier New';
+	color: #ff0000;
+	font-weight: bold;
+}
+
+span.bold_italic
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+p#italic
+{
+	font-style: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+p.bold_italic
+{
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-style: italic;
+}
+
+p.Footer
+{
+	font-style: normal;
+	font-weight: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	padding-bottom: 6pt;
+	border-top: solid 1px #000000;
+}
+
+p.Braille
+{
+	text-align: left;
+	background-color: #fff2dd;
+	margin-top: 0pt;
+	font-size: large;
+	color: #000000;
+	font-family: Braille;
+}
+
+th.SimBraille
+{
+	font-size: 18pt;
+	font-weight: normal;
+	font-family: SimBraille;
+	text-align: left;
+}
+
+td.Simbraille
+{
+	text-align: left;
+	font-family: SimBraille;
+	font-size: 18pt;
+}
+
+td.right
+{
+	font-size: 12pt;
+	text-align: right;
+}
+
+p.Indent
+{
+	font-style: normal;
+	font-weight: normal;
+	mc-hyphenate: never;
+	margin-top: 3pt;
+	margin-bottom: 3px;
+	font-size: 12pt;
+	font-family: Arial;
+	padding-bottom: 6pt;
+	margin-left: 76px;
+	margin-right: 239px;
+	text-align: justify;
+}
+
+span.Blue
+{
+	color: #0000ff;
+}
+
+span.Green
+{
+	letter-spacing: normal;
+	word-spacing: normal;
+	font-weight: bold;
+	font-size: small;
+	font-family: monospace;
+	color: #008000;
+}
+
+p.TitleSmaller
+{
+	margin-top: 5pt;
+	mc-hyphenate: never;
+	margin-bottom: 0;
+	font-size: 20pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	font-family: 'Arial Unicode MS', Arial;
+}
+
+span.TitleSmaller
+{
+	font-family: 'Arial Unicode MS';
+	font-size: medium;
+	font-weight: normal;
+}
+
+ul.NoBullets
+{
+	list-style-image: none;
+}
+
+ul.NoBullets > li::marker
+{
+	font-family: ;
+	content: '­';
+}
+
+ul.NoBullets > li > ul
+{
+	list-style-image: none;
+}
+
+ul.NoBullets > li > ul > li::marker
+{
+	font-family: ;
+	content: '­';
+}
+
+h2.NoNewPage
+{
+	border-top-style: Solid;
+	border-top-width: 1px;
+	border-bottom-style: Solid;
+	border-bottom-width: 1px;
+	font-weight: bold;
+	font-style: normal;
+	mc-page-number-start-value: 1;
+	mc-pagenum-display: all;
+	mc-page-number-format: decimal;
+	font-family: 'Arial Unicode MS', Arial;
+	mc-toc-depth: 2;
+	mc-heading-level: 2;
+	page-break-before: always;
+	font-variant: normal;
+	line-height: normal;
+	font-size: 14pt;
+}
+
+p.Indent2
+{
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+}
+

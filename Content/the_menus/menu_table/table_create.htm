@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="2028" MadCap:lastWidth="694" xml:lang="en-us">
+    <head><title>Table: Create</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text.css" />
+    </head>
+    <body>
+        <h3>
+            <MadCap:keyword term="Tables:Create" />Table: Create</h3>
+        <p class="Keystroke" MadCap:conditions="Primary.Windows_Version">Keystroke - k</p>
+        <p class="Keystroke" MadCap:conditions="Primary.Mac_Version">Keystroke: Select from menu</p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_table/menu_table_properties.jpg" alt="Image shows the Table Properties dialog." MadCap:conditions="Primary.Windows_Version" title="Image shows the Table Properties dialog." />
+        </p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_table/mac_menu_table_properties.jpg" MadCap:conditions="Primary.Mac_Version" title="Image shows the Table Properties dialog." alt="Image shows the Table Properties dialog." />
+        </p>
+        <p><b>Table type</b>: Allows you to tell DBT about the type of data in the table and the preferred method for formatting it. Choices include:</p>
+        <p><b>Unrelated columns</b> - which is for when you have material that should be formatted in columns, but is not really a table at all. Often, a vocabulary list will be handled this way. A list is not a table, but can be fit more compactly on the page if multiple columns are used. In DBT <MadCap:variable name="Primary.Version_Current_DBT" />, it is possible to have DBT handle the formatting automatically by using the table formatter and selecting unrelated columns as the table type. One concrete effect of this selection is that there will never be any “leader” or “filler” dots between columns.</p>
+        <p><b>Matrix</b> - is an appropriate choice for a mathematical matrix. Other than unrelated columns, this is the only choice here that uses the table formatter to lay out text that is not truly part of a table.</p>
+        <p><b>Table: [Automatic]:</b> - is the default choice, and is the setting for all tables in a newly-imported document. This tells DBT that the material between the <span class="Code-DuxCode">[htbs]</span> and <span class="Code-DuxCode">[htbe]</span> codes really is table data and that DBT is to use its own discretion in choosing the most appropriate layout.</p>
+        <p><b>Table: Columnar</b> - tells DBT that the material is table data and that DBT should format it into columns, as is generally done in print documents. Unlike a print document formatter, however, DBT will not ever draw boxes around table cells but it will add “leader” or “filler” dots when the data for a cell falls short of the full column width. DBT automatically determines all column widths for columnar tables.</p>
+        <p><b>Table: Stairstep</b> - tells DBT to format the table data almost like an outline. Each new row starts with a new line on cell one. The second cell of each row starts on a new line on cell three. The third cell starts on cell five, and so forth. This format makes it fairly easy to scan down the left side of a page to find the start of each row. And it can fit fairly large tables, provided that the number of columns is not excessive.</p>
+        <p><b>Table: Listed</b> - tells DBT to use a format that repeats the contents of a header column at the start of each row and, within each row, repeats the column header (from the table’s first row) before placing the text for the row. The format is very useful for large tables that cannot easily be formatted in a columnar layout, especially when the data makes it hard to tell one column for another in isolation. For example, a table with all numeric data, where all the numbers have three digits, might work well in this format. The format does not work at all, however, unless there is one row of headers at the top of the table and one column of headers as well.</p>
+        <p><b>Table: Paragraph</b> - tells DBT to use a “fallback” or near “failsafe” layout for the table data. In this format, each table row is formatted as a single “paragraph”. A distinct text delimiter is placed between the text for adjacent rows. There is a special text delimiter to indicate the end of a row. There is also some distinct text used in place of an empty table cell. This format can fit a table of essentially any size. However, it requires that all tables be read in one direction only: across each row. To fully analyze the table, it is necessary sometimes to carefully count columns as one is reading, so that the location of data within the original table is clear.</p>
+        <p><b>Table: Two-page</b> - is like Table: Columnar, but the formatted result is wider and will be placed on facing pages. (It makes sense to do this only for double-sided braille printing.)</p>
+        <p><b>X/Y Row/Column swap:</b> tells DBT that it is OK to render the braille copy of the table as if the original rows were in fact columns, and vice-versa. In other words, when this is checked, DBT may invert the axes of the table. It will do this if that can help the table to fit on a braille page where it would not otherwise fit and if the result is still simple to read in the dominant “Reading order”.</p>
+        <p>The “<b>Total rows:</b>” and “<b>Total columns:</b>” controls are useful only when creating a new table. Fill these in to tell DBT how many rows and columns of headers and data you will have. It will then add codes to delimit cells and rows so that you can then use arrow keys to navigate through the table and enter the data.</p>
+        <p>The “<b>Header rows:</b>” and “<b>Header columns:</b>” controls tell DBT how many rows and columns hold header labels instead of data. This is useful to ensure a proper formatting result.</p>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="902" MadCap:lastWidth="624">
+    <head>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2 class="NoNewPage">Control file listing for: Enabling Romeo Pro LE Wide</h2>
+        <p>This is the Embosser Control File. Changing this file affects the embosser is supported. Support is also related to the <a href="generic.htm">generic embosser entry in the table</a></p>
+        <ul>
+            <li class="CourierPara"># *** Embosser definition unchanged since 09/24/2009</li>
+            <li class="CourierPara"># To use this embosser definition. you must set this parameter</li>
+            <li class="CourierPara"># in the embosser:</li>
+            <li class="CourierPara"># - Label Mode (50.1e)</li>
+            <li class="CourierPara"># It is also supposed that you are finding the top of form</li>
+            <li class="CourierPara"># by some process external to DBT before sending a job from DBT.</li>
+            <li class="CourierPara">#</li>
+            <li class="CourierPara"># If you line up the forms to leave more than the tiniest of top</li>
+            <li class="CourierPara"># margins. you will not be able to fit the maximum number of lines</li>
+            <li class="CourierPara"># on the label that DBT will allow. In general. we advise using</li>
+            <li class="CourierPara"># DBT's Recommended lines per page settings to leave an adequate</li>
+            <li class="CourierPara"># top an bottom margin.</li>
+            <li class="CourierPara">#</li>
+            <li class="CourierPara"># Note that the form definitions below assume that all labels</li>
+            <li class="CourierPara"># are 11 inches wide. and will support 40 cell braille. This is</li>
+            <li class="CourierPara"># not likely to be true of your labels. To prevent line overruns.</li>
+            <li class="CourierPara"># you should set DBT's Desired cells per line to something</li>
+            <li class="CourierPara"># that will fit on your label. and are advised to create a</li>
+            <li class="CourierPara"># template for labels that you will use repeatedly.</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/ETSpeaks.htm">ETSpeaks</a>
+            </li>
+            <li class="CourierPara"> AllowSeekTOF</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/PageWrap.htm">PageWrap</a>
+            </li>
+            <li class="CourierPara"> LabellerROM</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/ETCAllowEscapeCodes.htm">ETCAllowEscapeCodes</a>
+            </li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/Driver.htm">Driver</a> = "Emb_EnablingEmbosserDriver"</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/MaximumCells.htm">MaximumCells</a> = 40</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/MaximumLines.htm">MaximumLines</a> = 27</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/Encoding.htm">Encoding</a> = "display.cpt". "North American English"</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/Encoding.htm">Encoding</a> = "display.cpt". "French"</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/Encoding.htm">Encoding</a> = "display.cpt". "German"</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/Encoding.htm">Encoding</a> = "display.cpt". "Spanish"</li>
+            <li class="CourierPara"><a href="../Codes/Codes_General/HelpPage.htm">HelpPage</a> = "Enabling_Romeo_Pro_LE_Wide.htm"</li>
+            <li class="CourierPara"> # 0.500 inch labels: 18.0e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/0.50 inch label.htm">0.50 inch label</a>" = 110 x 0 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 1 ; 40 x 1</li>
+            <li class="CourierPara"> # 0.750 inch labels: 18.1e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/0.75 inch label.htm">0.75 inch label</a>" = 110 x 10 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 1 ; 40 x 1</li>
+            <li class="CourierPara"> # 1.000 inch labels: 18.2e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/1.00 inch label.htm">1.00 inch label</a>" = 110 x 20 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 2 ; 40 x 2</li>
+            <li class="CourierPara"> # 1.250 inch labels: 18.3e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/1.25 inch label.htm">1.25 inch label</a>" = 110 x 30 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 3 ; 40 x 2</li>
+            <li class="CourierPara"> # 1.500 inch labels: 18.4e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/1.50 inch label.htm">1.50 inch label</a>" = 110 x 40 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 3 ; 40 x 3</li>
+            <li class="CourierPara"> # 1.750 inch labels: 18.5e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/1.75 inch label.htm">1.75 inch label</a>" = 110 x 50 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 4 ; 40 x 4</li>
+            <li class="CourierPara"> # 2.000 inch labels: 18.6e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/2.00 inch label.htm">2.00 inch label</a>" = 110 x 60 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 5 ; 40 x 4</li>
+            <li class="CourierPara"> # 2.250 inch labels: 18.7e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/2.25 inch label.htm">2.25 inch label</a>" = 110 x 70 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 5 ; 40 x 5</li>
+            <li class="CourierPara"> # 2.500 inch labels: 18.8e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/2.50 inch label.htm">2.50 inch label</a>" = 110 x 80 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 6 ; 40 x 5</li>
+            <li class="CourierPara"> # 2.750 inch labels: 18.9e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/2.75 inch label.htm">2.75 inch label</a>" = 110 x 90 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 6 ; 40 x 6</li>
+            <li class="CourierPara"> # 3.000 inch labels: 18.10e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/3.00 inch label.htm">3.00 inch label</a>" = 110 x 100 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 7 ; 40 x 7</li>
+            <li class="CourierPara"> # 3.250 inch labels: 18.11e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/3.25 inch label.htm">3.25 inch label</a>" = 110 x 110 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 8 ; 40 x 7</li>
+            <li class="CourierPara"> # 3.500 inch labels: 18.12e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/3.50 inch label.htm">3.50 inch label</a>" = 110 x 120 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 8 ; 40 x 8</li>
+            <li class="CourierPara"> # 3.750 inch labels: 18.13e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/3.75 inch label.htm">3.75 inch label</a>" = 110 x 130 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 9 ; 40 x 9</li>
+            <li class="CourierPara"> # 4.000 inch labels: 18.14e</li>
+            <li class="CourierPara"><a href="../Codes/Codes_Forms/Form.htm">Form</a> "<a href="../Codes/Codes_Labels/4.00 inch label.htm">4.00 inch label</a>" = 110 x 140 ; <a href="../Codes/Codes_General/SinglePage.htm">SinglePage</a> ; 40 x 10 ; 40 x 9</li>
+        </ul>
+    </body>
+</html>

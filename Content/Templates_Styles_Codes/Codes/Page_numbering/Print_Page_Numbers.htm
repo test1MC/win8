@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="2" MadCap:lastHeight="1103" MadCap:lastWidth="694">
+    <head><title>Print Page Numbers</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Numbering:Reference Page Numbers;Page:Reference Number;reference page numbers;Print:Page Numbers;Numbering:Print Page Numbers" />Print Page Numbers</h4>
+        <p class="Normal">Also known as: "Reference Page Number" "Print Page Indicator".</p>
+        <p class="Normal">(See also: <span class="Code-DuxCode">[svles...]</span>. (<a href="Codes_Page_Reference_Numbers_(Parameters).htm">Print Page Numbers (Parameters)</a>)</p>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[lea]</span> or <span class="Code-DuxCode">[lea;F~X]</span></p>
+        <p class="Keystroke">Keystroke: <span class="Keyboard">Alt + Enter</span>, type page number, then press <span class="Keyboard">Space.</span></p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">It indicates the number of the next print page. The format of this is dependent on the Template in use. The example shown below is the BANA (American) format. (See next Topic for more options)</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">There are occasions when it is necessary to show print page numbers, for example in documents which would be referenced by page number. "You will find details on page 26"</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxScreen">The meeting then went on to deal with matters arising from the above.</span>
+        </p>
+        <p class="Normal" style="font-weight: normal;"><span class="Code-DuxScreen"><span class="Code-DuxCode">[lea]</span>26 John Smith provided contact details.</span>
+        </p>
+        <p class="Normal" style="font-weight: normal;"><span class="Code-DuxScreen">or</span>
+        </p>
+        <p><span class="Code-DuxScreen"><span class="Code-DuxCode">[lea;p~3]</span>26 John Smith provided contact details.</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,! meet+ !n w5t on 6d1l</p>
+        <p class="Simbraille">) matt]s &gt;is+ f ! abv4</p>
+        <p class="Simbraille">---------------------------#bf</p>
+        <p class="Simbraille">#bf ,john ,smi? provid$ 3tact</p>
+        <p class="Simbraille">details4</p>
+        <p class="Simbraille">or</p>
+        <p class="Simbraille">&#160;3333333333333333333333333 #bf </p>
+        <p class="Simbraille">#bf ,john ,smi? provid$ 3tact</p>
+        <p class="Simbraille">details4</p>
+        <p class="bold">Let us explain!</p>
+        <p class="Normal" style="font-weight: normal;">The first [lea] results in the default (BANA) recommendation of displaying print page numbers.</p>
+        <p class="Normal" style="font-weight: normal;">With the second <span class="Code-DuxCode">[lea;p~3]</span>, the <span class="Code-DuxCode">p</span> displays a "partial fill" giving a space before and after the fill charcater. The <span class="Code-DuxCode">3</span> generates dots 2, 5. (See <a href="..\Miscellaneous\codes_embosser_character_table.htm">Embosser Character Table</a> for full list)</p>
+        <p class="bold">For the more technical:</p>
+        <p class="Normal" style="font-weight: normal;">In British braille the Print Page Indicator is <span style="font-family: SimBraille, monospace;font-size: large;" class="SimBraille">"3#bf</span>centered on the page.</p>
+    </body>
+</html>

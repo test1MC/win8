@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <heading><title>Term definition for: EndofPage</title>
+    </heading>
+    <body>
+        <p class="bold">Term definition for: EndofPage</p>
+        <p>EndofPage = 0; page ends with EOL (End of line. usually CR/LF). form feed (default)</p>
+        <p>EndofPage = 1; no extra EOL before form feed at end of page *** new 10/15/2004</p>
+        <p>EndofPage = 2; pad EOL (s) to the end of the page. Never use a form feed. This command is useful if you feel that a force new page is not working on your embosser. It is vital that DBT knows the number of lines on each page or the top of form will drift high or low from one page to the next.</p>
+        <p>EndofPage = 3; use a control K instead of a standard control-L (form feed). This was needed for some embosser which are now museum pieces (i.e. very old)</p>
+        <p>EndofPage = 4; nothing. but prompt.</p>
+        <p>EndofPage = 5; end a page with the character for the Puma. hex 0x83</p>
+    </body>
+</html>

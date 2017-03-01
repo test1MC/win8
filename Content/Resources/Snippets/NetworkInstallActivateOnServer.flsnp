@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="890" MadCap:lastWidth="662">
+    <body>
+        <p>The next step is to activate DBT on the server machine. When you launch DBT, you will see the Activate button on the splash screen. When you click that (or the like button in the About DBT dialogue), it invokes the Activation Wizard. The Activation Wizard can also be run directly from the DBT home folder (actwiz.exe). </p>
+        <p>On the Activation Wizard main page is a radio button labeled, <b>Set up this server to host the network license</b>. Select that choice and click the Next button. </p>
+        <p class="center">
+            <img src="../Images/getting_setup_in_dbt/activation_wizard/DBT_11.3_activation_on_server_main.jpg" style="width: 489px; height: 292px;" alt="Activation Wizard dialog with Radio Button, &quot;Set up this server to host the Network license&quot; selected" title="Activation Wizard" />
+        </p>
+        <p>From there you can simply follow the instructions in the Activation Wizard, but here are some helpful tips.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">Activating by Internet, if possible, is by far the quickest and most convenient method.</li>
+            <li style="list-style-type: disc;">If you are not using port 8080, the wizard will show you where to enter your selected port number.</li>
+            <li style="list-style-type: disc;">You will need your license text, the server computer name, and a user name. The license text may be pre-populated for you by the installer.</li>
+            <li style="list-style-type: disc;">Though it is not strictly required, to avoid confusion we recommend you enter the same computer name as the DNS name that client machines will use to address this server.</li>
+            <li style="list-style-type: disc;">In the User Name field, you may want to enter the name of the organization (perhaps abbreviated) or the name of the license owner. This is the name that will be associated with your activation. </li>
+        </ul>
+        <p>To see how to invoke the Activation Wizard from DBT and get an overview, see <a href="../../Registration_and_Activation/registration_and_activation.htm">Registration and Activation</a> or see <a href="../../activation_wizard_help/Top.htm">Activation Wizard Help</a> for page by page information.</p>
+        <p>Note: This is the only activation you should do. Do not attempt to activate the individual client machines.</p>
+    </body>
+</html>

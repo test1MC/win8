@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="702" MadCap:lastWidth="624">
+    <head>
+    </head>
+    <body>
+        <p>This option is to allow you to produce an ink-print copy of your Print or Braille document.</p>
+        <p><b>(Please do not confuse Print with <a href="../../the_menus/MENU_FILE/File_Emboss.htm">Emboss</a>!)</b></p>
+        <h5>Print (Text Document):</h5>
+        <p>When you select Print from the original text document, you will see the following screen appear. This gives you the option to print just one, or more copies. You can also choose which pages to print:</p>
+        <ul>
+            <li><span class="hcp1" style="font-weight: bold;">All:</span><span class="hcp1">The whole document will be printed.</span>
+            </li>
+            <li><span class="hcp1" style="font-weight: bold;"><MadCap:keyword term="Current Page" />Current Page:</span><span class="hcp1"> Only the page where the cursor is currently located will be printed.</span>
+            </li>
+            <li><span class="hcp1" style="font-weight: bold;">Selection:</span> Only the text highlighted on screen will be printed. The printed copy of this text may well be wrapped differently from what is on screen.</li>
+            <li><span class="hcp1" style="font-weight: bold;"><MadCap:keyword term="Page:Number" />Print Page Number(s):</span><span class="hcp1"> Only the pages you specify will be printed. Specify pages by typing one or more page numbers as they appear on the pages of your document. You may specify a range of characters by using a hyphen. You may also specify one or more sets of pages by using a comma. For example, to print pages ix, x, 15, 16, and 17, you might type ix-x,15-17</span>
+            </li>
+            <li><span class="hcp1" style="font-weight: bold;"><MadCap:keyword term="Page:Sequence" />Page Sequence Number(s):</span><span class="hcp1"> Only the pages you specify will be printed, but you must specify those pages as if your document starts at page 1 and continues with page 2, 3, etc. In other words, you may have to ignore the page numbers displayed on each page and simply count pages in the document, or look at the status line when the cursor is on each page you wish to specify. This option is useful when one or more page numbers are repeated (e.g. you have two pages that are labelled "1"). You may use the hyphen and comma characters as described above.</span>
+            </li>
+        </ul>
+        <p>From there, you have the option to press Cancel, or OK to proceed.</p>
+        <p>
+            <MadCap:keyword term="Interline Print" />NOTE: The Interline Print check box is also grayed out, and cannot be accessed at this stage.</p>
+        <h5>Print (Braille Document):</h5>
+        <p>When you select Print from within your Braille document, the same screen appears, but with two subtle differences - The Interline Print Check Box is now available and "Print Page Number(s)" is changed to "Braille Page Number(s)". The latter change is because you may choose pages to emboss by following the braille page numbering, but not the print page reference numbers.</p>
+        <p align="center">
+            <img src="../Images/the_menus/menu_file/menu_file_print_braille.jpg" alt="Image shows the Print dialog for Braille documents where there is an available Interline Print check box." border="0" title="Image shows the Print dialog for Braille documents where there is an available Interline Print check box." />
+        </p>
+        <h5>Interline Print:</h5>
+        <p align="left">This is an extremely useful facility whereby as well as printing braille dots on paper, text also appears above the line of braille. The printed copy will appear as follows. (N.B. Illustration was translated using a line length of 20 Cells)</p>
+        <p class="Line-TimesNR">There are occasions, such as</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Not_in_Print_Docs">,"! &gt;e o3a.ns1 s* z</p>
+        <p class="Simbraille" style="font-family: monospace;" MadCap:conditions="Primary.Print_Only">
+            <p MadCap:conditions="Primary.Print_Only">
+                <img src="../Images/the_menus/menu_file/BRL_1.jpg" alt="Image of braille which says, &quot;There are occastions, such as&quot;" />
+            </p>
+        </p>
+        <p class="Line-TimesNR">in teaching, where it is</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Not_in_Print_Docs">9 t1*+1 ": x is</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Print_Only">
+            <p MadCap:conditions="Primary.Print_Only">
+                <img src="../Images/the_menus/menu_file/BRL_2.jpg" alt="Imange of braille which says, &quot;in teaching, where it is&quot;" />
+            </p>
+        </p>
+        <p class="Line-TimesNR">useful to have an </p>
+        <p class="Simbraille" MadCap:conditions="Primary.Not_in_Print_Docs">use;l 6h an</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Print_Only">
+            <p MadCap:conditions="Primary.Print_Only">
+                <img src="../Images/the_menus/menu_file/BRL_3.jpg" alt="Image of braille which says, &quot;useful to have an&quot;" />
+            </p>
+        </p>
+        <p class="Line-TimesNR">"Interline" printed version</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Not_in_Print_Docs">8,9t]l9e0 pr9t$ v].n</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Print_Only">
+            <p MadCap:conditions="Primary.Print_Only">
+                <img src="../Images/the_menus/menu_file/BRL_4.jpg" alt="Image which says, '&quot;Interline&quot; printed version&quot;" />
+            </p>
+        </p>
+        <p class="Line-TimesNR">of a braille document.</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Not_in_Print_Docs">(a brl docu;t4</p>
+        <p class="Simbraille" MadCap:conditions="Primary.Print_Only">
+            <p MadCap:conditions="Primary.Print_Only">
+                <img src="../Images/the_menus/menu_file/BRL_5.jpg" alt="Image of braille which says &quot;of a braille document.&quot;" />
+            </p>
+        </p>
+    </body>
+</html>

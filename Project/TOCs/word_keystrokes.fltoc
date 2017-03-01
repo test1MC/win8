@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Contents"
+    Link="/Content/Resources/PageLayouts/Contents.flpgl"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/word_keystrokes.flpgl"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Keyboard shortcuts for Microsoft Word 2016 for Windows"
+    Link="/Content/working_with_word/word_keystrokes.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/word_keystrokes.flpgl"></TocEntry>
+  <TocEntry
+    Title="Index"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Print_Index.htm"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl"
+    StartSection="false"
+    PageNumberReset="continue" />
+</CatapultToc>

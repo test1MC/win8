@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="Primary.Mac_Version">
+  <TocEntry
+    Title="Title Page - The Mac Menus"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Title_Page_The_Menus_Mac.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Cover_Print.flpgl"
+    MasterPage="/Content/Resources/MasterPages/Book_The_Menues.flmsp"
+    PageNumber="1" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="true"
+    MasterPage="/Content/Resources/MasterPages/Book_The_Menues.flmsp"
+    PageNumberReset="continue"
+    BreakType="chapter"></TocEntry>
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/introduction.htm"
+    StartSection="true"
+    BreakType="chapter"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Introduction.flpgl"
+    PageNumber="1" />
+  <TocEntry
+    Title="Getting Help"
+    Link="/Content/getting_setup_in_DBT/new_users_start_here/GETTING_HELP.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Getting_Help.flpgl"
+    ReplaceMergeNode="false"
+    MasterPage="/Content/Resources/MasterPages/Book_The_Menues.flmsp" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    StartSection="true"
+    BreakType="chapter"
+    AutoEndOnLeftPage="disabled"
+    MasterPage="/Content/Resources/MasterPages/Book_The_Menues.flmsp"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Blank_Page.flpgl"></TocEntry>
+  <TocEntry
+    Title="Back Page (The Menus)"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Back_Page_(The_Menus).htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+    PageNumberReset="continue"
+    AutoEndOnLeftPage="disabled" />
+</CatapultToc>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="LaoScript8" MadCap:lastBlockDepth="4" MadCap:lastHeight="754" MadCap:lastWidth="737">
+    <head><title>Improving Thai Braille: Word Endlings</title>
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Thai:Word Endings;Word Endings:Thai" />Improving Thai Braille: Word Endings</h4>
+        <p>The Problem of Word or Syllable Endings.</p>
+        <p>Inkprint files containing Thai (and Lao) text do not usually have spaces between words. In the process of producing braille, the user ends up with the braille characters, but no idea where the word divisions are. The result is braille output that divides the line at the wrong places. Duxbury DBT needs to know where the division points between words are in these two languages.</p>
+        <p>In search for a way to insert word endings into Thai text, we came across software named <a href="http://www.laoscript.net/LaoScript8" title="http://www.laoscript.net/LaoScript8" alt="http://www.laoscript.net/LaoScript8">LaoScript8</a>. It is basically an add-on for Microsoft Word (or Open Office) to improve functionality for Lao and Thai, distributed by <a href="https://secure.tavultesoft.com/about.php" title="https://secure.tavultesoft.com/about.php" alt="https://secure.tavultesoft.com/about.php">Tavultisoft</a>, a company located in Tasmania. There are three purchase levels of LaoScript8:</p>
+        <ul>
+            <li>Free Edition -- This only gives fonts and keyboard mapping. The free edition does not offer improvement to Thai Word files</li>
+            <li>Standard Edition ($20) -- This can be used to add word endings for Lao in Microsoft Office or Open Office.</li>
+            <li>Gold Edition ($30) -- This can be used to add word endings for Lao or Thai in Microsoft Office or Open Office.</li>
+        </ul>
+        <p>The feature that helps Thai braille production will be in the next version. Until it is officially released, a copy of the software can be downloaded for those with a Gold Edition copy at <a href="http://laoscript.net/" title="http://laoscript.net" alt="http://laoscript.net">http://laoscript.net</a>. The developer, John Durdin, warns there may be undiscovered bugs in this build, but it has worked well for him.</p>
+        <p>As you use Microsoft Word (after obtaining, installing and licensing the LaoScript8 software), you find a menu choice LaoScript8 inside of Word.</p>
+        <p>Just as you are finished with a document (and are ready to produce braille), click on the LaoScript menu. This produces a ribbon in Word. To use the new function, go to the LaoScript Menu, then click on Settings, then More Settings and set the </p>
+        <p>Thai to Thai Word selection option to None (wrap Thai with ZWSP).</p>
+        <p>Then, in a Word document, use LaoScript8 - Thai to Thai (Automatic) to insert ZWSP into the Thai text at word and syllable boundaries. While the current menu setting suggests translation into Lao, this does not occur. The result is a Thai file with ZWSP characters.</p>
+        <p>To be technical, LaoScript8 inserts Unicode U+200B as its end of word markers. This Unicode character is called a zero length space. Usually, these cause two characters to be printed closer together by adding a zero-length non-printing character which tells the inkprint rendering to potentially divide lines at these positions. Duxbury DBT looks for these U+200B characters, and divides braille lines based on where these are placed.</p>
+    </body>
+</html>

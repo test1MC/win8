@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/The_Mac_Menus.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Getting_Help.flpgl"
+  ConditionTagExpression="exclude[Primary.HTML_Only]">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

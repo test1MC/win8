@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Note: (1) These instructions were written for all versions of DBT from 11.2 on. (2) A word or abbreviation inside angle brackets, like &lt;Enter&gt; or &lt;Esc&gt;, indicates a specific key on your keyboard.</p>
+        <p>Acquiring a multi-user license for DBT enables you to run your own network-based DBT installation. A network-based installation of DBT is simply an installation in which all the instances of DBT, on as many machines as they are installed, are all activated through a single server machine on your network. Only the server computer needs to be officially activated; all other DBT’s on the network become activated as its clients. Naturally, the server must be activated for a sufficient number of users to serve your intended number of client DBT’s, and the server must be up and running at all times.</p>
+    </body>
+</html>

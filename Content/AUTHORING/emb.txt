@@ -1,0 +1,3586 @@
+﻿# emb.elt -- file used to describe the properties of Braille Embossers
+# Copyright 2016, Duxbury Systems, Inc.
+# All Rights Reserved
+#
+# This is designed for DBT version 12.1 and QuickTac version 4.
+# This file was last modified on September 9, 2016
+#
+# Do not use on an earlier DBT installation.
+#
+# This textfile is being maintained by David Holladay of Duxbury Systems
+# contact him at david@duxsys.com or +978-692-3000 x309
+# If you find an error, or want an improvement, talk to him or e-mail him
+#
+# Do not **ever** modify this file. Instead, create your own file called myemb.elt to
+# contain complete embosser descriptions. Let's say you want to make changes to the
+# definition for Generic Interpoint. Do not remove the entry in emb.elt. Just create
+# a new file called myemb.elt that contains the complete definition of Generic Interpoint.
+# then edit the copy in myemb.elt. Duxbury DBT will use the definition in myemb.elt,
+# and ignore the one in emb.elt. Place myemb.elt in the same directory as emb.elt in the
+# main DBT software folder.
+#
+# ***** WARNING *****
+# If you modify this file, the DBT installer will never update this file. This could leave you
+# with an embosser table after you install a future edition of DBT. This could be very
+# frustrating, for you and for people doing technical support.
+#
+# You can add new definitions in myemb.elt as well.
+#
+# After you add or change the myemb.elt file, exit DBT, and then restart DBT. Delete any old
+# embosser configurations using the embosser you are working with, and then create new ones
+# using the name of the modified embosser. Otherwise, you run the risk of making changes
+# in the myemb.elt textfile, but not seeing the effect of your changes in the next embossing test.
+#
+# The myemb.elt textfile is easy to modify, with a format that is close to
+# self-documenting. If you make a serious error, you will get an error that
+# says something like Syntax error in emb.elt at or near line 13. The error message
+# may be misleading. The error is either line 13 of file myemb.elt or line 13 of file
+# emb.elt. Since you are doing the changes, you know which file has the error.
+# If you are following these instructions and not making any changes to emb.elt, any
+# errors must be in myemb.elt. If you feel you cannot fix your problem, you can always
+# revert back to your original setup by deleting myemb.elt.
+#
+# PLEASE TAKE NOTICE
+#
+# The software that reads this file is imperfect. It fails if there is a
+# double quote mark in a comment. To illustrate the use of embosser names,
+# and certain commands (form, driver, encoding) a double quote mark is vital.
+# I dropped the quotes in these comments so DBT can still run. Do not fix
+# this file and add quotes to the comments. Look at the actual embosser
+# sections for a true picture as to how these commands are used. This text
+# in comments is meant to assist your understanding, not destroy your use of DBT.
+#
+#
+#  embosser name inside quotes -- notice, no quote marks in comments.
+#  Embosser name should be under 45 characters
+#  For Index embossers, the name may be followed by a version (e.g. V2) or
+#  version range (e.g. V3-V4) to which the description is applicable
+#  this replaces the IndexVersions property, which will still be found in
+#  earlier revisions of emb.elt and which, if present, will override the
+#  version or version range specified immediately after the name.
+#  {
+#     properties inside of curley brackets
+#     more properties
+#     here come the closing curley brackets
+#  }
+#
+#
+# One reason to adjust this file is to deal with flow control (handshaking) problems. Please see the notes
+# at the end of this file for more on this subject
+#
+#  Here are the properties, and what they mean:
+#
+#
+#   AdditionalDelay     / milliseconds added to each character when OneByOne is used
+#   Baud = 4800         / The default for the baudrate (usually 9600)
+#   BreakLimits         / do not limit the carriage width or form length
+#   CanDoInterpoint     / an interpoint embosser. A user can still set an
+#                       / embosser for single sided
+#                       / or ask for a job to be done single sided
+#   ControlDelay        / delay for each control character when OneByOne is used
+#   ControlD            / send a control-D at the end of a job (last copy only)
+#  
+#   ControlZ            / send a control-Z at the end of a job (last copy only)
+#  
+#   CrMac               / only send carriage return, not carriage return / line feed 
+#   Customize           / a parameter having a special function for this embosser
+#                       / Used by Nippon Gemini to control line spacing
+#                       / Customize = 2  means small spacing,  3 is medium
+#                       / 4 is large (the default), 6 means SP
+#                       / Used by Index to control which parameter controls graphics mode (default is 27)
+#                       /  and how many parameters total are in the initialization sequence (default is 40)
+#                       /  Value is 256 * number of parameters + graphics resolution parameter index
+#   DataBits = 7        / The default for databits (usually 8)
+#   Driver = XXX        / which group of output programs to use
+#
+#   Driver = Emb_BMPEmbosserDriver         / use for Nippon BMP
+#   Driver = Emb_BrailloEmbosserDriver     / use for Braillo
+#   Driver = Emb_DotnPrint_EmbosserDriver  / use for ATC Dot n Print
+#   Driver = Emb_EnablingEmbosserDriver    / use for Enabling
+#    Software uses this as a key to know that escape codes may be used, ETCAllowEscapeCodes sets the use of escape
+#    codes as a default
+#   Driver = Emb_Gemini_EmbosserDriver     / use for Nippon Gemini
+#   Driver = Emb_IndexEmbosserDriver       / use for Index
+#   Driver = Emb_OhtsukiEmbosserDriver     / use for Ohtsuki
+#   Driver = Emb_PumaEmbosserDriver        / use for Puma and Btec100
+#   Driver = Emb_ThielEmbosserDriver       / use for some Thiel (not PortaThiel)
+#   Driver = Emb_TigerEmbosserDriver       / use for Viewpoint Tiger
+#   Driver = Emb_VersapointEmbosserDriver  / use for original VersaPoint
+#   Driver = Emb_MountbattenEmbosserDriver / use for Mountbatten
+#       Drivers come in two groups: normal and special. Normal drivers
+#       behave in similar ways, differing in graphics and other specialized ways.
+#       Special drivers offer very specialized support, and cannot be compared
+#       Normal = Generic, Enabling, Index, Ohtsuki, VP, Puma, and Mountbatten
+#       Specialized = Tiger, DotnPrint, BMP, Gemini, Elekul
+# *** More information about Elekul 55 support in (dbt directory)\drivers\print55\dbt-help.txt
+#
+#   Encoding = display.cpt, British        / list the file name and the section
+#                                          / name for different braille encodings
+#   Encoding = display.cpt, French         / to be used for output. See the file
+#                                          / display.cpt for more information
+#   Encoding = display.cpt, German
+#   Encoding = display.cpt, North American English
+#   Encoding = display.cpt, Spanish
+#   Encoding = pumavi.cpt,  PUMA binary (transparent) code
+#
+#   EndofPage = 0    / page ends with EOL (End of line, usually CR/LF), form feed (default)
+#   EndofPage = 1    / no extra EOL before form feed at end of page *** new 10/15/2004
+#   EndofPage = 2    / pad EOL (s)  to the end of the page, never use a form feed
+#                    / This command is useful if you feel that a force new page is not working on
+#                    / your embosser. It is vital that DBT knows the number of lines on each page,
+#                    / or the top of form will drift high or low from one page to the next.
+#   EndofPage = 3    / use a control K instead of a standard control-L (form feed)
+#                    / This was needed for some embosser which are now museum pieces (i.e. very old)
+#   EndofPage = 4    / nothing, but prompt 
+#   EndofPage = 5    / use the Puma end of page character (hex 83).
+#   EndofPage = 6    / use for ELEKUL 03 only:
+#                    /   - pad EOL (s) to the end of the page, then write Control-R
+#                    /   - also write Control-R at start of job
+#
+#   ETmulti              / multiple copies in the style of Enabling
+#   ETCAllowEscapeCodes  /     Set the use of escape codes by the software as the default.
+#                        / use 23.1E on the embosser to really turn on use of escape codes
+#   ETMediumResGraphics  /     Model supports Enabling Technologies medium-res (esc-1) graphics
+#   ETHighResGraphics    /     Model supports Enabling Technologies high-res (esc-6) graphics
+#   ETSpeaks             /     Model supports Enabling Technologies 'ET Speaks' voice output
+#   FormNamePrefix       / a string value set for some embossers to allow display of model-specific form names
+#   BrailloHGapGraphics  / model supports a 'graphics' mode where line spacing is compressed
+#                        / to produce an even pattern of dots *down* the page
+#                        / (This is the same as RDC 'Gapped Graphics'.)
+#   BrailloVGapGraphics  / model supports a 'graphics' mode where cell-to-cell spacing is
+#                        / compressed on each line to produce an even pattern of dots *across* the page
+#   LabellerROM          / embosser is designed primarily for labels (this is an optional ROM for some
+#                        / Enabling embossers
+#   LessLinesInterpoint = 1      / produces fewer lines if this
+#                        / embosser is used as an interpoint embosser
+#   Form 10_n =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+#                        / form definition, each embosser can have many.
+#                        / This one says internal name is 10_n,
+#                        / 8.5 by 10 inches in size (numbers are in tenths)
+#                        / Pages are as individual pages
+#                        / (not like Index 4x4 which are double sized)
+#                        / maximum size for this paper form is 34 by 22,
+#                        / though 32 by 22 is recommended
+#                        / Please note the use of quotes, equal sign,
+#                        / letter x, and semi-colon
+#                        / Clipboarding is recommended to help avoid errors.
+#                        / For Europeans, the setup process looks for forms in the following order:
+#                                          A4, 12_w 11_w 11_n 10n
+#                        / For all others, the setup process looks for forms in the following order:
+#                                          11_w 11_n 10n
+#   Handshaking          / Also called Flow Control, How DBT expects the embosser to issue a request to stop the flow
+#                        / of characters from DBT. Choices are Hardware, Software, and None. Hardware is the default.
+#                         / Hardware handshaking is also called DTR or RTS?CTS. Software handshaking is also called
+#                        / Xon/Xoff. Virtually all serial interfaces with a PC use hardware handshaking. It is rare
+#                        / to have a device that cannot do hardware handshaking and you need Software handshaking. 
+#                        / None would only be useful to assist with debugging the handshaking.
+#   HardwareDCB             / keyword to reprogram the defaults for what is called the DCB structure of the
+#                        / serial port when the serial port is set for hardware handshaking)
+#                        / See the Elekul 55 for a similar command. Also see the end of this file
+#                        / For clues to keywords, do a Google search for: dcb structure msdn library
+#   HelpPage             / Identifying which internal htm file is loaded when F1 is pressed at the list of embossers
+#   Index16Graphics      / can do Index graphics, 1.6mm dimensions
+#   Index20Graphics      / can do Index graphics  2.0mm dimensions
+#                        / note: different ROM version of index use different placement of graphics size command
+#                        / default is at 25th position. If you need another value, add Customize = 26 or whatever
+#                        / putting in Customize = 1 suppresses the graphics resolution escape code for the model II Index
+#                        / number works for your embosser
+#   IndexMulti           / do multiple copies in the style of Index embossers
+#   IndexPageInch        / Index embosser in which page size is in English units
+#   IndexPagemm          / Index embosser in which page size is in metric units
+#   IndexVersions        / Index embosser versions in which this model is available (1, 2, 3_early, 3, or 4)
+#   IndexZfold           / this Index embosser supports Zfold embossing
+#   IniFile              / Name of file in C:\Windows that controls Tiger interpoint
+#   InitSequence         / Used for Index V3 (Firmware 10.25 or newer) and Index V4/V5 embossers only.
+#                        / This defines the parameters, in order, to be sent in an Escape-D sequence at
+#                        / the start of each job. Parameters may be listed with or without a value.
+#                        / When a parameter is listed in InitSequence with a value, it will be sent as-is
+#                        / (i.e. with the specified value) as part of the Escape-D sequence at the start
+#                        / of each embossing job. If the parameter does not include a value, then in some
+#                        / cases, DBT may add value, computed internally, based on the form definition.
+#                        / For V4 and V5 embossers, DBT can add values to DP, CH, BI, LP, TM, and MC parameters.
+#                        / For V3 embossers, DBT can add values to DP, PW, PL, IM, OM, TM, BM, and MC parameters.
+#                        / If the parameter, as showing in InitSequence, does not contain a value and DBT
+#                        / does not add one, it will be sent without one.
+#                        / There is an exception for the MC parameter. This will never be sent without
+#                        / a parameter and will never be sent with a parameter of 1. Neverthless, your
+#                        / InitSequence should contain the MC parameter without a value, because this is
+#                        / necessary for DBT to properly support multi-copy output.
+#                        / DBT has two built-in default values for InitSequence: one for V3 and one for V4/V5.
+#                        / If you define a blank InitSequence, the built-in default will be used. To eliminate
+#                        / most DBT initialization of your embosser, but leave it possible for DBT to control
+#                        / multi-copy output, simply set InitSequence to MC
+#                        / DBT does little-to-no validation of InitSequence values, so take great care
+#                        / and test thoroughly if you do modify it. Please refer to the relevant Index
+#                        / Printer Interface Protocol manual, available from Index Braille, for more information
+#                        / about Escape-D parameters and values.
+#   Interline            / The embosser can do inkprint interlining
+#                        / (the mechanics are done in the driver)
+#   LettersUpperCase     / Send letters to the embosser in upper case only
+#   LfUnix                 / only send line feed, not carriage return / line feed (not used)
+#   LinesPadded          / pad lines with spaces
+#   LineWrap             / if a line is full, do not send a carriage return
+#   ManualInterpoint     / can do interpoint, but requires 2 passes (odd #'s, then even with prompt
+#                          / in between -- see Nippon Gemini
+#   MaximumCells = 40    / the absolute maximum cells that can be produced
+#                        / assuming optimum conditions                                    
+#   MaximumLines = 25    / the absolute maximum lines that can be produced
+#                        / assuming optimum conditions
+#   NarrowWarning        / a narrow page embosser only,
+#                        / warn if the user wants wide paper or format
+#   NoLeftMargin         / no embosser command to set the left margin
+#   NoMakeupSides        / job needn't contain an even number of sides
+#                        / (iff CanDoInterpoint is set, job is assumed to require an even number of sides)
+#                        / (NoMakeupSides is not supported by some drivers)
+#   NoParallel           / no parallel port in this embosser
+#   NoSerial             / no serial port in this embosser
+#   NoRightMargin        / no embosser command to set the right margin
+#   NoTopMargin          / no embosser command to set the top margin
+#   OneByOne             / output each character one at a time
+#                        / (not line at a time), used for Ohtsuki
+#   Parity = 1           / set default, 0 = no parity, 1= even, 2=odd, and 3= mark parity
+#   PageWrap             / if a page is full, do not send a form feed; do not combine this with EndofPage = 1.
+#   PlateLoadByte = n      / Setting of PED-30 data switch 2 (unused for other devices)
+#                          / Note that, when this is set and output is directed to a serial port, setting
+#                          / the Prompt for New Sheet setting will not display a prompt, but output will
+#                          / be suspended until the specified byte is received.
+#                          / If you have a serial cable that does not support carrying data back to the host,
+#                          / then it may be necessary to remove the PlateLoadByte line from the PED-30
+#                          / definition and rely on prompts displayed on the host to replace true handshaking.
+#   PortCloseSyncByte  = n / Byte value to write, as padding, after output complete and before closing port.
+#                          / A value of 0 is used if none is specified.  See also PortCloseSyncCount
+#   PortCloseSyncCount = n / Number of bytes to write, as padding, after output complete and before closing port.
+#                          / A value of 0 (no padding) is used if none is specified.  See also PortCloseSyncByte.
+#                          / Very rarely should it be necessary to specify PortCloseSyncCount.
+#   PortCloseSyncPrompt  / User will be prompted to 'Click OK when embossing complete' before port is closed.
+#                        / This should rarely be necessary, but may help solve otherwise intractible problems
+#                        / of data loss at the end of a job.
+#   PromptNewPage        / each page must be inserted manually into the embosser
+#   RotatePaperSizings	 / For Index 4x4, swap PL and PW dimensions 
+#   SeparateGraphics     / Integer value: 0 - graphics may share page with text and other graphics
+#                        / 1 - graphics must start a new page (text may only appear after)
+#                        / 2 - graphics must end the page (text may only appear before)
+#                        / 3 - graphics must start *and* end a page
+#                        / Other values are undefined. 0 is implied when the keyword is absent
+#   SoftwareDCB             / keyword to reprogram the defaults for what is called the DCB structure of the
+#                        / serial port when the serial port is set for software (Xon/Xoff) handshaking.
+#                        / This keyword is used in the Elekul 55. Also see the end of this file.
+#                        / For clues to keywords, do a Google search for: dcb structure msdn library
+#   SortToTop            / use to force an entry to be at the top of the list, ignoring alphabetical order
+#                        / used for generic and generic interpoint
+#   StartLeftMargin = 0  / this embosser calls the first cell position 0
+#   StopBits = 2         / default for stop bits is 2 instead of 1
+#   SubModel = n         / used to distinguish among different embosser models that use the same driver
+#   SupportSeekTOF       / model supports seeking top-of-form (Enabling models only)
+#   TranSend             / this embosser is compatible with TranSend SE (Enabling models only)
+#   UsingEscapeCodes     / Escape codes are used; typical sequence will set page size to match document
+#                        / This suppresses the prompt for embosser margins in embosser setup
+#   VPGraphics           / do graphics in the style of the VersaPoint
+#   VPmulti              / do multiple copies in the style of the VersaPoint
+#   WindowsDriverName    / used to help DBT setup match plug and play information with embossers
+#
+#   YesFTDI              / this embosser has a USB port (for communications through FTDI)
+#   YesUSB               / this embosser has a USB port (for raw communications)
+#
+#
+#  Some Notes on Form Size
+#
+#  A common formula to determine the number of lines an embosser can do is (page length)/(0.4)
+#  Thus the maximum for 11 inch paper is 27 lines, for 12 inch page is 30 lines
+#  For Index Embossers, use  ((page length*25.4))/10    or (page length mm)/10  (round down, never up)
+#  For Index embossers, use  ((carriage width)*(25.4))/6 - 6  or (carriage width mm)/6 - 6
+#  For Index embossers there is sometimes a one line penalty for interpoint
+#
+#
+# Please notice that some of these factors can be changed in the user
+# interface, some cannot.
+#
+# When there is no number sign in the left margin, it is no longer a
+# comment. We are about to start real data.
+#
+"Generic"
+# *** Embosser definition unchanged since 11/22/2006
+# This entry is describes the baseline that is internally setup baseline properties of each embosser. All embosser
+# entries build on top of these settings entry. Notice the StartLeftMargin command means that you only need to
+# mark the embossers that start their count on zero. Changing this entry in the emb.elt file has no effect. It
+# is here to display these baseline settings
+# 11/22/2006 -- added support for 13 inch paper
+# No escape sequences used
+{
+  Baud = 9600
+  DataBits = 8
+  StopBits = 1
+  StartLeftMargin = 1
+  MaximumCells = 42
+  MaximumLines = 27
+  Driver = "Emb_GenericEmbosserDriver"
+  BreakLimits
+  HelpPage = "Generic.htm"
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 28
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 32 ; 40 x 30
+  SortToTop
+}
+ 
+"Generic Interpoint"
+# *** Embosser definition unchanged since 11/22/2006
+# no escape sequences used
+{
+  MaximumCells = 42
+  MaximumLines = 27
+  BreakLimits
+  CanDoInterpoint
+  HelpPage = "Generic_Interpoint.htm"
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 28
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 32 ; 40 x 30
+  SortToTop
+}
+
+"ATC Braille & Print" V4
+# *** Embosser definition unchanged since 07/10/2013
+# using escape sequence, using Index Driver with version 4 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  Index16Graphics
+  Interline
+  MaximumCells = 47
+  MaximumLines = 27
+  EndofPage = 1
+  IndexMulti
+  YesUSB
+  NoParallel
+  ControlZ
+  IndexPagemm
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "ATC Braille and Print"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "ATC_Braille_a_Print.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; BrailleOnly = 42 x 41 ; 40 x 40 ; Interline = 42 x 41 ; 40 x 40
+  Form "A4"   =  83 x 117 ; SinglePage ; BrailleOnly = 35 x 29 ; 30 x 27 ; Interline = 35 x 29 ; 30 x 27  
+  Form "A4_ex"        =  98 x 117 ; SinglePage ; BrailleOnly = 41 x 29 ; 41 x 27 ; Interline = 41 x 29 ; 41 x 27  
+  Form "A3_landscape" = 165 x 117 ; SinglePage ; BrailleOnly = 68 x 29 ; 66 x 27 ; Interline = 68 x 29 ; 66 x 27
+  Form "A4_landscape" = 117 x 83 ; SinglePage ; BrailleOnly = 42 x 20 ; 40 x 18 ; Interline = 42 x 20 ; 40 x 18
+  Form "A3_folio" = 165 x 117; DoublePage ; BrailleOnly = 33 x 29 ; 31 x 27 ; Interline = 33 x 29 ; 31 x 27  
+  Form "A4_folio" = 117 x 83; DoublePage ; BrailleOnly = 22 x 20 ; 20 x 20 ; Interline = 22 x 20 ; 20 x 20    
+  Form "10_n" =  85 x 100 ; SinglePage ; BrailleOnly = 36 x 24 ; 32 x 23 ; Interline = 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; BrailleOnly = 36 x 27 ; 32 x 25 ; Interline = 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; BrailleOnly = 47 x 27 ; 40 x 25 ; Interline = 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; BrailleOnly = 36 x 30 ; 32 x 28 ; Interline = 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; BrailleOnly = 47 x 30 ; 40 x 28 ; Interline = 47 x 30 ; 40 x 28
+  Form "14_n" =  85 x 140 ; SinglePage ; BrailleOnly = 36 x 35 ; 32 x 34 ; Interline = 36 x 35 ; 32 x 34  
+  Form "11_nd" = 170 x 110; DoublePage ; BrailleOnly = 33 x 28 ; 32 x 25 ; Interline = 33 x 28 ; 32 x 25 
+  Form "RusBook"   =  96 x 117 ; SinglePage ; BrailleOnly = 40 x 29 ; 36 x 27 ; Interline = 40 x 29 ; 36 x 27
+  Form "RusNote" = 150 x 99; SinglePage ; BrailleOnly = 41 x 37 ; 38 x 37 ; Interline = 41 x 37 ; 38 x 37
+  Form "RusNote_folio" = 150 x 99; DoublePage ; BrailleOnly = 31 x 25 ; 30 x 23 ; Interline = 31 x 25 ; 30 x 23  
+}
+ 
+"ATC Dot & Print"
+# *** Embosser definition unchanged since 05/17/2004
+# Proprietary control sequences used for this embosser
+# Warning -- page size maximum needs to be compiled into driver source code
+{
+  Driver = "Emb_DotnPrint_EmbosserDriver"
+  StartLeftMargin = 0
+  Interline
+  MaximumCells = 40
+  MaximumLines = 20
+  Baud = 19200
+  HelpPage = "ATC_Dot_&_Print.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ;
+    BrailleOnly = 40 x 20 ; 40 x 20 ;
+    Interline = 40 x 20 ; 40 x 20
+  Form "12_w" = 115 x 120 ; SinglePage ;
+    BrailleOnly = 40 x 22 ; 40 x 22 ;
+    Interline = 40 x 22 ; 40 x 22
+}
+ 
+"ATC Ohtsuki"
+# *** Embosser definition unchanged since 08/06/2004
+# simple escape sequence used: interline (esc B) or braille only (esc O)
+{
+  MaximumCells = 42
+  MaximumLines = 25
+  Interline
+  OneByOne
+  LettersUpperCase
+  PageWrap
+  Driver = "Emb_OhtsukiEmbosserDriver"
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  HelpPage = "ATC_Ohtsuki.htm"
+  Form "11_w" = 115 x 110 ;  SinglePage ;
+    BrailleOnly = 42 x 25 ; 40 x 25 ;
+    Interline = 42 x 25 ; 40 x 25
+}
+ 
+"Brailletec BTec 100"
+# *** Embosser definition unchanged since 02/02/2006
+# binary driving sequences used
+{
+  Driver = "Emb_PumaEmbosserDriver"
+  NoParallel
+  MaximumCells = 44
+  MaximumLines = 27
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  OneByOne
+  AdditionalDelay = 2
+  ControlDelay = 2
+  EndofPage = 5 
+  HelpPage = "Brailletec_BTec_100.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Encoding = "pumavi.cpt", "PUMA binary (transparent) code"
+  Form "A4"   =  83 x 115 ; SinglePage ; 32 x 29 ; 32 x 28
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 32 x 27 ; 32 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 32 x 29 ; 32 x 28
+}
+ 
+"Brailletec Elotype 4A"
+# *** Embosser definition unchanged since 08/06/2004
+# No escape sequences
+{
+  MaximumCells = 40
+  MaximumLines = 30
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "German"
+  HelpPage = "Brailletec_Elotype_4A.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+ 
+"Brailletec PUMA 6"
+# *** Embosser definition unchanged since 04/20/2006
+# *** removed Brailletec PUMA duplicate definition 4/25/2006
+# binary driving sequences used
+# no graphics support
+{
+  Driver = "Emb_PumaEmbosserDriver"
+  Encoding = "pumavi.cpt", "PUMA binary (transparent) code"
+  NoParallel
+  OneByOne
+  EndofPage = 5 
+  CrMac
+  LineWrap
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  Handshaking=Software
+  HelpPage = "Brailletec_PUMA_6.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+}
+ 
+"Brailletec PUMA 7"
+# *** Embosser definition unchanged since 04/30/2010
+# binary driving sequences used
+# no graphics support
+{
+  Driver = "Emb_PumaEmbosserDriver"
+  Encoding = "pumavi.cpt", "PUMA binary (transparent) code"
+  NoParallel
+  OneByOne
+  EndofPage = 5 
+  CrMac
+  LineWrap
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  Handshaking=Software
+  HelpPage = "Brailletec_PUMA_7.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+}
+ 
+"Braillo 200"
+# *** Embosser definition unchanged since 05/12/2011
+# escape sequence (using Braillo Driver, name contains 00)
+# esc S, esc C, esc J, esc A, esc B esc N, and esc R (added 2006)
+# A4 paper supported in the embosser only if the ROM chip is labeled A4
+# These escape sequences are based on the Braillo 000.17 version ROM
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  BrailloHGapGraphics
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 1
+  HelpPage = "Braillo_200.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "A4"   =  83 x 115 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 200/400 with 270 style ROMs"
+# *** Embosser definition unchanged since 05/12/2011
+# escape sequence (using Braillo Driver, name contains 270)
+# Note: no escape command for interpoint / single sided
+# Note, only supports whole inches 4-14 length plus 9.5, 10.5, 11.5, 12.5, and 13.5
+# Note, only supports widths 27-42 (no 1E or 1F sequence used if outside of the range)
+# esc 6, esc A, esc Ascii 30, esc Ascii 31, esc E
+# Based on prom version 01-16
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 2
+  HelpPage = "Braillo_200_400_with_270_style_ROMs.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 270"
+# *** Embosser definition unchanged since 05/12/2011
+# escape sequence (using Braillo Driver, name contains 270)
+# Note: no escape command for interpoint / single sided
+# Note, only supports whole inches 4-14 length plus 9.5, 10.5, 11.5, 12.5, and 13.5
+# Note, only supports widths 27-42 (no 1E or 1F sequence used if outside of the range)
+# esc 6, esc A, esc Ascii 30, esc Ascii 31, esc E
+# Based on prom version 01-16
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 3
+  HelpPage = "Braillo_270.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 30"
+# *** Embosser definition unchanged since 05/17/2004
+# no escape sequence
+{
+  HelpPage = "Braillo_30.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+ 
+"Braillo 300"
+# *** Embosser definition unchanged since 05/12/2011
+# escape sequence (using Braillo Driver, name contains 00)
+# esc S, esc C, esc J, esc A, esc B esc N, and esc R (added 2006)
+# A4 paper supported in the embosser only if the ROM chip is labeled A4
+# These escape sequences are based on the Braillo 000.17 version ROM
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  BrailloHGapGraphics
+  Driver = "Emb_BrailloEmbosserDriver"
+  NoParallel
+  Submodel = 4
+  HelpPage = "Braillo_300.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "A4"   =  83 x 115 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 300 S2"
+# *** Embosser definition unchanged since 09/09/2016
+# escape sequence (using Braillo Driver, name contains 00)
+# esc S, esc C, esc J, esc A, esc B esc N, and esc R (added 2006)
+# A4 paper supported in the embosser only if the ROM chip is labeled A4
+# These escape sequences are based on the Braillo 000.17 version ROM
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  BrailloHGapGraphics
+  Driver = "Emb_BrailloEmbosserDriver"
+  NoParallel
+  Submodel = 4
+  HelpPage = "Braillo_300.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "A4"   =  83 x 115 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 40/50"
+# *** Embosser definition unchanged since 06/07/2004
+# no escape sequence
+{
+  HelpPage = "Braillo_40_50.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+ 
+"Braillo 400S"
+#GB: "Braillo 400 S"
+# *** Embosser definition unchanged since 05/12/2011
+# same escape sequence as Braillo 200
+# A4 paper supported in the embosser only if the ROM chip is labeled A4
+# These escape sequences are based on the Braillo 000.17 version ROM
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 5
+  HelpPage = "Braillo_400S.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "A4"   =  83 x 115 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 400SR"
+#GB: "Braillo 400 SR"
+# *** Embosser definition unchanged since 05/12/2011
+# same escape sequence as Braillo 200
+# A4 paper supported in the embosser only if the ROM chip is labeled A4
+# These escape sequences are based on the Braillo 000.17 version ROM
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 6
+  HelpPage = "Braillo_400SR.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "A4"   =  83 x 115 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Braillo 440 SW"
+# *** Embosser definition unchanged since 05/12/2011
+#  escape sequence (using Braillo Driver, name contains 440)
+# esc A, esc H, esc B, esc P
+# The first embosser to support 13 inch paper
+{
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 7
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 44
+  UsingEscapeCodes
+  HelpPage = "Braillo_440_SW.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 25 ; 40 x 25
+  Form "11_d" = 230 x 110 ; DoublePage ; 44 x 28 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 28 ; 40 x 28
+  Form "12_d" = 230 x 120 ; DoublePage ; 44 x 28 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_d" = 230 x 130 ; DoublePage ; 44 x 30 ; 40 x 28
+  Form "13.5_d" = 230 x 135 ; DoublePage ; 44 x 31 ; 40 x 31
+}
+
+"Braillo 440 S&F"
+#GB: "Braillo 440 SF"
+# *** Embosser definition unchanged since 05/12/2011
+#  escape sequence (using Braillo Driver, name contains 440, but not SW)
+# esc A, esc H, esc B, esc P
+# The first embosser to support 13 inch paper
+{
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 8
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 44
+  UsingEscapeCodes
+  HelpPage = "Braillo_440_SaF.htm"
+  Form "11_d"   = 230 x 110 ; DoublePage ; 44 x 28 ; 40 x 25
+  Form "12_d"   = 230 x 120 ; DoublePage ; 44 x 28 ; 40 x 28
+  Form "13_d"   = 230 x 130 ; DoublePage ; 44 x 30 ; 40 x 28
+  Form "13.5_d" = 230 x 135 ; DoublePage ; 44 x 31 ; 40 x 31
+}
+
+"Braillo 600SR"
+#GB: "Braillo 600 SR"
+# *** Embosser definition unchanged since 08/23/2013
+# same escape sequence as Braillo 200, but use form length "02" for A4 paper
+{
+  Submodel = 10
+  CanDoInterpoint
+  NoParallel
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 42
+  UsingEscapeCodes
+  BrailloHGapGraphics
+  Driver = "Emb_BrailloEmbosserDriver"
+  HelpPage = "Braillo_600SR.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "A4"   =  83 x 117 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Braillo 650 S&F"
+# *** Embosser definition unchanged since 05/12/2011
+#  escape sequence (using Braillo Driver, name contains 650, but not SW)
+# esc A, esc H, esc B, esc P
+{
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 9
+  CanDoInterpoint
+  NoParallel
+  NoSerial
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 44
+  UsingEscapeCodes
+  HelpPage = "Braillo_650_SaF.htm"
+  Form "11_d"   = 230 x 110 ; DoublePage ; 44 x 28 ; 40 x 25
+  Form "12_d"   = 230 x 120 ; DoublePage ; 44 x 28 ; 40 x 28
+  Form "13_d"   = 230 x 130 ; DoublePage ; 44 x 30 ; 40 x 28
+  Form "13.5_d" = 230 x 135 ; DoublePage ; 44 x 31 ; 40 x 31
+}
+
+"Braillo 650 SW"
+# *** Embosser definition unchanged since 07/12/2013
+#  escape sequence (using Braillo Driver, name contains 650)
+# esc A, esc H, esc B, esc P
+{
+  Driver = "Emb_BrailloEmbosserDriver"
+  Submodel = 11
+  CanDoInterpoint
+  NoParallel
+  NoSerial
+  NoLeftMargin
+  NoRightMargin
+  MaximumCells = 44
+  UsingEscapeCodes
+  HelpPage = "Braillo_650_SW.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 25 ; 40 x 25
+  Form "11_d" = 230 x 110 ; DoublePage ; 44 x 28 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 28 ; 40 x 28
+  Form "12_d" = 230 x 120 ; DoublePage ; 44 x 28 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_d" = 230 x 130 ; DoublePage ; 44 x 30 ; 40 x 28
+  Form "13.5_d" = 230 x 135 ; DoublePage ; 44 x 31 ; 40 x 31
+}
+
+"Braillo Comet"
+# *** Embosser definition unchanged since 05/17/2004
+# no escape sequence
+{
+  StartLeftMargin = 0
+  Driver = "Emb_GenericEmbosserDriver"
+  HelpPage = "Braillo_Comet.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 28 ; 40 x 28
+}
+ 
+"Cranmer Brailler"
+# *** Embosser definition unchanged since 05/17/2004
+#    --     You may want to change the form braille dimension numbers to
+#    --     42 x 25 if you only use 25 lines of braille 
+# no escape sequence
+{
+  EndofPage = 2
+  NoParallel
+  MaximumCells = 42
+  MaximumLines = 26
+  Driver = "Emb_GenericEmbosserDriver"
+  HelpPage = "Cranmer_Brailler.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 26 ; 40 x 25
+}
+
+"EBrailler Cosmo"
+# *** Embosser definition unchanged since 08/20/2014
+# No escape sequences used (has custom communications protocol)
+# Device testing done 08/18/2014 with Cosmo firmware 3.00
+{
+  YesFTDI
+  NoSerial
+  NoParallel
+  EndofPage = 0
+  PageWrap
+  OneByOne
+  StartLeftMargin = 1
+  MaximumCells = 30
+  MaximumLines = 28
+  Driver = "Emb_Typewriter_EmbosserDriver"
+  HelpPage = "EBrailler_Cosmo.htm"
+  Form "A4"   =  83 x 117 ; SinglePage ; 30 x 26 ; 30 x 26
+  Form "11_n" =  85 x 110 ; SinglePage ; 30 x 24 ; 30 x 24
+  Form "14_n" =  85 x 140 ; SinglePage ; 30 x 32 ; 30 x 32
+}
+
+"Enabling BraillePlace"
+# *** Embosser definition unchanged since 09/24/2009
+# no escape sequence
+{
+  CanDoInterpoint
+  ETSpeaks
+  PageWrap
+  MaximumCells = 45
+  MaximumLines = 27
+  ETmulti
+  ControlZ
+  ETCAllowEscapeCodes
+  HelpPage = "Enabling_BraillePlace.htm"
+  Driver = "Emb_EnablingEmbosserDriver"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 45 x 27 ; 40 x 25
+}
+
+"Enabling Braille Bookmaker"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  ETSpeaks
+  # N.B. Older, speechless models don't support ETHighResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  CanDoInterpoint
+  PageWrap
+  MaximumCells = 44
+  MaximumLines = 27
+  ETCAllowEscapeCodes
+  TranSend
+  Driver = "Emb_EnablingEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Braille_Bookmaker.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 32 ; 40 x 30
+}
+ 
+"Enabling Braille Express"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  # N.B. Older, speechless models don't support ETHighResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  CanDoInterpoint
+  ETmulti
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 44
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Braille_Express.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 32 ; 40 x 30
+}
+ 
+"Enabling Braille Express-100"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  CanDoInterpoint
+  ETmulti
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 44
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Braille_Express-100.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 32 ; 40 x 30
+}
+
+"Enabling Braille Express-150"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  CanDoInterpoint
+  ETmulti
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  ETSpeaks
+  MaximumCells = 44
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Braille_Express-150.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 44 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 44 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 44 x 32 ; 40 x 30
+
+}
+
+"Enabling Cyclone"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  NoSerial
+  NoParallel
+  ETMediumResGraphics
+  SeparateGraphics=2
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 45
+  MaximumLines = 27
+  ControlZ
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 45 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 45 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 45 x 32 ; 40 x 30
+}
+
+"Enabling E.T."
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  CanDoInterpoint
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  PageWrap
+  MaximumCells = 40
+  MaximumLines = 27
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_E.T..htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+ 
+"Enabling Juliet 120" V5
+# *** Embosser definition unchanged since 06/30/2016
+# using escape sequence, using Index Driver with version 4 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 48
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  NoParallel
+  IndexZfold
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "ETC Juliet 120"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Juliet_120.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; 49 x 41 ; 47 x 40  
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 23 ; 32 x 24
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27    
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 47 x 32 ; 40 x 30
+  Form "10_n_side" = 100 x 85 ; SinglePage ; 40 x 21 ; 38 x 20
+  Form "11_n_side" = 110 x 85 ; SinglePage ; 44 x 21 ; 42 x 20 
+  Form "11_w_side" = 110 x 115 ; SinglePage ; 44 x 28 ; 42 x 26
+}
+
+"Enabling Juliet Classic"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  CanDoInterpoint
+  PageWrap
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  MaximumCells = 56
+  MaximumLines = 27
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Juliet_Classic.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "11_vw"= 150 x 110 ; SinglePage ; 56 x 27 ; 54 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "12_vw" = 150 x 120; SinglePage ; 56 x 30 ; 54 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Enabling Juliet Pro"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  CanDoInterpoint
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  PageWrap
+  ETmulti
+  MaximumCells = 56
+  MaximumLines = 27
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Juliet_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "11_vw"= 150 x 110 ; SinglePage ; 56 x 27 ; 54 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "12_vw" = 150 x 120; SinglePage ; 56 x 30 ; 54 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Enabling Juliet Pro 60"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  CanDoInterpoint
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  PageWrap
+  ETmulti
+  MaximumCells = 40
+  MaximumLines = 27
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Juliet_Pro_60.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+ 
+"Enabling Marathon"
+# *** Embosser definition unchanged since 05/20/2004
+# no escape sequences
+{
+  MaximumCells = 42
+  MaximumLines = 27
+  HelpPage = "Enabling_Marathon.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Enabling PED-30"
+# *** Embosser definition unchanged since 12/02/2008
+# no escape sequences
+{
+  CanDoInterpoint
+  NoMakeupSides
+  MaximumCells = 40
+  MaximumLines = 28
+  EndofPage = 0
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel
+  NoMakeupSides
+  PromptNewPage
+  PlateLoadByte = 13
+  HelpPage = "Enabling_PED-30.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 28 ; 40 x 25
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 27
+  # N.B. Number 1 immediately following SinglePage in line below means
+  #      that the form itself is offset by one cell from the left edge of
+  #      the carriage.
+  Form "nbp"  = 115 x 110 ; SinglePage 1 ; 39 x 28 ; 40 x 25
+}
+
+"Enabling Phoenix Silver" 
+"Enabling Phoenix"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  SubModel = 1
+  NoParallel
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Baud = 9600
+  Handshaking = Hardware
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 45
+  MaximumLines = 27
+  ControlZ
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Phoenix.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 45 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 45 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 45 x 32 ; 40 x 30
+  HardwareDCB
+  {
+      fRtsControl = Toggle
+      fDtrControl = Disable
+      fInX = FALSE
+      fOutX = FALSE
+      fOutxDsrFlow = FALSE
+      fOutxCtsFlow = TRUE
+  }
+}
+
+"Enabling Phoenix Gold"
+# *** Embosser definition unchanged since 06/23/2016
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  SubModel = 2
+  NoParallel
+  NoSerial
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 45
+  MaximumLines = 27
+  ControlZ
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Phoenix.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 45 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 45 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 45 x 32 ; 40 x 30
+}
+
+"Enabling Romeo 20/40"
+# *** Embosser definition unchanged since 01/07/2009
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 42
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_20_40.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+
+"Enabling Romeo 25"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  # N.B. Older, speechless models don't support ETHighResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_25.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+
+"Enabling Romeo 60" V5
+# *** Embosser definition unchanged since 06/30/2016
+# using escape sequence, using Index Driver with version 4 software
+# esc D with parameters specified in InitSequence setting
+{
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 48
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  NoParallel
+  IndexZfold
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "ETC Romeo 60"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Romeo_60.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; 49 x 41 ; 47 x 40  
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 23 ; 32 x 24
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27    
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 47 x 32 ; 40 x 30
+  Form "10_n_side" = 100 x 85 ; SinglePage ; 40 x 21 ; 38 x 20
+  Form "11_n_side" = 110 x 85 ; SinglePage ; 44 x 21 ; 42 x 20 
+  Form "11_w_side" = 110 x 115 ; SinglePage ; 44 x 28 ; 42 x 26
+}
+
+"Enabling Romeo Attache"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  TranSend
+  ETCAllowEscapeCodes 
+  Driver = "Emb_EnablingEmbosserDriver"
+  NarrowWarning
+  PageWrap
+  MaximumCells = 32
+  MaximumLines = 27
+  LfUnix
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_Attache.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 25 ; 30 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 32 x 27 ; 30 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 32 x 30 ; 30 x 28
+}
+
+"Enabling Romeo Attache (2nd Edition)"
+# *** Embosser definition unchanged since 12/20/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  NarrowWarning
+  PageWrap
+  MaximumCells = 32
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 25 ; 30 x 23
+  HelpPage = "Enabling_Romeo_Attache_(2nd_Edition).htm"
+  Form "11_n" =  85 x 110 ; SinglePage ; 32 x 27 ; 30 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 32 x 30 ; 30 x 28
+}
+ 
+"Enabling Romeo Attache Pro"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  TranSend
+  ETCAllowEscapeCodes 
+  Driver = "Emb_EnablingEmbosserDriver"
+  NarrowWarning
+  PageWrap
+  MaximumCells = 32
+  MaximumLines = 27
+  LfUnix
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_Attache_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 25 ; 30 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 32 x 27 ; 30 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 32 x 30 ; 30 x 28
+}
+
+"Enabling Romeo Attache Pro (2nd Edition)"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  NarrowWarning
+  PageWrap
+  MaximumCells = 32
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_Attache_Pro_(2nd_Edition).htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 25 ; 30 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 32 x 27 ; 30 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 32 x 30 ; 30 x 28
+}
+
+"Enabling Romeo Pro 50"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_Pro_50.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+ 
+"Enabling Romeo Pro LE Narrow"
+"Enabling Romeo PRO LE (24 cell wide Label Edition)"
+# *** Embosser definition unchanged since 09/24/2009
+# To use this embosser definition, you must set this parameter
+# in the embosser:
+# - Label Mode (50.1e)
+# It is also supposed that you are finding the top of form
+# by some process external to DBT before sending a job from DBT.
+#
+# If you line up the forms to leave more than the tiniest of top
+# margins, you will not be able to fit the maximum number of lines
+# on the label that DBT will allow.  In general, we advise using
+# DBT's Recommended lines per page settings to leave an adequate
+# top an bottom margin.
+#
+# Note that the form definitions below assume that all labels
+# are 11 inches wide, and will support 24 cell braille.  This is
+# not likely to be true of your labels.  To prevent line overruns,
+# you should set DBT's Desired cells per line to something
+# that will fit on your label, and are advised to create a
+# template for labels that you will use repeatedly.
+{
+  ETSpeaks
+  AllowSeekTOF
+  PageWrap
+  LabellerROM
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 24
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_Pro_LE_Narrow.htm"
+  # 0,500 inch labels: 18.0e
+  Form "0,50 inch label" =  110 x  0 ; SinglePage ; 24 x  1 ; 24 x  1
+  # 0,750 inch labels: 18.1e
+  Form "0,75 inch label" = 110 x  10 ; SinglePage ; 24 x  1 ; 24 x  1
+  # 1,000 inch labels: 18.2e
+  Form "1,00 inch label" = 110 x  20 ; SinglePage ; 24 x  2 ; 24 x  2
+  # 1,250 inch labels: 18.3e
+  Form "1,25 inch label" = 110 x  30 ; SinglePage ; 24 x  3 ; 24 x  2
+  # 1,500 inch labels: 18.4e
+  Form "1,50 inch label" = 110 x  40 ; SinglePage ; 24 x  3 ; 24 x  3
+  # 1,750 inch labels: 18.5e
+  Form "1,75 inch label" = 110 x  50 ; SinglePage ; 24 x  4 ; 24 x  4
+  # 2,000 inch labels: 18.6e
+  Form "2,00 inch label" = 110 x  60 ; SinglePage ; 24 x  5 ; 24 x  4
+  # 2,250 inch labels: 18.7e
+  Form "2,25 inch label" = 110 x  70 ; SinglePage ; 24 x  5 ; 24 x  5
+  # 2,500 inch labels: 18.8e
+  Form "2,50 inch label" = 110 x  80 ; SinglePage ; 24 x  6 ; 24 x  5
+  # 2,750 inch labels: 18.9e
+  Form "2,75 inch label" = 110 x  90 ; SinglePage ; 24 x  6 ; 24 x  6
+  # 3,000 inch labels: 18.10e
+  Form "3,00 inch label" = 110 x 100 ; SinglePage ; 24 x  7 ; 24 x  7
+  # 3,250 inch labels: 18.11e
+  Form "3,25 inch label" = 110 x 110 ; SinglePage ; 24 x  8 ; 24 x  7
+  # 3,500 inch labels: 18.12e
+  Form "3,50 inch label" = 110 x 120 ; SinglePage ; 24 x  8 ; 24 x  8
+  # 3,750 inch labels: 18.13e
+  Form "3,75 inch label" = 110 x 130 ; SinglePage ; 24 x  9 ; 24 x  9
+  # 4,000 inch labels: 18.14e
+  Form "4,00 inch label" = 110 x 140 ; SinglePage ; 24 x 10 ; 24 x  9
+}
+
+"Enabling Romeo Pro LE Wide"
+# *** Embosser definition unchanged since 09/24/2009
+# To use this embosser definition, you must set this parameter
+# in the embosser:
+# - Label Mode (50.1e)
+# It is also supposed that you are finding the top of form
+# by some process external to DBT before sending a job from DBT.
+#
+# If you line up the forms to leave more than the tiniest of top
+# margins, you will not be able to fit the maximum number of lines
+# on the label that DBT will allow.  In general, we advise using
+# DBT's Recommended lines per page settings to leave an adequate
+# top an bottom margin.
+#
+# Note that the form definitions below assume that all labels
+# are 11 inches wide, and will support 40 cell braille.  This is
+# not likely to be true of your labels.  To prevent line overruns,
+# you should set DBT's Desired cells per line to something
+# that will fit on your label, and are advised to create a
+# template for labels that you will use repeatedly.
+{
+  ETSpeaks
+  AllowSeekTOF
+  PageWrap
+  LabellerROM
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Romeo_Pro_LE_Wide.htm"
+  # 0,500 inch labels: 18.0e
+  Form "0,50 inch label" =  110 x  0 ; SinglePage ; 40 x  1 ; 40 x  1
+  # 0,750 inch labels: 18.1e
+  Form "0,75 inch label" = 110 x  10 ; SinglePage ; 40 x  1 ; 40 x  1
+  # 1,000 inch labels: 18.2e
+  Form "1,00 inch label" = 110 x  20 ; SinglePage ; 40 x  2 ; 40 x  2
+  # 1,250 inch labels: 18.3e
+  Form "1,25 inch label" = 110 x  30 ; SinglePage ; 40 x  3 ; 40 x  2
+  # 1,500 inch labels: 18.4e
+  Form "1,50 inch label" = 110 x  40 ; SinglePage ; 40 x  3 ; 40 x  3
+  # 1,750 inch labels: 18.5e
+  Form "1,75 inch label" = 110 x  50 ; SinglePage ; 40 x  4 ; 40 x  4
+  # 2,000 inch labels: 18.6e
+  Form "2,00 inch label" = 110 x  60 ; SinglePage ; 40 x  5 ; 40 x  4
+  # 2,250 inch labels: 18.7e
+  Form "2,25 inch label" = 110 x  70 ; SinglePage ; 40 x  5 ; 40 x  5
+  # 2,500 inch labels: 18.8e
+  Form "2,50 inch label" = 110 x  80 ; SinglePage ; 40 x  6 ; 40 x  5
+  # 2,750 inch labels: 18.9e
+  Form "2,75 inch label" = 110 x  90 ; SinglePage ; 40 x  6 ; 40 x  6
+  # 3,000 inch labels: 18.10e
+  Form "3,00 inch label" = 110 x 100 ; SinglePage ; 40 x  7 ; 40 x  7
+  # 3,250 inch labels: 18.11e
+  Form "3,25 inch label" = 110 x 110 ; SinglePage ; 40 x  8 ; 40 x  7
+  # 3,500 inch labels: 18.12e
+  Form "3,50 inch label" = 110 x 120 ; SinglePage ; 40 x  8 ; 40 x  8
+  # 3,750 inch labels: 18.13e
+  Form "3,75 inch label" = 110 x 130 ; SinglePage ; 40 x  9 ; 40 x  9
+  # 4,000 inch labels: 18.14e
+  Form "4,00 inch label" = 110 x 140 ; SinglePage ; 40 x 10 ; 40 x  9
+}
+
+"Enabling Thomas"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  PageWrap
+  ETmulti
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Thomas.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+
+"Enabling Thomas Pro"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  ETSpeaks
+  ETMediumResGraphics
+  ETHighResGraphics
+  SeparateGraphics=2
+  PageWrap
+  ETmulti
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Enabling_Thomas_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+
+"Enabling TranSend LT"
+# *** Embosser definition added 03/21/2005
+# *** Last modified 3/25/2005
+# no escape sequences
+{
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 25
+  EndofPage = 2
+  Encoding = "display.cpt", "North American English"
+  HelpPage = "Enabling_TranSend_LT.htm"
+  Form "11_n" =  85 x 110 ; SinglePage ; 30 x 25 ; 30 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+}
+
+"Enabling TranSend LT (Large Print)"
+# *** Embosser definition added 03/25/2005
+# no escape sequences
+{
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 25
+  EndofPage = 2
+  Encoding = "display.cpt", "North American English"
+  HelpPage = "Enabling_TranSend_LT_(Large_Print).htm"
+  Form "11_n" =  85 x 110 ; SinglePage ; 30 x 22 ; 30 x 22
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 22 ; 40 x 22
+}
+
+"Enabling Trident"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  NoSerial
+  NoParallel
+  CanDoInterpoint
+  ETMediumResGraphics
+  SeparateGraphics=2
+  PageWrap
+  TranSend
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 45
+  MaximumLines = 27
+  ControlZ
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 45 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 45 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 45 x 32 ; 40 x 30
+}
+
+"Freedom Scientific Braille Blazer"
+# *** Embosser definition unchanged since 05/17/2004
+# no escape sequences
+{
+  LineWrap
+  NarrowWarning
+  StartLeftMargin = 0
+  MaximumCells = 34
+  MaximumLines = 27
+  HelpPage = "Freedom_Scientific_Braille_Blazer.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 29 ; 32 x 28
+}
+ 
+"Freedom Scientific Braille Inferno"
+# *** Embosser definition unchanged since 05/17/2004
+# no escape sequences
+{
+  LineWrap
+  ETmulti
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 27
+  HelpPage = "Freedom_Scientific_Braille_Inferno.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 29 ; 40 x 28
+}
+ 
+"Freedom Scientific VersaPoint"
+# *** Embosser definition unchanged since 9/13/2005
+# using escape sequence, using VersaPoint driver
+# esc D, esc C, esc l
+{
+  DataBits = 7
+  VPGraphics
+  MaximumCells = 42
+  MaximumLines = 26
+  VPmulti
+  UsingEscapeCodes
+  Driver = "Emb_VersapointEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  StartLeftMargin = 0
+  HelpPage = "Freedom_Scientific_VersaPoint.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 26 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 26 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 28 ; 40 x 28
+}
+ 
+"Freedom Scientific VersaPoint Duo"
+# *** Embosser definition unchanged since 06/19/2015
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  CanDoInterpoint
+  ETMediumResGraphics
+  # N.B. Firmware older than Revision 6.25V (June 15, 1999) will not support
+  #      High Resolution Graphics.
+  ETHighResGraphics
+  SeparateGraphics=2
+  ETmulti
+  PageWrap
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  MaximumCells = 40
+  MaximumLines = 27
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Freedom_Scientific_VersaPoint_Duo.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 40 x 32 ; 40 x 30
+}
+ 
+"Index Everest-D" V2
+# *** Embosser definition unchanged since 07/10/2013
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  Index16Graphics
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  IndexMulti
+  YesUSB
+  ControlZ
+  IndexPagemm
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Everest"
+  LessLinesInterpoint = 1
+  StartLeftMargin = 0
+  HelpPage = "Index_Everest-D.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 28
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+}
+
+"Index Everest-D" V3_early-V3
+# *** Embosser definition unchanged since 07/10/2013
+# using escape sequence, using Index Driver with version 3 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  Index16Graphics
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  IndexMulti
+  YesUSB
+  ControlZ
+  IndexPagemm
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Everest"
+  StartLeftMargin = 0
+  InitSequence="BT0,DP,PW,PL,IM,OM,TM,BM,MC"
+  HelpPage = "Index_Everest-D.htm"
+  Form "A5"   =  58 x  83 ; SinglePage ; 23 x 19 ; 21 x 18
+  Form "A5_landscape" = 83 x 58 ; SinglePage ; 35 x 15 ; 30 x 14
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27  
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "A4_landscape" = 117 x 83 ; SinglePage ; 42 x 19 ; 40 x 18  
+  Form "A3"   =  117 x 165 ; SinglePage ; 42 x 40 ; 40 x 38  
+  Form "10_n" =  85 x 100 ; SinglePage ; 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+}
+
+"Index Everest-D" V4
+# *** Embosser definition unchanged since 06/21/2015
+# using escape sequence, using Index Driver with version 4 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  Index16Graphics
+  MaximumCells = 47
+  MaximumLines = 27
+  EndofPage = 1
+  IndexMulti
+  YesUSB
+  NoParallel
+  ControlZ
+  IndexPagemm
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Everest"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Index_Everest-D.htm"
+  Form "A5"   =  58 x  83 ; SinglePage ; 23 x 19 ; 21 x 18
+  Form "A5_landscape" = 83 x 58 ; SinglePage ; 35 x 15 ; 30 x 14
+  Form "A3"   =  117 x 165 ; SinglePage ; 42 x 41 ; 40 x 40
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27 
+  # PJS: Ask Index about A4_ex. Do they have a name for this one? 
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "A3_landscape" = 165 x 117 ; SinglePage ; 68 x 29 ; 66 x 27
+  Form "A4_landscape" = 117 x 83 ; SinglePage ; 42 x 20 ; 40 x 18
+  Form "A3_folio" = 165 x 117; DoublePage ; 33 x 29 ; 31 x 27  
+  Form "A3_ex_folio" = 197 x 117; DoublePage ; 41 x 29 ; 40 x 27   
+  Form "A4_folio" = 117 x 83; DoublePage ; 22 x 20 ; 20 x 20    
+  Form "10_n" =  85 x 100 ; SinglePage ; 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 30 ; 40 x 28
+  Form "14_n" =  85 x 140 ; SinglePage ; 36 x 35 ; 32 x 34  
+  Form "11_nd" = 170 x 110; DoublePage ; 33 x 28 ; 32 x 25 
+  Form "RusBook"   =  96 x 117 ; SinglePage ; 40 x 29 ; 36 x 27
+  Form "RusNote" = 150 x 99; SinglePage ; 41 x 37 ; 38 x 37
+  Form "RusNote_folio" = 150 x 99; DoublePage ; 31 x 25 ; 30 x 23  
+}
+
+"Index Everest-D" V5
+# *** Embosser definition unchanged since 06/30/2016
+# using escape sequence, using Index Driver with version 5 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  Index16Graphics
+  MaximumCells = 47
+  MaximumLines = 27
+  EndofPage = 1
+  IndexMulti
+  YesUSB
+  NoParallel
+  ControlZ
+  IndexPagemm
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Everest"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Index_Everest-D.htm"
+  Form "A5"   =  58 x  83 ; SinglePage ; 23 x 19 ; 21 x 18
+  Form "A5_landscape" = 83 x 58 ; SinglePage ; 35 x 15 ; 30 x 14
+  Form "A3"   =  117 x 165 ; SinglePage ; 42 x 41 ; 40 x 40
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27 
+  # PJS: Ask Index about A4_ex. Do they have a name for this one? 
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "A3_landscape" = 165 x 117 ; SinglePage ; 68 x 29 ; 66 x 27
+  Form "A4_landscape" = 117 x 83 ; SinglePage ; 42 x 20 ; 40 x 18
+  Form "A3_folio" = 165 x 117; DoublePage ; 33 x 29 ; 31 x 27  
+  Form "A3_ex_folio" = 197 x 117; DoublePage ; 41 x 29 ; 40 x 27   
+  Form "A4_folio" = 117 x 83; DoublePage ; 22 x 20 ; 20 x 20    
+  Form "10_n" =  85 x 100 ; SinglePage ; 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 30 ; 40 x 28
+  Form "14_n" =  85 x 140 ; SinglePage ; 36 x 35 ; 32 x 34  
+  Form "11_nd" = 170 x 110; DoublePage ; 33 x 28 ; 32 x 25 
+  Form "RusBook"   =  96 x 117 ; SinglePage ; 40 x 29 ; 36 x 27
+  Form "RusNote" = 150 x 99; SinglePage ; 41 x 37 ; 38 x 37
+  Form "RusNote_folio" = 150 x 99; DoublePage ; 31 x 25 ; 30 x 23  
+}
+
+"Index 4Waves Pro" V3
+# *** Embosser definition unchanged since 12/21/2011
+# using escape sequence, using Index Driver with version 3 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  YesUSB
+  IndexZfold
+  ControlZ
+  NoSerial
+  EndofPage = 1
+  MaximumCells = 42
+  MaximumLines = 27
+  IndexPageInch
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "4Waves"
+  StartLeftMargin = 0
+  InitSequence="BT0,DP,PW,PL,IM,OM,TM,BM,MC"
+  HelpPage = "Index_4Waves_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+}
+ 
+"Index Advanced" V1
+# *** Embosser definition unchanged since 11/02/2011
+# no escape sequences
+{
+  VPGraphics
+  Index20Graphics
+  Index16Graphics
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 25
+  HelpPage = "Index_Advanced.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 29 ; 40 x 28
+}
+ 
+"Index Basic (blue bar)" V1
+# *** Embosser definition unchanged since 11/02/2011
+# no escape sequences
+{
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 25
+  HelpPage = "Index_Basic_(blue_bar).htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 29 ; 40 x 28
+}
+ 
+"Index Basic-D" V2
+# *** Embosser definition unchanged since 11/02/2011
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  IndexZfold
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Basic-D"
+  StartLeftMargin = 0
+  LessLinesInterpoint = 1
+  HelpPage = "Index_Basic-D.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 23 ; 32 x 24
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Index Basic-D" V3_early-V3
+# *** Embosser definition unchanged since 05/13/2015
+# using escape sequence, using Index Driver with version 3 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  IndexZfold
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Basic-D"
+  StartLeftMargin = 0
+  LessLinesInterpoint = 1
+  InitSequence="BT0,DP,PW,PL,IM,OM,TM,BM,MC"
+  HelpPage = "Index_Basic-D.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 23 ; 32 x 24
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27 
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Index Basic-D" V4
+# *** Embosser definition unchanged since 02/11/2015
+# using escape sequence, using Index Driver with version 4 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 48
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  NoParallel
+  IndexZfold
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Basic-D"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Index_Basic-D.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; 49 x 41 ; 47 x 40  
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 23 ; 32 x 24
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27    
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 47 x 32 ; 40 x 30
+  Form "10_n_side" = 100 x 85 ; SinglePage ; 40 x 21 ; 38 x 20
+  Form "11_n_side" = 110 x 85 ; SinglePage ; 44 x 21 ; 42 x 20 
+  Form "11_w_side" = 110 x 115 ; SinglePage ; 44 x 28 ; 42 x 26
+}
+ 
+"Index Basic-D" V5
+# *** Embosser definition unchanged since 06/30/2016
+# using escape sequence, using Index Driver with version 5 software
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 48
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  NoParallel
+  IndexZfold
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Basic-D"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Index_Basic-D.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; 49 x 41 ; 47 x 40  
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 23 ; 32 x 24
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 30 x 27    
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 47 x 32 ; 40 x 30
+  Form "10_n_side" = 100 x 85 ; SinglePage ; 40 x 21 ; 38 x 20
+  Form "11_n_side" = 110 x 85 ; SinglePage ; 44 x 21 ; 42 x 20 
+  Form "11_w_side" = 110 x 115 ; SinglePage ; 44 x 28 ; 42 x 26
+}
+ 
+"Index Basic-S" V2
+# *** Embosser definition unchanged since 11/02/2011
+{
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Basic-S"
+  StartLeftMargin = 0
+  HelpPage = "Index_Basic-S.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Index Basic-S" V3_early-V3
+# *** Embosser definition unchanged since 12/21/2011
+# using escape sequence, using Index Driver with version 3 software
+# esc D with parameters specified in InitSequence setting
+{
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPageInch
+  ControlZ
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "Basic-S"
+  StartLeftMargin = 0
+  InitSequence="BT0,DP,PW,PL,IM,OM,TM,BM,MC"
+  HelpPage = "Index_Basic-S.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 29 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 29 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 35 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Index Braille Box" V4
+# *** Embosser definition unchanged since 02/11/2015
+# using escape sequence, using Index Driver with version 4 firmware
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  YesUSB
+  NoParallel
+  ControlZ
+  NoSerial
+  EndofPage = 1
+  MaximumCells = 47
+  MaximumLines = 27
+  IndexPageInch
+  Driver = "Emb_IndexEmbosserDriver"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Index_Braille_Box.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; 49 x 41 ; 47 x 40  
+  Form "A3_folio" = 165 x 117; DoublePage ; 33 x 29 ; 31 x 27  
+  Form "A3_landscape" = 165 x 117 ; SinglePage ; 68 x 29 ; 66 x 27  
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 32 x 27  
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "A4_folio" = 117 x 83; DoublePage ; 22 x 20 ; 20 x 20  
+  Form "11_nd" = 170 x 110; DoublePage ; 33 x 28 ; 32 x 25    
+  # PJS: Ask Index about 12nd. This is not "Tabloid", but longer. So what do we call it?
+  Form "12_nd" = 170 x 120; DoublePage ; 33 x 29 ; 32 x 28  
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 30 ; 40 x 28
+  Form "RusBook"   =  96 x 117 ; SinglePage ; 40 x 29 ; 36 x 27
+  Form "RusNote" = 150 x 99; SinglePage ; 41 x 37 ; 38 x 37
+  Form "RusNote_folio" = 150 x 99; DoublePage ; 31 x 25 ; 30 x 23
+}
+ 
+"Index Braille Box" V5
+# *** Embosser definition unchanged since 06/30/2016
+# using escape sequence, using Index Driver with version 5 firmware
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  YesUSB
+  NoParallel
+  ControlZ
+  NoSerial
+  EndofPage = 1
+  MaximumCells = 47
+  MaximumLines = 27
+  IndexPageInch
+  Driver = "Emb_IndexEmbosserDriver"
+  StartLeftMargin = 0
+  # InitSequence as recommended for V4 firmware 1.3.4
+  InitSequence="BT0,TD0,PN0,DP,LS50,TM,BI,CH,LP,MC"
+  HelpPage = "Index_Braille_Box.htm"
+  Form "A3"   =  117 x 165 ; SinglePage ; 49 x 41 ; 47 x 40  
+  Form "A3_folio" = 165 x 117; DoublePage ; 33 x 29 ; 31 x 27  
+  Form "A3_landscape" = 165 x 117 ; SinglePage ; 68 x 29 ; 66 x 27  
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 32 x 27  
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "A4_folio" = 117 x 83; DoublePage ; 22 x 20 ; 20 x 20  
+  Form "11_nd" = 170 x 110; DoublePage ; 33 x 28 ; 32 x 25    
+  # PJS: Ask Index about 12nd. This is not "Tabloid", but longer. So what do we call it?
+  Form "12_nd" = 170 x 120; DoublePage ; 33 x 29 ; 32 x 28  
+  Form "10_n" =  85 x 100 ; SinglePage ; 35 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 35 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 47 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 35 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 47 x 30 ; 40 x 28
+  Form "RusBook"   =  96 x 117 ; SinglePage ; 40 x 29 ; 36 x 27
+  Form "RusNote" = 150 x 99; SinglePage ; 41 x 37 ; 38 x 37
+  Form "RusNote_folio" = 150 x 99; DoublePage ; 31 x 25 ; 30 x 23
+}
+ 
+"Index 4x4 PRO" V2
+# *** Embosser definition unchanged since 07/10/2013
+{
+  CanDoInterpoint
+  RotatePaperSizings
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPagemm
+  ControlZ
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "4x4"
+  StartLeftMargin = 0
+  HelpPage = "Index_4x4_PRO.htm"
+  Form "A3_folio" = 165 x 117; DoublePage ; 33 x 29 ; 31 x 27
+  Form "A4_folio" = 117 x 83; DoublePage ; 22 x 20 ; 20 x 20
+  Form "11_nd" = 170 x 110; DoublePage ; 33 x 28 ; 32 x 25
+  Form "12_nd" = 170 x 120; DoublePage ; 33 x 29 ; 32 x 28
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 32 x 27
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "10_n" =  85 x 100 ; SinglePage ; 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+}
+ 
+"Index 4x4 PRO" V3_early-V3
+# *** Embosser definition unchanged since 07/10/2013
+# using escape sequence, using Index Driver with version 3 software
+# for 25 line output, requires version 11 firmware from Index
+# esc D with parameters specified in InitSequence setting
+{
+  CanDoInterpoint
+  RotatePaperSizings
+  VPGraphics
+  Index20Graphics
+  IndexMulti
+  Index16Graphics
+  IndexPagemm
+  ControlZ
+  MaximumCells = 42
+  MaximumLines = 27
+  EndofPage = 1
+  YesUSB
+  Driver = "Emb_IndexEmbosserDriver"
+  WindowsDriverName = "4x4"
+  StartLeftMargin = 0
+  InitSequence="BT0,DP,PW,PL,IM,OM,TM,BM,MC"
+  HelpPage = "Index_4x4_PRO.htm"
+  Form "A3_folio" = 165 x 117; DoublePage ; 33 x 29 ; 31 x 27  
+  Form "A3_landscape" = 165 x 117 ; SinglePage ; 68 x 29 ; 66 x 27  
+  Form "A4"   =  83 x 117 ; SinglePage ; 35 x 29 ; 32 x 27  
+  Form "A4_ex" =  98 x 117 ; SinglePage ; 41 x 29 ; 41 x 27
+  Form "A4_folio" = 117 x 83; DoublePage ; 22 x 20 ; 20 x 20    
+  Form "11_nd" = 170 x 110; DoublePage ; 33 x 28 ; 32 x 25    
+  Form "12_nd" = 170 x 120; DoublePage ; 33 x 29 ; 32 x 28  
+  Form "10_n" =  85 x 100 ; SinglePage ; 36 x 24 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 36 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 36 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "14_n" =  85 x 140 ; SinglePage ; 36 x 35 ; 32 x 34  
+}
+ 
+"Interpoint NV Elekul 03"
+# *** Embosser definition unchanged since 01/15/2008
+# Using Proprietary driving sequences, similar to 55
+{
+  ControlD
+  CrMac
+  EndofPage=6
+  NoParallel
+  Baud = 4800
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  Handshaking=Software
+  MaximumCells = 40
+  MaximumLines = 25
+  Encoding = "elekul.cpt", "ELEKUL mode"
+  Encoding = "elekul.cpt", "USA mode"
+  HelpPage = "Interpoint_NV_Elekul_03.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 30 x 23 ; 30 x 22
+  Form "10_w" = 115 x 100 ; SinglePage ; 40 x 23 ; 40 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 30 x 27 ; 30 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 30 x 30 ; 30 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+ 
+"Interpoint NV Elekul 55"
+# *** Embosser definition unchanged since 08/22/2014
+# Using Proprietary driving sequences
+# *** More information about Elekul 55 support in (dbt directory)\drivers\print55\dbt-help.txt
+{
+  CanDoInterpoint
+  NoParallel
+  NoSerial
+  Baud = 19200
+  Handshaking=Software
+  EndofPage = 1
+  MaximumCells = 44
+  MaximumLines = 25
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  Driver = "Emb_ElekulEmbosserDriver"
+  HelpPage = "Interpoint_NV_Elekul_55.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 30 x 23 ; 30 x 22
+  Form "10_w" = 115 x 100 ; SinglePage ; 40 x 23 ; 40 x 22
+  Form "10_nd" = 170 x 100 ; DoublePage ; 30 x 23 ; 40 x 22
+  Form "10_d" = 230 x 100 ; DoublePage ; 40 x 23 ; 40 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 30 x 27 ; 30 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "11_nd" = 170 x 110 ; DoublePage ; 30 x 27 ; 40 x 25
+  Form "11_d" = 230 x 110 ; DoublePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 30 x 30 ; 30 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+  Form "12_nd" = 170 x 120 ; DoublePage ; 30 x 30 ; 40 x 28
+  Form "12_d" = 230 x 120 ; DoublePage ; 40 x 30 ; 40 x 28
+  SoftwareDCB
+    {
+      fInX = FALSE
+      fRtsControl = DISABLE
+    }
+}
+
+"JTR Corporation ESA-300 Pro"
+# *** Embosser definition unchanged since 04/10/2012
+{
+  Driver = "Emb_GenericEmbosserDriver"
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 24
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel  
+  HelpPage = "JTR_Corporation_ESA-300_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 30 x 18 ; 32 x 18
+  Form "11_gem" =  100 x 110 ; SinglePage ; 38 x 24 ; 40 x 24
+}
+
+"JTR Corporation ESA-600 Pro"
+# *** Embosser definition unchanged since 04/10/2012
+{
+  Driver = "Emb_GenericEmbosserDriver"
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 24
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel  
+  CanDoInterpoint
+  HelpPage = "JTR_Corporation_ESA-600_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 30 x 18 ; 32 x 18
+  Form "11_gem" =  100 x 110 ; SinglePage ; 38 x 24 ; 40 x 24
+}
+
+"JTR Corporation ESA-721"
+# *** Embosser definition unchanged since 04/10/2012
+{
+  Driver = "Emb_GenericEmbosserDriver"
+  CanDoInterpoint
+  ManualInterpoint  
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 24
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel  
+  HelpPage = "JTR_Corporation_ESA-721.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 30 x 18 ; 32 x 18
+  Form "11_gem" =  100 x 110 ; SinglePage ; 38 x 24 ; 40 x 24
+}
+
+"JTR Corporation ESA-919"
+# *** Embosser definition unchanged since 04/10/2012
+{
+  Driver = "Emb_GenericEmbosserDriver"
+  CanDoInterpoint  
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 24
+  LessLinesInterpoint = 1  
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel  
+  HelpPage = "JTR_Corporation_ESA-919.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 30 x 18 ; 32 x 18
+}
+
+"JTR Corporation ESA-2000"
+# *** Embosser definition unchanged since 04/10/2012
+{
+  Driver = "Emb_GenericEmbosserDriver"
+  StartLeftMargin = 0
+  MaximumCells = 40
+  MaximumLines = 24
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel  
+  CanDoInterpoint
+  HelpPage = "JTR_Corporation_ESA-2000.htm"
+  Form "11_gem" =  100 x 110 ; SinglePage ; 38 x 24 ; 40 x 24
+}
+ 
+"Nippon Telesoft TP-32"
+# *** Embosser definition unchanged since 08/06/2004
+# no escape sequences
+{
+  StartLeftMargin = 0
+  NarrowWarning
+  MaximumCells = 32
+  MaximumLines = 24
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  HelpPage = "Nippon_Telesoft_TP-32.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 24 ; 32 x 20
+}
+
+"Nippon Telesoft BMP-320"
+{
+# *** Embosser definition unchanged since 08/06/2004
+# Proprietary sequences used for this embosser for interlining
+# generic output for braille only (no interlining)
+  Interline
+  Driver = "Emb_BMP_EmbosserDriver"
+  MaximumCells = 32
+  MaximumLines = 22
+  StartLeftMargin = 0
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  HelpPage = "Nippon_Telesoft_BMP-320.htm"
+  Form "10_n" =  85 x 100 ; SinglePage; 
+    BrailleOnly = 32 x 22 ; 32 x 20  ;
+    Interline   = 32 x 22 ; 32 x 20
+}
+
+"Nippon Telesoft BPW-32"
+# *** Embosser definition unchanged since 08/06/2004
+# no escape sequences
+{
+  StartLeftMargin = 0
+  MaximumCells = 32
+  MaximumLines = 24
+  NarrowWarning
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  HelpPage = "Nippon_Telesoft_BPW-32.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 32 x 24 ; 32 x 20
+}
+ 
+"Nippon Telesoft DOG-Pro"
+"Nippon Telesoft Gemini Super2"
+# *** Embosser definition unchanged since 06/15/2016
+# Proprietary  control sequences used for this embosser
+{
+  Driver = "Emb_Gemini_EmbosserDriver"
+  Submodel = 2
+  Customize = 6
+  StartLeftMargin = 0
+  MaximumCells = 32
+  MaximumLines = 20
+  NarrowWarning
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  YesUSB
+  CanDoInterpoint
+  HelpPage = "Nippon_Telesoft_DogPro.htm"
+  Form "10_mn"  =   80 x 100 ; SinglePage ; 32 x 22 ; 32 x 22
+  Form "10_n"   =   85 x 100 ; SinglePage ; 32 x 22 ; 32 x 22
+  Form "11_n"   =   85 x 110 ; SinglePage ; 32 x 25 ; 32 x 25
+  Form "11_gem" =  100 x 110 ; SinglePage ; 32 x 25 ; 32 x 25
+  Form "12_n"   =   85 x 120 ; SinglePage ; 32 x 27 ; 32 x 27
+}
+
+"Nippon Telesoft Gemini"
+# *** Embosser definition unchanged since 08/06/2004
+# Proprietary  control sequences used for this embosser
+# Warning -- page size maximum needs to be compiled into driver source code
+# default spacing is Large 314/900 inches per line
+{
+  Driver = "Emb_Gemini_EmbosserDriver"
+  StartLeftMargin = 0
+  MaximumCells = 32
+  MaximumLines = 20
+  Interline
+  NarrowWarning
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  YesUSB
+  CanDoInterpoint
+  ManualInterpoint
+  HelpPage = "Nippon_Telesoft_Gemini.htm"
+  Form "10_n" =  85 x 100 ; SinglePage;
+    BrailleOnly =  32 x 18 ; 32 x 18 ;
+    Interline   =  32 x 18 ; 32 x 18
+  Form "11_n" =  85 x 110 ; SinglePage;
+    BrailleOnly = 32 x 20 ; 32 x 20  ;
+    Interline   = 32 x 20 ; 32 x 20
+  Form "11_gem" =  100 x 110 ; SinglePage;
+    BrailleOnly = 32 x 20 ; 32 x 20  ;
+    Interline   = 32 x 20 ; 32 x 20
+  Form "12_n" =  85 x 120 ; SinglePage;
+    BrailleOnly = 32 x 22 ; 32 x 22  ;
+    Interline   = 32 x 22 ; 32 x 22
+}
+ 
+"Nippon Gemini (small spacing)"
+# *** Embosser definition unchanged since 08/06/2004
+# Because of the small spacing, interpoint is not possible. Use (Nippon Telesoft Gemini) for interpoint.
+# Using Proprietary driving sequences, similar to 55
+# Proprietary control sequences used for this embosser
+# Warning -- page size maximum needs to be compiled into driver source code
+# Notice the use of Customize for small line spacing
+# Customize = 2 -- small  spacing 235/900 inches/line
+# Customize = 3 -- middle spacing 274/900 inches/line
+# Customize = 4 -- large  spacing 314/900 inches/line (command not needed, large is the default)
+# Customize = 5 -- unsure if this is a valid spacing
+# Customize = 6 -- ST spacing, exact spacing depends on page size
+{
+  Driver = "Emb_Gemini_EmbosserDriver"
+  StartLeftMargin = 0
+  Interline
+  Customize = 2    
+  MaximumCells = 32
+  MaximumLines = 24
+  NarrowWarning
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  YesUSB
+  HelpPage = "Nippon_Gemini_(small_spacing).htm"
+  Form "10_n" =  85 x 100 ; SinglePage;
+    BrailleOnly =  32 x 22 ; 32 x 22 ;
+    Interline   =  32 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage;
+    BrailleOnly = 32 x 24 ; 32 x 24  ;
+    Interline   = 32 x 24 ; 32 x 24
+  Form "11_gem" =  100 x 110 ; SinglePage;
+    BrailleOnly = 32 x 24 ; 32 x 24  ;
+    Interline   = 32 x 24 ; 32 x 24
+  Form "12_n" =  85 x 120 ; SinglePage;
+    BrailleOnly = 32 x 26 ; 32 x 26  ;
+    Interline   = 32 x 26 ; 32 x 26
+}
+ 
+"Nippon Telesoft Super Gemini"
+# *** Embosser definition unchanged since 03/31/2011
+# Proprietary  control sequences used for this embosser
+# Warning -- page size maximum needs to be compiled into driver source code
+# default spacing is Large 314/900 inches per line
+{
+  Driver = "Emb_Gemini_EmbosserDriver"
+  SubModel = 1
+  StartLeftMargin = 0
+  MaximumCells = 32
+  MaximumLines = 20
+  Interline
+  NarrowWarning
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  YesUSB
+  CanDoInterpoint
+  ManualInterpoint
+  HelpPage = "Nippon_Telesoft_Super_Gemini.htm"
+  Form "10_n" =  85 x 100 ; SinglePage;
+    BrailleOnly =  32 x 18 ; 32 x 18 ;
+    Interline   =  32 x 18 ; 32 x 18
+  Form "11_n" =  85 x 110 ; SinglePage;
+    BrailleOnly = 32 x 20 ; 32 x 20  ;
+    Interline   = 32 x 20 ; 32 x 20
+  Form "11_gem" =  100 x 110 ; SinglePage;
+    BrailleOnly = 32 x 20 ; 32 x 20  ;
+    Interline   = 32 x 20 ; 32 x 20
+  Form "12_n" =  85 x 120 ; SinglePage;
+    BrailleOnly = 32 x 22 ; 32 x 22  ;
+    Interline   = 32 x 22 ; 32 x 22
+}
+ 
+"Nippon Super Gemini (small spacing)"
+# *** Embosser definition unchanged since 03/31/2011
+# Because of the small spacing, interpoint is not possible. Use (Nippon Telesoft Gemini) for interpoint.
+# Using Proprietary driving sequences, similar to 55
+# Proprietary control sequences used for this embosser
+# Warning -- page size maximum needs to be compiled into driver source code
+# Notice the use of Customize for small line spacing
+# Customize = 2 -- small  spacing 235/900 inches/line
+# Customize = 3 -- middle spacing 274/900 inches/line
+# Customize = 4 -- large  spacing 314/900 inches/line (command not needed, large is the default)
+# Customize = 5 -- unsure if this is a valid spacing
+# Customize = 6 -- ST spacing, exact spacing depends on page size
+{
+  Driver = "Emb_Gemini_EmbosserDriver"
+  SubModel = 1
+  StartLeftMargin = 0
+  Interline
+  Customize = 2    
+  MaximumCells = 32
+  MaximumLines = 24
+  NarrowWarning
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  YesUSB
+  HelpPage = "Nippon_Super_Gemini_(small_spacing).htm"
+  Form "10_n" =  85 x 100 ; SinglePage;
+    BrailleOnly =  32 x 22 ; 32 x 22 ;
+    Interline   =  32 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage;
+    BrailleOnly = 32 x 24 ; 32 x 24  ;
+    Interline   = 32 x 24 ; 32 x 24
+  Form "11_gem" =  100 x 110 ; SinglePage;
+    BrailleOnly = 32 x 24 ; 32 x 24  ;
+    Interline   = 32 x 24 ; 32 x 24
+  Form "12_n" =  85 x 120 ; SinglePage;
+    BrailleOnly = 32 x 26 ; 32 x 26  ;
+    Interline   = 32 x 26 ; 32 x 26
+}
+ 
+"Pulse Data Paragon"
+# *** Embosser definition unchanged since 04/07/2006
+# using escape sequence, using Enabling Driver if you say embosser allows escape sequences
+# esc X, esc K, esc W, esc T, esc L, esc R, esc Q, esc H, esc &, esc i
+{
+  MaximumCells = 40
+  MaximumLines = 27
+  PageWrap
+  VPGraphics
+  ETmulti
+  ETCAllowEscapeCodes
+  Driver = "Emb_EnablingEmbosserDriver"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Pulse_Data_Paragon.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+ 
+"Quantum Mountbatten"
+# *** Embosser definition unchanged since 12/11/2007
+# no escape sequences used
+{
+  Driver = "Emb_MountbattenEmbosserDriver"
+  VPGraphics
+  PromptNewPage
+  MaximumCells = 40
+  MaximumLines = 25
+  StartLeftMargin = 0
+  HelpPage = "Quantum_Mountbatten.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 28 ; 40 x 28
+}
+ 
+"RESUS"
+# *** Embosser definition unchanged since 08/06/2004
+# no escape sequences used
+{
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 40
+  MaximumLines = 25
+  HelpPage = "RESUS.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 28 ; 40 x 28
+}
+ 
+"ONCE Porta-Thiel"
+"Thiel PortaThiel"
+# *** Embosser definition unchanged since 10/30/2013
+# no escape sequences used
+{
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "Spanish"
+  Encoding = "display.cpt", "Euro"
+  MaximumCells = 40
+  MaximumLines = 27
+  WindowsDriverName="ONCE Porta-Thiel"
+  PageWrap
+  HelpPage = "Thiel_PortaThiel.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+ 
+"Thiel PortaThiel Interpoint"
+# *** Embosser definition unchanged since 11/24/2004
+# no escape sequences used
+{
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "French"
+  Encoding = "display.cpt", "Spanish"
+  Encoding = "display.cpt", "Euro"
+  CanDoInterpoint
+  MaximumCells = 40
+  MaximumLines = 27
+  PageWrap
+  HelpPage = "Thiel_PortaThiel_Interpoint.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+}
+
+"Thiel Bax 10"
+# *** Embosser definition unchanged since 07/26/2006
+# esc ( esc P/Q esc / esc * esc 3 esc . esc 0 esc 1
+{
+  Driver = "Emb_ThielEmbosserDriver"
+  CanDoInterpoint
+  MaximumCells = 42
+  MaximumLines = 25
+  NoParallel
+  PageWrap
+  UsingEscapeCodes
+  HelpPage = "Thiel_Bax_10.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 28 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 30 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 30 ; 40 x 30
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+}
+
+"Thiel Texto"
+# *** Embosser definition unchanged since 07/26/2006
+# esc ( esc P/Q esc / esc * esc 3 esc . esc 0 esc 1
+{
+  Driver = "Emb_ThielEmbosserDriver"
+  CanDoInterpoint
+  MaximumCells = 42
+  MaximumLines = 25
+  NoParallel
+  PageWrap
+  UsingEscapeCodes
+  HelpPage = "Thiel_Texto.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 28 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 30 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 30 ; 40 x 30
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+}
+ 
+"Thiel Beta X3"
+# *** Embosser definition unchanged since 09/10/2008
+# esc ( esc / esc * esc 3 esc . esc 0 esc 1 (note not using esc P/Q)
+{
+  Driver = "Emb_ThielEmbosserDriver"
+  NoParallel
+  NoLeftMargin
+  NoTopMargin
+  MaximumCells = 42
+  MaximumLines = 26
+  PageWrap
+  UsingEscapeCodes
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "German"
+  HelpPage = "Thiel_Beta_X3.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 26 ; 40 x 25
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 29 ; 40 x 28
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 31 ; 40 x 30
+}
+
+"ONCE Impacto" 
+"Thiel Impacto 600"
+# *** Embosser definition unchanged since 10/30/2013
+# esc ( esc P/Q esc / esc * esc 3 esc . esc 0 esc 1
+{
+  Driver = "Emb_ThielEmbosserDriver"
+  CanDoInterpoint
+  MaximumCells = 42
+  MaximumLines = 25
+  PageWrap
+  UsingEscapeCodes
+  WindowsDriverName="ONCE Impacto"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "British"
+  Encoding = "display.cpt", "German"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Thiel_Impacto_600.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 28 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 30 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 30 ; 40 x 30
+}
+
+"ONCE Impacto Advanced"
+"Thiel Impacto Advanced"
+# *** Embosser definition unchanged since 07/02/2015
+# esc ~R esc ~PB esc ~CT esc ~LP esc ~AP esc ~CI esc ~EN esc ~LF
+# esc ~MS esc ~MI esc ~MZ esc ~MD esc ~TP esc ~IL
+{
+  Driver = "Emb_ThielAdvancedEmbosserDriver"
+  CanDoInterpoint
+  MaximumCells = 42
+  MaximumLines = 25
+  PageWrap
+  FormNamePrefix="ONCE"
+  UsingEscapeCodes
+  WindowsDriverName="ONCE Impacto Advanced"
+  Encoding = "display.cpt", "North American English"
+  Encoding = "display.cpt", "Spanish"
+  HelpPage = "Thiel_Impacto_Advanced.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 42 x 30 ; 40 x 28
+  Form "13_n" =  85 x 130 ; SinglePage ; 34 x 32 ; 32 x 30
+  Form "13_w" = 115 x 130 ; SinglePage ; 42 x 32 ; 40 x 30
+}
+ 
+"Triformations Personal Brailler"
+# *** Embosser definition unchanged since 08/06/2004
+# no escape sequences used
+{
+  NoParallel
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 40
+  MaximumLines = 25
+  HelpPage = "Triformations_Personal_Brailler.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 28 ; 40 x 28
+}
+ 
+"Triformations TED-600"
+# *** Embosser definition unchanged since 04/18/2006
+# no escape sequences used
+{
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel
+  MaximumCells = 42
+  MaximumLines = 25
+  HelpPage = "Triformations_TED-600.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 42 x 26 ; 40 x 25
+}
+ 
+"Triformations TRI-170"
+# *** Embosser definition unchanged since 08/06/2004
+# The EndofPage = 3 uses control-K instead of control-L
+# no escape sequences used
+{
+  MaximumCells = 40
+  MaximumLines = 25
+  EndofPage = 3
+  LinesPadded
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel
+  HelpPage = "Triformations_TRI-170.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+}
+ 
+"Triformations LED-120"
+# *** Embosser definition unchanged since 08/06/2004
+# The EndofPage = 3 uses control-K instead of control-L
+# no escape sequences used
+{
+  MaximumCells = 40
+  MaximumLines = 25
+  EndofPage = 3
+  LinesPadded
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  NoParallel
+  HelpPage = "Triformations_LED-120.htm"
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+}
+ 
+
+"ViewPlus Columbia"
+# *** Embosser definition unchanged since 05/12/2016
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "ViewPlus Columbia"
+  # IniFile = "tigerreah.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "VP_Columbia.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 46 x 30 ; 40 x 28
+}
+
+"Viewplus Tiger Advantage"
+# *** Embosser definition unchanged since 04/01/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger 3D Advantage"
+  IniFile = "tiger3d.ini"
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27	
+  HelpPage = "Viewplus_Tiger_Advantage.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 46 x 30 ; 40 x 28
+}
+ 
+"Viewplus Tiger Max"
+# *** Embosser definition unchanged since 04/01/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Max"
+  IniFile = "tigerpro.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Tiger_Max.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 46 x 30 ; 40 x 28
+}
+
+"Viewplus Elite"
+# *** Embosser definition unchanged since 04/15/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Elite"
+  IniFile = "tigerreah.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Elite.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 46 x 30 ; 40 x 28
+}
+
+"Viewplus Elite with Ink Connect"
+# *** Embosser definition unchanged since 03/04/2013
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Elite"
+  IniFile = "tigerreah.ini"
+  CanDoInterpoint
+  Interline
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Elite_with_Ink_Connect.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; BrailleOnly = 34 x 25 ; 32 x 23; Interline = 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; BrailleOnly = 34 x 27 ; 32 x 25; Interline = 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; BrailleOnly = 46 x 27 ; 40 x 25; Interline = 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; BrailleOnly = 34 x 30 ; 32 x 28; Interline = 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; BrailleOnly = 46 x 30 ; 40 x 28; Interline = 46 x 30 ; 40 x 28
+}
+
+"Viewplus Premier"
+# *** Embosser definition unchanged since 04/15/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Premier"
+  IniFile = "tigerreah.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Premier.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 46 x 30 ; 40 x 28
+}
+ 
+"Viewplus Premier with Ink Connect"
+# *** Embosser definition unchanged since 08/18/2014
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Premier"
+  IniFile = "tigerreah.ini"
+  CanDoInterpoint
+  Interline
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Premier_with_Ink_Connect.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; BrailleOnly = 34 x 25 ; 32 x 23; Interline = 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; BrailleOnly = 34 x 27 ; 32 x 25; Interline = 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; BrailleOnly = 46 x 27 ; 40 x 25; Interline = 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; BrailleOnly = 34 x 30 ; 32 x 28; Interline = 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; BrailleOnly = 46 x 30 ; 40 x 28; Interline = 46 x 30 ; 40 x 28
+}
+
+"Viewplus Tiger Pro"
+# *** Embosser definition unchanged since 04/01/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Professional"
+  IniFile = "tigerpro.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Tiger_Pro.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 46 x 30 ; 40 x 28
+}
+
+"Viewplus Tiger Pro Ink"
+# *** Embosser definition unchanged since 04/07/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "ViewPlus Pro Ink"
+  IniFile = "tigerink.ini"
+  CanDoInterpoint
+  Interline
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 46
+  MaximumLines = 27
+  HelpPage = "Viewplus_Tiger_Pro_Ink.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ;
+   BrailleOnly = 34 x 25 ; 32 x 23 ;
+   Interline =   34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ;
+   BrailleOnly = 34 x 27 ; 32 x 25 ;
+   Interline =   34 x 27 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ;
+   BrailleOnly = 46 x 27 ; 40 x 25 ;
+   Interline =   46 x 27 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ;
+   BrailleOnly = 34 x 30 ; 32 x 28 ;
+   Interline =   34 x 30 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ;
+   BrailleOnly = 46 x 30 ; 40 x 28 ;
+   Interline =   46 x 30 ; 40 x 28
+}
+
+"Viewplus EmBraille"
+# *** Embosser definition unchanged since 09/17/2013
+# Tiger driver works through Windows with GDI sequences
+# EmBraille requires a DBT left margin of 1
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "ViewPlus EmBraille 25SN"
+  IniFile = "tigeremp.ini"
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 34
+  MaximumLines = 27
+  HelpPage = "Viewplus_Emprint.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23 
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25 
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28 
+}
+
+"Viewplus Emprint"
+# *** Embosser definition unchanged since 04/01/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "ViewPlus Emprint"
+  IniFile = "tigeremp.ini"
+  Interline
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 34
+  MaximumLines = 27
+  HelpPage = "Viewplus_Emprint.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ;
+   BrailleOnly = 34 x 25 ; 32 x 23 ;
+   Interline =   34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ;
+   BrailleOnly = 34 x 27 ; 32 x 25 ;
+   Interline =   34 x 27 ; 32 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ;
+   BrailleOnly = 34 x 30 ; 32 x 28 ;
+   Interline =   34 x 30 ; 32 x 28
+}
+
+"Viewplus Tiger Cub"
+# *** Embosser definition unchanged since 04/01/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Cub"
+  IniFile = "tigerpro.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 34
+  MaximumLines = 27
+  HelpPage = "Viewplus_Tiger_Cub.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+}
+ 
+"Viewplus Tiger Cub Junior"
+# *** Embosser definition unchanged since 04/01/2009
+# Tiger driver works through Windows with GDI sequences
+{
+  Driver = "Emb_TigerEmbosserDriver"
+  WindowsDriverName = "Tiger Jr."
+  IniFile = "tigerpro.ini"
+  CanDoInterpoint
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 34
+  MaximumLines = 27
+  HelpPage = "Viewplus_Tiger_Cub_Junior.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 25 ; 32 x 23
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 27 ; 32 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 30 ; 32 x 28
+}
+
+"VTEK MBOSS-1"
+# *** Embosser definition unchanged since 08/06/2004
+# no escape sequences used
+{
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 40
+  MaximumLines = 25
+  HelpPage = "VTEK_MBOSS-1.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 28 ; 40 x 28
+}
+ 
+"VTEK MBOSS-35"
+# *** Embosser definition unchanged since 08/06/2004
+# no escape sequences used
+{
+  NoParallel
+  NoLeftMargin
+  NoRightMargin
+  NoTopMargin
+  MaximumCells = 40
+  MaximumLines = 25
+  HelpPage = "VTEK_MBOSS-35.htm"
+  Form "10_n" =  85 x 100 ; SinglePage ; 34 x 22 ; 32 x 22
+  Form "11_n" =  85 x 110 ; SinglePage ; 34 x 25 ; 32 x 25
+  Form "11_w" = 115 x 110 ; SinglePage ; 40 x 25 ; 40 x 25
+  Form "12_n" =  85 x 120 ; SinglePage ; 34 x 28 ; 32 x 28
+  Form "12_w" = 115 x 120 ; SinglePage ; 40 x 28 ; 40 x 28
+}
+# 
+#                                      Escape Sequences, major groups
+#
+# escape         Left    Right   Paper   Inter  4x  Word   6    ASCII  Line    Max   Use  Hot   BM and	Quiet   Page
+#                Margin  Margin  Length  point      Wrap   Dot         Spacing Lines FFs  Zone  TM      device  adjust
+#
+# Braillo  200           B       A       C      --         J           N             S                          R
+# Braillo  270           31      30      --     --
+# Braillo  440           B       --      H      A
+#
+# Enabling       L       R       T       i      --  W      K    &              Q          H				  X
+#
+# Index          IM      OM      PL      DP     --                                              BM TM
+#
+# VersaPoint     l               D       --     --
+#
+# Thiel                  0       .       P/Q    --         *    (      /1      1
+#
+# notes: Enabling when escape code mode is turned on; 
+#         Index with Version III plus 10.25 software; 
+#		 Thiel for BAX family, not PortaThiel
+ 
+
+#                              Handshaking
+#
+# To communicate on a COM port, one sets the COM port settings through a Windows structure called a DCB.
+# There are many settings in a DCB; many of them are quite well explained in other documentation such as
+# http://msdn.microsoft.com/library/default.asp?url=/library/en-us/devio/base/dcb_str.asp
+# Also useful: http://en.wikipedia.org/wiki/Serial_port and http://en.wikipedia.org/wiki/RS-232
+#
+# We allow manipulation of the DCB outside of the DBT program defaults. The emb.elt file allows one to
+# specify with precision what settings are written to the DCB for hardware handshaking and what settings
+# are written to the DCB for software handshaking.  In fact, one can specify this on a device-by-device basis.
+# See the entry for Elekul 55 for a sample of how this is done. This is repeated as a comment below for your
+# convenience.
+
+
+# Defaults for hardware handshaking by DBT are set as follows, all parameters are zero or false except for:
+# fInX  = false
+# FOutX = false
+# fOutxDsrFlow = true
+# fOutxCtsFlow = true 
+# fDtrControl = DTR_CONTROL_HANDSHAKE;
+# fRtsControl = RTS_CONTROL_HANDSHAKE;
+
+# Defaults for software handshaking by DBT are set as follows, all parameters are zero or false except for:
+# fInX  = true
+# FOutX = true
+# fOutxDsrFlow = false
+# fOutxCtsFlow = false 
+# fDtrControl = DTR_CONTROL_ENABLE
+# fRtsControl = RTS_CONTROL_ENABLE
+# XonChar = 17
+# XoffChar = 19
+
+# List of all DCB parameters, (remember all are zero or false as a default except as shown above)
+# fParity: true or false
+# fOutxCtsFlow: true or false
+# fOutxDsrFlow: true or false
+# fDtrControl: disable, enable, or handshake
+#    fDtrControl = disable    means DTR_CONTROL_DISABLE  
+#    fDtrControl = enable     means DTR_CONTROL_ENABLE   
+#    fDtrControl = handshake  means DTR_CONTROL_HANDSHAKE
+# fDsrSensitivity: true or false
+# fTXContinueOnXoff: true or false
+# fOutX: true or false
+# fInX: true or false
+# fErrorChar: true or false
+# fNull: true or false
+# fRtsControl: disable, enable, handshake
+#    fRtsControl = disable    means RTS_CONTROL_DISABLE  
+#    fRtsControl = enable     means RTS_CONTROL_ENABLE   
+#    fRtsControl = handshake  means RTS_CONTROL_HANDSHAKE
+#    fRtsControl = toggle     means RTS_CONTROL_TOGGLE (on Windows NT/2000/XP, not on 98/ME)
+# fAbortOnError: true or false
+# XonLim: 0-32767
+# XoffLim: 0-32767
+# XonChar 0-255
+# XoffChar 0-255
+# ErrorChar 0-255
+# EofChar = 0-255
+# EvtChar = 0-255
+
+# A copy of the Elekul 55 entry. (Remember that quotes are removed to allow DBT to function)
+# Interpoint NV Elekul 55
+# # *** Embosser definition unchanged since 08/11/2004
+# # *** More information about Elekul 55 support in (dbt directory)\drivers\print55\dbt-help.txt
+# {
+#   CanDoInterpoint
+#   NoParallel
+#   Baud = 19200
+#   Handshaking=Software
+#   MaximumCells = 44
+#   MaximumLines = 25
+#   NoLeftMargin
+#   NoRightMargin
+#   NoTopMargin
+#   Driver = Emb_ElekulEmbosserDriver
+#   Form 10_n =  85 x 100 ; SinglePage ; 30 x 23 ; 30 x 22
+#   Form 10_w = 115 x 100 ; SinglePage ; 40 x 23 ; 40 x 22
+#   Form 10_nd = 170 x 100 ; DoublePage ; 30 x 23 ; 40 x 22
+#   Form 10_d = 230 x 100 ; DoublePage ; 40 x 23 ; 40 x 22
+#   Form 11_n =  85 x 110 ; SinglePage ; 30 x 27 ; 30 x 25
+#   Form 11_w = 115 x 110 ; SinglePage ; 40 x 27 ; 40 x 25
+#   Form 11_nd = 170 x 110 ; DoublePage ; 30 x 27 ; 40 x 25
+#   Form 11_d = 230 x 110 ; DoublePage ; 40 x 27 ; 40 x 25
+#   Form 12_n =  85 x 120 ; SinglePage ; 30 x 30 ; 30 x 28
+#   Form 12_w = 115 x 120 ; SinglePage ; 40 x 30 ; 40 x 28
+#   Form 12_nd = 170 x 120 ; DoublePage ; 30 x 30 ; 40 x 28
+#   Form 12_d = 230 x 120 ; DoublePage ; 40 x 30 ; 40 x 28
+#   SoftwareDCB
+#     {
+#       fInX = FALSE
+#       fRtsControl = DISABLE
+#     }
+# }

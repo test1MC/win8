@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultBatchTarget
+  Version="1"
+  Comment="New Batch Target">
+  <Targets>
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="ActivationWizardforMac"
+      Type="HTML5"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:00:15.4167244-04:00"
+      LastPublished="2017-01-11T20:00:18.4324668-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="ActivationWizardforWin"
+      Type="HTML Help"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:00:31.5555877-04:00"
+      LastPublished="2017-01-11T20:00:32.5676182-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Approvals_third_party/Braillo_Models"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Book_Page_Test"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Book_Page_Test_chm"
+      Type="HTML Help" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="DbtHelpForMac"
+      Type="HTML5"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:04:31.6433923-04:00"
+      LastPublished="2017-01-11T20:04:43.1687075-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="DbtHelpForWin"
+      Type="HTML Help"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:07:34.6076224-04:00"
+      LastPublished="2017-01-11T20:07:36.7535422-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="dbtmac"
+      Type="HTML Help"
+      LastBuilt="2016-06-06T13:11:27.2211831-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Book_Page_Test"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/embosser_support"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/embosser_support_Braillo"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Installation_Registration_Activation"
+      Type="PDF"
+      LastBuilt="2016-07-14T14:13:52.4903931-04:00"
+      LastPublished="2017-01-11T20:08:05.0742700-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Installation_Registration_Activation_Word"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Language_Tables"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Language_Tables_PDF"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Languages-advice"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/the_menus_pakistan"
+      Type="WebHelp" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Docs_for_Proofing/Working_with_Word"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Help_Test"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Ideas"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Installation_(Word)_Mac"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Perky_Help"
+      Type="HTML Help"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:07:50.6658436-04:00"
+      LastPublished="2017-01-11T20:07:51.4396837-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Perky_Help_Mac"
+      Type="HTML5"
+      Build="true"
+      Publish="true" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Activation_Wizard"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Activation_Wizard_Help_Summary"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Activation_Wizard_PDF"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Installation_and_Setup_(Complete)"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Installation_and_Setup_(Simple)"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Installation_Registration_Activation"
+      Type="PDF"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:08:04.8438460-04:00"
+      LastPublished="2017-01-11T20:08:05.0742700-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/Installation_Registration_Activation_DOC"
+      Type="Word"
+      LastBuilt="2016-07-22T09:48:33.4260000-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/The_Mac_Menus"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/The_Mac_Menus_(PDF)"
+      Type="PDF"
+      LastBuilt="2016-08-23T10:44:58.5238549-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/The_Win_Menus"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Print_Documentation/The_Win_Menus_(PDF)"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="SWIFT/SWIFT"
+      Type="HTML Help"
+      Build="true"
+      Publish="true"
+      LastBuilt="2017-01-11T20:08:20.5625249-04:00"
+      LastPublished="2017-01-11T20:08:21.5181845-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="SWIFT/SWIFT_Book"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="SWIFT/SWIFT_Book_International"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Activation_Wizard_PDF"
+      Type="PDF" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/BANA_2014_Doc"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/BANA_2015_Doc"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/BANA_Docs"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Codes_Styles_and_Templates"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/DBT_HELP_TEST"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/DBT_Template_Information"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/EBOOK_TEST"
+      Type="EPUB" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Flow_Charts"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Individual_Files"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Installation_and_Setup"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/iPhone"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Printed_Documentation"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/UEB_FAQ"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Welcome_and_Setup"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/What's_New"
+      Type="Word"
+      LastBuilt="2016-07-27T10:34:51.8074810-04:00" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/Whole_of_Help_(Experiment)"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Unused_Targets/working_with_word"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="Word_Keystrokes"
+      Type="Word" />
+    <Target
+      Icon="System.Drawing.Bitmap"
+      Name="word_keystrokes_PDF"
+      Type="PDF" />
+  </Targets>
+</CatapultBatchTarget>

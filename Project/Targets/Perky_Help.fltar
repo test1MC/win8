@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Help for PerkyDuck on Windows"
+  Type="HtmlHelp"
+  Destinations=""
+  MasterToc="/Project/TOCs/perky_toc.fltoc"
+  Skin="/Project/Skins/DuxburyMainChm.flskn"
+  DisableAutoSync="true"
+  ExcludeUnreferencedContent="true"
+  OutputFile="perky.chm"
+  GenerateWebSafeImages="false"
+  WebSafeFileExtension="jpg"
+  Medium="non-print"
+  ConditionTagExpression="include[Primary.HTML_Only or Primary.Perky_and_DBTW or Primary.Windows_Version] exclude[ActWizConditions.ActwizHelp or Primary.Codes_Styles_Templates or Primary.Flags or Primary.Glossaries or Primary.Mac_Version or Primary.Perky_Not_in or Primary.Print_Only or Primary.Printed_Introduction or Primary.Reg_Activate or Primary.Working_with_Word] "
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+  <Glossaries></Glossaries>
+</CatapultTarget>

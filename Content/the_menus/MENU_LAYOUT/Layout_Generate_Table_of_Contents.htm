@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="4" MadCap:lastHeight="572" MadCap:lastWidth="624">
+    <head><title>Layout: Generate Table of Contents.</title>
+        <link rel="StyleSheet" href="../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h3>
+            <MadCap:keyword term="Layout:Generate Table of Contents;Table of Contents, Generate" /><a name="top"></a>Layout: Generate Table of Contents</h3>
+        <p class="Keystroke" MadCap:conditions="Primary.Windows_Version">Keystroke: <b>b</b> from Layout menu.</p>
+        <p class="Keystroke" MadCap:conditions="Primary.Mac_Version">Keystroke: Select from menu</p>
+        <p>This option enables automatic generation of a Table of Contents within a Braille document. It can produce Braille <span class="hcp1">or</span> Print Page numbers.</p>
+        <p><span class="hcp1">Note:</span> This option is only available when a Braille document is in focus.</p>
+        <p align="center" MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_layout/menu_layout_generate_toc.jpg" alt="Image shows the Layout, Table of Contents dialog." class="hcp2" style="float: none;border-style: none;border-style: none;width: 588px;height: 401px;" border="0" MadCap:conditions="Primary.Windows_Version" title="Image shows the Layout, Table of Contents dialog." />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_layout/menu_layout_generate_toc_mac.jpg" style="width: 582px;height: 390px;" MadCap:conditions="Primary.Mac_Version" title="Image shows the Layout, Table of Contents dialog." alt="Image shows the Layout, Table of Contents dialog." />
+        </p>
+        <p>For many transcribers, this is one of the most labor saving of DBT's options.</p>
+        <p>But before you even consider using this option, it is vitally important to appreciate that your original document must contain appropriate Heading Styles.</p>
+        <p>Also, a common mistake is to confuse a "Heading" Style with a "Header" and/or "Footer" Style. Remember, a Heading is contained within the text of the document. A Header (or footer) appears at the top or bottom of the page(s)</p>
+        <p>With 19 Controls, the dialog may appear daunting, but normally only requires to be set up once. They are described in the order in which you would use the Tab key to move through them.</p>
+        <ol>
+            <li><b>Style to use:</b> This is a List Box which currently offers three options for generating a Table of Contents. <MadCap:conditionalText MadCap:conditions="Primary.Not_in_Print_Docs"><a href="../../POPUPS/Braille_Authority_of_North_America.htm" target="_popup">BANA</a>,</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="Primary.The_Menus">BANA,</MadCap:conditionalText> French or Custom.<br />	If BANA or French is selected, your further choices are severely restricted, because DBT follows BANA recommendations for Tables of Contents. You can select what Heading Levels are to be included. You can decide what text you want for left, center and right columns. That is it! <b>NOTE</b>: Unless you specifically wish to use the BANA or French Table of Contents Layout, you should select "Custom"</li>
+            <li><b>Include Levels One Through:</b> (default is 99) Your document may contain for example, DBT Heading Styles from H1. to H3. but you may only want the first two levels, H1. &amp; H2. , to appear in the Table of Contents. You would therefore enter 2 in this box.</li>
+            <li><span class="hcp1">Center Top Level:</span> (Check Box)</li>
+            <li><span class="hcp1">Number Top Level:</span> (Check Box)</li>
+        </ol>
+        <p>The next three items are grouped together to define a Single Level Table of contents.</p>
+        <ol start="5">
+            <li><span class="hcp1">Left Margin (Single Level):</span> (Text Box)</li>
+            <li><span class="hcp1">Runover Indent (Single Level):</span> (Text Box)</li>
+            <li><span class="hcp1">Right Margin (Single Level):</span> (Text Box)</li>
+        </ol>
+        <p>The next five items are grouped together to define a Multi-Level Table of Contents.</p>
+        <ol start="8">
+            <li><span class="hcp1">Left Margin for Level 1:</span> (Text Box)</li>
+            <li><span class="hcp1">Left Margin Increment:</span> (Text Box)</li>
+            <li><span class="hcp1">Runover Indent:</span> (Text Box)</li>
+            <li><span class="hcp1">Right Margin:</span> (Text Box)</li>
+            <li><span class="hcp1">Always Use Maximum Runover:</span> (Check Box)<br /><br /></li>
+            <li><span class="hcp1">Centered Heading:</span> Chapter</li>
+            <li><span class="hcp1">Left Column Heading:</span> Contents</li>
+            <li><span class="hcp1">Right Column Heading:</span> Page</li>
+            <li><span class="hcp1">Character for Guide Dots:</span> List Box - Choices are: Dot 3, 5 or 6, or dots 3 &amp; 6.</li>
+            <li><span class="hcp1">Use:</span> List Box where you can choose either "Braille Page Numbers" or "Print Page Numbers".</li>
+            <li><span class="hcp1">OK</span> - Button</li>
+            <li><span class="hcp1">Cancel</span> - Button</li>
+        </ol>
+        <p><span class="hcp1">Note 1:</span> It is essential to have Reference Page Numbers properly used in DBT if Print Page Numbers are to be used.</p>
+        <p><span class="hcp1">Note 2:</span> If you <a href="..\menu_document\Document_Create_Template.htm">create a template</a> <MadCap:conditionalText MadCap:conditions="Primary.Print_Only">(see <MadCap:xref href="../menu_document/Document_Create_Template.htm">"Document: Create Template..." on page&#160;1</MadCap:xref>)</MadCap:conditionalText> from your braille document immediately after generating a table of contents, all of the options in this dialog are saved with the template.</p>
+        <p><span class="hcp1">Note 3:</span> In some cases, normally when creating a TOC with a pre 10.5 Template, you may see the following message. Answer "Yes" to have DBT correct the problem for you.</p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_layout/menu_layout_toc_message.jpg" alt="Image shows message &quot;This document does not have the rp codes in the header styles to generate a table of contents. Choose Yes to have DBT add them." style="width: 416px; height: 184px;" width="416" height="184" border="0" />
+        </p>
+    </body>
+</html>

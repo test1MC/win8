@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="11632" MadCap:lastWidth="668">
+    <head><title>Basic Templates</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Basic Templates" />Basic Templates</h1>
+        <p>The Duxbury Braille Translator produces braille for more than 140 world languages. For a good number of those languages, DBTincludes a customized template that recognizes the local formatting rules. For most languages of the world, DBT offers a basic template. </p>
+        <p>A basic template has a rich collection of styles to meet many needs. Each basic template is the same except for the default braille translation table. The collection of styles in a basic templates is designed to meet the typical user's most common requirements, for example: </p>
+        <ul>
+            <li>Importing files from Microsoft Word (either as doc or docx) - the basic templates map almost all built-in Word styles into useful styles in DBT</li>
+            <li>Importing files using the <a href="http://www.daisy.org/z3986/structure/archive-SG-DAISY2005/structguide.htm">Daisy/NISO tag set</a> (devised in 2005) - the basic templates map these tags into DBTstyles</li>
+            <li>Importing HTML&#160;files - again, the basic templates map these tags into useful DBTstyles </li>
+        </ul>
+        <p>In addition, the collection of styles in a basic template handles many of the typical forms of character emphasis (bold, italics, underlining), some math-related styles from the math importer, and some specific DBT styles needed for braille tasks not found in the inkprint world (such as computer braille).</p>
+        <p>You will find that some of the Daisy/NISO styles have no effect in DBT. There was an attempt to have a DBT style for each of the tags in the Daisy/NISO system, but quite a few of these tags have no impact on braille formatting.</p>
+        <p>No matter whether the source of a document is Word, HTML, or some other source, using a basic template should produce translated braille in a reasonable format without much extra manipulation.</p>
+        <p>However, for those who want much finer control over the braille format similar to that in the customized templates, and for those who wish for a more sophisticated approach to styles, <a href="more_things.htm">click here to learn about creating your own custom DBT Template for importing Word documents,</a> but adapted for your language of choice.</p>
+        <h2>Basic DBTCharacter Styles: Emphasis and Language</h2>
+        <p>To use these styles in DBT, highlight the text, press F8, and pick one of these styles:</p>
+        <ul>
+            <li><b>Biblical-langs</b> -- handle the text as <a href="http://www.duxburysystems.com/lan_biblical_scholar.htm">Greek/Hebrew/Syrillic</a>, etc.</li>
+            <li><b>bold</b> -- emphasis</li>
+            <li><b>English_UEB1</b> -- handle the text as grade 1 Unified English Braille</li>
+            <li><b>English_UEB2</b> -- handle the text as grade 2 Unified English Braille</li>
+            <li><b>English_UK_old</b> -- handle the text as grade 2 British Braille (prior to Unified English Braille)</li>
+            <li><b>French</b> -- handle the text as grade 1 Unified French</li>
+            <li><b>German</b> -- handle the text as grade 1.5 German (a very small number of simple contractions)</li>
+            <li><b>IPA</b> -- handle the text as International Phonetics Alphabet</li>
+            <li><b>Italian</b> -- handle the text as grade 1 Italian</li>
+            <li><b>italic</b> -- emphasis</li>
+            <li><b>Portuguese</b> -- handle the text as grade 1 Portuguese</li>
+            <li><b>Spanish</b> -- handle the text as grade 1 Spanish</li>
+            <li><b>Russian</b> -- handle the text as grade 1 Russian</li>
+            <li><b>underlined</b> -- emphasis</li>
+        </ul>
+        <p>To help locate the right choice more quickly, you can press the first letter of the DBT style right after pressing F8. For example, to style a sentence as Russian, highlight the sentence, press F8, then <b>R</b>, then press the down arrow until you can select <b>Russian</b>, by pressing &lt;Enter&gt;.</p>
+        <p>The IPA translator is an international braille standard. All of the other languages are translated the way they are done in the dominant country. For example, <b>Spanish</b> produces Spanish braille as it is done in Spain, <b>French</b> as it is done in France, etc. We recommend that you experiment with the language styles to make sure you understand what they do. </p>
+        <p>You can also create your own styles to make use of other braille translators or contraction modes. These styles are the ones included in all the Basic templates.</p>
+        <h2>The DBT Styles in the Basic Templates</h2>
+        <p>Here follows a list of the styles in the Basic Templates. Generally speaking, a style is a combination of underlying DBTcodes that produce the desired effects of the style. </p>
+        <p>This list shows the style name, its general category (marked with an asterisk, *), and the DBT codes (shown in square brackets)&#160;that are triggered at the beginning and end of each style. A guide to DBT codes can be found <a href="../Codes/dollar_codes_quick_reference.htm">here</a>.</p>
+        <p><b>acronym</b>
+            <br />* MS Word<br />begin: [i]<br />end: (blank)</p>
+        <p><b>act</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: [sc1:0]</p>
+        <p><b>address</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][ptys]<br />end: [sc1:0][ptye]</p>
+        <p><b>Biblical-langs</b> <br />* character<br />begin: [lnb~qbi][g1l]<br />end:&#160;[lnb]</p>
+        <p><b>blockquote</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][p] <br />end: [sc1:0]</p>
+        <p><b>bold</b>
+            <br />* character<br />begin: [fts~b]<br />end: [fte~b]</p>
+        <p><b>box</b>
+            <br />* DBT<br />begin: [ind1][kps][fr;f~7][d~7][l]<br />end: [ind1][fr;f~g][d~g][l][kpe]</p>
+        <p><b>box-h1.</b>
+            <br />* DBT<br />begin: [l][kps][rm6][hds]<br />end: [hde][rm0][sk1][kpe2:2]</p>
+        <p><b>br</b>
+            <br />* Daisy/NISO<br />begin: [&lt;]<br />end: (blank)</p>
+        <p><b>brldisplay.</b>
+            <br />* DBT<br />begin: [sc1:0][cz]<br />end: [tx][sc1:0:0]</p>
+        <p><b>line</b>
+            <br />* DBT<br />begin: [cz]<br />end: [tx]</p>
+        <p><b>caption.</b>
+            <br />* Daisy/NISO<br />begin: [ind5][tab7]<br />end: [ind1]</p>
+        <p><b>citation.</b>
+            <br />* Daisy/NISO<br />begin: [ptys][l]<br />end: [ptye][l]</p>
+        <p><b>compdisplay.</b>
+            <br />* DBT<br />begin: [sc1:0][ptys1][cb][wb-cb]<br />end: [wb][ptye][tx][sc1:0:0]</p>
+        <p><b>compinline</b>
+            <br />* DBT<br />begin: [cbi][wb-cb]<br />end: [wb][txi]</p>
+        <p><b>conpn</b>
+            <br />* DBT<br />begin: [fr:p~"]<br />end: [l]</p>
+        <p><b>contents.</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][hi1:5:0:2:2][kps][ki1][rm6]<br />end: [ki0][kpe][sc1:0:0][hi][rm0]</p>
+        <p><b>dd</b>
+            <br />* Daisy/NISO<br />begin: [pm]<br />end: (blank)</p>
+        <p><b>div</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: [sc1:0]</p>
+        <p><b>dl</b>
+            <br />* Daisy/NISO<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>dl0</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][ptys4]<br />end: [ind1][sc1:0][ptye]</p>
+        <p><b>drama</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: [sc1:0]</p>
+        <p><b>dt</b>
+            <br />* Daisy/NISO<br />begin: [l][ind1]<br />end: (blank)</p>
+        <p><b>dt2</b>
+            <br />* Daisy/NISO<br />begin: [l][ind3]<br />end: (blank)</p>
+        <p><b>dt3</b>
+            <br />* Daisy/NISO<br />begin: [l][ind5]<br />end: (blank)</p>
+        <p><b>dt4</b>
+            <br />* Daisy/NISO<br />begin: [l][ind7]<br />end: (blank)</p>
+        <p><b>English_UEB1</b>
+            <br />* character<br />begin:&#160;[lnb~xueb][g1l]<br />end:&#160;[lnb]</p>
+        <p><b>English_UEB2</b>
+            <br />* character<br />begin:&#160;[lnb~xueb][g2l]<br />end:&#160;[lnb]</p>
+        <p><b>English_UK_2005</b>
+            <br />* character<br />begin:&#160;[lnb~eng-xuk][g2l]<br />end:&#160;[lnb]</p>
+        <p><b>em</b>
+            <br />* character<br />begin: [fts~i]<br />end: [fte~i]</p>
+        <p><b>French</b>
+            <br />* character<br />begin:&#160;[lnb~fra-xuf][g1l]<br />end:&#160;[lnb]</p>
+        <p><b>German</b>
+            <br />* character<br />begin:&#160;[lnb~deu][g1.5l]<br />end:&#160;[lnb]</p>
+        <p><b>h1.</b>
+            <br />* MS Word and Daisy/NISO<br />begin: [l][kps][sc1:0][rm6][hds][rps1]<br />end: [rpe1][hde][rm0][sk1][kpe2:2]</p>
+        <p><b>h2.</b>
+            <br />* MS Word and Daisy/NISO<br />begin: [l][kps][sc1:0][rm6][hds][rps2]<br />end: [rpe2][hde][rm0][l][kpe2:2]</p>
+        <p><b>h3.</b>
+            <br />* MS Word and Daisy/NISO<br />begin: [l][kps][sc1:0][ind5][rps3]<br />end: [rpe3][ind1][kpe2:2]</p>
+        <p><b>h4.</b>
+            <br />* MS Word and Daisy/NISO<br />begin: [l][kps][sc1:0][ind1]<br />end: [ind1][kpe2:2]</p>
+        <p><b>h5.</b>
+            <br />* MS Word and Daisy/NISO<br />begin: [l][kps][ind1]<br />end: [ind1][kpe2:2]</p>
+        <p><b>h6.</b>
+            <br />* MS Word and Daisy/NISO<br />begin: [l][kps][ind1]<br />end: [ind1][kpe2:2]</p>
+        <p><b>hd.</b>
+            <br />* DBT<br />begin: [l][kps][sc1:0][rm6][hds]<br />end: [hde][rm0][sk1][kpe2:2]</p>
+        <p><b>head</b>
+            <br />* Daisy/NISO<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>hr</b>
+            <br />* HTML<br />begin: [ind1][hds][q~------------][l]<br />end: [l]</p>
+        <p><b>initial</b>
+            <br />* DBT<br />begin: [g2u][caplv3]<br />end: (blank)</p>
+        <p><b>IPA</b>
+            <br />* character<br />begin: [lnb~qip]<br />end: [lnb]</p>
+        <p><b>Italian</b>
+            <br />* character<br />begin:&#160;[lnb~ita][g1l]<br />end:&#160;[lnb]</p>
+        <p><b>italic</b>
+            <br />* character<br />begin: [fts~i]<br />end: [fte~i]</p>
+        <p><b>level</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: (blank)</p>
+        <p><b>level1</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: (blank)</p>
+        <p><b>level2</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: (blank)</p>
+        <p><b>level3</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: (blank)</p>
+        <p><b>level4</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: (blank)</p>
+        <p><b>level5</b>
+            <br />* Daisy/NISO<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>level6</b>
+            <br />* Daisy/NISO<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>li.</b>
+            <br />* MS Word and HTML<br />begin: [l][ind1]<br />end: (blank)</p>
+        <p><b>li2.</b>
+            <br />* MS Word<br />begin: [l][ind3]<br />end: [ind1]</p>
+        <p><b>li3.</b>
+            <br />* MS Word<br />begin: [l][ind5]<br />end: [ind1]</p>
+        <p><b>li4.</b>
+            <br />* MS Word<br />begin: [l][ind7]<br />end: [ind1]</p>
+        <p><b>li5.</b>
+            <br />* MS Word<br />begin: [l][ind9]<br />end: [ind1]</p>
+        <p><b>li6.</b>
+            <br />* MS Word<br />begin: [l][ind11]<br />end: [ind1]</p>
+        <p><b>lic</b>
+            <br />* Daisy/NISO<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>lic.pn</b>
+            <br />* DBT<br />begin: [fr;p~".][:]<br />end: [;]</p>
+        <p><b>lin</b>
+            <br />* DBT<br />begin: [kps][ptys]<br />end: [ptye][kpe][l]</p>
+        <p><b>linegroup</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][ptys]<br />end: [sc1:0][ptye]</p>
+        <p><b>linenum</b>
+            <br />* DBT<br />begin: [kpe2:2][kps][st2][rm5][l][lps][ons][fr]<br />end: [one][lpr]</p>
+        <p><b>list.</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][hi1:3:0:2:2][ki1]<br />end: [ki0][hi][sc1:0:0]</p>
+        <p><b>list0</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][ptys4]<br />end: [sc1:0][ptye]</p>
+        <p><b>math</b>
+            <br />* Mavis<br />begin: [lnb~eng-xueb][g1l]<br />end: [lnb]</p>
+        <p><b>math-TextInMath</b>
+            <br />* Mavis<br />begin: [lnb]<br />end: [lnb~eng-xueb][g1l]</p>
+        <p><b>noscript</b>
+            <br />* Daisy/NISO<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>note.</b>
+            <br />* Daisy/NISO<br />begin: [ind5][tab7]<br />end: [ind1]</p>
+        <p><b>noteref</b>
+            <br />* DBT<br />begin: [d]<br />end: (blank)</p>
+        <p><b>notice</b>
+            <br />* Daisy/NISO<br />begin: [ind1][kps][fr;f~7][d~7][l]<br />end: [ind1][fr;f~g][d~g][l][kpe]</p>
+        <p><b>object</b>
+            <br />* Daisy/NISO<br />begin: [d]<br />end: [d]</p>
+        <p><b>ol0</b>
+            <br />* HTML<br />begin: [sc1:0][ptys4]<br />end: [ind1][sc1:0][ptye]</p>
+        <p><b>out</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][hi1:5:0:2:2][kps][ki1]<br />end: [ki0][kpe][hi][sc1:0:0]</p>
+        <p><b>pagenum</b>
+            <br />* Daisy/NISO <br />begin: [kps][lea]<br />end: [l][kpe2:2]</p>
+        <p><b>para.</b>
+            <br />* MS Word and Daisy/NISO <br />begin: [p]<br />end: [l]</p>
+        <p><b>para.continue.</b>
+            <br />* DBT<br />begin: [l]<br />end: [l]</p>
+        <p><b>poem-sep</b>
+            <br />* DBT<br />begin: [d][q~&gt;][d]<br />end: (blank)</p>
+        <p><b>poem.</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0][hi1:3:0:2:2][kps][ki1]<br />end: [ki0][kpe][hi][sc1:0:0]</p>
+        <p><b>poem.2</b>
+            <br />* DBT<br />begin: [sc1:0][hi1:4:0:2:0][kps][ki1]<br />end: [ki0][kpe][hi][sc1:0:0]</p>
+        <p><b>Portuguese</b>
+            <br />* character<br />begin:&#160;[lnb~por][g1l]<br />end:&#160;[lnb]</p>
+        <p><b>prodnote</b>
+            <br />* Daisy/NISO<br />begin: [l][ind5][tab7][q~,']<br />end: [q~,'][ind1][l]</p>
+        <p><b>q</b>
+            <br />* DBT<br />begin: [d]<br />end: [d]</p>
+        <p><b>ref.pg.no</b>
+            <br />* DBT<br />begin: [kps][lea]<br />end: [l][kpe2:2]</p>
+        <p><b>ref.pg.no-in-math</b>
+            <br />* DBT<br />begin: [kps][tce][lea]<br />end: [tcs][l][kpe2:2]</p>
+        <p><b>Russian</b>
+            <br />* character<br />begin:&#160;[lnb~rus]<br />end:&#160;[lnb]</p>
+        <p><b>samp</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: [sc1:0]</p>
+        <p><b>scene</b>
+            <br />* Daisy/NISO<br />begin: [sc1:0]<br />end: [sc1:0]</p>
+        <p><b>script</b>
+            <br />* character<br />begin: [fts~s]<br />end: [fte~s]</p>
+        <p><b>sidebar</b>
+            <br />* Daisy/NISO <br />begin: [ind1][kps][fr;f~7][d~7][l]<br />end: [ind1][fr;f~g][d~g][l][kpe]</p>
+        <p><b>Spanish</b>
+            <br />* character<br />begin:&#160;[lnb~spa][g1l]<br />end:&#160;[lnb]</p>
+        <p><b>speaker</b>
+            <br />* Daisy/NISO<br />begin: [l][ptys]<br />end: (blank)</p>
+        <p><b>speech</b>
+            <br />* Daisy/NISO<br />begin: [pm]<br />end: [ptye]</p>
+        <p><b>stage</b>
+            <br />* Daisy/NISO<br />begin: [ind5][tab7]<br />end: [ind1]</p>
+        <p><b>strong</b>
+            <br />* character<br />begin: [fts~b]<br />end: [fte~b]</p>
+        <p><b>sub</b>
+            <br />* character<br />begin: [bs]<br />end: [be]</p>
+        <p><b>sup</b>
+            <br />* character<br />begin: [ps]<br />end: [pe]</p>
+        <p><b>table</b>
+            <br />* MS Word, Daisy/NISO and HTML<br />begin: [sc1:0]<br />end: [sc1:0][ptye]</p>
+        <p><b>tbody</b>
+            <br />* HTML<br />begin: [ptys]<br />end: [ptye]</p>
+        <p><b>td</b>
+            <br />* HTML<br />begin: [d]<br />end: (blank)</p>
+        <p><b>td1</b>
+            <br />* HTML<br />begin: (blank)<br />end: [d]</p>
+        <p><b>TextWithinMath</b>
+            <br />* Mavis<br />begin: [lnb]<br />end: [lnb~eng-xueb][g1l]</p>
+        <p><b>tfoot</b>
+            <br />* HTML<br />begin: [ptys]<br />end: [ptye]</p>
+        <p><b>th</b>
+            <br />* HTML<br />begin: [d]<br />end: (blank)</p>
+        <p><b>th1</b>
+            <br />* HTML<br />begin: (blank)<br />end: [d]</p>
+        <p><b>thead</b>
+            <br />* HTML<br />begin: [ptys]<br />end: [ptye]</p>
+        <p><b>TOC:left</b>
+            <br />* DBT<br />begin: Chapter<br />end: ,<br />*apt]</p>
+        <p><b>TOC:right</b>
+            <br />* DBT<br />begin: Page<br />end: ,page</p>
+        <p><b>TOC:title</b>
+            <br />* DBT<br />begin: Contents<br />end: ,3t5ts</p>
+        <p><b>tp.author.</b>
+            <br />* MS Word<br />begin: [l][kps][sc1:0][rm6][hds]<br />end: [hde][rm0][sk1][kpe2:2]</p>
+        <p><b>tp.general.</b>
+            <br />* MS Word<br />begin: [sc1:0][hds]<br />end: [hde]</p>
+        <p><b>tp.title.</b>
+            <br />* MS Word<br />begin: [l][kps][sc1:0][rm6][hds]<br />end: [hde][rm0][sk1][kpe2:2]</p>
+        <p><b>tr.</b>
+            <br />* HTML<br />begin: [l][ptys]<br />end: [l]</p>
+        <p><b>ul</b>
+            <br />* HTML<br />begin: (blank)<br />end: (blank)</p>
+        <p><b>ul0</b>
+            <br />* HTML<br />begin: [sc1:0][ptys4]<br />end: [ind1][sc1:0][ptye]</p>
+        <p><b>underlined</b>
+            <br />* character<br />begin: [fts~u]<br />end: [fte~u]</p>
+    </body>
+</html>

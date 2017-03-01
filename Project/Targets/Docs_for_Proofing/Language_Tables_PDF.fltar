@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Print Documentation/Language_Tables.fltoc"
+  RemoveImagesFromHeadings="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book_(Letter_Size).flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    Tagged="true"
+    ShowUsedBookmarks="false"
+    InitialMagnification="Actual"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle" />
+  <RelationshipTables />
+  <Glossaries></Glossaries>
+</CatapultTarget>

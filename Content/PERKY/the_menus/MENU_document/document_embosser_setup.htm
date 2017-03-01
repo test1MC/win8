@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:onlyLocalStylesheets="True" MadCap:lastBlockDepth="4" MadCap:lastHeight="2468" MadCap:lastWidth="637">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h2><a name="kanchor291"></a>Document: Embosser Setup...</h2>
+        <p class="keystroke">Keystroke: <span class="keyboard">Ctrl + F11</span></p>
+        <p>Document: Embosser Setup is a new command in Perky Duck version 10.5. In
+earlier versions of Perky Duck, all embosser setup was done through the <a href="..\..\the_menus\MENU_GLOBAL\global_embosser_setup.htm"><span style="font-size: 13.5pt;">Global:</span> Embosser Setup</a> menu. Perky Duck
+stores <a name="kanchor292"></a><a href="javascript:void(0);">Sticky Document
+Information</a>, including embosser setup, with each document. This allows you
+to more easily work with documents intended for different paper sizes, for
+example. It also means that, if you are updating from a previous version of
+Perky Duck, you should get used to using this dialog -- Document: Embosser
+Setup -- to manage embosser setup on a document-by-document-basis.</p>
+        <p>The Document: Embosser Setup dialog is shown below:</p>
+        <p align="center" style="text-align: center;">
+            <img border="0" src="../../../Resources/Images/the_menus/menu_document/menu_document_embosser_setup_mac.jpg" alt="Image of Document: Embosser Setup dialog" />
+        </p>
+        <p>This dialog is used to tell Perky Duck how to format the <u>current document</u>.
+(Users of earlier versions of Perky Duck take note: changes made here will <u>not</u>
+affect other documents.) The formatting details you can specify include the
+number of lines per page and cells per line. If you have an embosser that
+supports multiple paper sizes, you can also specify which paper size should be
+used for this document. Furthermore, if you have more than one embosser, you
+can specify which one should be used when embossing this document. All of this
+will be stored as <a href="javascript:void(0);">Sticky Document Information</a>
+when you save this document. </p>
+        <ol start="1" style="list-style-type: decimal;">
+            <li>The first control is a list of
+ installed embossers. The most important thing you should understand about
+ this control is this: the current document will be embossed using
+ whichever embosser is highlighted when you click OK to exit the dialog. If
+ you have only one embosser, this isn't usually a concern. </li>
+        </ol>
+        <ol start="3" style="list-style-type: decimal;">
+            <li>Two edit controls allow you to
+ specify how many characters per lines and lines per page. Perky Duck
+ automatically fills these in when you choose an embosser and paper size,
+ but you can change the values. </li>
+        </ol>
+        <ol start="4" style="list-style-type: decimal;">
+            <li>Two edit controls allow you to
+ specify the top margin and <a name="kanchor293"></a><a href="javascript:void(0);">binding margin</a> for this document. Note that
+ the characters per line value given above is <em><span style="font-family: Calibri;">in addition to</span></em> the binding margin, and the lines per
+ page value given above is <em><span style="font-family: Calibri;">in
+ addition to</span></em><a name="kanchor294"></a> the top margin. See also <a href="..\..\the_menus\menu_document\document_embosser_setup.htm#Common_Problems">Note
+ below</a> regarding other constraints. </li>
+        </ol>
+        <ol start="5" style="list-style-type: decimal;">
+            <li>Three check boxes may allow you
+ to enable or disable Embossing in <a name="kanchor295"></a><a href="javascript:void(0);">Interpoint</a> , Embossing a <a name="kanchor296"></a><a href="javascript:void(0);">Banner Page</a>, and <a name="kanchor297"></a><a href="javascript:void(0);">Interline Print</a>.
+ Which of these options are available depends on the capabilities of your
+ embosser. In some cases, enabling Embossing in Interpoint or Interline
+ Print might reduce the number of lines that your embosser can fit on a
+ page. Perky Duck checks this for you. </li>
+        </ol>
+        <ol start="7" style="list-style-type: decimal;">
+            <li>The OK button (or Enter)
+ accepts all settings in the dialog and applies them to the <strong><span style="font-family: Calibri;">current document only</span></strong>. If you
+ have specified impossible values (e.g. 200 characters per line), then
+ Perky Duck corrects your values, tells you what has been corrected, and
+ leaves the dialog opened for you to check investigate if you wish. If
+ everything in the dialog is fine, then the dialog is closed. However, you
+ may be warned if your document format is about to change.</li>
+            <li>The Cancel button is used close
+ the dialog without saving anything. (Note that <strong><span style="font-family: Calibri;">neither document format changes nor embosser
+ list changes are saved</span></strong> if you click Cancel.) </li>
+        </ol>
+        <p>Read on to discover some ways that you can <a href="..\..\the_menus\menu_document\document_embosser_setup.htm#Time_Saving">save
+time</a> managing braille format settings for your documents, or read further
+on to learn about some <a href="..\..\the_menus\menu_document\document_embosser_setup.htm#Common_Problems">things
+that may go wrong</a> when you use Document: Embosser Setup.</p>
+        <h4><a name="kanchor298"></a>Time-Saving Tips</h4>
+        <h6><a name="Time_Saving"></a>Time-Saving Tip #1</h6>
+        <p>Despite the many controls, you can often get through Document, Embosser
+Setup using just three steps:</p>
+        <ol start="1" style="list-style-type: decimal;">
+            <li>Select the embosser to which
+ you want to send the current document. </li>
+        </ol>
+        <ol start="2" style="list-style-type: decimal;">
+            <li>Select the form (paper size) on
+ which you want to emboss the current document. </li>
+        </ol>
+        <ol start="3" style="list-style-type: decimal;">
+            <li>Click OK (or hit Enter). Perky
+ Duck automatically sets up your document as is usually appropriate for the
+ selected embosser and paper size. </li>
+        </ol>
+        <h6>Time-Saving Tip #2</h6>
+        <p>Use the <a href="..\..\the_menus\MENU_GLOBAL\global_embosser_setup.htm"><b><span style="font-size: 14.0pt;">Global:</span></b> Embosser Setup</a> dialog to set up
+the document format you most commonly use. Then you won't have to visit
+Document: Embosser Setup at all, for most documents.</p>
+        <h4><a name="kanchor299"></a>Common Problems</h4>
+        <h6><a name="Common_Problems"></a>Common Problem #1: Confusing Global: Embosser
+Setup and Document: Embosser Setup</h6>
+        <p>If you've used versions of Perky Duck earlier than 10.5, just keep in mind
+Document: Embosser Setup changes only the current document, while Global:
+Embosser Setup changes only the format of some documents yet to be created.
+(This is explained in detail in the help topic for the <a href="..\..\the_menus\MENU_GLOBAL\global_embosser_setup.htm"><b><span style="font-size: 14.0pt;">Global:</span></b> Embosser Setup</a> dialog.)</p>
+        <h6>Common Problem #2: Forgetting to use OK</h6>
+        <p>Even if you bring up the dialog just to manage the list of embossers
+(perhaps to add a new embosser), you must push OK in the Document: Embosser
+Setup dialog itself, or everything you've done (e.g. the addition of the new
+embosser) will be lost.</p>
+        <h6>Common Problem #3: Pushing OK too soon</h6>
+        <p>If you bring up the dialog to manage the list of embossers you must also be
+careful to check everything in the Document: Embosser Setup dialog itself
+before you click OK. Otherwise, you might be applying formatting changes
+without intending to. Remember that clicking OK causes Perky Duck to apply all
+changes to the list of embossers and to apply all changes shown in the
+Document: Embosser Setup dialog itself to the current document.</p>
+        <div class="MsoNormal" align="center" style="text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+        <h4><a name="kanchor121"></a>Document and Global: Printer Setup...</h4>
+        <p class="keystroke">Keyboard: <span class="keyboard">Ctrl</span> + <span class="keyboard">F12</span> for Document, or from <span class="keyboard">p</span>
+from Global menu.</p>
+        <p><span class="keyboard">It must be emphasised that this option only affects new
+documents, or those which are pre Perky Duck 10.5. To make changes to the
+CURRENT document, you MUST use DOCUMENT: Printer Setup.</span> <![CDATA[ ]]></p>
+        <div class="MsoNormal" align="center" style="text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+    </body>
+</html>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  LastCollectTime="2016-12-02T21:26:24.0664197+00:00"
+  ProjectName="DBT Help"
+  ProjectFolder="C:\Users\george2\Documents\dbthelp\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2016-12-02T21:27:22.0653950+00:00">
+  <Files>
+    <Url
+      Source="../../../Word_keystrokes_list.docx"
+      AbsoluteSource="file:///C:/Users/george2/Documents/Word_keystrokes_list.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Word_keystrokes_list/Keyboard shortcuts for Microsoft.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Frequently used shortcuts.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Navigate the ribbon with only.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Change the keyboard focus.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Keyboard shortcut reference.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Create view and save documents.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Work with Web content.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Print and preview documents.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Check spelling and review.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Find replace and go to specific.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Move around in a document.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert or mark Table of Contents.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Work with documents in different.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Work with headings in Outline.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Navigate in Read Mode view.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Edit and move text and graphics.htm"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Extend a selection.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Delete text and graphics.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Copy and move text and graphics.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Tables.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Move around in a table.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert paragraphs and tab.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Format characters and paragraphs.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Change or re size the font.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Copy formatting.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Change paragraph alignment.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Copy and review text formats.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Set line spacing.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Apply Styles to paragraphs.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert special characters.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert characters by using.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert and edit objects.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Edit an object.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert SmartArt graphics.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Insert WordArt.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Mail merge and fields.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Perform a mail merge.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Work with fields.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Language Bar.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Turn on East Asian Input Method.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Function key reference.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Shift Function keys.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Ctrl Function keys.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Ctrl Shift Function keys.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Alt Function keys.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Alt Shift Function keys.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../../Content/Word_keystrokes_list/Ctrl Alt Function keys.htm"
+      TimeStamp="02/12/2016 21:27:12" />
+    <Url
+      Source="../TOCs/Word_keystrokes_list.fltoc"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Word_keystrokes_list.flmsp"
+      TimeStamp="02/12/2016 21:27:11" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Word_keystrokes_list.css"
+      TimeStamp="02/12/2016 21:27:11" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

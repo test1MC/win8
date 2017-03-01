@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="327" MadCap:lastWidth="624">
+    <body>
+        <h4 MadCap:conditions="Primary.Mac_Version">Adding DBT to the Dock (with VoiceOver)</h4>
+        <p MadCap:conditions="Primary.Mac_Version">If you want to make it more convenient to run DBT, you can add it to your Dock, as follows:</p>
+        <p MadCap:conditions="Primary.Mac_Version">1. From within the Finder, press Cmd+Shift+A to open your Application folder.</p>
+        <p MadCap:conditions="Primary.Mac_Version">2. Use your arrow keys or VO+arrow keys to select the DBT.app file then press Cmd+O to open it.</p>
+        <p MadCap:conditions="Primary.Mac_Version">3. Go to your Dock by pressing VO+D.</p>
+        <p MadCap:conditions="Primary.Mac_Version">4. Use VO+Left/Right arrows to find the DBT entry that will have appeared in your Dock.</p>
+        <p MadCap:conditions="Primary.Mac_Version">5. Press VO+Shift+M to bring up the context menu.</p>
+        <p MadCap:conditions="Primary.Mac_Version">6. Use Up/Down arrows to find the Options sub-menu then press Right arrow to expand it.</p>
+        <p MadCap:conditions="Primary.Mac_Version">7. Use Up/Down arrows to find the Keep In Dock menu item and press Enter if it is not already checked.</p>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="707" MadCap:lastWidth="624">
+    <head><title>Invisible Text</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Text:Invisible;Invisible:Text" />Invisible Text</h4>
+        <p>(See also: <a href="..\..\..\the_menus\MENU_LAYOUT\Layout_Generate_Table_of_Contents.htm">Table of Contents</a>)</p>
+        <p>Code Used: <span class="Code-DuxCode">[vss][vse]</span> usually with <span class="Code-DuxCode">[rpsN][rpe]</span> or within a heading style</p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p>Starts and ends text which will not appear in the braille document</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">The most common use is where you want to create an entry in the Table of Contents which does not appear in the text itself.</p>
+        <p class="Normal"><span class="hcp1"><b class="hcp2" style="font-weight: bold;">Usage in DBT:</b></span>
+        </p>
+        <p><span class="Code-DuxCode">[rps1][vss]</span><span class="Code-DuxScreen">Headache issues:</span><span class="Code-DuxCode">[vse][rpe]</span><span class="Code-DuxCode"><br />[rps2]</span><span class="Code-DuxScreen">1.</span><span class="Code-DuxScreen">Migraine - can cause dizziness</span><span class="Code-DuxCode">[rpe]</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p>In the braille text:</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;#a4 ,migra9e -- c cause dizzi;s</p>
+        <p>But in the Table of Contents:</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,3t5ts</p>
+        <p class="Simbraille">,*apt] &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,page</p>
+        <p class="Simbraille">,h1da*e issues3 """"""""""" #c</p>
+        <p class="Simbraille">&#160;&#160;#a4 ,migra9e -- c </p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;cause dizzi;s """"""""" #c</p>
+        <p class="bold">Let us explain!</p>
+        <p>Please note that the order of these codes is important.</p>
+        <p><span class="Code-DuxCode">[rps1]</span> indicates that what follows is to appear in the Table of Contents, the "<span class="Code-DuxCode">1</span>" indicating the hierarchy level within the TOC. The <span class="Code-DuxCode"></span><span class="Code-DuxCode">[vss]</span> code starts making what follows "invisible" in print and braille in the actual main body of the document. <span class="Code-DuxCode">[vse]</span> indicates the end of the invisible text and <span class="Code-DuxCode">[rpe]</span> ends what is to be in the TOC.</p>
+        <p>The second line which uses the code <span class="Code-DuxCode">[rps2]</span> will appear in the text, and be a level 2 TOC item.</p>
+    </body>
+</html>

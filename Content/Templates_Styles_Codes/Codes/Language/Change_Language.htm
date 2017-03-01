@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="1048" MadCap:lastWidth="598">
+    <head><title>Change Language</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Language:Change;Change:Language" />Change Language</h4>
+        <p class="Normal"><b>What you need to know first:</b> Check whether or not the base language of your document supports the <span class="Code-DuxCode">[lng~...]</span> code, and if so, what language changes are permitted. You will find details of supported languages in <a href="..\..\..\language_translation_tables\translation_tables.htm">Language Translation Tables</a>.</p>
+        <p><b>Code Used:</b> <span class="Code-DuxCode">[lng~X]</span></p>
+        <p class="Keystroke">Keystroke: (None) </p>
+        <p>Note: The "X" in the code above is to be replaced by a specific language table designator.</p>
+        <p class="Normal"><b>What does it do?</b>
+        </p>
+        <p class="Normal">It switches language tables from the base language of the document to another.</p>
+        <p class="Normal"><b>Where would it be used?</b>
+        </p>
+        <p class="Normal">Anywhere a language change is required. The <span class="Code-DuxCode">[lng~X]</span> codes are commonly inserted into documents imported from Microsoft Word, when the language tagging features of Word have been used.</p>
+        <p class="Normal">Note: The code <span class="Code-DuxCode">[lng]</span> with no table designator reverts back to the base language of the document template.</p>
+        <h5>Usage in DBT: (This example uses a base language of English)</h5>
+        <p class="Normal" style="font-weight: normal;"><span class="Code-DuxCode">[es~h1.]</span>English-French Vocabulary<span class="Code-DuxCode">[ee~h1.]</span></p>
+        <p class="Normal" style="font-weight: normal;"><span class="Code-DuxCode">[es~para.]</span>the City of Manchester - <span class="Code-DuxCode">[lng~fr]</span>la ville de <span class="Code-DuxCode">[lng]</span>Manchester<span class="Code-DuxCode">[ee~para.]</span></p>
+        <p class="Normal" style="font-weight: normal;"><span class="Code-DuxCode">[es~para.]</span>city break (holiday) - <span class="Code-DuxCode">[lng~fr]</span>court séjour m en ville<span class="Code-DuxCode">[ee~para.]</span></p>
+        <p class="Normal" style="font-weight: normal;"><span class="Code-DuxCode">[es~para.][lng]</span>city children - <span class="Code-DuxCode">[lng~fr]</span>enfants des (grandes) villes<span class="Code-DuxCode">[ee~para.]</span></p>
+        <p class="Normal"><b>Braille Produced:</b>
+        </p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,5gli%-,fr5* &#160;&#160;&#160;&#160;&#160;&#160;#a</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,vocabul&gt;y</p>
+        <p class="Simbraille">&#160;&#160;! ,c;y ( ,man*e/] -- la</p>
+        <p class="Simbraille">ville de ,man*e/]</p>
+        <p class="Simbraille">&#160;&#160;c;y br1k 7holi"d7 -- court</p>
+        <p class="Simbraille">s=jour m en ville</p>
+        <p class="Simbraille">&#160;&#160;c;y *n -- enfants des</p>
+        <p class="Simbraille">7grandes7 villes</p>
+    </body>
+</html>

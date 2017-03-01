@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="2" MadCap:lastHeight="723" MadCap:lastWidth="731">
+    <head><title>First Displayed</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Numbering:Page, First Displayed;Page:Numbering:First Displayed" />First Displayed</h4>
+        <p class="Normal"><b>Code Used:</b> <span class="Code-DuxCode">[svpfdN]</span></p>
+        <p class="Keystroke">
+            <MadCap:keyword term="Page:Numbering" />Keystroke: Menu - Document: Page Numbering. "First page number to display"</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">There are occasions when one does not wish to number the first few pages of a document.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">To hide page numbers until the page number reaches N</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="CourierPara"><span class="Code-DuxCode">[svpfd3]</span><span class="Code-DuxScreen">This would be page 1.</span><span class="Code-DuxCode"><br />[pg]</span><span class="Code-DuxScreen">This would be page 2.</span><span class="Code-DuxCode"><br />[pg]</span><span class="Code-DuxScreen">Page 3 is numbered.</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,? wd 2 page #a4</p>
+        <p class="PageBreak">---------- page break ----------</p>
+        <p class="Simbraille">,? wd 2 page #b4</p>
+        <p class="PageBreak">---------- page break ----------</p>
+        <p class="Simbraille">,page #c is numb]$4 &#160;&#160;&#160;&#160;&#160;#c</p>
+        <p class="bold">Let us explain!</p>
+        <p class="Normal">Note that this code does not re-start page numbering.</p>
+        <p class="bold">For the more technical:</p>
+        <p class="Normal"><span class="Code-DuxCode">[svpfdN]</span> -- Set page number first displayed to N. Pages whose page numbers are less than N will not be explicitly numbered. The initial value is normally 1; the default for the command is 1.</p>
+    </body>
+</html>

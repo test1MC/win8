@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Conditional_Eject" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="3" MadCap:lastHeight="681" MadCap:lastWidth="624">
+    <head><title>Conditional Eject</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Conditional:Page Eject;Page:Conditional Eject;Paragraph:Conditional eject" />Conditional Eject</h4>
+        <h6>Also known as: Widows and Orphans</h6>
+        <p>(See also: <a href="Conditional_Eject_or_Skip_Line.htm">Conditional Eject or Skip Line</a>)</p>
+        <p class="bold">Code Used: <span class="Code-DuxCode">[cpN]</span></p>
+        <p>Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p>If fewer than a specified number of lines are available after this code on the page, then begin the text on a new page. Otherwise break to a new line.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">This can be useful in preventing paragraphs from being split in awkward places. For example, you may not wish the first line of a paragraph to be on its own at the foot of a page.</p>
+        <p class="Normal"><b>Usage in DBT:</b> (Let us assume the following is towards the end of a page)</p>
+        <p>Contact details follow. <span class="Code-DuxCode">[cp2][es~para.]</span>The telephone number for Duxbury's Technical support department is: +1-978-692-3000.[ee~para.]</p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">&#160;&#160;,3tact details foll[4</p>
+        <p class="PageBreak">----------- blank line -----------</p>
+        <p class="PageBreak">----------- blank line -----------</p>
+        <p class="PageBreak">----------- page break -----------</p>
+        <p class="Simbraille">&#160;&#160;,! teleph"o numb] = &#160;&#160;&#160;&#160;&#160;&#160;#b</p>
+        <p class="Simbraille">,duxbury's ,te*nical support</p>
+        <p class="Simbraille">de"p;t is3- plus</p>
+        <p class="Simbraille">#a-igh-fib-cjjj4</p>
+        <p class="bold">Let us explain!</p>
+        <p>The <span class="Code-DuxCode">[cp2]</span> effectively says, If there are two lines or fewer left on the braille page, then continue on a new page. </p>
+    </body>
+</html>

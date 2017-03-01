@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="800" Height="800" Padding="20px" PageSize="Letter" PaddingLeft="0.5in" PaddingRight="0.75in" PaddingTop="1in" PaddingBottom="1in" PageType="normal">
+        <Frame Flow="header" Height="0.3125in" Anchors="Left,Right,Top" X="0px" Y="-0.7291667in" ColumnCount="1" Bottom="9.416667in" Right="0px" Width="696px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="Header">Duxbury Braille Translator - The Menus.</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Height="0.25in" Anchors="Left,Right,Bottom" Bottom="-73px" Y="9.510417in" BorderTopStyle="solid" BorderTopWidth="1pt" BorderTopColor="#000000" TextAlign="center" VerticalAlign="middle" Right="0px" X="0px" Width="7.25in">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="Footer">- <MadCap:variable xhtml:name="System.PageNumber" /> -</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" Right="4px" Bottom="-30px" X="1px" Y="-35px" Width="691px" Height="929px">
+        </Frame>
+    </Page>
+</PageStyles>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="DBT;Uncontracted;CONFIG.SYS;CorelDRAW;CR;LF;Ctrl;curreny;DBTDOCS;UNCONTRACTED;w;Runover;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;n;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rps;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;dizziness[rpe;dizzi;lg~TEXT;lg~john's;z;Code(s;ifbrl;ifprt;sibrl;siimp;availa#;line[;ea;table(s;indP;Apples[;opp+;ind;hl;ki;stL;Smith[l;Lawns[l;TOWN[l;pg;L;ie;Line(s;skL;lines[;m;svprgN;agraph;amet;det;posi;j;l;h[;brl;reckon$;svprg;n[;Lawns[;p~;Description[fr;Windows[fr;DOS[fr;descrip;duxbury;used.as;ISP;the_newbie;somewhere.com;joe;alo.com;the_man_at_the_top;ontheinternet.co.uk;Road[;gf;bunt+;ampton;nn#b;ee;ctb;stb;Afternoon[;Lessons[;d;morn+;afn;mon;tues;w$nes;stbS;F~X;etb;ftb;Bal;Descr;Debit.Credit.Balance;cr$it;bal.e;sal;dbt;svdac~x;U.K.;svdac~X;svdac~;es~E;ee~E;inkprint;f~-;svles;lec;pv;pgN;ta;ory;svpnpN;pvN~X;tls;Appendix[tls;a#a;svantN" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="924" MadCap:lastWidth="624">
+    <head><title>Headers (Anticipatory)</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Header:Anticipatory;Anticipatory:Headers" />Headers (Anticipatory)</h4>
+        <p class="bold">NOTE: This Layout code is only normally applicable in certain countries. It is NOT, for example, officially allowed by BANA.</p>
+        <p>(See also: <a href="Codes_Headers.htm">Headers</a></p>
+        <p><b>Code Used:</b> <span class="Code-DuxCode"><span class="Code-DuxCode">[svantN]</span> [svrhpN] [tls] [tle]</span></p>
+        <p>Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p>It facilitates a change of Running Header and/or Reference (Print) Page Number (RPN) on the page in which a new Header and/or RPN occurs later in the document.</p>
+        <p class="Normal"><span class="Code-DuxCode">[svantN]</span> is normally placed in the <span class="Code-DuxCode">&lt;a href="..."&gt;</span>initial style <span class="Code-DuxCode">&lt;/a&gt;</span> of a template where appropriate.</p>
+        <p class="bold">Where would it be used?</p>
+        <p>In the braille layout rules of some countries, a Running Header and/or RPN, may change "mid-page", so to speak, and is required to be changed on that same page. Without the use of the <span class="Code-DuxCode">[svant...]</span> Code with the previous Header, regardless of where the Header Code is placed, it will ONLY take effect on the NEXT page.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><b><span class="Code-DuxCode">[svant3][svrhp3]</span></b>
+            <br /><span class="Code-DuxCode">[tls]</span><span class="Code-DuxScreen">Introduction</span><span class="Code-DuxCode">[tle]</span>
+            <br /><span class="Code-DuxCode">[es~para.]</span><span class="Code-DuxScreen">Our text begins here and flows on to more pages where it continues for let us say half a page. However, note how the Header changes mid page.</span><span class="Code-DuxCode">[ee~para.]<br />[pg]<br />[es~para.]</span><span class="Code-DuxScreen">This is continued text from the first page with the Header "Page Numbering".</span><span class="Code-DuxCode">[ee~para.]</span>
+            <br /><span class="Code-DuxCode">[lea]</span><span class="Code-DuxScreen">1<br />[tls]Page Numbering</span><span class="Code-DuxCode">[tle]<br />&lt;es~h2.&gt;</span><span class="Code-DuxScreen">Print Page Indicators</span><span class="Code-DuxCode">&lt;ee~h2.&gt;</span>
+            <br /><b><span class="Code-DuxCode">[es~para.]</span><span class="Code-DuxScreen">Since we have introduced the [svant] code, you will see that the Header Code and text ("Page Numbering") which was placed in the middle of this page, has also appeared in the Header line above.</span><span class="Code-DuxCode">[ee~para.]<br />[pg]</span></b><b><span class="Code-DuxCode"><br />[es~para.]</span></b><b><span class="Code-DuxScreen">This is text on the third page page.</span></b><b><span class="Code-DuxCode">[ee~para.]</span></b>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,9troduc;n &#160;&#160;&#160;&#160;&#160;&#160;&#160;#a</p>
+        <p class="Simbraille">&#160;&#160;,\r text 2g9s "h &amp; fl[s on<br />6m pages ": x 3t9ues = let u<br />say half a page4 ,h["e1 note<br />h[ ! ,h1d] *anges mid next</p>
+        <p class="Simbraille">page page4</p>
+        <p class="PageBreak">------------ Page Break ------------</p>
+        <p class="Simbraille">#a &#160;&#160;&#160;&#160;&#160;,page ,numb]+ &#160;&#160;&#160;&#160;&#160;&#160;#b &#160;&#160;&#160;</p>
+        <p class="Simbraille">&#160;&#160;,? is 3t9u$ text f ! f/ page<br />b )! ,h1d] 8,page ,numb]+04</p>
+        <p class="Simbraille">----------------------------#a</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;,pr9t ,page ,9dicators</p>
+        <p class="Simbraille">&#160;&#160;,s9ce we h 9troduc$ !<br />,7svant7' code1 y w see t !<br />,h1d] ,code &amp; text 78,page<br />,numb]+07 : 0 plac$ 9 ! mi4le<br />( ? page1 has al appe&gt;$ 9 !<br />,h1d] l9e abv4</p>
+        <p class="PageBreak">------------ Page Break ------------</p>
+        <p class="Simbraille">a#a &#160;&#160;&#160;&#160;,page ,numb]+ &#160;&#160;&#160;&#160;&#160;&#160;#b</p>
+        <p class="Simbraille">&#160;&#160;,? is text on ! ?ird brl<br />page page4</p>
+    </body>
+</html>

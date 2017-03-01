@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="581" MadCap:lastWidth="624" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Global: Formatted Braille Importer...</title>
+        <link rel="StyleSheet" href="../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h3>
+            <MadCap:keyword term="Formatted Braille Importer;Global:Formatted Braille Importer" />Global: Formatted Braille Importer...</h3>
+        <p class="Keystroke" MadCap:conditions="Primary.Windows_Version">Keystroke: <span class="Keyboard">b</span> from Global menu</p>
+        <p class="Keystroke" MadCap:conditions="Primary.Mac_Version">Keystroke: None</p>
+        <p MadCap:conditions="Primary.Not_in_Print_Docs">See also: <a href="../../brf_files.htm">BRF files - Importing</a></p>
+        <p MadCap:conditions="Primary.The_Menus">See also: BRF files - Importing in the on-line Help.</p>
+        <p align="center" MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_formatted_braille_importer.jpg" style="width: 608px; height: 427px;" border="0" alt="Image shows the Global: Formatted Braille Imported dialog described here." MadCap:conditions="Primary.Windows_Version" title="Image shows the Global: Formatted Braille Imported dialog described here." />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_formatted_braille_importer_mac.jpg" MadCap:conditions="Primary.Mac_Version" title="Image shows the Global: Formatted Braille Imported dialog described here." alt="Image shows the Global: Formatted Braille Imported dialog described here." style="width: 458px;height: 516px;" />
+        </p>
+        <p><b>Note:</b>
+            <MadCap:keyword term="BRF Files (Opening)" /> To open a .brf file in DBT, please use the normal <MadCap:conditionalText MadCap:conditions="Primary.Print_Only"><MadCap:xref href="../MENU_FILE/file_open.htm">"File: Open..." on page&#160;1</MadCap:xref></MadCap:conditionalText><a href="../MENU_FILE/file_open.htm" MadCap:conditions="Primary.HTML_Only">File: Open</a> command.</p>
+        <p>The Formatted Braille Importer dialog is used to inform DBT about the dimensions and page numbering conventions of the braille files you wish to import. DBT can import BRF files from older DBT versions, as well as PokaDot files and other formatted braille files. Note that DBT uses these settings for <u>import analysis only</u>. In other words, the incoming file will be reformatted to the dimensions set in the Global Embosser Setup dialog or template, using the numbering scheme set in the Document Menu, not in its original format as described here.</p>
+        <p>There are 11 Controls in this dialog.</p>
+        <p>The <MadCap:conditionalText MadCap:conditions="Primary.The_Menus">Check Box</MadCap:conditionalText><a href="../../POPUPS/check_box.htm" target="_popup" MadCap:conditions="Primary.Not_in_Print_Docs">Check Box</a>, <b>Read formatted braille without interpretation</b>. When this is checked, most of the other controls on the dialog are disabled.</p>
+        <p>Next are two groups of <MadCap:conditionalText MadCap:conditions="Primary.The_Menus">Radio Buttons</MadCap:conditionalText><a href="../../POPUPS/radio_buttons.htm" target="_popup" MadCap:conditions="Primary.Not_in_Print_Docs">Radio Buttons</a> to tell DBT in what corners it can expect to find braille page numbers on even and odd pages, respectively.</p>
+        <p>The next two radio button groups work the same as the first two, but they refer to the print page, as used in Textbook braille format. </p>
+        <p>Next are two additional radio button groups in which you can tell DBT where it will find running headers and running footers, respectively.</p>
+        <p>The final two controls are text fields to tell DBT the dimensions, in characters, of the formatted ASCII braille file. The lines per page is a maximum value (which should be set higher than the actual format) while the cells per line should be set for the exact width of the pages in your BRF, or equivalent, file.</p>
+        <p><b>Note:</b> By their nature, formatted (ASCII) braille files are stripped of all format and translation codes. To get the file ready for editing, DBT interprets the format and adds codes accordingly. Because an interpretive process can go wrong, we recommend, whenever possible, that you use the source TXT or WP file instead of the BRF for importing.</p>
+    </body>
+</html>

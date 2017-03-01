@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="">
+  <TocEntry
+    Title="Title Page - DBT for Mac Installation"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Title_Page_Installation_mac.htm"
+    StartSection="true"
+    PageNumberReset="continue"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/Cover_Print.flpgl"
+    conditions="Primary.Mac_Version" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    BreakType="pageLayout"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Blank_Page.flpgl" />
+  <TocEntry
+    Title="Print_TOC"
+    Link="/Content/PRINT_VERSIONS/Print_TOC.htm" />
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Intro_Install_Reg_Act.htm"
+    conditions="Primary.Mac_Version" />
+  <TocEntry
+    Title="Mac Installation Steps"
+    Link="/Content/PRINT_VERSIONS/Installation+Setup/Basic_Installation_Steps.htm"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl"
+    conditions="Primary.Mac_Version" />
+  <TocEntry
+    Title="Registration and Activation Wizard"
+    Link="/Content/activation_wizard_help/m_WelcomeWhatIsActivation.htm">
+    <TocEntry
+      Title="Working with a Screen Reader"
+      Link="/Content/activation_wizard_help/m_ScreenRdr.htm"
+      StartSection="false"
+      BreakType="chapter"
+      PageNumberReset="continue"
+      conditions="Primary.Windows_Version" />
+    <TocEntry
+      Title="Working with VoiceOver"
+      Link="/Content/activation_wizard_help/m_ScreenRdr_Mac.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      conditions="Primary.Mac_Version"></TocEntry>
+    <TocEntry
+      Title="Main Function Screen"
+      Link="/Content/activation_wizard_help/m_MainPage.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue" />
+    <TocEntry
+      Title="Registration"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Registration.flpgl"
+      Link="/Content/activation_wizard_help/m_RegPermissionPg.htm">
+      <TocEntry
+        Title="Registration, How to connect to Duxbury Systems Support"
+        Link="/Content/activation_wizard_help/m_RegisterIntroPg.htm" />
+      <TocEntry
+        Title="Registration, User Contact Information"
+        Link="/Content/activation_wizard_help/m_RegUserInfoPg.htm" />
+      <TocEntry
+        Title="Registration, User Email Information"
+        Link="/Content/activation_wizard_help/m_RegEmailInfoPg.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Activation"
+      Link="/Content/activation_wizard_help/m_activation.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Activation.flpgl">
+      <TocEntry
+        Title="Activation with or without the Internet"
+        Link="/Content/activation_wizard_help/m_ActivateSelectPg.htm" />
+      <TocEntry
+        Title="Activation Options without the Internet"
+        Link="/Content/activation_wizard_help/m_ActivateManualOptsPg.htm" />
+      <TocEntry
+        Title="Entering Activation Data"
+        Link="/Content/activation_wizard_help/m_ActivationDataPg.htm" />
+      <TocEntry
+        Title="Data Summary Page"
+        Link="/Content/activation_wizard_help/m_DataSummaryPg.htm" />
+      <TocEntry
+        Title="Sending Duxbury an Email"
+        Link="/Content/activation_wizard_help/m_SendEmailPage.htm" />
+      <TocEntry
+        Title="Sending a Fax"
+        Link="/Content/activation_wizard_help/m_SendFaxPage.htm" />
+      <TocEntry
+        Title="Activation Code Page (Manual Activation)"
+        Link="/Content/activation_wizard_help/m_ActivationCodePg.htm" />
+      <TocEntry
+        Title="45-Day Trial (DBT only)"
+        Link="/Content/activation_wizard_help/m_45DayTrial.htm"
+        conditions="Primary.Windows_Version" />
+    </TocEntry>
+    <TocEntry
+      Title="Sharing a Multi-user License"
+      Link="/Content/activation_wizard_help/m_sharing.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      conditions="Primary.Windows_Version">
+      <TocEntry
+        Title="To Host a Network-Shared License"
+        Link="/Content/activation_wizard_help/m_ShareIntroPg.htm"
+        conditions="Primary.Windows_Version" />
+      <TocEntry
+        Title="Installing the Shared License Service"
+        Link="/Content/activation_wizard_help/m_ShareExtrasPg.htm"
+        conditions="Primary.Windows_Version" />
+      <TocEntry
+        Title="Connecting to the Network License Server"
+        Link="/Content/activation_wizard_help/m_ConnectPage.htm"
+        conditions="Primary.Windows_Version" />
+    </TocEntry>
+    <TocEntry
+      Title="De-activation"
+      Link="/Content/activation_wizard_help/m_deactivation.htm"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Deactivation.flpgl">
+      <TocEntry
+        Title="Deactivation Options"
+        Link="/Content/activation_wizard_help/m_DeactivSelectPg.htm"
+        StartSection="false" />
+      <TocEntry
+        Title="Deactivation by Telephone"
+        Link="/Content/activation_wizard_help/m_DeactivTelePage.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Troubleshooting"
+      Link="/Content/activation_wizard_help/m_troubleshooting.htm"
+      BreakType="chapter"
+      StartSection="true"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Troubleshooting.flpgl">
+      <TocEntry
+        Title="In Case of a Problem"
+        Link="/Content/activation_wizard_help/m_OPErrorPage.htm" />
+      <TocEntry
+        Title="Diagnosing Activation Problems"
+        Link="/Content/activation_wizard_help/m_DiagnosticsPage.htm"></TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Final Page"
+      Link="/Content/activation_wizard_help/m_OpDonePage.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Index"
+    Link="/Content/PRINT_VERSIONS/Print_The_Menus/Print_Index.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Index.flpgl" />
+  <TocEntry
+    Title="BlankPage"
+    Link="/Content/PRINT_VERSIONS/BlankPage.htm"
+    BreakType="chapter"
+    StartSection="true"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Blank_Page.flpgl" />
+  <TocEntry
+    Title="Back_Page"
+    Link="/Content/PRINT_VERSIONS/Back_Page.htm"
+    BreakType="chapter"
+    PageType="left"
+    StartSection="true"
+    PageNumberReset="continue" />
+</CatapultToc>

@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="25813" MadCap:lastWidth="506">
+    <head>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>What was new in previous versions?</h1>
+        <p>The following is a basic summary of additions or changes to earlier versions.</p>
+        <p>A detailed list in also available on the Internet at <a href="http://www.duxburysystems.com/dbtwhst.asp">http://www.duxburysystems.com/dbtwhst.asp</a>.</p>
+        <h2 class="chapter">What was New In <MadCap:variable name="Primary.Static Version 11.2 (SR4)"></MadCap:variable></h2>
+        <p><MadCap:variable name="Primary.Static Version 11.2 (SR4)" /> fixes several minor bugs which are serious for a few users. We recommend all users update to 11.2 SR4 to prevent possible future frustration.</p>
+        <h2 class="chapter">What was New In <MadCap:variable name="Primary.Static_Version_11.2_(SR3)" /></h2>
+        <p>This Service Release includes the following improvements, many of which are significant for some users:</p>
+        <h5>DAISY/NISO Importer</h5>
+        <ul>
+            <li>A flaw in the DAISY/NISO importer in DBT 11.2 SR2 causing the text of an imported document to be repeated has been fixed.</li>
+        </ul>
+        <h5>JAWS Scripts</h5>
+        <ul>
+            <li>The JAWS script files have been updated to set refreshable braille to six dots whenever you are editing a braille document.</li>
+        </ul>
+        <h5>Word File Importer</h5>
+        <ul>
+            <li>The importation of some space Unicode characters U+2000-200A has been improved. If a thin space (U+2009) is used between groups of digits, this becomes a dot 5 in UEB braille.</li>
+            <li>The importation of some Arabic presentation characters has been improved.</li>
+            <li>Alt Text for MathType objects is now imported in .docx files.</li>
+            <li>DBT more reliably imports (single line) headers and footers from .docx files.</li>
+            <li>When using Braille or Simbraille fonts, all spaces will be retained. This enables simple braille graphics to be produced in Word, which import faithfully in to DBT. (See <a href="../working_with_word/simple_braille_graphics.htm">Simple Braille Graphics</a> for more information/).</li>
+            <li>Whenever the .docx importer places text in a brlinline style, it will also mark that text to preserve all spacing. All spaces in the .docx file should be preserved in the DBT print file.</li>
+            <li>DBT's .doc file importer now avoids cutting short Alt Text.</li>
+            <li>Inserting <span class="Code-DuxCode">[lng]</span> codes (to revert to a document's base language) when importing .docx files now works correctly.</li>
+            <li>Improvements have been made in the importing of matrices, determinants, systems of simultaneous equations, piecewise-defined functions, and the like via MathType.</li>
+        </ul>
+        <h5>BANA Template</h5>
+        <ul>
+            <li>The Susan Christensen BANA templates supplied with DBT have been updated by her to improve support for the listed table format and direct braille entry. This update includes the BANA Braille 2014 template for Word and the three DBT templates that have BANA in their name.</li>
+        </ul>
+        <h5>Unified English Braille (UEB) Literary </h5>
+        <ul>
+            <li>The various English translators have been updated to treat a right single quote (U+2019) as an apostrophe when followed by a letter.</li>
+            <li>The English/Unified print-to-braille table has been updated to correct the contraction usage in several unusual words, notably certain words commencing with be.</li>
+            <li>The English/Unified print-to-braille translation table has been updated to correct the contraction of the word bein' in certain contexts.</li>
+            <li>The English/Unified print-to-braille translation table has been updated to improve the passage/word choice logic for certain unusual sequences of fully capitalized words.</li>
+        </ul>
+        <h5>Unified English Braille (UEB) Mathematical and Technical</h5>
+        <p>A great deal of work has been done (and is still on-going) in connection with "UEB Guidelines for Technical Material". A slightly revised 2014 version of this publication is due to be released soon, and will be available from <a href="http://www.iceb.org/ueb.html">http://www.iceb.org/ueb.html</a>.</p>
+        <p>Use of MathType <MadCap:variable name="Primary.MathType Current Cersion" />, rather than earlier versions, improves DBT MathType imports of Word documents with math that was entered with Equation Editor instead of MathType. With earlier versions of MathType, the expressions would come into DBT as displayed math on a separate line even when they are meant to be embedded in the text.</p>
+        <p>A trial copy of MathType <MadCap:variable name="Primary.MathType Current Cersion" /> is included on the <MadCap:variable name="Primary.Version_Short_DBT" /> CD. Please note that you may only upgrade an existing 6.9 at no charge. You may also obtain it from here [<a href="http://www.duxburysystems.com/documentation/mathtype.asp" title="You must be running Math|Type 6.9 for this free update." alt="You must be running Math|Type 6.9 for this free update.">Download 6.9</a>]</p>
+        <p>Please keep a look out for a newer version of MathType which, at the time of this release, was not available.</p>
+        <p>If you are running an earlier version of MathType and wish to upgrade, please contact <a href="http://www.dessci.com/en/products/mathtype?utm_nooverride=1&amp;gclid=CLqeia-JncACFStk7AodSgYAnw">Design Science</a>.</p>
+        <p>We would also like to formally and sincerely thank Design Science, developers of MathType for their continued co-operation and support.</p>
+        <ul>
+            <li>The English/Unified print-to-braille translation table has been updated to support the code [big] for handling enlarged signs of enclosure, and also to support U+2257 (ring over equals).</li>
+            <li>Work is on-going with Matrices, but there have been improvements in this area.</li>
+            <li>The English/Unified translation tables have been updated to support several technical symbols.</li>
+            <li>The English/Unified print-to-braille translation table has been updated to recognize codes <span class="Code-DuxCode">[sqrtsN]</span> and <span class="Code-DuxCode">[sqrteN]</span> as equivalent to <span class="Code-DuxCode">[sqrts]</span> and <span class="Code-DuxCode">[sqrte]</span> respectively, and to add support for certain uncommon Unicode symbols.</li>
+            <li>The English/Unified print-to-braille translation table has been updated to correct the output for U+2197 (northeast arrow).</li>
+        </ul>
+        <h5>Nemeth Math.</h5>
+        <ul>
+            <li>When translating Nemeth Code from braille to print, default numeric subscripts are now supported.</li>
+            <li>When translating from print to Nemeth Code braille, a number at the baseline level that immediately follows a letter now gets a preceding dot 5 as desired.</li>
+        </ul>
+        <h5>Tabular Material</h5>
+        <ul>
+            <li>Shift-Tab and Tab key navigation through tables with incomplete rows is working more smoothly.</li>
+            <li>Minimum guide dots for tabular material (related columns) has been set to two.</li>
+            <li>There is an adjustment to the number of header rows and header columns presumed for a table when no header column or row count is declared in the htbs code, as is generally the case for any newly-imported table. With the change, tables of related columns will continue to presume one header row only if there are at least two rows in the table. They will continue to presume one header column only if each row contains at least two columns. In all other cases, zero header rows/columns are assumed.</li>
+        </ul>
+        <h5>DBT Styles and Codes</h5>
+        <ul>
+            <li>DBT will more reliably reload the initial style if it is added, removed, or redefined.</li>
+            <li>There is a new code implemented in DBT: <span class="Code-DuxCode">[svpalS:N]</span>. It is intended to allow for variations to BANA Braille. See the codes reference for the details.</li>
+            <li>A problem with the <span class="Code-DuxCode">[mfce]</span> code has been fixed. The problem prevented resetting behaviors related to runovers.</li>
+        </ul>
+        <h5>Embossers and Embossing</h5>
+        <ul>
+            <li>Interpoint 55 - DBT produces *.x55 files, and these files can be directed to the Interpoint 55 with the Wprint55 program. (<a href="../embossers_and_embossing/Embossers_elt_info/ztech_interpoint_55.htm">Click here for more details</a>)</li>
+            <li>Cosmo embossing now uses a background thread. it is a convenience because it is possible to get back to editing sooner. However, it leaves no way to cancel embossing other than to exit DBT. Exiting DBT will cancel Cosmo embossing without warning.</li>
+            <li>ViewPlus Tiger embossers are now capable of being switched between single and double-sided from within DBT. (See <a href="../embossers_and_embossing/Embossers_elt_info/ztech_viewplus.htm">Embossers and Embossing</a> Topic for more details)</li>
+            <li>Viewplus Premier with Ink Connect is now supported.</li>
+        </ul>
+        <h5>Language Improvements</h5>
+        <p>Language development is an on-going process, and the introduction of Unified English Braille in some countries, South Africa for example, has resulted in changes being made to languages used within the country.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/Basic.css');border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;width: 100%;margin-left: auto;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <caption>List of main changes</caption>
+            <col style="width: 69px;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">Country</th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/armenia.gif" alt="Armenian Flag" title="Armenian Flag" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">Armenian now supporting the U+055B Armenian emphasis character. In ink-print, this is a single character at the end of a word.</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/azerbai.gif" title="Azerbaijani Flag" alt="Azerbaijani Flag" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Azerbaijani: question mark and curling quotes have been fixed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/china.gif" title="Chinese Flag" alt="Chinese Flag" style="width: 65px; height: 44px;" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Cantonese now handling English text mixed with Cantonese.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/dk.gif" title="Danish Flag" alt="Danish Flag" style="width: 63px; height: 47px;" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p> Danish now handles lower quote marks.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/netherlands.gif" title="Dutch Flag" alt="Dutch Flag" style="width: 64px;height: 43px;" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">We now support the Dutch 2005 braille revision.</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/italy.gif" title="Italian Flag" alt="Italian Flag" style="width: 63px; height: 40px;" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Italian braille-to-print now produces the at-sign correctly</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/taiwan.gif" style="width: 63px; height: 41px;" title="Taiwanese Flag" alt="Taiwanese Flag" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>DBT now supports the Taiwan variation for Mandarin braille.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <img src="../Resources/Images/flags/Turkey.gif" title="Turkish Flag" alt="Turkish Flag" style="width: 63px; height: 41px;" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Turkish letter sign and uncontracted Turkish now function properly.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <img src="../Resources/Images/flags/southafrica.gif" title="Flag of South Africa" alt="Flag of South Africa" style="width: 64px; height: 42px;" class="flag" />
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">South Africa. The Venda table has been updated. A stub braille-to-print table now uses UEB instead of older forms of English braille. Also Swati and Ndebele each have a single contraction fixed.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>What was new in DBT 11.2 SR2</h2>
+        <p>This web Service Release included the following improvements, a few of which are significant for some users:</p>
+        <h5 class="normal">Word 2007, 2010, 2013</h5>
+        <ul>
+            <li>The importer for docx files has been improved to allow better recognition of character fonts. Superscript and subscripts are again properly recognized.</li>
+            <li>
+                <p>Braille fonts and Courier (and Consolas) fonts are recognized.</p>
+            </li>
+            <li>Bold, Italic, and Underline recognized when applied through a character style, unless the character style is mapped into a DBT style.</li>
+            <li>The latest BANA Template for Word has been included.</li>
+        </ul>
+        <h5 class="normal">Unified English Braille (UEB)</h5>
+        <p>UEB will begin being formally taught in UK schools in September this year (2014). Users are therefore advised to ensure that upgrades have been applied to older versions.</p>
+        <ul>
+            <li>There have been a number of very minor changes made to the UEB tables in this release due to clarification of some rules by ICEB.</li>
+            <li>A new template, named "English (Unified) - UK formatting" has been added to simplify the production of UEB braille while using current UK formatting conventions. The template parallels the existing "English (British) - with capitals" template in that it contains all of the same style names. Most styles are identically defined, but where necessary style definitions have been adapted for UEB. In particular, the &lt;acronym&gt; style has been set to null since no special treatment is required for acronyms in UEB.</li>
+            <li>A new template, named "English (Unified) - BANA" has been added to simplify the production of UEB braille while using BANA formatting conventions. The template parallels the existing "English (American Textbook DE) - BANA" template in that it contains all of the same style names, thus enabling production using Word in the same manner as now set up for production of pre-UEB American braille following BANA guidelines. Most styles are identically defined, but where necessary style definitions have been adapted for UEB. Styles have also been added for script, Maori, Hawaiian and Portuguese.</li>
+        </ul>
+        <h5 class="normal">Mathematics</h5>
+        <p>We continue to improve DBT's math braille capabilities, and are grateful to those who have helped us in this regard.</p>
+        <ul>
+            <li>In MathType imports, we fixed some issues which caused extra blank lines.</li>
+            <li>Handling of over/under math characters has been enhanced.</li>
+            <li>Additional characters and a few more tabular structures are now supported.</li>
+            <li>In LaTeX imports we have added support for \widetilde.</li>
+            <li>For UEB math (not used in the United States), there is an issue about inserting optional spaces around signs of comparison for beginners. Please see the following link for details: <a href="http://www.duxburysystems.com/documentation/ueb_math_spacing.htm" title="http://www.duxburysystems.com/documentation/ueb_math_spacing.htm " alt="http://www.duxburysystems.com/documentation/ueb_math_spacing.htm ">http://www.duxburysystems.com/documentation/ueb_math_spacing.htm </a></li>
+        </ul>
+        <h5 class="normal">Embossers and Embossing</h5>
+        <p>Support for A5 and A5 landscape has been added to the Everest (V3 and V4)</p>
+        <h5 class="normal">Languages</h5>
+        <table border="1" style="width: 100%;margin-left: auto;margin-right: auto;" summary="Language Details">
+            <caption>List of main changes</caption>
+            <col width="137px" />
+            <col style="width: 363px;" />
+            <thead>
+                <tr>
+                    <th>National Flag(s)</th>
+                    <th>Improvements Made</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/croatia.gif" alt="Flag of Croatia" width="44px" height="29px" border="1" title="Flag of Croatia" class="flag" />
+                    </td>
+                    <td>The Croatian translator now meets all standards for contracted and uncontracted braille.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/dk.gif" title="Danish Flag" alt="Danish Flag" style="width: 38px; height: 29px;" class="flag" />
+                    </td>
+                    <td>Danish: the braille-to-print translator has been fixed for four contractions, to match the print-to-braille Danish translator.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/Philippines.gif" style="width: 52px; height: 26px;" title="Flag of The Philippines" alt="Flag of The Philippines" class="flag" />
+                    </td>
+                    <td>Updated Filipino and Tagalog to deal with a list of words which did not contract correctly.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/italy.gif" title="Italian Flag" alt="Italian Flag" class="flag" />
+                    </td>
+                    <td>Added automatic hyphenation for Italian. Also respecting emphasis on braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/japan.gif" title="Flag of Japan" alt="Flag of Japan" style="width: 44px;height: 31px;" class="flag" />
+                    </td>
+                    <td>We have revised both translators for Japanese. We have also improved import of Japanese punctuation, and added a better screen display for Japanese transcribers.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/southafrica.gif" title="Flag of South Africa" alt="Flag of South Africa" class="flag" style="width: 44px;height: 29px;" />
+                    </td>
+                    <td>Several tables for South African languages have been updated. They are: Nguni (Xhosa and Zulu), Ndebele, and Swati. Stub braille-to-print tables now use UEB instead of older forms of English braille.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/kenya.gif" alt="Flag of Kenya" width="45" height="30" border="1" title="Flag of Kenya" class="flag" />
+                        <img src="../Resources/Images/flags/tanzania.gif" title="Flag of Tanzania" alt="Flag of Tanzania" class="flag" />
+                    </td>
+                    <td>The Swahilli table has been modified to incorporate handling grade one Arabic script.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/russia.gif" title="Russian Flag" alt="Russian Flag" style="width: 44px; height: 29px;" class="flag" />
+                    </td>
+                    <td>We have corrected the Unicode character 04AF (y) in Tatar (a minority language in Russia).</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/Turkey.gif" title="Turkish Flag" alt="Turkish Flag" class="flag" />
+                        <img src="../Resources/Images/flags/cyprus.gif" style="width: 49px; height: 29px;" title="Flag of Cyprus" alt="Flag of Cyprus" class="flag" />
+                    </td>
+                    <td>Turkish: two modified tables and 4 new "Learning Level" tables: DBT now supports contracted Turkish (and 4 levels of partial contraction).</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>What was new in DBT 11.2 SR1</h2>
+        <p>This web Service Release included the following improvements, a few of which are significant for some users:</p>
+        <ul>
+            <li>The activation wizard has been updated to fix a problem when using a custom installation in a drive other than C.</li>
+            <li>Embossing on all Braillo non-sideways embossers is improved. (That is all Braillo embosser models without "sw" or "stitch and fold" in their model names.)</li>
+            <li>The JAWS script has been updated.</li>
+            <li>Corrected the handling of the symbol right harpoon over left harpoon (used in Chemical equations) in file imports.</li>
+            <li>Languages: Cantonese (Yue) print-to-braille has been significantly improved, and we have added a new braille-to print translator for Cantonese.</li>
+        </ul>
+        <h5>Major New Features in 11.2</h5>
+        <ul>
+            <li>DBT has always been at the forefront in implementing Unified English Braille. 11.2 contains further enhancements. DBT now has a UEB Learning Series for the UK (these are series of translators that allow learning of contractions in graduated steps).</li>
+            <li>You can now use <a href="../the_menus/MENU_GLOBAL/Global_Fonts.htm">variable width fonts</a> on the "print side" of DBT. For many languages, this is a substantial improvement.</li>
+            <li><a href="../working_with_word/BANA_Template_2014/Word_Template_BANA_Braille_2014.htm">Easier support for the new BANA 2011 Formats</a> (used in the United States)</li>
+            <li MadCap:conditions="Primary.Print_Only"><a href="../working_with_word/BANA_Template_2014/Word_Template_BANA_Braille_2014.htm">Easier support for the new BANA 2011 Formats</a> (used in the United States)</li>
+            <li MadCap:conditions="Primary.Not_in_Print_Docs"><a href="../working_with_word/SWIFT/swift.htm">New SWIFT 4.0 gives greater power and flexibility from Microsoft Word</a>
+            </li>
+            <li>Nemeth Code, Braille to Print support added. (see below)</li>
+            <li MadCap:conditions="Primary.Print_Only">Export from DBT to Microsoft Word via HTML.</li>
+            <li MadCap:conditions="Primary.Not_in_Print_Docs"><a href="../working_with_word/dbt_to_word.htm">Export from DBT to Microsoft Word via HTML.</a>
+            </li>
+            <li>DBT has new software to handle installation and activation issues (see below)</li>
+            <li>DBT now contains a Czech and a Chinese User Interface (see Global Menu, Internationalization).</li>
+            <li>Formatted Braille Files with non-US encodings can now be imported by DBT (requires *.bff extension and the use of another encoding in the Global, Internationalization Menu).</li>
+            <li MadCap:conditions="Primary.Print_Only">Smart Phone Integration with DBT.</li>
+            <li MadCap:conditions="Primary.Not_in_Print_Docs"><a href="../welcome_to_DBT/smartphone.htm">Smart Phone Integration with DBT.</a>
+            </li>
+            <li>More languages and better support of existing languages (see very end of this page).</li>
+            <li>Better Embosser support (see below)</li>
+            <li MadCap:conditions="Primary.Print_Only">Math file importation and braille math translation have been improved substantially.</li>
+            <li MadCap:conditions="Primary.Not_in_Print_Docs">Math file importation and braille math translation have been improved substantially.</li>
+            <li>Numerous Miscellaneous Changes (see below)</li>
+        </ul>
+        <h5>Installation, Activation, De-activation, and Network Installation</h5>
+        <ul>
+            <li>DBT now contains an <b>Activation Wizard</b> to guide a user through the activation process.</li>
+            <li>The Activation Wizards contains a diagnostic screen to help the user understand the activation status on a given computer.</li>
+            <li>The Activation Wizard is very aware of subtle traps made by some versions of Microsoft: the Wizard knows about variations in UAC controls and only requests elevated credentials when they are truly needed.</li>
+            <li>It is now possible to fix many activation problems without having to uninstall DBT (and then re-install DBT).</li>
+            <li>The software to manage a network installation is available as a separate download. This program is helpful in situation where another product uses a similar activation system.</li>
+            <li>The Network installation no longer requires writing text files.</li>
+        </ul>
+        <h5>Mathematics Issues</h5>
+        <ul>
+            <li>Now students or teachers can six key in Nemeth and get print math to their printer for the print reader! (See next two items)</li>
+            <li>DBT now has a translation table to translate Nemeth Code technical notation into DBT print math in a .dxp file.</li>
+            <li>DBT now has an experimental option to save a .dxp file as LaTeX. This allows DBT print math, which may have come from braille-to-print translation of UEB or Nemeth Code, to be brought into a program, like Scientific Viewer, where a sighted teacher or colleague can view the math.</li>
+            <li>In a matrix or determinant, DBT now uses the proper one space between columns instead of two.</li>
+            <li>In Nemeth Code, bold items in technical notation, such as vectors and bold numbers, are now translated with the proper Nemeth Code typeform indicator.</li>
+            <li>DBT now imports a kind of matrix from Scientific Notebook and other LaTeX files that it did not recognize before. (Previously a matrix in a LaTeX file had to use \begin{array} and \end{array} commands; now \begin{matrix} and \end{matrix} work as well.)</li>
+            <li>A large number of problems with conversion from MathType that gave the message "MathType Conversion Error: mtTRANSLATOR" have been fixed.</li>
+            <li>A large number of problems with conversion from MathType that gave the message "MathType Conversion Error: mtNOT_FOUND" have been fixed.</li>
+            <li>A problem with converting very large expressions from MathType that gave the error message "MathType Conversion Error: mtMEMORY" has been fixed.</li>
+            <li>Some problems with converting from MathType that gave extra text like "0.5em" in the document have been fixed.</li>
+            <li>In UEB print-to-braille translation, a hyphen within technical notation is now treated as a minus sign (dots 5, 36) unless that is overridden with a new [ammh] code.</li>
+            <li>When importing a hard space from MathType or LaTeX, DBT now preserves it as a hard space. This is useful for handling numbers with separated groups of digits in UEB.</li>
+            <li>Some symbols that weren't included in the MathType importer and would come up missing in the DBT file have been added. These include the expanding integral sign (a character for the integral sign which takes care of changing its size for typesetting needs).</li>
+            <li>The handling of various commands and structures in the LaTeX importer has been improved. For example, the use of \[ and \] now causes the math item to be on a line of its own in DBT; the importing of LaTeX tables has been improved.</li>
+        </ul>
+        <h5>Nemeth Braille-to-Print</h5>
+        <p>1) You start with a pure Nemeth braille document in DBT (no contractions).</p>
+        <p>How is this created?</p>
+        <ul>
+            <li>You could start a blank, braille document in DBT and key it in.</li>
+            <li>You could start a blank, braille document in DBT and clipboard something you write in notepad.</li>
+            <li>You could write on a refreshable braille device and bring the file into DBT.</li>
+        </ul>
+        <p>2) Go to the <b>Document menu</b>, then <b>Translation Table</b>. Choose <b>Math Notation (Nemeth 1972 math mode only).</b></p>
+        <p>3) Press Control-T to Translate to ink print</p>
+        <p>4) Press <b>F3</b> to Save As.</p>
+        <p>5) On the bottom selection (for file type), choose <b>LaTeX (Experimental) *.tex</b> Feel free to choose a file name and a directory that suits your needs</p>
+        <p>At this point, your work happens outside of Duxbury DBT. The output of the translation process is a LaTeX text file. You need some additional software that can take LaTeX and render it into math for viewing or printing. With <b>Scientific Viewer</b> (which is free) you can view or print the math. With <b>Scientific Notebook</b> (which is not free) you can also convert the file into PDF form.</p>
+        <p>We hope our users will help us identify other third party products which make use of LaTeX math files.To give you a head start, here is the <a href="http://en.wikipedia.org/wiki/LaTeX">Wikipedia entry on LaTeX</a>.</p>
+        <h5>Embosser Support</h5>
+        <ul>
+            <li>Support for the new Enabling Cyclone and Enabling Trident embossers.</li>
+            <li>Support for the <a href="http://www.viewplus.com/products/braille-printers/EmBraille-braille-printers">Viewplus EmBraille</a></li>
+            <li>Support for <a href="http://www.braillo.com/">new Braillo embossers</a>: Braillo 300, Braillo 600SR, Braillo 650 6&amp;F, and Braillo 650 SW</li>
+            <li>Support for the <a href="http://www.duxburysystems.com/documentation/cosmo/cosmo.htm">new Cosmo Brailler</a> from <a href="http://ebrailler.com">EBrailler</a>.</li>
+            <li>Improved support for the <a href="http://www.indexbraille.com/en-us/braille-embossers">Index V4 embossers</a></li>
+            <li>Support for A4 paper and extended A4 paper on several embossers</li>
+            <li>Embosser form (paper) size name has been changed for some Index and ONCE Impacto embossers to more closely match choices offered by the manufacturer.</li>
+        </ul>
+        <h5>Miscellaneous Changes</h5>
+        <ul>
+            <li>DBT can now import files whose names contain unusual characters.</li>
+            <li>The JAWS scripts now verbalize the spaces and new lines on the braille side, verbalize DBT codes and style codes when you use backspace or delete, and also verbalize the context for replacing text.</li>
+            <li MadCap:conditions="Primary.Print_Only">You can now use a Moon font with DBT on the "braille side".</li>
+            <li MadCap:conditions="Primary.Not_in_Print_Docs">You can now use a <a href="Moon/moon_font.htm">Moon font with DBT</a> on the "braille side".</li>
+            <li>In "Verbose Mode", DBT shows the Unicode number of the current character at the cursor position on the status line.</li>
+            <li>As always, many improvements have been made to make DBT a more stable environment.</li>
+            <li>As always, many fixes have been done to improve the importation of Word and Open Office files.</li>
+            <li>As always, math importation and math translation has improved as we work to handle challenging files.</li>
+        </ul>
+        <h5>DBT 11.2: Languages and Braille</h5>
+        <h6>Language Highlights</h6>
+        <p>Better Font Support for most languages. For many languages of the world, the DBT print screen is readable, and editing is possible.</p>
+        <p>New User Interfaces: now supporting a Czech and a Chinese User interface.</p>
+        <p>New Languages: Bengali for Bangladesh (supporting the braille rules of Feb. 1996), Croatian contracted braille supported, Montenegrin, Tatar, and Udmurt. Contracted Turkish braille and Taiwan braille supported with a supplemental download from Duxbury Systems.</p>
+        <p>New Braille-to-print for existing languages: Amharic, Mandarin Chinese, Hausa, Somali, Swahili, and Yoruba.</p>
+        <p>We have added a new feature to the Serbian braille-to-print: while this usually uses the Cyrillic alphabet, the use of a variation code [vrn~ar] changes the braille-to-print translator to use the Roman alphabet. Another variation code [vrn~ac] reverts back to using the Cyrillic alphabet. These codes also work on other languages closely tied to Serbian.</p>
+        <p>Modest adjustments have been made in the handling of punctuation in the translators for the following European languages: Dutch, Estonian, Finnish, Hungarian, Icelandic, Italian, Latvian, Lithuanian, Luxembourgian, Maltese, Portuguese, Serbian, and Turkish.</p>
+        <p>Modest adjustments have been made in the handling of punctuation in the translators for Georgian and Mandarin Chinese as well.</p>
+        <p>Arabic and Hebrew are still not supported by the DBT editor. While the display may be improved, DBT is still not able to entirely figure out what is right-to-left, and what is left-to-right, so editing a line is absolutely not recommended until this issue is resolved.</p>
+        <p>Inspired by new braille entry devices, Duxbury Systems has made an effort to improve braille-to-print in almost every language. We welcome your suggestions on how we can further make progress in this area. The languages of India, plus Lao, Thai, Hebrew, Vietnamese, have been especially improved.</p>
+        <h5>Language Details</h5>
+        <table border="1" style="width: 100%;margin-left: auto;margin-right: auto;" summary="Language Details">
+            <caption>List of main changes</caption>
+            <col width="135px" />
+            <col style="width: 320px;" />
+            <thead>
+                <tr>
+                    <th>National Flag(s)</th>
+                    <th>Improvements Made</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/ethiopia.gif" alt="Ethiopian Flag" width="45" height="30" border="1" title="Ethiopian Flag" class="flag" />
+                    </td>
+                    <td>DBT now has a braille-to-print translator for the Amharic.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/armenia.gif" alt="Armenian Flag" width="45" height="30" border="1" title="Armenian Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print Armenian translators have been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/bangladesh.gif" alt="Flag of Bangladesh" width="45" height="30" border="1" title="Flag of Bangladesh" class="flag" />
+                    </td>
+                    <td>DBT now supports the Bangladesh braille rules of Feb. 1996 (Bengali language).<br />DBT also supports the SutonnyMJ font, widely used in Bangladesh for writing Bengali.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/china.gif" alt="Chinese Flag" width="43px" height="28px" border="1" title="Chinese Flag" />
+                        <img src="../Resources/Images/flags/singapore.gif" alt="Singapore Flag" width="45" height="30" border="1" class="flag" />
+                    </td>
+                    <td>DBT now has a Chinese User Interface. </td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/china.gif" alt="Chinese Flag" width="44px" height="29px" border="1" title="Chinese Flag" class="flag" />
+                        <img src="../Resources/Images/flags/singapore.gif" alt="Singapore Flag" width="45" height="30" border="1" class="flag" />
+                    </td>
+                    <td>DBT's import of Chinese script into Pinyin has also been substantially improved. DBT now has a braille-to-print translator for Mandarin Chinese (into Pinyin Romanization, not into Chinese script).</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/china.gif" alt="Chinese Flag" width="45" height="30" border="1" title="Chinese Flag" class="flag" />
+                        <img src="../Resources/Images/flags/taiwan.gif" alt="Taiwanese Flag" width="45" height="30" border="1" title="Taiwanese Flag" class="flag" />
+                    </td>
+                    <td>DBT now supports the braille code of Taiwan through a supplemental download from Duxbury Systems.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/china.gif" alt="Chinese Flag" width="45" height="30" border="1" title="Chinese Flag" class="flag" />
+                    </td>
+                    <td>DBT has a modest improvement in the Cantonese braille translator.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/croatia.gif" alt="Flag of Croatia" width="45" height="30" border="1" title="Flag of Croatia" class="flag" />
+                    </td>
+                    <td>DBT now supports contracted Croatian print-to-braille and braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/czech.gif" alt="Czech Flag" width="45" height="30" border="1" title="Czech Flag" class="flag" />
+                    </td>
+                    <td>DBT now has a Czech a User Interface.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/czech.gif" alt="Czech Flag" width="45" height="30" border="1" title="Czech Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print tables have also been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/united_kingdom.gif" alt="United Kingdom Flag" width="45" height="30" border="1" title="United Kingdom Flag" class="flag" />
+                        <img src="../Resources/Images/flags/united_states.gif" alt="Flag of the United States of America" width="45" height="30" title="Flag of the United States of America" class="flag" />
+                    </td>
+                    <td>DBT has made improvements for the English translators used in the US, the United Kingdom, and other nations.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/bhutan.gif" alt="Bhutan Flag" width="44px" height="29px" border="1" title="Bhutan Flag" class="flag" />
+                    </td>
+                    <td>The braille-to-print Dzongkha translator has been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/esperanto.gif" alt="Flag of Esperanto" width="45" height="30" border="1" class="flag" />
+                    </td>
+                    <td>The print-to-braille Esperanto translator has been fixed (for the question mark).</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/ghana.gif" alt="Flag of Ghana" width="45" height="30" border="1" title="Flag of Ghana" class="flag" />
+                    </td>
+                    <td>The print-to-braille Ewe translator has been fixed.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/iran.gif" alt="Flag of Iran" width="45" height="30" border="1" title="Flag of Iran" class="flag" />
+                    </td>
+                    <td>The braille-to-print Farsi translator has been substantially improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/france.gif" alt="French Flag" width="45" height="30" border="1" class="flag" />
+                    </td>
+                    <td>The French translator has been improved, based on feedback from a user.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/germany.gif" alt="German Flag" width="45" height="30" border="1" title="German Flag" class="flag" />
+                    </td>
+                    <td>The German translator has been improved, based on feedback from a user.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/greece.gif" alt="Greek Flag" width="45" height="30" border="1" title="Greek Flag" class="flag" />
+                        <img src="../Resources/Images/flags/cyprus.gif" alt="Flag of Cyprus" width="45" height="30" border="1" title="Flag of Cyprus" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print translator for Greek has been substantially improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/Ni-flag.gif" alt="Nigerian Flag" width="45" height="30" border="1" title="Nigerian Flag" class="flag" />
+                        <img src="../Resources/Images/flags/Ng-flag.gif" alt="Flag of Niger" width="44px" height="29px" border="1" class="flag" />
+                    </td>
+                    <td>DBT now has a braille-to-print translator for the Hausa language.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/hawaii.gif" alt="Flag of old Hawaii" border="1" style="width: 48px; height: 28px;" title="Flag of old Hawaii" class="flag" />
+                        <img src="../Resources/Images/flags/united_states.gif" alt="Flag of the United States of America" width="45" height="30" title="Flag of the United States of America" class="flag" />
+                    </td>
+                    <td>DBT now has support for the Hawaiian Language in the following templates:<br /><b>English/Unified (UEB)</b>, <b>English/American (Standard Literary)</b>, and <b>English/American (Textbook)</b>through the use of the language tag [lng~haw]</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/israel.gif" alt="Flag of Israel" width="45" height="30" border="1" title="Flag of Israel" class="flag" />
+                    </td>
+                    <td>The braille-to-print translator for Hebrew has been substantially improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/laos.gif" alt="Lao Flag" width="45" height="30" border="1" title="Lao Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print translator for Lao has been substantially improved. <a href="../language_translation_tables/lao_braille.htm">Third party software can improve the Lao braille output</a>.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/norway.gif" alt="Norwegian Flag" width="45" height="30" border="1" title="Norwegian Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print Norwegian translators have been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/montenegro.gif" alt="Flag of Montenegro" width="45" height="30" border="1" title="Flag of Montenegro" class="flag" />
+                    </td>
+                    <td>DBT now supports Montenegrin (supported the same as Serbian).</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/poland.gif" alt="Polish Flag" width="45" height="30" border="1" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print Polish translators have been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/serbia.gif" alt="Serbian Flag" width="45" height="30" border="1" title="Serbian Flag" class="flag" />
+                    </td>
+                    <td>DBT now has improved the handling of punctuation in the Serbian translator. DBT now both the Cyrillic and the Roman alphabet in the braille-to-print translation </td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/somalia.gif" alt="Somalian Flag" width="45" height="30" border="1" title="Somalian Flag" class="flag" />
+                    </td>
+                    <td>DBT now has a braille-to-print translator for the Somali language.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/sweden.gif" alt="Swedish Flag" width="45" height="30" border="1" title="Swedish Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print Swedish translators have been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/kenya.gif" alt="Flag of Kenya" width="45" height="30" border="1" title="Flag of Kenya" class="flag" />
+                        <img src="../Resources/Images/flags/tanzania.gif" alt="Flag of Tanzania" width="45" height="30" border="1" title="Flag of Tanzania" class="flag" />
+                    </td>
+                    <td>DBT now has a braille-to-print translator for the Swahili language.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/russia.gif" alt="Russian Flag" width="45" height="30" border="1" title="Russian Flag" class="flag" />
+                    </td>
+                    <td>DBT now supports Tatar (a minority language in Russia).</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/thailand.gif" alt="Thai Flag" width="45" height="30" border="1" title="Thai Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print Thai translators have been improved.<a href="../language_translation_tables/thai_braille.htm">Third party software can improve the Thai braille output</a>.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/china.gif" alt="Chinese Flag" width="45" height="30" border="1" title="Chinese Flag" class="flag" />
+                    </td>
+                    <td>The print-to-braille and the braille-to-print Tibetan translators have been improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/turkey.gif" alt="Turkish Flag" width="45" height="30" border="1" title="Turkish Flag" class="flag" />
+                        <img src="../Resources/Images/flags/cyprus.gif" alt="Flag of Cyprus" width="45" height="30" border="1" title="Flag of Cyprus" class="flag" />
+                    </td>
+                    <td>DBT now supports contracted Turkish (and 4 levels of partial contraction) through a supplemental download from Duxbury Systems.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/russia.gif" alt="Russian Flag" width="45" height="30" border="1" title="Russian Flag" />
+                    </td>
+                    <td>DBT now supports Udmurt (a minority language in Russia).</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/ukraine.gif" alt="Ukranian flag." width="45" height="30" border="1" title="Ukranian flag." class="flag" />
+                    </td>
+                    <td>The print-to-braille Ukrainian translator now supports automatic hyphenation.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/pakistan.gif" alt="Pakistan Flag" width="45" height="30" border="1" title="Pakistan Flag" class="flag" />
+                    </td>
+                    <td>The braille-to-print translator for Urdu has been substantially improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/vietnam.gif" alt="Vietname Flag" width="45" height="30" border="1" title="Vietname Flag" class="flag" />
+                    </td>
+                    <td>The braille-to-print translator for Vietnamese has been substantially improved.</td>
+                </tr>
+                <tr>
+                    <td class="ctr">
+                        <img src="../Resources/Images/flags/Ni-flag.gif" alt="Nigerian Flag" width="45" height="30" border="1" title="Nigerian Flag" class="flag" />
+                    </td>
+                    <td>DBT now has a braille-to-print translator for the Yoruba language.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="hcp1">d up to avoid “double translation”.</p>
+        <p class="hcp1">2. Swedish encoding of braille documents has been added. A new French encoding for braille documents, “French Chiffres”, has been added. The standard “French” braille encoding for braille documents has been modified to match updated standards; the older encoding is now called “French 6 points”. (These changes are in display.cpt.)</p>
+        <p class="hcp1">3. Revised French documentation, and revised French DBT and Word templates. These changes should affect only those who use adaptations to DBT developed at AVH for use in producing French braille.</p>
+        <p class="hcp1">4. Translation improvements have been made to the following tables:</p>
+        <p class="hcp2">a. <a href="../language_translation_tables/english_american.htm">English/American (literary)</a></p>
+        <p class="hcp2">b. <a href="../language_translation_tables/english_american_textbook.htm">English/American (textbook)</a></p>
+        <p class="hcp3">Both American tables have been updated to conform to new rules regarding partially-emphasized words, and for improved handling of Greek letters within English context. A new "variation" code has been added to permit entering fractions more conveniently using a simple slash, e.g. 1/2 for one-half, when appropriate (as in cookbooks).</p>
+        <p class="hcp2">c. <a href="../language_translation_tables/arabic.htm">Arabic</a></p>
+        <p class="hcp3">Additional Unicode characters are now supported, as well as the standard "Arabic" page.</p>
+        <p class="hcp2">d. <a href="../language_translation_tables/bulgarian.htm">Bulgarian</a></p>
+        <p class="hcp3">(Minor update only.)</p>
+        <p class="hcp2">e. <a href="../language_translation_tables/greek_modern.htm">Modern Greek</a></p>
+        <p class="hcp3">Additional Unicode characters, as well as the standard basic "Greek" page, are now supported. The Nemeth Code is now supported for mathematics</p>
+        <p class="hcp2">f. <a href="../language_translation_tables/english_british.htm">English/British</a></p>
+        <p class="hcp3">Corrections and improvements were made to the logic for inserting clarifying parentheses into algebraic fractions. The handling of mixed numbers imported from LaTeX documents was corrected. Other corrections affected the handling of certain apostrophe-letter endings in grade 1, embedded German, and other miscellaneous situations.</p>
+        <p class="hcp2">g. <a href="../language_translation_tables/english_unified.htm">English/Unified</a></p>
+        <p class="hcp3">These tables were extensively updated to conform more closely to the latest transcriber rules for capitalization, shortform usage, lower-sign contraction usage, and other miscellaneous matters. A new pair of commands, [ucs] ... [uce], have been provided to allow manual control of capital passage extent when desired.</p>
+        <p class="hcp2">h. <a href="../language_translation_tables/french_unified.htm">French/Unified</a></p>
+        <p class="hcp3">The treatment of apostrophe (') has been corrected in [cz;f] mode. Certain capital passage and double-sign issues have also been addressed.</p>
+        <p class="hcp2">i. <a href="../language_translation_tables/croatian.htm">Croatian</a></p>
+        <p class="hcp3">(Internal update only -- no functional change.)</p>
+        <p class="hcp2">j. <a href="../language_translation_tables/kazakh.htm">Kazakh</a></p>
+        <p class="hcp3">Arabic script (as well as Cyrillic script) is now accepted as input.</p>
+        <p class="hcp2">k. <a href="../language_translation_tables/malay.htm">Malay</a></p>
+        <p class="hcp3">The logic for contraction usage has been extensively updated.</p>
+        <p class="hcp2">l. <a href="../language_translation_tables/norwegian.htm">Norwegian</a></p>
+        <p class="hcp3">The logic for contraction usage has been improved, and the treatment of comma within numbers corrected. Support for contracted English embedded within Norwegian has been removed, as such text is normally uncontracted.</p>
+        <p class="hcp2">m. <a href="../language_translation_tables/russian.htm">Russian</a></p>
+        <p class="hcp3">Arabic script (as well as Cyrillic script) is now accepted as input.</p>
+        <p class="hcp2">n. <a href="../language_translation_tables/ukrainian.htm">Ukrainian</a></p>
+        <p class="hcp3">Arabic script (as well as Cyrillic script) is now accepted as input.</p>
+        <p class="hcp1">5. Improvements have been made for these embossers:</p>
+        <p class="hcp4">a. All supported Tiger models: DBT has been updated to meet the requirements of the latest drivers from ViewPlus. (However, we are not adding to DBT 10.7 SR1 support for any Tiger embosser models not supported by DBT 10.7.)</p>
+        <p class="hcp4">b. Tiger Pro Ink: ink placement has been corrected; ink placement, font choice and font size can also be adjusted, though this presently requires registry “tinkering”.</p>
+        <p class="hcp4">c. VersaPoint Duo: graphics support improved. </p>
+        <p class="hcp4">d. PED-30 plate embossers: more “handshaking” options have been added, and the inclusion of a blank “last side” when there are an odd number of sides to emboss has been suppressed, saving the operator loading a plate at the end of a job only to see it come through without any embossing.</p>
+        <p class="hcp4">e. Thiel Beta X-3: additional paper sizes are now supported.</p>
+        <p class="hcp4">f. A defect in interline print output on Gemini embossers has been corrected.</p>
+        <p>These changes are in dxemb.dll and emb.elt, which always “travel as a pair”. Additional changes in emb.elt are to support future development of “TranSend SE”. Because these have no functional effect for DBT 10.7 SR1, they do not merit mention in the documentation.</p>
+        <p class="hcp1">6. Internal improvements have been made to chitab.txt. </p>
+        <p class="hcp1">7. DBT’s Word importer will support use of the Math12 font.</p>
+        <ul class="hcp1" type="disc">
+            <li class="kadov-p">
+                <p>Updated BANA translation</p>
+            </li>
+            <li class="kadov-p">
+                <p>Updated BANA templates for DBT and Word, now include a Quotation style. Word Template (BANA Braille 2008)</p>
+            </li>
+            <li class="kadov-p">
+                <p><a href="#BAUK">Updated BAUK translation</a>
+                </p>
+            </li>
+            <li class="kadov-p">
+                <p><a href="#UEB">Updated UEB (Unified English Braille) Translation</a>
+                </p>
+            </li>
+            <li class="kadov-p">
+                <p><a href="../language_translation_tables/ebu_pharmaceutical.htm">NEW Pharma EBU/EC translation and template - EBU Pharma</a>
+                </p>
+            </li>
+            <li class="kadov-p">
+                <p><a href="../language_translation_tables/esperanto.htm">NEW Esperanto translation and template. Esperanto</a>
+                </p>
+            </li>
+            <li class="kadov-p">
+                <p><a href="#UFB">Updated French translation</a>
+                </p>
+            </li>
+            <li class="kadov-p">
+                <p>Updated French templates and fonts</p>
+            </li>
+            <li class="kadov-p">
+                <p>Updated French braille encoding (for display)</p>
+            </li>
+            <li class="kadov-p">
+                <p><a href="#romeoLE">Support added for Enabling Technologies new Romeo Pro 50LE</a>
+                </p>
+            </li>
+            <li class="kadov-p">
+                <p>Improved communications to PED-30</p>
+            </li>
+            <li class="kadov-p">
+                <p>Fixed ELEKUL 03 support</p>
+            </li>
+            <li class="kadov-p">
+                <p>Allow disabling of serial port initialization, which can improve compatibility with some serial ports.</p>
+            </li>
+            <li class="kadov-p">
+                <p>Fix to a rare crash when importing Word documents</p>
+            </li>
+            <li class="kadov-p">
+                <p>Fix to a rare lockup during search and replace</p>
+            </li>
+        </ul>
+        <h6>Direct imports of math in Word documents with MathType 5 or 6 installed</h6>
+        <p>The importer supports importation of mathematical expressions created with either MathType or Equation Editor. It does *not* support math typed directly into the text. That will still come in as it always has.</p>
+        <p>The importer requires that either MathType 6 or MathType 5 be installed and activated. They can be installed anywhere.</p>
+        <h6>Updated BANA translation</h6>
+        <p>English/American: The BANA 2007 updates have been implemented (see http://www.brailleauthority.org/update07.html), notably including the two-cell slash, the use of the termination sign instead of hyphen to signal the end of the effect of the double capital sign, and other updated rules and added symbols. A control ("[big]") was added to provide for enlarged enclosure symbols in Nemeth Code.</p>
+        <h6><a name="BAUK"></a>Updated BAUK translation</h6>
+        <p>A facility has been added to enable "locking" of the grade of translation, primarily to facilitate production of texts entirely in grade 1 despite the presence of <span class="Code-DuxCode">[g2]</span> in the text or within styles. See <a href="../Templates_Styles_Codes/Templates/Templates_Docs/lock_grade_1_or_2.htm">LOCK Grade 1 or 2</a> for more details.</p>
+        <h6><a name="UEB"></a>Updated UEB (Unified English Braille) Translation</h6>
+        <p>English/UEB: Transcription rule decisions of the UEB Committee through January 2008 have been implemented, including those affecting the treatment of shortform words and lower signs, and the extent of grade 1 word mode when initiated by a number. The braille-to-print UEB tables have been revised to construct appropriate print (.dxp) file encoding for most math structures and certain symbols, thereby replacing some of the "double-brace" notation typically used for indicators, etc. when translating from braille to print.</p>
+        <h6><a name="ECPharma"></a>NEW Pharma EBU/EC translation and template -<a href="../language_translation_tables/ebu_pharmaceutical.htm">EBU Pharma</a></h6>
+        <p>At the time of writing (March 2008) the European Braille Union (EBU) have been discussing a proposed common/standard Pharmaceutical Braille code with European Braille Authorities to be used exclusively on medicinal packaging throughout Europe. See <a href="https://www.pharmabraille.com/pharmaceutical-braille/">https://www.pharmabraille.com/pharmaceutical-braille/</a> for more details.</p>
+        <p>For more up to date information concerning the production of Pharma Braille labels, etc., you may wish to contact our U.K. distributor <a href="http://www.techno-vision.co.uk">http://www.techno-vision.co.uk</a>.</p>
+        <h6><a name="esperanto"></a>NEW Esperanto translation and template. </h6>
+        <p>"Esperanto is a language, but not of any country or ethnic group: it is a neutral, international language." For more details about the Esperanto language please see <a href="http://www.esperanto.net/info/index_en.html">http://www.esperanto.net/info/index_en.html</a></p>
+        <p>Details of DBT's new Esperanto table are described more fully here.<a href="../language_translation_tables/esperanto.htm">Esperanto</a></p>
+        <h6><a name="UFB"></a>Updated French translation</h6>
+        <p>French/Unified: The print-to-braille tables have been updated to conform more closely to the new French mathematics code. The braille-to-print tables have been updated to include common computer and currency symbols.</p>
+        <h6><a name="romeoLE"></a>Support added for Enabling Technologies new Romeo Pro 50LE</h6>
+        <p>At the time of writing (March 2008) <a href="http://www.brailler.com">Enabling Technologies Inc</a> were in the process of manufacturing a dedicated labelling embosser. Limited to 24 cells maximum width, the output is approximately 40% faster than a standard Romeo Pro.</p>
+        <p>DBT 10.7 includes additional form depths for this embosser from 0.5 inches to 4 inches in depth in increments of 0.25 of an inch.</p>
+        <h4>What was New in DBT 10.6?</h4>
+        <ul>
+            <li><a href="../the_menus/menu_edit/Edit_Undo.htm">Undo</a> and <a href="../the_menus/menu_edit/Edit_Redo.htm">Redo</a>.</li>
+            <li><a href="../the_menus/MENU_GLOBAL/global_autosave_options.htm">Autosave</a>.</li>
+            <li><a href="../the_menus/menu_edit/edit_change_case.htm">Change Case</a> - accessible using Shift-F3.</li>
+            <li>A <a href="../the_menus/MENU_GLOBAL/Global_View_Preferences....htm">Margin Bell</a> can be enabled for braille entry.</li>
+            <li>Enhanced <a href="../welcome_to_DBT/JAWS_Scripts.htm"><MadCap:keyword term="JAWS:Scripts"></MadCap:keyword>JAWS scripts</a> add support for braille document input and review.</li>
+            <li><a href="../Templates_Styles_Codes/Templates/Templates_Docs/default_templates.htm"><MadCap:keyword term="Templates"></MadCap:keyword>Templates</a> included for every supported language.</li>
+            <li>Enhanced <a href="../getting_setup_in_DBT/Installation/Installation.htm">Installation</a> and activation process.</li>
+            <li>Enhanced - Support for custom embosser definitions.</li>
+            <li>Use <a href="../working_with_word/Word_Using_DBT_Codes.htm">DBT Codes in Word for Windows</a>.</li>
+            <li>New <MadCap:keyword term="BANA"></MadCap:keyword>Word Template (BANA Braille 2006).</li>
+            <li>DBT can now optionally read <a href="../the_menus/MENU_GLOBAL/Global_Word_Importer.htm">publishers' page</a> numbers. </li>
+            <li>New [linenum] code for line-numbered poetry or prose.</li>
+            <li>Enhanced [folds] code supports more sophisticated <a href="../Templates_Styles_Codes/Codes/Miscellaneous/folding.htm">fold lines</a>. </li>
+            <li>Customizable behavior of Alt-3 ("CBC"), CTRL-Enter ("New page"), and Enter.</li>
+            <li><a href="../the_menus/MENU_LAYOUT/Vertical_Centering.htm"><MadCap:keyword term="Vertical"></MadCap:keyword>Vertical page centering</a>. </li>
+            <li>Enhanced - <a href="Braille_Build.htm">Braille-Build</a> can build fonts with California spacing.Customizable for thermal paper, thermoform and other processes. Marburg spacing primarily for EU pharmaceutical artwork use.</li>
+            <li>Graphics supported for the Romeo Attaché. </li>
+            <li>A /template command line option allows desired template to be specified for imported files. </li>
+            <li>NEW - /brf and /prf command line options make it possible to use DBT as a file-to-file translation tool.</li>
+            <li>
+                <MadCap:keyword term="Help:Topics">
+                </MadCap:keyword>
+                <MadCap:keyword term="Mouse">
+                </MadCap:keyword>
+                <MadCap:keyword term="Mouse Wheel">
+                </MadCap:keyword>Text in HTML Help file topics now follows the settings in Internet Explorer's View: Text Size menu. They will also print a hard copy with appropriately select text size. Users with a wheel mouse can adjust the font size by focusing on any topic, hold down the Ctrl key, and scroll the mouse wheel to adjust the font size.</li>
+        </ul>
+        <h5>Updated Translations</h5>
+        <p>The following language translation tables have been added or substantially updated:</p>
+        <ul>
+            <li>American English - The support for <a href="Learning_Braille/nls.htm">NLS'</a> "Instruction Manual for Braille Transcribers" partially-contracted braille series has been revised to reflect the fourth edition.</li>
+            <li>British English - The <a href="Learning_Braille/fingerprint_units.htm">Fingerprint series</a> has been added. Support for the new rules has been added.</li>
+            <li><a href="../language_translation_tables/croatian.htm">Croatian</a>
+            </li>
+            <li><a href="../language_translation_tables/farsi.htm">Farsi</a>
+            </li>
+            <li><a href="../language_translation_tables/french_unified.htm">French (unified)</a>
+            </li>
+            <li><a href="../language_translation_tables/german.htm"><MadCap:keyword term="German"></MadCap:keyword>German (contracted)</a>
+            </li>
+            <li><a href="../language_translation_tables/hausa.htm">Hausa</a>
+            </li>
+            <li><a href="../language_translation_tables/igbo.htm">Igbo</a>
+            </li>
+            <li><a href="../language_translation_tables/indonesian.htm">Indonesian</a>
+            </li>
+            <li>Irish Gaelic</li>
+            <li>Kazakh</li>
+            <li><a href="../language_translation_tables/lithuanian.htm">Lithuanian</a>
+            </li>
+            <li><a href="../language_translation_tables/norwegian.htm"><MadCap:keyword term="Norwegian"></MadCap:keyword>Norwegian</a>
+            </li>
+            <li><a href="../language_translation_tables/portuguese_brazilian.htm"><MadCap:keyword term="Brazillian:Portuguese"></MadCap:keyword>Portuguese</a>
+            </li>
+            <li>Russian</li>
+            <li><a href="../language_translation_tables/somali.htm">Somali</a>
+            </li>
+            <li><a href="../language_translation_tables/turkish.htm">Turkish</a>
+            </li>
+            <li><a href="../language_translation_tables/english_unified.htm">Unified English (UEB)</a>
+            </li>
+            <li>Welsh - Support for new rules Support for math and computer notation within Welsh.</li>
+            <li><a href="../language_translation_tables/yoruba.htm">Yoruba</a>
+            </li>
+        </ul>
+        <p>(Some of these have been included in service packs for DBT 10.5.) </p>
+        <h5>Additional Interfaces</h5>
+        <ul>
+            <li><a href="../the_menus/MENU_GLOBAL/global_internationalization.htm">Korean</a>
+            </li>
+            <li><a href="../the_menus/MENU_GLOBAL/global_internationalization.htm">Polish</a>
+            </li>
+            <li><a href="../the_menus/MENU_GLOBAL/global_internationalization.htm">Portuguese (Portugal)</a>
+            </li>
+            <li><a href="../the_menus/MENU_GLOBAL/global_internationalization.htm">Russian</a>
+            </li>
+            <li>Documentation developed at AVH for French users is now included also.</li>
+        </ul>
+        <h5>Still More Improvements</h5>
+        <ul>
+            <li>New BANA templates have been introduced. The Word template file is now called "BANA Braille 2006". When importing to DBT, two templates are available; one is specifically for Nemeth documents.</li>
+            <li>Enhanced - WordPerfect imports. </li>
+            <li>Enhanced - French template translation table settings.</li>
+            <li>Enhanced - Operation of Workstations that Share an Activation. </li>
+            <li>NEW Undo when typing over selected text. </li>
+            <li>Enhanced - Redesigned and uniform Emboss and Print. </li>
+            <li>NEW Hard spaces can now be entered when searching and replacing. </li>
+            <li>Enhanced - PED plate maker support. </li>
+        </ul>
+        <h5>Installation:</h5>
+        <p>Installation is now performed using the MSI (Microsoft Installer) interface, resulting in many improvements all round.</p>
+        <p>Many Settings are now retained for individual users rather than entire system.</p>
+        <p>Network installations now support licensing on systems running RAID or Mirrored drives.</p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="DBT Help for Mac"
+  Type="HtmlHelp"
+  Destinations=""
+  ConditionTagExpression="include[&quot;Primary.Mac_Version&quot;]exclude[Primary.Braille_Only or Primary.Print_Only or Primary.Printed_Introduction or Primary.SWIFT or Primary.Vista or Primary.Windows_Version]"
+  Skin="/Project/Skins/DuxburyMainChm.flskn"
+  OutputFile="dbtmac.htm"
+  DefaultUrl="/Content/welcome_to_DBT/welcome_to_dbt.htm"
+  MasterToc="/Project/TOCs/Primary.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  ExcludeUnreferencedContent="true"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Glossaries></Glossaries>
+  <Variables>
+    <Variable
+      Name="Primary/VersionFolder">DBT 12.1</Variable>
+  </Variables>
+</CatapultTarget>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="913" MadCap:lastWidth="627" MadCap:onlyLocalStylesheets="True">
+    <head>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <heading><title>Technical Tips for this Embosser</title>
+    </heading>
+    <body>
+        <h2 class="NoNewPage">Technical Tips for this Embosser</h2>
+        <p><a href="../Embossers/ports.htm">General Advice about Computer Ports: Serial. Parallel. USB. and Network</a>
+        </p>
+        <p>You need to identify your Index embosser. Index embossers that do not talk are Version I. All Index embossers that talk with only serial and parallel ports are usually version II. All Index embossers with serial. parallel. USB. and RJ45 network ports are version III. The Model III Everest-D embossers were introduced in March 2003. Make sure you declare the right embosser version in the middle pane of the embosser setup in DBT. If you have a version II embosser. and leave it at the default of Version III. the result is no output until the embosser configuration is fixed.</p>
+        <h4>Direct Network Connection: Using the RJ-45 Jack</h4>
+        <p>The Version III Index embossers have RJ-45 network ports. The default is for the embosser to obtain an IP address from the Server - with a non-expiring lease. If you don't wish to use that address. and prefer a Static IP address. the Index Embosser Utility can be used to give a Static IP.</p>
+        <p>After that. installation proceeds as for any networked printer. Each PC wishing to use that networked printer must have appropriate drivers installed. This is normal Windows Server practice. The driver file called be obtained from <a href="http://www.indexbraille.com">Index in Sweden (Embosser Utility)</a>.</p>
+        <p>The Everest-D is an interpoint embosser which uses cut sheets instead of the more common tractor fed paper. Be sure to mention your paper requirements to your supplier when you order braille paper. One of the lesser known. but perhaps most versatile. features of the Everest is that it simulataneously watches both its serial and parallel ports for incoming data. This makes it possible to produce braille from two different computers (perhaps a PC and a Macintosh). without changing the configuration on the embosser.</p>
+        <p>You need to turn off its internal braille translator to get this software to drive it correctly. There are three built-in setups. labeled A. B. and C. As shipped from the factory. setups A and B do not use the built-in translator. but setup C does.</p>
+        <p>The last group of buttons on the unit sets the parameters. These keys are labeled in print as setup. group. item. and value; and are labeled in braille as su. gr. it. and va.</p>
+        <p><b>Parallel Setup Guidelines:</b>
+        </p>
+        <p>To make setup A the default. press and hold button A while you power on the Everest. then release button A. Use the Setup. Group. Item and Value buttons on the right hand side of the control panel to configure setup A as follows:</p>
+        <ul>
+            <li>GROUP ITEM VALUE</li>
+            <li>Braille Code Language Computer</li>
+            <li>Computer 6 Dots</li>
+            <li>Literary Without capital prefix</li>
+            <li>Serial Communication Baud rate 9600</li>
+            <li>Data bits 8</li>
+            <li>Parity None</li>
+            <li>Stop bits 1</li>
+            <li>Handshake Software</li>
+            <li>Page Layout Char. per line 42</li>
+            <li>Left margin 0</li>
+            <li>B-margin 0</li>
+            <li>Top margin 0</li>
+            <li>Bottom margin 0</li>
+            <li>Line spacing 1.0</li>
+            <li>Page mode Double-Sided</li>
+            <li>Print mode Normal</li>
+            <li>Page number Off</li>
+            <li>Lines per page normal</li>
+            <li>Option Word wrap Off</li>
+            <li>Auto line feed Off</li>
+            <li>Form feed None</li>
+            <li>Volume 3</li>
+            <li>Impact level 2</li>
+            <li>Delay 5 (highest delay)</li>
+            <li>Print speed 100</li>
+            <li>Graphic dot distance 2.5</li>
+            <li>Text dot distance 2.5</li>
+            <li>Setup Open</li>
+            <li>Text mode Interpoint</li>
+        </ul>
+        <p>After configuring the Everest. all you need to do is attach it with a standard printer cable to the appropriate parallel port on your computer.</p>
+        <p><b>Serial setup guidelines:</b>
+        </p>
+        <p>The directions above will work for serial attachments as well as parallel. It is necessary to set the flow control in the Windows Control Panel (System. Device Manager. COM port properties. Ports Tab. Flow Control) to match the embosser and DBT's embosser configuration. Remember that "handshaking" is the same as "flow control". and that "software handshaking" is the same as "Xon/Xoff" This software should be configured for 9600.n.8.1 (baud rate. parity. data bits and stop bits. respectively). After configuring the embosser. attach it to your computer with an appropriate serial cable (one with a null modem).</p>
+        <p>Certain conditions. such as high humidity. may cause an occasional paper feed problem in which more than one sheet is fed into the embosser. You can correct this problem by reducing the humidity. fanning your paper before loading it. and changing the Everest's paper type lever to the sheet position.</p>
+        <p>Since the unit measures the first sheet of paper. it is important to only load the hopper with similar sheets of paper.</p>
+        <p>If you have difficulty. contact <a href="http://www.indexbraille.com/">Index Braille</a> at +46-920-203080.</p>
+    </body>
+</html>

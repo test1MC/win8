@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="172" MadCap:lastWidth="624">
+    <body>
+        <p>This page describes the internal functioning of the respective DBT translation table. If you want more information about languages, scripts, and template choices, please <a href="../../Templates_Styles_Codes/Templates/Templates_Docs/all_templates.htm">click here</a>.</p>
+        <p>The initial language table for a translation is determined by the selected template, and may be changed using the Document / Translation Tables menu. Using those menus does not involve explicit use of the table designator. However, to switch to a different translation table partway through a file, one must enter a DBT code and the designator for the table to switch to. For switching secondary languages within a base language table, see the <span class="Code-DuxCode"><a href="../../language_translation_tables/translation_tables.htm">[lng~X]</a></span> command. For switching from one base language to another, see the <span class="Code-DuxCode"><a href="../../language_translation_tables/translation_tables.htm">[lnb~...]</a></span> command.</p>
+    </body>
+</html>

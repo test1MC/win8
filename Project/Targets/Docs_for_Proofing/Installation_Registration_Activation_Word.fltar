@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/Print Documentation/Installation_Registration_Activation_TOC.fltoc"
+  ConditionTagExpression="include[ActWizConditions.ActwizHelp or Primary.Mac_Version or Primary.Print_Only] exclude[Primary.Not_in_Print_Docs or Primary.Windows_Version] "
+  AutoSizeCaptureCaptions="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+</CatapultTarget>

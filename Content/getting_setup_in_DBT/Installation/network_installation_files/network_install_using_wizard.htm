@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:conditions="Primary.Windows_Version" MadCap:lastBlockDepth="6" MadCap:lastHeight="911" MadCap:lastWidth="624">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>Network Installation Using the Activation Wizard <br />(Manual Connection)</h2>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallIntroText.flsnp" />
+        <p>This method of installation requires that you open the Activation Wizard on each client DBT to connect it to the server. If you have a large number of client DBT's, you may want to use a specialized installer that connects them automatically. If so, see <a href="network_install_using_server_image.htm">Network Installation Using a Server Image</a>.</p>
+        <h3>Overview</h3>
+        <p>Network installation requires the following steps:</p>
+        <ol style="list-style-type: decimal;margin-left: 54pt;" start="1">
+            <li><a href="#(1)">Assemble the information and tools</a>.</li>
+            <li><a href="#(2)">Install DBT on the server or master workstation</a>.</li>
+            <li><a href="#(3)">Activate DBT for multiple users on the server</a>.</li>
+            <li><a href="#(4)">Install the Shared License Service and allow it in the firewall</a>.</li>
+            <li><a href="#(5)">Install DBT on the client workstations</a>, and connect each one to the server using the DBT Activation Wizard.</li>
+        </ol>
+        <p>Now we go through these steps in detail.</p>
+        <h3><a name="(1)"></a>(1) Assemble the Information and Tools</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallInfoToAssemble.flsnp" />
+        <h3><a name="(2)"></a>(2) Install DBT on the Server or Master Workstation</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallDbtOnServer.flsnp" />
+        <h3><a name="(3)"></a>(3) Activate DBT on the Server</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallActivateOnServer.flsnp" />
+        <p>Instead they will be “connected” your server.</p>
+        <h3><a name="(4)"></a>(4) Install the Shared License Service</h3>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/NetworkInstallSharedLicenseService.flsnp" />
+        <h3><a name="(5)"></a>(5) Install DBT on the Client Workstations and Connect Them Using the DBT Activation Wizard</h3>
+        <p>Note: Please be sure that your server is activated before trying to connect the client DBT's.</p>
+        <p>For each client computer, install DBT by following the <a href="../Simple_Installation.htm">Simple Installation</a> instructions.</p>
+        <p>Then you need to connect each client machine to the server. To do this, launch the DBT Activation Wizard. You can do this by running DBT and then clicking the Activate button on the splash screen, or the De-activate button in the About DBT dialogue box, or by invoking the Activation Wizard (actwiz.exe) directly in the DBT home folder. If you have any problems starting up DBT, go directly to the Activation Wizard.</p>
+        <p>On the Activation Wizard main page is a radio button labeled, <b>Connect to the network license server</b>. Select that and click the Next button. </p>
+        <p>To complete your connection on each client machine, you need to fill in:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>The DNS name or IP address of the server (static IP addresses only).</li>
+            <li>The port number used to communicate with the server (again, the default is 8080).</li>
+            <li>Your DBT license text.</li>
+            <li>The User Name as entered on the <b>server</b>.</li>
+            <li>The local computer name.</li>
+        </ul>
+        <p>Once you have entered this data, click the Test button to try the connection. A successful test indicates that the data you entered are valid. If the test is unsuccessful, the most common causes of connection failure are these:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>The port number is wrong (client and server must match);</li>
+            <li>Some other application is using the same port;</li>
+            <li>The server name or IP address is wrong;</li>
+            <li>A network connectivity problem between the client and server (this includes disconnected Ethernet cables and wireless Ethernet problems or the server is off-line);</li>
+            <li>The Duxbury Shared License service is not running on the server and needs to be restarted in the Services control panel;</li>
+            <li>Your firewall is preventing communication between these machines; </li>
+            <li>Your firewall is preventing communication on your chosen port.</li>
+        </ol>
+        <p>Assuming your test was successful, click Next to see the final confirmation page. Click Finish to save your connection.</p>
+        <p>Note: It is possible to connect to a server DBT even if it is not activated. If your client DBT does not run after the connection is complete, check your server.</p>
+    </body>
+</html>

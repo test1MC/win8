@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="SWIFT 4 - Help"
+  Type="HtmlHelp"
+  Destinations=""
+  MasterToc="/Project/TOCs/SWIFT.fltoc"
+  TargetLanguage="en-us"
+  conditions="Primary.SWIFT"
+  MoveOutputContentToRoot="false"
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="include[Primary.SWIFT]"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings=""
+  DefaultUrl="/Content/working_with_word/SWIFT/swift.htm"
+  PreCompileScaledImages="false"
+  Skin="/Project/Skins/SWIFT.flskn"
+  GenerateAllSkins="false"
+  OutputFile="SWIFT.chm">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Glossaries></Glossaries>
+  <MetaTags
+    Enabled="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+</CatapultTarget>

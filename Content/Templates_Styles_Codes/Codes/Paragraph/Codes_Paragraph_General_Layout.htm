@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="DBT;Uncontracted;CONFIG.SYS;CorelDRAW;CR;LF;Ctrl;curreny;DBTDOCS;UNCONTRACTED;w;Runover;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;n;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rps;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;dizziness[rpe;dizzi;lg~TEXT;lg~john's;z;Code(s;ifbrl;ifprt;sibrl;siimp;availa#;line[;ea;table(s;indP;Apples[;opp+;ind;hl;ki;stL;Smith[l;Lawns[l;TOWN[l;pg;L;ie;Line(s;skL;lines[;m;svprgN;agraph;amet;det;posi;j;l;h[;brl;reckon$;svprg" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="General Layout" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="2" MadCap:lastHeight="1922" MadCap:lastWidth="731">
+    <head><title>General Layout</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Paragraph:General Layout" />General Layout</h4>
+        <p class="Normal">(See also: <a href="new_paragraph.htm">New Paragraph</a> and <a href="..\Line\New_line_and_set_margin.htm">New Line &amp; Set Margin</a>)</p>
+        <p class="Normal"><b>Codes Used:</b> <span class="Code-DuxCode">[svprgN:L:M] [p] [indP]</span></p>
+        <p class="Keystroke">Keystroke: (None at present)</p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">Where the default for a New Paragraph is inappropriate, various attributes can be changed.</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">To lay out paragraphs as required.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p><span class="Code-DuxCode">[svprg5:1:1]</span>
+            <br /><span class="Code-DuxCode">[p][svprgN:L:M]</span><span class="Code-DuxScreen"> -- Set paragraph treatment values, i.e. the parameters for the </span><span class="Code-DuxCode">[p]</span><span class="Code-DuxScreen"> command.</span>
+            <br /><span class="Code-DuxCode">[ind3]</span>
+            <br /><span class="Code-DuxCode">[p]</span><span class="Code-DuxScreen">N determines the position at which to begin a new paragraph; the default value is 3 for braille, and 0 for print.</span><span class="Code-DuxCode">[svprg5:1:0]<br />[p]</span><span class="Code-DuxScreen">L determines how many lines to skip before a paragraph; the default is 0 for braille and 1 for print.</span><span class="Code-DuxCode"><br />[p]</span><span class="Code-DuxScreen">M is 0 (the default) if N is to be an absolute position, or is 1 if N is to be relative to the current left margin (i.e. the left margin reckoned as position 1). If all values are omitted, the values are reset to their values at the beginning of the file.</span>
+        </p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;,7svprg,n3;,l3,m7' --</p>
+        <p class="Simbraille">,set p&gt;agraph tr1t;t values1</p>
+        <p class="Simbraille">i4e4 ! p&gt;amet]s =! ,7p7' </p>
+        <p class="Simbraille">-m&amp;4</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;&#160;&#160;;,n det]m9es ! posi;n</p>
+        <p class="Simbraille">&#160;&#160;at : 62g9 a new p&gt;agraph2</p>
+        <p class="Simbraille">&#160;&#160;! default value is #c =</p>
+        <p class="Simbraille">&#160;&#160;brl1 &amp; #j = pr9t4</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;;,l det]m9es h[ _m l9es</p>
+        <p class="Simbraille">&#160;&#160;6skip 2f a p&gt;agraph2 !</p>
+        <p class="Simbraille">&#160;&#160;default is #j = brl &amp; #a =</p>
+        <p class="Simbraille">&#160;&#160;pr9t4</p>
+        <p class="Simbraille">&#160;&#160;&#160;&#160;;,m is #j 7! default7 if</p>
+        <p class="Simbraille">&#160;&#160;;,n is 6be an absolute</p>
+        <p class="Simbraille">&#160;&#160;posi;n1 or is #a if ;,n is</p>
+        <p class="Simbraille">&#160;&#160;6be relative 6! curr5t</p>
+        <p class="Simbraille">&#160;&#160;left m&gt;g9 7i4e4 ! left</p>
+        <p class="Simbraille">&#160;&#160;m&gt;g9 reckon$ z posi;n #a74</p>
+        <p class="Simbraille">&#160;&#160;,if all values &gt;e omitt$1</p>
+        <p class="Simbraille">&#160;&#160;! values &gt;e reset 6_!</p>
+        <p class="Simbraille">&#160;&#160;values at ! 2g9n+ (! file4</p>
+        <h6>Let us explain!</h6>
+        <p><span class="Code-DuxCode">[svprgN:L:M]</span> code has three parameters.</p>
+        <p><span class="Code-DuxCode">N</span> determines in which cell the paragraph starts, relative to either the left of the page, or the left margin. (See <span class="Code-DuxCode">M</span> below)</p>
+        <p><span class="Code-DuxCode">L</span> is the number of blank lines required BEFORE each paragraph</p>
+        <p><span class="Code-DuxCode">M</span> a value of 1 means that the value of <span class="Code-DuxCode">N</span> above will be relative to the left margin of the paragraph itself. A value of 0 (zero) means that the value if <span class="Code-DuxCode">N</span> will be relative to the left hand side of the page.</p>
+        <p>With the first occurrence of this Code, we have set it to put a blank line above the paragraph and Indent to cell 5 relative to our left margin.</p>
+        <p>We have then used the <span class="Code-DuxCode">[ind3]</span> code (See <a href="..\Line\New_line_and_set_margin.htm">New Line &amp; Set Margin</a>) to set the margin to cell 3. Note how the second paragraph's margin and indent have moved together.</p>
+        <p>The second <span class="Code-DuxCode">[svprg...]</span> code changes the paragraph indent relative to the page margin.</p>
+        <h6>For the more technical:</h6>
+        <p><span class="Code-DuxCode">[svprgN:L:M]</span> -- Set paragraph treatment values, i.e. the parameters for the <span class="Code-DuxCode">[p]</span> command.</p>
+        <p><span class="Code-DuxCode">N</span> determines the position at which to begin a new paragraph; the default value is <span class="Code-DuxCode">3</span> for braille and <span class="Code-DuxCode">0</span> for print.</p>
+        <p><span class="Code-DuxCode">L</span> determines how many lines to skip before a paragraph; the default is <span class="Code-DuxCode">0</span> for braille and <span class="Code-DuxCode">1</span> for print.</p>
+        <p><span class="Code-DuxCode">M</span> is <span class="Code-DuxCode">0</span> (the default) if <span class="Code-DuxCode">N</span> is to be an absolute position, or is <span class="Code-DuxCode">1</span> if <span class="Code-DuxCode">N</span> is to be relative to the current left margin (i.e. the left margin reckoned as position 1). If all values are omitted, the values are reset to their values at the beginning of the file.</p>
+    </body>
+</html>

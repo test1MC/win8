@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="4" MadCap:lastHeight="3841" MadCap:lastWidth="981" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Language Translation Tables" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="HtmlHelp" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="helpfile.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" /><title>amharic</title>
+        <link href="../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Amharic (Ethiopic);Ethiopic (Amharic)" />AMHARIC (ETHIOPIC) <img alt="Ethiopian Flag" src="../Resources/Images/flags/ethiopia.gif" height="30" border="0" title="Ethiopian Flag" /></h4>
+        <h5>TABLE DESIGNATOR</h5>
+        <p class="DBTCodePara">amh</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/TableDesignator.flsnp" />
+        <h5>FUNCTIONAL SUMMARY</h5>
+        <p>The Amharic (Ethiopic) tables support print-to-braille translation of literary text written in Ethiopic script for Amharic and other Ethiopic languages with similar braille, following the document "Braille" (Ethiopian National Association for the Blind, 1998), and also English literary text according to the codes and customs established by the Braille Authority of the United Kingdom (BAUK), as revised 2004-2005. Several other languages may also be processed as sub-languages, and transcribed in accordance with BAUK practice. Technical codes for math and science (BAUK Math Code) and computer notation (BAUK's Braille Computer Notation [BCN]) are also supported.</p>
+        <p>Normally, the text is first prepared on Microsoft Word using a Unicode font that supports the Ethiopic script (such as Ethiopic WashRa), and imported to DBT prior to translation.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Braille_to_Print.flsnp" />
+        <h5>SPECIAL REQUIREMENTS AND LIMITATIONS</h5>
+        <p>True braille-to-print translation is supported within English text and Computer Braille Code, but not in languages other than English nor in mathematics. This means that any mathematics or non-English portions of a braille file will not translate correctly to print. It also means that the "translated line" will typically contain gibberish when the cursor is in mathematics, Amharic or literary braille in a language other than English. For this reason you may prefer to turn the translated line off when working with Amharic literary braille -- under the View menu, or even under Global/Default if you wish it to be off by default.</p>
+        <p>Amharic (Ethiopic script) characters may not be shown normally on the "print file" view of DBT. This is the main reason that Microsoft Word should normally be used for entering, editing and viewing the print text and the DBT print view is used only as an intermediary step enroute to the braille.</p>
+        <h5>SECONDARY LANGUAGES SUPPORTED</h5>
+        <p>English (contracted or uncontracted) is supported, as noted above. Language switching codes, i.e. <span class="Code-DuxCode">[lng~en]</span> to introduce an English passage and <span class="Code-DuxCode">[lng]</span> or <span class="Code-DuxCode">[lng~am]</span> to revert to Amharic, may be used but are actually not necessary, as the distinction between languages is made on the basis of the script.</p>
+        <p>Several other languages may be entered and treated as "in English context," using the <span class="Code-DuxCode">[lng...]</span> code to switch. For instance, <span class="Code-DuxCode">[lng~fr]</span> (or <span class="Code-DuxCode">[lng~fra]</span>) would introduce a French passage, which would be terminated, i.e. reverting to English, at <span class="Code-DuxCode">[lng]</span> (or <span class="Code-DuxCode">[lng~en]</span>or <span class="Code-DuxCode">[lng~eng]</span>). The available languages, together with their associated "lng" codes, are:</p>
+        <p class="CodeList">de (or deu) -- German</p>
+        <p class="CodeList">en (or eng) -- English</p>
+        <p class="CodeList">es (or esp) -- Spanish</p>
+        <p class="CodeList">fr (or fra) -- French</p>
+        <p class="CodeList">it (or ita) -- Italian</p>
+        <p class="CodeList">la (or lat) -- Latin</p>
+        <p class="CodeList">pt -- Portuguese</p>
+        <p>In German and French secondary language text, contractions as specified by BAUK will normally be used, as long as grade two is in effect. (Those contractions include some but not all of the contractions that would be used in the regular contracted braille for those languages.) The other languages are all transcribed in grade 1 regardless of the grade setting. That is, the <span class="Code-DuxCode">[g1]</span> and <span class="Code-DuxCode">[g2]</span> codes affect the English text and any German or French text, but not the other languages. Amharic braille is in fact uncontracted, regardless of the grade setting.</p>
+        <h5>TECHNICAL BRAILLE CODES SUPPORTED</h5>
+        <p>The BAUK math and science code and the BAUK computer notation code, i.e. BCN, are supported.</p>
+        <p>In addition, it is possible to switch to any of the available translation tables listed in DBT (see the <span class="Code-DuxCode">[lnb~...]</span> code below), many of which support various technical codes, such as for mathematics or computer notation, or which support “unified” treatment of technical notation as well as literary text in the base language associated with the table.</p>
+        <h5>SUPPORTED DBT TRANSLATION CODES</h5>
+        <p>The following DBT translation codes are available when using the Amharic table. Any other translation codes used will be ignored, or indeed may cause unexpected results. If using an alternative translation table, i.e when switching to another base language table by means of the<span class="Code-DuxCode">[lnb~...]</span> code, please refer to the relevant topic and available codes for that table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[/]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ab]</span> is equivalent to <span class="Code-DuxCode">[g2]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[bar]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[be]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bline]</span>-- ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[bsfe]</span> can be used to end the name of a special math function (see <span class="Code-DuxCode">[bsfs]</span> below).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[bsfs]</span> can be used to begin the name of a special math function, in the case of uncommon functions that are not directly recognized (most are recognized). For example, <span class="Code-DuxCode">[bsfs]</span><span class="Code-DuxScreen">tr</span><span class="Code-DuxCode">[bsfe]</span><span class="Code-DuxScreen">(x)</span> would cause the "<span class="Code-DuxScreen">tr</span>" in "<span class="Code-DuxScreen">tr(x)</span>" to be treated as a function name rather than the product of <span class="Code-DuxScreen">t</span> and <span class="Code-DuxScreen">r</span>.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cap-invert]</span>inverts the normal default case of letters in computer notation (BCN), i.e. changes the default to uppercase since the normal default is lowercase. Note that this is the opposite effect that this control had in the earlier British table, reflecting a change in BCN itself.</p>
+        <p><span class="Code-DuxCode">[cap-normal]</span> restore the normal default case of letters in computer notation (BCN) to lowercase. (Note that this is the opposite effect that this control had in the earlier British table, reflecting a change in BCN itself.)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[caplv1]</span> starts suppressing the indication of capital letters, except in "technical notation" (mathematics between <span style="FONT-FAMILY: monospace;" class="Code-DuxCode">[ts]</span> and <span style="FONT-FAMILY: monospace;" class="Code-DuxCode">[te]</span> commands) and in computer notation (between <span style="FONT-FAMILY: monospace;" class="Code-DuxCode">[cb...]</span> and <span style="FONT-FAMILY: monospace;" class="Code-DuxCode">[tx...]</span>commands).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[caplv3]</span> restores the indication of capital letters everywhere, including literary text. This is the normal mode for this table.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-&amp;]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-de]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ds]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ee]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-es]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ne]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ns]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-se]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ss]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-t1]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-t2]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-ue]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb-us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbi]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cbn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cs-off]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[cz]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[e]</span> -- presently ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ecane]</span>-- presently ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ecans]</span>-- presently ignored.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[fe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fl]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fs]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fte~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~b]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[fts~u]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g1]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[g2]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[i]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ii]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[in]</span> is equivalent to <span class="Code-DuxCode">[g1]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd0]</span> -- is a special variant form of <span class="Code-DuxCode">[ixrtd]</span>, to force "simple" treatment of the indexed root delimiter (no brackets).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrtd]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte0]</span> -- is a special variant form of <span class="Code-DuxCode">[ixrte]</span>, to force "simple" treatment of the indexed root end (no brackets).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ixrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lnb~...]</span> (for switching to another base [primary] language table)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[lng~...]</span> (see "Secondary Languages Supported," above)</p>
+        <p class="CodeList"><span class="Code-DuxCode">[oe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[os]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[pe]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ps]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[rmn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte0]</span> is a special variant form of <span class="Code-DuxCode">[sqrte]</span>, to force "simple" treatment (no brackets) at a square root end.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrte]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts0]</span> is a special variant form of <span class="Code-DuxCode">[sqrts]</span>, to force "simple" treatment (no brackets) at a square root start.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[sqrts]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[tce]</span> -- is allowed but not necessary (ignored).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tcs]</span> -- isallowed but not necessary (ignored).</p>
+        <p class="CodeList"><span class="Code-DuxCode">[te]</span> cancels the effect of <span class="Code-DuxCode">[ts]</span>, restoring normal text mode.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[ts]</span> initiates "technical notation," i.e. "math mode".</p>
+        <p class="CodeList"><span class="Code-DuxCode">[tx]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[txi]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[txn]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[ue]</span>
+        </p>
+        <p style="FONT-FAMILY: monospace;" class="CodeList"><span style="FONT-FAMILY: monospace;" class="Code-DuxCode">[us]</span>
+        </p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn]</span> cancels the effect of <span class="Code-DuxCode">[vrn~s]</span></p>
+        <p class="CodeList"><span class="Code-DuxCode">[vrn~s]</span>establishes "simplified mode," wherein the characteristic consonant for Amharic syllables U+1230 through U+1237 ("sa" etc.) is transcribed as dots 234 instead of of dots 1456, i.e. in the same way as U+1220 through U+1227 ("sza" etc.). This assignment is more familiar to some readers. Note that in future versions the definition of this code may in general be changed, e.g. to affect other assignments, or discontinued.</p>
+        <p class="CodeList"><span class="Code-DuxCode">[xcs]</span>
+        </p>
+        <h5>CHARACTERS SUPPORTED</h5>
+        <p>The table is designed to work with the following groups of characters:</p>
+        <p>Ethiopic characters used in Amharic (Unicode U+1200 through U+137C, DUSCI pages D+bb..., D+bc..., D+bd..., D+be...)</p>
+        <p>All ASCII printable characters</p>
+        <p>Accented characters and punctuation marks typical of French, German, Italian, Spanish, and Portuguese</p>
+        <p>British pound, Japanese yen, and other miscellaneous signs (DUSCI pages D+ec..., D+f5...)</p>
+        <p>Mathematical signs, shapes, etc. (DUSCI pages D+df..., D+e2..., D+f0..., D+f1...)</p>
+        <p>The above is a general guide only (see "General Notes" section under the main “Language Translation Tables” topic).</p>
+        <h5>REFERENCES, HISTORY AND CREDITS</h5>
+        <p>These Amharic tables were developed by Duxbury Systems, starting in October 2006 with the then-current English/British tables, working from the document "Braille" provided by Lemma Regassa, Educational Affairs Department Head of the Ethiopian National Association for the Blind. Duxbury Systems is grateful to Tigabu Gebremedhin of Christoffel-Blindenmission (CBM), Deputy Regional Chairperson for East Africa in the International Council for Education of the Visually Handicapped (ICEVI), for assistance obtaining the necessary information and for guidance and feedback.</p>
+        <p>Duxbury Systems also thanks Tamru E. Belay, PhD, of the Adaptive Technology Center for the Blind (ATCB), who has also provided helpful feedback and information, and who adds the following thoughts: "Ethiopic script has been in use since 100 BC. It is the only indigenous African alphabet still in use today. Each character in the Ethiopic alphabet represents a syllable: a combination of consonant plus vowel. There are 33 consonants and seven vowels. Just as we have computerized Braille in Arabic, Hausa, Kiswahili, and Somalia, there was no reason why one cannot develop Ethiopic Braille."</p>
+        <p>The aspects of these tables related to English literary usage, mathematics and computer notation are all the same as for the English/British tables.</p>
+        <p>(Documentation reviewed: April 2010.)</p>
+    </body>
+</html>

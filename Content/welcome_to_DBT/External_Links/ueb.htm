@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="285" MadCap:lastWidth="906">
+    <head>
+    </head>
+    <body>
+        <h4>Use of the Unified English Braille (UEB) Translator</h4>
+        <p>As you import a file, DBT asks you for a Template Name. Choose a DBT Template containing English (UEB).</p>
+        <p>Some of the features listed here are dependent on importing the file using version 11.3 of DBT. To verify that these features are working, please start with a new file or a newly imported file.</p>
+        <p>Changing the dash in Guide text is a bit tricky. The good news is that we do have a new set of codes that you can use in your documents to get the UEB dash of dots 6, 36 between guide words. The new code we created for specifying the dash to be used between guide words is <span class="Code-DuxCode">[med]</span>. The recommended set of codes is: <span class="Code-DuxCode">[med][ifbrl][q~,-][ifprt][q~—]</span></p>
+        <p>During the beta test, we found out that if you took a file containing this initial code and embossed with an earlier edition of DBT, then the unwanted characters dots 6, 36 were embossed at the start of the braille. That happened because DBT 11.2 does not know anything about the code <span class="Code-DuxCode">[med]</span>. In the end, because of that issue, we decided not to include that set of codes in the initial style in the UEB templates of DBT 11.3.</p>
+    </body>
+</html>

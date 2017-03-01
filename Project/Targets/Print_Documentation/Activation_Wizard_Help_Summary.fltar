@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  MasterToc="/Project/TOCs/Activation_Wizard_Help_TOC.fltoc"
+  conditions=""
+  TargetLanguage="en-us"
+  ConditionTagExpression="include[Primary.Print_Only]exclude[Primary.Not_in_Print_Docs]"
+  EmbedImages="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book_(Letter_Size).flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  MasterPage="/Content/Resources/MasterPages/Book_(A4)_Menus.flmsp"
+  PatchHeadingLevels="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <Glossaries></Glossaries>
+</CatapultTarget>

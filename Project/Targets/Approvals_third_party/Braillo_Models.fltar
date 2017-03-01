@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Approvals_third_party/Braillo_Norway.fltoc"
+  ConditionTagExpression="include[ActWizConditions.ActwizHelp or Primary.Mac_Version] exclude[Primary.Not_in_Print_Docs or Primary.Windows_Version] "
+  AutoSizeCaptureCaptions="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  OutputFile="Installation_Registration_Activation.pdf"
+  MasterPageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl"
+  DisableAutoSync="false">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    Tagged="true"
+    ShowUsedBookmarks="false"
+    InitialMagnification="Actual" />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+</CatapultTarget>

@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="6501" MadCap:lastWidth="601">
+    <head>
+    </head>
+    <body>
+        <h4 MadCap:conditions="Primary.Windows_Version">What Was New in 11.3?</h4>
+        <h4 MadCap:conditions="Primary.Windows_Version">Absolutely New Features</h4>
+        <p MadCap:conditions="Primary.Windows_Version">Amid hundreds of changes and no small number of improvements, the latest DBT presents three absolutely new features for our users:</p>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version"><b><a href="../working_with_word/dbt_to_word.htm">Save to MS Word!</a></b> Under "Save as...", provided only that you have a copy of Microsoft Word on your computer, you can now save a print file from DBT as a Word file.</li>
+            <li MadCap:conditions="Primary.Windows_Version"><b>TactileView Support!</b> DBT now integrates with TactileView tactile graphics software. <a href="http://www.tactileview.com/">TactileView is a full-featured tactile graphics program</a> that can be operated by any user, blind or sighted. [Link requires an internet connection]</li>
+            <li MadCap:conditions="Primary.Windows_Version"><b>Pre-UEB Braille Formatted File Importer!</b> This new braille file importer converts older raw braille files into UEB files (English language only, without math). </li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/absolutenew.htm">Instructions for Trying Out these New Features</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version">Primary Focuses of Improvement:</h4>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version">Braille translation using <a href="#UEB">UEB (Unified English Braille)</a></li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Math">Math import, Math print-to-braille, and Math braille-to-print</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Templates">DBT Templates</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#FileOpen">File Importation</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Interface">User Interface</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Accessibility">Accessibility and JAWS Script Files</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Activation">Activation Process</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Embossers">Braille Embossers</a>
+            </li>
+            <li MadCap:conditions="Primary.Windows_Version"><a href="#Languages">New Languages and Language Improvements:</a> There are four new languages: Biblical original language studies, Chuvash, Javanese and Shona. Dozens of language translations have been improved. See the end of this web page for the details.</li>
+            <br>
+            </br>
+            <p class="bold">See each section below for details and specific Instructions!</p>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="UEB"></a>UEB (Unified English Braille)</h4>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version">Typeform indicators in UEB more closely follow user expectations.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Hard spaces around underlining commands, which are not appropriate for UEB, have been eliminated.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The TSBVI "Clusters" learning series for UEB has been added to DBT's partial-contraction menu for English/UEB.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Guide text for UEB should use dots (6,36) instead of (36,36). Click on the link below for the details. One issue is that making this change makes your files unsuitable for embossing with pre-11.3 DBT software.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The oe ligature within French as a secondary language (within <span class="Code-DuxCode">[lng~fra]</span> ... <span class="Code-DuxCode">[lng]</span> codes) is now supported.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Unicode U+2033 (double prime/inch symbol) is now supported.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Using the inherently subscripted and superscripted Unicode digits (e.g. U+2083 "subscript 3") to form multi-digit, but otherwise simple, numeric subscripts and superscripts now works properly. (Normal math encoding must still be used for more complex expressions.)</li>
+            <li MadCap:conditions="Primary.Windows_Version">Capitalized passages are no longer extended beyond the end of a sentence or punctuated phrase when only a single capital letter (such as "I'm" or "A") follows and is more naturally capitalized separately.</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/ueb.htm">Instructions for Trying Out the UEB Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="Math"></a>Math Improvements</h4>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version">When you Save As to Word, you can display DBT math equations in Word using <a href="../working_with_word/mathematics/mathtype.htm">MathType</a>.</li>
+            <li MadCap:conditions="Primary.Windows_Version">When you Save As to LaTeX, you can display DBT math equations in Word using <a href="../working_with_word/mathematics/scientific_notebook.htm">Scientific Notebook</a> or Scientific Viewer.</li>
+            <li MadCap:conditions="Primary.Windows_Version">You can import braille formatted files in UEB text with UEB math, translate them into inkprint, and then produce them in inkprint using <a href="../working_with_word/mathematics/scientific_notebook.htm">Scientific Notebook</a> or <a href="../working_with_word/mathematics/mathtype.htm">MathType</a>.</li>
+            <li MadCap:conditions="Primary.Windows_Version">You can import braille formatted files in UEB text with Nemeth math, translate them into inkprint, and then produce them in inkprint using <a href="../working_with_word/mathematics/scientific_notebook.htm">Scientific Notebook</a> or <a href="../working_with_word/mathematics/mathtype.htm">MathType</a>. (You must follow our specific instructions to do this.)</li>
+            <li MadCap:conditions="Primary.Windows_Version">You can now easily produce Nemeth math within UEB braille with appropriate indicators (see Template Improvements).</li>
+            <li MadCap:conditions="Primary.Windows_Version">For the languages of India, Laos, and Thailand there are two templates, a basic template that handles UEB math, and a "with Nemeth" template that handles Nemeth math.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Material from <a href="../working_with_word/mathematics/scientific_notebook.htm">Scientific Notebook</a> no longer loses its formatting when imported.</li>
+            <li MadCap:conditions="Primary.Windows_Version">DBT no longer inserts line breaks for <a href="../working_with_word/mathematics/mathtype.htm">MathType</a> objects not entered as in-line in MathType.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We have added the ability for the user to customize the handling of imported math by using styles called <i>math</i> and <i>math-TextInMath</i> in their DBT template. You can set up the math style to switch to the DBT translation table that uses the math code you desire.</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/math.htm">Instructions for Trying Out these Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="Templates"></a>DBT Template Improvements</h4>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version">For easier recognition, we have renamed a number of templates. Instead of <b>English (Unified)</b>, the names are now <b>English (UEB)</b>. All English language templates not using UEB braille are marked <b>pre-UEB</b>.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We created a new template for Nemeth code math within UEB, called <b>English (UEB) - BANA with Nemeth</b>.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We include a new UEB Template for Australia: <b>English (UEB) - Australian Formatting</b>.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We include a new UEB Template for New Zealand: <b>English (UEB) - New Zealand (including Maori)</b></li>
+            <li MadCap:conditions="Primary.Windows_Version">We upgraded the <b>English (UEB) - UK Formatting</b> template with many additional styles.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We modified several templates to better import files from <a href="../working_with_word/mathematics/scientific_notebook.htm">Scientific Notebook</a>.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We updated most <b>basic</b> DBT templates so they can use the UEB math translator for math.</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/templates.htm">Instructions for Trying Out these Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="FileOpen"></a>File Open (Import)</h4>
+        <ul>
+            <li MadCap:conditions="Primary.Windows_Version">Former problems with paragraph numbering when importing files from Word and Open Office have been resolved.</li>
+            <li MadCap:conditions="Primary.Windows_Version">DBT's .docx importer now recognizes style names in files created with non-English editions of Word.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Many aspects of file import are now unified so that there is more consistency across the many different file import paths. This should lead to better file imports for everyone.</li>
+            <li MadCap:conditions="Primary.Windows_Version">As an example, smart quote handling is now the same for all import paths.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The stripping of unneeded Zero Width Joiner characters (U+200D) now works with all import paths, including XML.</li>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="Interface"></a>User Interface Improvements</h4>
+        <ul>
+            <li MadCap:conditions="Primary.Windows_Version">Substantial work has been done to improve the <b>Translated Line</b> display.</li>
+            <li MadCap:conditions="Primary.Windows_Version">For a new installation, DBT offers an appropriate recommended template for more locations around the world, easing the set-up process.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The Activation Process is now localizable. It is already available in French. Russian and some other languages are in progress.</li>
+            <li MadCap:conditions="Primary.Windows_Version">We have expanded the Hyperlink Import Screen and renamed it Import Options. These options affect all the import types, not just the Word importer.</li>
+            <li MadCap:conditions="Primary.Windows_Version">An important issue with UEB Math is control of spaces around signs of comparison. These spaces are placed for the lower grades and not placed for the upper grades. There is now a checkbox in the Import Options to control this behavior.</li>
+            <li MadCap:conditions="Primary.Windows_Version">There is a new <b>Global Import Option</b> checkbox that allows removing spaces around dashes. This is important in Australian formats. (The default is <b>off</b>.)</li>
+            <li MadCap:conditions="Primary.Windows_Version">Import options allow the user to specify the code page for a text file being imported. This may be most useful to users in Central Europe.</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/interface.htm">Instructions for Trying Out these Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="Accessibility"></a>Accessibility and JAWS Script Files</h4>
+        <ul>
+            <li MadCap:conditions="Primary.Windows_Version">We have revised the information layout and navigation of the Activation Process to make it much more accessible to blind users.</li>
+            <li MadCap:conditions="Primary.Windows_Version">There are further improvements in the embossing of help pages.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Previously, when you pressed Control+H in a DBT document to turn highlighting on or off, JAWS did not say if it was now on or off. JAWS now reports the highlighting state, whether changed via Control+H or the Edit menu.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Previously, when navigating through a document with highlighting on, JAWS would read two items, the item the cursor landed on and the item it left. That is no longer done. Now JAWS reads one item and tells you if it is being selected or unselected.</li>
+            <li MadCap:conditions="Primary.Windows_Version">If the JAWS version is 14 or above, the speaking is customized for DBT as it is when not selecting. For example, when selecting or unselecting a line in a braille document, JAWS speaks the print back-translation of that line. When selecting or unselecting a DBT code, JAWS speaks the code instead of the left bracket, the individual characters, and then right bracket. When selecting or unselecting a braille character, JAWS speaks it as a braille cell rather than as an ASCII character.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Previously, when moving word by word in a braille document, JAWS would try to pronounce the word as ASCII; now it spells the word as braille cells. It also does that when selecting or unselecting a braille word.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Previously, JAWS would beep to indicate a line that was skipped because of styles or codes. It no longer beeps. Instead, you can choose to have these line skips announced. The Alt+I toggle used to let you choose whether to have JAWS announce style changes. Now the Alt+I toggle allows for a choice of whether to announce style changes and whether to announce skipped lines (a total of four choices).</li>
+            <li MadCap:conditions="Primary.Windows_Version">When using a braille device, it is now possible to have JAWS remain silent when you move up or down line by line. Press Alt+U to tell JAWS not to use the translated line for moving up and down.</li>
+            <li MadCap:conditions="Primary.Windows_Version">There is better support for using commands from the keyboard of your braille device, such as the JAWS commands for BrailleNextLine and BraillePriorLine (which will braille the indicated line without speech, even if you have the Alt+U toggle set for speaking the translated line when using the computer keyboard).</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/accessibility.htm">Instructions for Trying Out JAWS Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h3 MadCap:conditions="Primary.Windows_Version"><a name="Activation"></a>Improvements to the Activation Process</h3>
+        <ul>
+            <li MadCap:conditions="Primary.Windows_Version">We have redesigned the activation wizard interface to interact more naturally with screen readers. There are major improvements to screen layout, information organization, screen navigation, and text voicing.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The activation process has been localized for additional languages beyond English.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The activation process responses have been fine-tuned to keep the user on the correct path and avoid some common operator errors.</li>
+            <li MadCap:conditions="Primary.Windows_Version">If an internet activation attempt cannot connect, the recovery process saves vital information so that the option to activate by email can succeed.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Activation diagnostics now detect some common user problems like activation folders that lack write access and unusual cases like inconsistent license information. In general, diagnostics provide more information than before to help identify user problems.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The process to register for user group emails is now current with Canadian anti-spam regulations.</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/activation.htm">Instructions for Trying Out these Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="Embossers"></a>Braille Embossers</h4>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version">DBT now supports integration of Tactile View graphics with the Index, and Tiger lines of braille embossers.</li>
+            <li MadCap:conditions="Primary.Windows_Version">DBT now supports the Nippon Telesoft <b>Gemini Super2</b> embosser.</li>
+            <li MadCap:conditions="Primary.Windows_Version">It now supports the Enabling <b>Phoenix Gold</b> embosser.</li>
+            <li MadCap:conditions="Primary.Windows_Version">DBT has improved support for the Enabling BraillePlace embosser.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The issue of controlling "ET Speaks" from DBT is now resolved.</li>
+            <li MadCap:conditions="Primary.Windows_Version">DBT supports A3 portrait paper (49x41) for the Index-D V.4 embosser and the Index Braille Box.</li>
+            <li MadCap:conditions="Primary.Windows_Version">Certain Braillo models have a multiple copy feature (to facilitate display on the Braillo of the number of copies embossed). DBT now supports this feature.</li>
+            <li MadCap:conditions="Primary.Windows_Version">In Embosser Setup, the default embosser output has been changed from <b>Port</b> to <b>Printer</b>, which is now the more common case.</li>
+            <ul>
+                <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/embossers.htm">Instructions for Trying Out Embosser Improvements</a>
+                </li>
+            </ul>
+        </ul>
+        <h4 MadCap:conditions="Primary.Windows_Version"><a name="Languages"></a>New Languages and Translation Improvements</h4>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version">Duxbury is making strides to turn braille emphasis into the markup for inkprint emphasis in braille-to-print translation. This feature is described in the table below as "Respecting emphasis in braille-to-print." It means a student can write a paper in braille on a refreshable braille device, convert to inkprint in Duxbury, and export to Word with all the emphasis of the original braille showing up in the Word file.</li>
+            <li MadCap:conditions="Primary.Windows_Version">The new version of DBT presents the <a href="http://www.duxburysystems.com/lan_biblical_scholar.htm">Biblical Original Languages</a> table to meet the needs of blind biblical scholars.</li>
+        </ul>
+        <table border="1" style="margin-left: 0;margin-right: auto;" summary="Affected Languages Table" MadCap:conditions="Primary.Windows_Version">
+            <caption MadCap:conditions="Primary.Windows_Version">Languages Affected</caption>
+            <col>
+            </col>
+            <col>
+            </col>
+            <tbody>
+                <tr>
+                    <th MadCap:conditions="Primary.Windows_Version">Flag</th>
+                    <th MadCap:conditions="Primary.Windows_Version">Description</th>
+                </tr>
+                <tr>
+                    <td MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="South African Flag" src="../Resources/Images/flags/south_africa.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Afrikaans: Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Albanian Flag" src="../Resources/Images/flags/albania.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Albanian: Adding Arabic and Greek script in print-to-braille, Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Azerbaijan Flag" src="../Resources/Images/flags/azerbai.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Azeri: New table for braille-to-print translation. Table includes respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Assyrian Flag" src="../Resources/Images/flags/syriac.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version"><a href="http://www.duxburysystems.com/lan_biblical_scholar.htm">Biblical original language studies,</a> This table combines Biblical Hebrew, Biblical Greek, and Syriac on a UEB table.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img src="../Resources/Images/flags/bulgaria.gif" alt="Flag of Bulgaria" title="Flag of Bulgaria">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">The Bulgarian print-to-braille table has been updated per new information regarding the treatment of two accented letters.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Bosnian Flag" src="../Resources/Images/flags/bosnia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Bosnian: Added Arabic script in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Andorra Flag" src="../Resources/Images/flags/andorra.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Catalan: In print-to-braille, each upper case letter now gets its own dot 46 indicator. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Russian Flag" src="../Resources/Images/flags/russia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Chuvash is a minority language in Russia. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Croatian Flag" src="../Resources/Images/flags/croatia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Croatian: Corrections made for sequences of all caps, and strip emphasis codes in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Netherlands Flag" src="../Resources/Images/flags/netherlands.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Dutch: Certain math symbols (such as plus), are now preceded by either a space or a dot 5, but not both. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Estonian Flag" src="../Resources/Images/flags/estonia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Estonian: Strip emphasis codes in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Philippines Flag" src="../Resources/Images/flags/philippines.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Updated Filipino and Tagalog based on user reports. Letter sign now supported. Some print-to-braille improvements, and extensive braille-to-print improvements.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Finnish Flag" src="../Resources/Images/flags/finland.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Finnish: Strip emphasis codes in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="German Flag" src="../Resources/Images/flags/germany.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">German: Fixes in braille-to-print translation to improve the handling of some braille contractions.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Greek Flag" src="../Resources/Images/flags/greece.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Greek: Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Flag" src="../Resources/Images/flags/israel.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Hebrew/Israeli: Now supports four scripts: Hebrew, Roman, Arabic, and Russian. We have added a simple math data entry system devised by ALEH (translation variation DBT code required).</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Indonesian Flag" src="../Resources/Images/flags/indonesia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Indonesian: Added Arabic script in print-to-braille and respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="IPA Flag" src="../Resources/Images/flags/ipa.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">IPA: A brand new braille-to-print table. (Only comment changes in print-to-braille.)</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Irish Flag" src="../Resources/Images/flags/ireland.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">The Irish Gaelic print-to-braille table has been updated for initial implementation of the new Updated Irish Braille (UIB) Code, specifically to implement non-use of specific contractions when bridging the basic word boundaries in certain compound words.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Italian Flag" src="../Resources/Images/flags/italy.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Italian: Fixed the handling of the period character.</td>
+                </tr>
+                <tr>
+                    <td MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Japanese Flag" src="../Resources/Images/flags/japan.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Japanese: Fixed braille-to-print for 12 strings, and 1 string for print-to-braille.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Indonesian Flag" src="../Resources/Images/flags/indonesia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Javanese: New Language! Uncontracted Indonesian plus uncontracted Arabic.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="South Korean Flag" src="../Resources/Images/flags/southkorea.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Korean: Now handles one contraction that was not previously supported.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Luxembourg Flag" src="../Resources/Images/flags/luxembourg.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Luxembourgish: Fixed handling of all caps and respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Macedonian Flag" src="../Resources/Images/flags/macedonia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Macedonian: Added Arabic script in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Malaysian Flag" src="../Resources/Images/flags/malaysia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Malay: Adding Arabic script in print-to-braille, and respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Flag of Malta" src="../Resources/Images/flags/malta.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Maltese: The braille translation tables have been updated per further revised specifications received from a Maltese source. Also respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="mongolian Flag" src="../Resources/Images/flags/mongolia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Mongolian: Now uses UEB for punctuation and math; respecting emphasis in braille-to-print. Also handles Unicode characters U+04AF and U+20EA correctly.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Montenegro Flag" src="../Resources/Images/flags/montenegro.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Montenegrin: Added Arabic script in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Norwegian Flag" src="../Resources/Images/flags/norway.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Norwegian: Several contractions fixed in both print-to-braille and braille-to-print translators. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Polish Flag" src="../Resources/Images/flags/poland.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Polish: Fixed several characters, and respects emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Romanian Flag" src="../Resources/Images/flags/romania.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Romanian: Fixed 2 characters in braille-to-print. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Russian Flag" src="../Resources/Images/flags/russia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Russian: Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Serbian Flag" src="../Resources/Images/flags/serbia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Serbian: Added Arabic script in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Slovakian Flag" src="../Resources/Images/flags/slovakia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Slovakian: Respecting emphasis in braille-to-print. Slovakian emphasis character is dots 46, not dots 456.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Slovenian Flag" src="../Resources/Images/flags/slovenia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Slovenian: Added Arabic script in print-to-braille. Respecting emphasis in braille-to-print.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Flag of Zimbabwethe United Nations" src="../Resources/Images/flags/zimbabwe.gif">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Shona: African language combining uncontracted UEB and uncontracted Arabic.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Somali Flag" src="../Resources/Images/flags/somalia.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Somali: Added Arabic script in print-to-braille.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Turkey Flag" src="../Resources/Images/flags/turkey.gif" border="1">
+                        </img>
+                        <img width="45" height="30" alt="Flag of Cyprus" src="../Resources/Images/flags/cyprus.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Turkish: Added Arabic script in print-to-braille.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Turkmen Flag" src="../Resources/Images/flags/turkmen.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Turkmen: Respecting emphasis in braille-to-print. Fixed open double quotes on print-to-braille.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Pakistan Flag" src="../Resources/Images/flags/pakistan.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Updated Urdu based on user reports (fixed 1 print-to-braille error and three braille-to-print errors).</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Uzbek Flag" src="../Resources/Images/flags/uzbekistan.gif" border="1">
+                        </img>
+                    </td>
+                    <td MadCap:conditions="Primary.Windows_Version">Uzbec: Respecting emphasis in braille-to-print. Fixed open double quotes in print-to-braille.</td>
+                </tr>
+                <tr>
+                    <td width="100" MadCap:conditions="Primary.Windows_Version">
+                        <img width="45" height="30" alt="Wales Flag" src="../Resources/Images/flags/wales.gif" border="1">
+                        </img>
+                    </td>
+                    <td>
+                        <p MadCap:conditions="Primary.Windows_Version">Welsh: Updated to conform to Welsh Braille Code changes intended to make Welsh Braille Code more consistent with UEB.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul MadCap:conditions="Primary.Windows_Version">
+            <li MadCap:conditions="Primary.Windows_Version"><a href="External_Links/languages.htm">Instructions for Trying Out these Improvements</a>
+            </li>
+        </ul>
+    </body>
+</html>

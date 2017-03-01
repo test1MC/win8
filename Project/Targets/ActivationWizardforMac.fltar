@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Build &amp; publish MAC help for activation wizard."
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="first"
+  DefaultUrl="/Content/activation_wizard_help/m_WelcomeWhatIsActivation.htm"
+  MasterToc="/Project/TOCs/Activation_Wizard_Help_TOC.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  conditions=""
+  ExcludeUnreferencedContent="true"
+  Skin="(none)"
+  GetLatestBeforeCompile="false"
+  ConditionTagExpression="include[ActWizConditions.ActwizHelp] exclude[&quot;Primary.Activation Wizard&quot; or Primary.Braille_Only or Primary.Codes_Styles_Templates or Primary.Emboss or Primary.Flags or Primary.Glossaries or Primary.Installation or Primary.Miscellaneous or Primary.Not_in_HTML or Primary.Not_in_Print_Docs or Primary.NOT_USED or Primary.Perky or Primary.Perky_Only or Primary.Popups or Primary.Print_Only or Primary.Printed_Introduction or Primary.Reg_Activate or Primary.Setup_DBT or Primary.Special_Characters or Primary.SWIFT or Primary.The_Menus or Primary.Troubleshooting or Primary.Vista or Primary.Welcome or Primary.Windows_Version or Primary.Working_with_Word] "
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestAwizhelp.fldes" />
+  </Destinations>
+  <MetaTags
+    Enabled="false" />
+</CatapultTarget>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="First Draft,Added To TOC,Links,Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="829" MadCap:lastWidth="722">
+    <head><title>Change Braille Grade</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Braille:Change Grade;Translation:Change Braille Grade" />Change Braille Grade</h4>
+        <p class="Normal"><span class="hcp1">Code Used:</span> <span class="Code-DuxCode">[tx]</span> and <span class="Code-DuxCode">[gN]</span> (also <span class="Code-DuxCode">[ab]</span>)</p>
+        <p class="Keystroke">Keystroke: <span class="Keyboard">Alt + 0, 1, 2, 3, 4 or 5 </span><span class="Keyboard" style="font-weight: normal;">or from Layout Menu: Translation Codes. (See <a href="#Available_options">Available options</a> below</span>, but note that many of these options use codes not documented here<span class="Keyboard" style="font-weight: normal;">)</span></p>
+        <p class="bold">What does it do?</p>
+        <p class="Normal">Changes the level of contractions used when translating to braille. Please note this has nothing to do with "language" (It will not affect what you enter directly in a braille document)</p>
+        <p class="bold">Where would it be used?</p>
+        <p class="Normal">Usually in a contracted braille document, when it is necessary to produce text in uncontracted braille. This could apply to foreign names for example, or simple e-mail addresses where some local rules permit Grade 1 use.</p>
+        <p class="bold">Usage in DBT:</p>
+        <p class="Normal">I took <span class="Code-DuxCode">[tx][g1]</span>Simone <span class="Code-DuxCode">[tx][g2]</span>from France to the park.</p>
+        <p class="bold">Produces in Braille:</p>
+        <p class="Simbraille">,i took ,simone f ,fr.e 6! p&gt;k4</p>
+        <p class="bold">Let us explain!</p>
+        <p>In this example we do not want to contract the name "Simone", and so the <span class="Code-DuxCode">[tx][g1]</span> tells DBT to continue using Grade 1. The <span class="Code-DuxCode">[tx][g2]</span> tells DBT to continue with Grade 2.</p>
+        <p class="Normal"><a name="Available_options"></a><b>Available options</b>, subject to language used, are:
+        </p>
+        <p class="hcp4">Alt + 0 = Grade 0</p>
+        <p class="hcp4">Alt + 1 = Grade 1</p>
+        <p class="hcp4">Alt + 2 = Grade 2</p>
+        <p class="hcp4">Alt + 3 = CBC (Computer Braille Code)</p>
+        <p class="hcp4">Alt + 4 = Spanish Text</p>
+        <p class="hcp4">Alt + 5 = LIFG Text (Latin, Italian, French, German)</p>
+        <p class="hcp4"><span class="hcp1">NOTE:</span> The <span class="Code-DuxCode">[tx]</span> code can also be used on its own to end translation in Computer Braille Code. The translation will resume in either Grade 1 or in Grade 2. Normally, DBT inserts the <span class="Code-DuxCode">[tx]</span> paired with either <span class="Code-DuxCode">[g1]</span> or <span class="Code-DuxCode">[g2]</span> so that it is clear whether braille will be contracted from that point forward.</p>
+    </body>
+</html>

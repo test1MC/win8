@@ -1,0 +1,1248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:id="Special_Characters" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Miscellaneous" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="HtmlHelp" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="helpfile.xml" MadCap:SearchType="Stem" MadCap:lastBlockDepth="5" MadCap:lastHeight="10404" MadCap:lastWidth="784">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" /><title>Special Characters</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Characters Special;Special Characters" />Special Characters</h4>
+        <p>Special Characters are characters not found on the standard computer keyboard. For the sake of this discussion, we are going to divide special characters into three groups:</p>
+        <ol>
+            <li value="1">Characters needed to produce text (Accented letters, or non-Roman scripts such as Cyrillic, Arabic, Tamil, or Korean).</li>
+            <li value="2">Characters needed to produce mathematics or technical text.</li>
+            <li value="3">Other Characters that may be needed for their graphical content.</li>
+        </ol>
+        <p>For virtually all users, creating text is not difficult. Using Windows Region and Language Settings (especially the Keyboard Settings, you can have Windows (and especially Microsoft Word) use your choice for entering text. It is very easy to enter text, save it as a Microsoft Word file, and then import the completed Word file into Duxbury DBT.</p>
+        <p>What if you do not want to change your keyboard system but need to enter a small number of unusual characters into you text? You can do this in either Microsoft Word or in DBT</p>
+        <p>In terms of technical characters, be aware that you may want to use a Mathematics Editing Program such as <a href="http://www.duxburysystems.com/documentation/mathtype.asp">MathType</a> to help you. Duxbury DBT can import files created by MathType.</p>
+        <p>First, we should mention that while Unicode is used throughout the world, DBT uses its own internal system for enumerating unusual characters. This system is called DUSCI, and it is only found in Duxbury DBT. If you want to enter a character into Microsoft Word, you need to know the Unicode number. if you want to enter a character into Duxbury DBT, you need to know the DUSCI number. Of course, we are happy to help you locate special characters, but be aware that lists of characters can be tedious to review. Screen reader users should expect unusual results when viewing the accompanying tables, because they essentially provide a partial list of <span class="MCPopup"><MadCap:popup><MadCap:popupHead>Unicode</MadCap:popupHead><MadCap:popupBody>This is a form of character set used in newer systems containing well in excess of 40,000 characters. Early Windows systems were limited to 256 characters in any one character set.</MadCap:popupBody></MadCap:popup></span> characters.</p>
+        <h5>Entering Raw Unicode into Microsoft Word</h5>
+        <p>Type in the 4 digit (hexadecimal) code for the Unicode value. Immediately afterwards, type Alt-X. The 4 digits go away and are replaced by the single Unicode character. If you repeat the command at the same position, the effect is reversed. So this command can be used to learn the Unicode number for an unknown character, or it can be used to input a Unicode character.</p>
+        <h5>Entering Raw DUSCI into Duxbury DBT</h5>
+        <p>Hold down the Ctrl key and press ] (<b>Ctrl-]</b>. In the dialog box which appears, type in the DUSCI 4 digit code. Like Unicode, DUSCI is written out in hexidecimal digits. So if the chart you are looking at says D+C036, then press <b>Ctrl-]</b> for the dialogue box, C036&lt;Enter&gt; to enter the character "Devanagari AA" into DBT. To enter this same character into Microsoft Word, you would use the Unicode number, which is 0906.</p>
+        <h5>Clipboarding Into DBT does not Work for Special Characters</h5>
+        <p>If you need to clipboard some material, you need to clipboard it into Microsoft Word, and then import the Word file into DBT.</p>
+        <h5>Han or Chinese Characters</h5>
+        <p>DBT will not display Chinese characters. Instead DBT displays an appropriate substitute based on the language.</p>
+        <p>In the Global Settings, Word Import Menu, you can choose how Chinese characters are imported. The four choices are:</p>
+        <ol>
+            <li value="1">Mandarin</li>
+            <li value="2">Cantonese</li>
+            <li value="3">Japanese</li>
+            <li value="4">Korean</li>
+        </ol>
+        <p>Your choice controls how Chinese characters are imported into DBT:</p>
+        <table border="3" style="margin-left: auto;margin-right: auto;" summary="Chinese - Language and DBT Characters">
+            <col />
+            <col />
+            <tr>
+                <th>Language</th>
+                <th>DBT Characters</th>
+            </tr>
+            <tr>
+                <td>Mandarin</td>
+                <td>Pinyin Romanization with accent<br />marks for the tones</td>
+            </tr>
+            <tr>
+                <td>Cantonese</td>
+                <td>Romanization with superscript<br />numbers for the tones</td>
+            </tr>
+            <tr>
+                <td>Japanese</td>
+                <td>Unicode U+30xx characters</td>
+            </tr>
+            <tr>
+                <td>Korean</td>
+                <td>Unicode U+11xx characters</td>
+            </tr>
+        </table>
+        <h5>Arabic and Hebrew Characters</h5>
+        <p>Both Arabic and Hebrew inkprint are written from right to left. DBT displays the inkprint Arabic and Hebrew text from right to left as well. At this point, the DBT Print editor cursor does not accommodate the right to left flow within a line.</p>
+        <p>For these scripts, it is best to go straight from Microsoft Word into braille, using DBT as the translation engine. If you need to, you can clipboard whole lines from Word into DBT as a way of making changes within a line.</p>
+        <h5>Hangul or Korean Characters</h5>
+        <p>Hangul compacts 2 or 3 characters into a single symbol. When DBT imports a file, this process is reversed. DBT breaks down a single Hangul character into its basic parts. In technical terms, all Hangul characters from U+AC00 through U+D7AF are redirected into Hangul Jamo characters U+11xx. DBT uses a mono-spaced font to display the inkprint characters. The result can be difficult to read, and is certainly jaring to those who are used to reading conventional inkprint. For many languages, it is best to go straight from Microsoft Word into braille, using DBT as the translation engine.</p>
+        <hr />
+        <h5>Table of Unicode Ranges supported by DUSCI Characters</h5>
+        <table border="3" style="margin-left: auto;margin-right: auto;" summary="Table of Unicode Ranges supported by DBT.">
+            <col />
+            <col />
+            <col />
+            <tr>
+                <th>Script</th>
+                <th>Unicode and Link</th>
+                <th>Type</th>
+            </tr>
+            <tr>
+                <td>Latin</td>
+                <td><a href="Unicode_00xx.htm">U+00xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Latin Extended</td>
+                <td><a href="Unicode_01xx.htm">U+01xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Latin Extended</td>
+                <td><a href="Unicode_02xx.htm">U+02xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Greek</td>
+                <td><a href="Unicode_03xx.htm">U+03xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Cyrillic</td>
+                <td><a href="Unicode_04xx.htm">U+04xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Armenian and Hebrew</td>
+                <td><a href="Unicode_05xx.htm">U+05xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Arabic</td>
+                <td><a href="Unicode_06xx.htm">U+06xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Hindi and Bengali</td>
+                <td><a href="Unicode_09xx.htm">U+09xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Gurmukhi and Gujarati</td>
+                <td><a href="Unicode_0Axx.htm">U+0Axx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Oriya and Tamil </td>
+                <td><a href="Unicode_0Bxx.htm">U+0Bxx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Telegu and Kannada</td>
+                <td><a href="Unicode_0Cxx.htm">U+0Cxx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Malayalam and Sinhala</td>
+                <td><a href="Unicode_0Dxx.htm">U+0Dxx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Thai and Lao</td>
+                <td><a href="Unicode_0Exx.htm">U+0Exx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Tibetan</td>
+                <td><a href="Unicode_0Fxx.htm">U+0Fxx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Myanmar and Georgian</td>
+                <td><a href="Unicode_10xx.htm">U+10xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Korean</td>
+                <td><a href="Unicode_11xx.htm">U+11xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Ethiopic</td>
+                <td><a href="Unicode_12xx.htm">U+12xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Ethiopic</td>
+                <td><a href="Unicode_13xx.htm">U+13xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>Khmer (Cambodian)</td>
+                <td><a href="Unicode_17xx.htm">U+17xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+            <tr>
+                <td>IPA 1</td>
+                <td><a href="Unicode_1Dxx.htm">U+1Dxx</a>
+                </td>
+                <td>IPA</td>
+            </tr>
+            <tr>
+                <td>IPA 2</td>
+                <td><a href="Unicode_1Exx.htm">U+1Exx</a>
+                </td>
+                <td>IPA</td>
+            </tr>
+            <tr>
+                <td>Misc Symbols</td>
+                <td><a href="Unicode_20xx.htm">U+20xx</a>
+                </td>
+                <td>Symbols</td>
+            </tr>
+            <tr>
+                <td>Arrows, etc.</td>
+                <td><a href="Unicode_21xx.htm">U+21xx</a>
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Math Operators</td>
+                <td><a href="Unicode_22xx.htm">U+22xx</a>
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Misc Technical</td>
+                <td><a href="Unicode_23xx.htm">U+23xx</a>
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Box Drawing</td>
+                <td><a href="Unicode_25xx.htm">U+25xx</a>
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Dingbats</td>
+                <td><a href="Unicode_27xx.htm">U+27xx</a>
+                </td>
+                <td>Symbols</td>
+            </tr>
+            <tr>
+                <td>Math Arrows</td>
+                <td><a href="Unicode_29xx.htm">U+29xx</a>
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Math Operators</td>
+                <td><a href="Unicode_2Axx.htm">U+2Axx</a>
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Japanese</td>
+                <td><a href="Unicode_30xx.htm">U+30xx</a>
+                </td>
+                <td>Language</td>
+            </tr>
+        </table>
+        <h5>Table of all Unicode Ranges U+0000-U+FFFF</h5>
+        <p>This is a table of all of the Unicode Ranges (for 4 digit hexidecimal). If the last column is blank, then there is no support for these characters in Duxbury DBT. If the last column is "Word™ import", it means that these characters are imported into other Duxbury supported characters. If that last column is "DUSCI supported" then that Unicode range is in the previous table.</p>
+        <table border="3" cellspacing="4" style="margin-left: auto;margin-right: auto;" summary="Table of all Unicode Ranges.">
+            <col />
+            <tr>
+                <th>Unicode Range</th>
+                <th>Name and Wikipedia Link</th>
+                <th>Support Level</th>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0000.pdf">U+0000-007F</a>
+                </td>
+                <td>Basic Latin</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0080.pdf">U+0080-00FF</a>
+                </td>
+                <td>Latin-1 Supplement</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0100.pdf">U+0100-017F</a>
+                </td>
+                <td>Latin Extended-A</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0180.pdf">U+0180-024F</a>
+                </td>
+                <td>Latin Extended-B</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0250.pdf">U+0250-02AF</a>
+                </td>
+                <td>IPA Extensions</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U02B0.pdf">U+02B0-02FF</a>
+                </td>
+                <td>Spacing Modifier Letters</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0300.pdf">U+0300-036F</a>
+                </td>
+                <td>Combining Diacritical Marks</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0370.pdf">U+0370-03FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Greek_alphabet">Greek and Coptic</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0400.pdf">U+0400-04FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Cyrillic_alphabet">Cyrillic</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0500.pdf">U+0500-052F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Cyrillic_characters_in_Unicode">Cyrillic Supplement</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0530.pdf">U+0530-058F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Armenian_alphabet">Armenian</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0590.pdf">U+0590-05FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hebrew_alphabet">Hebrew</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0600.pdf">U+0600-06FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Arabic_alphabet">Arabic</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0700.pdf">U+0700-074F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Syriac_alphabet">Syriac</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0750.pdf">U+0750-077F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Arabic_alphabet">Arabic Supplement</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0780.pdf">U+0780-07BF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Thaana">Thaana</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U07C0.pdf">U+07C0-07FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/N'Ko">N'Ko</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0800.pdf">U+0800-083F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Samaritan_script">Samaritan</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0900.pdf">U+0900-097F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Devanagari_script">Devanagari</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0980.pdf">U+0980-09FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Bengali_script">Bengali</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0A00.pdf">U+0A00-0A7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Gurmukhi_script">Gurmukhi</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0A80.pdf">U+0A80-0AFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Gujarati_script">Gujarati</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0B00.pdf">U+0B00-0B7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Oriya_script">Oriya</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0B80.pdf">U+0B80-0BFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tamil_script">Tamil</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0C00.pdf">U+0C00-0C7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Telugu_script">Telugu</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0C80.pdf">U+0C80-0CFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Kannada_script">Kannada</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0D00.pdf">U+0D00-0D7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Malayalam_script">Malayalam</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0D80.pdf">U+0D80-0DFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Sinhala_script">Sinhala</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0E00.pdf">U+0E00-0E7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Thai_script">Thai</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0E80.pdf">U+0E80-0EFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Lao_script">Lao</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U0F00.pdf">U+0F00-0FFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tibetan_script">Tibetan</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1000.pdf">U+1000-109F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Myanmar_script">Myanmar</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U10A0.pdf">U+10A0-10FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Georgian_alphabet">Georgian</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1100.pdf">U+1100-11FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hangul_script">Hangul Jamo</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1200.pdf">U+1200-127F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Ge'ez_script">Ethiopic (Ge'ez)</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1380.pdf">U+1380-139F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Ge'ez_script">Ethiopic Supplement</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U13A0.pdf">U+13A0-13FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Cherokee_syllabary">Cherokee</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1400.pdf">U+1400-167F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics">Unified Canadian Aboriginal Syllabics</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1680.pdf">U+1680-169F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Ogham">Ogham</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U16A0.pdf">U+16A0-16FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Runic_alphabet">Runic</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1700.pdf">U+1700-171F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Baybayin">Tagalog (Baybayin)</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1720.pdf">U+1720-173F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hanun%C3%B3'o_script">Hanun?'o</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1740.pdf">U+1740-175F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Buhid_script">Buhid</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1760.pdf">U+1760-177F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tagbanwa_script">Tagbanwa</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1780.pdf">U+1780-17FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Khmer_script">Khmer</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1800.pdf">U+1800-18AF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Mongolian_script">Mongolian</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U18B0.pdf">U+18B0-18FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Canadian_Aboriginal_syllabics">Extended Canadian Aboriginal syllabics</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1900.pdf">U+1900-194F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Limbu_script">Limbu</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1950.pdf">U+1950-197F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tai_Le_script">Tai Le</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1980.pdf">U+1980-19DF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/New_Tai_Lue_script">New Tai Lue</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U19E0.pdf">U+19E0-19FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Khmer_script">Khmer Symbols</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1A00.pdf">U+1A00-1A1F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Lontara_script">Buginese (Lontara)</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1A20.pdf">U+1A20-1AAF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tai_Tham_script">Tai Tham</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1B00.pdf">U+1B00-1B7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Balinese_script">Balinese</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1B80.pdf">U+1B80-1BBF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Sundanese_script">Sundanese</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1C00.pdf">U+1C00-1C4F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Lepcha_script">Lepcha</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1C50.pdf">U+1C50-1C7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Ol_Chiki_script">Ol Chiki</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1CD0.pdf">U+1CD0-1CFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Vedic_Sanskrit">Vedic Extentions</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1D00.pdf">U+1D00-1D7F</a>
+                </td>
+                <td>Phonetic Extensions</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1D80.pdf">U+1D80-1DBF</a>
+                </td>
+                <td>More Phonetic Extensions</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1E00.pdf">U+1E00-1EFF</a>
+                </td>
+                <td>Latin Extended Additional</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U1F00.pdf">U+1F00-1FFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Greek_script">Greek Extended</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2000.pdf">U+2000-206F</a>
+                </td>
+                <td>General Punctuation</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2070.pdf">U+2070-209F</a>
+                </td>
+                <td>Superscripts and Subscripts</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U20A0.pdf">U+20A0-20CF</a>
+                </td>
+                <td>Currency Symbols</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U20D0.pdf">U+20D0-20FF</a>
+                </td>
+                <td>Combining Diacritical Marks for Symbols</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2100.pdf">U+2100-214F</a>
+                </td>
+                <td>Letterlike Symbols</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2150.pdf">U+2150-218F</a>
+                </td>
+                <td>Number Forms</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2190.pdf">U+2190-21FF</a>
+                </td>
+                <td>Arrows</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2200.pdf">U+2200-22FF</a>
+                </td>
+                <td>Mathematical Operators</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2300.pdf">U+2300-23FF</a>
+                </td>
+                <td>Miscellaneous Technical</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2400.pdf">U+2400-243F</a>
+                </td>
+                <td>Control Pictures</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2440.pdf">U+2440-245F</a>
+                </td>
+                <td>Optical Character Recognition</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2460.pdf">U+2460-24FF</a>
+                </td>
+                <td>Enclosed Alphanumerics</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2500.pdf">U+2500-257F</a>
+                </td>
+                <td>Box Drawing</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2580.pdf">U+2580-259F</a>
+                </td>
+                <td>Block Elements</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U25A0.pdf">U+25A0-25FF</a>
+                </td>
+                <td>Geometric Shapes</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2600.pdf">U+2600-26FF</a>
+                </td>
+                <td>Miscellaneous Symbols</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2700.pdf">U+2700-27BF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Dingbat">Dingbats</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U27C0.pdf">U+27C0-27EF</a>
+                </td>
+                <td>Miscellaneous Mathematical Symbols-A</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U27F0.pdf">U+27F0-27FF</a>
+                </td>
+                <td>Supplemental Arrows-A</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2800.pdf">U+2800-28FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Braille">Braille Patterns</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2900.pdf">U+2900-297F</a>
+                </td>
+                <td>Supplemental Arrows-B</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2980.pdf">U+2980-29FF</a>
+                </td>
+                <td>Miscellaneous Mathematical Symbols-B</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2A00.pdf">U+2A00-2AFF</a>
+                </td>
+                <td>Supplemental Mathematical Operators</td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2B00.pdf">U+2B00-2BFF</a>
+                </td>
+                <td>Miscellaneous Symbols and Arrows</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2C00.pdf">U+2C00-2C5F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Glagolitic_alphabet">Glagolitic</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2C60.pdf">U+2C60-2C5F</a>
+                </td>
+                <td>Latin Extended-C</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2C80.pdf">U+2C80-2CFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Coptic_alphabet">Coptic</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2D00.pdf">U+2D00-2D2F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Georgian_alphabet">Georgian Supplement</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2D30.pdf">U+2D30-2D7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tifinagh">Tifinagh</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2D80.pdf">U+2D80-2DDF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Ge'ez_script">Ethiopic Extended</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2DE0.pdf">U+2DE0-2DFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Cyrillic_alphabet">Cyrillic Extended</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2E00.pdf">U+2E00-2E7F</a>
+                </td>
+                <td>Supplemental Punctuation</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2E80.pdf">U+2E80-2EFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Radical_(Chinese_character)">CJK Radicals Supplement</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2F00.pdf">U+2F00-2FDF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/List_of_Kangxi_radicals">Kangxi Radicals</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U2FF0.pdf">U+2FF0-2FFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Template:Unicode_chart_CJK_Ideographic_Description_Characters">Ideographic Description Characters</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3000.pdf">U+3000-303F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Template:Unicode_chart_CJK_Symbols_and_Punctuation">CJK Symbols and Punctuation</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3040.pdf">U+3040-309F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hiragana">Hiragana</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U30A0.pdf">U+30A0-30FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Katakana">Katakana</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3100.pdf">U+3100-312F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Bopomofo">Bopomofo</a>
+                </td>
+                <td>DUSCI supported</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3130.pdf">U+3130-318F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hangul_script">Hangul Compatibility Jamo</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3190.pdf">U+3190-319F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Kanbun">Kanbun</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U31A0.pdf">U+31A0-31BF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Bopomofo">Bopomofo Extended</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U31C0.pdf">U+31C0-31EF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Stroke_(CJK_character)">CJK Strokes</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U31F0.pdf">U+31F0-31FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Katakana">Katakana Phonetic Extensions</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3200.pdf">U+3200-32FF</a>
+                </td>
+                <td><a href="https://en.wikipedia.org/wiki/Enclosed_CJK_Letters_and_Months" title="https://en.wikipedia.org/wiki/Enclosed_CJK_Letters_and_Months" alt="https://en.wikipedia.org/wiki/Enclosed_CJK_Letters_and_Months">Enclosed CJK Letters and Months</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3300.pdf">U+3300-33FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Template:Unicode_chart_CJK_Compatibility">CJK Compatibility</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U3400.pdf">U+3400-4DBF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/CJK Unified Ideographs Extension A">CJK Unified Ideographs Extension A</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U4DC0.pdf">U+4DC0-4DFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hexagram_(I_Ching)">Yijing Hexagram Symbols</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/U4E00.pdf">U+4E00-9FFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/CJK_Unified_Ideographs">CJK Unified Ideographs</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA000.pdf">U+A000-A48F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/List_of_Unicode_characters_in_the_Yi_syllables_block">Yi Syllables</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA490.pdf">U+A490-A4CF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Yi_script">Yi Radicals</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA4D0.pdf">U+A4D0-A4FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Fraser_alphabet">Lisu (Fraser alphabet)</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA500.pdf">U+A500-A59F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Vai_syllabary">Vai</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA6A0.pdf">U+A6A0-A6FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Bamum_script">Bamum</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA700.pdf">U+A700-A71F</a>
+                </td>
+                <td>Modifier Tone Letters</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA720.pdf">U+A720-A7FF</a>
+                </td>
+                <td>Latin Extended-D</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA800.pdf">U+A800-A82F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Sylheti_Nagari">Syloti Nagri</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA830.pdf">U+A830-A83F</a>
+                </td>
+                <td>Common Indic Number Forms</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA840.pdf">U+A840-A87F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/'Phags-pa_script">Phags-pa</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA880.pdf">U+A880-A8DF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Saurashtra_script">Saurashtra</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA8E0.pdf">U+A8E0-A8FF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Devanagari_script">Devanagari Extended</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA900.pdf">U+A900-A92F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Kayah_Li_script">Kayah Li</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA930.pdf">U+A930-A95F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Rejang_script">Rejang</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA960.pdf">U+A960-A97F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hangul">Hangul Extended</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UA980.pdf">U+A980-A9DF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Javanese_script">Javanese</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UAA00.pdf">U+AA00-AA5F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Cham_script">Cham</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UAA60.pdf">U+AA60-AA7F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Burmese_script">Myanmar Extended</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UAA80.pdf">U+AA80-AADF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Tai_Viet_script">Tai Viet</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UABC0.pdf">U+ABC0-ABFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Meitei_Mayek_script">Meitei Mayek</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UAC00.pdf">U+AC00-D7AF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Hangul_syllables">Hangul Syllables</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UD800.pdf">U+D800-DB7F</a>
+                </td>
+                <td>High Surrogates</td>
+                <td />
+            </tr>
+            <tr>
+                <td>U+DB80-DBFF</td>
+                <td>High Private Use Surrogates</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UDC00.pdf">U+DC00-DFFF</a>
+                </td>
+                <td>Low Surrogates</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UE000.pdf">U+E000-F8FF</a>
+                </td>
+                <td>Private Use Area</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UF900.pdf">U+F900-FAFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/CJK_Unified_Ideographs">CJK Compatibility Ideographs</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFB00.pdf">U+FB00-FB4F</a>
+                </td>
+                <td>Alphabetic Presentation Forms</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFB50.pdf">U+FB50-FDFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Arabic_alphabet">Arabic Presentation Forms-A</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFE00.pdf">U+FE00-FE0F</a>
+                </td>
+                <td>Variation Selectors</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFE10.pdf">U+FE10-FE1F</a>
+                </td>
+                <td>Vertical Forms</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFE20.pdf">U+FE20-FE2F</a>
+                </td>
+                <td>Combining Half Marks</td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFE30.pdf">U+FE30-FE4F</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/_script">CJK Compatibility Forms</a>
+                </td>
+                <td />
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFE50.pdf">U+FE50-FE6F</a>
+                </td>
+                <td>Small Form Variants</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFE70.pdf">U+FE70-FEFF</a>
+                </td>
+                <td><a href="http://en.wikipedia.org/wiki/Arabic_alphabet">Arabic Presentation Forms-B</a>
+                </td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFF00.pdf">U+FF00-FFEF</a>
+                </td>
+                <td>Halfwidth and Fullwidth Forms</td>
+                <td>Word™ import</td>
+            </tr>
+            <tr>
+                <td><a href="http://unicode.org/charts/PDF/UFFF0.pdf">U+FFF0-FFFF</a>
+                </td>
+                <td>Specials</td>
+                <td />
+            </tr>
+        </table>
+    </body>
+</html>

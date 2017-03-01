@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:check_list="Ran Smart Index" MadCap:status="Complete" MadCap:lastBlockDepth="4" MadCap:lastHeight="3437" MadCap:lastWidth="628">
+    <head><title>Create Style, Example 3: Numbering Style</title>
+        <link rel="StyleSheet" href="../../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h4>
+            <MadCap:keyword term="Styles, create:Example 3\: Numbering Style;Style:Numbering Example" />Create Style, Example 3: Numbering Style</h4>
+        <p class="Normal">The following comes from an actual <a href="../../../getting_setup_in_DBT/new_users_start_here/GETTING_HELP.htm">duxuser</a> list question.</p>
+        <p class="Normal" style="font-style: italic;font-weight: bold;">The problem: We produce a lot of double-sided documents where we wish to begin with Roman Page Numbers, as in i, ii, iii, iv, etc., but then wish to continue with Arabic Numbers, as in 1, 2, 3, 4. However, we want to start the Arabic numbers on an odd, or right hand, page. Also, if the preceding (Roman numbered page) contains no text, we do not want it to be numbered.</p>
+        <p class="Normal">Create a new document (File: New) using an existing Template which is as close to your requirements as possible. For this example, we will use "English (American) - Standard Literary Format".</p>
+        <p class="Normal">As we wish to begin all documents with Roman numbers. We can do this in two ways. (We will explain the difference afterwards)</p>
+        <ol>
+            <li class="Normal">Go to the Layout menu, select Page Numbering, and in the dialog that comes up, leave the Start Page Numbering at 1, and select the "Roman" radio button. This will insert two codes into our document - <span class="Code-DuxCode">[pv1]</span> and <span class="Code-DuxCode">[pntr]</span> which mean, Start Page Numbering at 1, and make them Roman Numbers.</li>
+        </ol>
+        <p class="Normal" style="text-align: center;" align="center">or</p>
+        <ol start="2">
+            <li class="Normal">Go to the Document menu, and select Add Style. Before you proceed, look in the list of existing Styles to see if there is one called "<span class="Code-DuxScreen">initial</span>". If you are following this example, there will not be, so in the "New Style Name:" text box type (without quotes) the word "<span class="Code-DuxScreen">initial</span>", and be very careful to spell it exactly as shown. Press the <span class="Code-DuxScreen">OK</span> button, and a new dialog will appear called "Edit Style Codes".<br />	With your cursor In the "Beginning Codes:" text box, hold down the <span class="Keyboard">Ctrl</span> key, and press the <span class="Keyboard">left square bracket</span>. A pair of square brackets will appear, with your cursor between them. Type "<span class="Code-DuxScreen">pv1</span>", (no quotes) and press the <span class="Keyboard">End</span> key to place your cursor to the right outside the Code. Hold down the <span class="Keyboard">Ctrl</span> key again, press <span class="Keyboard">left square bracket</span>, and between the brackets type "<span class="Keyboard">pntr</span>" (no quotes). Tab to the <span class="Keyboard">OK</span> button and press it.</li>
+        </ol>
+        <p class="Normal">So what is the difference between 1st and 2nd method since both will result in Roman numbers in our document. </p>
+        <ul>
+            <li class="Normal">The Codes we have entered in the first method WILL show up in Coded View (<span class="Keyboard">Alt + F3</span> toggle).</li>
+            <li class="Normal">They will NOT show up using the second method. Therefore there is less risk of someone accidentally deleting the codes. "<span class="Code-DuxScreen">initial</span>" is a special Style Name assigned specifically for Templates to set default parameters that the user cannot accidentally alter.</li>
+        </ul>
+        <p class="Normal">We will now actually create the new Template. (Document: Create Template) You now need to give your new Template a meaningful name. In this case we will call it, "<span class="Code-DuxScreen">Hotel Room Details</span>".</p>
+        <p class="Normal">We have a new Template, so to be sure, close it.</p>
+        <p class="Normal">Start a New document, and this time, "<span class="Code-DuxScreen">Hotel Room Details</span>" should be in our list of Templates.</p>
+        <p class="Normal">To be doubly sure what we have done so far works, type in a few words of text, and make sure that Roman numbers appear.</p>
+        <p class="Normal">OK but how, after say three pages, do we make the fourth page with no text totally blank, and begin the fifth page with Arabic number one?</p>
+        <p class="Normal">At the very end of the section which is Roman numbered, we would have these Codes in the following order.</p>
+        <p class="Normal"><span class="Code-DuxCode">[svpnp0:0]</span> Do not number left or right hand pages. (That stops numbering on the blank page) </p>
+        <p class="Normal"><span class="Code-DuxCode">[sdo]</span> Advance to an odd (right hand) page.</p>
+        <p class="Normal"><span class="Code-DuxCode">[pg1]</span> Begin numbering at 1.</p>
+        <p class="Normal"><span class="Code-DuxCode">[pnta]</span> Make that numbering Arabic.</p>
+        <p class="Normal"><span class="Code-DuxCode">[svpnp2:2]</span> Number odd and even pages.</p>
+        <p class="Normal">But ouch! That is a lot to remember every time you do one of these Hotel Room things!!</p>
+        <p class="Normal">No problem. Let us create a Style to do all of that.</p>
+        <p class="Normal">From the Document menu, select "Add Style".</p>
+        <p class="Normal">In the "New Style Name" box type a meaningful name like "<span class="Code-DuxScreen">ArabicRightHand</span>" - again no quotes, but also no spaces.</p>
+        <p class="Normal">Press the <span class="Keyboard">OK</span> button, and up will pop the "Edit Style Codes" dialog.</p>
+        <p class="Normal">In the same way as you entered Codes for the Roman numbering, enter the above Codes into the "Beginning Codes"</p>
+        <p class="Normal">box. svpnp0:0 sd0 pg1 pnta svpnp2:2 There is no need to type anything into the "Ending Codes" box.</p>
+        <p class="Normal">Press <span class="Keyboard">OK</span></p>
+        <p class="Normal">Now we have a Style called "<span class="Code-DuxScreen">ArabicRightHand</span>", but we are not quite finished.</p>
+        <p class="Normal">First, you might want to test the Style. Type some text at the beginning of the document, place your cursor at the end of the Arabic Numbered section, and from the Layout Menu, select Apply Style, then select "<span class="Code-DuxScreen">ArabicRightHand</span>". If it does not work as expected, check for mistakes, and go back to Document: Amend Style where you can rectify any mistakes.</p>
+        <p>Finally, and this is VERY important, once this is working, go to the Document Menu, select "Create Template". Navigate down the list to "<span class="Code-DuxScreen">Hotel Room Details</span>" and press <span class="Keyboard">OK</span>. You will be asked if you wish to replace the existing Template - select <b>YES</b>!. When asked if you wish to save Codes and text, select <b>NO</b>!</p>
+        <p class="Normal">You should now have a Template which will begin with Roman Numbering then, when you apply the <span class="Code-DuxScreen">ArabicRightHand</span> Style at the correct place in your document, text will begin on a right hand page with Roman numbers.</p>
+    </body>
+</html>

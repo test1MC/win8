@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1846" MadCap:lastWidth="524" MadCap:onlyLocalStylesheets="True">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3>Global: Embosser Setup: General.</h3>
+        <p>When you select "New" from the <a href="..\..\the_menus\MENU_GLOBAL\global_embosser_setup.htm">Global:
+Embosser Setup</a> dialog, you will be presented with the following dialog.</p>
+        <p>This dialog contains three tabs. "<a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_general.htm">General</a>",
+"<a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_settings.htm">Device
+Settings</a>" and "<a href="..\..\the_menus\MENU_GLOBAL\Global_Embosser_setup_advanced.htm">Advanced</a>".</p>
+        <p align="center" style="text-align: center;">
+            <img border="0" src="emb-setup2.png" alt="Image shows Glbal: Embosser Setup: General dialog." />
+        </p>
+        <p><b>Embosser Model:</b> This is a drop-down list containing an alphabetic
+listing of all supported makes and models of braille embosser. Note however
+that Generic embossers are at the top of the list.</p>
+        <p><i>If your embosser is not listed, then select "Generic" if your
+embosser embosses on just one side of the page, or "Generic
+Interpoint" if it embosses on both sides of the page.</i>
+        </p>
+        <p><b>Setup Name:</b> You may leave this field blank, in which case, Perky Duck
+will simply use the name of the embosser you selected above. However, you may
+type in a free-format name of your own choice. (See <a href="global_embosser_setup.htm#additional_notes">Additional
+Notes</a> below for more information)</p>
+        <p><b>Configuration Location:</b> A drop down list with two choices a) The
+current user, or b) All users of this computer.</p>
+        <p><i>Network administrators should be aware that "Current User"
+essentially stores this configuration on the User's Profile. Hence care should
+be taken if Roving Profiles are in use. If you are setting up a model
+installation for replication throughout a network using a network installation
+image, then you should set the Configuration Location for all embossers to
+"All users of this computer". Perky Duck's installer supports
+automatic migration of embosser configurations set this way, using a network
+installation image.</i>
+        </p>
+        <div class="MsoNormal" align="center" style="text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+        <p><b>Output Options - </b>here you have one choice out of 3 Radio Buttons</p>
+        <ol start="1" style="list-style-type: decimal;">
+            <li><b>Send to Printer:</b> If you
+ have installed your braille embosser as a Windows Device, or to use
+ Windows drivers, you should normally find it listed here. (You can use
+ this option only if your braille embosser shows up among the printers in
+ Windows' Printers Control Panel.) </li>
+        </ol>
+        <ol start="2" style="list-style-type: decimal;">
+            <li><b>Write to Port:</b> If your
+ embosser is not listed above, you may select a Parallel Port (<span class="mcpopup"><a href="javascript:void(0);">lpt#</a></span>), or Serial
+ Port (<a href="javascript:void(0);">com#</a>) from the list box. </li>
+        </ol>
+        <ol start="3" style="list-style-type: decimal;">
+            <li><a name="write_to_file"></a><b>Write to File:</b> There are
+ occasions when you may wish to braille embossing output direct to a file.
+ Normally you should leave this field blank, in which case you will be
+ prompted for a file name each time you emboss using this Brailler Device.
+ Otherwise you may enter a path and file name as appropriate. <br />     You should also be aware that if you specify a file name, the file will be
+ overwritten without prompting, therefore you should only specify a file
+ name in exceptional circumstances. </li>
+        </ol>
+        <div class="MsoNormal" align="center" style="margin-bottom: 0in;margin-bottom: .0001pt;text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+        <p><b>Serial:</b> This section will be grayed out unless you have selected a
+Serial (com#) device. Enter the parameters for <a href="javascript:void(0);">Baud
+Rate</a>, Parity, Data Bits and Stop Bits and Handshaking as required.</p>
+        <p>If you are using a Serial Device, please consult your manual or supplier for
+appropriate details.</p>
+        <div class="MsoNormal" align="center" style="text-align: center;">
+            <hr size="1" width="50%" align="center" />
+        </div>
+    </body>
+</html>

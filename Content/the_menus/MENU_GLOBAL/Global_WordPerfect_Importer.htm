@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="DBT;Uncontracted;CONFIG.SYS;CorelDRAW;CR;LF;Ctrl;curreny;DBTDOCS;UNCONTRACTED;w;Runover;WP;Inc;Littleton;Westford;duxuser;Duxbury's;uncontracted;brailler;fr;n;FASTTRACK;para;hdgrp;tptitle;tpauth;tpelement;zlnbrk;zpgbrk;zlnskp;acr;litem;outlineb;tcchch;tcchcp;tcbdy;tcepgn;ipp;Inkprint;GUIDEWORDS;Guidewords;ixbdy;ixepgn;gwe;Guideword;poh;pol;zpobrk;Permissable;parac;compdisplay;compinline;brldisplay;brlinline;Symbol--Preventing;FORMATTING--GENERAL;VPGRAPH;ETGRAPHX;SSG;C;STYLE=;k;rps;rpsN;N;vss;vse;TOC[vse;rpe;author(s;system(s;hds;translat$;c;www.duxburysystems.com.;duxsys.com.;text[;nestable;ab;cb-&amp;;cb-de;cb-ds;cb-ee;cb-es;cb-ne;deu;eng;es;esp;fi;fra;ita;lat;mi;mao;nl;sv;sw;wh;hypercomplex;DUSCI;D+ec;D+ed;D+ee;D+df;D+ef;y;brailled;Consultancy;Viet;Nam;Gr;unprinted;Wiro;Q;CHEQUER;chequer;marques;letter.dxp;letterch.dxp;rename.dxp;letter.dxb;dxb;dxp;runover;o;W;f;halfline;typeform;K;g;inkprint;·;m;DOTSYS;maths;Maths;ABCD;Comite;Tomas;bla;page(s;doesn;autorun;duxbury;Newline" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="5" MadCap:lastHeight="923" MadCap:lastWidth="624">
+    <head><title>Global: WordPerfect Importer...</title>
+        <link rel="StyleSheet" href="../../Resources/Stylesheets/DuxHelp.css" />
+    </head>
+    <body>
+        <h3 class="normal">
+            <MadCap:keyword term="WordPerfect:Importer;Global:WordPerfect Importer" />Global: WordPerfect Importer...</h3>
+        <p class="Keystroke" MadCap:conditions="Primary.Windows_Version">Keystroke: <span class="Keyboard">w</span> from Global menu</p>
+        <p class="Keystroke" MadCap:conditions="Primary.Mac_Version">Keyboard: Select from menu</p>
+        <p MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_wordperfect_importer.jpg" alt="Image shows the Global: WordPerfect Importer dialog." border="0" MadCap:conditions="Primary.Windows_Version" title="Image shows the Global: WordPerfect Importer dialog." />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_wordperfect_importer_mac.jpg" MadCap:conditions="Primary.Mac_Version" title="Image shows the Global: WordPerfect Importer dialog." alt="Image shows the Global: WordPerfect Importer dialog." style="width: 352px;height: 352px;" />
+        </p>
+        <p>The WordPerfect Importer dialog tells DBT how to import WordPerfect coded files. There are seven controls. </p>
+        <p>First is a check box to optionally translate any Courier text into CBC (Computer Braille Code). Use this feature with caution; if Courier happens to be the default base font, the entire document may come out in CBC instead of grade 2. </p>
+        <p>Second is a check box to force a new braille page wherever a hard page break exists in the print. If you are highly concerned with paper conservation, leave this option unchecked. Otherwise, check the box so that your print and braille formats more closely resemble each other.</p>
+        <p>Third is a check box to reduce three or more hard Returns in the print so that only one skipped line appears in braille. It is not customary to have more than one blank line in braille so you will generally want to keep this box checked.</p>
+        <p>Fourth is a check box to tell DBT that you wish to indicate print page breaks with a line of dots across the page. Be sure to use this feature when producing a braille document in Textbook format.</p>
+        <p>The next control, <b>Paragraph Style</b>, lets you choose from four options for recognizing the print paragraph style. DBT will automatically create a braille paragraph (a new line with indent to cell three) whenever it comes across the pattern you choose. Choices are:</p>
+        <div>
+            <ol>
+                <li> None -- DBT formats the braille the same as the print.</li>
+                <li>Skipped Line -- DBT converts <span class="Code-DuxCode">[HRt][HRt]</span><MadCap:keyword term="WordPerfect:Tab" /> to a braille paragraph.</li>
+                <li>Newline Tab -- DBT converts <span class="Code-DuxCode">[HRt][Tab]</span> to a braille paragraph.</li>
+                <li>Skipped Line with Tab -- DBT converts [<span class="Code-DuxCode">HRt][HRt][Tab]</span> to a braille paragraph. </li>
+            </ol>
+        </div>
+        <p>The next text box controls how much space in the print document translates to a single indented braille cell. DBT will use this number to honor WordPerfect's Tab and Indent commands by converting them into braille indents.</p>
+        <p>The last control tells DBT whether the size you set in the previous control is in inches or centimeters. Normally you'll want to leave the last two controls at their default values of 0.25 and Inches, respectively.</p>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="601" MadCap:lastWidth="647">
+    <head>
+    </head>
+    <body>
+        <h4 MadCap:conditions="Primary.Mac_Version">
+            <MadCap:keyword term="installation:using VoiceOver;VoiceOver:Installing DBT" />How to Install DBT for Mac using VoiceOver</h4>
+        <p MadCap:conditions="Primary.Mac_Version">Please note that these instructions use the Apple convention of describing VoiceOver keystrokes as VO+ some other keys. This is short-hand for saying “Press the VoiceOver modifier keys (Ctrl+Option) together with some other keys”.</p>
+        <p MadCap:conditions="Primary.Mac_Version">Further, these instructions assume that you have VoiceOver set to its default configuration preferences. If you have changed VoiceOver settings and these instructions are not working for you, you can reset all or specific preferences to their default values (see below).</p>
+        <p MadCap:conditions="Primary.Mac_Version">1. Download the .dmg file.</p>
+        <p MadCap:conditions="Primary.Mac_Version">2. Open the .dmg file by highlighting it using VO+Arrows then pressing Cmd+O.</p>
+        <p MadCap:conditions="Primary.Mac_Version">3. Use VO+Arrows to select the DBT.app file.</p>
+        <p MadCap:conditions="Primary.Mac_Version">4. Press Cmd+C to copy the file to the clipboard.</p>
+        <p MadCap:conditions="Primary.Mac_Version">5. Use VO+Arrows to select the Applications alias. This is the Macintosh equivalent to a Windows shortcut. Press Cmd+O and you will be taken to your Mac's Applications folder.</p>
+        <p MadCap:conditions="Primary.Mac_Version">6. Paste the DBT.app file into place by pressing Cmd+V.</p>
+        <p MadCap:conditions="Primary.Mac_Version">7. Because DBT is not supplied via the App Store, you need to let your Mac know that it is safe to run it, so press VO+Shift+M to bring up its context menu and choose Open.</p>
+        <p MadCap:conditions="Primary.Mac_Version">8. You will be asked to confirm the action, so use VO+Arrows to get to the Open button, then press VO+Space, and DBT will now run.</p>
+        <p MadCap:conditions="Primary.Mac_Version" class="bold">Please note that steps 7 and 8 are only necessary the first time you open DBT. Once these steps have been performed you can run DBT just like your other applications.</p>
+    </body>
+</html>

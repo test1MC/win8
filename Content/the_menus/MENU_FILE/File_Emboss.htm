@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="Program(s;w;Runover;mws;GR;Language Translation;AUTOEXEC.BAT;CorelDRAW;CR;LF;Level+;rps;f;S-D-F-J-K-L;Ô;n;Device(s;a.k.a.;ü;nondefault;o;number(s" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:timeEstimate="0" MadCap:priority="0" MadCap:lastBlockDepth="4" MadCap:lastHeight="908" MadCap:lastWidth="624">
+    <head><title>File: Emboss...</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3><a name="Top"></a>File: Emboss...</h3>
+        <p class="Keystroke" MadCap:conditions="Primary.Windows_Version">Keystroke: <span class="Keyboard">Ctrl + e</span></p>
+        <p class="Keystroke" MadCap:conditions="Primary.Mac_Version">Keystroke: <span class="Keyboard">⌘E</span></p>
+        <p align="center" MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_file/menu_file_emboss.jpg" alt="Image shows the File: Emboss dialog." border="0" MadCap:conditions="Primary.Windows_Version" style="width: 433px;height: 286px;" />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_file/menu_file_emboss_mac.jpg" MadCap:conditions="Primary.Mac_Version" title="Error to be fixed" alt="Error to be fixed" style="width: 436px;height: 361px;" />
+        </p>
+        <p>The Emboss option is used to produce braille on your braille embosser.</p>
+        <p>There are eight items in this dialog. (Item 1 is a Text Box. 2 - 6 are Radio Buttons. 7 and 8 are Push Buttons.)</p>
+        <ol>
+            <li><b>Copies:</b>
+                <MadCap:keyword term="Page:Number" /> Enter the number of copies you wish to emboss. The default is 1.</li>
+            <li><b>All:</b> The entire braille document will be embossed.</li>
+            <li><b>Current page:</b> Only the page your cursor is located in will be embossed.</li>
+            <li><b>Selection:</b> If you highlight a section of the braille document, only that section will be embossed.</li>
+            <li><b>Braille page number(s): </b>This refers to defined page numbers in your document.</li>
+            <li><b>Page sequence numbers(s):</b> This refers to the page sequence. For example, you might have pages numbered A, B, 1, 2, A1 and A2. Pages A1 and A2 would therefore be 5 &amp; 6 in the sequence.</li>
+        </ol>
+        <p>If you select either control 5 or 6 (Braille Page numbers or Page sequence numbers), then you must normally type <span class="Keyboard">Tab</span> and enter a page range, a list of pages, or even a list of page ranges, into a text control you reach. Leaving the text control blank will cause DBT to emboss all pages. If you wish to print a range, you may enter a beginning and ending page separated with an unspaced dash or hyphen, e.g. <span class="Code-DuxScreen">4-7</span>. To emboss two or more non-contiguous pages, separate the page numbers with a comma, e.g. <span class="Code-DuxScreen">8,12</span>. If you wish to include a blank page for any reason, use the letter b. You can "mix" if required, e.g. 4-7, 8, b, 12.</p>
+        <ol start="7">
+            <li><b>Cancel:</b> If you decide you do not wish to emboss at this time, you can click on Cancel button, or press the <span class="Keyboard">Esc</span> key.</li>
+            <li><b>OK:</b> When you have completed the above, and are ready to emboss, click on the <span class="Keyboard">OK</span> button, or press <span class="Keyboard">Enter</span>.</li>
+        </ol>
+        <p>Note that your selected embosser and paper size is also displayed at the foot of this dialog.</p>
+        <p>Once embossing has begun the following Window will display your progress. If you wish to abort embossing, you can either press <span class="Keyboard">Esc</span> or click on the <span class="Keyboard">Cancel</span> button. If you simply wish to pause embossing, perhaps to answer the telephone, press the on/off line button on your embosser. (See your manual for details) </p>
+        <p>Note that in some circumstances, especially where your embosser is <MadCap:conditionalText MadCap:conditions="Primary.Print_Only">spooling</MadCap:conditionalText> <MadCap:conditionalText MadCap:conditions="Primary.HTML_Only"><a href="../../POPUPS/Spooling.htm">spooling</a></MadCap:conditionalText>, there may be a delay before the embosser stops working. DBT has no control over this.</p>
+        <p class="center">
+            <img src="../../Resources/Images/the_menus/menu_file/MENU_FILE_EMBOSSING.jpg" border="0" alt="Image shows cancel dialog which only has one button - Cancel" MadCap:mediastyle="@media print { height: 2.00in;width: 3.75in; }" />
+        </p>
+        <p><b><a name="Note"></a>Notes:</b> <MadCap:keyword term="emboss FROM" /><MadCap:keyword term="end Page Sequence" />When you emboss, you can choose a start and end Page Sequence number to print. This refers to the PHYSICAL SHEET, and NOT the actual number printed in braille on the page. For example, let us say my first four pages have Roman numerals i - iv, and then I continue with three pages of Arabic numbers 1 - 3. That is seven pages - correct? If I wanted to print ONLY those first two pages containing Arabic numbers, I would ask it to emboss FROM: page 5, TO: page 6.</p>
+        <p>Note also that the physical page number, line number, and column number where the cursor sits, is displayed in the <MadCap:conditionalText MadCap:conditions="Primary.Print_Only">Status Bar</MadCap:conditionalText><a href="../../POPUPS/Status_Line_1.htm" target="_popup" MadCap:conditions="Primary.Not_in_Print_Docs,Primary.HTML_Only">Status Bar</a><MadCap:keyword term="Page:Sequence:Determine" />. So if you know that the pages you want to emboss appear with page numbers in braille which are different from their physical order in the file, then this is an additional means to determine a Page Sequence range to emboss.</p>
+        <p>
+            <MadCap:keyword term="Interpoint" /><b>Double Sided or Interpoint Printers:</b> Users of interpoint embossers are advised to always give an odd number for the "From:" field (if it is specified) and even number for the "To:" field (unless it is left blank). This will ensure that DBT embosses the document with the proper front/back relationship of sheets, which is what is usually wanted</p>
+        <p>See Also: <a href="../MENU_GLOBAL/global_embosser_setup.htm" MadCap:conditions="Primary.Not_in_Print_Docs">Global: Embosser Setup... </a><MadCap:xref href="../MENU_GLOBAL/global_embosser_setup.htm" MadCap:conditions="Primary.Print_Only">"Global: Embosser Setup..." on page&#160;1</MadCap:xref></p>
+    </body>
+</html>

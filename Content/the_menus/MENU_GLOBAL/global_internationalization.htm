@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:status="Complete" MadCap:check_list="Ran Smart Index" MadCap:lastBlockDepth="2" MadCap:lastHeight="574" MadCap:lastWidth="624">
+    <head><title>Global: Internationalization</title>
+        <link href="../../Resources/Stylesheets/DuxHelp.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h3>
+            <MadCap:keyword term="Internationalization:Global;Global:Internationalization" />Global: Internationalization</h3>
+        <p class="Keystroke" MadCap:conditions="Primary.Windows_Version">Keystroke: <span class="Keyboard">i</span> (as in India) from Global menu.</p>
+        <p class="Keystroke" MadCap:conditions="Primary.Mac_Version">Keystroke: Select from menu</p>
+        <p align="center" MadCap:conditions="Primary.Windows_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_internationalization.jpg" alt="Image shows Internationalization dialog with Language for menus and dialogs and braille code for display." border="0" title="Image shows Internationalization dialog with Language for menus and dialogs and braille code for display." MadCap:conditions="Primary.Windows_Version" />
+        </p>
+        <p MadCap:conditions="Primary.Mac_Version" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_internationalization_mac.jpg" MadCap:conditions="Primary.Mac_Version" title="Image shows Internationalization dialog with Language for menus and dialogs and braille code for display." alt="Image shows Internationalization dialog with Language for menus and dialogs and braille code for display." style="width: 470px;height: 460px;" />
+        </p>
+        <p class="bold">Please take VERY careful note of the tip at the end of this section!</p>
+        <h5>Language for menus and dialogs</h5>
+        <p>Subject to availability, you may now select a different language for the DBT interface. Therefore if you select Dansk for example, all your menus and dialogs will appear in Danish.</p>
+        <p>
+            <MadCap:keyword term="country/locale" />In some instances, you may need to perform additional tasks to set up DBT for your own country/locale. Your local dealer is best placed to advise you on the requirements here.</p>
+        <h5>Braille Encoding for Input and Display</h5>
+        <p>A braille encoding is a direct one-to-one correspondence between individual braille cells and single imprint symbols for the convenience of constructing braille fonts and displaying braille on a screen. A braille encoding is not related to the current braille translator being used.</p>
+        <p>In North America, the normal braille encoding is North American. It would be difficult to imagine a reason to change this, except to provide technical support for DBT users outside of North America.</p>
+        <p>For a user in Germany, on the other hand, the need may be to import German braille documents, to have those documents appear correctly on the DBT screen, and to have a connected refreshable braille display produce the correct braille dot patterns. This requires using the German braille encoding. Again, this “encoding” is a standard correspondence between a braille dot pattern and the computer character used to represent it.</p>
+        <p>As another example, when DBT displays braille dot patterns on the screen, the way this is done is usually not an issue to a user. But if the user is blind, and is using software like JAWS to drive a braille device to follow the screen, then the user very much wants the braille on the screen to match the braille on the braille display. This is only possible if the braille font the DBT uses matches the braille encoding used on the braille display device.</p>
+        <p>DBT sends ASCII characters to drive different braille devices. Different devices and/or different regions use different systems to associate braille characters with ASCII characters. This is an area that is quite technical, and frustrating if it is not set up properly. However, virtually all braille devices made can work with the North American system, which is the default. Or the user can select another system in the Global, Internationalization Menu.</p>
+        <p>When you make a change in this option, there is no immediate change. You need to close and then re-launch DBT. As DBT starts up, it constructs a braille font for its own use based on the previous settings of this menu item.</p>
+        <p>DBT uses a file called display.cpt to link braille symbols with ASCII characters. To solve problems that cannot be handled using the existing choices, this table can be edited. Please do not ever rearrange items in this file. DBT remembers settings based on their order in this list.</p>
+        <p>Please refer to DBT Code Pages for Textfiles for more detailed technical information.</p>
+        <p>
+            <MadCap:keyword term="Display" />Should you change the Braille code for display, you will need to restart DBT for the change to take effect. You will also receive the following warning dialog.</p>
+        <p align="center" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_internationalization_warning.jpg" alt="Image shows a warning screen which comes up to inform you that if you have changed &quot;Braille Code for Display&quot;, the display will be incorrect until DBT is restarted," style="width: 440px; height: 152px;" border="0" MadCap:conditions="Primary.Windows_Version" />
+        </p>
+        <p MadCap:conditions="Primary.Not_in_Print_Docs">We do also recommend you study <a href="GLOBAL_MENU.htm">The Menus: Global</a> section in full.</p>
+        <h4><a name="TIP"></a>TIP: This could save you an anxious telephone call!</h4>
+        <p>If you come in to school one day, to find one of your clever students has played a trick on you and changed the language of your user interface, do not panic. Click on the last but one menu item (second from the right). This is the Global menu. Go down to the fifth item on this menu and click on it. The Internationalization dialog will come up, and you will be able to select your own language.</p>
+        <p>(The following shows what the DBT user interface would look like in Russian)</p>
+        <p align="center" class="center">
+            <img src="../../Resources/Images/the_menus/menu_global/menu_global_change_language_interface.jpg" alt="Image shows the DBT screen with Russina language displayed." style="width: 491px; height: 276px;" width="491" height="276" border="0" />
+        </p>
+    </body>
+</html>

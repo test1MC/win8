@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="800" Height="800" Padding="20px" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="normal">
+        <Frame Flow="header" Height="0.3958333in" Anchors="Left,Right,Top" X="0px" Y="-0.8020833in" ColumnCount="1" Bottom="9.40625in" Right="0px" Width="6.5in" BorderBottomStyle="solid" BorderBottomWidth="1px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="Header">Duxbury Braille Translator <MadCap:conditionalText MadCap:conditions="Primary.Windows_Version" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><MadCap:variable xhtml:name="Primary.Version_Current_DBT" /></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Primary.Mac_Version" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><MadCap:variable xhtml:name="Primary.Mac_Version" /></MadCap:conditionalText> - FILE</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Height="0.25in" Anchors="Left,Right,Bottom" Bottom="-72px" Y="9.5in" BorderTopStyle="solid" BorderTopWidth="1pt" BorderTopColor="#000000" TextAlign="center" VerticalAlign="middle" X="0px" Width="6.5in" Right="0px">
+            <Content>
+                <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>- <MadCap:variable xhtml:name="System.PageNumber" /> -</xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" Anchors="Left,Right,Top,Bottom" Right="0px" Bottom="-43px" X="0px" Y="-0.3020833in" Width="6.5in" Height="9.75in">
+        </Frame>
+    </Page>
+</PageStyles>

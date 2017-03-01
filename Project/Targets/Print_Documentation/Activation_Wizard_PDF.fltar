@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/Activation_Wizard_Help_TOC.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Book.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  DisableAutoSync="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <Glossaries></Glossaries>
+  <PDF
+    Tagged="true" />
+</CatapultTarget>

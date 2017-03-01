@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="167" MadCap:lastWidth="750">
+    <body>
+        <p>We say, server or master workstation, because the computer you choose as the master for DBT activation need not be running a server operating system. This gives you a wider choice of which computer to use as your master for activation. If the computer you choose is not a Windows Server machine, then it must be at least a Windows 7 computer or later, and you need to be willing to leave it running whenever DBT is needed by any user on the network.</p>
+        <p>Once you have chosen a server machine, install DBT on it by following the <a href="../../getting_setup_in_DBT/Installation/Simple_Installation.htm">Simple Installation</a> instructions.</p>
+    </body>
+</html>

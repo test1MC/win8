@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="CompanyName">Duxbury Systems, Inc.</Variable>
+  <Variable
+    Comment=""
+    Name="CompanyPhone">+1 (978) 692 3000</Variable>
+  <Variable
+    Name="Version_Current_DBT"
+    Comment=""
+    Definition="Some text"
+    EvaluatedDefinition="DBT Win 12.1 (SR1)">DBT Win 12.1 (SR1)</Variable>
+  <Variable
+    Name="MSIFile"
+    Comment=""
+    Definition="Some text"
+    EvaluatedDefinition="dbt-12.01.msi">dbt-12.01.msi</Variable>
+  <Variable
+    Name="CompanyFax"
+    Comment=""
+    Definition="Some text">+1 (978) 692 7912</Variable>
+  <Variable
+    Name="VersionFolder"
+    Comment=""
+    Definition="Some text"
+    EvaluatedDefinition="DBT 12.1">DBT 12.1</Variable>
+  <Variable
+    Name="Version_Short_DBT"
+    Comment=""
+    Definition="Some text"
+    EvaluatedDefinition="12.1 (SR1)">12.1 (SR1)</Variable>
+  <Variable
+    Name="EmailSupport"
+    Comment=""
+    Definition="Some text">support@duxsys.com</Variable>
+  <Variable
+    Name="Static_Version_11.1"
+    Comment=""
+    Definition="Some text">11.1</Variable>
+  <Variable
+    Name="MacShort"
+    Comment=""
+    EvaluatedDefinition="12.1 (Beta 4)">12.1 (Beta 4)</Variable>
+  <Variable
+    Name="MathType Current Cersion"
+    Comment="">6.9b</Variable>
+  <Variable
+    Name="Static_Version_11.2_(SR3)"
+    Comment="">DBT 11.2 (SR3)</Variable>
+  <Variable
+    Name="Static Version 11.2 (SR4)"
+    Comment=""
+    EvaluatedDefinition="DBT 11.2 (SR4)">DBT 11.2 (SR4)</Variable>
+  <Variable
+    Name="Static Version 11.3"
+    Comment="">DBT 11.3</Variable>
+  <Variable
+    Name="SWIFT Version"
+    Comment=""
+    EvaluatedDefinition="4">4</Variable>
+  <Variable
+    Name="Mac_Version"
+    Comment=""
+    EvaluatedDefinition="DBT 12.1 (BETA 4)">DBT 12.1 (BETA 4)</Variable>
+  <Variable
+    Name="Mac_Version Date"
+    Comment=""
+    EvaluatedDefinition="August 2016">August 2016</Variable>
+  <Variable
+    Name="Win_Version_date"
+    Comment=""
+    EvaluatedDefinition="July 26th 2016">July 26th 2016</Variable>
+  <Variable
+    Name="EmailEmbossers"
+    Comment=""
+    EvaluatedDefinition="info@duxsys.com">info@duxsys.com</Variable>
+  <Variable
+    Name="EmailLanguages"
+    Comment=""
+    EvaluatedDefinition="languages@duxsys.com">languages@duxsys.com</Variable>
+  <Variable
+    Name="Static Version 12.1 (SR2)"
+    Comment=""
+    EvaluatedDefinition="DBT 12.1 (SR2)">DBT 12.1 (SR2)</Variable>
+  <Variable
+    Name="ProductionDate"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2017-02-03T16:34:39.4192237-04:00"
+    EvaluatedDefinition="[MMMM d, yyyy]">[MMMM d, yyyy]</Variable>
+  <Variable
+    Name="CurrentYear"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2017-02-03T16:42:45.3288239-04:00"
+    EvaluatedDefinition="yyyy">yyyy</Variable>
+</CatapultVariableSet>

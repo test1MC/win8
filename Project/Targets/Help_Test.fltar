@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="MsWord"
+  Destinations=""
+  MasterToc="/Project/TOCs/Help_Test.fltoc"
+  ConditionTagExpression=""
+  AutoSizeCaptureCaptions="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/DuxHelp.css"
+  OutputFile="Installation_Registration_Activation.pdf"
+  MasterPageLayout="/Content/Resources/PageLayouts/Installation_and_Setup/Installation.flpgl">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="false" />
+  <PDF
+    Tagged="true"
+    ShowUsedBookmarks="false"
+    InitialMagnification="Actual" />
+  <Glossaries></Glossaries>
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/AutobuildDestDoc.fldes" />
+  </Destinations>
+</CatapultTarget>
